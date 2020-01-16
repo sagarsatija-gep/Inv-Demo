@@ -7,10 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuickLinksComponent implements OnInit {
 
-  quickLinks : [{
-    img : string,
-    txt : string
-  }];
+    quickLinks : Object[];
 
   constructor() {
     this.quickLinks = [
