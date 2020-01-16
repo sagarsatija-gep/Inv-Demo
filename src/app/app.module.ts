@@ -3,11 +3,13 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { QuickLinksComponent } from './quick-links/quick-links.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    QuickLinksComponent
   ],
   imports: [
     BrowserModule
