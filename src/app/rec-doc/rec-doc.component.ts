@@ -10,6 +10,7 @@ export class RecDocComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    
   }
 
 }
