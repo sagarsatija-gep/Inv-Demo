@@ -6,6 +6,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { RecDocComponent } from './rec-doc/rec-doc.component';
 
+import { AgGridModule } from 'ag-grid-angular';
 @NgModule({
   declarations: [
     AppComponent,
@@ -13,7 +14,8 @@ import { RecDocComponent } from './rec-doc/rec-doc.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AgGridModule.withComponents([])
   ],
   providers: [],
   bootstrap: [AppComponent]
