@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatTabsModule } from '@angular/material/tabs';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
@@ -30,6 +31,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     HttpClientModule,
     AgGridModule.withComponents([]),
     MatSidenavModule,
+    MatTabsModule,
     BrowserAnimationsModule
   ],
   providers: [],

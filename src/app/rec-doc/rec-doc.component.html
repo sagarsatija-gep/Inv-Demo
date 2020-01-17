@@ -2,8 +2,14 @@
   <p>
     Recent Documents
   </p>
-  <ag-grid-angular style="width: 100%; height: 235px;" #grid class="ag-theme-balham" [columnDefs]="columnDefs"
-    [pagination]="true" [defaultColDef]="defaultColDef" [suppressRowClickSelection]="true" [rowSelection]="rowSelection"
-    [rowData]="rowData" [frameworkComponents]="frameworkComponents" [paginationAutoPageSize]="true"
-    (gridReady)="onGridReady($event)"></ag-grid-angular>
+  <mat-tab-group>
+    <mat-tab label="All">
+      <ag-grid-angular style="width: 100%; height: 235px;" #grid class="ag-theme-balham" [columnDefs]="columnDefs"
+        [pagination]="true" [defaultColDef]="defaultColDef" [suppressRowClickSelection]="true"
+        [rowSelection]="rowSelection" [rowData]="rowData" [frameworkComponents]="frameworkComponents"
+        [paginationAutoPageSize]="true" (gridReady)="onGridReady($event)"></ag-grid-angular>
+    </mat-tab>
+    <mat-tab label="Completed"> Content 2 </mat-tab>
+    <mat-tab label="In Progress"> Content 3 </mat-tab>
+  </mat-tab-group>
 </div>
