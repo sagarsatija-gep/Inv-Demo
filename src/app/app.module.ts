@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MatSidenavModule } from '@angular/material/sidenav';
     RecDocComponent,
     SideNavComponent,
     ButtonRendererComponent,
-    QuickLinksComponent
+    QuickLinksComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
