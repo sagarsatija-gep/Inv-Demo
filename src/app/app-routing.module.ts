@@ -1,19 +1,16 @@
 import { NgModule } from '@angular/core';
-// import { CommonModule } from '@angular/common';
+
 import { RouterModule, Routes } from '@angular/router';
 
-import { RecDocComponent } from './rec-doc/rec-doc.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
-  {
-    path: 'recDoc',
-    component: RecDocComponent
-  }
+  { path: 'dashboard', component: DashboardComponent },
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
 ];
 
 @NgModule({
   imports: [
-    // CommonModule,
     RouterModule.forRoot(routes)
   ],
   exports: [
