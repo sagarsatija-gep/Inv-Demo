@@ -12,27 +12,36 @@ export class SideNavComponent implements OnInit {
 
   sideNav = [{
     icon: "#icon_DashboardRe",
+    name: "Home",
+    link:"home"
+  },{
+    icon: "#icon_DashboardRe",
     name: "Dashboard",
     link: "dashboard"
   },
   {
-    icon: "#icon_Analyze",
-    name: "Analytics",
-    link: "analytics"
+    icon: "#icon_Analyze", 
+    name: "Manage Transactions",
+    link:"managetransactions"
   },
   {
     icon: "#icon_Notificatio",
-    name: "Situation",
-    link: "situation-room"
+    name: "Create Transactions",
+    link:"createtransactions"
   },
   {
     icon: "#icon_Supplier",
-    name: "Subscription",
-    link: "subscription"
+    name: "Current Stock Balance",
+    link:"currentstockbalance"
   }, {
     icon: "#icon_Settings",
-    name: " Settings",
-    link: "settings"
+    name: "Reports",
+    link:"reports"
+  },
+  {
+    icon: "#icon_Settings",
+    name: "Inventory Setup",
+    link:"inventorysetup"
   }
   ];
 
