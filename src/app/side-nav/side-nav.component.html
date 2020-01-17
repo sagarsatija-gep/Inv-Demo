@@ -1,0 +1,29 @@
+<mat-sidenav-container class="example-container">
+  <mat-sidenav #sidenav class="example-sidenav" mode="side" style="background: darkgray;" [(opened)]="opened"
+   
+    >
+    <img src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/ControlTower/distribution/__buildVersion___Document/assets/profilepic.jpg" class="profile-pic">
+    <div style="margin-top: 100%;">
+      <div *ngFor="let sideNav of sideNav" routerLink="/dm/{{sideNav.link}}"  style="text-align: center">
+        <div class="icons">
+            <i class="icon iconSmall" style="display: block">
+                <svg focusable="false">
+                  <use [attr.xlink:href]="sideNav.icon"></use>
+                </svg>
+              </i>
+              <span style="font-size: 12px;cursor: pointer;">
+                {{sideNav.name}}
+              </span>
+            </div>
+        </div>
+        
+    </div>
+    
+  </mat-sidenav>
+  <mat-sidenav-content class="example-sidenav-content">
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
+<button (click)="click()">
+  Click
+</button>
