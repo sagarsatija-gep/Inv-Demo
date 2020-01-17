@@ -7,7 +7,7 @@ import { ToggleService } from '../toggle.service';
   styleUrls: ['./side-nav.component.css']
 })
 export class SideNavComponent implements OnInit {
-  opened: boolean = false;
+  opened: boolean = true;
   @ViewChild('sidenav') graph;
 
   sideNav = [{
