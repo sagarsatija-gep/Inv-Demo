@@ -30,3 +30,8 @@
   .icons:hover {
     background-color: gray;
   }
+
+  svg{
+    height: 32px;
+    width: 32px;
+  }
