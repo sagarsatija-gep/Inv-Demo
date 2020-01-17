@@ -1,7 +1,9 @@
 import { Component, ViewChild } from '@angular/core';
 import { ButtonRendererComponent } from '../renderer/button-renderer.component';
+import { ViewEncapsulation } from '@angular/core';
 
 @Component({
+  encapsulation: ViewEncapsulation.None,
   selector: 'app-rec-doc',
   templateUrl: './rec-doc.component.html',
   styleUrls: ['./rec-doc.component.css']

@@ -14,7 +14,7 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
 import { DashboardComponent } from './dashboard/dashboard.component';
-
+import { ToggleService } from './toggle.service'
 @NgModule({
   declarations: [
     AppComponent,
@@ -34,7 +34,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
     MatTabsModule,
     BrowserAnimationsModule
   ],
-  providers: [],
+  providers: [ToggleService],
   bootstrap: [AppComponent],
   entryComponents: [ButtonRendererComponent]
 })
