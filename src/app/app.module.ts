@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { QuickLinksComponent } from './quick-links/quick-links.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { RecDocComponent } from './rec-doc/rec-doc.component';
@@ -17,6 +18,7 @@ import { HttpClientModule } from '@angular/common/http';
     AppComponent,
     RecDocComponent,
     ButtonRendererComponent,
+    QuickLinksComponent
   ],
   imports: [
     BrowserModule,

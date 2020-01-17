@@ -1,0 +1,22 @@
+<div class="container border border-secondary rounded-sm">
+  <div class="row">
+    <div class="col-sm-12 pt-3">
+      <h6>Quick Links</h6>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 mb-3" *ngFor="let x of quickLinks;">
+      <div class="border border-secondary rounded-sm p-4">
+        <div class="row">
+          <div class="col-sm-4 pl-0">
+            <img class="img-fluid mx-auto d-block" src={{x.img}}>
+          </div>
+          <div class="col-sm-8 pl-0 pt-2">
+            <span><h6>{{ x.txt }}</h6></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
