@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
-// import { SharedService } from '../shared.service';
+import { ToggleService } from '../toggle.service';
 
 @Component({
   selector: 'app-side-nav',
@@ -9,43 +9,39 @@ import { Component, OnInit, ViewChild } from '@angular/core';
 export class SideNavComponent implements OnInit {
   opened: boolean = false;
   @ViewChild('sidenav') graph;
-click(){
-  this.opened=!this.opened;
-}
+
   sideNav = [{
     icon: "#icon_DashboardRe",
     name: "Dashboard",
-    link:"dashboard"
+    link: "dashboard"
   },
   {
-    icon: "#icon_Analyze", 
+    icon: "#icon_Analyze",
     name: "Analytics",
-    link:"analytics"
+    link: "analytics"
   },
   {
     icon: "#icon_Notificatio",
     name: "Situation",
-    link:"situation-room"
+    link: "situation-room"
   },
   {
     icon: "#icon_Supplier",
     name: "Subscription",
-    link:"subscription"
+    link: "subscription"
   }, {
     icon: "#icon_Settings",
     name: " Settings",
-    link:"settings"
+    link: "settings"
   }
   ];
 
 
-  constructor() { }
+  constructor(private toggleService: ToggleService) { }
 
   ngOnInit() {
-
-    // this.SharedService.toggleThePannel.subscribe(data => {
-    //   console.log(data)
-    //   this.graph.toggle();
-    // })
+    this.toggleService.toggleThePannel.subscribe(data => {
+      this.graph.toggle();
+    })
   }
 }
