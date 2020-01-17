@@ -6,18 +6,26 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { RecDocComponent } from './rec-doc/rec-doc.component';
 
+import { ButtonRendererComponent } from './renderer/button-renderer.component';
+
 import { AgGridModule } from 'ag-grid-angular';
+
+import { HttpClientModule } from '@angular/common/http';
+
 @NgModule({
   declarations: [
     AppComponent,
-    RecDocComponent
+    RecDocComponent,
+    ButtonRendererComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
+    HttpClientModule,
     AgGridModule.withComponents([])
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [ButtonRendererComponent]
 })
 export class AppModule { }
