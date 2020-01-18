@@ -6,12 +6,3 @@
 .border-secondary {
     border-color: #d6d6d6!important;
 }
-
-.mat-tab-labels {
-    padding: 10px;
-}
-
-.mat-tab-label-content {
-    background: inherit;
-    color: black
-}

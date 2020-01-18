@@ -27,10 +27,6 @@ export class RecDocComponent {
         field: "docName"
       },
       {
-        headerName: "Document Type",
-        field: "docType"
-      },
-      {
         headerName: "Created Date",
         field: "createdDate"
       },
@@ -64,7 +60,7 @@ export class RecDocComponent {
         onClick: this.onDelete.bind(this),
       },
       width: 50,
-      minWidth: 20,
+      minWidth: 50,
       maxWidth: 50
     });
     this.grid.api.setColumnDefs(columnDefs);
