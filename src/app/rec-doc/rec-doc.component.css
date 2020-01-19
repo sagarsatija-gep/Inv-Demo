@@ -49,8 +49,8 @@
 }
 
 .checkbox-container .checkmark:after {
-    left: 9px;
-    top: 5px;
+    left: 7px;
+    top: 1px;
     width: 5px;
     height: 10px;
     border: solid white;
