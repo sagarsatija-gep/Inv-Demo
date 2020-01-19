@@ -64,11 +64,6 @@ const DOCUMENTS: Document[] = [
     docName: "Receipt# 001005463468",
     createdDate: "11/06/2019",
     lastAccessed: "11/06/2019 7:03 PM"
-  },
-  {
-    docName: "Receipt# 001005463468",
-    createdDate: "11/06/2019",
-    lastAccessed: "11/06/2019 7:03 PM"
   }
 ];
 
