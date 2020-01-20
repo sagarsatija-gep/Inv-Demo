@@ -1,7 +1,7 @@
 <mat-sidenav-container class="example-container">
   <mat-sidenav #sidenav class="example-sidenav" mode="side" style="background: #2f4866;" [(opened)]="opened">
     <div style="">
-      <div *ngFor="let sideNav of sideNav" routerLink="/dm/{{sideNav.link}}" style="    padding: 10px 0;text-align: center">
+      <div class="tab" *ngFor="let sideNav of sideNav" routerLink="/dm/{{sideNav.link}}" style="    padding: 10px 0;text-align: center">
         <div class="icons" style="max-width: 102px;">
 <div style="height: 32px;">
             <!-- Home -->

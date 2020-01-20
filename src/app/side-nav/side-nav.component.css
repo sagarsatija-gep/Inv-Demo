@@ -27,8 +27,8 @@
   margin: 20px
 }
 
-.icons:hover {
-  background-color: gray;
+.tab:hover {
+  background-color: #213246;
 }
 
 svg {
