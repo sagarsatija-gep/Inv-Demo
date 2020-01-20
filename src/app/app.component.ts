@@ -7,4 +7,19 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'app';
+
+  widgetData = [
+    {
+      'HeaderData': {
+        name: 'rahul',
+        data: 'pr'
+      }
+    },
+    {
+      'HeaderData': {
+        name: 'rahul1',
+        data: 'pr'
+      }
+  }
+]
 }
