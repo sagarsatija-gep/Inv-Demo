@@ -17,6 +17,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { ToggleService } from './toggle.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
+import { LineViewComponent } from './line-view/line-view.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FormsModule } from '@angular/forms';
     SideNavComponent,
     ButtonRendererComponent,
     QuickLinksComponent,
-    DashboardComponent
+    DashboardComponent,
+    LineViewComponent
   ],
   imports: [
     BrowserModule,
