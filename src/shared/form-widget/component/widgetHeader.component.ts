@@ -1,5 +1,12 @@
+import { DetailsComponent } from './details-component/details.component';
 import { TryComponet } from './tryComponent/tryComponent';
 import { Component, OnInit, Input, ViewChild, ViewContainerRef, ComponentFactoryResolver } from "@angular/core";
+
+
+const  components = {
+    'details': DetailsComponent,
+    'try': TryComponet
+};
 
 @Component({
     selector:'widget-header',
@@ -19,7 +26,9 @@ export class WidgetHeaderComponent implements OnInit {
     }
 
     createComponent() {
-        const componentFactory = this.cfr.resolveComponentFactory(TryComponet);
+        // if( = )
+        const componentName = components[this.headerData.data.componentName];
+        const componentFactory = this.cfr.resolveComponentFactory(componentName);
         this.component = this.trycomponent.createComponent(componentFactory);
         this.component.instance.data = this.headerData.data;
     }

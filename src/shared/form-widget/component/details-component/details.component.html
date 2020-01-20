@@ -1,0 +1,13 @@
+   <!-- <span *ngFor="let item of data.data">
+            {{item.name}} <br> {{item.values}}  
+        </span> -->
+
+        <div class="row" style="width: 100%;" >
+            <div class="" style="display: flex;" >
+                <div class="footer-item footer-margin " style="flex: 10%;"  *ngFor="let item of data.data" >
+                    <div class="small-light-text p10">{{item.name}}</div>
+                    <div class="bold-text">{{ item.values }}</div>
+                </div> 
+              <!-- <div class="view-more-contaniner" > <a (click)="onFooterViewClick()"> {{viewContent}}</a> </div> -->
+            </div>
+        </div>

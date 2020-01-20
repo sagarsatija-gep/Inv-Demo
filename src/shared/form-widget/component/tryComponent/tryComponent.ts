@@ -4,7 +4,7 @@ import { Component, Input } from "@angular/core";
     selector: 'try-one',
     template: `
             <div>
-            Hello {{ data }}
+            Hello try
             </div>
                 `
 })

@@ -1,0 +1,28 @@
+.p10 {
+    padding: 10px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: left;
+    /* flex-wrap: wrap; */
+    width: 100%;
+}
+
+.footer-item {
+    /* width: 16%; */
+    /* flex: 0 0 auto; */
+}
+.small-light-text {
+    color: #b6b7bb;
+    font-size: small;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+  
+.footer{
+
+    display: block;
+}
