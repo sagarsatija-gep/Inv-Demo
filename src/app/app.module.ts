@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { QuickLinksComponent } from './quick-links/quick-links.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RecDocComponent } from './rec-doc/rec-doc.component';
-import { ButtonRendererComponent } from './renderer/button-renderer.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
@@ -26,7 +25,6 @@ import { ManageReservationsComponent } from './manage-reservations/manage-reserv
     HeaderComponent,
     RecDocComponent,
     SideNavComponent,
-    ButtonRendererComponent,
     QuickLinksComponent,
     DashboardComponent,
     LineViewComponent,
@@ -45,6 +43,6 @@ import { ManageReservationsComponent } from './manage-reservations/manage-reserv
   ],
   providers: [ToggleService],
   bootstrap: [AppComponent],
-  entryComponents: [ButtonRendererComponent]
+  entryComponents: []
 })
 export class AppModule { }
