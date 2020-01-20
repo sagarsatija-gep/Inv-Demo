@@ -18,6 +18,7 @@ import { ToggleService } from './toggle.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { LineViewComponent } from './line-view/line-view.component';
+import { ManageReservationsComponent } from './manage-reservations/manage-reservations.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { LineViewComponent } from './line-view/line-view.component';
     ButtonRendererComponent,
     QuickLinksComponent,
     DashboardComponent,
-    LineViewComponent
+    LineViewComponent,
+    ManageReservationsComponent
   ],
   imports: [
     BrowserModule,
