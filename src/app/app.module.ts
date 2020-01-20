@@ -19,7 +19,10 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { LineViewComponent } from './line-view/line-view.component';
 import { ManageReservationsComponent } from './manage-reservations/manage-reservations.component';
-
+import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,7 +33,8 @@ import { ManageReservationsComponent } from './manage-reservations/manage-reserv
     QuickLinksComponent,
     DashboardComponent,
     LineViewComponent,
-    ManageReservationsComponent
+    ManageReservationsComponent,
+    // DialogComponent
   ],
   imports: [
     BrowserModule,
@@ -41,9 +45,13 @@ import { ManageReservationsComponent } from './manage-reservations/manage-reserv
     MatTabsModule,
     BrowserAnimationsModule,
     NgbModule.forRoot(),
-    FormsModule
+    FormsModule,
+    GridModule,
+    DialogModule,
+    CheckBoxModule 
+
   ],
-  providers: [ToggleService],
+  providers: [ToggleService,PageService, SortService, FilterService, GroupService],
   bootstrap: [AppComponent],
   entryComponents: [ButtonRendererComponent]
 })
