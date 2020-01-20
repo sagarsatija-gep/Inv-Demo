@@ -14,7 +14,10 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ToggleService } from './toggle.service'
+import { ToggleService } from './toggle.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,7 +35,9 @@ import { ToggleService } from './toggle.service'
     AgGridModule.withComponents([]),
     MatSidenavModule,
     MatTabsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbModule.forRoot(),
+    FormsModule
   ],
   providers: [ToggleService],
   bootstrap: [AppComponent],

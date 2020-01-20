@@ -1,37 +1,37 @@
-.icon.iconSmall > svg{
-    margin: 2px;
-  }
-  
-  .example-container {
-    height: calc(100vh - 71px)
-  }
-  
-  .example-sidenav-content {
-    height: 100%;
-    align-items: center;
-    overflow: initial;
-    justify-content: center;
-  }
-  
-  .example-sidenav {
-    width: 103px;
-    background: darkgray;
-    overflow: hidden;
-  }
-  
-  .profile-pic{
-    height: 60px;
-    border-radius: 30px;
-    width: 60px;
-    border: 1px solid;
-    margin: 20px
-  }
+.icon.iconSmall>svg {
+  margin: 2px;
+}
 
-  .icons:hover {
-    background-color: gray;
-  }
+.example-container {
+  height: calc(100vh - 71px)
+}
 
-  svg{
-    height: 32px;
-    width: 32px;
-  }
+.example-sidenav-content {
+  height: 100%;
+  align-items: center;
+  overflow-y: scroll;
+  justify-content: center;
+}
+
+.example-sidenav {
+  width: 103px;
+  background: darkgray;
+  overflow: hidden;
+}
+
+.profile-pic {
+  height: 60px;
+  border-radius: 30px;
+  width: 60px;
+  border: 1px solid;
+  margin: 20px
+}
+
+.icons:hover {
+  background-color: gray;
+}
+
+svg {
+  height: 32px;
+  width: 32px;
+}
