@@ -8,7 +8,7 @@ import { ToggleService } from '../toggle.service';
 })
 export class HeaderComponent implements OnInit {
   toggleThePage = false;
-
+  popup:boolean=true;
 
   constructor(private toggleService: ToggleService) { }
 
