@@ -1,0 +1,56 @@
+<div class="container-fluid border border-secondary rounded-sm mt-3 bg-white">
+  <div class="row">
+    <div class="col-sm-12 pt-3">
+      <h6>Recent Documents</h6>
+      <hr>
+    </div>
+  </div>
+  <div style="margin-top: -17px;">
+    <mat-tab-group>
+      <mat-tab label="All">
+        <table class="table table-striped">
+          <thead>
+            <tr>
+              <th scope="col">
+                <label class="checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </th>
+              <th scope="col">Document Name</th>
+              <th scope="col">Created Date</th>
+              <th scope="col">Last Accessed</th>
+              <th scope="col">
+                <button type="button" style="border: none; background: inherit; cursor: pointer;"><i
+                    class="far fa-trash-alt" aria-hidden="true"></i></button>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let document of documents">
+              <td scope="row">
+                <label class="checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </td>
+              <td style="color:#2196F3;">{{ document.docName }}</td>
+              <td>{{ document.createdDate }}</td>
+              <td>{{ document.lastAccessed }}</td>
+              <td>
+                <button type="button" style="border: none; background: inherit; cursor: pointer;"><i
+                    class="far fa-trash-alt" aria-hidden="true"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="d-flex justify-content-center p-2">
+          <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize">
+          </ngb-pagination>
+        </div>
+      </mat-tab>
+      <mat-tab label="Completed"> Content 2 </mat-tab>
+      <mat-tab label="In Progress"> Content 3 </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>
