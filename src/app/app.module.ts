@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { QuickLinksComponent } from './quick-links/quick-links.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RecDocComponent } from './rec-doc/rec-doc.component';
-import { ButtonRendererComponent } from './renderer/button-renderer.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
@@ -23,18 +22,20 @@ import { PageService, SortService, FilterService, GroupService } from '@syncfusi
 import { DialogModule } from '@syncfusion/ej2-angular-popups';
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { FilterComponent } from './filter/filter.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     RecDocComponent,
     SideNavComponent,
-    ButtonRendererComponent,
     QuickLinksComponent,
     DashboardComponent,
     LineViewComponent,
     ManageReservationsComponent,
     // DialogComponent
+    FilterComponent
   ],
   imports: [
     BrowserModule,
@@ -53,6 +54,6 @@ import { GridModule } from '@syncfusion/ej2-angular-grids';
   ],
   providers: [ToggleService,PageService, SortService, FilterService, GroupService],
   bootstrap: [AppComponent],
-  entryComponents: [ButtonRendererComponent]
+  entryComponents: []
 })
 export class AppModule { }

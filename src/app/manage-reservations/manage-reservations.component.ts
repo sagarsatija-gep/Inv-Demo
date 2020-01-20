@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./manage-reservations.component.css']
 })
 export class ManageReservationsComponent implements OnInit {
+  public isCollapsed = true;
 
   constructor() { }
 
