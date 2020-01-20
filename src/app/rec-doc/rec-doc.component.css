@@ -1,10 +1,18 @@
 .container-fluid {
     margin-top: 20px;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
 }
 
 .border-secondary {
     border-color: #d6d6d6!important;
+}
+
+.table thead th {
+    font-weight: 100;
+}
+
+.table td, .table th {
+    font-weight: bold;
 }
 
 .checkbox-container {

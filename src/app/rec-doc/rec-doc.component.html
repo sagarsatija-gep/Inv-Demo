@@ -28,19 +28,19 @@
           </thead>
           <tbody>
             <tr *ngFor="let document of documents">
-              <th scope="row">
+              <td scope="row">
                 <label class="checkbox-container">
                   <input type="checkbox" />
                   <span class="checkmark"></span>
                 </label>
-              </th>
-              <td>{{ document.docName }}</td>
+              </td>
+              <td style="color:#2196F3;">{{ document.docName }}</td>
               <td>{{ document.createdDate }}</td>
               <td>{{ document.lastAccessed }}</td>
-              <th scope="col">
+              <td>
                 <button type="button" style="border: none; background: inherit; cursor: pointer;"><i
                     class="far fa-trash-alt" aria-hidden="true"></i></button>
-              </th>
+              </td>
             </tr>
           </tbody>
         </table>
