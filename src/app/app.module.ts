@@ -20,6 +20,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { LineViewComponent } from './line-view/line-view.component';
 import { ManageReservationsComponent } from './manage-reservations/manage-reservations.component';
+import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +32,8 @@ import { ManageReservationsComponent } from './manage-reservations/manage-reserv
     QuickLinksComponent,
     DashboardComponent,
     LineViewComponent,
-    ManageReservationsComponent
+    ManageReservationsComponent,
+    PurchaseDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -47,6 +49,7 @@ import { ManageReservationsComponent } from './manage-reservations/manage-reserv
   ],
   providers: [ToggleService],
   bootstrap: [AppComponent],
-  entryComponents: [ButtonRendererComponent]
+  entryComponents: [ButtonRendererComponent],
+  exports: [RecDocComponent]
 })
 export class AppModule { }

@@ -1,3 +1,5 @@
+import { DocumentTable } from './doc-table/docTable.component';
+import { RecDocComponent } from './../../../app/rec-doc/rec-doc.component';
 import { DetailsComponent } from './details-component/details.component';
 import { TryComponet } from './tryComponent/tryComponent';
 import { Component, OnInit, Input, ViewChild, ViewContainerRef, ComponentFactoryResolver } from "@angular/core";
@@ -5,32 +7,34 @@ import { Component, OnInit, Input, ViewChild, ViewContainerRef, ComponentFactory
 
 const  components = {
     'details': DetailsComponent,
-    'try': TryComponet
+    'tabComponent': DocumentTable
 };
 
 @Component({
     selector:'widget-header',
-    styleUrls:[],
+    styleUrls:['./widgetHeader.component.scss'],
     templateUrl:'./widgetHeader.component.html'
 })
 export class WidgetHeaderComponent implements OnInit {
     @Input() headerData: any ={};
     @ViewChild( 'trycomponent', { read: ViewContainerRef}) trycomponent: ViewContainerRef;
 
-    togal = true;
+    togal:boolean;
     component;
     constructor(private cfr: ComponentFactoryResolver){}
     
     ngOnInit(): void {
+        this.togal = this.headerData.isOpen;
         this.createComponent();
     }
 
     createComponent() {
-        // if( = )
-        const componentName = components[this.headerData.data.componentName];
-        const componentFactory = this.cfr.resolveComponentFactory(componentName);
-        this.component = this.trycomponent.createComponent(componentFactory);
-        this.component.instance.data = this.headerData.data;
+        if(this.togal) {
+            const componentName = components[this.headerData.data.componentName];
+            const componentFactory = this.cfr.resolveComponentFactory(componentName);
+            this.component = this.trycomponent.createComponent(componentFactory);
+            this.component.instance.data = this.headerData.data;
+        }
     }
 
     headerClick() {
