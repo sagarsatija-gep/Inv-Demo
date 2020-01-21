@@ -1,0 +1,19 @@
+.image-upload {
+  input {
+    display: none;
+  }
+
+  img {
+    width: 40px;
+    cursor: pointer;
+  }
+}
+
+
+.btnAddfiles {
+  background-color: #00838F;
+  color: #fff;
+  padding: 5px 20px;
+  border-color: #00838F;
+  border-radius: 5px;
+}
