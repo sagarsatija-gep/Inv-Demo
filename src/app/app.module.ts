@@ -6,7 +6,6 @@ import { AppComponent } from './app.component';
 import { QuickLinksComponent } from './quick-links/quick-links.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RecDocComponent } from './rec-doc/rec-doc.component';
-import { ButtonRendererComponent } from './renderer/button-renderer.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
@@ -14,16 +13,29 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ToggleService } from './toggle.service'
+import { ToggleService } from './toggle.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { LineViewComponent } from './line-view/line-view.component';
+import { ManageReservationsComponent } from './manage-reservations/manage-reservations.component';
+import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { FilterComponent } from './filter/filter.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     RecDocComponent,
     SideNavComponent,
-    ButtonRendererComponent,
     QuickLinksComponent,
-    DashboardComponent
+    DashboardComponent,
+    LineViewComponent,
+    ManageReservationsComponent,
+    // DialogComponent
+    FilterComponent
   ],
   imports: [
     BrowserModule,
@@ -32,10 +44,16 @@ import { ToggleService } from './toggle.service'
     AgGridModule.withComponents([]),
     MatSidenavModule,
     MatTabsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbModule.forRoot(),
+    FormsModule,
+    GridModule,
+    DialogModule,
+    CheckBoxModule 
+
   ],
-  providers: [ToggleService],
+  providers: [ToggleService,PageService, SortService, FilterService, GroupService],
   bootstrap: [AppComponent],
-  entryComponents: [ButtonRendererComponent]
+  entryComponents: []
 })
 export class AppModule { }

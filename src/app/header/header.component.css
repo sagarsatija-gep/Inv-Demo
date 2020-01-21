@@ -51,8 +51,20 @@ input[type=text] {
   }
 
   .search-img{
-    padding: 7px 4px;
+    padding: 7px 7px;
     position: relative;
     z-index: 1;
   
+  }
+
+  .account-details{
+    position: fixed;
+    height: 25rem;
+    width: 20rem;
+    z-index: 10;
+    top: 77px;
+    right: 6px;
+    background: white;
+    box-shadow: -1px 0px 5px 3px rgba(0,0,0,0.36);
+    
   }
