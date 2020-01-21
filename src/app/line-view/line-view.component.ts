@@ -1,11 +1,12 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit, ViewChild, ViewEncapsulation } from '@angular/core';
 import { inventoryData } from '../../../data';
 import { GroupService, SortService, GridComponent } from '@syncfusion/ej2-angular-grids';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 @Component({
   selector: 'app-line-view',
   templateUrl: './line-view.component.html',
-  styleUrls: ['./line-view.component.css']
+  styleUrls: ['./line-view.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class LineViewComponent implements OnInit {
   public data: Object[];
