@@ -8,8 +8,8 @@ import { PickListComponent } from './pick-list/pick-list.component';
 import { ManagePackingListComponent } from './manage-packing-list/manage-packing-list.component';
 
 const routes: Routes = [
-  { path: 'dashboard', component: DashboardComponent },
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: 'home', component: DashboardComponent },
+  { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'manageReservations', component: ManageReservationsComponent },
   { path: 'purchaseDetails', component: PurchaseDetailsComponent },
   { path: 'pickList', component: PickListComponent },
