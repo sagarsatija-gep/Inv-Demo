@@ -1,0 +1,25 @@
+<div class="container-fluid border border-secondary rounded-sm mt-4 bg-white">
+  <div class="row">
+    <div class="col-sm-12 pt-3">
+      <h5>Unprocessed Packing Slips</h5>
+      <hr>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 mb-3" *ngFor="let slip of unprocessedSlips;">
+      <div class="border border-secondary rounded-sm p-4 hoverEffect">
+        <div class="row">
+          <div class="col-12 slip-main-head">
+            {{ slip.fileName }}
+          </div>
+          <div class="col-12">
+            <span class="slip-head">PO Number: </span><span class="slip-data">{{ slip.poNumber }}</span>
+          </div>
+          <div class="col-12">
+            <span class="slip-head">Upload: </span><span class="slip-data">{{ slip.uploadDate }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
