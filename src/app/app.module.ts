@@ -60,7 +60,6 @@ import { PickListComponent } from './pick-list/pick-list.component';
   ],
   providers: [ToggleService,PageService, SortService, FilterService, GroupService],
   bootstrap: [AppComponent],
-  entryComponents: [],
-  exports: [RecDocComponent]
+  entryComponents: []
 })
 export class AppModule { }
