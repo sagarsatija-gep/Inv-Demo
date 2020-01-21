@@ -198,6 +198,9 @@ export class PurchaseDetailsComponent implements OnInit {
   'HeaderData': {
     name: 'Notes & Attachements',
     isOpen: false,
+    data: {
+      componentName: 'Attachement'
+    }
   }
 }
 ]
