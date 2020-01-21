@@ -25,6 +25,7 @@ import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { FilterComponent } from './filter/filter.component';
 import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
+import { PickListComponent } from './pick-list/pick-list.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { PurchaseDetailsComponent } from './purchase-details/purchase-details.co
     ManageReservationsComponent,
     // DialogComponent
     FilterComponent,
-    PurchaseDetailsComponent
+    PurchaseDetailsComponent,
+    PickListComponent
   ],
   imports: [
     BrowserModule,
