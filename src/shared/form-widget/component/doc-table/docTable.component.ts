@@ -1,5 +1,5 @@
 import { DevTable } from './dev-table/dev-table.component';
-import { Component, Input, OnInit, ViewChild, ViewContainerRef, ComponentFactoryResolver } from "@angular/core";
+import { Component, Input, OnInit, ViewChild, ViewContainerRef, ComponentFactoryResolver, ViewEncapsulation } from "@angular/core";
 
 interface Document {
     id?: number;
@@ -15,7 +15,8 @@ const components = {
 @Component({
     selector: 'doc-table',
     templateUrl: './docTable.component.html',
-    styleUrls: ['./docTable.component.css']
+    styleUrls: ['./docTable.component.css'],
+    encapsulation: ViewEncapsulation.None
 })
 export class DocumentTable implements OnInit {
 
