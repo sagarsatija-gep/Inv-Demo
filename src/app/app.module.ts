@@ -23,6 +23,7 @@ import { DialogModule } from '@syncfusion/ej2-angular-popups';
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { FilterComponent } from './filter/filter.component';
+import { PickListComponent } from './pick-list/pick-list.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { FilterComponent } from './filter/filter.component';
     LineViewComponent,
     ManageReservationsComponent,
     // DialogComponent
-    FilterComponent
+    FilterComponent,
+    PickListComponent
   ],
   imports: [
     BrowserModule,
