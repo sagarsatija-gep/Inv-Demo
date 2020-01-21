@@ -24,6 +24,9 @@ import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { FilterComponent } from './filter/filter.component';
 import { PickListComponent } from './pick-list/pick-list.component';
+import { BarcodeGeneratorAllModule,QRCodeGeneratorAllModule,DataMatrixGeneratorAllModule } from '@syncfusion/ej2-angular-barcode-generator';
+import { NgxBarcodeModule } from 'ngx-barcode';
+
 
 @NgModule({
   declarations: [
@@ -51,7 +54,9 @@ import { PickListComponent } from './pick-list/pick-list.component';
     FormsModule,
     GridModule,
     DialogModule,
-    CheckBoxModule 
+    CheckBoxModule ,
+    BarcodeGeneratorAllModule,
+    NgxBarcodeModule
 
   ],
   providers: [ToggleService,PageService, SortService, FilterService, GroupService],
