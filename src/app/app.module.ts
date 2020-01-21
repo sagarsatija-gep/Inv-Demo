@@ -19,12 +19,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { LineViewComponent } from './line-view/line-view.component';
 import { ManageReservationsComponent } from './manage-reservations/manage-reservations.component';
+import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
 import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
 import { DialogModule } from '@syncfusion/ej2-angular-popups';
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { FilterComponent } from './filter/filter.component';
-import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
+import { PickListComponent } from './pick-list/pick-list.component';
+import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
 
 @NgModule({
   declarations: [
@@ -36,9 +38,11 @@ import { PurchaseDetailsComponent } from './purchase-details/purchase-details.co
     DashboardComponent,
     LineViewComponent,
     ManageReservationsComponent,
+    PurchaseDetailsComponent,
     // DialogComponent
     FilterComponent,
-    PurchaseDetailsComponent
+    PickListComponent,
+    GoodsIssueComponent
   ],
   imports: [
     BrowserModule,
@@ -58,7 +62,6 @@ import { PurchaseDetailsComponent } from './purchase-details/purchase-details.co
   ],
   providers: [ToggleService,PageService, SortService, FilterService, GroupService],
   bootstrap: [AppComponent],
-  entryComponents: [],
-  exports: [RecDocComponent]
+  entryComponents: []
 })
 export class AppModule { }
