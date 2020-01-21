@@ -16,6 +16,7 @@ export class PurchaseDetailsComponent implements OnInit {
       'HeaderData': {
         name: 'Header Details',
         isOpen: true,
+        collapsible: true,
         data: {
           componentName: 'details',
           isSubDetails: true,
@@ -93,14 +94,57 @@ export class PurchaseDetailsComponent implements OnInit {
       }
     },
     {
+        'HeaderData': {
+          name: 'Line Details',
+          isOpen: false,
+          collapsible: true,
+          data: {
+            componentName: 'tabComponent',
+            data: [
+              {
+                tabName: 'Line',
+                tabData: [
+                  {
+                    docName: "Receipt# 001005463468",
+                    createdDate: "11/06/2019",
+                    lastAccessed: "11/06/2019 7:03 PM"
+                  },
+                  {
+                    docName: "Receipt# 001005463468",
+                    createdDate: "11/06/2019",
+                    lastAccessed: "11/06/2019 7:03 PM"
+                  },
+                  {
+                    docName: "Receipt# 001005463468",
+                    createdDate: "11/06/2019",
+                    lastAccessed: "11/06/2019 7:03 PM"
+                  }
+                ] 
+              },
+              {
+                tabName: 'Accounting',
+                tabData: [
+                  {
+                    docName: "Receipt# 001005463468",
+                    createdDate: "11/06/2019",
+                    lastAccessed: "11/06/2019 7:03 PM"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+    },
+    {
       'HeaderData': {
-        name: 'Line Details',
+        name: 'Related Documents',
         isOpen: false,
+        collapsible: true,
         data: {
           componentName: 'tabComponent',
           data: [
             {
-              tabName: 'Line',
+              tabName: 'Order',
               tabData: [
                 {
                   docName: "Receipt# 001005463468",
@@ -120,7 +164,27 @@ export class PurchaseDetailsComponent implements OnInit {
               ] 
             },
             {
-              tabName: 'Accounting',
+              tabName: 'ASN',
+              tabData: [
+                {
+                  docName: "Receipt# 001005463468",
+                  createdDate: "11/06/2019",
+                  lastAccessed: "11/06/2019 7:03 PM"
+                }
+              ]
+            },
+            {
+              tabName: 'Receipt',
+              tabData: [
+                {
+                  docName: "Receipt# 001005463468",
+                  createdDate: "11/06/2019",
+                  lastAccessed: "11/06/2019 7:03 PM"
+                }
+              ]
+            },
+            {
+              tabName: 'Invoice',
               tabData: [
                 {
                   docName: "Receipt# 001005463468",
@@ -135,74 +199,14 @@ export class PurchaseDetailsComponent implements OnInit {
   },
   {
     'HeaderData': {
-      name: 'Related Documents',
+      name: 'Notes & Attachements',
       isOpen: false,
+      collapsible: true,
       data: {
-        componentName: 'tabComponent',
-        data: [
-          {
-            tabName: 'Order',
-            tabData: [
-              {
-                docName: "Receipt# 001005463468",
-                createdDate: "11/06/2019",
-                lastAccessed: "11/06/2019 7:03 PM"
-              },
-              {
-                docName: "Receipt# 001005463468",
-                createdDate: "11/06/2019",
-                lastAccessed: "11/06/2019 7:03 PM"
-              },
-              {
-                docName: "Receipt# 001005463468",
-                createdDate: "11/06/2019",
-                lastAccessed: "11/06/2019 7:03 PM"
-              }
-            ] 
-          },
-          {
-            tabName: 'ASN',
-            tabData: [
-              {
-                docName: "Receipt# 001005463468",
-                createdDate: "11/06/2019",
-                lastAccessed: "11/06/2019 7:03 PM"
-              }
-            ]
-          },
-          {
-            tabName: 'Receipt',
-            tabData: [
-              {
-                docName: "Receipt# 001005463468",
-                createdDate: "11/06/2019",
-                lastAccessed: "11/06/2019 7:03 PM"
-              }
-            ]
-          },
-          {
-            tabName: 'Invoice',
-            tabData: [
-              {
-                docName: "Receipt# 001005463468",
-                createdDate: "11/06/2019",
-                lastAccessed: "11/06/2019 7:03 PM"
-              }
-            ]
-          }
-        ]
+        componentName: 'Attachement'
       }
     }
-},
-{
-  'HeaderData': {
-    name: 'Notes & Attachements',
-    isOpen: false,
-    data: {
-      componentName: 'Attachement'
-    }
   }
-}
 ]
 
 }

@@ -28,6 +28,7 @@ import { PickListComponent } from './pick-list/pick-list.component';
 import { ManagePackingListComponent } from './manage-packing-list/manage-packing-list.component';
 import { UnprocessedPackingSlipsComponent } from './unprocessed-packing-slips/unprocessed-packing-slips.component';
 import { PackingSlipsTabComponent } from './packing-slips-tab/packing-slips-tab.component';
+import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
 
 @NgModule({
   declarations: [
@@ -42,11 +43,12 @@ import { PackingSlipsTabComponent } from './packing-slips-tab/packing-slips-tab.
     // DialogComponent
     FilterComponent,
     PurchaseDetailsComponent,
-    PickListComponent,
     NgbdModalContent,
     ManagePackingListComponent,
     UnprocessedPackingSlipsComponent,
-    PackingSlipsTabComponent
+    PackingSlipsTabComponent,
+    PickListComponent,
+    GoodsIssueComponent
   ],
   imports: [
     BrowserModule,

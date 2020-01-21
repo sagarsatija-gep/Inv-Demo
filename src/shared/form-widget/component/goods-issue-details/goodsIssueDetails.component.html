@@ -1,0 +1,24 @@
+<!-- <div class="row" style="padding: 4px; margin: unset;">
+    <div style="padding: 16px;" class="col-2" *ngFor="let item of data.data">
+        <div style="color: #a3a3a3;">{{ item.name }}</div>
+        <div>{{ item.values }}</div>
+    </div>
+</div> -->
+<div class="row" style="margin: unset; border-top: 1px solid lightgray;">
+  <div class="col-sm-4" style="margin: unset; border: 1px solid;" *ngFor="let item of data.data">
+    <div class="row">
+      <div class="col-sm-6" *ngFor="let field of item.data">
+        <div style="color: #a3a3a3;">{{ field.name }}</div>
+        <div *ngIf="field.type == 'text'">{{ field.value }}</div>
+        <div *ngIf="field.type == 'textBox'">
+          <input type="text" id='email' [(ngModel)]='field.value'>
+        </div>
+        <div *ngIf="field.type == 'date'">
+          <input type="date" id='email' [(ngModel)]='field.value'>
+        </div>
+        
+      </div>
+    </div>
+  </div>    
+
+</div>

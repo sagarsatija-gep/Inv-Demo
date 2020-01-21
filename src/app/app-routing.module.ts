@@ -1,3 +1,4 @@
+import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
 import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -12,7 +13,8 @@ const routes: Routes = [
   { path: 'manageReservations', component: ManageReservationsComponent },
   { path: 'purchaseDetails', component: PurchaseDetailsComponent },
   { path: 'pickList', component: PickListComponent },
-  { path: 'managePackingList', component: ManagePackingListComponent }
+  { path: 'managePackingList', component: ManagePackingListComponent },
+  { path: 'goods', component: GoodsIssueComponent }
 ];
 
 @NgModule({

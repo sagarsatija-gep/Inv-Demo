@@ -1,3 +1,4 @@
+import { FormsModule } from '@angular/forms';
 import { WidgetAttachemant } from './component/widgetAttachement/widgetAttachement.component';
 import { SubDetailsComponent } from './component/details-component/sub-details/subDetails.component';
 import { DevTable } from './component/doc-table/dev-table/dev-table.component';
@@ -11,27 +12,36 @@ import { WidgetHeaderComponent } from './component/widgetHeader.component';
 import { WidgetFormComponent } from './container/widgetForm.component';
 import { CommonModule } from '@angular/common';
 import { NgModule } from "@angular/core";
+import { GoodsIssueDetails } from './component/goods-issue-details/goodsIssueDetails.component';
 
 @NgModule({
     imports: [CommonModule, 
         NgbModule, 
-        MatTabsModule ],
-    declarations: [WidgetFormComponent,
+        MatTabsModule,
+        FormsModule
+     ],
+    declarations: [
+        WidgetFormComponent,
          WidgetHeaderComponent, 
          TryComponet, 
          DetailsComponent, 
          DocumentTable, 
          DevTable, 
          SubDetailsComponent,
-         WidgetAttachemant],
+         WidgetAttachemant,
+         GoodsIssueDetails
+        ],
     exports:[WidgetFormComponent],
-    entryComponents: [WidgetHeaderComponent, 
+    entryComponents: [
+        WidgetHeaderComponent, 
         TryComponet, 
         DetailsComponent, 
         RecDocComponent, 
         DocumentTable, 
         DevTable, 
         SubDetailsComponent,
-        WidgetAttachemant]
+        WidgetAttachemant,
+        GoodsIssueDetails
+    ]
 })
 export class FormWidget {}
