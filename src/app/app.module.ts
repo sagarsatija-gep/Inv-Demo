@@ -25,6 +25,9 @@ import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { FilterComponent } from './filter/filter.component';
 import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
 import { PickListComponent } from './pick-list/pick-list.component';
+import { ManagePackingListComponent } from './manage-packing-list/manage-packing-list.component';
+import { UnprocessedPackingSlipsComponent } from './unprocessed-packing-slips/unprocessed-packing-slips.component';
+import { PackingSlipsTabComponent } from './packing-slips-tab/packing-slips-tab.component';
 
 @NgModule({
   declarations: [
@@ -40,7 +43,10 @@ import { PickListComponent } from './pick-list/pick-list.component';
     FilterComponent,
     PurchaseDetailsComponent,
     PickListComponent,
-    NgbdModalContent
+    NgbdModalContent,
+    ManagePackingListComponent,
+    UnprocessedPackingSlipsComponent,
+    PackingSlipsTabComponent
   ],
   imports: [
     BrowserModule,

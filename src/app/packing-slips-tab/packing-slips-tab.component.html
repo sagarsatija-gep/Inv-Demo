@@ -1,0 +1,65 @@
+<div class="container-fluid border border-secondary rounded-sm mt-3 bg-white">
+  <div style="margin-top: -17px;">
+    <mat-tab-group>
+      <mat-tab label="All">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">
+                <label class="checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </th>
+              <th scope="col">File Name</th>
+              <th scope="col">PO Number</th>
+              <th scope="col">Upload Date</th>
+              <th scope="col">Status</th>
+              <th scope="col">Receipt Number</th>
+              <th scope="col">
+                <button type="button" style="border: none; background: inherit; cursor: pointer;"><i
+                    class="far fa-trash-alt" aria-hidden="true"></i></button>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let slip of packingSlips">
+              <td scope="row">
+                <label class="checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </td>
+              <td style="color:#3D5AFE; cursor: pointer;">{{ slip.fileName }}</td>
+              <td>{{ slip.poNumber }}</td>
+              <td>{{ slip.uploadDate }}</td>
+              <td>
+                <div class="slip-status" *ngIf="slip.status == 'UNPROCESSED'"
+                  style="border: 1px solid orange; color: orange;">
+                  {{ slip.status }}</div>
+                <div class="slip-status" *ngIf="slip.status == 'IN PROGRESS'"
+                  style="border: 1px solid blue; color: blue;">
+                  {{ slip.status }}</div>
+                <div class="slip-status" *ngIf="slip.status == 'RECEIPT CREATED'"
+                  style="border: 1px solid green; color: green;">
+                  {{ slip.status }}</div>
+              </td>
+              <td>{{ slip.receiptNumber }}</td>
+              <td>
+                <button type="button" style="border: none; background: inherit; cursor: pointer;"><i
+                    class="far fa-trash-alt" aria-hidden="true"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="d-flex justify-content-center p-2">
+          <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize">
+          </ngb-pagination>
+        </div>
+      </mat-tab>
+      <mat-tab label="Unprocessed"> Content 2 </mat-tab>
+      <mat-tab label="In Progress"> Content 3 </mat-tab>
+      <mat-tab label="Receipt Created"> Content 4 </mat-tab>
+    </mat-tab-group>
+  </div>
+</div>

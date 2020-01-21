@@ -15,16 +15,13 @@
 
 .mat-tab-group.mat-primary .mat-ink-bar {
   background-color: #3D5AFE;
-
-
 }
 
 .table thead th {
   font-weight: 100;
 }
 
-.table td,
-.table th {
+.table td, .table th {
   font-weight: 500;
 }
 
