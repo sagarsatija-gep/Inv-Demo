@@ -1,3 +1,4 @@
+import { WidgetAttachemant } from './component/widgetAttachement/widgetAttachement.component';
 import { SubDetailsComponent } from './component/details-component/sub-details/subDetails.component';
 import { DevTable } from './component/doc-table/dev-table/dev-table.component';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -21,7 +22,8 @@ import { NgModule } from "@angular/core";
          DetailsComponent, 
          DocumentTable, 
          DevTable, 
-         SubDetailsComponent],
+         SubDetailsComponent,
+         WidgetAttachemant],
     exports:[WidgetFormComponent],
     entryComponents: [WidgetHeaderComponent, 
         TryComponet, 
@@ -29,6 +31,7 @@ import { NgModule } from "@angular/core";
         RecDocComponent, 
         DocumentTable, 
         DevTable, 
-        SubDetailsComponent]
+        SubDetailsComponent,
+        WidgetAttachemant]
 })
 export class FormWidget {}

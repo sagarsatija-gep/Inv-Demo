@@ -1,3 +1,4 @@
+import { WidgetAttachemant } from './widgetAttachement/widgetAttachement.component';
 import { DocumentTable } from './doc-table/docTable.component';
 import { RecDocComponent } from './../../../app/rec-doc/rec-doc.component';
 import { DetailsComponent } from './details-component/details.component';
@@ -7,7 +8,8 @@ import { Component, OnInit, Input, ViewChild, ViewContainerRef, ComponentFactory
 
 const  components = {
     'details': DetailsComponent,
-    'tabComponent': DocumentTable
+    'tabComponent': DocumentTable,
+    'Attachement': WidgetAttachemant
 };
 
 @Component({
@@ -33,7 +35,9 @@ export class WidgetHeaderComponent implements OnInit {
             const componentName = components[this.headerData.data.componentName];
             const componentFactory = this.cfr.resolveComponentFactory(componentName);
             this.component = this.trycomponent.createComponent(componentFactory);
-            this.component.instance.data = this.headerData.data;
+            if( this.headerData.data != null) {
+                this.component.instance.data = this.headerData.data;
+            }
         }
     }
 
