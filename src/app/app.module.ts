@@ -1,3 +1,4 @@
+import { FormWidget } from './../shared/form-widget/form-widget.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -23,6 +24,7 @@ import { DialogModule } from '@syncfusion/ej2-angular-popups';
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { FilterComponent } from './filter/filter.component';
+import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
 
 @NgModule({
   declarations: [
@@ -35,10 +37,12 @@ import { FilterComponent } from './filter/filter.component';
     LineViewComponent,
     ManageReservationsComponent,
     // DialogComponent
-    FilterComponent
+    FilterComponent,
+    PurchaseDetailsComponent
   ],
   imports: [
     BrowserModule,
+    FormWidget,
     AppRoutingModule,
     HttpClientModule,
     AgGridModule.withComponents([]),
@@ -54,6 +58,7 @@ import { FilterComponent } from './filter/filter.component';
   ],
   providers: [ToggleService,PageService, SortService, FilterService, GroupService],
   bootstrap: [AppComponent],
-  entryComponents: []
+  entryComponents: [],
+  exports: [RecDocComponent]
 })
 export class AppModule { }
