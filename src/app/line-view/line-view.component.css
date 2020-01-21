@@ -9,3 +9,57 @@
 .e-grouped{
     display: none;
 }
+
+.e-grid .e-headercell, .e-grid .e-detailheadercell{
+    padding: 0px 7px 0px;
+}
+
+.e-grid .e-gridheader .e-sortfilter .e-headercelldiv, .e-grid .e-gridheader .e-stackedheadercelldiv, .e-grid .e-gridheader .e-headercell .e-headercelldiv.e-headerchkcelldiv{
+    padding: 0 0em 0 0.6em;
+}
+
+/* toggling the arrow on collapse */
+.e-grid .e-icon-gdownarrow, .e-grid .e-icon-grightarrow{
+    position: absolute;
+    margin-left: 96%;
+    margin-top: -10px;
+}
+
+.e-grid .e-icon-grightarrow::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f106";
+    font-size: 20px;
+}
+
+.e-grid .e-icon-gdownarrow::before{
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f107";
+    font-size: 20px;
+}
+
+.e-grid .e-gridcontent tr:first-child td, .e-grid .e-gridcontent tr:nth-child(6) td{
+    background-color: #E8EAF6;
+    font-weight: 500;
+    font-size: 1.2em;
+}
+
+.e-grid .e-rowcell{
+    padding: 8px;
+}
+
+.e-grid .e-gridheader tr th:first-child {
+    /* display: none; */
+    background-color: red;
+    display: contents;
+}
+
+.e-grid .e-gridheader .e-sortfilter .e-headercelldiv{
+    padding: 0 0.5em 0 0.6em !important;
+}
+
+.e-grid.e-responsive .e-rowcell, .e-grid.e-responsive .e-headercelldiv {
+    text-overflow: clip;
+    white-space: nowrap;
+}

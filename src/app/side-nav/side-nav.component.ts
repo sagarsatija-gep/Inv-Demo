@@ -22,7 +22,7 @@ export class SideNavComponent implements OnInit {
   {
     icon: "#icon_Analyze", 
     name: "Manage Transactions",
-    link:"managetransactions"
+    link:"manageReservations"
   },
   {
     icon: "#icon_Notificatio",
@@ -36,7 +36,7 @@ export class SideNavComponent implements OnInit {
   }, {
     icon: "#icon_Settings",
     name: "Reports",
-    link:"reports"
+    link:"purchaseDetails"
   },
   {
     icon: "#icon_Settings",

@@ -1,0 +1,26 @@
+.border-secondary {
+    border-color: #d6d6d6!important;
+}
+
+.hoverEffect {
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.hoverEffect:hover {
+    box-shadow: 0px 0px 6px rgba(0, 0, 0, 0.5);
+}
+
+.slip-main-head {
+    font-weight: bold;
+    color: #3D5AFE;
+    font-size: 17px;
+}
+
+.slip-head {
+    font-size: small;
+}
+
+.slip-data {
+    font-size: smaller;
+}
