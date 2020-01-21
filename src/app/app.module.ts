@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { QuickLinksComponent } from './quick-links/quick-links.component';
 import { AppRoutingModule } from './app-routing.module';
 import { RecDocComponent } from './rec-doc/rec-doc.component';
-import { ButtonRendererComponent } from './renderer/button-renderer.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
 import { HeaderComponent } from './header/header.component';
@@ -20,6 +19,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { LineViewComponent } from './line-view/line-view.component';
 import { ManageReservationsComponent } from './manage-reservations/manage-reservations.component';
+import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
+import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
+import { GridModule } from '@syncfusion/ej2-angular-grids';
+import { FilterComponent } from './filter/filter.component';
 import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
 
 @NgModule({
@@ -28,11 +32,12 @@ import { PurchaseDetailsComponent } from './purchase-details/purchase-details.co
     HeaderComponent,
     RecDocComponent,
     SideNavComponent,
-    ButtonRendererComponent,
     QuickLinksComponent,
     DashboardComponent,
     LineViewComponent,
     ManageReservationsComponent,
+    // DialogComponent
+    FilterComponent,
     PurchaseDetailsComponent
   ],
   imports: [
@@ -45,11 +50,15 @@ import { PurchaseDetailsComponent } from './purchase-details/purchase-details.co
     MatTabsModule,
     BrowserAnimationsModule,
     NgbModule.forRoot(),
-    FormsModule
+    FormsModule,
+    GridModule,
+    DialogModule,
+    CheckBoxModule 
+
   ],
-  providers: [ToggleService],
+  providers: [ToggleService,PageService, SortService, FilterService, GroupService],
   bootstrap: [AppComponent],
-  entryComponents: [ButtonRendererComponent],
+  entryComponents: [],
   exports: [RecDocComponent]
 })
 export class AppModule { }
