@@ -6,7 +6,7 @@ import { Component, Input, ViewChild } from '@angular/core';
 @Component({
     selector: 'subDetails',
     templateUrl: './subDetails.component.html',
-    styleUrls: ['./subDetails.component.css']
+    styleUrls: ['./subDetails.component.scss']
 })
 export class SubDetailsComponent implements OnInit {
     @Input() subDetail: any = {};
