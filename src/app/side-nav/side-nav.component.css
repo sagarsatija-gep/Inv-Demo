@@ -27,8 +27,18 @@
   margin: 20px
 }
 
+.tab{
+  padding: 15px 0px;
+  text-align: center
+}
+
 .tab:hover {
   background-color: #213246;
+}
+
+.tab .icons{
+  max-width: 102px;
+  line-height: 1;
 }
 
 svg {
