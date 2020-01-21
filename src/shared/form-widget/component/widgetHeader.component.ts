@@ -9,7 +9,7 @@ import { Component, OnInit, Input, ViewChild, ViewContainerRef, ComponentFactory
 const  components = {
     'details': DetailsComponent,
     'tabComponent': DocumentTable,
-    'Attachement': WidgetAttachemant
+    'Attachement': WidgetAttachemant,
 };
 
 @Component({
