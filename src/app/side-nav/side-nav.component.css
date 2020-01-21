@@ -39,6 +39,7 @@
 .tab .icons{
   max-width: 102px;
   line-height: 1;
+  cursor: pointer;
 }
 
 svg {
