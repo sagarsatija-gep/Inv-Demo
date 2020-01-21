@@ -4,12 +4,14 @@ import { RecDocComponent } from './../../../app/rec-doc/rec-doc.component';
 import { DetailsComponent } from './details-component/details.component';
 import { TryComponet } from './tryComponent/tryComponent';
 import { Component, OnInit, Input, ViewChild, ViewContainerRef, ComponentFactoryResolver } from "@angular/core";
+import { GoodsIssueDetails } from './goods-issue-details/goodsIssueDetails.component';
 
 
 const  components = {
     'details': DetailsComponent,
     'tabComponent': DocumentTable,
     'Attachement': WidgetAttachemant,
+    'goodsIssueDetails': GoodsIssueDetails
 };
 
 @Component({

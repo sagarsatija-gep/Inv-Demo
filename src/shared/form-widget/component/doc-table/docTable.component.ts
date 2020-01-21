@@ -29,7 +29,6 @@ export class DocumentTable implements OnInit {
     ngOnInit(): void {
         console.log(this.data);
         // this.tabData = [ 'Line', 'Accounting'];
-        debugger;
         this.data.data.map(data => {
             this.tabData.push(data.tabName);
         })

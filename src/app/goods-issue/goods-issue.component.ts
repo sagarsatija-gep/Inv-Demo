@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { DatePipe } from '@angular/common';
 
 @Component({
   selector: 'app-goods-issue',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class GoodsIssueComponent implements OnInit {
 
+  pipe = new DatePipe('en-US');
   widgetData = [
     {
       'HeaderData': {
@@ -15,40 +17,190 @@ export class GoodsIssueComponent implements OnInit {
         collapsible: false,
         status: 'In Progress',
         data: {
-          componentName: 'details',
+          componentName: 'goodsIssueDetails',
           isSubDetails: false,//for subDetails components
           data: [
             {
-              name: 'Requaitions Name',
-              values: 'PR for Supplies',
+              editable: true,
+              data: [
+                {
+                  type: 'textBox',
+                  name: 'Goods Issue Number',
+                  value: '1232',
+                  editable: true,
+                },
+                {
+                  type: 'textBox',
+                  name: 'BarCode',
+                  value: '1232',
+                  editable: true,
+                }
+              ]
             },
             {
-              name: 'Requaitions Number',
-              values: 'PR1234',
-            },{
-              name: 'Requestor',
-              values: 'Keanu Reaves',
+              editable: true,
+              data: [
+                {
+                  type: 'textBox',
+                  name: 'Goods Issue Name',
+                  value: '1232',
+                  editable: true,
+                }
+              ]
             },
             {
-              name: 'Business Unit',
-              values: 'MBM Tech',
-            },{
-              name: 'Purchase Type',
-              values: 'Material',
+              editable: true,
+              data: [
+                {
+                  type: 'textBox',
+                  name: 'Division',
+                  value: '1232',
+                  editable: true,
+                }
+              ]
             },
             {
-              name: 'Contract Number',
-              values: 'CN-1234',
-            },{
-              name: 'Last Modified',
-              values: '11/12/2019',
+              editable: true,
+              data: [
+                {
+                  type: 'textBox',
+                  name: 'Company',
+                  value: 'Chevron PS',
+                  editable: true,
+                }
+              ]
             },
             {
-              name: 'Total PR',
-              values: '$990k',
-            },{
-              name: 'Currenct',
-              values: 'USD',
+              editable: true,
+              data: [
+                {
+                  type: 'textBox',
+                  name: 'Plant',
+                  value: 'DRPS',
+                  editable: true,
+                }
+              ]
+            },
+            {
+              editable: true,
+              data: [
+                {
+                  type: 'textBox',
+                  name: 'User Name',
+                  value: 'Jhon Smith',
+                  editable: true,
+                }
+              ]
+            },
+            {
+              editable: true,
+              data: [
+                {
+                  type: 'barCode',
+                  name: 'Pick List Barcode',
+                  value: '1232',
+                  editable: true,
+                }
+              ]
+            },
+            {
+              editable: true,
+              data: [
+                {
+                  type: 'textBox',
+                  name: 'Pick List Number',
+                  value: '44540023',
+                  editable: true,
+                }
+              ]
+            },
+            {
+              editable: true,
+              data: [
+                {
+                  type: 'textBox',
+                  name: 'Comments',
+                  value: '',
+                  editable: true,
+                }
+              ]
+            },
+            {
+              editable: true,
+              data: [
+                {
+                  type: 'textBox',
+                  name: 'Material Slip',
+                  value: '1232',
+                  editable: true,
+                }
+              ]
+            },
+            {
+              editable: true,
+              data: [
+                {
+                  type: 'textBox',
+                  name: 'Bill of Landing',
+                  value: '1232',
+                  editable: true,
+                }
+              ]
+            },
+            {
+              editable: true,
+              data: [
+                {
+                  type: 'textBox',
+                  name: 'Gr/gl slip No.',
+                  value: '1232',
+                  editable: true,
+                }
+              ]
+            },
+            {
+              editable: true,
+              data: [
+                {
+                  type: 'textBox',
+                  name: 'Delivery Note',
+                  value: '1232',
+                  editable: true,
+                }
+              ]
+            },
+            {
+              editable: true,
+              data: [
+                {
+                  type: 'date',
+                  name: 'Document Date',
+                  value: this.pipe.transform('10-24-2019', 'mm-dd-yyyy'),
+                  editable: true,
+                }
+              ]
+            },
+            {
+              editable: true,
+              data: [
+                {
+                  type: 'date',
+                  name: 'Posted Date',
+                  value: this.pipe.transform('10/24/2019', 'MM/dd/yyyy'),
+                  editable: true,
+                }
+              ]
+            },
+            {
+              editable: true,
+              data: [
+                {
+                  type: 'dropDown',
+                  name: 'Posted Date',
+                  value: 'dropDown',
+                  editable: true,
+                }
+              ]
             }
           ]
         }
