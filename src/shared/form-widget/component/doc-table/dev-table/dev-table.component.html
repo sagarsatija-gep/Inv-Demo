@@ -1,0 +1,36 @@
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">
+          <label class="checkbox-container">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </th>
+        <th scope="col">Document Name</th>
+        <th scope="col">Created Date</th>
+        <th scope="col">Last Accessed</th>
+        <th scope="col">
+          <button type="button" style="border: none; background: inherit; cursor: pointer;"><i
+              class="far fa-trash-alt" aria-hidden="true"></i></button>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let document of documents">
+        <td scope="row">
+          <label class="checkbox-container">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+        </td>
+        <td style="color:#2196F3;">{{ document.docName }}</td>
+        <td>{{ document.createdDate }}</td>
+        <td>{{ document.lastAccessed }}</td>
+        <td>
+          <button type="button" style="border: none; background: inherit; cursor: pointer;"><i
+              class="far fa-trash-alt" aria-hidden="true"></i></button>
+        </td>
+      </tr>
+    </tbody>
+  </table>

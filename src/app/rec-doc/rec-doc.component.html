@@ -8,10 +8,46 @@
   <div style="margin-top: -17px;">
     <mat-tab-group>
       <mat-tab label="All">
-        <ag-grid-angular style="width: 100%; height: 235px;" #grid class="ag-theme-balham" [columnDefs]="columnDefs"
-          [pagination]="true" [defaultColDef]="defaultColDef" [suppressRowClickSelection]="true"
-          [rowSelection]="rowSelection" [rowData]="rowData" [frameworkComponents]="frameworkComponents"
-          [paginationAutoPageSize]="true" (gridReady)="onGridReady($event)"></ag-grid-angular>
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">
+                <label class="checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </th>
+              <th scope="col">Document Name</th>
+              <th scope="col">Created Date</th>
+              <th scope="col">Last Accessed</th>
+              <th scope="col">
+                <button type="button" style="border: none; background: inherit; cursor: pointer;"><i
+                    class="far fa-trash-alt" aria-hidden="true"></i></button>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr *ngFor="let document of documents">
+              <td scope="row">
+                <label class="checkbox-container">
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </td>
+              <td style="color:#3D5AFE;">{{ document.docName }}</td>
+              <td>{{ document.createdDate }}</td>
+              <td>{{ document.lastAccessed }}</td>
+              <td>
+                <button type="button" style="border: none; background: inherit; cursor: pointer;"><i
+                    class="far fa-trash-alt" aria-hidden="true"></i></button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="d-flex justify-content-center p-2">
+          <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize">
+          </ngb-pagination>
+        </div>
       </mat-tab>
       <mat-tab label="Completed"> Content 2 </mat-tab>
       <mat-tab label="In Progress"> Content 3 </mat-tab>

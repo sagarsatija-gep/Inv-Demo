@@ -1,3 +1,4 @@
+import { FormWidget } from './../shared/form-widget/form-widget.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -14,7 +15,13 @@ import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
 import { DashboardComponent } from './dashboard/dashboard.component';
-import { ToggleService } from './toggle.service'
+import { ToggleService } from './toggle.service';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { FormsModule } from '@angular/forms';
+import { LineViewComponent } from './line-view/line-view.component';
+import { ManageReservationsComponent } from './manage-reservations/manage-reservations.component';
+import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -23,19 +30,26 @@ import { ToggleService } from './toggle.service'
     SideNavComponent,
     ButtonRendererComponent,
     QuickLinksComponent,
-    DashboardComponent
+    DashboardComponent,
+    LineViewComponent,
+    ManageReservationsComponent,
+    PurchaseDetailsComponent
   ],
   imports: [
     BrowserModule,
+    FormWidget,
     AppRoutingModule,
     HttpClientModule,
     AgGridModule.withComponents([]),
     MatSidenavModule,
     MatTabsModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    NgbModule.forRoot(),
+    FormsModule
   ],
   providers: [ToggleService],
   bootstrap: [AppComponent],
-  entryComponents: [ButtonRendererComponent]
+  entryComponents: [ButtonRendererComponent],
+  exports: [RecDocComponent]
 })
 export class AppModule { }
