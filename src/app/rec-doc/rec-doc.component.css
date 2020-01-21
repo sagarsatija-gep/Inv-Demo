@@ -15,3 +15,10 @@
     background: inherit;
     color: black
 }
+.ag-theme-balham .ag-header-row, .ag-theme-balham .ag-header{
+    background-color: #fff;
+}
+
+.ag-theme-balham .ag-root {
+    border: 1px solid #fff;
+}
