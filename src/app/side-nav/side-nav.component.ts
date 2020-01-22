@@ -8,7 +8,11 @@ import { ToggleService } from '../toggle.service';
 })
 export class SideNavComponent implements OnInit {
   opened: boolean = true;
+  open: boolean = true;
   @ViewChild('sidenav') graph;
+  clicked(){
+    this.open=!this.open;
+  }
 
   sideNav = [{
     icon: "#icon_DashboardRe",

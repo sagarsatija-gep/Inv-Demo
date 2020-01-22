@@ -18,6 +18,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { LineViewComponent } from './line-view/line-view.component';
 import { ManageReservationsComponent } from './manage-reservations/manage-reservations.component';
+
 import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
 import { DialogModule } from '@syncfusion/ej2-angular-popups';
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
@@ -43,15 +44,14 @@ import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
     DashboardComponent,
     LineViewComponent,
     ManageReservationsComponent,
-    // DialogComponent
-    FilterComponent,
     PurchaseDetailsComponent,
     NgbdModalContent,
     ManagePackingListComponent,
     UnprocessedPackingSlipsComponent,
     PackingSlipsTabComponent,
     PickListComponent,
-    GoodsIssueComponent
+    GoodsIssueComponent,
+    FilterComponent
   ],
   imports: [
     BrowserModule,
@@ -68,7 +68,8 @@ import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
     DialogModule,
     CheckBoxModule ,
     BarcodeGeneratorAllModule,
-    NgxBarcodeModule
+    NgxBarcodeModule,
+    
 
   ],
   providers: [ToggleService,PageService, SortService, FilterService, GroupService],
