@@ -32,12 +32,15 @@
           </mat-select>
         </mat-form-field>
 
-        <div *ngIf="column.type == 'toggle'"  style="padding: 2px; margin: 0px 2px 0px 5px">
-            <label class="switch">
-                <input type="checkbox" id="mode" [(ngModel)]="column.value" checked>
-                <span class="slider round"></span>
-            </label>
-        </div>
+        <label *ngIf="column.type == 'toggle'" class="switch">
+          <!-- <input type="checkbox" [checked]='column.value'>
+          <span class="slider round"></span> -->
+          <label class="switch">
+            <input class="switch-input" type="checkbox" />
+            <span class="switch-label" data-on="YES" data-off="NO"></span> 
+            <span class="switch-handle"></span> 
+          </label>
+        </label>
       </td>
     </tr>
   </tbody>

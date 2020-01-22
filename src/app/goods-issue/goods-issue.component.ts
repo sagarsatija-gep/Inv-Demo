@@ -236,14 +236,14 @@ export class GoodsIssueComponent implements OnInit {
                     name: 'Reservation #',
                     colSize: '100px',
                     classes: ' ',
-                    styles: {'width': '8%'},
+                    // styles: {'width': '8%'},
                   },
                   {
                     type: 'text',
                     name: 'Reservation Line #',
                     colSize: '100px',
                     classes: ' ',
-                    styles: {'width': '8%'},
+                    // styles: {'width': '8%'},
                   },
                   {
                     type: 'text',
@@ -257,19 +257,19 @@ export class GoodsIssueComponent implements OnInit {
                     type: 'text',
                     name: 'Reservation Qty',
                     colSize: '100px',
-                    styles: {'width': '8%'},
+                    // styles: {'width': '8%'},
                   },
                   {
                     type: 'text',
                     name: 'Remaining Qty',
                     colSize: '100px',
-                    styles: {'width': '8%'},
+                    // styles: {'width': '8%'},
                   },
                   {
                     type: 'text',
                     name: 'On-Hand Qty',
                     colSize: '100px',
-                    styles: {'width': '8%'},
+                    // styles: {'width': '8%'},
                   },
                   {
                     type: 'text',
@@ -293,7 +293,7 @@ export class GoodsIssueComponent implements OnInit {
                     type: 'text',
                     name: 'Requested Date',
                     colSize: '100px',
-                    styles: {'width': '8%'},
+                    // styles: {'width': '8%'},
                   }
                 ],
                 values: [
