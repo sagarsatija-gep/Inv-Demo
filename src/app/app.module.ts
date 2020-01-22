@@ -19,10 +19,6 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { LineViewComponent } from './line-view/line-view.component';
 import { ManageReservationsComponent } from './manage-reservations/manage-reservations.component';
-<<<<<<< HEAD
-=======
-
->>>>>>> 3e0b1ce54f7f8b6134a0f8850ec6e89ef211017a
 import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
 import { DialogModule } from '@syncfusion/ej2-angular-popups';
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
@@ -32,7 +28,6 @@ import { PurchaseDetailsComponent } from './purchase-details/purchase-details.co
 import { PickListComponent } from './pick-list/pick-list.component';
 import { BarcodeGeneratorAllModule, QRCodeGeneratorAllModule, DataMatrixGeneratorAllModule } from '@syncfusion/ej2-angular-barcode-generator';
 import { NgxBarcodeModule } from 'ngx-barcode';
-
 import { ManagePackingListComponent } from './manage-packing-list/manage-packing-list.component';
 import { UnprocessedPackingSlipsComponent } from './unprocessed-packing-slips/unprocessed-packing-slips.component';
 import { PackingSlipsTabComponent } from './packing-slips-tab/packing-slips-tab.component';
