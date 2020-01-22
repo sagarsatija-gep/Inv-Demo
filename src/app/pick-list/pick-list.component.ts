@@ -9,6 +9,7 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
   styleUrls: ['./pick-list.component.css']
 })
 export class PickListComponent implements OnInit {
+  opened:boolean=true;
   public data: Object[];
   public groupOptions: Object;
   public pageSettings: Object;
@@ -53,7 +54,7 @@ export class PickListComponent implements OnInit {
   }
 
   constructor() { }
-
+  
   // public data: Object[];
   // public filterSettings: Object;
   // ngOnInit() {
