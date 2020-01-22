@@ -17,7 +17,7 @@ export class SubDetailsComponent implements OnInit {
     constructor(private cfr: ComponentFactoryResolver){}
 
     ngOnInit(): void {
-        debugger;
+        // debugger;
         console.log(this.subDetail);
         this.isTogal = false;
         // this.createComponent();        
