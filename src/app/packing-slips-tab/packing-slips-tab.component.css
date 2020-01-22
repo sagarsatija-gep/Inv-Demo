@@ -85,3 +85,7 @@
     border-radius: 15px;
     padding: 3px 7px;
 }
+
+.slip-main-col:hover {
+    text-shadow: 1px 1px 0 #d6d6d6;
+}

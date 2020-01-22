@@ -1,10 +1,4 @@
-<!-- <div class="row" style="padding: 4px; margin: unset;">
-    <div style="padding: 16px;" class="col-2" *ngFor="let item of data.data">
-        <div style="color: #a3a3a3;">{{ item.name }}</div>
-        <div>{{ item.values }}</div>
-    </div>
-</div> -->
-<div class="container pt-4" style="border-top: 1px solid #d6d6d6;">
+<div class="container-fluid pt-4" style="border-top: 1px solid #d6d6d6;">
   <div class="row goodsIssuInputs">
     <div class="col-4 mb-4" *ngFor="let item of data.data">
       <div class="rounded-sm blocks">
@@ -16,7 +10,26 @@
               <input type="text" id='email' [(ngModel)]='field.value'>
             </div>
             <div *ngIf="field.type == 'date'">
-              <input type="date" id='email' [(ngModel)]='field.value'>
+              <input type="date" id='date' [(ngModel)]='field.value'>
+            </div>
+            <div *ngIf="field.type == 'choosedate'">
+              <mat-form-field>
+                <input matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+            </div>
+            <div *ngIf="field.type == 'dropdown'">
+              <mat-form-field>
+                <mat-select name="countryString" [(value)]="field.selectedValue" placeholder="">
+                  <mat-option [value]="item" *ngFor="let item of field.value">{{item}}</mat-option>
+                </mat-select>
+              </mat-form-field>
+            </div>
+            <div class="customBarcode" *ngIf=" field.type == 'barcode' ">
+                <ngx-barcode [bc-format]=" CODE128" [bc-height]="30" [bc-value]="4217467185"
+              [bc-display-value]="false">
+              </ngx-barcode>
             </div>
           </div>
         </div>

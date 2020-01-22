@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { DashboardComponent } from './dashboard.component';
+import { PackingSlipCameraComponent } from './packing-slip-camera.component';
 
-describe('DashboardComponent', () => {
-  let component: DashboardComponent;
-  let fixture: ComponentFixture<DashboardComponent>;
+describe('PackingSlipCameraComponent', () => {
+  let component: PackingSlipCameraComponent;
+  let fixture: ComponentFixture<PackingSlipCameraComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ DashboardComponent ]
+      declarations: [ PackingSlipCameraComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(DashboardComponent);
+    fixture = TestBed.createComponent(PackingSlipCameraComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

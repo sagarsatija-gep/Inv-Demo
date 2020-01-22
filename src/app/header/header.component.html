@@ -11,30 +11,22 @@
       <div style="right: 0px;
       display: flex;
       position: relative;
-      left: -61px;
-  ">
-
+      left: -61px;">
         <img class="search-img" style="height: 30px;width: 30px;"
           src="https://img.icons8.com/android/96/000000/microphone.png">
-
-
-        <img class="search-img" style="height: 30px;width: 30px;background: blue;" src="../../assets/images/search.png">
-        <img class="search-img" style="height: 30px;width: 30px;"
-          src="https://img.icons8.com/small/96/000000/camera.png">
-
-        <img class="search-img" style="height: 30px;width: 30px;"
+        <img class="search-img" style="height: 30px;width: 30px;background: blue;"
+          src="https://img.icons8.com/ios-glyphs/480/000000/search.png">
+        <a routerLink='/packingslipcamera'><img class="search-img" style="height: 30px;width: 30px;"
+            src="https://img.icons8.com/small/96/000000/camera.png"></a>
+        <img class="search-img" style="height: 30px;width: 30px;" (click)="open()"
           src="https://img.icons8.com/wired/64/000000/barcode-scanner.png">
-
-
       </div>
     </div>
-
   </div>
   <div style="flex: 1;min-width: 8rem;">
     <div (click)="popup=!popup" class="people"
       style="    margin-right: 1rem;
       height: 50px;width: 50px;border-radius: 25px;float: right;background-size: cover;background-image: url('../../assets/people.jpg')">
-
     </div>
     <img style="height: 22px;margin-top: 14px;float: right;margin-right: 14px;"
       src="https://img.icons8.com/material-rounded/96/000000/squared-menu.png">
@@ -45,4 +37,3 @@
     
   </div> -->
 </header>
-

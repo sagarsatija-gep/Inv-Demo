@@ -77,3 +77,7 @@
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+.doc-main-col:hover {
+  text-shadow: 1px 1px 0 #d6d6d6;
+}

@@ -19,7 +19,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
   }
   open() {
-    const modalRef = this.modalService.open(NgbdModalContent);
+    const modalRef = this.modalService.open(NgbdModalContent1);
     modalRef.componentInstance.name = 'World';
   }
 
@@ -45,7 +45,7 @@ export class HeaderComponent implements OnInit {
     </div>
   `
 })
-export class NgbdModalContent {
+export class NgbdModalContent1 {
   @Input() name;
 
   constructor(public activeModal: NgbActiveModal) {}

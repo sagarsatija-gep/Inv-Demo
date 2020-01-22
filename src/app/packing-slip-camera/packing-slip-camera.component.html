@@ -1,0 +1,21 @@
+<div style="min-width: 100%; margin-top: 10px;" class="container">
+  <div style="min-width: 100%; padding: 0px 20px;" class="container">
+    <div class="row">
+      <div class="col-9">
+        <div>
+          <span class="text-primary">Home / Manage Transactions</span>
+        </div>
+        <h2>Manage Packing Slips</h2>
+      </div>
+      <div class="col-3" style="margin: auto;">
+        <button type="button" class="btn btn-primary" (click)="open()" style="float: right; min-width: 110px;">
+          <span>Take Picture</span>
+        </button>
+      </div>
+    </div>
+     <barcode-scanner-livestream type="code_128" (valueChanges)="onValueChanges($event)"></barcode-scanner-livestream>
+    <div [hidden]="!barcodeValue">
+        {{barcodeValue}}
+    </div>
+  </div>
+</div>

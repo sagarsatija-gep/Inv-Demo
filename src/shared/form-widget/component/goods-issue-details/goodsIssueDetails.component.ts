@@ -1,9 +1,10 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component, Input, OnInit, ViewEncapsulation } from "@angular/core";
 
 @Component({
     selector: 'goods-issue-details',
     templateUrl: './goodsIssueDetails.component.html',
-    styleUrls: ['./goodsIssueDetails.component.scss']
+    styleUrls: ['./goodsIssueDetails.component.scss'],
+    encapsulation: ViewEncapsulation.None
 })
 export class GoodsIssueDetails implements OnInit {
     @Input() data;
@@ -11,7 +12,6 @@ export class GoodsIssueDetails implements OnInit {
     ngOnInit(): void {
         //Called after the constructor, initializing input properties, and the first call to ngOnChanges.
         //Add 'implements OnInit' to the class.
-        debugger;
         console.log(this.data);
         
     }
