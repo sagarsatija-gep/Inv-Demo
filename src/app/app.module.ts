@@ -25,7 +25,7 @@ import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { FilterComponent } from './filter/filter.component';
 import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
 import { PickListComponent } from './pick-list/pick-list.component';
-import { BarcodeGeneratorAllModule,QRCodeGeneratorAllModule,DataMatrixGeneratorAllModule } from '@syncfusion/ej2-angular-barcode-generator';
+import { BarcodeGeneratorAllModule, QRCodeGeneratorAllModule, DataMatrixGeneratorAllModule } from '@syncfusion/ej2-angular-barcode-generator';
 import { NgxBarcodeModule } from 'ngx-barcode';
 
 import { ManagePackingListComponent } from './manage-packing-list/manage-packing-list.component';
@@ -66,12 +66,12 @@ import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
     FormsModule,
     GridModule,
     DialogModule,
-    CheckBoxModule ,
+    CheckBoxModule,
     BarcodeGeneratorAllModule,
     NgxBarcodeModule
 
   ],
-  providers: [ToggleService,PageService, SortService, FilterService, GroupService],
+  providers: [ToggleService, PageService, SortService, FilterService, GroupService],
   bootstrap: [AppComponent],
   entryComponents: [NgbdModalContent]
 })

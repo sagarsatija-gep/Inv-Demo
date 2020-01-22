@@ -1,0 +1,26 @@
+<table class="table" >
+    <thead>
+      <tr>
+        <th [ngStyle]="col.styles" [ngClass]="col.classes" *ngFor="let col of data.data.colConfig">
+          <label *ngIf="col.type == 'checkbox'" class="checkbox-container">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <span *ngIf="col.type == 'text'">{{col.name}} </span>
+        </th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let rows of data.data.values">
+        <td *ngFor="let column of rows">
+          <label *ngIf="column.type == 'checkbox'" class="checkbox-container">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+          <span *ngIf="column.type == 'text'"> {{column.value}} </span>
+          <input *ngIf="column.type == 'textbox'" type="text" [(ngModel)]="column.value" >
+        </td>
+      </tr>
+    </tbody>
+  </table>
