@@ -1,0 +1,43 @@
+.goodsIssuInputs {
+  font-weight: 500;
+}
+
+.goodsIssuInputs input {
+  width: 100%;
+  background: transparent;
+  border-width: 0;
+  color: #000000;
+  font-weight: 500;
+}
+
+.goodsIssuInputs .labels {
+  color: #a9a9a9;
+  font-size: 0.8em !important;
+  font-weight: 500;
+  font-size: 0.9em;
+}
+
+.goodsIssuInputs .blocks {
+  background-color: #F8F9FA;
+  border: 1px solid #d6d6d6;
+}
+
+.goodsIssuInputs .mat-form-field-infix {
+  padding: 0em !important;
+  border-top: 0em !important;
+}
+
+.goodsIssuInputs .mat-form-field-underline {
+  width: 0%;
+}
+
+.goodsIssuInputs .mat-form-field-wrapper {
+  padding-bottom: 0em;
+}
+
+.goodsIssuInputs .customBarcode svg {
+  max-width: 140px;
+  margin-top: -6px;
+  height: 25px;
+}
+/*# sourceMappingURL=goodsIssueDetails.component.css.map */
