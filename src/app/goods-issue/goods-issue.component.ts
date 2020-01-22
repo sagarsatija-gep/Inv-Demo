@@ -32,7 +32,7 @@ export class GoodsIssueComponent implements OnInit {
                   editable: true,
                 },
                 {
-                  type: 'textBox',
+                  type: 'barcode',
                   name: 'BarCode',
                   value: '1232',
                   editable: true,
@@ -98,7 +98,7 @@ export class GoodsIssueComponent implements OnInit {
               editable: true,
               data: [
                 {
-                  type: 'barCode',
+                  type: 'barcode',
                   name: 'Pick List Barcode',
                   value: '1232',
                   editable: true,
@@ -199,8 +199,11 @@ export class GoodsIssueComponent implements OnInit {
                 {
                   type: 'dropdown',
                   name: 'Movement Type',
-                  value: 'dropDown',
-                  selectedValue:'',
+                  value: [
+                    'Issue For Cost Center',
+                    'Issue For Cost Center1'
+                ],
+                  selectedValue:'Issue For Cost Center',
                   editable: true,
                 }
               ]
@@ -332,7 +335,7 @@ export class GoodsIssueComponent implements OnInit {
                       value: 'EA',
                     },
                     {
-                      type: 'text',
+                      type: 'toglle',
                       value: 'true',
                     },
                     {
@@ -378,7 +381,7 @@ export class GoodsIssueComponent implements OnInit {
                       value: 'EA',
                     },
                     {
-                      type: 'text',
+                      type: 'toglle',
                       value: 'true',
                     },
                     {
@@ -424,7 +427,7 @@ export class GoodsIssueComponent implements OnInit {
                       value: 'EA',
                     },
                     {
-                      type: 'text',
+                      type: 'toglle',
                       value: 'true',
                     },
                     {
@@ -470,8 +473,8 @@ export class GoodsIssueComponent implements OnInit {
                       value: 'EA',
                     },
                     {
-                      type: 'text',
-                      value: 'true',
+                      type: 'toglle',
+                      value: 'false',
                     },
                     {
                       type: 'text',
@@ -735,13 +738,19 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'dropdown',
-                      value: '55',
-                      selectedValue: ''
+                      value: [
+                        'Issue For Cost Center',
+                        'Issue For Cost Center1'
+                    ],
+                      selectedValue:'Issue For Cost Center',
                     },
                     {
                       type: 'dropdown',
-                      value: '55',
-                      selectedValue: ''
+                      value: [
+                        'Issue For Cost Center',
+                        'Issue For Cost Center1'
+                    ],
+                      selectedValue:'Issue For Cost Center',
                     },
                     {
                       type: 'textbox',
@@ -771,13 +780,19 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'dropdown',
-                      value: '55',
-                      selectedValue: ''
+                      value: [
+                        'Issue For Cost Center',
+                        'Issue For Cost Center1'
+                    ],
+                      selectedValue:'Issue For Cost Center',
                     },
                     {
                       type: 'dropdown',
-                      value: '55',
-                      selectedValue: ''
+                      value: [
+                        'Issue For Cost Center',
+                        'Issue For Cost Center1'
+                    ],
+                      selectedValue:'Issue For Cost Center',
                     },
                     {
                       type: 'textbox',
@@ -807,13 +822,19 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'dropdown',
-                      value: '55',
-                      selectedValue: ''
+                      value: [
+                        'Issue For Cost Center',
+                        'Issue For Cost Center1'
+                    ],
+                      selectedValue:'Issue For Cost Center',
                     },
                     {
                       type: 'dropdown',
-                      value: '55',
-                      selectedValue: ''
+                      value: [
+                        'Issue For Cost Center',
+                        'Issue For Cost Center1'
+                    ],
+                      selectedValue:'Issue For Cost Center',
                     },
                     {
                       type: 'textbox',
@@ -843,13 +864,19 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'dropdown',
-                      value: '55',
-                      selectedValue: ''
+                      value: [
+                        'Issue For Cost Center',
+                        'Issue For Cost Center1'
+                    ],
+                      selectedValue:'Issue For Cost Center',
                     },
                     {
                       type: 'dropdown',
-                      value: '55',
-                      selectedValue: ''
+                      value: [
+                        'Issue For Cost Center',
+                        'Issue For Cost Center1'
+                    ],
+                      selectedValue:'Issue For Cost Center',
                     },
                     {
                       type: 'textbox',
