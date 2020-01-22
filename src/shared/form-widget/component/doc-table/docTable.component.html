@@ -1,29 +1,18 @@
 <div class="container-fluid rounded-sm bg-white" style="margin-top: 20px;">
-    <!-- <div class="row">
-      <div class="col-sm-12 pt-3">
-        <h6>Recent Documents</h6>
-        <hr>
-      </div>
-    </div> -->
-    <div style="margin-top: -17px;">
-      <mat-tab-group [selectedIndex]= 'selectedTab' (selectedIndexChange)= 'tabSelection($event)'>
-        <mat-tab *ngFor="let tab of tabData" [label]="tab">
-          <!-- <div >rahul</div> -->
-        <!-- <div class="d-flex justify-content-center p-2">
-            <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize">
-            </ngb-pagination>
-        </div> -->
-    </mat-tab>
-    <!-- <mat-tab label="Completed"> Content 2 </mat-tab>
-        <mat-tab label="In Progress"> Content 3 </mat-tab> -->
+  <div style="margin-top: -17px;">
+    <mat-tab-group [selectedIndex]='selectedTab' (selectedIndexChange)='tabSelection($event)'>
+      <mat-tab *ngFor="let tab of tabData" [label]="tab">
+      </mat-tab>
     </mat-tab-group>
+
     <ng-container #tabContainer></ng-container>
-    
+
     <div class="row" *ngIf="data.haveButton">
-      <button>Cancel</button>
-      <button>Save</button>
-      <button>Finalize</button>
+      <div class="col-sm-12 text-right mb-5">
+        <button type="button" class="action-buttons btn btn-link">Cancel</button>
+        <button type="button" class="action-buttons btn bg-white text-primary border-secondary">Save</button>
+        <button type="button" [ngClass]="btnFinalize" [disabled]="isDisabled">Finalize</button>
+      </div>
     </div>
-    
   </div>
-  </div>
+</div>

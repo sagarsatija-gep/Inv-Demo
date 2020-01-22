@@ -21,6 +21,8 @@ const components = {
     encapsulation: ViewEncapsulation.None
 })
 export class DocumentTable implements OnInit {
+    isDisabled = true;
+    btnFinalize = {'btn-secondary': true, 'action-buttons': true, 'btn': true, 'btn-primary': false}
 
     @Input() data: any = {};
     @ViewChild('tabContainer', {read: ViewContainerRef}) tabContainer: ViewContainerRef;
