@@ -197,9 +197,10 @@ export class GoodsIssueComponent implements OnInit {
               editable: true,
               data: [
                 {
-                  type: 'dropDown',
+                  type: 'dropdown',
                   name: 'Movement Type',
                   value: 'dropDown',
+                  selectedValue:'',
                   editable: true,
                 }
               ]

@@ -25,6 +25,15 @@
                 <mat-datepicker #picker></mat-datepicker>
               </mat-form-field>
             </div>
+            <div *ngIf="field.type == 'dropdown'">
+                <mat-form-field >
+                    <mat-select name="countryString" [(value)]="field.selectedValue" placeholder="">
+                      <mat-option [value]="'GB'">Great Britain</mat-option>
+                      <mat-option [value]="'US'">United States</mat-option>
+                      <mat-option [value]="'CA'">Canada</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </div>
           </div>
         </div>
       </div>
