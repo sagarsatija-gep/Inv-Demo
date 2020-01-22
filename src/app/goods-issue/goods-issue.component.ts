@@ -236,14 +236,14 @@ export class GoodsIssueComponent implements OnInit {
                     name: 'Reservation #',
                     colSize: '100px',
                     classes: ' ',
-                    styles: {'width': '8%'},
+                    // styles: {'width': '8%'},
                   },
                   {
                     type: 'text',
                     name: 'Reservation Line #',
                     colSize: '100px',
                     classes: ' ',
-                    styles: {'width': '8%'},
+                    // styles: {'width': '8%'},
                   },
                   {
                     type: 'text',
@@ -257,19 +257,19 @@ export class GoodsIssueComponent implements OnInit {
                     type: 'text',
                     name: 'Reservation Qty',
                     colSize: '100px',
-                    styles: {'width': '8%'},
+                    // styles: {'width': '8%'},
                   },
                   {
                     type: 'text',
                     name: 'Remaining Qty',
                     colSize: '100px',
-                    styles: {'width': '8%'},
+                    // styles: {'width': '8%'},
                   },
                   {
                     type: 'text',
                     name: 'On-Hand Qty',
                     colSize: '100px',
-                    styles: {'width': '8%'},
+                    // styles: {'width': '8%'},
                   },
                   {
                     type: 'text',
@@ -293,7 +293,7 @@ export class GoodsIssueComponent implements OnInit {
                     type: 'text',
                     name: 'Requested Date',
                     colSize: '100px',
-                    styles: {'width': '8%'},
+                    // styles: {'width': '8%'},
                   }
                 ],
                 values: [
@@ -337,7 +337,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'toggle',
-                      value: 'true',
+                      value: true,
                     },
                     {
                       type: 'text',
@@ -384,7 +384,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'toggle',
-                      value: 'true',
+                      value: false,
                     },
                     {
                       type: 'text',
@@ -394,7 +394,7 @@ export class GoodsIssueComponent implements OnInit {
                   [
                     {
                       type: 'checkbox',
-                      value: 'false',
+                      value: false,
                     },
                     {
                       type: 'text',
@@ -431,7 +431,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'toggle',
-                      value: 'true',
+                      value: false,
                     },
                     {
                       type: 'text',
@@ -478,7 +478,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'toggle',
-                      value: 'false',
+                      value: false,
                     },
                     {
                       type: 'text',
@@ -765,10 +765,10 @@ export class GoodsIssueComponent implements OnInit {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
+                        'CC001',
+                        'CC0012'
                     ],
-                      selectedValue:'Issue For Cost Center',
+                      selectedValue:'CC001',
                     },
                     {
                       type: 'textbox',
@@ -810,10 +810,10 @@ export class GoodsIssueComponent implements OnInit {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
+                        'CC001',
+                        'CC0011'
                     ],
-                      selectedValue:'Issue For Cost Center',
+                      selectedValue:'CC001',
                     },
                     {
                       type: 'textbox',
@@ -855,10 +855,10 @@ export class GoodsIssueComponent implements OnInit {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
+                        'CC001',
+                        'CC0011'
                     ],
-                      selectedValue:'Issue For Cost Center',
+                      selectedValue:'CC001',
                     },
                     {
                       type: 'textbox',
@@ -900,10 +900,10 @@ export class GoodsIssueComponent implements OnInit {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
+                        'CC001',
+                        'CC0011'
                     ],
-                      selectedValue:'Issue For Cost Center',
+                      selectedValue:'CC001',
                     },
                     {
                       type: 'textbox',
