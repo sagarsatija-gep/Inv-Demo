@@ -1,3 +1,4 @@
+import { WidgetTable } from './widget-table/widgetTable.component';
 import { WidgetAttachemant } from './widgetAttachement/widgetAttachement.component';
 import { DocumentTable } from './doc-table/docTable.component';
 import { RecDocComponent } from './../../../app/rec-doc/rec-doc.component';
@@ -11,7 +12,8 @@ const  components = {
     'details': DetailsComponent,
     'tabComponent': DocumentTable,
     'Attachement': WidgetAttachemant,
-    'goodsIssueDetails': GoodsIssueDetails
+    'goodsIssueDetails': GoodsIssueDetails,
+    'widgetTable': WidgetTable
 };
 
 @Component({
