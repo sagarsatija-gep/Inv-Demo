@@ -8,8 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { RecDocComponent } from './rec-doc/rec-doc.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
-import { HeaderComponent ,NgbdModalContent1} from './header/header.component';
-import {NgbdModalContent} from './packing-slip-camera/packing-slip-camera.component'
+import { HeaderComponent, NgbdModalContent1 } from './header/header.component';
+import { NgbdModalContent } from './packing-slip-camera/packing-slip-camera.component'
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -57,7 +57,7 @@ import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
     PickListComponent,
     GoodsIssueComponent,
     PackingSlipCameraComponent,
-    
+
   ],
   imports: [
     BrowserModule,
@@ -80,6 +80,6 @@ import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService],
   bootstrap: [AppComponent],
-  entryComponents: [NgbdModalContent,NgbdModalContent1]
+  entryComponents: [NgbdModalContent, NgbdModalContent1]
 })
 export class AppModule { }

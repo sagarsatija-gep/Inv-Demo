@@ -32,6 +32,10 @@
                     </mat-select>
                   </mat-form-field>
             </div>
+            <div *ngIf="field.type == 'barcode'">
+                <ngx-barcode [bc-format]="CODE128" [bc-height]="30" [bc-value]="4217467185" [bc-display-value]="false">
+                </ngx-barcode>
+            </div>
           </div>
         </div>
       </div>
