@@ -765,10 +765,10 @@ export class GoodsIssueComponent implements OnInit {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
+                        'CC001',
+                        'CC0012'
                     ],
-                      selectedValue:'Issue For Cost Center',
+                      selectedValue:'CC001',
                     },
                     {
                       type: 'textbox',
@@ -810,10 +810,10 @@ export class GoodsIssueComponent implements OnInit {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
+                        'CC001',
+                        'CC0011'
                     ],
-                      selectedValue:'Issue For Cost Center',
+                      selectedValue:'CC001',
                     },
                     {
                       type: 'textbox',
@@ -855,10 +855,10 @@ export class GoodsIssueComponent implements OnInit {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
+                        'CC001',
+                        'CC0011'
                     ],
-                      selectedValue:'Issue For Cost Center',
+                      selectedValue:'CC001',
                     },
                     {
                       type: 'textbox',
@@ -900,10 +900,10 @@ export class GoodsIssueComponent implements OnInit {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
+                        'CC001',
+                        'CC0011'
                     ],
-                      selectedValue:'Issue For Cost Center',
+                      selectedValue:'CC001',
                     },
                     {
                       type: 'textbox',
