@@ -14,12 +14,21 @@ import { WidgetFormComponent } from './container/widgetForm.component';
 import { CommonModule } from '@angular/common';
 import { NgModule } from "@angular/core";
 import { GoodsIssueDetails } from './component/goods-issue-details/goodsIssueDetails.component';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatNativeDateModule} from '@angular/material/core';
+import {MatInputModule} from '@angular/material';
+
 
 @NgModule({
     imports: [CommonModule, 
         NgbModule, 
         MatTabsModule,
-        FormsModule
+        FormsModule,
+        MatDatepickerModule,
+        MatFormFieldModule,
+        MatNativeDateModule,
+        MatInputModule     
      ],
     declarations: [
         WidgetFormComponent,
@@ -33,7 +42,7 @@ import { GoodsIssueDetails } from './component/goods-issue-details/goodsIssueDet
          GoodsIssueDetails,
          WidgetTable
         ],
-    exports:[WidgetFormComponent],
+    exports:[WidgetFormComponent, MatDatepickerModule, MatFormFieldModule],
     entryComponents: [
         WidgetHeaderComponent, 
         TryComponet, 

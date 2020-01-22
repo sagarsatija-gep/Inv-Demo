@@ -6,6 +6,8 @@ import { DatePipe } from '@angular/common';
   templateUrl: './goods-issue.component.html',
   styleUrls: ['./goods-issue.component.css']
 })
+
+
 export class GoodsIssueComponent implements OnInit {
 
   pipe = new DatePipe('en-US');
@@ -173,9 +175,9 @@ export class GoodsIssueComponent implements OnInit {
               editable: true,
               data: [
                 {
-                  type: 'date',
+                  type: 'choosedate',
                   name: 'Document Date',
-                  value: this.pipe.transform('10-24-2019', 'mm-dd-yyyy'),
+                  value: '',
                   editable: true,
                 }
               ]
@@ -184,9 +186,9 @@ export class GoodsIssueComponent implements OnInit {
               editable: true,
               data: [
                 {
-                  type: 'date',
+                  type: 'choosedate',
                   name: 'Posted Date',
-                  value: this.pipe.transform('10/24/2019', 'MM/dd/yyyy'),
+                  value: '',
                   editable: true,
                 }
               ]
@@ -196,7 +198,7 @@ export class GoodsIssueComponent implements OnInit {
               data: [
                 {
                   type: 'dropDown',
-                  name: 'Posted Date',
+                  name: 'Movement Type',
                   value: 'dropDown',
                   editable: true,
                 }

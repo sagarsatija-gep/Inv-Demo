@@ -1,9 +1,10 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component, Input, OnInit, ViewEncapsulation } from "@angular/core";
 
 @Component({
     selector: 'goods-issue-details',
     templateUrl: './goodsIssueDetails.component.html',
-    styleUrls: ['./goodsIssueDetails.component.scss']
+    styleUrls: ['./goodsIssueDetails.component.scss'],
+    encapsulation: ViewEncapsulation.None
 })
 export class GoodsIssueDetails implements OnInit {
     @Input() data;
