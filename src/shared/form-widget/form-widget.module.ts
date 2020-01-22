@@ -1,3 +1,4 @@
+import { WidgetTable } from './component/widget-table/widgetTable.component';
 import { FormsModule } from '@angular/forms';
 import { WidgetAttachemant } from './component/widgetAttachement/widgetAttachement.component';
 import { SubDetailsComponent } from './component/details-component/sub-details/subDetails.component';
@@ -29,7 +30,8 @@ import { GoodsIssueDetails } from './component/goods-issue-details/goodsIssueDet
          DevTable, 
          SubDetailsComponent,
          WidgetAttachemant,
-         GoodsIssueDetails
+         GoodsIssueDetails,
+         WidgetTable
         ],
     exports:[WidgetFormComponent],
     entryComponents: [
@@ -41,7 +43,8 @@ import { GoodsIssueDetails } from './component/goods-issue-details/goodsIssueDet
         DevTable, 
         SubDetailsComponent,
         WidgetAttachemant,
-        GoodsIssueDetails
+        GoodsIssueDetails,
+        WidgetTable
     ]
 })
 export class FormWidget {}

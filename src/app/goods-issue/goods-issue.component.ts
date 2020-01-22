@@ -212,39 +212,266 @@ export class GoodsIssueComponent implements OnInit {
         collapsible: false,
         isOpen: true,
         data: {
-          componentName: 'tabComponent',
-          data: [
-            {
-              tabName: 'Line',
-              tabData: [
+          componentName: 'widgetTable',
+          data: {
+            colConfig: [
+              {
+                type: 'checkbox',
+                name: 'Reservation #',
+                styles: {'width': '2%'},
+              },
+              {
+                type: 'text',
+                name: 'Reservation #',
+                colSize: '100px',
+                classes: ' ',
+                // styles: {'width': '30%'},
+              },
+              {
+                type: 'text',
+                name: 'Reservation Line #',
+                colSize: '100px',
+                classes: ' ',
+                // styles: {'width': '30%'},
+              },
+              {
+                type: 'text',
+                name: 'Item #',
+                colSize: '100px',
+                // styles: {'background-color': 'rebeccapurple'},
+                classes: '',
+                // styles: {'width': '30%'},
+              },
+              {
+                type: 'text',
+                name: 'Reservation Qty',
+                colSize: '100px',
+                // styles: {'width': '30%'},
+              },
+              {
+                type: 'text',
+                name: 'Remaining Qty',
+                colSize: '100px',
+                // styles: {'width': '30%'},
+              },
+              {
+                type: 'text',
+                name: 'On-Hand Qty',
+                colSize: '100px',
+                // styles: {'width': '30%'},
+              },
+              {
+                type: 'text',
+                name: 'Issue Qty',
+                colSize: '100px',
+                // styles: {'width': '30%'},
+              },
+              {
+                type: 'text',
+                name: 'UOM',
+                colSize: '100px',
+                // styles: {'width': '30%'},
+              },
+              {
+                type: 'text',
+                name: 'Is Final',
+                colSize: '100px',
+                // styles: {'width': '30%'},
+              },
+              {
+                type: 'text',
+                name: 'Requested Date',
+                colSize: '100px',
+                // styles: {'width': '30%'},
+              }
+            ],
+            values: [
+              [
                 {
-                  docName: "Receipt# 001005463468",
-                  createdDate: "11/06/2019",
-                  lastAccessed: "11/06/2019 7:03 PM"
+                  type: 'checkbox',
+                  value: 'false',
                 },
                 {
-                  docName: "Receipt# 001005463468",
-                  createdDate: "11/06/2019",
-                  lastAccessed: "11/06/2019 7:03 PM"
+                  type: 'text',
+                  value: 'R4544322',
                 },
                 {
-                  docName: "Receipt# 001005463468",
-                  createdDate: "11/06/2019",
-                  lastAccessed: "11/06/2019 7:03 PM"
+                  type: 'text',
+                  value: '1',
+                },
+                {
+                  type: 'text',
+                  value: '43335779',
+                },
+                {
+                  type: 'text',
+                  value: '55',
+                },
+                {
+                  type: 'text',
+                  value: '55',
+                },
+                {
+                  type: 'text',
+                  value: '70',
+                },
+                {
+                  type: 'textbox',
+                  value: '55',
+                },
+                {
+                  type: 'text',
+                  value: 'EA',
+                },
+                {
+                  type: 'text',
+                  value: 'true',
+                },
+                {
+                  type: 'text',
+                  value: '10/28/2019',
                 }
-              ] 
-            },
-            {
-              tabName: 'Accounting',
-              tabData: [
+              ],
+              [
                 {
-                  docName: "Receipt# 001005463468",
-                  createdDate: "11/06/2019",
-                  lastAccessed: "11/06/2019 7:03 PM"
+                  type: 'checkbox',
+                  value: 'false',
+                },
+                {
+                  type: 'text',
+                  value: 'R4544322',
+                },
+                {
+                  type: 'text',
+                  value: '2',
+                },
+                {
+                  type: 'text',
+                  value: '55430224',
+                },
+                {
+                  type: 'text',
+                  value: '55',
+                },
+                {
+                  type: 'text',
+                  value: '55',
+                },
+                {
+                  type: 'text',
+                  value: '70',
+                },
+                {
+                  type: 'textbox',
+                  value: '55',
+                },
+                {
+                  type: 'text',
+                  value: 'EA',
+                },
+                {
+                  type: 'text',
+                  value: 'true',
+                },
+                {
+                  type: 'text',
+                  value: '10/28/2019',
+                }
+              ],
+              [
+                {
+                  type: 'checkbox',
+                  value: 'false',
+                },
+                {
+                  type: 'text',
+                  value: 'R4544322',
+                },
+                {
+                  type: 'text',
+                  value: '3',
+                },
+                {
+                  type: 'text',
+                  value: '55436655',
+                },
+                {
+                  type: 'text',
+                  value: '55',
+                },
+                {
+                  type: 'text',
+                  value: '55',
+                },
+                {
+                  type: 'text',
+                  value: '70',
+                },
+                {
+                  type: 'textbox',
+                  value: '55',
+                },
+                {
+                  type: 'text',
+                  value: 'EA',
+                },
+                {
+                  type: 'text',
+                  value: 'true',
+                },
+                {
+                  type: 'text',
+                  value: '10/28/2019',
+                }
+              ],
+              [
+                {
+                  type: 'checkbox',
+                  value: 'false',
+                },
+                {
+                  type: 'text',
+                  value: 'R4544322',
+                },
+                {
+                  type: 'text',
+                  value: '4',
+                },
+                {
+                  type: 'text',
+                  value: '55437754',
+                },
+                {
+                  type: 'text',
+                  value: '55',
+                },
+                {
+                  type: 'text',
+                  value: '55',
+                },
+                {
+                  type: 'text',
+                  value: '70',
+                },
+                {
+                  type: 'textbox',
+                  value: '55',
+                },
+                {
+                  type: 'text',
+                  value: 'EA',
+                },
+                {
+                  type: 'text',
+                  value: 'true',
+                },
+                {
+                  type: 'text',
+                  value: '10/28/2019',
                 }
               ]
-            }
-          ]
+            ]
+          }
         }
       }
     }
