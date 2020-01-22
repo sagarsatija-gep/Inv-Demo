@@ -16,7 +16,7 @@ export class DetailsComponent implements OnInit {
     constructor(private cfr: ComponentFactoryResolver){}
 
     ngOnInit(): void {
-        debugger;
+        // debugger;
         console.log(this.data);
 
         if(this.data.isSubDetails) {

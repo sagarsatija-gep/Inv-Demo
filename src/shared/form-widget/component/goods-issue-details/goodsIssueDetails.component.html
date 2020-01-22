@@ -18,6 +18,20 @@
             <div *ngIf="field.type == 'date'">
               <input type="date" id='date' [(ngModel)]='field.value'>
             </div>
+            <div *ngIf="field.type == 'choosedate'">
+              <mat-form-field>
+                <input matInput [matDatepicker]="picker">
+                <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+                <mat-datepicker #picker></mat-datepicker>
+              </mat-form-field>
+            </div>
+            <div *ngIf="field.type == 'dropdown'">
+                <mat-form-field >
+                    <mat-select name="countryString" [(value)]="field.selectedValue" placeholder="">
+                      <mat-option [value]="item" *ngFor="let item of field.value">{{item}}</mat-option>
+                    </mat-select>
+                  </mat-form-field>
+            </div>
           </div>
         </div>
       </div>

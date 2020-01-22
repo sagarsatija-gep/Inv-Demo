@@ -100,9 +100,11 @@ export class PurchaseDetailsComponent implements OnInit {
           collapsible: true,
           data: {
             componentName: 'tabComponent',
+            haveButton: false,
             data: [
               {
                 tabName: 'Line',
+                tabcomponent: 'table',
                 tabData: [
                   {
                     docName: "Receipt# 001005463468",
@@ -123,6 +125,7 @@ export class PurchaseDetailsComponent implements OnInit {
               },
               {
                 tabName: 'Accounting',
+                tabcomponent: 'table',
                 tabData: [
                   {
                     docName: "Receipt# 001005463468",
@@ -142,9 +145,11 @@ export class PurchaseDetailsComponent implements OnInit {
         collapsible: true,
         data: {
           componentName: 'tabComponent',
+          haveButton: false,
           data: [
             {
               tabName: 'Order',
+              tabcomponent: 'table',
               tabData: [
                 {
                   docName: "Receipt# 001005463468",
@@ -165,6 +170,7 @@ export class PurchaseDetailsComponent implements OnInit {
             },
             {
               tabName: 'ASN',
+              tabcomponent: 'table',
               tabData: [
                 {
                   docName: "Receipt# 001005463468",
@@ -175,6 +181,7 @@ export class PurchaseDetailsComponent implements OnInit {
             },
             {
               tabName: 'Receipt',
+              tabcomponent: 'table',
               tabData: [
                 {
                   docName: "Receipt# 001005463468",
@@ -185,6 +192,7 @@ export class PurchaseDetailsComponent implements OnInit {
             },
             {
               tabName: 'Invoice',
+              tabcomponent: 'table',
               tabData: [
                 {
                   docName: "Receipt# 001005463468",
