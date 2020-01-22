@@ -32,7 +32,7 @@ export class GoodsIssueComponent implements OnInit {
                   editable: true,
                 },
                 {
-                  type: 'textBox',
+                  type: 'barcode',
                   name: 'BarCode',
                   value: '1232',
                   editable: true,
@@ -98,7 +98,7 @@ export class GoodsIssueComponent implements OnInit {
               editable: true,
               data: [
                 {
-                  type: 'barCode',
+                  type: 'barcode',
                   name: 'Pick List Barcode',
                   value: '1232',
                   editable: true,
