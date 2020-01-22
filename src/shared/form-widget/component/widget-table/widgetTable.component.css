@@ -1,0 +1,122 @@
+.rv {
+  padding-left: 20px;
+  background-color: red;
+}
+
+.cr {
+  background-color: green;
+  margin-left: 15px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  -webkit-box-shadow: 0 0 1px #2196F3;
+          box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+.widgetTable th {
+  font-weight: normal;
+  color: #676767de;
+}
+
+.widgetTable td {
+  padding: 0.5rem 0.75rem 0rem 0.75rem;
+  font-weight: 500;
+}
+
+.widgetTable td:nth-child(2) {
+  color: #007bff;
+}
+
+.widgetTable .input-small {
+  width: 60px;
+  border: 1px solid;
+  padding-right: 3px;
+}
+
+.widgetTable .input-medium {
+  width: 120px;
+  border: 1px solid;
+  padding-right: 3px;
+}
+
+.widgetTable .input-large {
+  width: 200px;
+  border: 1px solid;
+  padding-right: 3px;
+}
+
+.widgetTable .mat-form-field-type-mat-select:not(.mat-form-field-disabled) .mat-form-field-flex {
+  cursor: pointer;
+  border: 1px solid #d6d6d6 !important;
+  border-radius: 5px;
+}
+
+.widgetTable .mat-form-field-infix {
+  padding: 0 0 .4375em 0;
+  font-weight: 500;
+  border-top: 0em solid transparent;
+}
+
+.widgetTable .mat-form-field-underline {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.widgetTable .mat-form-field-wrapper {
+  padding-bottom: 0.5em;
+}
+/*# sourceMappingURL=widgetTable.component.css.map */

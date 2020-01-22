@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,OAAO,CAAA;EACH,SAAS,EAAE,YAAY,CAAC,UAAU;CACrC",
+    "sources": [
+        "subDetails.component.scss"
+    ],
+    "names": [],
+    "file": "subDetails.component.css"
+}
