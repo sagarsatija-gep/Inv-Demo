@@ -100,6 +100,7 @@ export class PurchaseDetailsComponent implements OnInit {
           collapsible: true,
           data: {
             componentName: 'tabComponent',
+            haveButton: false,
             data: [
               {
                 tabName: 'Line',
@@ -144,6 +145,7 @@ export class PurchaseDetailsComponent implements OnInit {
         collapsible: true,
         data: {
           componentName: 'tabComponent',
+          haveButton: false,
           data: [
             {
               tabName: 'Order',

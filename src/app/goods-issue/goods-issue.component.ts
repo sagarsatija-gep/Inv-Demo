@@ -213,6 +213,7 @@ export class GoodsIssueComponent implements OnInit {
         isOpen: true,
         data: {
           componentName: 'tabComponent',
+          haveButton: true,
           data:[
             {
               tabName: 'Line',
