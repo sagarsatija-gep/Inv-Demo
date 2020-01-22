@@ -58,6 +58,7 @@ import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
     GoodsIssueComponent,
     PackingSlipCameraComponent,
     
+    FilterComponent
   ],
   imports: [
     BrowserModule,
@@ -76,6 +77,7 @@ import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
     BarcodeGeneratorAllModule,
     NgxBarcodeModule,
     BarecodeScannerLivestreamModule
+    
 
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService],

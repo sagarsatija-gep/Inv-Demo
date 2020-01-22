@@ -9,7 +9,11 @@ import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 export class HeaderComponent implements OnInit {
   toggleThePage = false;
   popup:boolean=true;
+  opened:boolean=true;
 
+  click(){
+    this.opened=!this.opened;
+}
   constructor(private toggleService: ToggleService,public modalService: NgbModal) { }
 
   ngOnInit() {

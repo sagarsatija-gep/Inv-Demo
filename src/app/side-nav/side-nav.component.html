@@ -1,7 +1,7 @@
 <mat-sidenav-container class="example-container">
   <mat-sidenav #sidenav class="example-sidenav" mode="side" style="background: #2f4866;" [(opened)]="opened">
     <div>
-      <div class="tab" *ngFor="let sideNav of sideNav" routerLink="/{{sideNav.link}}">
+      <div class="tab" *ngFor="let sideNav of sideNav" (click)="clicked()" routerLink="/{{sideNav.link}}">
         <div class="icons">
           <div style="height: 32px;">
             <!-- Home -->
@@ -117,8 +117,9 @@
             {{sideNav.name}}
           </span>
         </div>
-      </div>
 
+      </div>
+      
     </div>
 
   </mat-sidenav>
@@ -126,3 +127,4 @@
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>
+
