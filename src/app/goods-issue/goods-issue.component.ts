@@ -335,7 +335,7 @@ export class GoodsIssueComponent implements OnInit {
                       value: 'EA',
                     },
                     {
-                      type: 'toglle',
+                      type: 'toggle',
                       value: 'true',
                     },
                     {
@@ -381,7 +381,7 @@ export class GoodsIssueComponent implements OnInit {
                       value: 'EA',
                     },
                     {
-                      type: 'toglle',
+                      type: 'toggle',
                       value: 'true',
                     },
                     {
@@ -427,7 +427,7 @@ export class GoodsIssueComponent implements OnInit {
                       value: 'EA',
                     },
                     {
-                      type: 'toglle',
+                      type: 'toggle',
                       value: 'true',
                     },
                     {
@@ -473,7 +473,7 @@ export class GoodsIssueComponent implements OnInit {
                       value: 'EA',
                     },
                     {
-                      type: 'toglle',
+                      type: 'toggle',
                       value: 'false',
                     },
                     {
