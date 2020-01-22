@@ -28,9 +28,7 @@
             <div *ngIf="field.type == 'dropdown'">
                 <mat-form-field >
                     <mat-select name="countryString" [(value)]="field.selectedValue" placeholder="">
-                      <mat-option [value]="'GB'">Great Britain</mat-option>
-                      <mat-option [value]="'US'">United States</mat-option>
-                      <mat-option [value]="'CA'">Canada</mat-option>
+                      <mat-option [value]="item" *ngFor="let item of field.value">{{item}}</mat-option>
                     </mat-select>
                   </mat-form-field>
             </div>
