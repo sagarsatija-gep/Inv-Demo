@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AACE,aADW,CACX,KAAK,CAAC;EACJ,OAAO,EAAE,IAAI;CACd;;AAHH,AAKE,aALW,CAKX,GAAG,CAAC;EACF,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,OAAO;CAChB;;AAIH,AAAA,YAAY,CAAC;EACX,gBAAgB,EAAE,OAAO;EACzB,KAAK,EAAE,IAAI;EACX,OAAO,EAAE,QAAQ;EACjB,YAAY,EAAE,OAAO;EACrB,aAAa,EAAE,GAAG;CACnB",
+    "sources": [
+        "widgetAttachement.component.scss"
+    ],
+    "names": [],
+    "file": "widgetAttachement.component.css"
+}
