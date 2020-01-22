@@ -54,7 +54,7 @@ startQuagga(){
     </div>
     <div class="modal-footer">
     <div> Your picture wil be under "Unprocessed Packing Slip" section after you save it.</div>
-   <a routerLink='/managePackingList'>   <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Save</button></a>
+   <a (click)="activeModal.close('Close click')" [routerLink]="['/managePackingList']">   <button type="button" class="btn btn-outline-dark" >Save</button></a>
     </div>
   `
 })

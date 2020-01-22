@@ -28,7 +28,6 @@ import { PurchaseDetailsComponent } from './purchase-details/purchase-details.co
 import { PickListComponent } from './pick-list/pick-list.component';
 import { BarcodeGeneratorAllModule, QRCodeGeneratorAllModule, DataMatrixGeneratorAllModule } from '@syncfusion/ej2-angular-barcode-generator';
 import { NgxBarcodeModule } from 'ngx-barcode';
-
 import { ManagePackingListComponent } from './manage-packing-list/manage-packing-list.component';
 import { UnprocessedPackingSlipsComponent } from './unprocessed-packing-slips/unprocessed-packing-slips.component';
 import { PackingSlipsTabComponent } from './packing-slips-tab/packing-slips-tab.component';
