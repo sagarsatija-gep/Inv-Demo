@@ -2,13 +2,13 @@ import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
 import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
 import { ManageReservationsComponent } from './manage-reservations/manage-reservations.component';
 import { PickListComponent } from './pick-list/pick-list.component';
 import { ManagePackingListComponent } from './manage-packing-list/manage-packing-list.component';
 import {PackingSlipCameraComponent} from './packing-slip-camera/packing-slip-camera.component'
 const routes: Routes = [
-  { path: 'home', component: DashboardComponent },
+  { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   {path:'packingslipcamera',component:PackingSlipCameraComponent  },
   { path: 'manageReservations', component: ManageReservationsComponent },

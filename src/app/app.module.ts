@@ -13,7 +13,7 @@ import {NgbdModalContent} from './packing-slip-camera/packing-slip-camera.compon
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
-import { DashboardComponent } from './dashboard/dashboard.component';
+import { HomeComponent } from './home/home.component';
 import { ToggleService } from './toggle.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
@@ -26,7 +26,7 @@ import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { FilterComponent } from './filter/filter.component';
 import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
 import { PickListComponent } from './pick-list/pick-list.component';
-import { BarcodeGeneratorAllModule,QRCodeGeneratorAllModule,DataMatrixGeneratorAllModule } from '@syncfusion/ej2-angular-barcode-generator';
+import { BarcodeGeneratorAllModule, QRCodeGeneratorAllModule, DataMatrixGeneratorAllModule } from '@syncfusion/ej2-angular-barcode-generator';
 import { NgxBarcodeModule } from 'ngx-barcode';
 
 import { ManagePackingListComponent } from './manage-packing-list/manage-packing-list.component';
@@ -43,7 +43,7 @@ import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
     RecDocComponent,
     SideNavComponent,
     QuickLinksComponent,
-    DashboardComponent,
+    HomeComponent,
     LineViewComponent,
     ManageReservationsComponent,
     // DialogComponent
@@ -72,13 +72,13 @@ import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
     FormsModule,
     GridModule,
     DialogModule,
-    CheckBoxModule ,
+    CheckBoxModule,
     BarcodeGeneratorAllModule,
     NgxBarcodeModule,
     BarecodeScannerLivestreamModule
 
   ],
-  providers: [ToggleService,PageService, SortService, FilterService, GroupService],
+  providers: [ToggleService, PageService, SortService, FilterService, GroupService],
   bootstrap: [AppComponent],
   entryComponents: [NgbdModalContent,NgbdModalContent1]
 })
