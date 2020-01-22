@@ -731,12 +731,14 @@ export class GoodsIssueComponent implements OnInit {
                       value: '43335779',
                     },
                     {
-                      type: 'textbox',
+                      type: 'dropdown',
                       value: '55',
+                      selectedValue: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'dropdown',
                       value: '55',
+                      selectedValue: ''
                     },
                     {
                       type: 'textbox',
@@ -765,12 +767,14 @@ export class GoodsIssueComponent implements OnInit {
                       value: '55430224',
                     },
                     {
-                      type: 'textbox',
+                      type: 'dropdown',
                       value: '55',
+                      selectedValue: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'dropdown',
                       value: '55',
+                      selectedValue: ''
                     },
                     {
                       type: 'textbox',
@@ -799,12 +803,14 @@ export class GoodsIssueComponent implements OnInit {
                       value: '55436655',
                     },
                     {
-                      type: 'textbox',
+                      type: 'dropdown',
                       value: '55',
+                      selectedValue: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'dropdown',
                       value: '55',
+                      selectedValue: ''
                     },
                     {
                       type: 'textbox',
@@ -833,12 +839,14 @@ export class GoodsIssueComponent implements OnInit {
                       value: '55437754',
                     },
                     {
-                      type: 'textbox',
+                      type: 'dropdown',
                       value: '55',
+                      selectedValue: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'dropdown',
                       value: '55',
+                      selectedValue: ''
                     },
                     {
                       type: 'textbox',

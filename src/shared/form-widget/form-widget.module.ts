@@ -4,6 +4,7 @@ import { WidgetAttachemant } from './component/widgetAttachement/widgetAttacheme
 import { SubDetailsComponent } from './component/details-component/sub-details/subDetails.component';
 import { DevTable } from './component/doc-table/dev-table/dev-table.component';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatToolbarModule, MatFormFieldModule, MatSelectModule } from '@angular/material';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { DocumentTable } from './component/doc-table/docTable.component';
 import { RecDocComponent } from './../../app/rec-doc/rec-doc.component';
@@ -19,7 +20,9 @@ import { GoodsIssueDetails } from './component/goods-issue-details/goodsIssueDet
     imports: [CommonModule, 
         NgbModule, 
         MatTabsModule,
-        FormsModule
+        FormsModule,
+        MatFormFieldModule, 
+        MatSelectModule
      ],
     declarations: [
         WidgetFormComponent,
