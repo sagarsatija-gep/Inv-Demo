@@ -336,7 +336,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'toggle',
-                      value: 'true',
+                      value: true,
                     },
                     {
                       type: 'text',
@@ -382,7 +382,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'toggle',
-                      value: 'true',
+                      value: false,
                     },
                     {
                       type: 'text',
@@ -392,7 +392,7 @@ export class GoodsIssueComponent implements OnInit {
                   [
                     {
                       type: 'checkbox',
-                      value: 'false',
+                      value: false,
                     },
                     {
                       type: 'text',
@@ -428,7 +428,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'toggle',
-                      value: 'true',
+                      value: false,
                     },
                     {
                       type: 'text',
@@ -474,7 +474,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'toggle',
-                      value: 'false',
+                      value: false,
                     },
                     {
                       type: 'text',

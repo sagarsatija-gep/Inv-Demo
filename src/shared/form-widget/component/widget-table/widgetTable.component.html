@@ -1,41 +1,45 @@
-<table class="table" >
+<table class="table">
     <thead>
-      <tr>
-        <th [ngStyle]="col.styles" [ngClass]="col.classes" *ngFor="let col of data.colConfig">
-          <label *ngIf="col.type == 'checkbox'" class="checkbox-container">
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-          </label>
-          <span *ngIf="col.type == 'text'">{{col.name}} </span>
-        </th>
-       
-      </tr>
+        <tr>
+            <th [ngStyle]="col.styles" [ngClass]="col.classes" *ngFor="let col of data.colConfig">
+                <label *ngIf="col.type == 'checkbox'" class="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                </label>
+                <span *ngIf="col.type == 'text'">{{col.name}} </span>
+            </th>
+
+        </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let rows of data.values">
-        <td *ngFor="let column of rows">
-         
-            <label *ngIf="column.type == 'checkbox'" class="checkbox-container">
-            <input type="checkbox" />
-            <span class="checkmark"></span>
-          </label>
-         
-          <span [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'text'"> {{column.value}} </span>
-         
-          <input [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'textbox'" type="text" [(ngModel)]="column.value" >
-         
-          <mat-form-field *ngIf="column.type == 'dropdown'">
-            <mat-select name="countryString" [(value)]="column.selectedValue" placeholder="">
-              <mat-option [value]="item" *ngFor="let item of column.value">{{item}}</mat-option>
-             
-            </mat-select>
-          </mat-form-field>
+        <tr *ngFor="let rows of data.values">
+            <td *ngFor="let column of rows">
 
-          <label *ngIf="column.type == 'toggle'" class="switch">
-            <input type="checkbox" [checked]='column.value'>
-            <span class="slider round"></span>
-          </label>
-        </td>
-      </tr>
+                <label *ngIf="column.type == 'checkbox'" class="checkbox-container">
+                    <input type="checkbox" />
+                    <span class="checkmark"></span>
+                </label>
+
+                <span [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'text'">
+                    {{column.value}} </span>
+
+                <input [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'textbox'" type="text"
+                    [(ngModel)]="column.value">
+
+                <mat-form-field *ngIf="column.type == 'dropdown'">
+                    <mat-select name="countryString" [(value)]="column.selectedValue" placeholder="">
+                        <mat-option [value]="item" *ngFor="let item of column.value">{{item}}</mat-option>
+
+                    </mat-select>
+                </mat-form-field>
+
+                <div *ngIf="column.type == 'toggle'"  style="padding: 2px; margin: 0px 2px 0px 5px">
+                    <label class="switch">
+                        <input type="checkbox" id="mode" [(ngModel)]="column.value" checked>
+                        <span class="slider round"></span>
+                    </label>
+                </div>
+            </td>
+        </tr>
     </tbody>
-  </table>
+</table>
