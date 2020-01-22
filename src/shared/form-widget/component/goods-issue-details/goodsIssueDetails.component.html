@@ -4,7 +4,7 @@
         <div>{{ item.values }}</div>
     </div>
 </div> -->
-<div class="container pt-4" style="border-top: 1px solid #d6d6d6;">
+<div class="container-fluid pt-4" style="border-top: 1px solid #d6d6d6;">
   <div class="row goodsIssuInputs">
     <div class="col-4 mb-4" *ngFor="let item of data.data">
       <div class="rounded-sm blocks">
@@ -16,7 +16,7 @@
               <input type="text" id='email' [(ngModel)]='field.value'>
             </div>
             <div *ngIf="field.type == 'date'">
-              <input type="date" id='email' [(ngModel)]='field.value'>
+              <input type="date" id='date' [(ngModel)]='field.value'>
             </div>
           </div>
         </div>
