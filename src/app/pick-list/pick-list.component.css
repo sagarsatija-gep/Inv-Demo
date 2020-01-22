@@ -40,3 +40,11 @@
 button:focus{
     outline: none;
 }
+
+.e-currentitem {
+    background: blue !important;
+}
+
+.e-check{
+    background: blue !important;
+}
