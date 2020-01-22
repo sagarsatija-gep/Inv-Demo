@@ -197,9 +197,10 @@ export class GoodsIssueComponent implements OnInit {
               editable: true,
               data: [
                 {
-                  type: 'dropDown',
+                  type: 'dropdown',
                   name: 'Movement Type',
                   value: 'dropDown',
+                  selectedValue:'',
                   editable: true,
                 }
               ]
@@ -214,266 +215,656 @@ export class GoodsIssueComponent implements OnInit {
         collapsible: false,
         isOpen: true,
         data: {
-          componentName: 'widgetTable',
-          data: {
-            colConfig: [
-              {
-                type: 'checkbox',
-                name: 'Reservation #',
-                styles: {'width': '2%'},
-              },
-              {
-                type: 'text',
-                name: 'Reservation #',
-                colSize: '100px',
-                classes: ' ',
-                // styles: {'width': '30%'},
-              },
-              {
-                type: 'text',
-                name: 'Reservation Line #',
-                colSize: '100px',
-                classes: ' ',
-                // styles: {'width': '30%'},
-              },
-              {
-                type: 'text',
-                name: 'Item #',
-                colSize: '100px',
-                // styles: {'background-color': 'rebeccapurple'},
-                classes: '',
-                // styles: {'width': '30%'},
-              },
-              {
-                type: 'text',
-                name: 'Reservation Qty',
-                colSize: '100px',
-                // styles: {'width': '30%'},
-              },
-              {
-                type: 'text',
-                name: 'Remaining Qty',
-                colSize: '100px',
-                // styles: {'width': '30%'},
-              },
-              {
-                type: 'text',
-                name: 'On-Hand Qty',
-                colSize: '100px',
-                // styles: {'width': '30%'},
-              },
-              {
-                type: 'text',
-                name: 'Issue Qty',
-                colSize: '100px',
-                // styles: {'width': '30%'},
-              },
-              {
-                type: 'text',
-                name: 'UOM',
-                colSize: '100px',
-                // styles: {'width': '30%'},
-              },
-              {
-                type: 'text',
-                name: 'Is Final',
-                colSize: '100px',
-                // styles: {'width': '30%'},
-              },
-              {
-                type: 'text',
-                name: 'Requested Date',
-                colSize: '100px',
-                // styles: {'width': '30%'},
+          componentName: 'tabComponent',
+          haveButton: true,
+          data:[
+            {
+              tabName: 'Line',
+              tabcomponent: 'widgetTable',
+              tabData:  {
+                colConfig: [
+                  {
+                    type: 'checkbox',
+                    name: 'Reservation #',
+                    styles: {'width': '2%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Reservation #',
+                    colSize: '100px',
+                    classes: ' ',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Reservation Line #',
+                    colSize: '100px',
+                    classes: ' ',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Item #',
+                    colSize: '100px',
+                    // styles: {'background-color': 'rebeccapurple'},
+                    classes: '',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Reservation Qty',
+                    colSize: '100px',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Remaining Qty',
+                    colSize: '100px',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'On-Hand Qty',
+                    colSize: '100px',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Issue Qty',
+                    colSize: '100px',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'UOM',
+                    colSize: '100px',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Is Final',
+                    colSize: '100px',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Requested Date',
+                    colSize: '100px',
+                    // styles: {'width': '30%'},
+                  }
+                ],
+                values: [
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: 'R4544322',
+                    },
+                    {
+                      type: 'text',
+                      value: '1',
+                    },
+                    {
+                      type: 'text',
+                      value: '43335779',
+                    },
+                    {
+                      type: 'text',
+                      value: '55',
+                    },
+                    {
+                      type: 'text',
+                      value: '55',
+                    },
+                    {
+                      type: 'text',
+                      value: '70',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '55',
+                    },
+                    {
+                      type: 'text',
+                      value: 'EA',
+                    },
+                    {
+                      type: 'text',
+                      value: 'true',
+                    },
+                    {
+                      type: 'text',
+                      value: '10/28/2019',
+                    }
+                  ],
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: 'R4544322',
+                    },
+                    {
+                      type: 'text',
+                      value: '2',
+                    },
+                    {
+                      type: 'text',
+                      value: '55430224',
+                    },
+                    {
+                      type: 'text',
+                      value: '55',
+                    },
+                    {
+                      type: 'text',
+                      value: '55',
+                    },
+                    {
+                      type: 'text',
+                      value: '70',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '55',
+                    },
+                    {
+                      type: 'text',
+                      value: 'EA',
+                    },
+                    {
+                      type: 'text',
+                      value: 'true',
+                    },
+                    {
+                      type: 'text',
+                      value: '10/28/2019',
+                    }
+                  ],
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: 'R4544322',
+                    },
+                    {
+                      type: 'text',
+                      value: '3',
+                    },
+                    {
+                      type: 'text',
+                      value: '55436655',
+                    },
+                    {
+                      type: 'text',
+                      value: '55',
+                    },
+                    {
+                      type: 'text',
+                      value: '55',
+                    },
+                    {
+                      type: 'text',
+                      value: '70',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '55',
+                    },
+                    {
+                      type: 'text',
+                      value: 'EA',
+                    },
+                    {
+                      type: 'text',
+                      value: 'true',
+                    },
+                    {
+                      type: 'text',
+                      value: '10/28/2019',
+                    }
+                  ],
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: 'R4544322',
+                    },
+                    {
+                      type: 'text',
+                      value: '4',
+                    },
+                    {
+                      type: 'text',
+                      value: '55437754',
+                    },
+                    {
+                      type: 'text',
+                      value: '55',
+                    },
+                    {
+                      type: 'text',
+                      value: '55',
+                    },
+                    {
+                      type: 'text',
+                      value: '70',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '55',
+                    },
+                    {
+                      type: 'text',
+                      value: 'EA',
+                    },
+                    {
+                      type: 'text',
+                      value: 'true',
+                    },
+                    {
+                      type: 'text',
+                      value: '10/28/2019',
+                    }
+                  ]
+                ]
               }
-            ],
-            values: [
-              [
-                {
-                  type: 'checkbox',
-                  value: 'false',
-                },
-                {
-                  type: 'text',
-                  value: 'R4544322',
-                },
-                {
-                  type: 'text',
-                  value: '1',
-                },
-                {
-                  type: 'text',
-                  value: '43335779',
-                },
-                {
-                  type: 'text',
-                  value: '55',
-                },
-                {
-                  type: 'text',
-                  value: '55',
-                },
-                {
-                  type: 'text',
-                  value: '70',
-                },
-                {
-                  type: 'textbox',
-                  value: '55',
-                },
-                {
-                  type: 'text',
-                  value: 'EA',
-                },
-                {
-                  type: 'text',
-                  value: 'true',
-                },
-                {
-                  type: 'text',
-                  value: '10/28/2019',
-                }
-              ],
-              [
-                {
-                  type: 'checkbox',
-                  value: 'false',
-                },
-                {
-                  type: 'text',
-                  value: 'R4544322',
-                },
-                {
-                  type: 'text',
-                  value: '2',
-                },
-                {
-                  type: 'text',
-                  value: '55430224',
-                },
-                {
-                  type: 'text',
-                  value: '55',
-                },
-                {
-                  type: 'text',
-                  value: '55',
-                },
-                {
-                  type: 'text',
-                  value: '70',
-                },
-                {
-                  type: 'textbox',
-                  value: '55',
-                },
-                {
-                  type: 'text',
-                  value: 'EA',
-                },
-                {
-                  type: 'text',
-                  value: 'true',
-                },
-                {
-                  type: 'text',
-                  value: '10/28/2019',
-                }
-              ],
-              [
-                {
-                  type: 'checkbox',
-                  value: 'false',
-                },
-                {
-                  type: 'text',
-                  value: 'R4544322',
-                },
-                {
-                  type: 'text',
-                  value: '3',
-                },
-                {
-                  type: 'text',
-                  value: '55436655',
-                },
-                {
-                  type: 'text',
-                  value: '55',
-                },
-                {
-                  type: 'text',
-                  value: '55',
-                },
-                {
-                  type: 'text',
-                  value: '70',
-                },
-                {
-                  type: 'textbox',
-                  value: '55',
-                },
-                {
-                  type: 'text',
-                  value: 'EA',
-                },
-                {
-                  type: 'text',
-                  value: 'true',
-                },
-                {
-                  type: 'text',
-                  value: '10/28/2019',
-                }
-              ],
-              [
-                {
-                  type: 'checkbox',
-                  value: 'false',
-                },
-                {
-                  type: 'text',
-                  value: 'R4544322',
-                },
-                {
-                  type: 'text',
-                  value: '4',
-                },
-                {
-                  type: 'text',
-                  value: '55437754',
-                },
-                {
-                  type: 'text',
-                  value: '55',
-                },
-                {
-                  type: 'text',
-                  value: '55',
-                },
-                {
-                  type: 'text',
-                  value: '70',
-                },
-                {
-                  type: 'textbox',
-                  value: '55',
-                },
-                {
-                  type: 'text',
-                  value: 'EA',
-                },
-                {
-                  type: 'text',
-                  value: 'true',
-                },
-                {
-                  type: 'text',
-                  value: '10/28/2019',
-                }
-              ]
-            ]
-          }
+
+            },
+            {
+              tabName: 'Where',
+              tabcomponent: 'widgetTable',
+              tabData:  {
+                colConfig: [
+                  {
+                    type: 'checkbox',
+                    name: 'Reservation #',
+                    styles: {'width': '2%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Reservation #',
+                    colSize: '100px',
+                    classes: ' ',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Reservation Line #',
+                    colSize: '100px',
+                    classes: ' ',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Item #',
+                    colSize: '100px',
+                    // styles: {'background-color': 'rebeccapurple'},
+                    classes: '',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Goods Recipient',
+                    colSize: '100px',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Unloading Point',
+                    colSize: '100px',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Line Comments',
+                    colSize: '100px',
+                    // styles: {'width': '30%'},
+                  }
+                ],
+                values: [
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: 'R4544322',
+                    },
+                    {
+                      type: 'text',
+                      value: '1',
+                    },
+                    {
+                      type: 'text',
+                      value: '43335779',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                    }
+                  ],
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: 'R4544322',
+                    },
+                    {
+                      type: 'text',
+                      value: '2',
+                    },
+                    {
+                      type: 'text',
+                      value: '55430224',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                    }
+                  ],
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: 'R4544322',
+                    },
+                    {
+                      type: 'text',
+                      value: '3',
+                    },
+                    {
+                      type: 'text',
+                      value: '55436655',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                    }
+                  ],
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: 'R4544322',
+                    },
+                    {
+                      type: 'text',
+                      value: '4',
+                    },
+                    {
+                      type: 'text',
+                      value: '55437754',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                    }
+                  ]
+                ]
+              }
+
+            },
+            {
+              tabName: 'Accounting',
+              tabcomponent: 'widgetTable',
+              tabData:  {
+                colConfig: [
+                  {
+                    type: 'checkbox',
+                    name: 'Reservation #',
+                    styles: {'width': '2%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Reservation #',
+                    colSize: '100px',
+                    classes: ' ',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Reservation Line #',
+                    colSize: '100px',
+                    classes: ' ',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Item #',
+                    colSize: '100px',
+                    // styles: {'background-color': 'rebeccapurple'},
+                    classes: '',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Movement Type',
+                    colSize: '100px',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Cost Center',
+                    colSize: '100px',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'WBS Element',
+                    colSize: '100px',
+                    // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'WO/IO#',
+                    colSize: '100px',
+                    // styles: {'width': '30%'},
+                  }
+                ],
+                values: [
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: 'R4544322',
+                    },
+                    {
+                      type: 'text',
+                      value: '1',
+                    },
+                    {
+                      type: 'text',
+                      value: '43335779',
+                    },
+                    {
+                      type: 'dropdown',
+                      value: '55',
+                      selectedValue: ''
+                    },
+                    {
+                      type: 'dropdown',
+                      value: '55',
+                      selectedValue: ''
+                    },
+                    {
+                      type: 'textbox',
+                      value: '70',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '55',
+                    }
+                  ],
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: 'R4544322',
+                    },
+                    {
+                      type: 'text',
+                      value: '2',
+                    },
+                    {
+                      type: 'text',
+                      value: '55430224',
+                    },
+                    {
+                      type: 'dropdown',
+                      value: '55',
+                      selectedValue: ''
+                    },
+                    {
+                      type: 'dropdown',
+                      value: '55',
+                      selectedValue: ''
+                    },
+                    {
+                      type: 'textbox',
+                      value: '70',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '55',
+                    }
+                  ],
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: 'R4544322',
+                    },
+                    {
+                      type: 'text',
+                      value: '3',
+                    },
+                    {
+                      type: 'text',
+                      value: '55436655',
+                    },
+                    {
+                      type: 'dropdown',
+                      value: '55',
+                      selectedValue: ''
+                    },
+                    {
+                      type: 'dropdown',
+                      value: '55',
+                      selectedValue: ''
+                    },
+                    {
+                      type: 'textbox',
+                      value: '70',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '55',
+                    }
+                  ],
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: 'R4544322',
+                    },
+                    {
+                      type: 'text',
+                      value: '4',
+                    },
+                    {
+                      type: 'text',
+                      value: '55437754',
+                    },
+                    {
+                      type: 'dropdown',
+                      value: '55',
+                      selectedValue: ''
+                    },
+                    {
+                      type: 'dropdown',
+                      value: '55',
+                      selectedValue: ''
+                    },
+                    {
+                      type: 'textbox',
+                      value: '70',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '55',
+                    }
+                  ]
+                ]
+              }
+
+            }
+          ]
         }
       }
     }
