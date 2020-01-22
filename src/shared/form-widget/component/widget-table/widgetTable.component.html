@@ -14,11 +14,14 @@
     <tbody>
       <tr *ngFor="let rows of data.values">
         <td *ngFor="let column of rows">
-          <label *ngIf="column.type == 'checkbox'" class="checkbox-container">
+         
+            <label *ngIf="column.type == 'checkbox'" class="checkbox-container">
             <input type="checkbox" />
             <span class="checkmark"></span>
           </label>
+         
           <span [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'text'"> {{column.value}} </span>
+         
           <input [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'textbox'" type="text" [(ngModel)]="column.value" >
          
           <mat-form-field *ngIf="column.type == 'dropdown'">
@@ -27,6 +30,11 @@
              
             </mat-select>
           </mat-form-field>
+
+          <label *ngIf="column.type == 'toglle'" class="switch">
+            <input type="checkbox" [checked]='column.value'>
+            <span class="slider round"></span>
+          </label>
         </td>
       </tr>
     </tbody>
