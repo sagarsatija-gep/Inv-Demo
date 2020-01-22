@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ViewEncapsulation } from '@angular/core';
 
 interface Document {
   id?: number;
@@ -183,7 +183,8 @@ const DOCUMENTS: Document[] = [
 @Component({
   selector: 'app-rec-doc',
   templateUrl: './rec-doc.component.html',
-  styleUrls: ['./rec-doc.component.css']
+  styleUrls: ['./rec-doc.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class RecDocComponent {
   page = 1;
