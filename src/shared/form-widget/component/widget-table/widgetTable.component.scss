@@ -72,6 +72,7 @@ input:checked+.slider:before {
 }
 
 .widgetTable {
+  border-bottom: 1px solid #6767672e;
   th {
     font-weight: normal;
     color: $secondary-color;
@@ -112,7 +113,7 @@ input:checked+.slider:before {
 
   .mat-form-field-infix {
     padding: 0 0 .4375em 0;
-    font-weight: 500; 
+    font-weight: 500;
     border-top: 0em solid transparent;
   }
 
@@ -124,3 +125,6 @@ input:checked+.slider:before {
     padding-bottom: 0.5em;
   }
 }
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #F8F9FC;
+} 

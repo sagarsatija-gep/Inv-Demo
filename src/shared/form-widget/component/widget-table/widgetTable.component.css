@@ -68,6 +68,10 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 
+.widgetTable {
+  border-bottom: 1px solid #6767672e;
+}
+
 .widgetTable th {
   font-weight: normal;
   color: #676767de;
@@ -118,5 +122,9 @@ input:checked + .slider:before {
 
 .widgetTable .mat-form-field-wrapper {
   padding-bottom: 0.5em;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+  background-color: #F8F9FC;
 }
 /*# sourceMappingURL=widgetTable.component.css.map */
