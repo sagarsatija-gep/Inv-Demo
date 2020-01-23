@@ -305,7 +305,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -352,7 +352,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -399,7 +399,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -446,7 +446,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -550,7 +550,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -583,7 +583,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -616,7 +616,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -649,7 +649,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -744,7 +744,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -789,7 +789,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -834,7 +834,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -879,7 +879,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
