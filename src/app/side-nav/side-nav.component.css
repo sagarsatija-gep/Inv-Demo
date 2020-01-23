@@ -36,6 +36,10 @@
   background-color: #213246;
 }
 
+.tab:focus{
+  outline: none;
+}
+
 .tab .icons{
   max-width: 102px;
   line-height: 1;
