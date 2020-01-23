@@ -13,6 +13,7 @@ import { NgbdModalContent } from './packing-slip-camera/packing-slip-camera.comp
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatMenuModule } from '@angular/material/menu';
 import { HomeComponent } from './home/home.component';
 import { ToggleService } from './toggle.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -81,6 +82,7 @@ import { GoogleMapsComponent } from './google-maps/google-maps.component';
     AgGridModule.withComponents([]),
     MatSidenavModule,
     MatTabsModule,
+    MatMenuModule,
     BrowserAnimationsModule,
     NgbModule.forRoot(),
     FormsModule,
