@@ -8,8 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { RecDocComponent } from './rec-doc/rec-doc.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
-import { HeaderComponent ,NgbdModalContent1} from './header/header.component';
-import {NgbdModalContent} from './packing-slip-camera/packing-slip-camera.component'
+import { HeaderComponent, NgbdModalContent1 } from './header/header.component';
+import { NgbdModalContent } from './packing-slip-camera/packing-slip-camera.component'
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -35,10 +35,11 @@ import { PackingSlipsTabComponent } from './packing-slips-tab/packing-slips-tab.
 import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
 import { PackingSlipCameraComponent } from './packing-slip-camera/packing-slip-camera.component';
 import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
-import { BarcodeValueService } from './barcode-value.service';
 import { PackingSlipDetailComponent } from './packing-slip-detail/packing-slip-detail.component';
 import { ScannedDocumentViewComponent } from './scanned-document-view/scanned-document-view.component';
 import { ScannedDocumentLineItemsComponent } from './scanned-document-line-items/scanned-document-line-items.component';
+import { BarcodeValueService } from './barcode-value.service';
+import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist/manage-goods-issue-picklist.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { ScannedDocumentLineItemsComponent } from './scanned-document-line-items
     FilterComponent,
     PackingSlipDetailComponent,
     ScannedDocumentViewComponent,
-    ScannedDocumentLineItemsComponent
+    ScannedDocumentLineItemsComponent,
+    ManageGoodsIssuePicklistComponent
   ],
   imports: [
     BrowserModule,
@@ -83,8 +85,6 @@ import { ScannedDocumentLineItemsComponent } from './scanned-document-line-items
     BarcodeGeneratorAllModule,
     NgxBarcodeModule,
     BarecodeScannerLivestreamModule
-    
-
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService,BarcodeValueService],
   bootstrap: [AppComponent],

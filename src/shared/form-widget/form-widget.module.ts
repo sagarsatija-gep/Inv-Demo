@@ -20,6 +20,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 // import { MatFormFieldModule } from '@angular/material/form-field';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatInputModule} from '@angular/material';
+import { ManageGoodsIssue } from './component/manage-goods-issue/manageGoodsIssue.component';
 
 
 @NgModule({
@@ -33,7 +34,7 @@ import {MatInputModule} from '@angular/material';
         MatFormFieldModule,
         MatNativeDateModule,
         MatInputModule,
-        NgxBarcodeModule     
+        NgxBarcodeModule  
      ],
     declarations: [
         WidgetFormComponent,
@@ -45,7 +46,8 @@ import {MatInputModule} from '@angular/material';
          SubDetailsComponent,
          WidgetAttachemant,
          GoodsIssueDetails,
-         WidgetTable
+         WidgetTable,
+         ManageGoodsIssue
         ],
     exports:[WidgetFormComponent, MatDatepickerModule, MatFormFieldModule],
     entryComponents: [
@@ -58,7 +60,8 @@ import {MatInputModule} from '@angular/material';
         SubDetailsComponent,
         WidgetAttachemant,
         GoodsIssueDetails,
-        WidgetTable
+        WidgetTable,
+        ManageGoodsIssue
     ]
 })
 export class FormWidget {}

@@ -8,6 +8,7 @@ import { PickListComponent } from './pick-list/pick-list.component';
 import { ManagePackingListComponent } from './manage-packing-list/manage-packing-list.component';
 import { PackingSlipCameraComponent } from './packing-slip-camera/packing-slip-camera.component';
 import { PackingSlipDetailComponent } from './packing-slip-detail/packing-slip-detail.component';
+import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist/manage-goods-issue-picklist.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },

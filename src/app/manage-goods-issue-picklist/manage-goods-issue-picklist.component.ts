@@ -1,213 +1,188 @@
-import { Component, OnInit } from '@angular/core';
-import { DatePipe } from '@angular/common';
+import {
+  Component,
+  OnInit,
+  ViewEncapsulation
+} from '@angular/core';
 
 @Component({
-  selector: 'app-goods-issue',
-  templateUrl: './goods-issue.component.html',
-  styleUrls: ['./goods-issue.component.css']
+  selector: 'app-manage-goods-issue-picklist',
+  templateUrl: './manage-goods-issue-picklist.component.html',
+  styleUrls: ['./manage-goods-issue-picklist.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
+export class ManageGoodsIssuePicklistComponent implements OnInit {
 
-
-export class GoodsIssueComponent implements OnInit {
-
-  pipe = new DatePipe('en-US');
-  widgetData = [
-    {
+  widgetData = [{
       'HeaderData': {
-        name: 'Header Details',
+        name: 'Goods Issue Details',
         isOpen: true,
         collapsible: false,
-        status: 'In Progress',
-        classes: 'text-progress',
+        status: 'Completed',
+        classes: 'text-success',
         data: {
-          componentName: 'goodsIssueDetails',
-          isSubDetails: false,//for subDetails components
-          data: [
-            {
+          componentName: 'manageGoodsIssue',
+          isSubDetails: false, //for subDetails components
+          data: [{
               editable: true,
-              data: [
-                {
+              data: [{
                   type: 'textBox',
                   name: 'Goods Issue Number',
-                  value: '1232',
+                  value: '87609',
                   editable: true,
                 },
                 {
                   type: 'barcode',
                   name: 'BarCode',
-                  value: '1232',
+                  value: ' ',
                   editable: true,
                 }
               ]
             },
             {
               editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Goods Issue Name',
-                  value: '1232',
-                  editable: true,
-                }
-              ]
+              data: [{
+                type: 'text',
+                name: 'Goods Issue Name',
+                value: '87609',
+                editable: true,
+              }]
             },
             {
               editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Division',
-                  value: '1232',
-                  editable: true,
-                }
-              ]
+              data: [{
+                type: 'text',
+                name: 'Division',
+                value: 'CH-US',
+                editable: true,
+              }]
             },
             {
               editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Company',
-                  value: 'Chevron PS',
-                  editable: true,
-                }
-              ]
+              data: [{
+                type: 'text',
+                name: 'Company',
+                value: 'Chevron PS',
+                editable: true,
+              }]
             },
             {
               editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Plant',
-                  value: 'DRPS',
-                  editable: true,
-                }
-              ]
+              data: [{
+                type: 'text',
+                name: 'Plant',
+                value: 'DRPS',
+                editable: true,
+              }]
             },
             {
               editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'User Name',
-                  value: 'Jhon Smith',
-                  editable: true,
-                }
-              ]
+              data: [{
+                type: 'text',
+                name: 'User Name',
+                value: 'JoHn Smith',
+                editable: true,
+              }]
             },
             {
               editable: true,
-              data: [
-                {
-                  type: 'barcode',
-                  name: 'Pick List Barcode',
-                  value: '1232',
-                  editable: true,
-                }
-              ]
+              data: [{
+                type: 'barcode',
+                name: 'Pick List Barcode',
+                value: '1232',
+                editable: true,
+              }]
             },
             {
               editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Pick List Number',
-                  value: '44540023',
-                  editable: true,
-                }
-              ]
+              data: [{
+                type: 'text',
+                name: 'Pick List Number',
+                value: '44540023',
+                editable: true,
+              }]
             },
             {
               editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Comments',
-                  value: '',
-                  editable: true,
-                }
-              ]
+              data: [{
+                type: 'text',
+                name: 'Comments',
+                value: '',
+                editable: true,
+              }]
             },
             {
               editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Material Slip',
-                  value: '1232',
-                  editable: true,
-                }
-              ]
+              data: [{
+                type: 'text',
+                name: 'Material Slip',
+                value: '1232',
+                editable: true,
+              }]
             },
             {
               editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Bill of Landing',
-                  value: '1232',
-                  editable: true,
-                }
-              ]
+              data: [{
+                type: 'text',
+                name: 'Bill of Landing',
+                value: '1232',
+                editable: true,
+              }]
             },
             {
               editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Gr/gl slip No.',
-                  value: '1232',
-                  editable: true,
-                }
-              ]
+              data: [{
+                type: 'text',
+                name: 'Gr/gl slip No.',
+                value: '1232',
+                editable: true,
+              }]
             },
             {
               editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Delivery Note',
-                  value: '1232',
-                  editable: true,
-                }
-              ]
+              data: [{
+                type: 'text',
+                name: 'Delivery Note',
+                value: '1232',
+                editable: true,
+              }]
             },
             {
               editable: true,
-              data: [
-                {
-                  type: 'choosedate',
-                  name: 'Document Date',
-                  value: '',
-                  editable: true,
-                }
-              ]
+              data: [{
+                type: 'text',
+                name: 'Document Date',
+                value: '10/24/2019',
+                editable: false,
+              }]
             },
             {
               editable: true,
-              data: [
-                {
-                  type: 'choosedate',
-                  name: 'Posted Date',
-                  value: '',
-                  editable: true,
-                }
-              ]
+              data: [{
+                type: 'text',
+                name: 'Posted Date',
+                value: '10/24/2019',
+                editable: false,
+              }]
             },
             {
               editable: true,
-              data: [
-                {
-                  type: 'dropdown',
-                  name: 'Movement Type',
-                  value: [
-                    'Issue For Cost Center',
-                    'Issue For Cost Center1'
-                ],
-                  selectedValue:'Issue For Cost Center',
-                  editable: true,
-                }
-              ]
+              data: [{
+                type: 'text',
+                name: 'Movement Type',
+                value: 'Issue For Cost Center',
+                selectedValue: 'Issue For Cost Center',
+                editable: true,
+              }]
+            },
+            {
+              editable: true,
+              data: [{
+                type: 'text',
+                name: 'Interface Status',
+                value: 'Accepted By ERP',
+                editable: true,
+                classes: 'text-primary'
+              }]
             }
           ]
         }
@@ -220,17 +195,17 @@ export class GoodsIssueComponent implements OnInit {
         isOpen: true,
         data: {
           componentName: 'tabComponent',
-          haveButton: true,
-          data:[
-            {
+          closeBtn: true,
+          data: [{
               tabName: 'Line',
               tabcomponent: 'widgetTable',
-              tabData:  {
-                colConfig: [
-                  {
+              tabData: {
+                colConfig: [{
                     type: 'checkbox',
                     name: 'Reservation #',
-                    styles: {'width': '2%'},
+                    styles: {
+                      'width': '2%'
+                    },
                   },
                   {
                     type: 'text',
@@ -252,7 +227,9 @@ export class GoodsIssueComponent implements OnInit {
                     colSize: '100px',
                     // styles: {'background-color': 'rebeccapurple'},
                     classes: '',
-                    styles: {'width': '8%'},
+                    styles: {
+                      'width': '8%'
+                    },
                   },
                   {
                     type: 'text',
@@ -276,19 +253,25 @@ export class GoodsIssueComponent implements OnInit {
                     type: 'text',
                     name: 'Issue Qty',
                     colSize: '100px',
-                    styles: {'width': '8%'},
+                    styles: {
+                      'width': '8%'
+                    },
                   },
                   {
                     type: 'text',
                     name: 'UOM',
                     colSize: '100px',
-                    styles: {'width': '8%'},
+                    styles: {
+                      'width': '8%'
+                    },
                   },
                   {
                     type: 'text',
                     name: 'Is Final',
                     colSize: '100px',
-                    styles: {'width': '8%'},
+                    styles: {
+                      'width': '8%'
+                    },
                   },
                   {
                     type: 'text',
@@ -298,14 +281,13 @@ export class GoodsIssueComponent implements OnInit {
                   }
                 ],
                 values: [
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -314,6 +296,7 @@ export class GoodsIssueComponent implements OnInit {
                     {
                       type: 'text',
                       value: '43335779',
+                      classes: 'text-primary'
                     },
                     {
                       type: 'text',
@@ -328,31 +311,30 @@ export class GoodsIssueComponent implements OnInit {
                       value: '70',
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '55',
-                      classes: 'input-small rounded-sm border-secondary text-right'
+                      classes: 'text-right'
                     },
                     {
                       type: 'text',
                       value: 'EA',
                     },
                     {
-                      type: 'toggle',
-                      value: true,
+                      type: 'text',
+                      value: 'YES',
                     },
                     {
                       type: 'text',
                       value: '10/28/2019',
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -361,6 +343,7 @@ export class GoodsIssueComponent implements OnInit {
                     {
                       type: 'text',
                       value: '55430224',
+                      classes: 'text-primary'
                     },
                     {
                       type: 'text',
@@ -375,31 +358,30 @@ export class GoodsIssueComponent implements OnInit {
                       value: '70',
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '55',
-                      classes: 'input-small rounded-sm border-secondary text-right'
+                      classes: 'text-right'
                     },
                     {
                       type: 'text',
                       value: 'EA',
                     },
                     {
-                      type: 'toggle',
-                      value: false,
+                      type: 'text',
+                      value: 'NO',
                     },
                     {
                       type: 'text',
                       value: '10/28/2019',
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: false,
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -408,6 +390,7 @@ export class GoodsIssueComponent implements OnInit {
                     {
                       type: 'text',
                       value: '55436655',
+                      classes: 'text-primary'
                     },
                     {
                       type: 'text',
@@ -422,31 +405,30 @@ export class GoodsIssueComponent implements OnInit {
                       value: '70',
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '55',
-                      classes: 'input-small rounded-sm border-secondary text-right'
+                      classes: 'text-right'
                     },
                     {
                       type: 'text',
                       value: 'EA',
                     },
                     {
-                      type: 'toggle',
-                      value: false,
+                      type: 'text',
+                      value: 'NO',
                     },
                     {
                       type: 'text',
                       value: '10/28/2019',
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -455,6 +437,7 @@ export class GoodsIssueComponent implements OnInit {
                     {
                       type: 'text',
                       value: '55437754',
+                      classes: 'text-primary'
                     },
                     {
                       type: 'text',
@@ -469,17 +452,17 @@ export class GoodsIssueComponent implements OnInit {
                       value: '70',
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '55',
-                      classes: 'input-small rounded-sm border-secondary text-right'
+                      classes: 'text-right'
                     },
                     {
                       type: 'text',
                       value: 'EA',
                     },
                     {
-                      type: 'toggle',
-                      value: false,
+                      type: 'text',
+                      value: 'NO',
                     },
                     {
                       type: 'text',
@@ -493,12 +476,13 @@ export class GoodsIssueComponent implements OnInit {
             {
               tabName: 'Where',
               tabcomponent: 'widgetTable',
-              tabData:  {
-                colConfig: [
-                  {
+              tabData: {
+                colConfig: [{
                     type: 'checkbox',
                     name: 'Reservation #',
-                    styles: {'width': '2%'},
+                    styles: {
+                      'width': '2%'
+                    },
                   },
                   {
                     type: 'text',
@@ -539,18 +523,17 @@ export class GoodsIssueComponent implements OnInit {
                     name: 'Line Comments',
                     colSize: '100px',
                     // styles: {'width': '30%'},
-                    classes:  'text-left'
+                    classes: 'text-left'
                   }
                 ],
                 values: [
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -561,29 +544,28 @@ export class GoodsIssueComponent implements OnInit {
                       value: '43335779'
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-large rounded-sm border-secondary'
+                      classes: ''
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -594,29 +576,28 @@ export class GoodsIssueComponent implements OnInit {
                       value: '55430224',
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-large rounded-sm border-secondary'
+                      classes: ''
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -627,29 +608,28 @@ export class GoodsIssueComponent implements OnInit {
                       value: '55436655',
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-large rounded-sm border-secondary'
+                      classes: ''
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -660,19 +640,19 @@ export class GoodsIssueComponent implements OnInit {
                       value: '55437754',
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-large rounded-sm border-secondary'
+                      classes: ''
                     }
                   ]
                 ]
@@ -682,12 +662,13 @@ export class GoodsIssueComponent implements OnInit {
             {
               tabName: 'Accounting',
               tabcomponent: 'widgetTable',
-              tabData:  {
-                colConfig: [
-                  {
+              tabData: {
+                colConfig: [{
                     type: 'checkbox',
                     name: 'Reservation #',
-                    styles: {'width': '2%'},
+                    styles: {
+                      'width': '2%'
+                    },
                   },
                   {
                     type: 'text',
@@ -719,9 +700,19 @@ export class GoodsIssueComponent implements OnInit {
                   },
                   {
                     type: 'text',
+                    name: 'Profit Center',
+                    colSize: '100px',
+                  },
+                  {
+                    type: 'text',
                     name: 'Cost Center',
                     colSize: '100px',
                     // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Project',
+                    colSize: '100px',
                   },
                   {
                     type: 'text',
@@ -737,14 +728,13 @@ export class GoodsIssueComponent implements OnInit {
                   }
                 ],
                 values: [
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -755,168 +745,153 @@ export class GoodsIssueComponent implements OnInit {
                       value: '43335779',
                     },
                     {
-                      type: 'dropdown',
-                      value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
-                    ],
-                      selectedValue:'Issue For Cost Center',
+                      type: 'text',
+                      value: 'Issue For Cost Center',
                     },
                     {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'CC001',
-                        'CC0012'
-                    ],
-                      selectedValue:'CC001',
+                      type: 'text',
+                      value: ' ',
                     },
                     {
-                      type: 'textbox',
-                      value: '70',
-                      classes: 'rounded-sm border-secondary input-small text-right'
+                      type: 'text',
+                      value:'CC001',
                     },
                     {
-                      type: 'textbox',
-                      value: '55',
-                      classes: 'rounded-sm border-secondary input-small text-right'
+                      type: 'text',
+                      value: ' ',
+                    },
+                    {
+                      type: 'text',
+                      value: '',
+                    },
+                    {
+                      type: 'text',
+                      value: '',
                     }
                   ],
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
-                    },
-                    {
-                      type: 'text',
-                      value: '2',
-                    },
-                    {
-                      type: 'text',
-                      value: '55430224',
-                    },
-                    {
-                      type: 'dropdown',
-                      value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
-                    ],
-                      selectedValue:'Issue For Cost Center',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'CC001',
-                        'CC0011'
-                    ],
-                      selectedValue:'CC001',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '70',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '55',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
+                  [{
+                    type: 'checkbox',
+                    value: 'false',
+                  },
+                  {
+                    type: 'text',
+                     value: 'R4544322', classes: 'text-primary' ,
+                  },
+                  {
+                    type: 'text',
+                    value: '2',
+                  },
+                  {
+                    type: 'text',
+                    value: '55430224',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Issue For Cost Center',
+                  },
+                  {
+                    type: 'text',
+                    value: ' ',
+                  },
+                  {
+                    type: 'text',
+                    value:'CC001',
+                  },
+                  {
+                    type: 'text',
+                    value: ' ',
+                  },
+                  {
+                    type: 'text',
+                    value: '',
+                  },
+                  {
+                    type: 'text',
+                    value: '',
+                  }
                   ],
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
-                    },
-                    {
-                      type: 'text',
-                      value: '3',
-                    },
-                    {
-                      type: 'text',
-                      value: '55436655',
-                    },
-                    {
-                      type: 'dropdown',
-                      value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
-                    ],
-                      selectedValue:'Issue For Cost Center',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'CC001',
-                        'CC0011'
-                    ],
-                      selectedValue:'CC001',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '70',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '55',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
+                  [{
+                    type: 'checkbox',
+                    value: 'false',
+                  },
+                  {
+                    type: 'text',
+                     value: 'R4544322', classes: 'text-primary' ,
+                  },
+                  {
+                    type: 'text',
+                    value: '3',
+                  },
+                  {
+                    type: 'text',
+                    value: '55436655',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Issue For Cost Center',
+                  },
+                  {
+                    type: 'text',
+                    value: ' ',
+                  },
+                  {
+                    type: 'text',
+                    value:'CC001',
+                  },
+                  {
+                    type: 'text',
+                    value: ' ',
+                  },
+                  {
+                    type: 'text',
+                    value: '',
+                  },
+                  {
+                    type: 'text',
+                    value: '',
+                  }
                   ],
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
-                    },
-                    {
-                      type: 'text',
-                      value: '4',
-                    },
-                    {
-                      type: 'text',
-                      value: '55437754',
-                    },
-                    {
-                      type: 'dropdown',
-                      value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
-                    ],
-                      selectedValue:'Issue For Cost Center',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'CC001',
-                        'CC0011'
-                    ],
-                      selectedValue:'CC001',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '70',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '55',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
-                  ]
+                  [{
+                    type: 'checkbox',
+                    value: 'false',
+                  },
+                  {
+                    type: 'text',
+                     value: 'R4544322', classes: 'text-primary' ,
+                  },
+                  {
+                    type: 'text',
+                    value: '4',
+                  },
+                  {
+                    type: 'text',
+                    value: '55437754',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Issue For Cost Center',
+                  },
+                  {
+                    type: 'text',
+                    value: ' ',
+                  },
+                  {
+                    type: 'text',
+                    value:'CC001',
+                  },
+                  {
+                    type: 'text',
+                    value: ' ',
+                  },
+                  {
+                    type: 'text',
+                    value: '',
+                  },
+                  {
+                    type: 'text',
+                    value: '',
+                  }
+                ],
                 ]
               }
 
@@ -925,10 +900,9 @@ export class GoodsIssueComponent implements OnInit {
         }
       }
     }
-]
-  constructor() { }
+  ];
+  constructor() {}
 
-  ngOnInit() {
-  }
+  ngOnInit() {}
 
 }
