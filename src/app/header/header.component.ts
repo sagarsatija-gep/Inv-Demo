@@ -9,13 +9,17 @@ import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 export class HeaderComponent implements OnInit {
   toggleThePage = false;
   popup:boolean=true;
+  opened:boolean=true;
 
+  click(){
+    this.opened=!this.opened;
+}
   constructor(private toggleService: ToggleService,public modalService: NgbModal) { }
 
   ngOnInit() {
   }
   open() {
-    const modalRef = this.modalService.open(NgbdModalContent);
+    const modalRef = this.modalService.open(NgbdModalContent1);
     modalRef.componentInstance.name = 'World';
   }
 
@@ -41,7 +45,7 @@ export class HeaderComponent implements OnInit {
     </div>
   `
 })
-export class NgbdModalContent {
+export class NgbdModalContent1 {
   @Input() name;
 
   constructor(public activeModal: NgbActiveModal) {}

@@ -1,4 +1,4 @@
-import { Component, OnInit ,ViewChild} from '@angular/core';
+import { Component, OnInit ,ViewChild, ViewEncapsulation} from '@angular/core';
 import { pickListData } from '../../../data';
 import { GroupService, SortService, GridComponent } from '@syncfusion/ej2-angular-grids';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
@@ -6,9 +6,11 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 @Component({
   selector: 'app-pick-list',
   templateUrl: './pick-list.component.html',
-  styleUrls: ['./pick-list.component.css']
+  styleUrls: ['./pick-list.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class PickListComponent implements OnInit {
+  opened:boolean=true;
   public data: Object[];
   public groupOptions: Object;
   public pageSettings: Object;
@@ -53,7 +55,7 @@ export class PickListComponent implements OnInit {
   }
 
   constructor() { }
-
+  
   // public data: Object[];
   // public filterSettings: Object;
   // ngOnInit() {

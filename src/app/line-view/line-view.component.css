@@ -63,3 +63,41 @@
     text-overflow: clip;
     white-space: nowrap;
 }
+
+.e-hide{
+    display: block;
+}
+
+.cancel{
+    margin: 1rem;
+    border: 1px solid gainsboro;
+    color: blue;
+    padding: 0px 1rem;
+    font-size: 16px;
+    border-radius: .5rem;
+    background: white;
+    font-weight: 500;
+}
+
+.submit{
+    margin: 1rem;
+    border: 1px solid gainsboro;
+    color: white;
+    padding: 0px 1rem;
+    font-size: 16px;
+    border-radius: .5rem;
+    background: gray;
+    font-weight: 500;
+}
+
+button:focus{
+    outline: none;
+}
+
+.e-currentitem {
+    background: blue !important;
+}
+
+.e-check{
+    background: blue !important;
+}
