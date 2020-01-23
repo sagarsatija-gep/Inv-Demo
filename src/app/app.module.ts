@@ -35,6 +35,7 @@ import { PackingSlipsTabComponent } from './packing-slips-tab/packing-slips-tab.
 import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
 import { PackingSlipCameraComponent } from './packing-slip-camera/packing-slip-camera.component';
 import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
+import { BarcodeValueService } from './barcode-value.service';
 
 @NgModule({
   declarations: [
@@ -80,7 +81,7 @@ import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
     
 
   ],
-  providers: [ToggleService, PageService, SortService, FilterService, GroupService],
+  providers: [ToggleService, PageService, SortService, FilterService, GroupService,BarcodeValueService],
   bootstrap: [AppComponent],
   entryComponents: [NgbdModalContent,NgbdModalContent1]
 })
