@@ -18,6 +18,7 @@ export class GoodsIssueComponent implements OnInit {
         isOpen: true,
         collapsible: false,
         status: 'In Progress',
+        classes: 'text-progress',
         data: {
           componentName: 'goodsIssueDetails',
           isSubDetails: false,//for subDetails components

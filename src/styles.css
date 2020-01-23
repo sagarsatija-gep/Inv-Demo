@@ -4,6 +4,12 @@
 @import 'ag-grid-community/dist/styles/ag-theme-balham.css';
 @import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
 @import "../node_modules/@syncfusion/ej2/material.css";
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+@import 'app/goods-issue//goods-issue.component.css';
+
+body{
+    font-family: 'Roboto', sans-serif !important;
+}
 
 .mat-drawer-content {
     background-color: #F3F3F3;

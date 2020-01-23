@@ -18,6 +18,7 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
         isOpen: true,
         collapsible: false,
         status: 'Completed',
+        classes: 'text-success',
         data: {
           componentName: 'manageGoodsIssue',
           isSubDetails: false, //for subDetails components
