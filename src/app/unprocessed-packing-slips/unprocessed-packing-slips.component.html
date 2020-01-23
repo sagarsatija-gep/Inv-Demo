@@ -10,7 +10,7 @@
       <div class="border border-secondary rounded-sm p-4 hoverEffect">
         <div class="row">
           <div class="col-12 slip-main-head">
-            {{ slip.fileName }}
+            <a [routerLink]="['/packingSlipDetail/7894563']" style="text-decoration: none;">{{ slip.fileName }}</a>
           </div>
           <div class="col-12">
             <span class="slip-head">PO Number: </span><span class="slip-data">{{ slip.poNumber }}</span>

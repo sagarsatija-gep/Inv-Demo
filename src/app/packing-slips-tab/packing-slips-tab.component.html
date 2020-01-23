@@ -30,7 +30,9 @@
                   <span class="checkmark"></span>
                 </label>
               </td>
-              <td style="color:#3D5AFE; cursor: pointer;"><span class="slip-main-col">{{ slip.fileName }}</span></td>
+              <td style="color:#3D5AFE; cursor: pointer;"><span class="slip-main-col"><a
+                    [routerLink]="['/packingSlipDetail/7894563']" style="text-decoration: none;">{{ slip.fileName }}</a></span>
+              </td>
               <td>{{ slip.poNumber }}</td>
               <td>{{ slip.uploadDate }}</td>
               <td>
