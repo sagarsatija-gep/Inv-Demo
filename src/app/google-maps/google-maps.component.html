@@ -1,0 +1,95 @@
+<div class="container-fluid border border-secondary rounded-sm mt-4 bg-white" style="margin-bottom: 40px;">
+  <div class="row" style="padding: 20px 0;">
+    <div class="col-sm-12 pt-3">
+      <h6>Organization Based View</h6>
+      <hr>
+      <div class="control-section">
+        <div style="display: flex;width: 100%;">
+          <div style="width: 69%;padding: 10px;border-right: 1px gainsboro solid;">
+            <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="false"
+              (mapClick)="mapClicked($event)">
+
+              <agm-marker *ngFor="let m of markers; let i = index" (markerClick)="clickedMarker(m.label, i)"
+                [latitude]="m.lat" [longitude]="m.lng" [label]="m.label" [markerDraggable]="m.draggable"
+                (dragEnd)="markerDragEnd(m, $event)">
+
+                <agm-info-window>
+                  <strong>InfoWindow content</strong>
+                </agm-info-window>
+
+              </agm-marker>
+
+              <agm-circle [latitude]="lat + 0.3" [longitude]="lng" [radius]="5000" [fillColor]="'red'"
+                [circleDraggable]="true" [editable]="true">
+              </agm-circle>
+
+            </agm-map>
+          </div>
+          <div style="width: 30%;">
+            <div style="height:50%;display: flex;border-bottom: 1px gainsboro solid;border-top: 1px gainsboro solid;">
+              <div style="height: 10em;width: 40%;
+              display: flex;
+              align-items: center;
+              justify-content: center">
+                <span style="display: block;">
+                  LOCATIONS
+                </span>
+                <br>
+                <h2 style="position: absolute;
+                margin-top: 24px;font-size: 38px;font-weight: 500;">
+                  19
+                </h2>
+              </div>
+              <div style="width: 60%;padding-top: 4rem;">
+                <div style="display: flex;
+                display: flex;
+                justify-content: left" *ngFor="let locations of locations">
+                  <div [ngStyle]="{'background-color': locations.color}" style="margin: .2rem 1rem ;height: 1rem;width: 1rem;border-radius: .3rem;"></div>
+                  <span>
+                    {{locations.name}} : &nbsp;
+                  </span>
+                  <span [ngStyle]="{'color': locations.color}" style="font-size: 16px;">
+                    {{locations.value}}
+                  </span>
+                  
+                </div>
+              </div>
+            </div>
+            <div style="height:50%;display: flex;border-bottom: 1px gainsboro solid;border-top: 1px gainsboro solid;">
+              <div style="height: 10em;width: 40%;
+              display: flex;
+              align-items: center;
+              justify-content: center">
+                <span style="display: block;">
+                  ITEMS
+                </span>
+                <br>
+                <span style="position: absolute;
+                margin-top: 24px;font-size: 38px;font-weight: 500;">
+                  3840
+              </span>
+              </div>
+              <div style="width: 60%;padding-top: 4rem;">
+                <div style="display: flex;
+                display: flex;
+                justify-content: left" *ngFor="let items of items">
+                  
+                  <span>
+                    {{items.name}} : &nbsp;
+                  </span>
+                  <span [ngStyle]="{'color': items.color}" style="font-size: 16px;">
+                    {{items.value}}
+                  </span>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</div>

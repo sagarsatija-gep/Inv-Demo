@@ -34,6 +34,9 @@ import { PackingSlipsTabComponent } from './packing-slips-tab/packing-slips-tab.
 import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
 import { PackingSlipCameraComponent } from './packing-slip-camera/packing-slip-camera.component';
 import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AgmCoreModule } from '@agm/core';
+import { GoogleMapsComponent } from './google-maps/google-maps.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +57,9 @@ import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
     PickListComponent,
     GoodsIssueComponent,
     PackingSlipCameraComponent,
-    FilterComponent
+    FilterComponent,
+    DashboardComponent,
+    GoogleMapsComponent
   ],
   imports: [
     BrowserModule,
@@ -72,7 +77,11 @@ import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
     CheckBoxModule,
     BarcodeGeneratorAllModule,
     NgxBarcodeModule,
-    BarecodeScannerLivestreamModule
+    BarecodeScannerLivestreamModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDRSpfba5rdNqT0RAcD4cvdUaLOk2-Bzic',
+      libraries: ['places']
+    }),
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService],
   bootstrap: [AppComponent],
