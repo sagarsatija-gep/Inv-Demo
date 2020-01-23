@@ -8,8 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { RecDocComponent } from './rec-doc/rec-doc.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
-import { HeaderComponent, NgbdModalContent1 } from './header/header.component';
-import { NgbdModalContent } from './packing-slip-camera/packing-slip-camera.component'
+import { HeaderComponent ,NgbdModalContent1} from './header/header.component';
+import {NgbdModalContent} from './packing-slip-camera/packing-slip-camera.component'
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -19,15 +19,16 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { LineViewComponent } from './line-view/line-view.component';
 import { ManageReservationsComponent } from './manage-reservations/manage-reservations.component';
+import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
 import { PageService, SortService, FilterService, GroupService } from '@syncfusion/ej2-angular-grids';
 import { DialogModule } from '@syncfusion/ej2-angular-popups';
 import { CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
 import { GridModule } from '@syncfusion/ej2-angular-grids';
 import { FilterComponent } from './filter/filter.component';
-import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
 import { PickListComponent } from './pick-list/pick-list.component';
 import { BarcodeGeneratorAllModule, QRCodeGeneratorAllModule, DataMatrixGeneratorAllModule } from '@syncfusion/ej2-angular-barcode-generator';
 import { NgxBarcodeModule } from 'ngx-barcode';
+
 import { ManagePackingListComponent } from './manage-packing-list/manage-packing-list.component';
 import { UnprocessedPackingSlipsComponent } from './unprocessed-packing-slips/unprocessed-packing-slips.component';
 import { PackingSlipsTabComponent } from './packing-slips-tab/packing-slips-tab.component';
@@ -37,6 +38,7 @@ import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AgmCoreModule } from '@agm/core';
 import { GoogleMapsComponent } from './google-maps/google-maps.component';
+import { BarcodeValueService } from './barcode-value.service';
 
 @NgModule({
   declarations: [
@@ -48,6 +50,8 @@ import { GoogleMapsComponent } from './google-maps/google-maps.component';
     HomeComponent,
     LineViewComponent,
     ManageReservationsComponent,
+    // DialogComponent
+    FilterComponent,
     PurchaseDetailsComponent,
     NgbdModalContent,
     NgbdModalContent1,
@@ -83,8 +87,8 @@ import { GoogleMapsComponent } from './google-maps/google-maps.component';
       libraries: ['places']
     }),
   ],
-  providers: [ToggleService, PageService, SortService, FilterService, GroupService],
+  providers: [ToggleService, PageService, SortService, FilterService, GroupService,BarcodeValueService],
   bootstrap: [AppComponent],
-  entryComponents: [NgbdModalContent, NgbdModalContent1]
+  entryComponents: [NgbdModalContent,NgbdModalContent1]
 })
 export class AppModule { }
