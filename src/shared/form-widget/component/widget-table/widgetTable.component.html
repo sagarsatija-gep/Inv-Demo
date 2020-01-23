@@ -1,7 +1,7 @@
 <table class="table widgetTable table-striped">
   <thead>
     <tr>
-      <th class="text-center" [ngStyle]="col.styles" [ngClass]="col.classes" *ngFor="let col of data.colConfig">
+      <th class="text-center-cl" [ngStyle]="col.styles" [ngClass]="col.classes" *ngFor="let col of data.colConfig">
         <label *ngIf="col.type == 'checkbox'" class="checkbox-container">
           <input type="checkbox" />
           <span class="checkmark"></span>
@@ -11,8 +11,8 @@
     </tr>
   </thead>
   <tbody>
-    <tr *ngFor="let rows of data.values">
-      <td *ngFor="let column of rows" class="text-center">
+    <tr *ngFor="let rows of data.values" [ngClass]="data.tablerowClass">
+      <td *ngFor="let column of rows" class="text-center-cl" [ngClass]="column.tdClasses">
 
         <label *ngIf="column.type == 'checkbox'" class="checkbox-container">
           <input type="checkbox" />
