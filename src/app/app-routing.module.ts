@@ -18,7 +18,7 @@ const routes: Routes = [
   { path: 'pickList', component: PickListComponent },
   { path: 'managePackingList', component: ManagePackingListComponent },
   { path: 'goods', component: GoodsIssueComponent },
-  { path: 'packingSlipDetail/7894563', component: PackingSlipDetailComponent }
+  { path: 'managePackingSlip/7894563', component: PackingSlipDetailComponent }
 ];
 
 @NgModule({
