@@ -1,0 +1,15 @@
+.container-fluid {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.border-secondary {
+    border-color: #d6d6d6 !important;
+}
+
+.circle-icon {
+    background: #3D5AFE;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+}
