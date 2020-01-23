@@ -40,6 +40,9 @@ import { ScannedDocumentViewComponent } from './scanned-document-view/scanned-do
 import { ScannedDocumentLineItemsComponent } from './scanned-document-line-items/scanned-document-line-items.component';
 import { BarcodeValueService } from './barcode-value.service';
 import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist/manage-goods-issue-picklist.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AgmCoreModule } from '@agm/core';
+import { GoogleMapsComponent } from './google-maps/google-maps.component';
 
 @NgModule({
   declarations: [
@@ -66,7 +69,9 @@ import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist
     PackingSlipDetailComponent,
     ScannedDocumentViewComponent,
     ScannedDocumentLineItemsComponent,
-    ManageGoodsIssuePicklistComponent
+    ManageGoodsIssuePicklistComponent,
+    DashboardComponent,
+    GoogleMapsComponent
   ],
   imports: [
     BrowserModule,
@@ -84,10 +89,14 @@ import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist
     CheckBoxModule,
     BarcodeGeneratorAllModule,
     NgxBarcodeModule,
-    BarecodeScannerLivestreamModule
+    BarecodeScannerLivestreamModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDRSpfba5rdNqT0RAcD4cvdUaLOk2-Bzic',
+      libraries: ['places']
+    }),
   ],
-  providers: [ToggleService, PageService, SortService, FilterService, GroupService,BarcodeValueService],
+  providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService],
   bootstrap: [AppComponent],
-  entryComponents: [NgbdModalContent,NgbdModalContent1]
+  entryComponents: [NgbdModalContent, NgbdModalContent1]
 })
 export class AppModule { }
