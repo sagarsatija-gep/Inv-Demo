@@ -34,7 +34,7 @@ import { ManageGoodsIssue } from './component/manage-goods-issue/manageGoodsIssu
         MatFormFieldModule,
         MatNativeDateModule,
         MatInputModule,
-        NgxBarcodeModule     
+        NgxBarcodeModule  
      ],
     declarations: [
         WidgetFormComponent,
