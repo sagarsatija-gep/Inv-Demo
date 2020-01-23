@@ -36,6 +36,9 @@ import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
 import { PackingSlipCameraComponent } from './packing-slip-camera/packing-slip-camera.component';
 import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
 import { BarcodeValueService } from './barcode-value.service';
+import { PackingSlipDetailComponent } from './packing-slip-detail/packing-slip-detail.component';
+import { ScannedDocumentViewComponent } from './scanned-document-view/scanned-document-view.component';
+import { ScannedDocumentLineItemsComponent } from './scanned-document-line-items/scanned-document-line-items.component';
 
 @NgModule({
   declarations: [
@@ -58,8 +61,10 @@ import { BarcodeValueService } from './barcode-value.service';
     PickListComponent,
     GoodsIssueComponent,
     PackingSlipCameraComponent,
-    
-    FilterComponent
+    FilterComponent,
+    PackingSlipDetailComponent,
+    ScannedDocumentViewComponent,
+    ScannedDocumentLineItemsComponent
   ],
   imports: [
     BrowserModule,
