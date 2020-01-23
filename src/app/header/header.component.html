@@ -2,10 +2,10 @@
   <div style="margin: auto 0;flex: 1;min-width: 12rem;">
     <img style="height: 30px;padding: 0 10px;" (click)="toggle()"
       src="https://img.icons8.com/material-rounded/384/000000/menu.png">
-    <img style="height: 30px;" src="../../assets/1.jpg">
+    <img style="height: 30px;" src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/1.jpg">
   </div>
   <div style="flex: 1;display: flex;min-width: 30rem">
-    <input class="search" style="height: 30px;width: 100%;padding-left: 10px;font-size: 12px;" type="text" name="search"
+    <input class="search" value={{barcodeValue}} style="height: 30px;width: 100%;padding-left: 10px;font-size: 12px;" type="text" name="search"
       placeholder="Search..">
     <div style="position: relative;;">
       <div style="right: 0px;
@@ -14,10 +14,13 @@
       left: -61px;">
         <img class="search-img" style="height: 30px;width: 30px;"
           src="https://img.icons8.com/android/96/000000/microphone.png">
+
+
         <img class="search-img" style="height: 30px;width: 30px;background: blue;"
-          src="https://img.icons8.com/ios-glyphs/480/000000/search.png">
-        <a routerLink='/packingslipcamera'><img class="search-img" style="height: 30px;width: 30px;"
-            src="https://img.icons8.com/small/96/000000/camera.png"></a>
+          src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/search.png">
+          <a routerLink='/packingslipcamera'><img class="search-img" style="height: 30px;width: 30px;" 
+          src="https://img.icons8.com/small/96/000000/camera.png"></a>
+
         <img class="search-img" style="height: 30px;width: 30px;" (click)="open()"
           src="https://img.icons8.com/wired/64/000000/barcode-scanner.png">
       </div>
@@ -26,7 +29,7 @@
   <div style="flex: 1;min-width: 8rem;">
     <div (click)="popup=!popup" class="people"
       style="    margin-right: 1rem;
-      height: 50px;width: 50px;border-radius: 25px;float: right;background-size: cover;background-image: url('../../assets/people.jpg')">
+      height: 50px;width: 50px;border-radius: 25px;float: right;background-size: cover;background-image: url('https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/people.jpg')">
     </div>
     <img style="height: 22px;margin-top: 14px;float: right;margin-right: 14px;"
       src="https://img.icons8.com/material-rounded/96/000000/squared-menu.png">

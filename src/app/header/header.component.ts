@@ -1,6 +1,8 @@
-import { Component, OnInit,Input } from '@angular/core';
+import { Component,ViewChild, OnInit,Input } from '@angular/core';
 import { ToggleService } from '../toggle.service';
+import { BarecodeScannerLivestreamComponent } from 'ngx-barcode-scanner';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { BarcodeValueService } from '../barcode-value.service';
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -10,13 +12,14 @@ export class HeaderComponent implements OnInit {
   toggleThePage = false;
   popup:boolean=true;
   opened:boolean=true;
-
+  barcodeValue;
   click(){
     this.opened=!this.opened;
 }
-  constructor(private toggleService: ToggleService,public modalService: NgbModal) { }
+  constructor(private toggleService: ToggleService,public modalService: NgbModal,public barcode:BarcodeValueService) { }
 
   ngOnInit() {
+    this.barcode.currentmessage.subscribe(msg => this.barcodeValue=msg)
   }
   open() {
     const modalRef = this.modalService.open(NgbdModalContent1);
@@ -32,23 +35,53 @@ export class HeaderComponent implements OnInit {
   selector: 'ngbd-modal-content',
   template: `
     <div class="modal-header">
-      <h4 class="modal-title">Capture Your Document</h4>
+      <h4 class="modal-title">Scan Your Barcode</h4>
        <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
         <span aria-hidden="true">&times;</span>
    </button>
     </div>
     <div class="modal-body">
-      <p>Hello, {{name}}!</p>
+    <barcode-scanner-livestream type="code_128" (valueChanges)="onValueChanges($event)"></barcode-scanner-livestream>
+        <div [hidden]="!barcodeValue">
+            {{barcodeValue}}
+        </div>
     </div>
     <div class="modal-footer">
       <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
     </div>
   `
 })
-export class NgbdModalContent1 {
+export class NgbdModalContent1 implements OnInit{
   @Input() name;
 
-  constructor(public activeModal: NgbActiveModal) {}
+  constructor(public activeModal: NgbActiveModal, public barcode:BarcodeValueService) {}
+  @ViewChild(BarecodeScannerLivestreamComponent)
+  barecodeScanner: BarecodeScannerLivestreamComponent;
+  
+  barcodeValue;
+  ngOnInit(){
+  this.startQuagga();
+  this.barcode.currentmessage.subscribe( message => this.barcodeValue=message)
+}
+  ngAfterViewInit() {
+      this.barecodeScanner.stop();
+  }
+startQuagga(){
+  this.barecodeScanner.start()
+}
+  stopQuagga(){
+    this.barecodeScanner.stop()
+  }
+  onValueChanges(result){
+      this.barcodeValue = result.codeResult.code;
+      console.log(result.codeResult.code)
+      this.barecodeScanner.stop()
+  this.barcode.changeMessage(result.codeResult.code)
+  this.activeModal.close('Close click')
+  }
+
+
+  
 }
 
 

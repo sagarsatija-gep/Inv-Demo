@@ -2,6 +2,7 @@
 import { Component, ViewChild, AfterViewInit,OnInit ,Input } from '@angular/core';
 import { BarecodeScannerLivestreamComponent } from 'ngx-barcode-scanner';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { RouterModule, Routes, Router } from '@angular/router';
 
 @Component({
   selector: 'app-packing-slip-camera',
@@ -54,14 +55,19 @@ startQuagga(){
     </div>
     <div class="modal-footer">
     <div> Your picture wil be under "Unprocessed Packing Slip" section after you save it.</div>
-   <a (click)="activeModal.close('Close click')" [routerLink]="['/managePackingList']">   <button type="button" class="btn btn-outline-dark" >Save</button></a>
+      <button type="button" class="btn btn-outline-dark" (click)="navigate()">Save</button>
     </div>
   `
 })
 export class NgbdModalContent {
   @Input() name;
+  navigate(){
+    console.log("()_")
+    this.router.navigate(['/','managePackingList']);
+    this.activeModal.dismiss('Cross click')
+  }
 
-  constructor(public activeModal: NgbActiveModal) {}
+  constructor(public activeModal: NgbActiveModal,public router:Router) {}
 }
 
 
