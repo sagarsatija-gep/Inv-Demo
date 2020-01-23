@@ -35,6 +35,7 @@ import { PackingSlipsTabComponent } from './packing-slips-tab/packing-slips-tab.
 import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
 import { PackingSlipCameraComponent } from './packing-slip-camera/packing-slip-camera.component';
 import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
+import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist/manage-goods-issue-picklist.component';
 
 @NgModule({
   declarations: [
@@ -58,7 +59,9 @@ import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
     GoodsIssueComponent,
     PackingSlipCameraComponent,
     
-    FilterComponent
+    FilterComponent,
+    
+    ManageGoodsIssuePicklistComponent
   ],
   imports: [
     BrowserModule,

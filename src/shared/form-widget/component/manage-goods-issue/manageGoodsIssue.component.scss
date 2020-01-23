@@ -1,0 +1,46 @@
+.goodsIssuInputs {
+  font-weight: 500;
+
+  input {
+    width: 100%;
+    background: transparent;
+    border-width: 0;
+    color: #000000;
+    font-weight: 500;
+  }
+
+  .labels {
+    color: #a9a9a9;
+    font-size: 0.8em !important;
+    font-weight: 500;
+    font-size: 0.9em;
+  }
+
+  .blocks {
+    background-color: #fff;
+    border: 0px solid #d6d6d6;
+  }
+
+  .mat-form-field-infix {
+    padding: 0em !important;
+    border-top: 0em !important;
+  }
+
+  // .mat-form-field-flex {
+  //   width: 160%;
+  // }
+
+  .mat-form-field-underline {
+    width: 0%;
+  }
+
+  .mat-form-field-wrapper {
+    padding-bottom: 0em;
+  }
+
+  .customBarcode svg {
+    max-width: 140px;
+    margin-top: -6px;
+    height: 25px;
+  }
+}

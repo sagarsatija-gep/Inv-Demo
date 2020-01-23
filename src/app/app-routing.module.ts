@@ -7,6 +7,7 @@ import { ManageReservationsComponent } from './manage-reservations/manage-reserv
 import { PickListComponent } from './pick-list/pick-list.component';
 import { ManagePackingListComponent } from './manage-packing-list/manage-packing-list.component';
 import {PackingSlipCameraComponent} from './packing-slip-camera/packing-slip-camera.component'
+import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist/manage-goods-issue-picklist.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -15,7 +16,8 @@ const routes: Routes = [
   { path: 'purchaseDetails', component: PurchaseDetailsComponent },
   { path: 'pickList', component: PickListComponent },
   { path: 'managePackingList', component: ManagePackingListComponent },
-  { path: 'goods', component: GoodsIssueComponent }
+  { path: 'goods', component: GoodsIssueComponent },
+  { path: 'manageGoodsIssue', component: ManageGoodsIssuePicklistComponent}
 ];
 
 @NgModule({
