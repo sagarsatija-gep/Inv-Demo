@@ -6,3 +6,9 @@
 .mat-tab-group.mat-primary .mat-ink-bar {
     background-color:#3D5AFE;   
 }
+.action-buttons{
+    padding: 5px 30px;
+}
+.border-secondary {
+    border-color: #d6d6d6!important;
+}

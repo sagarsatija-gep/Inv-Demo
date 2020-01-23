@@ -1,9 +1,10 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component, Input, OnInit, ViewEncapsulation } from "@angular/core";
 
 @Component({
     selector: 'widget-table',
     templateUrl: './widgetTable.component.html',
-    styleUrls: ['./widgetTable.component.scss']
+    styleUrls: ['./widgetTable.component.scss'],
+    encapsulation: ViewEncapsulation.None
 })
 export class WidgetTable implements OnInit {
     @Input() data;
@@ -11,7 +12,6 @@ export class WidgetTable implements OnInit {
     ngOnInit(): void {
         debugger;
         console.log(this.data);
-                
     }
 
 }

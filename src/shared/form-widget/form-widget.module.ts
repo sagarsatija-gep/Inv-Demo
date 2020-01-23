@@ -1,3 +1,4 @@
+import { NgxBarcodeModule } from 'ngx-barcode';
 import { WidgetTable } from './component/widget-table/widgetTable.component';
 import { FormsModule } from '@angular/forms';
 import { WidgetAttachemant } from './component/widgetAttachement/widgetAttachement.component';
@@ -31,7 +32,8 @@ import {MatInputModule} from '@angular/material';
         MatDatepickerModule,
         MatFormFieldModule,
         MatNativeDateModule,
-        MatInputModule     
+        MatInputModule,
+        NgxBarcodeModule     
      ],
     declarations: [
         WidgetFormComponent,
