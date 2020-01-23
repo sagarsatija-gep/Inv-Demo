@@ -1,10 +1,20 @@
 <div class="container-fluid mt-3">
-  <div class="">
+  <div class="row">
+    <div class="col-sm-6">
       <h3>Manage Goods Issue</h3>
-    <ul class="breadcrumb">
-      <li><a href="#">Manage Transaction</a></li>
-      <li><a href="#">Pick List</a></li>
-    </ul>
+    </div>
+    <div class="col-sm-6 text-right">
+      <button class="btn btn-light border-secondary">
+        <i class="fa fa-print"></i><span class="pl-2">Print</span>
+      </button>
+      <button class="btn btn-primary ml-2">
+        <i class="fas fa-cloud-upload-alt"></i><span class="pl-2">Attachment</span>
+      </button>
+    </div>
   </div>
+  <ul class="breadcrumb">
+    <li><a href="#">Manage Transaction</a></li>
+    <li><a href="#">Pick List</a></li>
+  </ul>
   <Form-widget [config]='widgetData'></Form-widget>
 </div>

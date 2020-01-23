@@ -543,19 +543,19 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                       value: '43335779'
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-large rounded-sm border-secondary'
+                      classes: ''
                     }
                   ],
                   [{
@@ -575,19 +575,19 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                       value: '55430224',
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-large rounded-sm border-secondary'
+                      classes: ''
                     }
                   ],
                   [{
@@ -607,19 +607,19 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                       value: '55436655',
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-large rounded-sm border-secondary'
+                      classes: ''
                     }
                   ],
                   [{
@@ -639,19 +639,19 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                       value: '55437754',
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: ''
                     },
                     {
-                      type: 'textbox',
+                      type: 'text',
                       value: '',
-                      classes: 'input-large rounded-sm border-secondary'
+                      classes: ''
                     }
                   ]
                 ]
@@ -699,9 +699,19 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                   },
                   {
                     type: 'text',
+                    name: 'Profit Center',
+                    colSize: '100px',
+                  },
+                  {
+                    type: 'text',
                     name: 'Cost Center',
                     colSize: '100px',
                     // styles: {'width': '30%'},
+                  },
+                  {
+                    type: 'text',
+                    name: 'Project',
+                    colSize: '100px',
                   },
                   {
                     type: 'text',
@@ -734,165 +744,153 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                       value: '43335779',
                     },
                     {
-                      type: 'dropdown',
-                      value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
-                      ],
-                      selectedValue: 'Issue For Cost Center',
+                      type: 'text',
+                      value: 'Issue For Cost Center',
                     },
                     {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'CC001',
-                        'CC0012'
-                      ],
-                      selectedValue: 'CC001',
+                      type: 'text',
+                      value: ' ',
                     },
                     {
-                      type: 'textbox',
-                      value: '70',
-                      classes: 'rounded-sm border-secondary input-small text-right'
+                      type: 'text',
+                      value:'CC001',
                     },
                     {
-                      type: 'textbox',
-                      value: '55',
-                      classes: 'rounded-sm border-secondary input-small text-right'
+                      type: 'text',
+                      value: ' ',
+                    },
+                    {
+                      type: 'text',
+                      value: '',
+                    },
+                    {
+                      type: 'text',
+                      value: '',
                     }
                   ],
                   [{
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: 'R4544322',
-                    },
-                    {
-                      type: 'text',
-                      value: '2',
-                    },
-                    {
-                      type: 'text',
-                      value: '55430224',
-                    },
-                    {
-                      type: 'dropdown',
-                      value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
-                      ],
-                      selectedValue: 'Issue For Cost Center',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'CC001',
-                        'CC0011'
-                      ],
-                      selectedValue: 'CC001',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '70',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '55',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
+                    type: 'checkbox',
+                    value: 'false',
+                  },
+                  {
+                    type: 'text',
+                    value: 'R4544322',
+                  },
+                  {
+                    type: 'text',
+                    value: '2',
+                  },
+                  {
+                    type: 'text',
+                    value: '55430224',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Issue For Cost Center',
+                  },
+                  {
+                    type: 'text',
+                    value: ' ',
+                  },
+                  {
+                    type: 'text',
+                    value:'CC001',
+                  },
+                  {
+                    type: 'text',
+                    value: ' ',
+                  },
+                  {
+                    type: 'text',
+                    value: '',
+                  },
+                  {
+                    type: 'text',
+                    value: '',
+                  }
                   ],
                   [{
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: 'R4544322',
-                    },
-                    {
-                      type: 'text',
-                      value: '3',
-                    },
-                    {
-                      type: 'text',
-                      value: '55436655',
-                    },
-                    {
-                      type: 'dropdown',
-                      value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
-                      ],
-                      selectedValue: 'Issue For Cost Center',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'CC001',
-                        'CC0011'
-                      ],
-                      selectedValue: 'CC001',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '70',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '55',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
+                    type: 'checkbox',
+                    value: 'false',
+                  },
+                  {
+                    type: 'text',
+                    value: 'R4544322',
+                  },
+                  {
+                    type: 'text',
+                    value: '3',
+                  },
+                  {
+                    type: 'text',
+                    value: '55436655',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Issue For Cost Center',
+                  },
+                  {
+                    type: 'text',
+                    value: ' ',
+                  },
+                  {
+                    type: 'text',
+                    value:'CC001',
+                  },
+                  {
+                    type: 'text',
+                    value: ' ',
+                  },
+                  {
+                    type: 'text',
+                    value: '',
+                  },
+                  {
+                    type: 'text',
+                    value: '',
+                  }
                   ],
                   [{
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: 'R4544322',
-                    },
-                    {
-                      type: 'text',
-                      value: '4',
-                    },
-                    {
-                      type: 'text',
-                      value: '55437754',
-                    },
-                    {
-                      type: 'dropdown',
-                      value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
-                      ],
-                      selectedValue: 'Issue For Cost Center',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'CC001',
-                        'CC0011'
-                      ],
-                      selectedValue: 'CC001',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '70',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '55',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
-                  ]
+                    type: 'checkbox',
+                    value: 'false',
+                  },
+                  {
+                    type: 'text',
+                    value: 'R4544322',
+                  },
+                  {
+                    type: 'text',
+                    value: '4',
+                  },
+                  {
+                    type: 'text',
+                    value: '55437754',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Issue For Cost Center',
+                  },
+                  {
+                    type: 'text',
+                    value: ' ',
+                  },
+                  {
+                    type: 'text',
+                    value:'CC001',
+                  },
+                  {
+                    type: 'text',
+                    value: ' ',
+                  },
+                  {
+                    type: 'text',
+                    value: '',
+                  },
+                  {
+                    type: 'text',
+                    value: '',
+                  }
+                ],
                 ]
               }
 
