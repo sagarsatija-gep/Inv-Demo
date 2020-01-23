@@ -1,9 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-purchase-details',
   templateUrl: './purchase-details.component.html',
-  styleUrls: ['./purchase-details.component.css']
+  styleUrls: ['./purchase-details.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class PurchaseDetailsComponent implements OnInit {
 
@@ -19,75 +20,26 @@ export class PurchaseDetailsComponent implements OnInit {
         collapsible: true,
         data: {
           componentName: 'details',
-          isSubDetails: true,
+          isSubDetails: false,
           data: [
             {
-              name: 'Requaitions Name',
-              values: 'PR for Supplies',
+              type:'textbox',
+              name: 'ASN Number',
+              values: '6001068586806',
             },
             {
-              name: 'Requaitions Number',
-              values: 'PR1234',
+              type:'textbox',
+              name: 'Supplier Shipment Number',
+              values: '2183',
             },{
-              name: 'Requestor',
-              values: 'Keanu Reaves',
+              type:'textbox',
+              name: 'Order Number',
+              values: '8585002483034',
             },
             {
-              name: 'Business Unit',
-              values: 'MBM Tech',
-            },{
-              name: 'Purchase Type',
-              values: 'Material',
-            },
-            {
-              name: 'Contract Number',
-              values: 'CN-1234',
-            },{
-              name: 'Last Modified',
-              values: '11/12/2019',
-            },
-            {
-              name: 'Total PR',
-              values: '$990k',
-            },{
-              name: 'Currenct',
-              values: 'USD',
-            }
-          ],
-          subDetailsData: [
-            {
-              subHeader: 'Terms',
-              isOpen: false,
-              data:[
-                {
-                  name: 'Requaitions Name',
-                  values: 'PR for Supplies',
-                },
-                {
-                  name: 'Requaitions Number',
-                  values: 'PR1234',
-                },{
-                  name: 'Requestor',
-                  values: 'Keanu Reaves',
-                }
-              ]
-            },
-            {
-              subHeader: 'Contact Details',
-              isOpen: false,
-              data:[
-                {
-                  name: 'Requaitions Name',
-                  values: 'PR for Supplies',
-                },
-                {
-                  name: 'Requaitions Number',
-                  values: 'PR1234',
-                },{
-                  name: 'Requestor',
-                  values: 'Keanu Reaves',
-                }
-              ]
+              type:'text',
+              name: 'Supplier Name',
+              values: 'Motion Industries Inc',
             }
           ]
         }

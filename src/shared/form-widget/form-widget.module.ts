@@ -33,7 +33,7 @@ import {MatInputModule} from '@angular/material';
         MatFormFieldModule,
         MatNativeDateModule,
         MatInputModule,
-        NgxBarcodeModule     
+        NgxBarcodeModule  
      ],
     declarations: [
         WidgetFormComponent,

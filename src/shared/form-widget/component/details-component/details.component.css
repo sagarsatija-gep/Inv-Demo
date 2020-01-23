@@ -1,0 +1,8 @@
+.input{
+    border: 0px;
+    border-bottom: 1px solid #d6d6d6;
+}
+.input:focus, .input-box:focus {
+    outline: none !important;
+    border-bottom: 1.5px solid blue !important;
+}
