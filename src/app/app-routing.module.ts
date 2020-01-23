@@ -9,7 +9,7 @@ import { ManagePackingListComponent } from './manage-packing-list/manage-packing
 import { PackingSlipCameraComponent } from './packing-slip-camera/packing-slip-camera.component';
 import { PackingSlipDetailComponent } from './packing-slip-detail/packing-slip-detail.component';
 import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist/manage-goods-issue-picklist.component';
-
+import { DashboardComponent } from './dashboard/dashboard.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,7 +22,8 @@ const routes: Routes = [
   { path: 'managePackingSlip/7894563', component: PackingSlipDetailComponent },
   { path: 'asn', component:PurchaseDetailsComponent, children:[
     {path: ':id', component:PurchaseDetailsComponent }
-  ]}
+  ]},
+  { path: 'dashboard', component: DashboardComponent }
 ];
 
 @NgModule({
