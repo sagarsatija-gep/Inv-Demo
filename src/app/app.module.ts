@@ -8,8 +8,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { RecDocComponent } from './rec-doc/rec-doc.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
-import { HeaderComponent ,NgbdModalContent1} from './header/header.component';
-import {NgbdModalContent} from './packing-slip-camera/packing-slip-camera.component'
+import { HeaderComponent, NgbdModalContent1 } from './header/header.component';
+import { NgbdModalContent } from './packing-slip-camera/packing-slip-camera.component'
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
@@ -39,6 +39,7 @@ import { PackingSlipDetailComponent } from './packing-slip-detail/packing-slip-d
 import { ScannedDocumentViewComponent } from './scanned-document-view/scanned-document-view.component';
 import { ScannedDocumentLineItemsComponent } from './scanned-document-line-items/scanned-document-line-items.component';
 import { BarcodeValueService } from './barcode-value.service';
+import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist/manage-goods-issue-picklist.component';
 
 @NgModule({
   declarations: [
@@ -64,7 +65,8 @@ import { BarcodeValueService } from './barcode-value.service';
     FilterComponent,
     PackingSlipDetailComponent,
     ScannedDocumentViewComponent,
-    ScannedDocumentLineItemsComponent
+    ScannedDocumentLineItemsComponent,
+    ManageGoodsIssuePicklistComponent
   ],
   imports: [
     BrowserModule,
@@ -83,8 +85,6 @@ import { BarcodeValueService } from './barcode-value.service';
     BarcodeGeneratorAllModule,
     NgxBarcodeModule,
     BarecodeScannerLivestreamModule
-    
-
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService,BarcodeValueService],
   bootstrap: [AppComponent],

@@ -6,6 +6,7 @@ import { DetailsComponent } from './details-component/details.component';
 import { TryComponet } from './tryComponent/tryComponent';
 import { Component, OnInit, Input, ViewChild, ViewContainerRef, ComponentFactoryResolver } from "@angular/core";
 import { GoodsIssueDetails } from './goods-issue-details/goodsIssueDetails.component';
+import { ManageGoodsIssue } from './manage-goods-issue/manageGoodsIssue.component';
 
 
 const  components = {
@@ -13,7 +14,9 @@ const  components = {
     'tabComponent': DocumentTable,
     'Attachement': WidgetAttachemant,
     'goodsIssueDetails': GoodsIssueDetails,
-    'widgetTable': WidgetTable
+    'widgetTable': WidgetTable,
+    'manageGoodsIssue': ManageGoodsIssue
+
 };
 
 @Component({
@@ -36,6 +39,7 @@ export class WidgetHeaderComponent implements OnInit {
 
     createComponent() {
         if(this.togal) {
+            debugger;
             const componentName = components[this.headerData.data.componentName];
             const componentFactory = this.cfr.resolveComponentFactory(componentName);
             this.component = this.trycomponent.createComponent(componentFactory);

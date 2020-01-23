@@ -1,10 +1,11 @@
 import { SubDetailsComponent } from './sub-details/subDetails.component';
-import { Component, Input, OnInit, ViewChild, ViewContainerRef, ComponentFactoryResolver } from "@angular/core";
+import { Component, Input, OnInit, ViewChild, ViewContainerRef, ComponentFactoryResolver, ViewEncapsulation } from "@angular/core";
 
 @Component({
     selector: 'detailsp',
     templateUrl: './details.component.html',
-    styleUrls: []
+    styleUrls: ['./details.component.css'],
+    encapsulation: ViewEncapsulation.None
 })
 export class DetailsComponent implements OnInit {
     @Input() data: any;
