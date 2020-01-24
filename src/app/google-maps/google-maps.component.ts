@@ -67,7 +67,8 @@ export class GoogleMapsComponent   {
     this.markers.push({
       lat: $event.coords.lat,
       lng: $event.coords.lng,
-      draggable: true
+      draggable: true,
+      iconUrl:""
     });
   }
   
@@ -80,20 +81,39 @@ export class GoogleMapsComponent   {
 		  lat: 51.673858,
 		  lng: 7.815982,
 		  label: 'A',
-		  draggable: true
+      draggable: true,
+      iconUrl:"http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
 	  },
 	  {
 		  lat: 51.373858,
 		  lng: 7.215982,
 		  label: 'B',
-		  draggable: false
+      draggable: false,
+      iconUrl:"http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
 	  },
 	  {
 		  lat: 51.723858,
 		  lng: 7.895982,
 		  label: 'C',
-		  draggable: true
-	  }
+      draggable: true,
+      iconUrl:"http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+    },
+    {
+		  lat: 51.723858,
+		  lng: 6.895982,
+		  label: 'D',
+      draggable: true,
+      iconUrl:"http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
+    },
+    {
+		  lat: 50.723858,
+		  lng: 7.895982,
+		  label: 'E',
+      draggable: true,
+      iconUrl:"http://maps.google.com/mapfiles/ms/icons/red-dot.png"
+    },
+    
+    
   ]
 }
 
@@ -102,5 +122,6 @@ interface marker {
 	lat: number;
 	lng: number;
 	label?: string;
-	draggable: boolean;
+  draggable: boolean;
+  iconUrl:string
 }
