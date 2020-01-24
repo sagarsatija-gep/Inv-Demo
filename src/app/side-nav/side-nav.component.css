@@ -27,7 +27,7 @@
   margin: 20px
 }
 
-.tab{
+.tab {
   padding: 15px 0px;
   text-align: center
 }
@@ -36,11 +36,11 @@
   background-color: #213246;
 }
 
-.tab:focus{
+.tab:focus {
   outline: none;
 }
 
-.tab .icons{
+.tab .icons {
   max-width: 102px;
   line-height: 1;
   cursor: pointer;
@@ -49,4 +49,8 @@
 svg {
   height: 32px;
   width: 32px;
+}
+
+.cdk-overlay-pane {
+  left: 104px !important;
 }

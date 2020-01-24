@@ -23,6 +23,7 @@ const routes: Routes = [
   { path: 'asn', component:PurchaseDetailsComponent, children:[
     {path: ':id', component:PurchaseDetailsComponent }
   ]},
+  { path: 'manageGoodsIssue', component: ManageGoodsIssuePicklistComponent },
   { path: 'dashboard', component: DashboardComponent }
 ];
 
