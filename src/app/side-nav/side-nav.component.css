@@ -46,7 +46,7 @@
   cursor: pointer;
 }
 
-svg {
+.example-sidenav svg {
   height: 32px;
   width: 32px;
 }
