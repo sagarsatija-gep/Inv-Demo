@@ -1,4 +1,4 @@
-<div class="purcesDetais">
+<div class="purcesDetais marginBtm40">
   <div>
     <ul class="breadcrumb">
       <li><a href="#">Home</a></li>
@@ -8,3 +8,23 @@
   </div>
   <Form-widget [config]='widgetData'></Form-widget>
 </div>
+
+<footer class="poFooter bg-white">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <button class="btn btn-white text-uppercase rounded-0">
+          Preview
+        </button>
+      </div>
+      <div class="col-sm-5 text-right">
+        <button class="btn btn-white text-uppercase rounded-0">
+          Cancel
+        </button><a routerLink='/home'>  <button class="btn btn-primary">
+          FINALIZE
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
