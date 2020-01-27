@@ -78,7 +78,6 @@ input:checked + .slider:before {
 }
 
 .widgetTable td {
-  padding: 0.5rem 0.75rem 0rem 0.75rem;
   font-weight: 500;
 }
 

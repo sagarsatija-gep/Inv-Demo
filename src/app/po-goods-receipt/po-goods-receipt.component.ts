@@ -710,7 +710,8 @@ export class PoGoodsReceiptComponent implements OnInit {
         isOpen: false,
         collapsible: true,
         data: {
-          componentName: 'Attachement'
+          componentName: 'Attachement',
+          numberOfInput: "three"
         }
       }
     }
