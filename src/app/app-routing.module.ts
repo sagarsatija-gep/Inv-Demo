@@ -10,6 +10,8 @@ import { PackingSlipCameraComponent } from './packing-slip-camera/packing-slip-c
 import { PackingSlipDetailComponent } from './packing-slip-detail/packing-slip-detail.component';
 import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist/manage-goods-issue-picklist.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
+import { InternalStockTransferComponent } from './internal-stock-transfer/internal-stock-transfer.component';
+import { PoDetailsComponent } from './po-details/po-details.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -24,7 +26,9 @@ const routes: Routes = [
     {path: ':id', component:PurchaseDetailsComponent }
   ]},
   { path: 'manageGoodsIssue', component: ManageGoodsIssuePicklistComponent },
-  { path: 'dashboard', component: DashboardComponent }
+  { path: 'dashboard', component: DashboardComponent },
+  { path: 'internalstocktransfer',component:InternalStockTransferComponent},
+  {path: 'poDetails',component:PoDetailsComponent}
 ];
 
 @NgModule({

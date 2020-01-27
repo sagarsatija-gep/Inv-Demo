@@ -1,17 +1,17 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit ,ViewEncapsulation} from '@angular/core';
 
 @Component({
-  selector: 'app-purchase-details',
-  templateUrl: './purchase-details.component.html',
-  styleUrls: ['./purchase-details.component.css'],
+  selector: 'app-internal-stock-transfer',
+  templateUrl: './internal-stock-transfer.component.html',
+  styleUrls: ['./internal-stock-transfer.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class PurchaseDetailsComponent implements OnInit {
+export class InternalStockTransferComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
-  }  
+  }
   widgetData = [
     {
       'HeaderData': {
@@ -808,37 +808,66 @@ export class PurchaseDetailsComponent implements OnInit {
     },
     {
       'HeaderData': {
-        name: 'Shipping & Delivery Information',
+        name: 'Related Documents',
         isOpen: false,
         collapsible: true,
         data: {
-          componentName: 'details',
-          isSubDetails: false,
+          componentName: 'tabComponent',
+          haveButton: false,
           data: [
             {
-              type:'text',
-              name: 'Expected Delivery Date',
-              values: '08/20/2019',
+              tabName: 'Order',
+              tabcomponent: 'table',
+              tabData: [
+                {
+                  docName: "Receipt# 001005463468",
+                  createdDate: "11/06/2019",
+                  lastAccessed: "11/06/2019 7:03 PM"
+                },
+                {
+                  docName: "Receipt# 001005463468",
+                  createdDate: "11/06/2019",
+                  lastAccessed: "11/06/2019 7:03 PM"
+                },
+                {
+                  docName: "Receipt# 001005463468",
+                  createdDate: "11/06/2019",
+                  lastAccessed: "11/06/2019 7:03 PM"
+                }
+              ] 
             },
             {
-              type:'text',
-              name: 'Tracking No.',
-              values: '1Z789T278P78216284',
-            },{
-              type:'text',
-              name: 'Shipping Method',
-              values: 'FedEx',
+              tabName: 'ASN',
+              tabcomponent: 'table',
+              tabData: [
+                {
+                  docName: "Receipt# 001005463468",
+                  createdDate: "11/06/2019",
+                  lastAccessed: "11/06/2019 7:03 PM"
+                }
+              ]
             },
             {
-              type:'textbox',
-              name: 'Ship to Location',
-              values: 'Pascagoula',
+              tabName: 'Receipt',
+              tabcomponent: 'table',
+              tabData: [
+                {
+                  docName: "Receipt# 001005463468",
+                  createdDate: "11/06/2019",
+                  lastAccessed: "11/06/2019 7:03 PM"
+                }
+              ]
             },
             {
-              type:'text',
-              name: 'Ship To Address',
-              values: '250 Industrial Rd, Pascagoula, MS 39581',
-              classes: 'col-sm-4'
+              tabName: 'Invoice',
+              tabcomponent: 'table',
+              tabData: [
+                {
+                  docName: "Receipt# 001005463468",
+                  createdDate: "11/06/2019",
+                  lastAccessed: "11/06/2019 7:03 PM"
+                }
+              ]
             }
           ]
         }
@@ -850,157 +879,7 @@ export class PurchaseDetailsComponent implements OnInit {
       isOpen: false,
       collapsible: true,
       data: {
-        componentName: 'widgetTable',
-        haveButton: false,
-        data:
-          {
-          
-              tablerowClass: 'bg-white',
-              colConfig: [
-                {
-                  type: 'checkbox',
-                  name: 'Reservation #',
-                  classes: 'text-left',
-                  // styles: {'width': '%'},
-                },
-                {
-                  type: 'text',
-                  name: 'Name',
-                  // colSize: '100px',
-                  classes: 'text-left',
-                  // styles: {'width': '8%'},
-                },
-                {
-                  type: 'text',
-                  name: 'Type',
-                  // colSize: '100px',
-                  classes: ' ',
-                  // styles: {'width': '8%'},
-                },
-                {
-                  type: 'text',
-                  name: 'Classification',
-                  colSize: '100px',
-                  // styles: {'background-color': 'rebeccapurple'},
-                  classes: 'text-left',
-                  // styles: {'width': '8%'},
-                },
-                {
-                  type: 'text',
-                  name: 'Added By',
-                  // colSize: '100px',
-                  // styles: {'background-color': 'rebeccapurple'},
-                  // classes: 'text-left',
-
-                },
-                {
-                  type: 'text',
-                  name: 'File Size',
-                  colSize: '100px',
-                  // styles: {'width': '8%'},
-                },
-                // {
-                //   type: 'text',
-                //   name: 'Order Quantity',
-                //   colSize: '100px',
-                //   classes: 'text-right',
-                //   // styles: {'width': '8%'},
-                // },
-                // {
-                //   type: 'text',
-                //   name: 'Open Quantity',
-                //   colSize: '100px',
-                //   classes: 'text-right',
-                //   // styles: {'width': '8%'},
-                // },
-                // {
-                //   type: 'text',
-                //   name: 'Shipped Quantity',
-                //   colSize: '100px',
-                //   classes: 'text-right',
-                //   // styles: {'width': '8%'},
-                // },
-                // {
-                //   type: 'text',
-                //   name: 'Promised Delivery Date',
-                //   colSize: '100px',
-                //   classes: 'text-left',
-                //   // styles: {'width': '8%'},
-                // },
-                // {
-                //   type: 'text',
-                //   name: 'Is Final',
-                //   colSize: '100px',
-                //   styles: {'width': '8%'},
-                // },
-                // {
-                //   type: 'text',
-                //   name: 'Requested Date',
-                //   colSize: '100px',
-                //   // styles: {'width': '8%'},
-                // }
-              ],
-              values: [
-                [
-                  {
-                    type: 'checkbox',
-                    value: 'false',
-                    tdClasses: 'text-left'
-                  },
-                  {
-                    type: 'hiperlink',
-                    value: 'Bill Of Lading.pdf',
-                    tdClasses: 'text-left'
-                  },
-                  {
-                    type: 'text',
-                    value: 'File',
-                  },
-                  {
-                    type: 'text',
-                    value: 'Shipping Documents',
-                    tdClasses: 'text-left'
-                  },
-                  {
-                    type: 'text',
-                    value: 'Kim Powell',
-                  },
-                  {
-                    type: 'text',
-                    value: '20kb',
-                  },
-                  // {
-                  //   type: 'text',
-                  //   value: '77',
-                  //   tdClasses: 'text-right'
-                  // },
-                  // {
-                  //   type: 'text',
-                  //   value: '20',
-                  //   tdClasses: 'text-right'
-                  // },
-                  // {
-                  //   type: 'text',
-                  //   value: '25',
-                  //   tdClasses: 'text-right'
-                  //   // classes: 'input-small rounded-sm border-secondary text-right'
-                  // },
-                  // {
-                  //   type: 'text',
-                  //   value: '08/21/2019',
-                  //   tdClasses: 'text-left'
-                  // },
-                  // {
-                  //   type: 'toggle',
-                  //   value: true,
-                  // },
-                  // {
-                  //   type: 'text',
-                  //   value: '10/28/2019',
-                  // }
-                ]
-              ]
-            }
+        componentName: 'Attachement'
       }
     }
   }
