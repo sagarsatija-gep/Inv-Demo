@@ -10,6 +10,8 @@ import {
   ComponentFactoryResolver,
   OnDestroy
 } from '@angular/core';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'widget-attachement',
@@ -24,7 +26,7 @@ export class WidgetAttachemant implements OnInit, OnDestroy {
   }) loadComponent: ViewContainerRef;
 
   component;
-  constructor(private cfr: ComponentFactoryResolver) {}
+  constructor(private cfr: ComponentFactoryResolver, private modalService: NgbModal ) {}
   ngOnInit() {
     console.log(this.data);
     if( this.data.numberOfInput != "three" && this.data.numberOfInput != "one") {

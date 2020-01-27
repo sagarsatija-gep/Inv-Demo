@@ -1,5 +1,5 @@
 import { Component, OnInit ,ViewEncapsulation,Input} from '@angular/core';
-
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-internal-stock-transfer',
   templateUrl: './internal-stock-transfer.component.html',
@@ -8,7 +8,11 @@ import { Component, OnInit ,ViewEncapsulation,Input} from '@angular/core';
 })
 export class InternalStockTransferComponent implements OnInit {
 
-  constructor() { }
+  constructor(public modalService: NgbModal) { }
+  open() {
+    const modalRef = this.modalService.open(NgbdModalContent2, { size: 'lg' });
+    modalRef.componentInstance.name = 'World';
+  }
 
   ngOnInit() {
   }
@@ -62,10 +66,57 @@ export class InternalStockTransferComponent implements OnInit {
       isOpen: true,
       collapsible: true,
       data: {
-        componentName: 'Attachement'
+        componentName: 'Attachement',
+        numberOfInput: 'one'
       }
     }
   }
 ]
 
 }
+@Component({
+  selector: 'ngbd-modal-content',
+  templateUrl: 'internal-stock-transfer-popup.html',
+  styleUrls: ['./internal-stock-transfer.component.css']
+})
+export class NgbdModalContent2 {
+  @Input() name;
+
+  popupData = [
+    {
+      type:'text',
+      name: 'From Storage Location',
+      values: 'PMF-6002​',
+      showBarcode: 'none'
+    },
+    {
+      type:'text',
+      name: 'From BIN',
+      values: '',
+    },
+    {
+      type:'text',
+      name: 'Line Items',
+      values: '',
+    },
+    {
+      type:'text',
+      name: 'Quantity',
+      values: '',
+    },
+    {
+      type:'text',
+      name: 'To Storage Location',
+      values: 'PMF-6002​​',
+    },
+    {
+      type:'text',
+      name: 'To Bin',
+      values: '​​',
+    }
+  ];
+
+  constructor(public activeModal: NgbActiveModal) {}
+}
+
+

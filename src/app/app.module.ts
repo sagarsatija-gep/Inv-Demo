@@ -44,7 +44,7 @@ import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AgmCoreModule } from '@agm/core';
 import { GoogleMapsComponent } from './google-maps/google-maps.component';
-import { InternalStockTransferComponent } from './internal-stock-transfer/internal-stock-transfer.component';
+import { InternalStockTransferComponent, NgbdModalContent2 } from './internal-stock-transfer/internal-stock-transfer.component';
 import { PoDetailsComponent } from './po-details/po-details.component';
 import { AsnGrComponent } from './asn-gr/asn-gr.component';
 import { PoGoodsReceiptComponent } from './po-goods-receipt/po-goods-receipt.component';
@@ -65,6 +65,7 @@ import { PopupComponent } from './popup/popup.component';
     PurchaseDetailsComponent,
     NgbdModalContent,
     NgbdModalContent1,
+    NgbdModalContent2,
     ManagePackingListComponent,
     UnprocessedPackingSlipsComponent,
     PackingSlipsTabComponent,
@@ -109,6 +110,6 @@ import { PopupComponent } from './popup/popup.component';
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService],
   bootstrap: [AppComponent],
-  entryComponents: [NgbdModalContent, NgbdModalContent1]
+  entryComponents: [NgbdModalContent, NgbdModalContent1,NgbdModalContent2]
 })
 export class AppModule { }

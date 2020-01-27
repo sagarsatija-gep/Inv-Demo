@@ -70,13 +70,13 @@ export class PoGoodsReceiptComponent implements OnInit {
                     type: 'text',
                     name: 'Item Number',
                     colSize: '100px',
-                    classes: ' '
+                    classes: ''
                   },
                   {
                     type: 'text',
                     name: 'Line Description',
                     colSize: '100px',
-                    classes: 'text-left'
+                    classes: ''
                   },
                   {
                     type: 'text',
@@ -92,7 +92,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     type: 'text',
                     name: 'Accepted Quantity',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: ''
                   },
                   {
                     type: 'text',
@@ -103,49 +103,49 @@ export class PoGoodsReceiptComponent implements OnInit {
                     type: 'text',
                     name: 'Storage Bin',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: ''
                   },
                   {
                     type: 'text',
                     name: 'Goods Receipent',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: ''
                   },
                   {
                     type: 'text',
                     name: 'Unloading Point',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: ''
                   },
                   {
                     type: 'text',
                     name: 'Serial Flag',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Batch Flag',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Climate Controlled',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Storage Conditions',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: ''
                   },
                   {
                     type: 'text',
                     name: 'Attachments',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: ''
                   }
                 ],
                 values: [
