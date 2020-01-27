@@ -1,3 +1,4 @@
+import { PopUpService } from './service/popUp.service';
 import { NgxBarcodeModule } from 'ngx-barcode';
 import { WidgetTable } from './component/widget-table/widgetTable.component';
 import { FormsModule } from '@angular/forms';
@@ -62,6 +63,7 @@ import { ManageGoodsIssue } from './component/manage-goods-issue/manageGoodsIssu
         GoodsIssueDetails,
         WidgetTable,
         ManageGoodsIssue
-    ]
+    ],
+    providers: [PopUpService]
 })
 export class FormWidget {}

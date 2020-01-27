@@ -1,3 +1,4 @@
+import { PopUpService } from './../../service/popUp.service';
 import {
   WidgetTable
 } from './../widget-table/widgetTable.component';
@@ -26,7 +27,7 @@ export class WidgetAttachemant implements OnInit, OnDestroy {
   }) loadComponent: ViewContainerRef;
 
   component;
-  constructor(private cfr: ComponentFactoryResolver, private modalService: NgbModal ) {}
+  constructor(private cfr: ComponentFactoryResolver, private popUp: PopUpService ) {}
   ngOnInit() {
     console.log(this.data);
     if( this.data.numberOfInput != "three" && this.data.numberOfInput != "one") {
@@ -35,6 +36,10 @@ export class WidgetAttachemant implements OnInit, OnDestroy {
   }
   ngOnDestroy() {
     // this.data.numberOfInput= "three";  
+  }
+
+  popUpOpen(){
+    this.popUp.internalStockPopupOpen();
   }
 
   upload() {
