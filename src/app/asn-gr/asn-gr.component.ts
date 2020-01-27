@@ -717,7 +717,8 @@ export class AsnGrComponent implements OnInit {
         isOpen: false,
         collapsible: true,
         data: {
-          componentName: 'Attachement'
+          componentName: 'Attachement',
+          numberOfInput: "three"
         }
       }
     }

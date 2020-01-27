@@ -1,11 +1,11 @@
 <div class="" *ngIf="data.numberOfInput == 'one'">
   <div class="form-group text-center">
     <div class="image-upload">
-        <label for="file-input" (click)="upload()">
+        <label for="file-input" >
             <img src="../../../../assets/images/fileIcon.png"/>
         </label><br>
         <button type="button"  class="btn btn-primary btnAddfiles">Add Files</button>
-        <input id="file-input" type="file"/>
+        <input id="file-input" type="file" name="fileupload" value="fileupload" >
     </div>
   </div>
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="21"
@@ -36,10 +36,10 @@
     <span class="action-block-cont-icon">
       <div class="form-group text-center">
         <div class="image-upload">
-          <label for="file-input" (click)="upload()">
+          <label for="file-input" >
             <img src="../../../../assets/images/POupload.png">
           </label>
-          <input id="file-input" type="file" />
+          <input id="file-input" type="file" (change)="upload()" />
         </div>
       </div>
     </span>
@@ -63,3 +63,9 @@
 
 </div>
 <div #table></div>
+<script>
+  var ele = document.getElementById('file-input');
+  if(ele) {
+      upload()
+   }   
+          </script>
