@@ -23,16 +23,16 @@ export class AsnGrComponent implements OnInit {
           data: [
             {
               type: 'textbox',
-              name: 'Receipt Name',
-              values: 'Receipt for 8585002483034',
+              name: 'ASN Number',
+              values: '6001068586806',
             },
             {
-              type: 'text',
-              name: 'Receipt Number',
-              values: '00100987210',
+              type: 'textbox',
+              name: 'Supplier Shipment Number',
+              values: '2183',
             }, {
-              type: 'text',
-              name: 'PO Number',
+              type: 'textbox',
+              name: 'Order Number',
               values: '8585002483034',
             },
             {
@@ -80,71 +80,74 @@ export class AsnGrComponent implements OnInit {
                   {
                     type: 'text',
                     name: 'UOM',
-                    colSize: '100px'
+                    colSize: '100px',
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Received Quantity',
-                    colSize: '100px'
+                    colSize: '100px',
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Accepted Quantity',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Storage Location',
-                    colSize: '100px'
+                    colSize: '100px',
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Storage Bin',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Goods Receipent',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Unloading Point',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Serial Flag',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Batch Flag',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Climate Controlled',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Storage Conditions',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Attachments',
                     colSize: '100px',
-                    classes: 'text-right'
+                    classes: 'text-left'
                   }
                 ],
                 values: [
