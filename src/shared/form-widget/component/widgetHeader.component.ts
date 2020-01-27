@@ -16,7 +16,6 @@ const  components = {
     'goodsIssueDetails': GoodsIssueDetails,
     'widgetTable': WidgetTable,
     'manageGoodsIssue': ManageGoodsIssue
-
 };
 
 @Component({
@@ -43,8 +42,12 @@ export class WidgetHeaderComponent implements OnInit {
             const componentName = components[this.headerData.data.componentName];
             const componentFactory = this.cfr.resolveComponentFactory(componentName);
             this.component = this.trycomponent.createComponent(componentFactory);
-            if( this.headerData.data != null) {
+            debugger;
+            if( this.headerData.data != null && this.headerData.data.componentName != 'widgetTable') {
                 this.component.instance.data = this.headerData.data;
+            } 
+            if(this.headerData.data.componentName == 'widgetTable') {
+                this.component.instance.data = this.headerData.data.data;
             }
         }
     }

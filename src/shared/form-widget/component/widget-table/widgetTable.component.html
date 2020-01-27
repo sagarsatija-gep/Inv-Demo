@@ -19,6 +19,9 @@
           <span class="checkmark"></span>
         </label>
 
+        <span [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'hiperlink'"> {{column.value}}
+        </span>
+
         <span [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'text'"> {{column.value}}
         </span>
 
