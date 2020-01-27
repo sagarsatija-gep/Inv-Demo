@@ -808,66 +808,37 @@ export class PurchaseDetailsComponent implements OnInit {
     },
     {
       'HeaderData': {
-        name: 'Related Documents',
+        name: 'Shipping & Delivery Information',
         isOpen: false,
         collapsible: true,
         data: {
-          componentName: 'tabComponent',
-          haveButton: false,
+          componentName: 'details',
+          isSubDetails: false,
           data: [
             {
-              tabName: 'Order',
-              tabcomponent: 'table',
-              tabData: [
-                {
-                  docName: "Receipt# 001005463468",
-                  createdDate: "11/06/2019",
-                  lastAccessed: "11/06/2019 7:03 PM"
-                },
-                {
-                  docName: "Receipt# 001005463468",
-                  createdDate: "11/06/2019",
-                  lastAccessed: "11/06/2019 7:03 PM"
-                },
-                {
-                  docName: "Receipt# 001005463468",
-                  createdDate: "11/06/2019",
-                  lastAccessed: "11/06/2019 7:03 PM"
-                }
-              ] 
+              type:'text',
+              name: 'Expected Delivery Date',
+              values: '08/20/2019',
             },
             {
-              tabName: 'ASN',
-              tabcomponent: 'table',
-              tabData: [
-                {
-                  docName: "Receipt# 001005463468",
-                  createdDate: "11/06/2019",
-                  lastAccessed: "11/06/2019 7:03 PM"
-                }
-              ]
+              type:'text',
+              name: 'Tracking No.',
+              values: '1Z789T278P78216284',
+            },{
+              type:'text',
+              name: 'Shipping Method',
+              values: 'FedEx',
             },
             {
-              tabName: 'Receipt',
-              tabcomponent: 'table',
-              tabData: [
-                {
-                  docName: "Receipt# 001005463468",
-                  createdDate: "11/06/2019",
-                  lastAccessed: "11/06/2019 7:03 PM"
-                }
-              ]
+              type:'textbox',
+              name: 'Ship to Location',
+              values: 'Pascagoula',
             },
             {
-              tabName: 'Invoice',
-              tabcomponent: 'table',
-              tabData: [
-                {
-                  docName: "Receipt# 001005463468",
-                  createdDate: "11/06/2019",
-                  lastAccessed: "11/06/2019 7:03 PM"
-                }
-              ]
+              type:'text',
+              name: 'Ship To Address',
+              values: '250 Industrial Rd, Pascagoula, MS 39581',
+              classes: 'col-sm-4'
             }
           ]
         }
