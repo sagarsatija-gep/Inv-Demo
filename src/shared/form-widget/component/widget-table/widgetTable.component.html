@@ -22,7 +22,7 @@
           </label>
 
           <span [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'hiperlink'">
-            {{column.value}}
+            <a href="">{{column.value}}</a>
           </span>
 
           <button type="button" class="btn btn-primary .btn-xs" [ngStyle]="column.styles"
