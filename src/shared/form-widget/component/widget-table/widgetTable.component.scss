@@ -374,3 +374,26 @@ input:checked+.slider:before {
   -ms-transform: rotate(45deg);
   transform: rotate(45deg);
 }
+
+.table-container{
+  overflow-x: scroll !important;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #c2c9d2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

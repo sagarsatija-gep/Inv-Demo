@@ -14,7 +14,7 @@ export class AsnGrComponent implements OnInit {
   asnGrData = [
     {
       'HeaderData': {
-        name: 'Header Details',
+        name: 'Basic Details',
         isOpen: true,
         collapsible: true,
         data: {
@@ -22,21 +22,21 @@ export class AsnGrComponent implements OnInit {
           isSubDetails: false,
           data: [
             {
-              type:'textbox',
-              name: 'ASN Number',
-              values: '6001068586806',
+              type: 'textbox',
+              name: 'Receipt Name',
+              values: 'Receipt for 8585002483034',
             },
             {
-              type:'textbox',
-              name: 'Supplier Shipment Number',
-              values: '2183',
-            },{
-              type:'textbox',
-              name: 'Order Number',
+              type: 'text',
+              name: 'Receipt Number',
+              values: '00100987210',
+            }, {
+              type: 'text',
+              name: 'PO Number',
               values: '8585002483034',
             },
             {
-              type:'text',
+              type: 'text',
               name: 'Supplier Name',
               values: 'Motion Industries Inc',
             }
@@ -48,105 +48,107 @@ export class AsnGrComponent implements OnInit {
       'HeaderData': {
         name: 'Line Details',
         collapsible: true,
-        isOpen: false,
+        isOpen: true,
         data: {
           componentName: 'tabComponent',
           haveButton: false,
-          data:[
+          data: [
             {
-              tabName: 'Line',
+              tabName: 'LINES',
               tabcomponent: 'widgetTable',
-              tabData:  {
+              tabData: {
                 tablerowClass: 'bg-white',
                 colConfig: [
-                  // {
-                  //   type: 'checkbox',
-                  //   name: 'Reservation #',
-                  //   styles: {'width': '2%'},
-                  // },
                   {
                     type: 'text',
                     name: 'Line Number',
                     colSize: '100px',
-                    classes: ' ',
-                    // styles: {'width': '8%'},
+                    classes: ''
                   },
                   {
                     type: 'text',
                     name: 'Item Number',
                     colSize: '100px',
-                    classes: ' ',
-                    // styles: {'width': '8%'},
+                    classes: ' '
                   },
                   {
                     type: 'text',
                     name: 'Line Description',
                     colSize: '100px',
-                    // styles: {'background-color': 'rebeccapurple'},
-                    classes: 'text-left',
-                    // styles: {'width': '8%'},
-                  },
-                  {
-                    type: 'text',
-                    name: 'Supplier Item Number',
-                    colSize: '100px',
-                    // styles: {'background-color': 'rebeccapurple'},
-                    // classes: 'text-left',
-
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'UOM',
-                    colSize: '100px',
-                    // styles: {'width': '8%'},
+                    colSize: '100px'
                   },
                   {
                     type: 'text',
-                    name: 'Order Quantity',
-                    colSize: '100px',
-                    classes: 'text-right',
-                    // styles: {'width': '8%'},
+                    name: 'Received Quantity',
+                    colSize: '100px'
                   },
                   {
                     type: 'text',
-                    name: 'Open Quantity',
+                    name: 'Accepted Quantity',
                     colSize: '100px',
-                    classes: 'text-right',
-                    // styles: {'width': '8%'},
+                    classes: 'text-right'
                   },
                   {
                     type: 'text',
-                    name: 'Shipped Quantity',
-                    colSize: '100px',
-                    classes: 'text-right',
-                    // styles: {'width': '8%'},
+                    name: 'Storage Location',
+                    colSize: '100px'
                   },
                   {
                     type: 'text',
-                    name: 'Promised Delivery Date',
+                    name: 'Storage Bin',
                     colSize: '100px',
-                    classes: 'text-left',
-                    // styles: {'width': '8%'},
+                    classes: 'text-right'
                   },
-                  // {
-                  //   type: 'text',
-                  //   name: 'Is Final',
-                  //   colSize: '100px',
-                  //   styles: {'width': '8%'},
-                  // },
-                  // {
-                  //   type: 'text',
-                  //   name: 'Requested Date',
-                  //   colSize: '100px',
-                  //   // styles: {'width': '8%'},
-                  // }
+                  {
+                    type: 'text',
+                    name: 'Goods Receipent',
+                    colSize: '100px',
+                    classes: 'text-right'
+                  },
+                  {
+                    type: 'text',
+                    name: 'Unloading Point',
+                    colSize: '100px',
+                    classes: 'text-right'
+                  },
+                  {
+                    type: 'text',
+                    name: 'Serial Flag',
+                    colSize: '100px',
+                    classes: 'text-right'
+                  },
+                  {
+                    type: 'text',
+                    name: 'Batch Flag',
+                    colSize: '100px',
+                    classes: 'text-right'
+                  },
+                  {
+                    type: 'text',
+                    name: 'Climate Controlled',
+                    colSize: '100px',
+                    classes: 'text-right'
+                  },
+                  {
+                    type: 'text',
+                    name: 'Storage Conditions',
+                    colSize: '100px',
+                    classes: 'text-right'
+                  },
+                  {
+                    type: 'text',
+                    name: 'Attachments',
+                    colSize: '100px',
+                    classes: 'text-right'
+                  }
                 ],
                 values: [
                   [
-                    // {
-                    //   type: 'checkbox',
-                    //   value: 'false',
-                    // },
                     {
                       type: 'text',
                       value: '1',
@@ -157,269 +159,371 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '138-7576:BRACKET ASSEMBLY',
+                      value: 'Bracket Assembly',
                       tdClasses: 'text-left'
                     },
                     {
                       type: 'text',
-                      value: '800520',
+                      value: 'EA',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '10',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '10',
+                      classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'text',
-                      value: 'Piece',
+                      value: 'PMF - 6002',
                     },
                     {
                       type: 'text',
-                      value: '77',
-                      tdClasses: 'text-right'
+                      value: 'C02 - 08- 2- 2',
                     },
                     {
                       type: 'text',
-                      value: '20',
-                      tdClasses: 'text-right'
+                      value: '',
                     },
                     {
                       type: 'text',
-                      value: '25',
-                      tdClasses: 'text-right'
-                      // classes: 'input-small rounded-sm border-secondary text-right'
+                      value: '',
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'YES'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
                     },
                     {
                       type: 'text',
-                      value: '08/21/2019',
-                      tdClasses: 'text-left'
+                      value: '',
                     },
-                    // {
-                    //   type: 'toggle',
-                    //   value: true,
-                    // },
-                    // {
-                    //   type: 'text',
-                    //   value: '10/28/2019',
-                    // }
+                    {
+                      type: 'text',
+                      value: 'UPLOAD',
+                    }
                   ],
                   [
-                    // {
-                    //   type: 'checkbox',
-                    //   value: 'false',
-                    // },
                     {
                       type: 'text',
                       value: '2',
                     },
                     {
                       type: 'text',
-                      value: '1010151',
+                      value: '2063777',
                     },
                     {
                       type: 'text',
-                      value: 'Milwaukee Electric Tool 48-20-5030',
+                      value: 'Bracket Assembly',
                       tdClasses: 'text-left'
                     },
                     {
                       type: 'text',
-                      value: '801520',
+                      value: 'EA',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '10',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '10',
+                      classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'text',
-                      value: 'Each',
+                      value: 'PMF - 6002',
                     },
                     {
                       type: 'text',
-                      value: '130',
-                      tdClasses: 'text-right'
+                      value: 'C02 - 08- 2- 2',
                     },
                     {
                       type: 'text',
-                      value: '50',
-                      tdClasses: 'text-right'
+                      value: '',
                     },
                     {
                       type: 'text',
-                      value: '50',
-                      tdClasses: 'text-right'
-                      // classes: 'input-small rounded-sm border-secondary text-right'
+                      value: '',
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'YES'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
                     },
                     {
                       type: 'text',
-                      value: '08/21/2019',
-                      tdClasses: 'text-left'
+                      value: '',
                     },
-                    // {
-                    //   type: 'toggle',
-                    //   value: false,
-                    // },
-                    // {
-                    //   type: 'text',
-                    //   value: '10/28/2019',
-                    // }
+                    {
+                      type: 'text',
+                      value: 'UPLOAD',
+                    }
                   ],
                   [
-                    // {
-                    //   type: 'checkbox',
-                    //   value: false,
-                    // },
                     {
                       type: 'text',
                       value: '3',
                     },
                     {
                       type: 'text',
-                      value: '2030539',
+                      value: '2063777',
                     },
                     {
                       type: 'text',
-                      value: 'Morse Cutting Tools 82062',
+                      value: 'Bracket Assembly',
                       tdClasses: 'text-left'
                     },
                     {
                       type: 'text',
-                      value: '850520',
+                      value: 'EA',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '10',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '10',
+                      classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'text',
-                      value: 'Each',
+                      value: 'PMF - 6002',
                     },
                     {
                       type: 'text',
-                      value: '200',
-                      tdClasses: 'text-right'
+                      value: 'C02 - 08- 2- 2',
                     },
                     {
                       type: 'text',
-                      value: '100',
-                      tdClasses: 'text-right'
+                      value: '',
                     },
                     {
                       type: 'text',
-                      value: '100',
-                      tdClasses: 'text-right'
-                      // classes: 'input-small rounded-sm border-secondary text-right'
+                      value: '',
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'YES'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
                     },
                     {
                       type: 'text',
-                      value: '08/22/2019',
-                      tdClasses: 'text-left'
+                      value: '',
                     },
-                    // {
-                    //   type: 'toggle',
-                    //   value: false,
-                    // },
-                    // {
-                    //   type: 'text',
-                    //   value: '10/28/2019',
-                    // }
+                    {
+                      type: 'text',
+                      value: 'UPLOAD',
+                    }
                   ],
                   [
-                    // {
-                    //   type: 'checkbox',
-                    //   value: 'false',
-                    // },
                     {
                       type: 'text',
                       value: '4',
                     },
                     {
                       type: 'text',
-                      value: '2044808',
+                      value: '2063777',
                     },
                     {
                       type: 'text',
-                      value: 'Dewalt DW4701- Saw Blade',
+                      value: 'Bracket Assembly',
                       tdClasses: 'text-left'
                     },
                     {
                       type: 'text',
-                      value: '800720',
+                      value: 'EA',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '10',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '10',
+                      classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'text',
-                      value: 'Piece',
+                      value: 'PMF - 6002',
                     },
                     {
                       type: 'text',
-                      value: '80',
-                      tdClasses: 'text-right'
+                      value: 'C02 - 08- 2- 2',
                     },
                     {
                       type: 'text',
-                      value: '80',
-                      tdClasses: 'text-right'
+                      value: '',
                     },
                     {
                       type: 'text',
-                      value: '80',
-                      tdClasses: 'text-right'
-                      // classes: 'input-small rounded-sm border-secondary text-right'
+                      value: '',
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'YES'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
                     },
                     {
                       type: 'text',
-                      value: '08/22/2019',
-                      tdClasses: 'text-left'
+                      value: '',
                     },
-                    // {
-                    //   type: 'toggle',
-                    //   value: false,
-                    // },
-                    // {
-                    //   type: 'text',
-                    //   value: '10/28/2019',
-                    // }
+                    {
+                      type: 'text',
+                      value: 'UPLOAD',
+                    }
                   ]
                 ]
               }
-
             },
             {
-              tabName: 'Where',
+              tabName: 'ASSET MANAGEMENT',
               tabcomponent: 'widgetTable',
-              tabData:  {
+              tabData: {
                 colConfig: [
                   {
                     type: 'checkbox',
-                    name: 'Reservation #',
-                    styles: {'width': '2%'},
+                    name: 'Line Select',
+                    styles: { 'width': '2%' },
                   },
                   {
                     type: 'text',
-                    name: 'Reservation #',
+                    name: 'Line Number',
                     colSize: '100px',
                     classes: ' ',
-                    // styles: {'width': '30%'},
                   },
                   {
                     type: 'text',
-                    name: 'Reservation Line #',
+                    name: 'Item Number',
                     colSize: '100px',
                     classes: ' ',
-                    // styles: {'width': '30%'},
                   },
                   {
                     type: 'text',
-                    name: 'Item #',
+                    name: 'Description',
                     colSize: '100px',
-                    // styles: {'background-color': 'rebeccapurple'},
+                    classes: ' ',
+                  },
+                  {
+                    type: 'text',
+                    name: 'UOM',
+                    colSize: '100px',
                     classes: '',
-                    // styles: {'width': '30%'},
                   },
                   {
                     type: 'text',
-                    name: 'Goods Recipient',
+                    name: 'Received Quantity',
                     colSize: '100px',
-                    // styles: {'width': '30%'},
                   },
                   {
                     type: 'text',
-                    name: 'Unloading Point',
+                    name: 'Serial Number',
                     colSize: '100px',
-                    // styles: {'width': '30%'},
                   },
                   {
                     type: 'text',
-                    name: 'Line Comments',
+                    name: 'Manufacturer Name',
                     colSize: '100px',
-                    // styles: {'width': '30%'},
-                    classes:  'text-left'
+                  },
+                  {
+                    type: 'text',
+                    name: 'Manufacturer Part Number',
+                    colSize: '100px',
                   }
                 ],
                 values: [
@@ -430,40 +534,47 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
-                    },
-                    {
-                      type: 'text',
                       value: '1',
                     },
                     {
                       type: 'text',
-                      value: '43335779'
+                      value: '2063777',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Bracket Assembly',
+                    },
+                    {
+                      type: 'text',
+                      value: 'EA',
+                    },
+                    {
+                      type: 'text',
+                      value: '10',
+                    },
+                    {
+                      type: 'dropdown',
+                      value: [
+                        'Data Entry',
+                        'Bar Code entry'
+                      ],
+                      selectedValue: 'Data Entry',
                     },
                     {
                       type: 'textbox',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'input-large rounded-sm border-secondary'
+                      classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
                   [
                     {
                       type: 'checkbox',
                       value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: 'R4544322',
                     },
                     {
                       type: 'text',
@@ -471,32 +582,43 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '55430224',
+                      value: '2063777',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Bracket Assembly',
+                    },
+                    {
+                      type: 'text',
+                      value: 'EA',
+                    },
+                    {
+                      type: 'text',
+                      value: '',
+                    },
+                    {
+                      type: 'dropdown',
+                      value: [
+                        'Data Entry',
+                        'Bar Code entry'
+                      ],
+                      selectedValue: 'Data Entry',
                     },
                     {
                       type: 'textbox',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'input-large rounded-sm border-secondary'
+                      classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
                   [
                     {
                       type: 'checkbox',
                       value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: 'R4544322',
                     },
                     {
                       type: 'text',
@@ -504,32 +626,43 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '55436655',
+                      value: '2063777',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Bracket Assembly',
+                    },
+                    {
+                      type: 'text',
+                      value: 'EA',
+                    },
+                    {
+                      type: 'text',
+                      value: '',
+                    },
+                    {
+                      type: 'dropdown',
+                      value: [
+                        'Data Entry',
+                        'Bar Code entry'
+                      ],
+                      selectedValue: 'Data Entry',
                     },
                     {
                       type: 'textbox',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'input-large rounded-sm border-secondary'
+                      classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
                   [
                     {
                       type: 'checkbox',
                       value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: 'R4544322',
                     },
                     {
                       type: 'text',
@@ -537,263 +670,36 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '55437754',
+                      value: '2063777',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Bracket Assembly',
+                    },
+                    {
+                      type: 'text',
+                      value: 'EA',
+                    },
+                    {
+                      type: 'text',
+                      value: '',
+                    },
+                    {
+                      type: 'dropdown',
+                      value: [
+                        'Data Entry',
+                        'Bar Code entry'
+                      ],
+                      selectedValue: 'Data Entry',
                     },
                     {
                       type: 'textbox',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
+                      classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'input-large rounded-sm border-secondary'
-                    }
-                  ]
-                ]
-              }
-
-            },
-            {
-              tabName: 'Accounting',
-              tabcomponent: 'widgetTable',
-              tabData:  {
-                colConfig: [
-                  {
-                    type: 'checkbox',
-                    name: 'Reservation #',
-                    styles: {'width': '2%'},
-                  },
-                  {
-                    type: 'text',
-                    name: 'Reservation #',
-                    colSize: '100px',
-                    classes: ' ',
-                    // styles: {'width': '30%'},
-                  },
-                  {
-                    type: 'text',
-                    name: 'Reservation Line #',
-                    colSize: '100px',
-                    classes: ' ',
-                    // styles: {'width': '30%'},
-                  },
-                  {
-                    type: 'text',
-                    name: 'Item #',
-                    colSize: '100px',
-                    // styles: {'background-color': 'rebeccapurple'},
-                    classes: '',
-                    // styles: {'width': '30%'},
-                  },
-                  {
-                    type: 'text',
-                    name: 'Movement Type',
-                    colSize: '100px',
-                    // styles: {'width': '30%'},
-                  },
-                  {
-                    type: 'text',
-                    name: 'Cost Center',
-                    colSize: '100px',
-                    // styles: {'width': '30%'},
-                  },
-                  {
-                    type: 'text',
-                    name: 'WBS Element',
-                    colSize: '100px',
-                    // styles: {'width': '30%'},
-                  },
-                  {
-                    type: 'text',
-                    name: 'WO/IO#',
-                    colSize: '100px',
-                    // styles: {'width': '30%'},
-                  }
-                ],
-                values: [
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: 'R4544322',
-                    },
-                    {
-                      type: 'text',
-                      value: '1',
-                    },
-                    {
-                      type: 'text',
-                      value: '43335779',
-                    },
-                    {
-                      type: 'dropdown',
-                      value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
-                    ],
-                      selectedValue:'Issue For Cost Center',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'CC001',
-                        'CC0012'
-                    ],
-                      selectedValue:'CC001',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '70',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '55',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
-                  ],
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: 'R4544322',
-                    },
-                    {
-                      type: 'text',
-                      value: '2',
-                    },
-                    {
-                      type: 'text',
-                      value: '55430224',
-                    },
-                    {
-                      type: 'dropdown',
-                      value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
-                    ],
-                      selectedValue:'Issue For Cost Center',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'CC001',
-                        'CC0011'
-                    ],
-                      selectedValue:'CC001',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '70',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '55',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
-                  ],
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: 'R4544322',
-                    },
-                    {
-                      type: 'text',
-                      value: '3',
-                    },
-                    {
-                      type: 'text',
-                      value: '55436655',
-                    },
-                    {
-                      type: 'dropdown',
-                      value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
-                    ],
-                      selectedValue:'Issue For Cost Center',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'CC001',
-                        'CC0011'
-                    ],
-                      selectedValue:'CC001',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '70',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '55',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
-                  ],
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: 'R4544322',
-                    },
-                    {
-                      type: 'text',
-                      value: '4',
-                    },
-                    {
-                      type: 'text',
-                      value: '55437754',
-                    },
-                    {
-                      type: 'dropdown',
-                      value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
-                    ],
-                      selectedValue:'Issue For Cost Center',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'CC001',
-                        'CC0011'
-                    ],
-                      selectedValue:'CC001',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '70',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '55',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ]
@@ -807,213 +713,14 @@ export class AsnGrComponent implements OnInit {
     },
     {
       'HeaderData': {
-        name: 'Shipping & Delivery Information',
+        name: 'Notes & Attachements',
         isOpen: false,
         collapsible: true,
         data: {
-          componentName: 'details',
-          isSubDetails: false,
-          data: [
-            {
-              type:'text',
-              name: 'Expected Delivery Date',
-              values: '08/20/2019',
-            },
-            {
-              type:'text',
-              name: 'Tracking No.',
-              values: '1Z789T278P78216284',
-            },{
-              type:'text',
-              name: 'Shipping Method',
-              values: 'FedEx',
-            },
-            {
-              type:'textbox',
-              name: 'Ship to Location',
-              values: 'Pascagoula',
-            },
-            {
-              type:'text',
-              name: 'Ship To Address',
-              values: '250 Industrial Rd, Pascagoula, MS 39581',
-              classes: 'col-sm-4'
-            }
-          ]
+          componentName: 'Attachement'
         }
       }
-  },
-  {
-    'HeaderData': {
-      name: 'Notes & Attachements',
-      isOpen: false,
-      collapsible: true,
-      data: {
-        componentName: 'widgetTable',
-        haveButton: false,
-        data:
-          {
-          
-              tablerowClass: 'bg-white',
-              colConfig: [
-                {
-                  type: 'checkbox',
-                  name: 'Reservation #',
-                  classes: 'text-left',
-                  // styles: {'width': '%'},
-                },
-                {
-                  type: 'text',
-                  name: 'Name',
-                  // colSize: '100px',
-                  classes: 'text-left',
-                  // styles: {'width': '8%'},
-                },
-                {
-                  type: 'text',
-                  name: 'Type',
-                  // colSize: '100px',
-                  classes: ' ',
-                  // styles: {'width': '8%'},
-                },
-                {
-                  type: 'text',
-                  name: 'Classification',
-                  colSize: '100px',
-                  // styles: {'background-color': 'rebeccapurple'},
-                  classes: 'text-left',
-                  // styles: {'width': '8%'},
-                },
-                {
-                  type: 'text',
-                  name: 'Added By',
-                  // colSize: '100px',
-                  // styles: {'background-color': 'rebeccapurple'},
-                  // classes: 'text-left',
-
-                },
-                {
-                  type: 'text',
-                  name: 'File Size',
-                  colSize: '100px',
-                  // styles: {'width': '8%'},
-                },
-                // {
-                //   type: 'text',
-                //   name: 'Order Quantity',
-                //   colSize: '100px',
-                //   classes: 'text-right',
-                //   // styles: {'width': '8%'},
-                // },
-                // {
-                //   type: 'text',
-                //   name: 'Open Quantity',
-                //   colSize: '100px',
-                //   classes: 'text-right',
-                //   // styles: {'width': '8%'},
-                // },
-                // {
-                //   type: 'text',
-                //   name: 'Shipped Quantity',
-                //   colSize: '100px',
-                //   classes: 'text-right',
-                //   // styles: {'width': '8%'},
-                // },
-                // {
-                //   type: 'text',
-                //   name: 'Promised Delivery Date',
-                //   colSize: '100px',
-                //   classes: 'text-left',
-                //   // styles: {'width': '8%'},
-                // },
-                // {
-                //   type: 'text',
-                //   name: 'Is Final',
-                //   colSize: '100px',
-                //   styles: {'width': '8%'},
-                // },
-                // {
-                //   type: 'text',
-                //   name: 'Requested Date',
-                //   colSize: '100px',
-                //   // styles: {'width': '8%'},
-                // }
-              ],
-              values: [
-                [
-                  {
-                    type: 'checkbox',
-                    value: 'false',
-                    tdClasses: 'text-left'
-                  },
-                  {
-                    type: 'hiperlink',
-                    value: 'Bill Of Lading.pdf',
-                    tdClasses: 'text-left'
-                  },
-                  {
-                    type: 'text',
-                    value: 'File',
-                  },
-                  {
-                    type: 'text',
-                    value: 'Shipping Documents',
-                    tdClasses: 'text-left'
-                  },
-                  {
-                    type: 'text',
-                    value: 'Kim Powell',
-                  },
-                  {
-                    type: 'text',
-                    value: '20kb',
-                  },
-                  // {
-                  //   type: 'text',
-                  //   value: '77',
-                  //   tdClasses: 'text-right'
-                  // },
-                  // {
-                  //   type: 'text',
-                  //   value: '20',
-                  //   tdClasses: 'text-right'
-                  // },
-                  // {
-                  //   type: 'text',
-                  //   value: '25',
-                  //   tdClasses: 'text-right'
-                  //   // classes: 'input-small rounded-sm border-secondary text-right'
-                  // },
-                  // {
-                  //   type: 'text',
-                  //   value: '08/21/2019',
-                  //   tdClasses: 'text-left'
-                  // },
-                  // {
-                  //   type: 'toggle',
-                  //   value: true,
-                  // },
-                  // {
-                  //   type: 'text',
-                  //   value: '10/28/2019',
-                  // }
-                ]
-              ]
-            }
-      }
     }
-  },
-  {
-        'HeaderData': {
-          name: 'Notes & Attachements',
-          isOpen: false,
-          collapsible: true,
-          data: {
-            componentName: 'Attachement',
-            numberOfInput: 'one'
-          }
-        }
-      }
-]
+  ]
 
 }
