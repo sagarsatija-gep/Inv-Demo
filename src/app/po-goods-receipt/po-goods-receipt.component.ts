@@ -479,45 +479,51 @@ export class PoGoodsReceiptComponent implements OnInit {
                 colConfig: [
                   {
                     type: 'checkbox',
-                    name: 'Reservation #',
+                    name: 'Line Select',
                     styles: { 'width': '2%' },
                   },
                   {
                     type: 'text',
-                    name: 'Reservation #',
+                    name: 'Line Number',
                     colSize: '100px',
                     classes: ' ',
                   },
                   {
                     type: 'text',
-                    name: 'Reservation Line #',
+                    name: 'Item Number',
                     colSize: '100px',
                     classes: ' ',
                   },
                   {
                     type: 'text',
-                    name: 'Item #',
+                    name: 'Description',
+                    colSize: '100px',
+                    classes: ' ',
+                  },
+                  {
+                    type: 'text',
+                    name: 'UOM',
                     colSize: '100px',
                     classes: '',
                   },
                   {
                     type: 'text',
-                    name: 'Movement Type',
+                    name: 'Received Quantity',
                     colSize: '100px',
                   },
                   {
                     type: 'text',
-                    name: 'Cost Center',
+                    name: 'Serial Number',
                     colSize: '100px',
                   },
                   {
                     type: 'text',
-                    name: 'WBS Element',
+                    name: 'Manufacturer Name',
                     colSize: '100px',
                   },
                   {
                     type: 'text',
-                    name: 'WO/IO#',
+                    name: 'Manufacturer Part Number',
                     colSize: '100px',
                   }
                 ],
@@ -529,41 +535,40 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
-                    },
-                    {
-                      type: 'text',
                       value: '1',
                     },
                     {
                       type: 'text',
-                      value: '43335779',
+                      value: '2063777',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Bracket Assembly',
+                    },
+                    {
+                      type: 'text',
+                      value: 'EA',
+                    },
+                    {
+                      type: 'text',
+                      value: '10',
                     },
                     {
                       type: 'dropdown',
                       value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
+                        'Data Entry',
+                        'Bar Code entry'
                       ],
-                      selectedValue: 'Issue For Cost Center',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'CC001',
-                        'CC0012'
-                      ],
-                      selectedValue: 'CC001',
+                      selectedValue: 'Data Entry',
                     },
                     {
                       type: 'textbox',
-                      value: '70',
+                      value: '',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
-                      value: '55',
+                      value: '',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
@@ -571,10 +576,6 @@ export class PoGoodsReceiptComponent implements OnInit {
                     {
                       type: 'checkbox',
                       value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: 'R4544322',
                     },
                     {
                       type: 'text',
@@ -582,33 +583,36 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '55430224',
+                      value: '2063777',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Bracket Assembly',
+                    },
+                    {
+                      type: 'text',
+                      value: 'EA',
+                    },
+                    {
+                      type: 'text',
+                      value: '',
                     },
                     {
                       type: 'dropdown',
                       value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
+                        'Data Entry',
+                        'Bar Code entry'
                       ],
-                      selectedValue: 'Issue For Cost Center',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'CC001',
-                        'CC0011'
-                      ],
-                      selectedValue: 'CC001',
+                      selectedValue: 'Data Entry',
                     },
                     {
                       type: 'textbox',
-                      value: '70',
+                      value: '',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
-                      value: '55',
+                      value: '',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
@@ -616,10 +620,6 @@ export class PoGoodsReceiptComponent implements OnInit {
                     {
                       type: 'checkbox',
                       value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: 'R4544322',
                     },
                     {
                       type: 'text',
@@ -627,33 +627,36 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '55436655',
+                      value: '2063777',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Bracket Assembly',
+                    },
+                    {
+                      type: 'text',
+                      value: 'EA',
+                    },
+                    {
+                      type: 'text',
+                      value: '',
                     },
                     {
                       type: 'dropdown',
                       value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
+                        'Data Entry',
+                        'Bar Code entry'
                       ],
-                      selectedValue: 'Issue For Cost Center',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'CC001',
-                        'CC0011'
-                      ],
-                      selectedValue: 'CC001',
+                      selectedValue: 'Data Entry',
                     },
                     {
                       type: 'textbox',
-                      value: '70',
+                      value: '',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
-                      value: '55',
+                      value: '',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
@@ -664,41 +667,40 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
-                    },
-                    {
-                      type: 'text',
                       value: '4',
                     },
                     {
                       type: 'text',
-                      value: '55437754',
+                      value: '2063777',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Bracket Assembly',
+                    },
+                    {
+                      type: 'text',
+                      value: 'EA',
+                    },
+                    {
+                      type: 'text',
+                      value: '',
                     },
                     {
                       type: 'dropdown',
                       value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
+                        'Data Entry',
+                        'Bar Code entry'
                       ],
-                      selectedValue: 'Issue For Cost Center',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'CC001',
-                        'CC0011'
-                      ],
-                      selectedValue: 'CC001',
+                      selectedValue: 'Data Entry',
                     },
                     {
                       type: 'textbox',
-                      value: '70',
+                      value: '',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
-                      value: '55',
+                      value: '',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ]
