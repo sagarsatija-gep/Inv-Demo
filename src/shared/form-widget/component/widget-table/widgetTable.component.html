@@ -1,50 +1,52 @@
-<table class="table widgetTable table-striped">
-  <thead>
-    <tr>
-      <th class="text-center-cl" [ngStyle]="col.styles" [ngClass]="col.classes" *ngFor="let col of data.colConfig">
-        <label *ngIf="col.type == 'checkbox'" class="checkbox-container">
-          <input type="checkbox" />
-          <span class="checkmark"></span>
-        </label>
-        <span *ngIf="col.type == 'text'">{{col.name}} </span>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let rows of data.values" [ngClass]="data.tablerowClass">
-      <td *ngFor="let column of rows" class="text-center-cl" [ngClass]="column.tdClasses">
-
-        <label *ngIf="column.type == 'checkbox'" class="checkbox-container">
-          <input type="checkbox" />
-          <span class="checkmark"></span>
-        </label>
-
-        <span [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'hiperlink'"> {{column.value}}
-        </span>
-
-        <span [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'text'"> {{column.value}}
-        </span>
-
-        <input [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'textbox'" type="text"
-          [(ngModel)]="column.value">
-
-        <mat-form-field *ngIf="column.type == 'dropdown'">
-          <mat-select name="countryString" [(value)]="column.selectedValue" placeholder="">
-            <mat-option [value]="item" *ngFor="let item of column.value">{{item}}</mat-option>
-
-          </mat-select>
-        </mat-form-field>
-
-        <label *ngIf="column.type == 'toggle'" class="switch">
-          <!-- <input type="checkbox" [checked]='column.value'>
-          <span class="slider round"></span> -->
-          <label class="switch">
-            <input class="switch-input" type="checkbox" />
-            <span class="switch-label" data-on="YES" data-off="NO"></span>
-            <span class="switch-handle"></span>
+<div style="width: 100%;overflow-x: scroll;">
+  <table class="table widgetTable table-striped" style="overflow-x: scroll;">
+    <thead>
+      <tr>
+        <th class="text-center-cl" [ngStyle]="col.styles" [ngClass]="col.classes" *ngFor="let col of data.colConfig">
+          <label *ngIf="col.type == 'checkbox'" class="checkbox-container">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
           </label>
-        </label>
-      </td>
-    </tr>
-  </tbody>
-</table>
+          <span *ngIf="col.type == 'text'">{{col.name}} </span>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let rows of data.values" [ngClass]="data.tablerowClass">
+        <td *ngFor="let column of rows" class="text-center-cl" [ngClass]="column.tdClasses">
+  
+          <label *ngIf="column.type == 'checkbox'" class="checkbox-container">
+            <input type="checkbox" />
+            <span class="checkmark"></span>
+          </label>
+  
+          <span [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'hiperlink'"> {{column.value}}
+          </span>
+  
+          <span [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'text'"> {{column.value}}
+          </span>
+  
+          <input [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'textbox'" type="text"
+            [(ngModel)]="column.value">
+  
+          <mat-form-field *ngIf="column.type == 'dropdown'">
+            <mat-select name="countryString" [(value)]="column.selectedValue" placeholder="">
+              <mat-option [value]="item" *ngFor="let item of column.value">{{item}}</mat-option>
+  
+            </mat-select>
+          </mat-form-field>
+  
+          <label *ngIf="column.type == 'toggle'" class="switch">
+            <!-- <input type="checkbox" [checked]='column.value'>
+            <span class="slider round"></span> -->
+            <label class="switch">
+              <input class="switch-input" type="checkbox" />
+              <span class="switch-label" data-on="YES" data-off="NO"></span>
+              <span class="switch-handle"></span>
+            </label>
+          </label>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -16,7 +16,6 @@ const  components = {
     'goodsIssueDetails': GoodsIssueDetails,
     'widgetTable': WidgetTable,
     'manageGoodsIssue': ManageGoodsIssue
-
 };
 
 @Component({
