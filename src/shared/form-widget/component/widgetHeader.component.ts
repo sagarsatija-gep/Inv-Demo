@@ -38,11 +38,11 @@ export class WidgetHeaderComponent implements OnInit {
 
     createComponent() {
         if(this.togal) {
-            debugger;
+            // debugger;
             const componentName = components[this.headerData.data.componentName];
             const componentFactory = this.cfr.resolveComponentFactory(componentName);
             this.component = this.trycomponent.createComponent(componentFactory);
-            debugger;
+            // debugger;
             if( this.headerData.data != null && this.headerData.data.componentName != 'widgetTable') {
                 this.component.instance.data = this.headerData.data;
             } 
