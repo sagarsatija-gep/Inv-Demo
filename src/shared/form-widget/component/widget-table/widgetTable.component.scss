@@ -376,7 +376,7 @@ input:checked+.slider:before {
 }
 
 .table-container{
-  overflow-x: scroll !important;
+  overflow-x: auto !important;
   scrollbar-width: thin;
 }
 
@@ -397,3 +397,4 @@ input:checked+.slider:before {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
