@@ -81,7 +81,7 @@ export class AsnGrComponent implements OnInit {
                     type: 'text',
                     name: 'UOM',
                     colSize: '100px',
-                  
+
                   },
                   {
                     type: 'text',
@@ -105,7 +105,7 @@ export class AsnGrComponent implements OnInit {
                     type: 'text',
                     name: 'Storage Bin',
                     colSize: '100px',
-                    
+
                   },
                   {
                     type: 'text',
@@ -162,12 +162,12 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'Bracket Assembly',
+                      value: '138-7576:Bracket Assembly',
                       tdClasses: 'text-left'
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'textbox',
@@ -359,17 +359,17 @@ export class AsnGrComponent implements OnInit {
                       type: 'text',
                       value: 'PMF - 6002',
                     }
-                  ,{
-                    type: 'dropdown',
-                    classes: 'rounded-sm border-secondary input-large',
-                    value: [
-                      'C02 - 08- 2- 2',
-                      'C03 - 06- 2- 2',
-                      'S02 - 03- 2- 4',
-                      'C02 - 08- 2- 4'
-                    ],
-                    selectedValue: 'S02 - 03- 2- 4',
-                  },
+                    , {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'C02 - 08- 2- 2',
+                        'C03 - 06- 2- 2',
+                        'S02 - 03- 2- 4',
+                        'C02 - 08- 2- 4'
+                      ],
+                      selectedValue: 'S02 - 03- 2- 4',
+                    },
                     {
                       type: 'textbox',
                       value: '',
@@ -581,7 +581,7 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -622,11 +622,11 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
-                      value: '',
+                      value: '10',
                     },
                     {
                       type: 'textbox',
@@ -663,11 +663,11 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
-                      value: '',
+                      value: '10',
                     },
                     {
                       type: 'textbox',
@@ -704,11 +704,11 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
-                      value: '',
+                      value: '10',
                     },
                     {
                       type: 'textbox',
@@ -745,7 +745,7 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -786,7 +786,7 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -827,7 +827,7 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -868,7 +868,7 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -909,7 +909,7 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -950,7 +950,7 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
