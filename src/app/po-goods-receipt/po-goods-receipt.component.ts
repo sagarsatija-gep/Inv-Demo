@@ -225,8 +225,9 @@ export class PoGoodsReceiptComponent implements OnInit {
                       value: '',
                     },
                     {
-                      type: 'text',
+                      type: 'button',
                       value: 'UPLOAD',
+                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ],
                   [
@@ -305,8 +306,9 @@ export class PoGoodsReceiptComponent implements OnInit {
                       value: '',
                     },
                     {
-                      type: 'text',
+                      type: 'button',
                       value: 'UPLOAD',
+                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ],
                   [
@@ -385,8 +387,9 @@ export class PoGoodsReceiptComponent implements OnInit {
                       value: '',
                     },
                     {
-                      type: 'text',
+                      type: 'button',
                       value: 'UPLOAD',
+                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ],
                   [
@@ -465,8 +468,9 @@ export class PoGoodsReceiptComponent implements OnInit {
                       value: '',
                     },
                     {
-                      type: 'text',
+                      type: 'button',
                       value: 'UPLOAD',
+                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ]
                 ]
