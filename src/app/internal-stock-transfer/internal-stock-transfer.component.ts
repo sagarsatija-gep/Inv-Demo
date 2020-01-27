@@ -67,7 +67,16 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
             {
               type: 'textbox',
               name:'Plant',
-              values:'El-Segundo'
+              values:'PMF 6002'
+            },
+            {
+              type: 'dropdown',
+              name: 'Transfer Type',
+              value: [
+                'Within Plant Transfer',
+                'Between Plant Transfer'
+            ],
+              selectedValue:'Within Plant Transfer',
             }
             
           ]
@@ -102,32 +111,37 @@ export class NgbdModalContent2 implements OnInit {
       type:'text',
       name: 'From Storage Location',
       values: 'PMF-6002​',
-      showBarcode: 'none'
+      showBarcode: true
     },
     {
       type:'text',
       name: 'From BIN',
       values: '',
+      showBarcode: true
     },
     {
       type:'text',
       name: 'Line Items',
       values: '',
+      showBarcode: false
     },
     {
       type:'text',
       name: 'Quantity',
       values: '',
+      showBarcode: false
     },
     {
       type:'text',
       name: 'To Storage Location',
       values: 'PMF-6002​​',
+      showBarcode: false
     },
     {
       type:'text',
       name: 'To Bin',
       values: '​​',
+      showBarcode: false
     }
   ];
 
