@@ -12,6 +12,8 @@ import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { InternalStockTransferComponent } from './internal-stock-transfer/internal-stock-transfer.component';
 import { PoDetailsComponent } from './po-details/po-details.component';
+import { PoGoodsReceiptComponent } from './po-goods-receipt/po-goods-receipt.component';
+
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -22,13 +24,16 @@ const routes: Routes = [
   { path: 'managePackingList', component: ManagePackingListComponent },
   { path: 'goods', component: GoodsIssueComponent },
   { path: 'managePackingSlip/7894563', component: PackingSlipDetailComponent },
-  { path: 'asn', component:PurchaseDetailsComponent, children:[
-    {path: ':id', component:PurchaseDetailsComponent }
-  ]},
+  {
+    path: 'asn', component: PurchaseDetailsComponent, children: [
+      { path: ':id', component: PurchaseDetailsComponent }
+    ]
+  },
   { path: 'manageGoodsIssue', component: ManageGoodsIssuePicklistComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'internalstocktransfer',component:InternalStockTransferComponent},
-  {path: 'poDetails',component:PoDetailsComponent}
+  { path: 'internalstocktransfer', component: InternalStockTransferComponent },
+  { path: 'poDetails', component: PoDetailsComponent },
+  { path: 'poGoodsReceipt', component: PoGoodsReceiptComponent }
 ];
 
 @NgModule({
