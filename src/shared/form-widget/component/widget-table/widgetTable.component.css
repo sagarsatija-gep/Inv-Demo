@@ -179,7 +179,7 @@ input:checked + .slider:before {
 .switch {
   position: relative;
   display: block;
-  vertical-align: top;
+  /* vertical-align: top; */
   width: 60px;
   height: 30px;
   padding: 3px;
@@ -301,3 +301,26 @@ input:checked + .slider:before {
   -o-transition: All 0.3s ease;
 }
 /*# sourceMappingURL=widgetTable.component.css.map */
+
+.table-container{
+  overflow-x: scroll !important;
+  scrollbar-width: thin;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #c2c9d2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
