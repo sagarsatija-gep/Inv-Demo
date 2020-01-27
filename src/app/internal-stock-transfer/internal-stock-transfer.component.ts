@@ -10,7 +10,7 @@ export class InternalStockTransferComponent implements OnInit {
 
   constructor(public modalService: NgbModal) { }
   open() {
-    const modalRef = this.modalService.open(NgbdModalContent2);
+    const modalRef = this.modalService.open(NgbdModalContent2, { size: 'lg' });
     modalRef.componentInstance.name = 'World';
   }
 
@@ -75,22 +75,45 @@ export class InternalStockTransferComponent implements OnInit {
 }
 @Component({
   selector: 'ngbd-modal-content',
-  template: `
-    
-    <div class="modal-body">
-    <div>
-      <div><label >From Storage Location</label></div>
-      <input type='text'>
-    </div>  
-    </div>
-    <div class="modal-footer">
-  
-      <button type="button" class="btn btn-outline-dark" (click)="navigate()">Save</button>
-    </div>
-  `
+  templateUrl: 'internal-stock-transfer-popup.html',
+  styleUrls: ['./internal-stock-transfer.component.css']
 })
 export class NgbdModalContent2 {
   @Input() name;
+
+  popupData = [
+    {
+      type:'text',
+      name: 'From Storage Location',
+      values: 'PMF-6002​',
+      showBarcode: 'none'
+    },
+    {
+      type:'text',
+      name: 'From BIN',
+      values: '',
+    },
+    {
+      type:'text',
+      name: 'Line Items',
+      values: '',
+    },
+    {
+      type:'text',
+      name: 'Quantity',
+      values: '',
+    },
+    {
+      type:'text',
+      name: 'To Storage Location',
+      values: 'PMF-6002​​',
+    },
+    {
+      type:'text',
+      name: 'To Bin',
+      values: '​​',
+    }
+  ];
 
   constructor(public activeModal: NgbActiveModal) {}
 }
