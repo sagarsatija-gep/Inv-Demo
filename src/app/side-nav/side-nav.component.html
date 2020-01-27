@@ -1,6 +1,6 @@
 <mat-sidenav-container class="example-container">
   <mat-sidenav #sidenav class="example-sidenav" mode="side" style="background: #2f4866;" [(opened)]="opened">
-    <div class="tab" *ngFor="let sideNav of sideNav" (click)="clicked()" routerLink="/{{sideNav.link}}"
+    <div class="tab" *ngFor="let sideNav of sideNav" (click)="clicked(sideNav.dropdown)" 
       [matMenuTriggerFor]="navs">
       <div class="icons">
         <div style="height: 32px;">
@@ -109,9 +109,10 @@
           {{sideNav.name}}
         </span>
       </div>
-      <mat-menu #navs="matMenu" class="myMenu" id="side-menu"  >
-        <button [routerLink]="['/']" routerLinkActive="router-link-active"  mat-menu-item *ngFor="let items of sideNav.sideMenu">
-          {{items}}</button>
+      <mat-menu #navs="matMenu" class="myMenu" id="side-menu"   >
+        
+        <button *ngFor="let items of sideNav.sideMenu" routerLink="/{{items.value}}" routerLinkActive="router-link-active"  mat-menu-item >
+          {{items.name}}</button>
       </mat-menu>
 
     </div>
