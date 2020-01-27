@@ -19,7 +19,7 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
   }
 
   ngOnInit() {
-    this.popUpSubscription = this.popup.internamStockPopUp.subscribe(isPopUP=>{
+    this.popUpSubscription = this.popup.internalStockPopUp.subscribe(isPopUP=>{
       if(isPopUP) {
         this.open();
       }
