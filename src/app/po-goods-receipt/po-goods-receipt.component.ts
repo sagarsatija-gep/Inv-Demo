@@ -558,12 +558,9 @@ export class PoGoodsReceiptComponent implements OnInit {
                       value: '10',
                     },
                     {
-                      type: 'dropdown',
-                      value: [
-                        'Data Entry',
-                        'Bar Code entry'
-                      ],
-                      selectedValue: 'Data Entry',
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
@@ -602,12 +599,9 @@ export class PoGoodsReceiptComponent implements OnInit {
                       value: '',
                     },
                     {
-                      type: 'dropdown',
-                      value: [
-                        'Data Entry',
-                        'Bar Code entry'
-                      ],
-                      selectedValue: 'Data Entry',
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
@@ -646,12 +640,9 @@ export class PoGoodsReceiptComponent implements OnInit {
                       value: '',
                     },
                     {
-                      type: 'dropdown',
-                      value: [
-                        'Data Entry',
-                        'Bar Code entry'
-                      ],
-                      selectedValue: 'Data Entry',
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
@@ -690,12 +681,9 @@ export class PoGoodsReceiptComponent implements OnInit {
                       value: '',
                     },
                     {
-                      type: 'dropdown',
-                      value: [
-                        'Data Entry',
-                        'Bar Code entry'
-                      ],
-                      selectedValue: 'Data Entry',
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
