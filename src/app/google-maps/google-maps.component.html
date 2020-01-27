@@ -7,7 +7,7 @@
         <div style="display: flex;width: 100%;">
           <div style="width: 65%;padding: 10px;border-right: 1px gainsboro solid;">
             <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="false"
-              (mapClick)="mapClicked($event)">
+              >
 
               <agm-marker *ngFor="let m of markers; let i = index" (markerClick)="clickedMarker(m.label, i)"
                 [latitude]="m.lat" [longitude]="m.lng" [iconUrl]="m.iconUrl" [label]="m.label" [markerDraggable]="m.draggable"
@@ -44,7 +44,7 @@
                 <div style="display: flex;
                 display: flex;
                 justify-content: left" *ngFor="let locations of locations">
-                  <div [ngStyle]="{'background-color': locations.color}" style="margin: .2rem 1rem ;height: 1rem;width: 1rem;border-radius: .3rem;"></div>
+                  <div [ngStyle]="{'background-color': locations.color}" style="margin: .2rem 1rem .2rem 0 ;height: 1rem;width: 1rem;border-radius: .3rem;"></div>
                   <span>
                     {{locations.name}} : &nbsp;
                   </span>

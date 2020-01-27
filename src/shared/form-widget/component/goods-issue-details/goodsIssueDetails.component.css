@@ -36,8 +36,9 @@
 }
 
 .goodsIssuInputs .customBarcode svg {
-  max-width: 140px;
+  width: 140px;
   margin-top: -6px;
   height: 25px;
 }
+
 /*# sourceMappingURL=goodsIssueDetails.component.css.map */
