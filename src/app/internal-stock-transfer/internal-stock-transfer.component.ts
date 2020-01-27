@@ -1,5 +1,5 @@
 import { Component, OnInit ,ViewEncapsulation,Input} from '@angular/core';
-
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 @Component({
   selector: 'app-internal-stock-transfer',
   templateUrl: './internal-stock-transfer.component.html',
@@ -8,7 +8,11 @@ import { Component, OnInit ,ViewEncapsulation,Input} from '@angular/core';
 })
 export class InternalStockTransferComponent implements OnInit {
 
-  constructor() { }
+  constructor(public modalService: NgbModal) { }
+  open() {
+    const modalRef = this.modalService.open(NgbdModalContent2);
+    modalRef.componentInstance.name = 'World';
+  }
 
   ngOnInit() {
   }
@@ -69,3 +73,26 @@ export class InternalStockTransferComponent implements OnInit {
 ]
 
 }
+@Component({
+  selector: 'ngbd-modal-content',
+  template: `
+    
+    <div class="modal-body">
+    <div>
+      <div><label >From Storage Location</label></div>
+      <input type='text'>
+    </div>  
+    </div>
+    <div class="modal-footer">
+  
+      <button type="button" class="btn btn-outline-dark" (click)="navigate()">Save</button>
+    </div>
+  `
+})
+export class NgbdModalContent2 {
+  @Input() name;
+
+  constructor(public activeModal: NgbActiveModal) {}
+}
+
+
