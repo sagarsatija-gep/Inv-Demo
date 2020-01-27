@@ -47,6 +47,7 @@ import { GoogleMapsComponent } from './google-maps/google-maps.component';
 import { InternalStockTransferComponent } from './internal-stock-transfer/internal-stock-transfer.component';
 import { PoDetailsComponent } from './po-details/po-details.component';
 import { PoGoodsReceiptComponent } from './po-goods-receipt/po-goods-receipt.component';
+import { PopupComponent } from './popup/popup.component';
 
 @NgModule({
   declarations: [
@@ -78,7 +79,8 @@ import { PoGoodsReceiptComponent } from './po-goods-receipt/po-goods-receipt.com
     GoogleMapsComponent,
     InternalStockTransferComponent,
     PoDetailsComponent,
-    PoGoodsReceiptComponent
+    PoGoodsReceiptComponent,
+    PopupComponent
   ],
   imports: [
     BrowserModule,

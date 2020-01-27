@@ -4,6 +4,7 @@ import { BarecodeScannerLivestreamComponent } from 'ngx-barcode-scanner';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { RouterModule, Routes, Router } from '@angular/router';
 
+
 @Component({
   selector: 'app-packing-slip-camera',
   templateUrl: './packing-slip-camera.component.html',
