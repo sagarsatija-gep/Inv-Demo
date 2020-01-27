@@ -46,6 +46,8 @@ import { AgmCoreModule } from '@agm/core';
 import { GoogleMapsComponent } from './google-maps/google-maps.component';
 import { InternalStockTransferComponent, NgbdModalContent2 } from './internal-stock-transfer/internal-stock-transfer.component';
 import { PoDetailsComponent } from './po-details/po-details.component';
+import { AsnGrComponent } from './asn-gr/asn-gr.component';
+import { PoGoodsReceiptComponent } from './po-goods-receipt/po-goods-receipt.component';
 import { PopupComponent } from './popup/popup.component';
 
 @NgModule({
@@ -79,7 +81,9 @@ import { PopupComponent } from './popup/popup.component';
     GoogleMapsComponent,
     InternalStockTransferComponent,
     PoDetailsComponent,
-    PopupComponent
+    PoGoodsReceiptComponent,
+    PopupComponent,
+    AsnGrComponent
   ],
   imports: [
     BrowserModule,
