@@ -12,6 +12,7 @@ import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { InternalStockTransferComponent } from './internal-stock-transfer/internal-stock-transfer.component';
 import { PoDetailsComponent } from './po-details/po-details.component';
+import { AsnGrComponent } from './asn-gr/asn-gr.component';
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -28,7 +29,8 @@ const routes: Routes = [
   { path: 'manageGoodsIssue', component: ManageGoodsIssuePicklistComponent },
   { path: 'dashboard', component: DashboardComponent },
   { path: 'internalstocktransfer',component:InternalStockTransferComponent},
-  {path: 'poDetails',component:PoDetailsComponent}
+  {path: 'poDetails',component:PoDetailsComponent},
+  {path: 'asn-goodsReceipt',component:AsnGrComponent}
 ];
 
 @NgModule({
