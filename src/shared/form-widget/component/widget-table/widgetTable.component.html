@@ -1,9 +1,9 @@
-
 <div class="table-container" style="width: 100%;overflow-x: auto;">
   <table class="table widgetTable table-striped" style="width: fit-content;min-width: 100%;">
     <thead>
       <tr>
-        <th class="text-center-cl" style="min-width: 140px;" [ngStyle]="col.styles" [ngClass]="col.classes" *ngFor="let col of data.colConfig">
+        <th class="text-center-cl" style="min-width: 140px;" [ngStyle]="col.styles" [ngClass]="col.classes"
+          *ngFor="let col of data.colConfig">
           <label *ngIf="col.type == 'checkbox'" class="checkbox-container">
             <input type="checkbox" />
             <span class="checkmark"></span>
@@ -27,6 +27,11 @@
 
           <button type="button" class="btn btn-primary .btn-xs" [ngStyle]="column.styles"
             *ngIf="column.type == 'button'">{{column.value}}</button>
+
+          <div *ngIf="column.type == 'attachments'">
+            <i class="fa fa-upload" aria-hidden="true" style="color: #3D5AFE; font-size: 20px; margin: 5px;"></i>
+            <i class="fa fa-paperclip" aria-hidden="true" style="color: #3D5AFE; font-size: 20px; margin: 5px;"></i>
+          </div>
 
           <span [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'text'"> {{column.value}}
           </span>

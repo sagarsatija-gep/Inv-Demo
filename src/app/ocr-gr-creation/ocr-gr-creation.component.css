@@ -1,0 +1,32 @@
+.purcesDetais {
+    padding: 20px;
+}
+
+ul.breadcrumb {
+    list-style: none;
+    background-color: transparent;
+    padding-inline-start: 0px;
+    margin-block-end: 0.5em;
+    margin-block-start: 0em;
+    padding: 0rem 1rem 0.75rem 0.2rem;
+}
+
+ul.breadcrumb li {
+    display: inline;
+    font-size: 16px;
+}
+
+ul.breadcrumb li+li:before {
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
