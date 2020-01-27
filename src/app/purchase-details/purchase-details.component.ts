@@ -850,7 +850,8 @@ export class PurchaseDetailsComponent implements OnInit {
       isOpen: false,
       collapsible: true,
       data: {
-        componentName: 'Attachement'
+        componentName: 'Attachement',
+        numberOfInput: 'one'
       }
     }
   }

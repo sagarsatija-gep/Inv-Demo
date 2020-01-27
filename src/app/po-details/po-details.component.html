@@ -1,10 +1,29 @@
-<div class="purcesDetais">
+<div class="purcesDetais mb-5">
   <div>
-      <ul class="breadcrumb">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">InternalStockTransfer</a></li>
-          <li>Details</li>
-        </ul>
+    <ul class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">InternalStockTransfer</a></li>
+      <li>Details</li>
+    </ul>
   </div>
   <Form-widget [config]='widgetData'></Form-widget>
 </div>
+<footer class="poFooter bg-white">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <button class="btn btn-white text-uppercase rounded-0">
+          Print Preview
+        </button>
+      </div>
+      <div class="col-sm-5 text-right">
+        <button class="btn btn-white text-uppercase rounded-0">
+          Cancel
+        </button>
+        <button class="btn btn-white text-uppercase shadow rounded-0">
+        Create Receipt
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>
