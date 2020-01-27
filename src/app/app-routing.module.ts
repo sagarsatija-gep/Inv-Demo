@@ -34,7 +34,7 @@ const routes: Routes = [
   { path: 'dashboard', component: DashboardComponent },
   { path: 'internalstocktransfer',component:InternalStockTransferComponent},
   {path: 'poDetails',component:PoDetailsComponent},
-  {path: 'asn-goodsReceipt',component:AsnGrComponent},
+  {path: 'asnGoodsReceipt',component:AsnGrComponent},
   { path: 'poGoodsReceipt', component: PoGoodsReceiptComponent }
 ];
 

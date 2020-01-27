@@ -1,8 +1,9 @@
-<div class="table-container" style="width: 100%;overflow-x: scroll;">
-  <table class="table widgetTable table-striped" style="width: fit-content;">
+
+<div class="table-container" style="width: 100%;overflow-x: auto;">
+  <table class="table widgetTable table-striped" style="width: fit-content;min-width: 100%;">
     <thead>
       <tr>
-        <th class="text-center-cl" style="min-width: 150px;" [ngStyle]="col.styles" [ngClass]="col.classes" *ngFor="let col of data.colConfig">
+        <th class="text-center-cl" style="min-width: 140px;" [ngStyle]="col.styles" [ngClass]="col.classes" *ngFor="let col of data.colConfig">
           <label *ngIf="col.type == 'checkbox'" class="checkbox-container">
             <input type="checkbox" />
             <span class="checkmark"></span>
