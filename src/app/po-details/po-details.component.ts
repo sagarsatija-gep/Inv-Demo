@@ -1,17 +1,17 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit ,ViewEncapsulation} from '@angular/core';
 
 @Component({
-  selector: 'app-purchase-details',
-  templateUrl: './purchase-details.component.html',
-  styleUrls: ['./purchase-details.component.css'],
+  selector: 'app-po-details',
+  templateUrl: './po-details.component.html',
+  styleUrls: ['./po-details.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class PurchaseDetailsComponent implements OnInit {
+export class PoDetailsComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
-  }  
+  }
   widgetData = [
     {
       'HeaderData': {
