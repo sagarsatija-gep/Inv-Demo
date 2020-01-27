@@ -7,8 +7,12 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class WidgetAttachemant implements OnInit {
     @Input() data;
+    
     ngOnInit() {
-        debugger;
         console.log(this.data);
+    }
+
+    upload(){
+        console.log("uploaded")
     }
 }
