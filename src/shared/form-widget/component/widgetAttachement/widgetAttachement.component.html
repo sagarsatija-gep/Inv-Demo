@@ -1,10 +1,9 @@
 <div class="form-group text-center">
     <div class="image-upload">
-        <label for="file-input">
+        <label for="file-input" (click)="upload()">
             <img src="../../../../assets/images/fileIcon.png"/>
         </label><br>
-        <button *ngIf="!addLines" type="button" class="btn btn-primary btnAddfiles">Add Files</button>
-        <button *ngIf="addLines" type="button" class="btn btn-primary btnAddfiles">Add Lines</button>
+        <button type="button"  class="btn btn-primary btnAddfiles">Add Files</button>
         <input id="file-input" type="file"/>
     </div>
 </div>

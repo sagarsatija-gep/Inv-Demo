@@ -12,6 +12,7 @@ import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { InternalStockTransferComponent } from './internal-stock-transfer/internal-stock-transfer.component';
 import { PoDetailsComponent } from './po-details/po-details.component';
+import { AsnGrComponent } from './asn-gr/asn-gr.component';
 import { PoGoodsReceiptComponent } from './po-goods-receipt/po-goods-receipt.component';
 
 const routes: Routes = [
@@ -31,8 +32,9 @@ const routes: Routes = [
   },
   { path: 'manageGoodsIssue', component: ManageGoodsIssuePicklistComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'internalstocktransfer', component: InternalStockTransferComponent },
-  { path: 'poDetails', component: PoDetailsComponent },
+  { path: 'internalstocktransfer',component:InternalStockTransferComponent},
+  {path: 'poDetails',component:PoDetailsComponent},
+  {path: 'asn-goodsReceipt',component:AsnGrComponent},
   { path: 'poGoodsReceipt', component: PoGoodsReceiptComponent }
 ];
 

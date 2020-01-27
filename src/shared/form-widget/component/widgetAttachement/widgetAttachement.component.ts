@@ -7,4 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class WidgetAttachemant {
     @Input() data;
+    upload(){
+        console.log("uploaded")
+    }
 }

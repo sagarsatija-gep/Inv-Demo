@@ -1,18 +1,17 @@
-import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-purchase-details',
-  templateUrl: './purchase-details.component.html',
-  styleUrls: ['./purchase-details.component.css'],
-  encapsulation: ViewEncapsulation.None
+  selector: 'app-asn-gr',
+  templateUrl: './asn-gr.component.html',
+  styleUrls: ['./asn-gr.component.css']
 })
-export class PurchaseDetailsComponent implements OnInit {
+export class AsnGrComponent implements OnInit {
 
   constructor() { }
 
   ngOnInit() {
-  }  
-  widgetData = [
+  }
+  asnGrData = [
     {
       'HeaderData': {
         name: 'Header Details',
@@ -1003,7 +1002,18 @@ export class PurchaseDetailsComponent implements OnInit {
             }
       }
     }
-  }
+  },
+  {
+        'HeaderData': {
+          name: 'Notes & Attachements',
+          isOpen: false,
+          collapsible: true,
+          data: {
+            componentName: 'Attachement',
+            numberOfInput: 'one'
+          }
+        }
+      }
 ]
 
 }
