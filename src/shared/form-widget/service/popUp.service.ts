@@ -5,6 +5,7 @@ import { Injectable } from "@angular/core";
 export class PopUpService {
     internalStockPopUp = new Subject<boolean>();
     attachmentTable = new Subject<boolean>();
+    isInternalStockErrorPopUp = false;
 
     internalTableData =  {
 

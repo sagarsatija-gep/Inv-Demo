@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { PopUpService } from './../../shared/form-widget/service/popUp.service';
 import { Component, OnInit ,ViewEncapsulation,Input, OnDestroy} from '@angular/core';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
@@ -12,7 +13,7 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
 
   popUpSubscription: Subscription;
 
-  constructor(public modalService: NgbModal, private popup: PopUpService) { }
+  constructor(public modalService: NgbModal, private popup: PopUpService, private route: Router) { }
   open() {
     const modalRef = this.modalService.open(NgbdModalContent2, { size: 'lg' });
     modalRef.componentInstance.name = 'World';
@@ -24,6 +25,15 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
         this.open();
       }
     })
+  }
+
+  isFinalizeClick() {
+    if( !this.popup.isInternalStockErrorPopUp ) {
+      this.popup.isInternalStockErrorPopUp = true;
+      this.open();
+    } else {
+      this.route.navigate(['/home']);
+    }
   }
 
   ngOnDestroy() {
@@ -106,6 +116,7 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
 export class NgbdModalContent2 implements OnInit {
   @Input() name;
 
+  isErroPopUp: boolean;
   popupData = [
     {
       type:'text',
@@ -148,7 +159,7 @@ export class NgbdModalContent2 implements OnInit {
   constructor(public activeModal: NgbActiveModal, private popUpServices: PopUpService ) {}
 
   ngOnInit(): void {
-    
+    this.isErroPopUp = this.popUpServices.isInternalStockErrorPopUp;
   }
 
   showTable() {
