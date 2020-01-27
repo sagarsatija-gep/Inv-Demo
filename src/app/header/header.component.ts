@@ -53,7 +53,7 @@ export class HeaderComponent implements OnInit {
     if(this.barcodeValue == 'asn') {
       this.route.navigate(['/purchaseDetails']);
     } else {
-
+      this.route.navigate(['/poDetails']);
     }
     this.barcodeValue = '';
   }
