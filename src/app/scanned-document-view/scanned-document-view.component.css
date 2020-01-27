@@ -30,20 +30,20 @@
     width: 65%;
 }
 
-::-webkit-scrollbar {
+#img-container::-webkit-scrollbar {
     width: 8px;
     border-radius: 5px;
 }
 
-::-webkit-scrollbar-track {
+#img-container::-webkit-scrollbar-track {
     background: #f1f1f1;
 }
 
-::-webkit-scrollbar-thumb {
+#img-container::-webkit-scrollbar-thumb {
     border-radius: 8px;
     background: #c2c9d2;
 }
 
-::-webkit-scrollbar-thumb:hover {
+#img-container::-webkit-scrollbar-thumb:hover {
     background: #555;
 }
