@@ -582,7 +582,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -623,11 +623,11 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
-                      value: '',
+                      value: '10',
                     },
                     {
                       type: 'textbox',
@@ -664,11 +664,11 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
-                      value: '',
+                      value: '10',
                     },
                     {
                       type: 'textbox',
@@ -705,11 +705,11 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
-                      value: '',
+                      value: '10',
                     },
                     {
                       type: 'textbox',
@@ -746,7 +746,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -787,7 +787,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -828,7 +828,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -869,7 +869,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -910,7 +910,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -951,7 +951,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',

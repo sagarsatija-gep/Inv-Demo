@@ -581,7 +581,7 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -622,11 +622,11 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
-                      value: '',
+                      value: '10',
                     },
                     {
                       type: 'textbox',
@@ -663,11 +663,11 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
-                      value: '',
+                      value: '10',
                     },
                     {
                       type: 'textbox',
@@ -704,11 +704,11 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
-                      value: '',
+                      value: '10',
                     },
                     {
                       type: 'textbox',
@@ -745,7 +745,7 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -786,7 +786,7 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -827,7 +827,7 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -868,7 +868,7 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -909,7 +909,7 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -950,7 +950,7 @@ export class AsnGrComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
