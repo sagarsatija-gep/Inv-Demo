@@ -1,21 +1,35 @@
-import { Component, OnInit ,ViewEncapsulation,Input} from '@angular/core';
+import { PopUpService } from './../../shared/form-widget/service/popUp.service';
+import { Component, OnInit ,ViewEncapsulation,Input, OnDestroy} from '@angular/core';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-internal-stock-transfer',
   templateUrl: './internal-stock-transfer.component.html',
   styleUrls: ['./internal-stock-transfer.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class InternalStockTransferComponent implements OnInit {
+export class InternalStockTransferComponent implements OnInit, OnDestroy {
 
-  constructor(public modalService: NgbModal) { }
+  popUpSubscription: Subscription;
+
+  constructor(public modalService: NgbModal, private popup: PopUpService) { }
   open() {
     const modalRef = this.modalService.open(NgbdModalContent2, { size: 'lg' });
     modalRef.componentInstance.name = 'World';
   }
 
   ngOnInit() {
+    this.popUpSubscription = this.popup.internamStockPopUp.subscribe(isPopUP=>{
+      if(isPopUP) {
+        this.open();
+      }
+    })
   }
+
+  ngOnDestroy() {
+    this.popUpSubscription.unsubscribe();
+  }
+
   widgetData = [
     {
       'HeaderData': {
@@ -71,11 +85,12 @@ export class InternalStockTransferComponent implements OnInit {
     },
   {
     'HeaderData': {
-      name: 'Notes & Attachements',
+      name: 'Line Details',
       isOpen: true,
       collapsible: true,
       data: {
-        componentName: 'Attachement'
+        componentName: 'Attachement',
+        numberOfInput: 'one'
       }
     }
   }
@@ -87,7 +102,7 @@ export class InternalStockTransferComponent implements OnInit {
   templateUrl: 'internal-stock-transfer-popup.html',
   styleUrls: ['./internal-stock-transfer.component.css']
 })
-export class NgbdModalContent2 {
+export class NgbdModalContent2 implements OnInit {
   @Input() name;
 
   popupData = [
@@ -129,7 +144,17 @@ export class NgbdModalContent2 {
     }
   ];
 
-  constructor(public activeModal: NgbActiveModal) {}
+  constructor(public activeModal: NgbActiveModal, private popUpServices: PopUpService ) {}
+
+  ngOnInit(): void {
+    
+  }
+
+  showTable() {
+    this.activeModal.close();
+    this.popUpServices.showTable();
+  }
+
 }
 
 

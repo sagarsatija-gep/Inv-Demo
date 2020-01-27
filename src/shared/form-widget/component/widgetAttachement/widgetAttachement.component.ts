@@ -1,3 +1,4 @@
+import { PopUpService } from './../../service/popUp.service';
 import {
   WidgetTable
 } from './../widget-table/widgetTable.component';
@@ -10,6 +11,8 @@ import {
   ComponentFactoryResolver,
   OnDestroy
 } from '@angular/core';
+import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+
 
 @Component({
   selector: 'widget-attachement',
@@ -24,8 +27,13 @@ export class WidgetAttachemant implements OnInit, OnDestroy {
   }) loadComponent: ViewContainerRef;
 
   component;
-  constructor(private cfr: ComponentFactoryResolver) { }
+  constructor(private cfr: ComponentFactoryResolver, private popUp: PopUpService ) {}
   ngOnInit() {
+    this.popUp.attachmentTable.subscribe(isShow=>{
+      if(isShow) {
+        this.upload();
+      }
+    })
     console.log(this.data);
     if (this.data.numberOfInput != "three" && this.data.numberOfInput != "one") {
       this.upload();
@@ -33,6 +41,10 @@ export class WidgetAttachemant implements OnInit, OnDestroy {
   }
   ngOnDestroy() {
     // this.data.numberOfInput= "three";  
+  }
+
+  popUpOpen(){
+    this.popUp.internalStockPopupOpen();
   }
 
   upload() {
