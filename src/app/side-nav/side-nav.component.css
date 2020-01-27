@@ -50,3 +50,8 @@
   height: 32px;
   width: 32px;
 }
+
+.myMenu {
+  left: 102px !important;
+  position: absolute;
+}
