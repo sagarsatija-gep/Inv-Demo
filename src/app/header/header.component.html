@@ -2,11 +2,12 @@
   <div style="margin: auto 0;flex: 1;min-width: 12rem;">
     <img style="height: 30px;padding: 0 10px;" (click)="toggle()"
       src="https://img.icons8.com/material-rounded/384/000000/menu.png">
-    <img style="height: 30px;" src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/1.jpg">
+    <img style="height: 30px;"
+      src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/1.jpg">
   </div>
   <div style="flex: 1;display: flex;min-width: 30rem">
-    <input class="search" value={{barcodeValue}} style="height: 30px;width: 100%;padding-left: 10px;font-size: 12px;" type="text" name="search"
-      placeholder="Search..">
+    <input class="search" [(ngModel)]="barcodeValue" style="height: 30px;width: 100%;padding-left: 10px;font-size: 12px;"
+      type="text" name="search" placeholder="Search..">
     <div style="position: relative;;">
       <div style="right: 0px;
       display: flex;
@@ -16,10 +17,11 @@
           src="https://img.icons8.com/android/96/000000/microphone.png">
 
 
-       <a [routerLink]="['asn/',{id:barcodeValue}]"> <img class="search-img" style="height: 30px;width: 30px;background: blue;"
-          src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/search.png"> </a>
-          <a routerLink='/packingslipcamera'><img class="search-img" style="height: 30px;width: 30px;" 
-          src="https://img.icons8.com/small/96/000000/camera.png"></a>
+        <a (click)="onSearchClick()" > <img class="search-img" style="height: 30px;width: 30px;background: blue;"
+            src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/search.png">
+        </a>
+        <a routerLink='/packingslipcamera'><img class="search-img" style="height: 30px;width: 30px;"
+            src="https://img.icons8.com/small/96/000000/camera.png"></a>
 
         <img class="search-img" style="height: 30px;width: 30px;" (click)="open()"
           src="https://img.icons8.com/wired/64/000000/barcode-scanner.png">
