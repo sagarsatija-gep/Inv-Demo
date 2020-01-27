@@ -95,32 +95,37 @@ export class NgbdModalContent2 {
       type:'text',
       name: 'From Storage Location',
       values: 'PMF-6002​',
-      showBarcode: 'none'
+      showBarcode: true
     },
     {
       type:'text',
       name: 'From BIN',
       values: '',
+      showBarcode: true
     },
     {
       type:'text',
       name: 'Line Items',
       values: '',
+      showBarcode: false
     },
     {
       type:'text',
       name: 'Quantity',
       values: '',
+      showBarcode: false
     },
     {
       type:'text',
       name: 'To Storage Location',
       values: 'PMF-6002​​',
+      showBarcode: false
     },
     {
       type:'text',
       name: 'To Bin',
       values: '​​',
+      showBarcode: false
     }
   ];
 
