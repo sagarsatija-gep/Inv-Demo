@@ -18,35 +18,63 @@ export class SideNavComponent implements OnInit {
   sideNav = [{
     icon: "#icon_DashboardRe",
     name: "Home",
-    link:"home"
+    link:"home",
+    dropdown:true,
+    sideMenu:[
+      "Inventory Visibility",
+      "Inventory Planning"
+    ]
   },{
     icon: "#icon_DashboardRe",
     name: "Dashboard",
-    link: "dashboard"
+    link: "dashboard",
+    dropdown:true,
+    sideMenu:[
+      "Manage Reservations",
+      "Manage Packing Slip",
+      "Manage Pick List",
+      "Manage Goods Issue/Reversal"
+    ]
   },
   {
     icon: "#icon_Analyze", 
     name: "Manage Transactions",
-    link:"manageReservations"
+    link:"manageReservations",
+    dropdown:true,
+    sideMenu:[
+      "Goods Receipt",
+      "Goods Issue",
+      "Request for Goods Issue",
+      "Cycle Count",
+      "Manage Packing Request",
+      "Stock Transfer",
+      "Issue Log",
+      "Stock Movement"
+
+    ]
   },
   {
     icon: "#icon_Notificatio",
     name: "Create Transactions",
-    link:"createtransactions"
+    link:"createtransactions",
+    dropdown:false
   },
   {
     icon: "#icon_Supplier",
     name: "Current Stock Balance",
-    link:"currentstockbalance"
+    link:"currentstockbalance",
+    dropdown:false
   }, {
     icon: "#icon_Settings",
     name: "Reports",
-    link:"purchaseDetails"
+    link:"purchaseDetails",
+    dropdown:false
   },
   {
     icon: "#icon_Settings",
     name: "Inventory Setup",
-    link:"inventorysetup"
+    link:"inventorysetup",
+    dropdown:false
   }
   ];
 
