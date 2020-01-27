@@ -74,17 +74,18 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
         }
       }
     },
-  {
-    'HeaderData': {
-      name: 'Line Details',
-      isOpen: true,
-      collapsible: true,
-      data: {
-        componentName: 'Attachement',
-        numberOfInput: 'one'
+    {
+      'HeaderData': {
+        name: 'Line Details',
+        isOpen: true,
+        collapsible: true,
+        data: {
+          componentName: 'Attachement',
+          numberOfInput: 'one',
+          page: 'internalStockTaransfer'
+        }
       }
     }
-  }
 ]
 
 }

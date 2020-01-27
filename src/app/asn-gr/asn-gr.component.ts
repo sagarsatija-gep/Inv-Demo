@@ -718,7 +718,8 @@ export class AsnGrComponent implements OnInit {
         collapsible: true,
         data: {
           componentName: 'Attachement',
-          numberOfInput: "three"
+          numberOfInput: "three",
+          page: 'asn'
         }
       }
     }

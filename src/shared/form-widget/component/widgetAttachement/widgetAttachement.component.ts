@@ -35,6 +35,7 @@ export class WidgetAttachemant implements OnInit, OnDestroy {
       }
     })
     console.log(this.data);
+    debugger;
     if( this.data.numberOfInput != "three" && this.data.numberOfInput != "one") {
         this.upload();
     } 
@@ -48,11 +49,16 @@ export class WidgetAttachemant implements OnInit, OnDestroy {
   }
 
   upload() {
+    debugger;
     console.log("uploaded")
     this.data.numberOfInput= "f";
     const componentFactory = this.cfr.resolveComponentFactory(WidgetTable);
     this.component = this.loadComponent.createComponent(componentFactory);
-    this.component.instance.data = this.popUp.internalTableData;
+    if(this.data.page == 'internalStockTaransfer' ) {
+      this.component.instance.data = this.popUp.internalTableData;
+    } else {
+      this.component.instance.data = this.popUp.asnTableData;
+    }
 
   }
 }

@@ -139,6 +139,113 @@ export class PopUpService {
         ]
       }
 
+    asnTableData = {
+
+        tablerowClass: 'bg-white',
+        colConfig: [{
+            type: 'checkbox',
+            name: 'Reservation #',
+            classes: 'text-left',
+            // styles: {'width': '%'},
+          },
+          {
+            type: 'text',
+            name: 'Name',
+            // colSize: '100px',
+            classes: 'text-left',
+            // styles: {'width': '8%'},
+          },
+          {
+            type: 'text',
+            name: 'Type',
+            // colSize: '100px',
+            classes: ' ',
+            // styles: {'width': '8%'},
+          },
+          {
+            type: 'text',
+            name: 'Classification',
+            colSize: '100px',
+            // styles: {'background-color': 'rebeccapurple'},
+            classes: 'text-left',
+            // styles: {'width': '8%'},
+          },
+          {
+            type: 'text',
+            name: 'Added By',
+            // colSize: '100px',
+            // styles: {'background-color': 'rebeccapurple'},
+            // classes: 'text-left',
+  
+          },
+          {
+            type: 'text',
+            name: 'File Size',
+            colSize: '100px',
+            // styles: {'width': '8%'},
+          },
+        ],
+        values: [
+          [{
+              type: 'checkbox',
+              value: 'false',
+              tdClasses: 'text-left'
+            },
+            {
+              type: 'hiperlink',
+              value: 'Bill Of Lading.pdf',
+              tdClasses: 'text-left'
+            },
+            {
+              type: 'text',
+              value: 'File',
+            },
+            {
+              type: 'text',
+              value: 'Shipping Documents',
+              tdClasses: 'text-left'
+            },
+            {
+              type: 'text',
+              value: 'Kim Powell',
+            },
+            {
+              type: 'text',
+              value: '20kb',
+            },
+            // {
+            //   type: 'text',
+            //   value: '77',
+            //   tdClasses: 'text-right'
+            // },
+            // {
+            //   type: 'text',
+            //   value: '20',
+            //   tdClasses: 'text-right'
+            // },
+            // {
+            //   type: 'text',
+            //   value: '25',
+            //   tdClasses: 'text-right'
+            //   // classes: 'input-small rounded-sm border-secondary text-right'
+            // },
+            // {
+            //   type: 'text',
+            //   value: '08/21/2019',
+            //   tdClasses: 'text-left'
+            // },
+            // {
+            //   type: 'toggle',
+            //   value: true,
+            // },
+            // {
+            //   type: 'text',
+            //   value: '10/28/2019',
+            // }
+          ]
+        ]
+      }
+
     internalStockPopupOpen() {
         this.internalStockPopUp.next(true);
     }
