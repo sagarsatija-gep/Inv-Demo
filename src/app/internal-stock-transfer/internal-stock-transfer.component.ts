@@ -93,7 +93,7 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
   templateUrl: 'internal-stock-transfer-popup.html',
   styleUrls: ['./internal-stock-transfer.component.css']
 })
-export class NgbdModalContent2 {
+export class NgbdModalContent2 implements OnInit {
   @Input() name;
 
   popupData = [
@@ -130,7 +130,17 @@ export class NgbdModalContent2 {
     }
   ];
 
-  constructor(public activeModal: NgbActiveModal) {}
+  constructor(public activeModal: NgbActiveModal, private popUpServices: PopUpService ) {}
+
+  ngOnInit(): void {
+    
+  }
+
+  showTable() {
+    this.activeModal.close();
+    this.popUpServices.showTable();
+  }
+
 }
 
 

@@ -29,6 +29,11 @@ export class WidgetAttachemant implements OnInit, OnDestroy {
   component;
   constructor(private cfr: ComponentFactoryResolver, private popUp: PopUpService ) {}
   ngOnInit() {
+    this.popUp.attachmentTable.subscribe(isShow=>{
+      if(isShow) {
+        this.upload();
+      }
+    })
     console.log(this.data);
     if( this.data.numberOfInput != "three" && this.data.numberOfInput != "one") {
         this.upload();
