@@ -53,7 +53,16 @@ export class InternalStockTransferComponent implements OnInit {
             {
               type: 'textbox',
               name:'Plant',
-              values:'El-Segundo'
+              values:'PMF 6002'
+            },
+            {
+              type: 'dropdown',
+              name: 'Transfer Type',
+              value: [
+                'Within Plant Transfer',
+                'Between Plant Transfer'
+            ],
+              selectedValue:'Within Plant Transfer',
             }
             
           ]

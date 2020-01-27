@@ -6,6 +6,13 @@
       <div class="input-box" *ngIf="item.type=='textbox'">
         <input class="input" placeholder="Favorite food" [value]="item.values">
       </div>
+      <div *ngIf="item.type == 'dropdown'">
+          <mat-form-field>
+            <mat-select name="countryString" [(value)]="item.selectedValue" placeholder="">
+              <mat-option [value]="item" *ngFor="let item of item.value">{{item}}</mat-option>
+            </mat-select>
+          </mat-form-field>
+        </div>
     </div>
   </div>
   <div class="" style="width: 100%; ">
