@@ -44,6 +44,8 @@ import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { AgmCoreModule } from '@agm/core';
 import { GoogleMapsComponent } from './google-maps/google-maps.component';
+import { InternalStockTransferComponent } from './internal-stock-transfer/internal-stock-transfer.component';
+import { PoDetailsComponent } from './po-details/po-details.component';
 
 @NgModule({
   declarations: [
@@ -72,7 +74,9 @@ import { GoogleMapsComponent } from './google-maps/google-maps.component';
     ScannedDocumentLineItemsComponent,
     ManageGoodsIssuePicklistComponent,
     DashboardComponent,
-    GoogleMapsComponent
+    GoogleMapsComponent,
+    InternalStockTransferComponent,
+    PoDetailsComponent
   ],
   imports: [
     BrowserModule,
