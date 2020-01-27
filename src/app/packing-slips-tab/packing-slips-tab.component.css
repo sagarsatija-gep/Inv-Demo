@@ -1,7 +1,10 @@
 .container-fluid {
     margin-top: 20px;
-    margin-bottom: 40px;
     padding-top: 24px;
+}
+
+.marginBtm40{
+    margin-bottom: 40px;
 }
 
 .border-secondary {
