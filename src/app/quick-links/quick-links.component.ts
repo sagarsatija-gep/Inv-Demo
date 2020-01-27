@@ -13,7 +13,8 @@ export class QuickLinksComponent implements OnInit {
     this.quickLinks = [
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink1.png",
-        txt: "Manage Cycle Count Requests"
+        txt: "Manage Cycle Count Requests",
+        url: "/managecyclecount"
       },
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink2.png",
@@ -21,7 +22,8 @@ export class QuickLinksComponent implements OnInit {
       },
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink3.png",
-        txt: "Internal Stock Transfer"
+        txt: "Internal Stock Transfer",
+        url:"/internalstocktransfer"
       },
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink4.png",
