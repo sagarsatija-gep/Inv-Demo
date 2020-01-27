@@ -8,11 +8,12 @@ import { AppRoutingModule } from './app-routing.module';
 import { RecDocComponent } from './rec-doc/rec-doc.component';
 import { AgGridModule } from 'ag-grid-angular';
 import { HttpClientModule } from '@angular/common/http';
-import { HeaderComponent, NgbdModalContent1} from './header/header.component';
+import { HeaderComponent, NgbdModalContent1 } from './header/header.component';
 import { NgbdModalContent } from './packing-slip-camera/packing-slip-camera.component'
 import { SideNavComponent } from './side-nav/side-nav.component';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatTabsModule } from '@angular/material/tabs';
+import { MatMenuModule } from '@angular/material/menu';
 import { HomeComponent } from './home/home.component';
 import { ToggleService } from './toggle.service';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
@@ -35,7 +36,14 @@ import { PackingSlipsTabComponent } from './packing-slips-tab/packing-slips-tab.
 import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
 import { PackingSlipCameraComponent } from './packing-slip-camera/packing-slip-camera.component';
 import { BarecodeScannerLivestreamModule } from 'ngx-barcode-scanner';
+import { PackingSlipDetailComponent } from './packing-slip-detail/packing-slip-detail.component';
+import { ScannedDocumentViewComponent } from './scanned-document-view/scanned-document-view.component';
+import { ScannedDocumentLineItemsComponent } from './scanned-document-line-items/scanned-document-line-items.component';
+import { BarcodeValueService } from './barcode-value.service';
 import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist/manage-goods-issue-picklist.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { AgmCoreModule } from '@agm/core';
+import { GoogleMapsComponent } from './google-maps/google-maps.component';
 
 @NgModule({
   declarations: [
@@ -58,10 +66,13 @@ import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist
     PickListComponent,
     GoodsIssueComponent,
     PackingSlipCameraComponent,
-    
     FilterComponent,
-    
-    ManageGoodsIssuePicklistComponent
+    PackingSlipDetailComponent,
+    ScannedDocumentViewComponent,
+    ScannedDocumentLineItemsComponent,
+    ManageGoodsIssuePicklistComponent,
+    DashboardComponent,
+    GoogleMapsComponent
   ],
   imports: [
     BrowserModule,
@@ -71,6 +82,7 @@ import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist
     AgGridModule.withComponents([]),
     MatSidenavModule,
     MatTabsModule,
+    MatMenuModule,
     BrowserAnimationsModule,
     NgbModule.forRoot(),
     FormsModule,
@@ -79,10 +91,14 @@ import { ManageGoodsIssuePicklistComponent } from './manage-goods-issue-picklist
     CheckBoxModule,
     BarcodeGeneratorAllModule,
     NgxBarcodeModule,
-    BarecodeScannerLivestreamModule
+    BarecodeScannerLivestreamModule,
+    AgmCoreModule.forRoot({
+      apiKey: 'AIzaSyDRSpfba5rdNqT0RAcD4cvdUaLOk2-Bzic',
+      libraries: ['places']
+    }),
   ],
-  providers: [ToggleService, PageService, SortService, FilterService, GroupService],
+  providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService],
   bootstrap: [AppComponent],
-  entryComponents: [NgbdModalContent,NgbdModalContent1]
+  entryComponents: [NgbdModalContent, NgbdModalContent1]
 })
 export class AppModule { }

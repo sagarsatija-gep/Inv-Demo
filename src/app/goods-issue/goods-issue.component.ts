@@ -25,6 +25,7 @@ export class GoodsIssueComponent implements OnInit {
           data: [
             {
               editable: true,
+              classes: 'bg-gray',
               data: [
                 {
                   type: 'textBox',
@@ -53,6 +54,7 @@ export class GoodsIssueComponent implements OnInit {
             },
             {
               editable: true,
+              classes: 'bg-gray',
               data: [
                 {
                   type: 'textBox',
@@ -64,6 +66,7 @@ export class GoodsIssueComponent implements OnInit {
             },
             {
               editable: true,
+              classes: 'bg-gray',
               data: [
                 {
                   type: 'textBox',
@@ -75,6 +78,7 @@ export class GoodsIssueComponent implements OnInit {
             },
             {
               editable: true,
+              classes: 'bg-gray',
               data: [
                 {
                   type: 'textBox',
@@ -86,6 +90,7 @@ export class GoodsIssueComponent implements OnInit {
             },
             {
               editable: true,
+              classes: 'bg-gray',
               data: [
                 {
                   type: 'textBox',
@@ -97,6 +102,7 @@ export class GoodsIssueComponent implements OnInit {
             },
             {
               editable: true,
+              classes: 'bg-gray',
               data: [
                 {
                   type: 'barcode',
@@ -108,6 +114,7 @@ export class GoodsIssueComponent implements OnInit {
             },
             {
               editable: true,
+              classes: 'bg-gray',
               data: [
                 {
                   type: 'textBox',
@@ -305,7 +312,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -352,7 +359,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -399,7 +406,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -446,7 +453,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -550,7 +557,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -583,7 +590,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -616,7 +623,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -649,7 +656,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -744,7 +751,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -789,7 +796,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -834,7 +841,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -879,7 +886,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                      value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',

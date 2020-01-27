@@ -1,0 +1,55 @@
+<div class="container-fluid border border-secondary rounded-sm mt-3 bg-white">
+  <div class="row">
+    <div class="col-sm-12 pt-3">
+      <h5>
+        <span>Line items for PO # </span>
+        <span style="color: #3D5AFE;">0060105362</span>
+        <i class="fas fa-pen circle-icon"></i>
+      </h5>
+      <hr>
+    </div>
+  </div>
+  <div style="margin-top: -17px;">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">
+            <label class="checkbox-container">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </th>
+          <th scope="col">Line Number</th>
+          <th scope="col">Item Number</th>
+          <th scope="col">Description</th>
+          <th scope="col">UOM</th>
+          <th scope="col">PO Quantity</th>
+          <th scope="col">Received Quantity</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let item of lineItems">
+          <td scope="row">
+            <label class="checkbox-container">
+              <input type="checkbox" />
+              <span class="checkmark"></span>
+            </label>
+          </td>
+          <td>{{ item.id }}</td>
+          <td>{{ item.itemNumber }}</td>
+          <td>{{ item.description }}</td>
+          <td>{{ item.uom }}</td>
+          <td>{{ item.poQuantity }}</td>
+          <td>{{ item.receivedQuantity }}</td>
+        </tr>
+      </tbody>
+    </table>
+    <hr>
+  </div>
+  <div class="row button-group">
+    <div class="col-12">
+      <button type="button" class="btn btn-primary">Submit</button>
+      <button type="button" class="btn btn-outline-primary">Cancel</button>
+    </div>
+  </div>
+</div>

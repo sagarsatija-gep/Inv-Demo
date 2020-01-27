@@ -287,7 +287,7 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -334,7 +334,7 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -381,7 +381,7 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -428,7 +428,7 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -533,7 +533,7 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -565,7 +565,7 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -597,7 +597,7 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -629,7 +629,7 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -734,7 +734,7 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322',
+                       value: 'R4544322', classes: 'text-primary' ,
                     },
                     {
                       type: 'text',
@@ -775,7 +775,7 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                   },
                   {
                     type: 'text',
-                    value: 'R4544322',
+                     value: 'R4544322', classes: 'text-primary' ,
                   },
                   {
                     type: 'text',
@@ -816,7 +816,7 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                   },
                   {
                     type: 'text',
-                    value: 'R4544322',
+                     value: 'R4544322', classes: 'text-primary' ,
                   },
                   {
                     type: 'text',
@@ -857,7 +857,7 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
                   },
                   {
                     type: 'text',
-                    value: 'R4544322',
+                     value: 'R4544322', classes: 'text-primary' ,
                   },
                   {
                     type: 'text',
