@@ -14,6 +14,7 @@ import { InternalStockTransferComponent } from './internal-stock-transfer/intern
 import { PoDetailsComponent } from './po-details/po-details.component';
 import { AsnGrComponent } from './asn-gr/asn-gr.component';
 import { PoGoodsReceiptComponent } from './po-goods-receipt/po-goods-receipt.component';
+import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -32,10 +33,11 @@ const routes: Routes = [
   },
   { path: 'manageGoodsIssue', component: ManageGoodsIssuePicklistComponent },
   { path: 'dashboard', component: DashboardComponent },
-  { path: 'internalstocktransfer',component:InternalStockTransferComponent},
-  {path: 'poDetails',component:PoDetailsComponent},
-  {path: 'asnGoodsReceipt',component:AsnGrComponent},
-  { path: 'poGoodsReceipt', component: PoGoodsReceiptComponent }
+  { path: 'internalstocktransfer', component: InternalStockTransferComponent },
+  { path: 'poDetails', component: PoDetailsComponent },
+  { path: 'asnGoodsReceipt', component: AsnGrComponent },
+  { path: 'poGoodsReceipt', component: PoGoodsReceiptComponent },
+  { path: 'ocr-gr-creation', component: OcrGrCreationComponent }
 ];
 
 @NgModule({

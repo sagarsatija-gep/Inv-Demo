@@ -1,12 +1,12 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
-  selector: 'app-po-goods-receipt',
-  templateUrl: './po-goods-receipt.component.html',
-  styleUrls: ['./po-goods-receipt.component.css'],
+  selector: 'app-ocr-gr-creation',
+  templateUrl: './ocr-gr-creation.component.html',
+  styleUrls: ['./ocr-gr-creation.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class PoGoodsReceiptComponent implements OnInit {
+export class OcrGrCreationComponent implements OnInit {
 
   constructor() { }
 
@@ -25,16 +25,17 @@ export class PoGoodsReceiptComponent implements OnInit {
             {
               type: 'textbox',
               name: 'Receipt Name',
-              values: 'Receipt for 8585002483034',
+              values: '',
             },
             {
               type: 'text',
               name: 'Receipt Number',
-              values: '00100987210',
-            }, {
+              values: 'REC0000160',
+            },
+            {
               type: 'text',
               name: 'PO Number',
-              values: '8585002483034',
+              values: '0060105362',
             },
             {
               type: 'text',
@@ -90,60 +91,18 @@ export class PoGoodsReceiptComponent implements OnInit {
                   },
                   {
                     type: 'text',
-                    name: 'Accepted Quantity',
-                    colSize: '100px',
-                    classes: ''
-                  },
-                  {
-                    type: 'text',
                     name: 'Storage Location',
                     colSize: '100px'
                   },
                   {
                     type: 'text',
-                    name: 'Storage Bin',
+                    name: 'QC Result',
                     colSize: '100px',
                     classes: ''
                   },
                   {
                     type: 'text',
-                    name: 'Goods Receipent',
-                    colSize: '100px',
-                    classes: ''
-                  },
-                  {
-                    type: 'text',
-                    name: 'Unloading Point',
-                    colSize: '100px',
-                    classes: ''
-                  },
-                  {
-                    type: 'text',
-                    name: 'Serial Flag',
-                    colSize: '100px',
-                    classes: 'text-left'
-                  },
-                  {
-                    type: 'text',
-                    name: 'Batch Flag',
-                    colSize: '100px',
-                    classes: 'text-left'
-                  },
-                  {
-                    type: 'text',
-                    name: 'Climate Controlled',
-                    colSize: '100px',
-                    classes: 'text-left'
-                  },
-                  {
-                    type: 'text',
-                    name: 'Storage Conditions',
-                    colSize: '100px',
-                    classes: ''
-                  },
-                  {
-                    type: 'text',
-                    name: 'Attachments',
+                    name: 'Quality Data',
                     colSize: '100px',
                     classes: ''
                   }
@@ -152,327 +111,83 @@ export class PoGoodsReceiptComponent implements OnInit {
                   [
                     {
                       type: 'text',
-                      value: '1',
+                      value: '1'
                     },
                     {
                       type: 'text',
-                      value: '2063777',
+                      value: '2063777'
                     },
                     {
                       type: 'text',
-                      value: 'Bracket Assembly',
+                      value: '138-7576-Bracket Assembly',
                       tdClasses: 'text-left'
                     },
                     {
                       type: 'text',
-                      value: 'EA',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '10',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '10',
-                      classes: 'rounded-sm border-secondary input-small text-right'
+                      value: 'Each'
                     },
                     {
                       type: 'text',
-                      value: 'PMF - 6002',
-                    },
-                    {
-                      type: 'text',
-                      value: 'C02 - 08- 2- 2',
-                    },
-                    {
-                      type: 'text',
-                      value: '',
-                    },
-                    {
-                      type: 'text',
-                      value: '',
+                      value: '20',
                     },
                     {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
-                        'YES',
-                        'NO'
+                        'R6GM',
+                        'R4GM'
                       ],
-                      selectedValue: 'YES'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
+                      selectedValue: 'R6GM'
                     },
                     {
                       type: 'text',
-                      value: '',
+                      value: 'Pass'
                     },
                     {
-                      type: 'button',
-                      value: 'UPLOAD',
-                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
+                      type: 'attachments',
+                      value: '',
                     }
                   ],
                   [
                     {
                       type: 'text',
-                      value: '2',
+                      value: '2'
                     },
                     {
                       type: 'text',
-                      value: '2063777',
+                      value: '2030539'
                     },
                     {
                       type: 'text',
-                      value: 'Bracket Assembly',
+                      value: 'Morse Cutting Tools 82062',
                       tdClasses: 'text-left'
                     },
                     {
                       type: 'text',
-                      value: 'EA',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '10',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '10',
-                      classes: 'rounded-sm border-secondary input-small text-right'
+                      value: 'Each'
                     },
                     {
                       type: 'text',
-                      value: 'PMF - 6002',
-                    },
-                    {
-                      type: 'text',
-                      value: 'C02 - 08- 2- 2',
-                    },
-                    {
-                      type: 'text',
-                      value: '',
-                    },
-                    {
-                      type: 'text',
-                      value: '',
+                      value: '50',
                     },
                     {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
-                        'YES',
-                        'NO'
+                        'R6GM',
+                        'R4GM'
                       ],
-                      selectedValue: 'YES'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
+                      selectedValue: 'R6GM'
                     },
                     {
                       type: 'text',
-                      value: '',
+                      value: 'Pass'
                     },
                     {
-                      type: 'button',
-                      value: 'UPLOAD',
-                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
+                      type: 'attachments',
+                      value: '',
                     }
                   ],
-                  [
-                    {
-                      type: 'text',
-                      value: '3',
-                    },
-                    {
-                      type: 'text',
-                      value: '2063777',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Bracket Assembly',
-                      tdClasses: 'text-left'
-                    },
-                    {
-                      type: 'text',
-                      value: 'EA',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '10',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '10',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'text',
-                      value: 'PMF - 6002',
-                    },
-                    {
-                      type: 'text',
-                      value: 'C02 - 08- 2- 2',
-                    },
-                    {
-                      type: 'text',
-                      value: '',
-                    },
-                    {
-                      type: 'text',
-                      value: '',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'YES'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
-                    },
-                    {
-                      type: 'text',
-                      value: '',
-                    },
-                    {
-                      type: 'button',
-                      value: 'UPLOAD',
-                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
-                    }
-                  ],
-                  [
-                    {
-                      type: 'text',
-                      value: '4',
-                    },
-                    {
-                      type: 'text',
-                      value: '2063777',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Bracket Assembly',
-                      tdClasses: 'text-left'
-                    },
-                    {
-                      type: 'text',
-                      value: 'EA',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '10',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '10',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'text',
-                      value: 'PMF - 6002',
-                    },
-                    {
-                      type: 'text',
-                      value: 'C02 - 08- 2- 2',
-                    },
-                    {
-                      type: 'text',
-                      value: '',
-                    },
-                    {
-                      type: 'text',
-                      value: '',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'YES'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
-                    },
-                    {
-                      type: 'text',
-                      value: '',
-                    },
-                    {
-                      type: 'button',
-                      value: 'UPLOAD',
-                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
-                    }
-                  ]
                 ]
               }
             },
@@ -701,16 +416,6 @@ export class PoGoodsReceiptComponent implements OnInit {
 
             }
           ]
-        }
-      }
-    },
-    {
-      'HeaderData': {
-        name: 'Notes & Attachements',
-        isOpen: false,
-        collapsible: true,
-        data: {
-          componentName: 'Attachement'
         }
       }
     }
