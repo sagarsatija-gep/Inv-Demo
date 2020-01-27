@@ -1,11 +1,11 @@
 <mat-sidenav-container class="example-container">
   <mat-sidenav #sidenav class="example-sidenav" mode="side" style="background: #2f4866;" [(opened)]="opened">
     <div class="tab" *ngFor="let sideNav of sideNav" (click)="clicked(sideNav.dropdown)" 
-      [matMenuTriggerFor]="navs">
+      [matMenuTriggerFor]="navs" routerLinkActive="router-link-active" >
       <div class="icons">
         <div style="height: 32px;">
           <!-- Home -->
-          <svg *ngIf="sideNav.name=='Home'" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16"
+          <svg *ngIf="sideNav.name=='Home'"  [routerLink]="['/home']" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16"
             viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
@@ -63,7 +63,7 @@
             </g>
           </svg>
           <!-- Current Stock Balance -->
-          <svg *ngIf="sideNav.name=='Current Stock Balance'" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+          <svg *ngIf="sideNav.name=='Current Stock Balance'" [routerLink]="['/currentstockbalance']" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
             width="24" height="24" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
@@ -77,7 +77,7 @@
             </g>
           </svg>
           <!-- Reports -->
-          <svg *ngIf="sideNav.name=='Reports'" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
+          <svg *ngIf="sideNav.name=='Reports'"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
             viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
