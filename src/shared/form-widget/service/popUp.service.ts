@@ -111,8 +111,14 @@ export class PopUpService {
             //   tdClasses: 'text-right'
             },
             {
-              type: 'text',
-              value: 'N02-06-3-2',
+            //   type: 'text',
+            //   value: 'N02-06-3-2',
+              type: 'dropdown',
+                value: [
+                'N02-06-3-2',
+                'N02-06-6-4'
+                 ],
+                selectedValue:'N02-06-3-2',
             //   tdClasses: 'text-right'
               // classes: 'input-small rounded-sm border-secondary text-right'
             },
