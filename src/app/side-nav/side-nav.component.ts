@@ -11,30 +11,35 @@ export class SideNavComponent implements OnInit {
   opened: boolean = true;
   open: boolean = true;
   @ViewChild('sidenav') graph;
-  clicked(){
-    this.open=!this.open;
+  clicked(e){
+    if(e){
+      this.open=!this.open;
+    }
+    
   }
 
   sideNav = [{
     icon: "#icon_DashboardRe",
     name: "Home",
     link:"home",
-    dropdown:true,
-    sideMenu:[
-      "Inventory Visibility",
-      "Inventory Planning"
-    ]
+    dropdown:false,
+    
   },{
     icon: "#icon_DashboardRe",
     name: "Dashboard",
     link: "dashboard",
     dropdown:true,
     sideMenu:[
-      "Manage Reservations",
-      "Manage Packing Slip",
-      "Manage Pick List",
-      "Manage Goods Issue/Reversal"
-    ]
+      {
+        name:"Inventory Visibility",
+        value:"dashboard"
+      },
+      {
+        name:"Inventory Planning",
+        value:"dashboard"
+      }
+       ]
+ 
   },
   {
     icon: "#icon_Analyze", 
@@ -42,22 +47,61 @@ export class SideNavComponent implements OnInit {
     link:"manageReservations",
     dropdown:true,
     sideMenu:[
-      "Goods Receipt",
-      "Goods Issue",
-      "Request for Goods Issue",
-      "Cycle Count",
-      "Manage Packing Request",
-      "Stock Transfer",
-      "Issue Log",
-      "Stock Movement"
-
+      {
+        name:"Manage Reservations",
+        value:"manageReservations"
+      },
+      {
+        name:"Manage Packing Slip",
+        value:"managePackingSlip/7894563"
+      },
+      {
+        name:"Manage Pick List",
+        value:"managePackingList"
+      },
+      {
+        name:"Manage Goods Issue/Reversal",
+        value:"goods"
+      }
+     
     ]
+    
   },
   {
     icon: "#icon_Notificatio",
     name: "Create Transactions",
     link:"createtransactions",
-    dropdown:false
+    dropdown:true,
+    sideMenu:[
+      {
+        name:"Goods Receipt",
+        value:"poGoodsReceipt"
+      },
+      {
+        name:"Goods Issue",
+        value:"goods"
+      },
+      {
+        name:"Request for Goods Issue",
+        value:"manageGoodsIssue"
+      },
+      {
+        name:"Cycle Count",
+        value:""
+      },
+      {
+        name:"Stock Transfer",
+        value:"internalstocktransfer"
+      },
+      {
+        name:"Issue Log",
+        value:""
+      },
+      {
+        name:"Stock Movement",
+        value:""
+      }
+    ]
   },
   {
     icon: "#icon_Supplier",

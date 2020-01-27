@@ -52,6 +52,7 @@
 }
 
 .myMenu {
-  left: 102px !important;
+  left: 104px !important;
   position: absolute;
+  min-width: 0px !important;
 }
