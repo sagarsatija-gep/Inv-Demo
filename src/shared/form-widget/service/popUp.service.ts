@@ -33,7 +33,7 @@ export class PopUpService {
           },
           {
             type: 'text',
-            name: 'Transfer Qty',
+            name: 'Transfer Quantity',
             colSize: '100px',
             // styles: {'background-color': 'rebeccapurple'},
             classes: 'text-left',
@@ -94,7 +94,7 @@ export class PopUpService {
               value: 'Lead Piping',
             },
             {
-              type: 'text',
+              type: 'textbox',
               value: '25',
               tdClasses: 'text-left'
             },
@@ -122,7 +122,8 @@ export class PopUpService {
               type: 'dropdown',
                 value: [
                 'N02-06-3-2',
-                'N02-06-6-4'
+                'N02-06-6-4',
+                'Y2-4-2-5'
                  ],
                 selectedValue:'N02-06-3-2',
             //   tdClasses: 'text-right'
@@ -282,7 +283,7 @@ export class PopUpService {
           },
           {
             type: 'text',
-            name: 'Transfer Qty',
+            name: 'Transfer Quantity',
             colSize: '100px',
             // styles: {'background-color': 'rebeccapurple'},
             classes: 'text-left',

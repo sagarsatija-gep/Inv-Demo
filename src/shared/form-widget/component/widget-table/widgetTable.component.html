@@ -1,8 +1,8 @@
 <div class="table-container" style="width: 100%;overflow-x: auto;">
-  <table class="table widgetTable table-striped" style="width: fit-content;min-width: 100%;">
+  <table class="table widgetTable table-striped">
     <thead>
       <tr>
-        <th class="text-center-cl" style="min-width: 140px;" [ngStyle]="col.styles" [ngClass]="col.classes"
+        <th class="text-left" [ngStyle]="col.styles" [ngClass]="col.classes"
           *ngFor="let col of data.colConfig">
           <label *ngIf="col.type == 'checkbox'" class="checkbox-container">
             <input type="checkbox" />
@@ -14,7 +14,7 @@
     </thead>
     <tbody>
       <tr *ngFor="let rows of data.values" [ngClass]="data.tablerowClass">
-        <td *ngFor="let column of rows" class="text-center-cl" [ngClass]="column.tdClasses">
+        <td *ngFor="let column of rows" class="text-left" [ngClass]="column.tdClasses">
 
           <label *ngIf="column.type == 'checkbox'" class="checkbox-container">
             <input type="checkbox" />
@@ -28,8 +28,11 @@
           <button type="button" class="btn btn-primary .btn-xs" [ngStyle]="column.styles"
             *ngIf="column.type == 'button'">{{column.value}}</button>
 
-          <button type="button" class="btn btn-primary .btn-xs" [ngStyle]="column.styles"
-            *ngIf="column.type == 'delete'"><i class="fa fa-trash" aria-hidden="true"></i></button>
+          <button type="button" class="btn .btn-xs" [ngStyle]="column.styles"
+            *ngIf="column.type == 'delete'">
+            <!-- <i class="fa fa-trash" aria-hidden="true"></i> -->
+            <img src="../../../../assets/images/icon_delete.png" alt="">
+          </button>
 
 
           <div *ngIf="column.type == 'attachments'">
@@ -48,6 +51,7 @@
               <option [value]="item" *ngFor="let item of column.value">{{item}}</option>
             </select>
           </div>
+          
 
           <label *ngIf="column.type == 'toggle'" class="switch">
             <!-- <input type="checkbox" [checked]='column.value'>

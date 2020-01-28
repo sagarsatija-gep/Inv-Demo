@@ -2,6 +2,7 @@ import { ExternalStockTransfer } from './external-stock-transfer/externalStockTr
 import { FormWidget } from './../shared/form-widget/form-widget.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { QuickLinksComponent } from './quick-links/quick-links.component';
@@ -17,7 +18,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatMenuModule } from '@angular/material/menu';
 import { HomeComponent } from './home/home.component';
 import { ToggleService } from './toggle.service';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { LineViewComponent } from './line-view/line-view.component';
 import { ManageReservationsComponent } from './manage-reservations/manage-reservations.component';
@@ -90,6 +91,7 @@ import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.compon
     ExternalStockTransfer
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     FormWidget,
     AppRoutingModule,
@@ -112,7 +114,7 @@ import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.compon
       libraries: ['places']
     }),
   ],
-  providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService],
+  providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService,NgbActiveModal],
   bootstrap: [AppComponent],
   entryComponents: [NgbdModalContent, NgbdModalContent1,NgbdModalContent2]
 })

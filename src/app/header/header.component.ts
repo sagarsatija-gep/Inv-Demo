@@ -32,6 +32,7 @@ export class HeaderComponent implements OnInit {
   click() {
     this.opened = !this.opened;
   }
+
   constructor(private toggleService: ToggleService, public modalService: NgbModal, public barcode: BarcodeValueService, private route: Router) {}
 
   ngOnInit() {
@@ -50,13 +51,15 @@ export class HeaderComponent implements OnInit {
   onSearchClick() {
     debugger;
     console.log(this.barcodeValue);
-    if(this.barcodeValue == 'asn') {
-      this.route.navigate(['/purchaseDetails']);
-    } else 
-    if(this.barcodeValue == 'po') {
-      this.route.navigate(['/poDetails']);
-    }
-    this.barcodeValue = '';
+    setTimeout(() => {
+      if(this.barcodeValue == 'asn') {
+        this.route.navigate(['/purchaseDetails']);
+      } else 
+      if(this.barcodeValue == 'po' || this.barcodeValue == /^8/) {
+        this.route.navigate(['/poDetails']);
+      }
+      this.barcodeValue = '';
+    },1000);
   }
 }
 @Component({
