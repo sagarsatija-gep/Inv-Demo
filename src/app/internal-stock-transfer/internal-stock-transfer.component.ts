@@ -1,3 +1,4 @@
+import { SuccessPopUp } from './../../shared/popUpComponent/successPopUp/successPopUP.component';
 import { Router } from '@angular/router';
 import { PopUpService } from './../../shared/form-widget/service/popUp.service';
 import { Component, OnInit ,ViewEncapsulation,Input, OnDestroy} from '@angular/core';
@@ -19,6 +20,12 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
     modalRef.componentInstance.name = 'World';
   }
 
+  successPopUp() {
+    const modalRef = this.modalService.open(SuccessPopUp, { size: 'lg' });
+    modalRef.componentInstance.name = 'World';
+    
+  }
+
   ngOnInit() {
     this.popUpSubscription = this.popup.internalStockPopUp.subscribe(isPopUP=>{
       if(isPopUP) {
@@ -32,6 +39,7 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
       this.popup.isInternalStockErrorPopUp = true;
       this.open();
     } else {
+      this.successPopUp();
       this.route.navigate(['/home']);
     }
   }

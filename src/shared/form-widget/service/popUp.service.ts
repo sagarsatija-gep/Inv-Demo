@@ -283,7 +283,7 @@ export class PopUpService {
           },
           {
             type: 'text',
-            name: 'Transfer Qty',
+            name: 'Transfer Quantity',
             colSize: '100px',
             // styles: {'background-color': 'rebeccapurple'},
             classes: 'text-left',

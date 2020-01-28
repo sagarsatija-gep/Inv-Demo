@@ -68,7 +68,7 @@ export class PoDetailsComponent implements OnInit {
               tabName: 'Lines',
               tabcomponent: 'widgetTable',
               tabData:  {
-                tablerowClass: 'bg-white',
+                // tablerowClass: 'bg-white',
                 colConfig: [
                   {
                     type: 'text',
