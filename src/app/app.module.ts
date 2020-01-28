@@ -1,3 +1,4 @@
+import { ExternalStockTransfer } from './external-stock-transfer/externalStockTransfer.component';
 import { FormWidget } from './../shared/form-widget/form-widget.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -85,7 +86,8 @@ import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.compon
     PoGoodsReceiptComponent,
     PopupComponent,
     AsnGrComponent,
-    OcrGrCreationComponent
+    OcrGrCreationComponent,
+    ExternalStockTransfer
   ],
   imports: [
     BrowserModule,

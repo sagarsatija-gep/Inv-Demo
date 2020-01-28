@@ -247,6 +247,271 @@ export class PopUpService {
         ]
       }
 
+    externalTableData =  {
+
+        tablerowClass: 'bg-white',
+        colConfig: [
+        //     {
+        //     type: 'checkbox',
+        //     name: 'Reservation #',
+        //     classes: 'text-left',
+        //     // styles: {'width': '%'},
+        //   },
+          {
+            type: 'text',
+            name: 'Item No',
+            // colSize: '100px',
+            classes: 'text-left',
+            // styles: {'width': '8%'},
+          },
+          {
+            type: 'text',
+            name: 'Item Name',
+            // colSize: '100px',
+            classes: ' ',
+            // styles: {'width': '8%'},
+          },
+          {
+            type: 'text',
+            name: 'Transter Qty',
+            colSize: '100px',
+            // styles: {'background-color': 'rebeccapurple'},
+            classes: 'text-left',
+            // styles: {'width': '8%'},
+          },
+          {
+            type: 'text',
+            name: 'UOM',
+            // colSize: '100px',
+            // styles: {'background-color': 'rebeccapurple'},
+            // classes: 'text-left',
+  
+          },
+          {
+            type: 'text',
+            name: 'From Location',
+            colSize: '100px',
+            // styles: {'width': '8%'},
+          },
+          {
+            type: 'text',
+            name: 'From BIN',
+            colSize: '100px',
+            // styles: {'width': '8%'},
+          },
+          {
+            type: 'text',
+            name: 'To Location',
+            colSize: '100px',
+            // styles: {'width': '8%'},
+          },
+          {
+            type: 'text',
+            name: 'To BIN',
+            colSize: '100px',
+            // styles: {'width': '8%'},
+          }
+        ],
+        values: [
+            [{
+                    type: 'text',
+                    value: '1025180',
+                    tdClasses: 'text-left'
+                },
+                {
+                    type: 'text',
+                    value: 'Tube, Bourdon',
+                },
+                {
+                    type: 'text',
+                    value: '20',
+                    tdClasses: 'text-left'
+                },
+                {
+                    type: 'text',
+                    value: 'EA',
+                },
+                {
+                    type: 'text',
+                    value: 'PMF-6002',
+                },
+                {
+                    type: 'text',
+                    value: 'C02-08-2-2',
+                },
+                {
+                    type: 'text',
+                    value: 'PMF-6002',
+                },
+                {
+                    type: 'dropdown',
+                    value: [
+                        'N02-06-3-2',
+                        'N02-06-6-4'
+                    ],
+                    selectedValue: 'N02-06-3-2',
+                },
+            ],
+            [{
+                    type: 'text',
+                    value: '2063777',
+                    tdClasses: 'text-left'
+                },
+                {
+                    type: 'text',
+                    value: 'Lead Piping',
+                },
+                {
+                    type: 'text',
+                    value: '25',
+                    tdClasses: 'text-left'
+                },
+                {
+                    type: 'text',
+                    value: 'EA',
+                },
+                {
+                    type: 'text',
+                    value: 'PMF-6002',
+                },
+                {
+                    type: 'text',
+                    value: 'C02-08-2-2',
+                },
+                {
+                    type: 'text',
+                    value: 'PMF-6002',
+                },
+                {
+                    type: 'dropdown',
+                    value: [
+                        'N02-06-3-2',
+                        'N02-06-6-4'
+                    ],
+                    selectedValue: 'N02-06-3-2',
+                },
+            ],
+            [{
+                    type: 'text',
+                    value: '1010151',
+                    tdClasses: 'text-left'
+                },
+                {
+                    type: 'text',
+                    value: 'Milwaukee Tool',
+                },
+                {
+                    type: 'text',
+                    value: '30',
+                    tdClasses: 'text-left'
+                },
+                {
+                    type: 'text',
+                    value: 'EA',
+                },
+                {
+                    type: 'text',
+                    value: 'PMF-6002',
+                },
+                {
+                    type: 'text',
+                    value: 'C02-08-2-2',
+                },
+                {
+                    type: 'text',
+                    value: 'PMF-6002',
+                },
+                {
+                    type: 'dropdown',
+                    value: [
+                        'N02-06-3-2',
+                        'N02-06-6-4'
+                    ],
+                    selectedValue: 'N02-06-3-2',
+                },
+            ],
+            [{
+                    type: 'text',
+                    value: '2030539',
+                    tdClasses: 'text-left'
+                },
+                {
+                    type: 'text',
+                    value: 'Morse Cutting Tool',
+                },
+                {
+                    type: 'text',
+                    value: '20',
+                    tdClasses: 'text-left'
+                },
+                {
+                    type: 'text',
+                    value: 'EA',
+                },
+                {
+                    type: 'text',
+                    value: 'PMF-6002',
+                },
+                {
+                    type: 'text',
+                    value: 'C02-08-2-2',
+                },
+                {
+                    type: 'text',
+                    value: 'PMF-6002',
+                },
+                {
+                    type: 'dropdown',
+                    value: [
+                        'N02-06-3-2',
+                        'N02-06-6-4'
+                    ],
+                    selectedValue: 'N02-06-3-2',
+                },
+            ],
+            [{
+                    type: 'text',
+                    value: '2044808',
+                    tdClasses: 'text-left'
+                },
+                {
+                    type: 'text',
+                    value: 'Dewalt – Saw Blade',
+                },
+                {
+                    type: 'text',
+                    value: '20',
+                    tdClasses: 'text-left'
+                },
+                {
+                    type: 'text',
+                    value: 'EA',
+                },
+                {
+                    type: 'text',
+                    value: 'PMF-6002',
+                },
+                {
+                    type: 'text',
+                    value: 'C02-08-2-2',
+                },
+                {
+                    type: 'text',
+                    value: 'PMF-6002',
+                },
+                {
+                    type: 'dropdown',
+                    value: [
+                        'N02-06-3-2',
+                        'N02-06-6-4'
+                    ],
+                    selectedValue: 'N02-06-3-2',
+                },
+            ],
+        
+        ]
+      }
+
     internalStockPopupOpen() {
         this.internalStockPopUp.next(true);
     }
