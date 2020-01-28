@@ -1,3 +1,5 @@
+import { SuccessPopUp } from './../../shared/popUpComponent/successPopUp/successPopUP.component';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
@@ -8,7 +10,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class PoGoodsReceiptComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit() {
   }
@@ -1005,5 +1007,16 @@ export class PoGoodsReceiptComponent implements OnInit {
       }
     }
   ]
+
+  onFinalizeClick() {
+    this.successPopUp();
+  }
+
+  successPopUp() {
+    const modalRef = this.modalService.open(SuccessPopUp, { size: 'lg' });
+    modalRef.componentInstance.name = 'World';
+    
+  }
+
 
 }
