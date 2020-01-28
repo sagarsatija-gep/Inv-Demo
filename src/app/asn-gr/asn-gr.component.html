@@ -1,10 +1,33 @@
-<div class="purcesDetais">
+<div class="purcesDetais" style="margin-bottom: 40px;">
   <div>
-      <ul class="breadcrumb">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Receipt</a></li>
-          <li>Details</li>
-        </ul>
+    <ul class="breadcrumb">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Receipt</a></li>
+      <li>Details</li>
+    </ul>
   </div>
   <Form-widget [config]='asnGrData'></Form-widget>
 </div>
+
+<footer class="poFooter bg-white">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <button class="btn btn-white text-uppercase rounded-0">
+          Print Preview
+        </button>
+      </div>
+      <div class="col-sm-5 text-right">
+        <button class="btn btn-white text-uppercase rounded-0">
+          Cancel
+        </button>
+        <button class="btn btn-primary text-white text-uppercase shadow rounded-0">
+          Print Barcode
+        </button>
+        <a routerLink='/home'>  <button class="btn btn-primary text-white text-uppercase shadow rounded-0">
+          Create Receipt
+          </button></a>
+      </div>
+    </div>
+  </div>
+</footer>

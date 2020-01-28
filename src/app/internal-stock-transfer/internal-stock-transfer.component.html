@@ -7,36 +7,25 @@
   </div>
   <Form-widget [config]='widgetData'></Form-widget>
 </div>
-<div class="form-group text-center">
-    <div class="image-upload">
-        <label for="file-input">
-            <img src="../../../../assets/images/fileIcon.png"/>
-        </label><br>
-        <button *ngIf="!addLines" type="button" class="btn btn-primary btnAddfiles">Add Files</button>
-        <button *ngIf="addLines" type="button" class="btn btn-primary btnAddfiles">Add Lines</button>
-        <input id="file-input" type="file"/>
+<footer class="poFooter bg-white">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-6">
+          <button class="btn btn-white text-uppercase rounded-0">
+            Print Preview
+          </button>
+        </div>
+        <div class="col-sm-5 text-right">
+          <button class="btn btn-white text-uppercase rounded-0">
+            Cancel
+          </button>
+         <button class="btn btn-white text-uppercase shadow rounded-0">
+          Create Receipt
+          </button>
+          <button class="btn btn-primary text-white text-uppercase shadow rounded-0" (click)="isFinalizeClick()">
+              Finalize
+              </button>
+        </div>
+      </div>
     </div>
-</div>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="21"
-  viewBox="0 0 15 21">
-  <defs>
-    <style>
-      .a {
-        fill: #fff;
-      }
-
-      .b {
-        clip-path: url(#a);
-      }
-
-    </style>
-    <clipPath id="a">
-      <path class="a"
-        d="M13.5,21H1.5A1.5,1.5,0,0,1,0,19.5V1.5A1.5,1.5,0,0,1,1.5,0H9.018a.685.685,0,0,1,.507.225l5.25,5.25A.681.681,0,0,1,15,6V19.5A1.5,1.5,0,0,1,13.5,21ZM1.5,1.5v18h12V7.5H9A1.5,1.5,0,0,1,7.5,6V1.5ZM9,1.8V6h4.2Zm2.25,14.7H3.75V15h7.5v1.5Zm0-4.5H3.75V10.5h7.5V12Z" />
-    </clipPath>
-  </defs>
-  <path class="a"
-    d="M13.5,21H1.5A1.5,1.5,0,0,1,0,19.5V1.5A1.5,1.5,0,0,1,1.5,0H9.018a.685.685,0,0,1,.507.225l5.25,5.25A.681.681,0,0,1,15,6V19.5A1.5,1.5,0,0,1,13.5,21ZM1.5,1.5v18h12V7.5H9A1.5,1.5,0,0,1,7.5,6V1.5ZM9,1.8V6h4.2Zm2.25,14.7H3.75V15h7.5v1.5Zm0-4.5H3.75V10.5h7.5V12Z" />
-</svg>
-
-<button (click)="open()" >open popup</button>
+  </footer>

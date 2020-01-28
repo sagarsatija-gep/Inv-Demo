@@ -1,21 +1,45 @@
-import { Component, OnInit ,ViewEncapsulation,Input} from '@angular/core';
+import { Router } from '@angular/router';
+import { PopUpService } from './../../shared/form-widget/service/popUp.service';
+import { Component, OnInit ,ViewEncapsulation,Input, OnDestroy} from '@angular/core';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { Subscription } from 'rxjs';
 @Component({
   selector: 'app-internal-stock-transfer',
   templateUrl: './internal-stock-transfer.component.html',
   styleUrls: ['./internal-stock-transfer.component.css'],
   encapsulation: ViewEncapsulation.None
 })
-export class InternalStockTransferComponent implements OnInit {
+export class InternalStockTransferComponent implements OnInit, OnDestroy {
 
-  constructor(public modalService: NgbModal) { }
+  popUpSubscription: Subscription;
+
+  constructor(public modalService: NgbModal, private popup: PopUpService, private route: Router) { }
   open() {
     const modalRef = this.modalService.open(NgbdModalContent2, { size: 'lg' });
     modalRef.componentInstance.name = 'World';
   }
 
   ngOnInit() {
+    this.popUpSubscription = this.popup.internalStockPopUp.subscribe(isPopUP=>{
+      if(isPopUP) {
+        this.open();
+      }
+    })
   }
+
+  isFinalizeClick() {
+    if( !this.popup.isInternalStockErrorPopUp ) {
+      this.popup.isInternalStockErrorPopUp = true;
+      this.open();
+    } else {
+      this.route.navigate(['/home']);
+    }
+  }
+
+  ngOnDestroy() {
+    this.popUpSubscription.unsubscribe();
+  }
+
   widgetData = [
     {
       'HeaderData': {
@@ -53,23 +77,34 @@ export class InternalStockTransferComponent implements OnInit {
             {
               type: 'textbox',
               name:'Plant',
-              values:'El-Segundo'
+              values:'PMF 6002'
+            },
+            {
+              type: 'dropdown',
+              name: 'Transfer Type',
+              value: [
+                'Within Plant Transfer',
+                'Between Plant Transfer'
+            ],
+              selectedValue:'Within Plant Transfer',
             }
             
           ]
         }
       }
     },
-  {
-    'HeaderData': {
-      name: 'Notes & Attachements',
-      isOpen: true,
-      collapsible: true,
-      data: {
-        componentName: 'Attachement'
+    {
+      'HeaderData': {
+        name: 'Line Details',
+        isOpen: true,
+        collapsible: true,
+        data: {
+          componentName: 'Attachement',
+          numberOfInput: 'one',
+          page: 'internalStockTaransfer'
+        }
       }
     }
-  }
 ]
 
 }
@@ -78,9 +113,10 @@ export class InternalStockTransferComponent implements OnInit {
   templateUrl: 'internal-stock-transfer-popup.html',
   styleUrls: ['./internal-stock-transfer.component.css']
 })
-export class NgbdModalContent2 {
+export class NgbdModalContent2 implements OnInit {
   @Input() name;
 
+  isErroPopUp: boolean;
   popupData = [
     {
       type:'text',
@@ -120,7 +156,17 @@ export class NgbdModalContent2 {
     }
   ];
 
-  constructor(public activeModal: NgbActiveModal) {}
+  constructor(public activeModal: NgbActiveModal, private popUpServices: PopUpService ) {}
+
+  ngOnInit(): void {
+    this.isErroPopUp = this.popUpServices.isInternalStockErrorPopUp;
+  }
+
+  showTable() {
+    this.activeModal.close();
+    this.popUpServices.showTable();
+  }
+
 }
 
 
