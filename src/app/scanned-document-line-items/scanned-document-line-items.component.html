@@ -31,7 +31,7 @@
         <tr *ngFor="let item of lineItems">
           <td scope="row">
             <label class="checkbox-container">
-              <input type="checkbox" />
+              <input type="checkbox"  [(ngModel)]="item.isChecked">
               <span class="checkmark"></span>
             </label>
           </td>
@@ -40,7 +40,7 @@
           <td>{{ item.description }}</td>
           <td>{{ item.uom }}</td>
           <td>{{ item.poQuantity }}</td>
-          <td>{{ item.receivedQuantity }}</td>
+          <td><input type="text" value="{{item.receivedQuantity}}"></td>
         </tr>
       </tbody>
     </table>

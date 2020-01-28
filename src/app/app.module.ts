@@ -1,6 +1,7 @@
 import { FormWidget } from './../shared/form-widget/form-widget.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { QuickLinksComponent } from './quick-links/quick-links.component';
@@ -90,6 +91,7 @@ import { CreatePackageComponent } from './create-package/create-package.componen
     CreatePackageComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     FormWidget,
     AppRoutingModule,
