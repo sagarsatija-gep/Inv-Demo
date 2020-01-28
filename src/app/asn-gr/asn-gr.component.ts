@@ -2,6 +2,9 @@ import { SuccessPopUp } from './../../shared/popUpComponent/successPopUp/success
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { PopupComponent } from '../popup/popup.component';
+import {
+  Router
+} from '@angular/router';
 
 @Component({
   selector: 'app-asn-gr',
@@ -9,7 +12,6 @@ import { PopupComponent } from '../popup/popup.component';
   styleUrls: ['./asn-gr.component.css']
 })
 export class AsnGrComponent implements OnInit {
-
   constructor(public modalService: NgbModal) { }
   open() {
     const modalRef = this.modalService.open(PopupComponent);
@@ -17,32 +19,56 @@ export class AsnGrComponent implements OnInit {
   }
   printContents: any
   originalContents: any
+ 
 
-  printDiv(divName) {
-    this.printContents = document.getElementById(divName).innerHTML;
-    this.originalContents = document.body.innerHTML;
-    document.body.innerHTML = this.printContents;
-    window.print();
-    window.close();
-    document.body.innerHTML = this.originalContents;
+
+
+  print() {
+
+    let printContents, popupWin;
+    printContents = document.getElementById('print-section').innerHTML;
+    popupWin = window.open('', '_blank', 'top=0,left=0,height=1920px,width=1080px');
+    popupWin.document.open();
+    popupWin.document.write(`
+<html>
+  <head>
+    <style>
+    body{  width: 99%;}
+      label { font-weight: 400;
+              font-size: 13px;
+              padding: 2px;
+              margin-bottom: 5px;
+            }
+      table, td, th {
+             border: 1px solid silver;
+              }
+              table td {
+             font-size: 13px;
+              }
+
+               table th {
+             font-size: 13px;
+              }
+        table {
+              border-collapse: collapse;
+              width: 98%;
+              }
+          th {
+              height: 26px;
+              }
+    </style>
+  </head>
+<body onload="window.print();window.close()">${printContents}</body>
+</html>`);
+    popupWin.document.close();
+
   }
 
-  CallPrint() {
-    var prtContent = document.getElementById('printableArea');
-    var WinPrint = window.open('', '', 'width=800,height=650,scrollbars=1,menuBar=1');
-    var str = prtContent.innerHTML;
-    WinPrint.document.write(str);
-    WinPrint.window.print();
-    WinPrint.document.close();
-    WinPrint.focus();
-    window.close()
-    // WinPrint.window.close();
-  }
 
-  ngOnInit() {
-  }
-  asnGrData = [
-    {
+
+
+  ngOnInit() {}
+  asnGrData = [{
       'HeaderData': {
         name: 'Basic Details',
         isOpen: true,
@@ -50,8 +76,7 @@ export class AsnGrComponent implements OnInit {
         data: {
           componentName: 'details',
           isSubDetails: false,
-          data: [
-            {
+          data: [{
               type: 'textbox',
               name: 'Receipt Name',
               values: 'Receipt for 6001068586806',
@@ -93,14 +118,12 @@ export class AsnGrComponent implements OnInit {
         data: {
           componentName: 'tabComponent',
           haveButton: false,
-          data: [
-            {
+          data: [{
               tabName: 'LINES',
               tabcomponent: 'widgetTable',
               tabData: {
                 tablerowClass: 'bg-white',
-                colConfig: [
-                  {
+                colConfig: [{
                     type: 'text',
                     name: 'Line Number',
                     colSize: '100px',
@@ -198,8 +221,7 @@ export class AsnGrComponent implements OnInit {
                   }
                 ],
                 values: [
-                  [
-                    {
+                  [{
                       type: 'text',
                       value: '1',
                     },
@@ -292,11 +314,15 @@ export class AsnGrComponent implements OnInit {
                     {
                       type: 'button',
                       value: 'UPLOAD',
-                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
+                      styles: {
+                        'width': '85px',
+                        'height': '30px',
+                        'padding': '0px',
+                        'margin': '-3px'
+                      }
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'text',
                       value: '2',
                     },
@@ -389,11 +415,15 @@ export class AsnGrComponent implements OnInit {
                     {
                       type: 'button',
                       value: 'UPLOAD',
-                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
+                      styles: {
+                        'width': '85px',
+                        'height': '30px',
+                        'padding': '0px',
+                        'margin': '-3px'
+                      }
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'text',
                       value: '3',
                     },
@@ -423,8 +453,7 @@ export class AsnGrComponent implements OnInit {
                     {
                       type: 'text',
                       value: 'PMF - 6002',
-                    }
-                    , {
+                    }, {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
@@ -486,11 +515,15 @@ export class AsnGrComponent implements OnInit {
                     {
                       type: 'button',
                       value: 'UPLOAD',
-                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
+                      styles: {
+                        'width': '85px',
+                        'height': '30px',
+                        'padding': '0px',
+                        'margin': '-3px'
+                      }
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'text',
                       value: '4',
                     },
@@ -583,7 +616,12 @@ export class AsnGrComponent implements OnInit {
                     {
                       type: 'button',
                       value: 'UPLOAD',
-                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
+                      styles: {
+                        'width': '85px',
+                        'height': '30px',
+                        'padding': '0px',
+                        'margin': '-3px'
+                      }
                     }
                   ]
                 ]
@@ -593,11 +631,12 @@ export class AsnGrComponent implements OnInit {
               tabName: 'ASSET MANAGEMENT',
               tabcomponent: 'widgetTable',
               tabData: {
-                colConfig: [
-                  {
+                colConfig: [{
                     type: 'checkbox',
                     name: 'Line Select',
-                    styles: { 'width': '2%' },
+                    styles: {
+                      'width': '2%'
+                    },
                   },
                   {
                     type: 'text',
@@ -640,8 +679,7 @@ export class AsnGrComponent implements OnInit {
                   }
                 ],
                 values: [
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -678,8 +716,7 @@ export class AsnGrComponent implements OnInit {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -716,8 +753,7 @@ export class AsnGrComponent implements OnInit {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -754,8 +790,7 @@ export class AsnGrComponent implements OnInit {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -792,8 +827,7 @@ export class AsnGrComponent implements OnInit {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -830,8 +864,7 @@ export class AsnGrComponent implements OnInit {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -868,8 +901,7 @@ export class AsnGrComponent implements OnInit {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -906,8 +938,7 @@ export class AsnGrComponent implements OnInit {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -944,8 +975,7 @@ export class AsnGrComponent implements OnInit {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -982,8 +1012,7 @@ export class AsnGrComponent implements OnInit {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
