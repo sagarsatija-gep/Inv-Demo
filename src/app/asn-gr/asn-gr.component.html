@@ -21,7 +21,7 @@
         <button class="btn btn-white text-uppercase rounded-0">
           Cancel
         </button>
-        <button (click)="printDiv('printableArea')"  class="btn btn-primary text-white text-uppercase shadow rounded-0">
+        <button (click)="print()"  class="btn btn-primary text-white text-uppercase shadow rounded-0">
           Print Barcode
         </button>
         <a routerLink='/home'>  <button class="btn btn-primary text-white text-uppercase shadow rounded-0">
@@ -31,11 +31,9 @@
     </div>
   </div>
 </footer>
-<div style="display: none;z-index: 0;" id="printableArea"  >
+<div style="display: none;z-index: 0;" id="print-section"  >
   <img style="display: block;margin: 24px 40%;" src="../../assets/2063777.jpg">
   <img style="display: block;margin: 24px 40%;" src="../../assets/1010151.jpg">
   <img style="display: block;margin: 24px 40%;" src="../../assets/2030539.jpg">
   <img style="display: block;margin: 24px 40%;" src="../../assets/2044808.jpg">
 </div>
-
-<p><span onclick="printPage('externalPage.html');" style="cursor:pointer;text-decoration:underline;color:#0000ff;">Print external page!</span></p>

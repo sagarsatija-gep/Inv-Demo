@@ -1,4 +1,10 @@
-import { Component, OnInit } from '@angular/core';
+import {
+  Component,
+  OnInit
+} from '@angular/core';
+import {
+  Router
+} from '@angular/router';
 
 @Component({
   selector: 'app-asn-gr',
@@ -6,35 +12,58 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./asn-gr.component.css']
 })
 export class AsnGrComponent implements OnInit {
-  printContents:any
-  originalContents:any
-  constructor() { }
+  printContents: any
+  originalContents: any
+  constructor(private route: Router) {}
 
-  printDiv(divName) {
-    this.printContents = document.getElementById(divName).innerHTML;
-    this.originalContents = document.body.innerHTML;
-    document.body.innerHTML = this.printContents;
-    window.print();
-    window.close();
-    document.body.innerHTML = this.originalContents;
-}
 
-CallPrint() {
-  var prtContent = document.getElementById('printableArea');
-  var WinPrint = window.open('', '', 'width=800,height=650,scrollbars=1,menuBar=1');
-  var str =  prtContent.innerHTML;
-  WinPrint.document.write(str);
-  WinPrint.window.print();
-  WinPrint.document.close();
-  WinPrint.focus();
-  window.close()
-  // WinPrint.window.close();
-}
 
-  ngOnInit() {
+  print() {
+
+    let printContents, popupWin;
+    printContents = document.getElementById('print-section').innerHTML;
+    popupWin = window.open('', '_blank', 'top=0,left=0,height=1920px,width=1080px');
+    popupWin.document.open();
+    popupWin.document.write(`
+<html>
+  <head>
+    <style>
+    body{  width: 99%;}
+      label { font-weight: 400;
+              font-size: 13px;
+              padding: 2px;
+              margin-bottom: 5px;
+            }
+      table, td, th {
+             border: 1px solid silver;
+              }
+              table td {
+             font-size: 13px;
+              }
+
+               table th {
+             font-size: 13px;
+              }
+        table {
+              border-collapse: collapse;
+              width: 98%;
+              }
+          th {
+              height: 26px;
+              }
+    </style>
+  </head>
+<body onload="window.print();window.close()">${printContents}</body>
+</html>`);
+    popupWin.document.close();
+
   }
-  asnGrData = [
-    {
+
+
+
+
+  ngOnInit() {}
+  asnGrData = [{
       'HeaderData': {
         name: 'Basic Details',
         isOpen: true,
@@ -42,8 +71,7 @@ CallPrint() {
         data: {
           componentName: 'details',
           isSubDetails: false,
-          data: [
-            {
+          data: [{
               type: 'textbox',
               name: 'ASN Number',
               values: '6001068586806',
@@ -74,14 +102,12 @@ CallPrint() {
         data: {
           componentName: 'tabComponent',
           haveButton: false,
-          data: [
-            {
+          data: [{
               tabName: 'LINES',
               tabcomponent: 'widgetTable',
               tabData: {
                 tablerowClass: 'bg-white',
-                colConfig: [
-                  {
+                colConfig: [{
                     type: 'text',
                     name: 'Line Number',
                     colSize: '100px',
@@ -173,8 +199,7 @@ CallPrint() {
                   }
                 ],
                 values: [
-                  [
-                    {
+                  [{
                       type: 'text',
                       value: '1',
                     },
@@ -258,11 +283,15 @@ CallPrint() {
                     {
                       type: 'button',
                       value: 'UPLOAD',
-                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
+                      styles: {
+                        'width': '85px',
+                        'height': '30px',
+                        'padding': '0px',
+                        'margin': '-3px'
+                      }
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'text',
                       value: '2',
                     },
@@ -346,11 +375,15 @@ CallPrint() {
                     {
                       type: 'button',
                       value: 'UPLOAD',
-                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
+                      styles: {
+                        'width': '85px',
+                        'height': '30px',
+                        'padding': '0px',
+                        'margin': '-3px'
+                      }
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'text',
                       value: '3',
                     },
@@ -380,8 +413,7 @@ CallPrint() {
                     {
                       type: 'text',
                       value: 'PMF - 6002',
-                    }
-                    , {
+                    }, {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
@@ -434,11 +466,15 @@ CallPrint() {
                     {
                       type: 'button',
                       value: 'UPLOAD',
-                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
+                      styles: {
+                        'width': '85px',
+                        'height': '30px',
+                        'padding': '0px',
+                        'margin': '-3px'
+                      }
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'text',
                       value: '4',
                     },
@@ -522,7 +558,12 @@ CallPrint() {
                     {
                       type: 'button',
                       value: 'UPLOAD',
-                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
+                      styles: {
+                        'width': '85px',
+                        'height': '30px',
+                        'padding': '0px',
+                        'margin': '-3px'
+                      }
                     }
                   ]
                 ]
@@ -532,11 +573,12 @@ CallPrint() {
               tabName: 'ASSET MANAGEMENT',
               tabcomponent: 'widgetTable',
               tabData: {
-                colConfig: [
-                  {
+                colConfig: [{
                     type: 'checkbox',
                     name: 'Line Select',
-                    styles: { 'width': '2%' },
+                    styles: {
+                      'width': '2%'
+                    },
                   },
                   {
                     type: 'text',
@@ -584,8 +626,7 @@ CallPrint() {
                   }
                 ],
                 values: [
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -625,8 +666,7 @@ CallPrint() {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -666,8 +706,7 @@ CallPrint() {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -707,8 +746,7 @@ CallPrint() {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -748,8 +786,7 @@ CallPrint() {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -789,8 +826,7 @@ CallPrint() {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -830,8 +866,7 @@ CallPrint() {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -871,8 +906,7 @@ CallPrint() {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -912,8 +946,7 @@ CallPrint() {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
@@ -953,8 +986,7 @@ CallPrint() {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
-                  [
-                    {
+                  [{
                       type: 'checkbox',
                       value: 'false',
                     },
