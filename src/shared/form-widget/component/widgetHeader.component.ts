@@ -38,6 +38,7 @@ export class WidgetHeaderComponent implements OnInit {
     }
 
     openPopup() {
+        this.poupservice.isInternalStockErrorPopUp = false;
         this.poupservice.internalStockPopupOpen();
     }
 
