@@ -1,11 +1,15 @@
 <div class="" *ngIf="data.numberOfInput == 'one'">
   <div class="form-group text-center">
     <div class="image-upload">
-        <label for="file-input" (click)="popUpOpen()">
-            <img src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/fileIcon.png"/>
-        </label><br>
-        <button type="button"  class="btn btn-primary btnAddfiles">Add Files</button>
-        <input id="file-input" type=""/>
+      <i class="fa fa-plus" aria-hidden="true" (click)="popUpOpen()" style="background: #3D5AFE; padding: 10px;
+      border-radius: 50%; color: white; margin: 10px; font-size: 35px;"></i>
+      <!-- <label for="file-input" (click)="popUpOpen()">
+        <img
+          src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/fileIcon.png" />
+      </label> -->
+      <br>
+      <button type="button" class="btn btn-link" (click)="popUpOpen()" style="text-decoration: none;">Add Lines</button>
+      <input id="file-input" type="" />
     </div>
   </div>
   <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="21"
@@ -19,7 +23,6 @@
         .b {
           clip-path: url(#a);
         }
-
       </style>
       <clipPath id="a">
         <path class="a"
@@ -32,12 +35,13 @@
 </div>
 
 <div class="form-group text-center" *ngIf="data.numberOfInput == 'three'">
-  <a  class="action-block-cont">
+  <a class="action-block-cont">
     <span class="action-block-cont-icon">
       <div class="form-group text-center">
         <div class="image-upload">
-          <label for="file-input" >
-            <img src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/POupload.png">
+          <label for="file-input">
+            <img
+              src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/POupload.png">
           </label>
           <input id="file-input" type="file" (change)="upload()" />
         </div>
@@ -47,13 +51,16 @@
   </a>
   <a href="" class="action-block-cont">
     <span class="action-block-cont-icon">
-      <img src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/POnotes.png" alt="">
+      <img src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/POnotes.png"
+        alt="">
     </span>
     <span class="action-block-cont-lbl">Notes</span>
   </a>
   <a href="" class="action-block-cont">
     <span class="action-block-cont-icon">
-      <img src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/POExternalLink.png" alt="">
+      <img
+        src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/POExternalLink.png"
+        alt="">
     </span>
     <span class="action-block-cont-lbl">External Link</span>
   </a>
@@ -65,7 +72,7 @@
 <div #table></div>
 <script>
   var ele = document.getElementById('file-input');
-  if(ele) {
-      upload()
-   }   
-          </script>
+  if (ele) {
+    upload()
+  }   
+</script>
