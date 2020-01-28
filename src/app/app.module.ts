@@ -120,8 +120,8 @@ import { CreatePackageComponent, NgbdModalContentCreatePackage } from './create-
       libraries: ['places']
     }),
   ],
-  providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService,NgbActiveModal],
+  providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService, NgbActiveModal],
   bootstrap: [AppComponent],
-  entryComponents: [NgbdModalContent, NgbdModalContent1,NgbdModalContent2, SuccessPopUp]
+  entryComponents: [NgbdModalContent, NgbdModalContent1, NgbdModalContent2, NgbdModalContentCreatePackage, SuccessPopUp]
 })
 export class AppModule { }
