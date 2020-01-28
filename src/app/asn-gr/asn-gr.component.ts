@@ -1,3 +1,4 @@
+import { SuccessPopUp } from './../../shared/popUpComponent/successPopUp/successPopUP.component';
 import { Component, OnInit } from '@angular/core';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { PopupComponent } from '../popup/popup.component';
@@ -1041,5 +1042,14 @@ export class AsnGrComponent implements OnInit {
     }
   ]
 
+  successPopUp() {
+    const modalRef = this.modalService.open(SuccessPopUp, { size: 'lg' });
+    modalRef.componentInstance.name = 'World';
+    
+  }
+
+  onFinalizeClick() {
+    this.successPopUp();
+  }
 
 }
