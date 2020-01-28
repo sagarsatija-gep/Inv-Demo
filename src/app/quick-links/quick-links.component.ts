@@ -18,7 +18,8 @@ export class QuickLinksComponent implements OnInit {
       },
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink2.png",
-        txt: "External Stock Transfer"
+        txt: "External Stock Transfer",
+        url: "/externalStockTransfer"
       },
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink3.png",

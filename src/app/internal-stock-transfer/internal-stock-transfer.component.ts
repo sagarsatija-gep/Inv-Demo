@@ -87,8 +87,13 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
                 'Between Plant Transfer'
             ],
               selectedValue:'Within Plant Transfer',
+            },
+            {
+              type: 'barcode',
+              name: 'BarCode',
+              value: '1232',
+              editable: true,
             }
-            
           ]
         }
       }
@@ -132,9 +137,9 @@ export class NgbdModalContent2 implements OnInit {
     },
     {
       type:'text',
-      name: 'Line Items',
+      name: 'Select Line Items',
       values: '',
-      showBarcode: false
+      showBarcode: true
     },
     {
       type:'text',
@@ -152,7 +157,7 @@ export class NgbdModalContent2 implements OnInit {
       type:'text',
       name: 'To Bin',
       values: '​​',
-      showBarcode: false
+      showBarcode: true
     }
   ];
 

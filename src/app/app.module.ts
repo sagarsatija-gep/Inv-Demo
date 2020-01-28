@@ -18,7 +18,7 @@ import { MatTabsModule } from '@angular/material/tabs';
 import { MatMenuModule } from '@angular/material/menu';
 import { HomeComponent } from './home/home.component';
 import { ToggleService } from './toggle.service';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { NgbModule, NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { FormsModule } from '@angular/forms';
 import { LineViewComponent } from './line-view/line-view.component';
 import { ManageReservationsComponent } from './manage-reservations/manage-reservations.component';
@@ -117,7 +117,7 @@ import { CreatePackageComponent, NgbdModalContentCreatePackage } from './create-
       libraries: ['places']
     }),
   ],
-  providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService],
+  providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService,NgbActiveModal],
   bootstrap: [AppComponent],
   entryComponents: [NgbdModalContent, NgbdModalContent1, NgbdModalContent2, NgbdModalContentCreatePackage]
 })

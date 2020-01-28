@@ -54,7 +54,7 @@ export class HeaderComponent implements OnInit {
       if(this.barcodeValue == 'asn') {
         this.route.navigate(['/purchaseDetails']);
       } else 
-      if(this.barcodeValue == 'po') {
+      if(this.barcodeValue == 'po' || this.barcodeValue == /^8/) {
         this.route.navigate(['/poDetails']);
       }
       this.barcodeValue = '';

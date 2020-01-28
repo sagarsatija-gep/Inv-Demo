@@ -31,7 +31,7 @@
         <tr *ngFor="let item of lineItems">
           <td scope="row">
             <label class="checkbox-container">
-              <input type="checkbox"  [(ngModel)]="item.isChecked">
+              <input type="checkbox" [checked]="item.isChecked">
               <span class="checkmark"></span>
             </label>
           </td>

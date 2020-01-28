@@ -17,7 +17,7 @@ const LINEITEMS: LineItem[] = [
     uom: "Each",
     poQuantity: 77,
     receivedQuantity: 20,
-    isChecked: false
+    isChecked: true
   },
   {
     itemNumber: "5462411",
