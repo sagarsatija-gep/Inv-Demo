@@ -16,7 +16,7 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
 
   constructor(public modalService: NgbModal, private popup: PopUpService, private route: Router) { }
   open() {
-    const modalRef = this.modalService.open(NgbdModalContent2, { size: 'lg' });
+    const modalRef = this.modalService.open(NgbdModalContentCreatePackage, { size: 'lg' });
     modalRef.componentInstance.name = 'World';
   }
 
@@ -44,7 +44,7 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
   widgetData = [
     {
       'HeaderData': {
-        name: 'Header Details',
+        name: 'Basic Details',
         isOpen: true,
         collapsible: true,
         data: {
@@ -53,8 +53,8 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
           data: [
             {
               type: 'text',
-              name: 'Document Name',
-              values: 'Stock Transfer Document',
+              name: 'Package Name',
+              values: 'Container 1',
             },
             {
               type: 'text',
@@ -110,10 +110,10 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
 }
 @Component({
   selector: 'ngbd-modal-content',
-  templateUrl: 'create-package-popup.component.html',
+  templateUrl: 'create-package-popup.html',
   styleUrls: ['./create-package.component.css']
 })
-export class NgbdModalContent2 implements OnInit {
+export class NgbdModalContentCreatePackage implements OnInit {
   @Input() name;
 
   isErroPopUp: boolean;

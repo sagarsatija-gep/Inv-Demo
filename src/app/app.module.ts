@@ -52,7 +52,7 @@ import { AsnGrComponent } from './asn-gr/asn-gr.component';
 import { PoGoodsReceiptComponent } from './po-goods-receipt/po-goods-receipt.component';
 import { PopupComponent } from './popup/popup.component';
 import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.component';
-import { CreatePackageComponent } from './create-package/create-package.component';
+import { CreatePackageComponent, NgbdModalContentCreatePackage } from './create-package/create-package.component';
 
 @NgModule({
   declarations: [
@@ -90,7 +90,8 @@ import { CreatePackageComponent } from './create-package/create-package.componen
     AsnGrComponent,
     OcrGrCreationComponent,
     CreatePackageComponent,
-    ExternalStockTransfer
+    ExternalStockTransfer,
+    NgbdModalContentCreatePackage
   ],
   imports: [
     CommonModule,
@@ -118,6 +119,6 @@ import { CreatePackageComponent } from './create-package/create-package.componen
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService],
   bootstrap: [AppComponent],
-  entryComponents: [NgbdModalContent, NgbdModalContent1,NgbdModalContent2]
+  entryComponents: [NgbdModalContent, NgbdModalContent1, NgbdModalContent2, NgbdModalContentCreatePackage]
 })
 export class AppModule { }
