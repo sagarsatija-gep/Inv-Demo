@@ -75,15 +75,15 @@ export class ExternalStockTransfer implements OnInit {
                 name:'Plant',
                 values:'PMF 6002'
               },
-            //   {
-            //     type: 'dropdown',
-            //     name: 'Transfer Type',
-            //     value: [
-            //       'Within Plant Transfer',
-            //       'Between Plant Transfer'
-            //   ],
-            //     selectedValue:'Within Plant Transfer',
-            //   }
+              {
+                type: 'dropdown',
+                name: 'Transfer Type',
+                value: [
+                  'Within Plant Transfer',
+                  'Between Plant Transfer'
+              ],
+                selectedValue:'Between Plant Transfer',
+              }
               
             ]
           }
