@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuickLinksComponent implements OnInit {
 
-    quickLinks : Object[];
+  quickLinks: Object[];
 
   constructor() {
     this.quickLinks = [
@@ -23,11 +23,12 @@ export class QuickLinksComponent implements OnInit {
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink3.png",
         txt: "Internal Stock Transfer",
-        url:"/internalstocktransfer"
+        url: "/internalstocktransfer"
       },
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink4.png",
-        txt: "Create Package"
+        txt: "Create Package",
+        url: "/createPackage"
       },
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink5.png",
@@ -46,7 +47,7 @@ export class QuickLinksComponent implements OnInit {
         txt: "Manage Pick List"
       }
     ];
-   }
+  }
 
   ngOnInit() {
   }
