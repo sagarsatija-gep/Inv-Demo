@@ -137,9 +137,9 @@ export class NgbdModalContent2 implements OnInit {
     },
     {
       type:'text',
-      name: 'Line Items',
+      name: 'Select Line Items',
       values: '',
-      showBarcode: false
+      showBarcode: true
     },
     {
       type:'text',
@@ -157,7 +157,7 @@ export class NgbdModalContent2 implements OnInit {
       type:'text',
       name: 'To Bin',
       values: '​​',
-      showBarcode: false
+      showBarcode: true
     }
   ];
 
