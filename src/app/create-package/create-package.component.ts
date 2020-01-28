@@ -46,50 +46,92 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
       'HeaderData': {
         name: 'Basic Details',
         isOpen: true,
-        collapsible: true,
+        collapsible: false,
         data: {
-          componentName: 'details',
+          componentName: 'goodsIssueDetails',
           isSubDetails: false,
           data: [
             {
-              type: 'text',
-              name: 'Package Name',
-              values: 'Container 1',
+              editable: true,
+              data: [
+                {
+                  type: 'textBox',
+                  name: 'Package Name',
+                  value: 'Container 1',
+                  editable: true,
+                }
+              ]
             },
             {
-              type: 'text',
-              name: 'Document Number',
-              values: 'STK-545502',
-            }, {
-              type: 'text',
-              name: 'Created By',
-              values: 'Emily ross',
+              editable: true,
+              data: [
+                {
+                  type: 'dropdown',
+                  name: 'Type',
+                  value: [
+                    'Container',
+                    'Vessel',
+                    'Pallet'
+                  ],
+                  selectedValue: 'Container',
+                  editable: true,
+                }
+              ]
             },
             {
-              type: 'text',
-              name: 'Document Status',
-              values: 'Draft',
+              editable: true,
+              classes: 'bg-gray',
+              data: [
+                {
+                  type: 'textBox',
+                  name: 'Document Number',
+                  value: 'C-4403314',
+                  editable: true,
+                },
+                {
+                  type: 'barcode',
+                  name: 'BarCode',
+                  value: 'C-4403314',
+                  editable: true,
+                }
+              ]
             },
             {
-              type: 'text',
-              name: 'Company Code',
-              values: 'Chevron Refining',
+              editable: true,
+              classes: 'bg-gray',
+              data: [
+                {
+                  type: 'textBox',
+                  name: 'Plant Code',
+                  value: 'PMF - 6002',
+                  editable: true,
+                }
+              ]
             },
             {
-              type: 'textbox',
-              name: 'Plant',
-              values: 'PMF 6002'
+              editable: true,
+              classes: 'bg-gray',
+              data: [
+                {
+                  type: 'textBox',
+                  name: 'Storage Location',
+                  value: '6002',
+                  editable: true,
+                }
+              ]
             },
             {
-              type: 'dropdown',
-              name: 'Transfer Type',
-              value: [
-                'Within Plant Transfer',
-                'Between Plant Transfer'
-              ],
-              selectedValue: 'Within Plant Transfer',
+              editable: true,
+              classes: 'bg-gray',
+              data: [
+                {
+                  type: 'textBox',
+                  name: 'Storage Bin',
+                  value: 'C03 - 06- 2- 2',
+                  editable: true,
+                }
+              ]
             }
-
           ]
         }
       }
@@ -168,5 +210,3 @@ export class NgbdModalContentCreatePackage implements OnInit {
   }
 
 }
-
-
