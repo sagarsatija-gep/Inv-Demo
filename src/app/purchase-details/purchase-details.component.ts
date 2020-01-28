@@ -404,7 +404,7 @@ export class PurchaseDetailsComponent implements OnInit {
             {
               type: 'text',
               name: 'Ship To Address',
-              values: 'PMF Location 2219 W Park Ave, Gray, LA 70359 ',
+              values: '2219 W Park Ave, Gray, LA 70359 ',
               classes: 'col-sm-4'
             }
           ]

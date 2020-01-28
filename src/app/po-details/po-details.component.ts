@@ -49,7 +49,7 @@ export class PoDetailsComponent implements OnInit {
             {
               type:'text',
               name: 'Original Issue Date',
-              values: '03/23/2019',
+              values: '1/20/2020',
             }
           ]
         }
@@ -606,7 +606,7 @@ export class PoDetailsComponent implements OnInit {
             {
               type:'textbox',
               name: 'Ship To Location',
-              values: 'Westborough',
+              values: 'Chevron - PMF Location',
             }
           ]
         }

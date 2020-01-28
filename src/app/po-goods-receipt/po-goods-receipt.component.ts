@@ -81,41 +81,44 @@ export class PoGoodsReceiptComponent implements OnInit {
                   {
                     type: 'text',
                     name: 'UOM',
-                    colSize: '100px'
+                    colSize: '100px',
+
                   },
                   {
                     type: 'text',
                     name: 'Received Quantity',
-                    colSize: '100px'
+                    colSize: '100px',
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Accepted Quantity',
                     colSize: '100px',
-                    classes: ''
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Storage Location',
-                    colSize: '100px'
+                    colSize: '100px',
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Storage Bin',
                     colSize: '100px',
-                    classes: ''
+
                   },
                   {
                     type: 'text',
                     name: 'Goods Receipent',
                     colSize: '100px',
-                    classes: ''
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Unloading Point',
                     colSize: '100px',
-                    classes: ''
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
@@ -139,13 +142,13 @@ export class PoGoodsReceiptComponent implements OnInit {
                     type: 'text',
                     name: 'Storage Conditions',
                     colSize: '100px',
-                    classes: ''
+                    classes: 'text-left'
                   },
                   {
                     type: 'text',
                     name: 'Attachments',
                     colSize: '100px',
-                    classes: ''
+                    classes: 'text-left'
                   }
                 ],
                 values: [
@@ -160,12 +163,12 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'Bracket Assembly',
+                      value: '138-7576:Bracket Assembly',
                       tdClasses: 'text-left'
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'textbox',
@@ -190,16 +193,18 @@ export class PoGoodsReceiptComponent implements OnInit {
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
                         'C02 - 08- 2- 2',
-                        'C02 - 08- 2- 1'
+                        'C03 - 06- 2- 2',
+                        'S02 - 03- 2- 4',
+                        'C02 - 08- 2- 4'
                       ],
-                      selectedValue: 'C02 - 08- 2- 2'
+                      selectedValue: 'C02 - 08- 2- 2',
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
                     },
                     // {
@@ -238,7 +243,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                       selectedValue: 'NO'
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
                     },
                     {
@@ -254,25 +259,25 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '2063777',
+                      value: '1010151',
                     },
                     {
                       type: 'text',
-                      value: 'Bracket Assembly',
+                      value: 'Milwaukee Electric Tool 48-20-5030',
                       tdClasses: 'text-left'
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'textbox',
-                      value: '10',
+                      value: '50',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
-                      value: '10',
+                      value: '50',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
@@ -280,15 +285,22 @@ export class PoGoodsReceiptComponent implements OnInit {
                       value: 'PMF - 6002',
                     },
                     {
-                      type: 'text',
-                      value: 'C02 - 08- 2- 2',
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'C02 - 08- 2- 2',
+                        'C03 - 06- 2- 2',
+                        'S02 - 03- 2- 4',
+                        'C02 - 08- 2- 4'
+                      ],
+                      selectedValue: 'C03 - 06- 2- 2',
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
                     },
                     {
@@ -319,7 +331,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                       selectedValue: 'NO'
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
                     },
                     {
@@ -335,41 +347,48 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '2063777',
+                      value: '2030539',
                     },
                     {
                       type: 'text',
-                      value: 'Bracket Assembly',
+                      value: 'Morse Cutting Tools 82062',
                       tdClasses: 'text-left'
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'textbox',
-                      value: '10',
+                      value: '100',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
-                      value: '10',
+                      value: '100',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'text',
                       value: 'PMF - 6002',
+                    }
+                    , {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'C02 - 08- 2- 2',
+                        'C03 - 06- 2- 2',
+                        'S02 - 03- 2- 4',
+                        'C02 - 08- 2- 4'
+                      ],
+                      selectedValue: 'S02 - 03- 2- 4',
                     },
                     {
-                      type: 'text',
-                      value: 'C02 - 08- 2- 2',
-                    },
-                    {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
                     },
                     {
@@ -400,7 +419,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                       selectedValue: 'NO'
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
                     },
                     {
@@ -416,25 +435,25 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '2063777',
+                      value: '2044808',
                     },
                     {
                       type: 'text',
-                      value: 'Bracket Assembly',
+                      value: 'Dewalt DW4701- Saw Blade',
                       tdClasses: 'text-left'
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Piece',
                     },
                     {
                       type: 'textbox',
-                      value: '10',
+                      value: '80',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
-                      value: '10',
+                      value: '80',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
@@ -442,15 +461,22 @@ export class PoGoodsReceiptComponent implements OnInit {
                       value: 'PMF - 6002',
                     },
                     {
-                      type: 'text',
-                      value: 'C02 - 08- 2- 2',
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'C02 - 08- 2- 2',
+                        'C03 - 06- 2- 2',
+                        'S02 - 03- 2- 4',
+                        'C02 - 08- 2- 4'
+                      ],
+                      selectedValue: 'S02 - 03- 2- 4',
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
                     },
                     {
@@ -481,7 +507,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                       selectedValue: 'NO'
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
                     },
                     {
@@ -568,7 +594,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
@@ -609,11 +635,11 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
-                      value: '',
+                      value: '10',
                     },
                     {
                       type: 'textbox',
@@ -650,11 +676,11 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
-                      value: '',
+                      value: '10',
                     },
                     {
                       type: 'textbox',
@@ -691,11 +717,11 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'EA',
+                      value: 'Each',
                     },
                     {
                       type: 'text',
-                      value: '',
+                      value: '10',
                     },
                     {
                       type: 'textbox',
@@ -712,7 +738,253 @@ export class PoGoodsReceiptComponent implements OnInit {
                       value: '',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     }
-                  ]
+                  ],
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: '5',
+                    },
+                    {
+                      type: 'text',
+                      value: '2063777',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Bracket Assembly',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Each',
+                    },
+                    {
+                      type: 'text',
+                      value: '10',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    }
+                  ],
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: '6',
+                    },
+                    {
+                      type: 'text',
+                      value: '2063777',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Bracket Assembly',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Each',
+                    },
+                    {
+                      type: 'text',
+                      value: '10',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    }
+                  ],
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: '7',
+                    },
+                    {
+                      type: 'text',
+                      value: '2063777',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Bracket Assembly',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Each',
+                    },
+                    {
+                      type: 'text',
+                      value: '10',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    }
+                  ],
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: '8',
+                    },
+                    {
+                      type: 'text',
+                      value: '2063777',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Bracket Assembly',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Each',
+                    },
+                    {
+                      type: 'text',
+                      value: '10',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    }
+                  ],
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: '9',
+                    },
+                    {
+                      type: 'text',
+                      value: '2063777',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Bracket Assembly',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Each',
+                    },
+                    {
+                      type: 'text',
+                      value: '10',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    }
+                  ],
+                  [
+                    {
+                      type: 'checkbox',
+                      value: 'false',
+                    },
+                    {
+                      type: 'text',
+                      value: '10',
+                    },
+                    {
+                      type: 'text',
+                      value: '2063777',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Bracket Assembly',
+                    },
+                    {
+                      type: 'text',
+                      value: 'Each',
+                    },
+                    {
+                      type: 'text',
+                      value: '10',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    }
+                  ],
                 ]
               }
 

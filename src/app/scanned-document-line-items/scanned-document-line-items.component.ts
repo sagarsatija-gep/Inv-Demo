@@ -7,36 +7,41 @@ interface LineItem {
   uom: string;
   poQuantity: number;
   receivedQuantity: number;
+  isChecked: boolean;
 }
 
 const LINEITEMS: LineItem[] = [
   {
-    itemNumber: "2063777",
+    itemNumber: "3420112",
     description: "138-7576: BRACKET ASSEMBLY",
     uom: "Each",
     poQuantity: 77,
-    receivedQuantity: 20
+    receivedQuantity: 20,
+    isChecked: false
   },
   {
-    itemNumber: "2030539",
+    itemNumber: "5462411",
     description: "Morse Cutting Tools 82062",
     uom: "Each",
     poQuantity: 200,
-    receivedQuantity: 50
+    receivedQuantity: 50,
+    isChecked: true
   },
   {
     itemNumber: "5000206",
     description: "Spocket & Gear",
     uom: "Each",
     poQuantity: 20,
-    receivedQuantity: 20
+    receivedQuantity: 20,
+    isChecked: false
   },
   {
     itemNumber: "2030473",
     description: "Gear Air Moter",
     uom: "Each",
     poQuantity: 20,
-    receivedQuantity: 20
+    receivedQuantity: 20,
+    isChecked: false
   }
 ];
 

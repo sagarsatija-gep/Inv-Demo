@@ -1,6 +1,7 @@
 import { FormWidget } from './../shared/form-widget/form-widget.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppComponent } from './app.component';
 import { QuickLinksComponent } from './quick-links/quick-links.component';
@@ -88,6 +89,7 @@ import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.compon
     OcrGrCreationComponent
   ],
   imports: [
+    CommonModule,
     BrowserModule,
     FormWidget,
     AppRoutingModule,
