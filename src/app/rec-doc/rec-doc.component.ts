@@ -14,12 +14,12 @@ const DOCUMENTS: Document[] = [
     lastAccessed: "11/06/2019 7:03 PM"
   },
   {
-    docName: "Receipt# 001005463567",
+    docName: "Goods Issue# 001005463567",
     createdDate: "11/05/2019",
     lastAccessed: "11/06/2019 7:02 PM"
   },
   {
-    docName: "Receipt# 001005463234",
+    docName: "Stock Transfer# 001005463234",
     createdDate: "11/04/2019",
     lastAccessed: "11/06/2019 7:02 PM"
   },
@@ -29,17 +29,17 @@ const DOCUMENTS: Document[] = [
     lastAccessed: "11/06/2019 7:02 PM"
   },
   {
-    docName: "Receipt# 001005463675",
+    docName: "Goods Issue# 001005463675",
     createdDate: "11/02/2019",
     lastAccessed: "11/06/2019 7:01 PM"
   },
   {
-    docName: "Receipt# 001005463897",
+    docName: "Goods Issue# 001005463897",
     createdDate: "11/01/2019",
     lastAccessed: "11/06/2019 7:01 PM"
   },
   {
-    docName: "Receipt# 001005465668",
+    docName: "Stock Transfer# 001005465668",
     createdDate: "11/12/2018",
     lastAccessed: "11/06/2019 7:01 PM"
   },
