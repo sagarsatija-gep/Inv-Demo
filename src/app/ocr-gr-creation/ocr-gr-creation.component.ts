@@ -25,22 +25,22 @@ export class OcrGrCreationComponent implements OnInit {
             {
               type: 'textbox',
               name: 'Receipt Name',
-              values: '',
+              values: 'Receipt 3'
             },
             {
               type: 'text',
               name: 'Receipt Number',
-              values: 'REC0000160',
+              values: 'REC0000160'
             },
             {
               type: 'text',
               name: 'PO Number',
-              values: '0060105362',
+              values: '0060105362'
             },
             {
               type: 'text',
               name: 'Supplier Name',
-              values: 'Motion Industries Inc',
+              values: 'Motion Industries Inc'
             }
           ]
         }
@@ -128,7 +128,7 @@ export class OcrGrCreationComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '20',
+                      value: '20'
                     },
                     {
                       type: 'dropdown',
@@ -145,7 +145,7 @@ export class OcrGrCreationComponent implements OnInit {
                     },
                     {
                       type: 'attachments',
-                      value: '',
+                      value: ''
                     }
                   ],
                   [
@@ -168,7 +168,7 @@ export class OcrGrCreationComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '50',
+                      value: '50'
                     },
                     {
                       type: 'dropdown',
@@ -185,7 +185,7 @@ export class OcrGrCreationComponent implements OnInit {
                     },
                     {
                       type: 'attachments',
-                      value: '',
+                      value: ''
                     }
                   ],
                 ]
@@ -199,51 +199,51 @@ export class OcrGrCreationComponent implements OnInit {
                   {
                     type: 'checkbox',
                     name: 'Line Select',
-                    styles: { 'width': '2%' },
+                    styles: { 'width': '2%' }
                   },
                   {
                     type: 'text',
                     name: 'Line Number',
                     colSize: '100px',
-                    classes: ' ',
+                    classes: ' '
                   },
                   {
                     type: 'text',
                     name: 'Item Number',
                     colSize: '100px',
-                    classes: ' ',
+                    classes: ' '
                   },
                   {
                     type: 'text',
                     name: 'Description',
                     colSize: '100px',
-                    classes: ' ',
+                    classes: ' '
                   },
                   {
                     type: 'text',
                     name: 'UOM',
                     colSize: '100px',
-                    classes: '',
+                    classes: ''
                   },
                   {
                     type: 'text',
                     name: 'Received Quantity',
-                    colSize: '100px',
+                    colSize: '100px'
                   },
                   {
                     type: 'text',
                     name: 'Serial Number',
-                    colSize: '100px',
+                    colSize: '100px'
                   },
                   {
                     type: 'text',
                     name: 'Manufacturer Name',
-                    colSize: '100px',
+                    colSize: '100px'
                   },
                   {
                     type: 'text',
                     name: 'Manufacturer Part Number',
-                    colSize: '100px',
+                    colSize: '100px'
                   }
                 ],
                 values: [
@@ -413,7 +413,6 @@ export class OcrGrCreationComponent implements OnInit {
                   ]
                 ]
               }
-
             }
           ]
         }
@@ -428,154 +427,72 @@ export class OcrGrCreationComponent implements OnInit {
           componentName: 'widgetTable',
           haveButton: false,
           data:
-            {
-            
-                tablerowClass: 'bg-white',
-                colConfig: [
-                  {
-                    type: 'checkbox',
-                    name: 'Reservation #',
-                    classes: 'text-left',
-                    // styles: {'width': '%'},
-                  },
-                  {
-                    type: 'text',
-                    name: 'Name',
-                    // colSize: '100px',
-                    classes: 'text-left',
-                    // styles: {'width': '8%'},
-                  },
-                  {
-                    type: 'text',
-                    name: 'Type',
-                    // colSize: '100px',
-                    classes: ' ',
-                    // styles: {'width': '8%'},
-                  },
-                  {
-                    type: 'text',
-                    name: 'Classification',
-                    colSize: '100px',
-                    // styles: {'background-color': 'rebeccapurple'},
-                    classes: 'text-left',
-                    // styles: {'width': '8%'},
-                  },
-                  {
-                    type: 'text',
-                    name: 'Added By',
-                    // colSize: '100px',
-                    // styles: {'background-color': 'rebeccapurple'},
-                    // classes: 'text-left',
-  
-                  },
-                  {
-                    type: 'text',
-                    name: 'File Size',
-                    colSize: '100px',
-                    // styles: {'width': '8%'},
-                  },
-                  // {
-                  //   type: 'text',
-                  //   name: 'Order Quantity',
-                  //   colSize: '100px',
-                  //   classes: 'text-right',
-                  //   // styles: {'width': '8%'},
-                  // },
-                  // {
-                  //   type: 'text',
-                  //   name: 'Open Quantity',
-                  //   colSize: '100px',
-                  //   classes: 'text-right',
-                  //   // styles: {'width': '8%'},
-                  // },
-                  // {
-                  //   type: 'text',
-                  //   name: 'Shipped Quantity',
-                  //   colSize: '100px',
-                  //   classes: 'text-right',
-                  //   // styles: {'width': '8%'},
-                  // },
-                  // {
-                  //   type: 'text',
-                  //   name: 'Promised Delivery Date',
-                  //   colSize: '100px',
-                  //   classes: 'text-left',
-                  //   // styles: {'width': '8%'},
-                  // },
-                  // {
-                  //   type: 'text',
-                  //   name: 'Is Final',
-                  //   colSize: '100px',
-                  //   styles: {'width': '8%'},
-                  // },
-                  // {
-                  //   type: 'text',
-                  //   name: 'Requested Date',
-                  //   colSize: '100px',
-                  //   // styles: {'width': '8%'},
-                  // }
-                ],
-                values: [
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                      tdClasses: 'text-left'
-                    },
-                    {
-                      type: 'hiperlink',
-                      value: 'Bill Of Lading.pdf',
-                      tdClasses: 'text-left'
-                    },
-                    {
-                      type: 'text',
-                      value: 'File',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Shipping Documents',
-                      tdClasses: 'text-left'
-                    },
-                    {
-                      type: 'text',
-                      value: 'Kim Powell',
-                    },
-                    {
-                      type: 'text',
-                      value: '20kb',
-                    },
-                    // {
-                    //   type: 'text',
-                    //   value: '77',
-                    //   tdClasses: 'text-right'
-                    // },
-                    // {
-                    //   type: 'text',
-                    //   value: '20',
-                    //   tdClasses: 'text-right'
-                    // },
-                    // {
-                    //   type: 'text',
-                    //   value: '25',
-                    //   tdClasses: 'text-right'
-                    //   // classes: 'input-small rounded-sm border-secondary text-right'
-                    // },
-                    // {
-                    //   type: 'text',
-                    //   value: '08/21/2019',
-                    //   tdClasses: 'text-left'
-                    // },
-                    // {
-                    //   type: 'toggle',
-                    //   value: true,
-                    // },
-                    // {
-                    //   type: 'text',
-                    //   value: '10/28/2019',
-                    // }
-                  ]
-                ]
+          {
+            tablerowClass: 'bg-white',
+            colConfig: [
+              {
+                type: 'checkbox',
+                name: 'Reservation #',
+                classes: 'text-left',
+              },
+              {
+                type: 'text',
+                name: 'Name',
+                classes: 'text-left',
+              },
+              {
+                type: 'text',
+                name: 'Type',
+                classes: ' ',
+              },
+              {
+                type: 'text',
+                name: 'Classification',
+                colSize: '100px',
+                classes: 'text-left',
+              },
+              {
+                type: 'text',
+                name: 'Added By',
+              },
+              {
+                type: 'text',
+                name: 'File Size',
+                colSize: '100px',
               }
+            ],
+            values: [
+              [
+                {
+                  type: 'checkbox',
+                  value: 'false',
+                  tdClasses: 'text-left'
+                },
+                {
+                  type: 'hiperlink',
+                  value: 'packingslip.pdf',
+                  tdClasses: 'text-left'
+                },
+                {
+                  type: 'text',
+                  value: 'File',
+                },
+                {
+                  type: 'text',
+                  value: 'Shipping Documents',
+                  tdClasses: 'text-left'
+                },
+                {
+                  type: 'text',
+                  value: 'Kim Powell',
+                },
+                {
+                  type: 'text',
+                  value: '20kb',
+                }
+              ]
+            ]
+          }
         }
       }
     }

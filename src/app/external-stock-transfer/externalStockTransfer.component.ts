@@ -1,3 +1,4 @@
+import { SuccessPopUp } from './../../shared/popUpComponent/successPopUp/successPopUP.component';
 import { NgbdModalContent2 } from './../internal-stock-transfer/internal-stock-transfer.component';
 import { Router } from '@angular/router';
 import { PopUpService } from './../../shared/form-widget/service/popUp.service';
@@ -29,8 +30,14 @@ export class ExternalStockTransfer implements OnInit {
     }
   
     isFinalizeClick() {
-        this.route.navigate(['/home']);
+        // this.route.navigate(['/home']);
+        this.successPopUp();
     }
+    successPopUp() {
+        const modalRef = this.modalService.open(SuccessPopUp, { size: 'lg' });
+        modalRef.componentInstance.name = 'World';
+        
+      }
   
     ngOnDestroy() {
       this.popUpSubscription.unsubscribe();

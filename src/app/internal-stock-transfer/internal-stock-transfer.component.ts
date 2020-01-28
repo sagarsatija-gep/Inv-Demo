@@ -40,7 +40,7 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
       this.open();
     } else {
       this.successPopUp();
-      this.route.navigate(['/home']);
+      // this.route.navigate(['/home']);
     }
   }
 

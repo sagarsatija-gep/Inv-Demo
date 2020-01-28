@@ -1,3 +1,5 @@
+import { SuccessPopUp } from './../../shared/popUpComponent/successPopUp/successPopUP.component';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
@@ -8,7 +10,7 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class PoGoodsReceiptComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalService: NgbModal) { }
 
   ngOnInit() {
   }
@@ -184,10 +186,6 @@ export class PoGoodsReceiptComponent implements OnInit {
                       type: 'text',
                       value: 'PMF - 6002',
                     },
-                    // {
-                    //   type: 'text',
-                    //   value: 'C02 - 08- 2- 2',
-                    // },
                     {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
@@ -207,31 +205,23 @@ export class PoGoodsReceiptComponent implements OnInit {
                       type: 'textbox',
                       value: '',
                     },
-                    // {
-                    //   type: 'dropdown',
-                    //   classes: 'rounded-sm border-secondary input-large',
-                    //   value: [
-                    //     'YES',
-                    //     'NO'
-                    //   ],
-                    //   selectedValue: 'YES'
-                    // },
-                    // {
-                    //   type: 'dropdown',
-                    //   classes: 'rounded-sm border-secondary input-large',
-                    //   value: [
-                    //     'YES',
-                    //     'NO'
-                    //   ],
-                    //   selectedValue: 'NO'
-                    // },
                     {
-                      type: 'text',
-                      value: 'YES',
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'YES'
                     },
                     {
-                      type: 'text',
-                      value: 'NO',
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
                     },
                     {
                       type: 'dropdown',
@@ -310,7 +300,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                         'YES',
                         'NO'
                       ],
-                      selectedValue: 'YES'
+                      selectedValue: 'NO'
                     },
                     {
                       type: 'dropdown',
@@ -398,25 +388,25 @@ export class PoGoodsReceiptComponent implements OnInit {
                         'YES',
                         'NO'
                       ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
                       selectedValue: 'YES'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
                     },
                     {
                       type: 'textbox',
@@ -486,7 +476,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                         'YES',
                         'NO'
                       ],
-                      selectedValue: 'YES'
+                      selectedValue: 'NO'
                     },
                     {
                       type: 'dropdown',
@@ -1005,5 +995,16 @@ export class PoGoodsReceiptComponent implements OnInit {
       }
     }
   ]
+
+  onFinalizeClick() {
+    this.successPopUp();
+  }
+
+  successPopUp() {
+    const modalRef = this.modalService.open(SuccessPopUp, { size: 'lg' });
+    modalRef.componentInstance.name = 'World';
+    
+  }
+
 
 }
