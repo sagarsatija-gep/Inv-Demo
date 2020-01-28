@@ -70,6 +70,11 @@ export class PopUpService {
             name: 'To BIN',
             colSize: '100px',
             // styles: {'width': '8%'},
+          },
+          {
+            type: 'text',
+            name: '',
+            // styles: {'width': '8%'},
           }
         ],
         values: [
@@ -122,6 +127,10 @@ export class PopUpService {
                 selectedValue:'N02-06-3-2',
             //   tdClasses: 'text-right'
               // classes: 'input-small rounded-sm border-secondary text-right'
+            },
+            {
+                type: 'delete',
+                value: '',
             },
             // {
             //   type: 'text',
@@ -310,6 +319,12 @@ export class PopUpService {
             name: 'To BIN',
             colSize: '100px',
             // styles: {'width': '8%'},
+          },
+          {
+            type: 'text',
+            name: '',
+            colSize: '100px',
+            // styles: {'width': '8%'},
           }
         ],
         values: [
@@ -351,6 +366,10 @@ export class PopUpService {
                     ],
                     selectedValue: 'N02-06-3-2',
                 },
+                {
+                    type: 'delete',
+                    value: '',
+                },
             ],
             [{
                     type: 'text',
@@ -389,6 +408,10 @@ export class PopUpService {
                         'N02-06-6-4'
                     ],
                     selectedValue: 'N02-06-3-2',
+                },
+                {
+                    type: 'delete',
+                    value: '',
                 },
             ],
             [{
@@ -429,6 +452,10 @@ export class PopUpService {
                     ],
                     selectedValue: 'N02-06-3-2',
                 },
+                {
+                    type: 'delete',
+                    value: '',
+                },
             ],
             [{
                     type: 'text',
@@ -467,6 +494,10 @@ export class PopUpService {
                         'N02-06-6-4'
                     ],
                     selectedValue: 'N02-06-3-2',
+                },
+                {
+                    type: 'delete',
+                    value: '',
                 },
             ],
             [{
@@ -507,7 +538,11 @@ export class PopUpService {
                     ],
                     selectedValue: 'N02-06-3-2',
                 },
-            ],
+                {
+                    type: 'delete',
+                    value: '',
+                },
+            ]
         
         ]
       }
