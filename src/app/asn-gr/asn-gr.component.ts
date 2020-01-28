@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { PopupComponent } from '../popup/popup.component';
 
 @Component({
   selector: 'app-asn-gr',
@@ -6,8 +8,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./asn-gr.component.css']
 })
 export class AsnGrComponent implements OnInit {
-
-  constructor() { }
+ 
+  constructor(public modalService: NgbModal) { }
+  open() {
+    const modalRef = this.modalService.open(PopupComponent);
+    modalRef.componentInstance.name = 'World';
+  }
 
   ngOnInit() {
   }
