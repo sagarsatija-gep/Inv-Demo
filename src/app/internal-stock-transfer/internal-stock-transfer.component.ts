@@ -103,6 +103,7 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
         name: 'Line Details',
         isOpen: true,
         collapsible: true,
+        popup: true,
         data: {
           componentName: 'Attachement',
           numberOfInput: 'one',
@@ -170,6 +171,10 @@ export class NgbdModalContent2 implements OnInit {
   showTable() {
     this.activeModal.close();
     this.popUpServices.showTable();
+  }
+
+  closePopup(){
+    this.activeModal.close();
   }
 
 }

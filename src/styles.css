@@ -18,3 +18,15 @@ body {
 select#formControlSelect {
   width: 145px !important;
 }
+
+input[type="text"] {
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #676767de;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: none;
+  border-bottom: 1.5px solid #0177d6;
+}

@@ -7,6 +7,7 @@ import { TryComponet } from './tryComponent/tryComponent';
 import { Component, OnInit, Input, ViewChild, ViewContainerRef, ComponentFactoryResolver } from "@angular/core";
 import { GoodsIssueDetails } from './goods-issue-details/goodsIssueDetails.component';
 import { ManageGoodsIssue } from './manage-goods-issue/manageGoodsIssue.component';
+import { PopUpService } from '../service/popUp.service';
 
 
 const  components = {
@@ -29,11 +30,15 @@ export class WidgetHeaderComponent implements OnInit {
 
     togal:boolean;
     component;
-    constructor(private cfr: ComponentFactoryResolver){}
+    constructor(private cfr: ComponentFactoryResolver, private poupservice: PopUpService){}
     
     ngOnInit(): void {
         this.togal = this.headerData.isOpen;
         this.createComponent();
+    }
+
+    openPopup() {
+        this.poupservice.internalStockPopupOpen();
     }
 
     createComponent() {
