@@ -19,8 +19,8 @@ import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.compon
 import { CreatePackageComponent } from './create-package/create-package.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'packingslipcamera', component: PackingSlipCameraComponent },
   { path: 'manageReservations', component: ManageReservationsComponent },
   { path: 'purchaseDetails', component: PurchaseDetailsComponent },

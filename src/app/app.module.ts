@@ -1,3 +1,4 @@
+import { SuccessPopUp } from './../shared/popUpComponent/successPopUp/successPopUP.component';
 import { ExternalStockTransfer } from './external-stock-transfer/externalStockTransfer.component';
 import { FormWidget } from './../shared/form-widget/form-widget.module';
 import { BrowserModule } from '@angular/platform-browser';
@@ -91,7 +92,9 @@ import { CreatePackageComponent, NgbdModalContentCreatePackage } from './create-
     OcrGrCreationComponent,
     CreatePackageComponent,
     ExternalStockTransfer,
-    NgbdModalContentCreatePackage
+    NgbdModalContentCreatePackage,
+    ExternalStockTransfer,
+    SuccessPopUp
   ],
   imports: [
     CommonModule,
@@ -119,6 +122,6 @@ import { CreatePackageComponent, NgbdModalContentCreatePackage } from './create-
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService,NgbActiveModal],
   bootstrap: [AppComponent],
-  entryComponents: [NgbdModalContent, NgbdModalContent1, NgbdModalContent2, NgbdModalContentCreatePackage]
+  entryComponents: [NgbdModalContent, NgbdModalContent1,NgbdModalContent2, SuccessPopUp]
 })
 export class AppModule { }

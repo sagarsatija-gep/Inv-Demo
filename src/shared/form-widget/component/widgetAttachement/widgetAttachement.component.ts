@@ -48,8 +48,7 @@ export class WidgetAttachemant implements OnInit, OnDestroy {
   }
 
   upload() {
-    debugger;
-    console.log("uploaded")
+    this.loadComponent.clear();
     this.data.numberOfInput = "f";
     const componentFactory = this.cfr.resolveComponentFactory(WidgetTable);
     this.component = this.loadComponent.createComponent(componentFactory);

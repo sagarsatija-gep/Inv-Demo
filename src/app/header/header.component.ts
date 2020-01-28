@@ -32,6 +32,7 @@ export class HeaderComponent implements OnInit {
   click() {
     this.opened = !this.opened;
   }
+
   constructor(private toggleService: ToggleService, public modalService: NgbModal, public barcode: BarcodeValueService, private route: Router) {}
 
   ngOnInit() {
