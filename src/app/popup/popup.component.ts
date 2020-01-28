@@ -1,7 +1,7 @@
 import { Component, OnInit,Input } from '@angular/core';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 @Component({
-  selector: 'ngbd-modal-content',
+  selector: 'pop-up',
   template: `
     <div class="modal-header">
       <h4 class="modal-title">Save As</h4>
