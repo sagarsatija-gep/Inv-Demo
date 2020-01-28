@@ -184,10 +184,6 @@ export class PoGoodsReceiptComponent implements OnInit {
                       type: 'text',
                       value: 'PMF - 6002',
                     },
-                    // {
-                    //   type: 'text',
-                    //   value: 'C02 - 08- 2- 2',
-                    // },
                     {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
@@ -207,31 +203,23 @@ export class PoGoodsReceiptComponent implements OnInit {
                       type: 'textbox',
                       value: '',
                     },
-                    // {
-                    //   type: 'dropdown',
-                    //   classes: 'rounded-sm border-secondary input-large',
-                    //   value: [
-                    //     'YES',
-                    //     'NO'
-                    //   ],
-                    //   selectedValue: 'YES'
-                    // },
-                    // {
-                    //   type: 'dropdown',
-                    //   classes: 'rounded-sm border-secondary input-large',
-                    //   value: [
-                    //     'YES',
-                    //     'NO'
-                    //   ],
-                    //   selectedValue: 'NO'
-                    // },
                     {
-                      type: 'text',
-                      value: 'YES',
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'YES'
                     },
                     {
-                      type: 'text',
-                      value: 'NO',
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
                     },
                     {
                       type: 'dropdown',
@@ -310,7 +298,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                         'YES',
                         'NO'
                       ],
-                      selectedValue: 'YES'
+                      selectedValue: 'NO'
                     },
                     {
                       type: 'dropdown',
@@ -398,25 +386,25 @@ export class PoGoodsReceiptComponent implements OnInit {
                         'YES',
                         'NO'
                       ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
                       selectedValue: 'YES'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
                     },
                     {
                       type: 'textbox',
@@ -486,7 +474,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                         'YES',
                         'NO'
                       ],
-                      selectedValue: 'YES'
+                      selectedValue: 'NO'
                     },
                     {
                       type: 'dropdown',

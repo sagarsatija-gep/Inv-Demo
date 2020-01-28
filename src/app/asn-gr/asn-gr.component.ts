@@ -8,7 +8,7 @@ import { PopupComponent } from '../popup/popup.component';
   styleUrls: ['./asn-gr.component.css']
 })
 export class AsnGrComponent implements OnInit {
- 
+
   constructor(public modalService: NgbModal) { }
   open() {
     const modalRef = this.modalService.open(PopupComponent);
@@ -29,15 +29,21 @@ export class AsnGrComponent implements OnInit {
           data: [
             {
               type: 'textbox',
+              name: 'Receipt Name',
+              values: 'Receipt for 6001068586806',
+            },
+            {
+              type: 'text',
+              name: 'Receipt Number',
+              values: '2019000172',
+            },
+            {
+              type: 'text',
               name: 'ASN Number',
               values: '6001068586806',
             },
             {
-              type: 'textbox',
-              name: 'Supplier Shipment Number',
-              values: '2183',
-            }, {
-              type: 'textbox',
+              type: 'text',
               name: 'Order Number',
               values: '8585002483034',
             },
@@ -45,6 +51,11 @@ export class AsnGrComponent implements OnInit {
               type: 'text',
               name: 'Supplier Name',
               values: 'Motion Industries Inc',
+            },
+            {
+              type: 'text',
+              name: 'Status',
+              values: 'Draft',
             }
           ]
         }
@@ -151,13 +162,13 @@ export class AsnGrComponent implements OnInit {
                   },
                   {
                     type: 'text',
-                    name: 'Attachments',
+                    name: 'QA Result',
                     colSize: '100px',
                     classes: 'text-left'
                   },
                   {
                     type: 'text',
-                    name: 'QA Result',
+                    name: 'Attachments',
                     colSize: '100px',
                     classes: 'text-left'
                   }
@@ -215,25 +226,35 @@ export class AsnGrComponent implements OnInit {
                       value: '',
                     },
                     {
-                      type: 'text',
-                      value: 'YES'
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO',
+                      ],
+                      selectedValue: 'YES',
                     },
                     {
-                      type: 'text',
-                      value: 'NO'
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO',
+                      ],
+                      selectedValue: 'NO',
                     },
                     {
-                      type: 'text',
-                      value: 'NO'
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO',
+                      ],
+                      selectedValue: 'NO',
                     },
                     {
                       type: 'textbox',
                       value: '',
-                    },
-                    {
-                      type: 'button',
-                      value: 'UPLOAD',
-                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     },
                     {
                       type: 'dropdown',
@@ -244,6 +265,11 @@ export class AsnGrComponent implements OnInit {
                       ],
                       selectedValue: 'Pass',
                     },
+                    {
+                      type: 'button',
+                      value: 'UPLOAD',
+                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
+                    }
                   ],
                   [
                     {
@@ -297,25 +323,35 @@ export class AsnGrComponent implements OnInit {
                       value: '',
                     },
                     {
-                      type: 'text',
-                      value: 'NO'
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO',
+                      ],
+                      selectedValue: 'NO',
                     },
                     {
-                      type: 'text',
-                      value: 'NO'
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO',
+                      ],
+                      selectedValue: 'NO',
                     },
                     {
-                      type: 'text',
-                      value: 'NO'
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO',
+                      ],
+                      selectedValue: 'NO',
                     },
                     {
                       type: 'textbox',
                       value: 'Repairable',
-                    },
-                    {
-                      type: 'button',
-                      value: 'UPLOAD',
-                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     },
                     {
                       type: 'dropdown',
@@ -326,6 +362,11 @@ export class AsnGrComponent implements OnInit {
                       ],
                       selectedValue: 'Pass',
                     },
+                    {
+                      type: 'button',
+                      value: 'UPLOAD',
+                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
+                    }
                   ],
                   [
                     {
@@ -379,25 +420,35 @@ export class AsnGrComponent implements OnInit {
                       value: '',
                     },
                     {
-                      type: 'text',
-                      value: 'NO'
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO',
+                      ],
+                      selectedValue: 'NO',
                     },
                     {
-                      type: 'text',
-                      value: 'NO'
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO',
+                      ],
+                      selectedValue: 'NO',
                     },
                     {
-                      type: 'text',
-                      value: 'YES'
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO',
+                      ],
+                      selectedValue: 'YES',
                     },
                     {
                       type: 'textbox',
                       value: '',
-                    },
-                    {
-                      type: 'button',
-                      value: 'UPLOAD',
-                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     },
                     {
                       type: 'dropdown',
@@ -408,6 +459,11 @@ export class AsnGrComponent implements OnInit {
                       ],
                       selectedValue: 'Pass',
                     },
+                    {
+                      type: 'button',
+                      value: 'UPLOAD',
+                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
+                    }
                   ],
                   [
                     {
@@ -461,25 +517,35 @@ export class AsnGrComponent implements OnInit {
                       value: '',
                     },
                     {
-                      type: 'text',
-                      value: 'NO'
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO',
+                      ],
+                      selectedValue: 'NO',
                     },
                     {
-                      type: 'text',
-                      value: 'NO'
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO',
+                      ],
+                      selectedValue: 'NO',
                     },
                     {
-                      type: 'text',
-                      value: 'NO'
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO',
+                      ],
+                      selectedValue: 'NO',
                     },
                     {
                       type: 'textbox',
                       value: '',
-                    },
-                    {
-                      type: 'button',
-                      value: 'UPLOAD',
-                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     },
                     {
                       type: 'dropdown',
@@ -490,6 +556,11 @@ export class AsnGrComponent implements OnInit {
                       ],
                       selectedValue: 'Pass',
                     },
+                    {
+                      type: 'button',
+                      value: 'UPLOAD',
+                      styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
+                    }
                   ]
                 ]
               }
@@ -566,7 +637,7 @@ export class AsnGrComponent implements OnInit {
                       type: 'text',
                       value: 'Each',
                     },
-                    
+
                     {
                       type: 'textbox',
                       value: '',
@@ -604,7 +675,7 @@ export class AsnGrComponent implements OnInit {
                       type: 'text',
                       value: 'Each',
                     },
-                    
+
                     {
                       type: 'textbox',
                       value: '',
@@ -642,7 +713,7 @@ export class AsnGrComponent implements OnInit {
                       type: 'text',
                       value: 'Each',
                     },
-                    
+
                     {
                       type: 'textbox',
                       value: '',
@@ -680,7 +751,7 @@ export class AsnGrComponent implements OnInit {
                       type: 'text',
                       value: 'Each',
                     },
-                    
+
                     {
                       type: 'textbox',
                       value: '',
@@ -718,7 +789,7 @@ export class AsnGrComponent implements OnInit {
                       type: 'text',
                       value: 'Each',
                     },
-                    
+
                     {
                       type: 'textbox',
                       value: '',
@@ -756,7 +827,7 @@ export class AsnGrComponent implements OnInit {
                       type: 'text',
                       value: 'Each',
                     },
-                    
+
                     {
                       type: 'textbox',
                       value: '',
@@ -794,7 +865,7 @@ export class AsnGrComponent implements OnInit {
                       type: 'text',
                       value: 'Each',
                     },
-                    
+
                     {
                       type: 'textbox',
                       value: '',
@@ -832,7 +903,7 @@ export class AsnGrComponent implements OnInit {
                       type: 'text',
                       value: 'Each',
                     },
-                    
+
                     {
                       type: 'textbox',
                       value: '',
@@ -870,7 +941,7 @@ export class AsnGrComponent implements OnInit {
                       type: 'text',
                       value: 'Each',
                     },
-                    
+
                     {
                       type: 'textbox',
                       value: '',
@@ -908,7 +979,7 @@ export class AsnGrComponent implements OnInit {
                       type: 'text',
                       value: 'Each',
                     },
-                    
+
                     {
                       type: 'textbox',
                       value: '',

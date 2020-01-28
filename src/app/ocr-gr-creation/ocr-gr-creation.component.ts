@@ -524,7 +524,7 @@ export class OcrGrCreationComponent implements OnInit {
                     },
                     {
                       type: 'hiperlink',
-                      value: 'Bill Of Lading.pdf',
+                      value: 'packingslip.pdf',
                       tdClasses: 'text-left'
                     },
                     {
