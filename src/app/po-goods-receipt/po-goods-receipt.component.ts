@@ -181,9 +181,18 @@ export class PoGoodsReceiptComponent implements OnInit {
                       type: 'text',
                       value: 'PMF - 6002',
                     },
+                    // {
+                    //   type: 'text',
+                    //   value: 'C02 - 08- 2- 2',
+                    // },
                     {
-                      type: 'text',
-                      value: 'C02 - 08- 2- 2',
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'C02 - 08- 2- 2',
+                        'C02 - 08- 2- 1'
+                      ],
+                      selectedValue: 'C02 - 08- 2- 2'
                     },
                     {
                       type: 'text',
@@ -193,23 +202,31 @@ export class PoGoodsReceiptComponent implements OnInit {
                       type: 'text',
                       value: '',
                     },
+                    // {
+                    //   type: 'dropdown',
+                    //   classes: 'rounded-sm border-secondary input-large',
+                    //   value: [
+                    //     'YES',
+                    //     'NO'
+                    //   ],
+                    //   selectedValue: 'YES'
+                    // },
+                    // {
+                    //   type: 'dropdown',
+                    //   classes: 'rounded-sm border-secondary input-large',
+                    //   value: [
+                    //     'YES',
+                    //     'NO'
+                    //   ],
+                    //   selectedValue: 'NO'
+                    // },
                     {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'YES'
+                      type: 'text',
+                      value: 'YES',
                     },
                     {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
+                      type: 'text',
+                      value: 'NO',
                     },
                     {
                       type: 'dropdown',

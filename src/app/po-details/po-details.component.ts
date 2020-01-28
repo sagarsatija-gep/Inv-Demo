@@ -73,48 +73,52 @@ export class PoDetailsComponent implements OnInit {
                   {
                     type: 'text',
                     name: 'Line Number',
-                    colSize: '100px',
-                    classes: ' ',
-                  },
+                   },
                   {
                     type: 'text',
                     name: 'Item Number',
-                    colSize: '100px',
-                    classes: ' ',
+                    // classes: ' ',
                   },
                   {
                     type: 'text',
                     name: 'Line Description',
-                    colSize: '100px',
-                    classes: 'text-left',
                   },
                   {
                     type: 'text',
                     name: 'Order Quantity',
-                    colSize: '100px',
                   },
                   {
                     type: 'text',
                     name: 'UOM',
-                    colSize: '100px',
                   },
                   {
                     type: 'text',
                     name: 'Unit Price',
-                    colSize: '100px',
-                    classes: 'text-right',
                   },
                   {
                     type: 'text',
                     name: 'Need By Date',
-                    colSize: '100px',
-                    classes: 'text-right',
                   },
                   {
                     type: 'text',
-                    name: 'Line Total',
-                    colSize: '100px',
-                    classes: 'text-right',
+                    name: 'Line Total'},
+                  {
+                    type: 'text',
+                    name: 'Supplier Item Number'},
+                  {
+                    type: 'text',
+                    name: 'Shipping Charges'},
+                  {
+                    type: 'text',
+                    name: 'Tax Rate'
+                  },
+                  {
+                    type: 'text',
+                    name: 'Tax Amount'                    
+                  },
+                  {
+                    type: 'text',
+                    name: 'Line Value'                    
                   }
                 ],
                 values: [
@@ -129,8 +133,7 @@ export class PoDetailsComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '138-7576:BRACKET ASSEMBLY',
-                      tdClasses: 'text-left'
+                      value: '138-7576:BRACKET ASSEMBLY'
                     },
                     {
                       type: 'text',
@@ -142,18 +145,35 @@ export class PoDetailsComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '199.99',
-                      tdClasses: 'text-right'
+                      value: '199.99'
                     },
                     {
                       type: 'text',
-                      value: '8/20/2019',
-                      tdClasses: 'text-right'
+                      value: '8/20/2019'
                     },
                     {
                       type: 'text',
-                      value: '16661.97',
-                      tdClasses: 'text-right'
+                      value: '16661.97'
+                    },
+                    {
+                      type: 'text',
+                      value: '800520'
+                    },
+                    {
+                      type: 'text',
+                      value: '0'
+                    },
+                    {
+                      type: 'text',
+                      value: '8.2%'
+                    },
+                    {
+                      type: 'text',
+                      value: '1262.74'
+                    },
+                    {
+                      type: 'text',
+                      value: '15399.23'
                     }
                   ],
                   [
@@ -180,18 +200,35 @@ export class PoDetailsComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '119.00',
-                      tdClasses: 'text-right'
+                      value: '119.00'
                     },
                     {
                       type: 'text',
-                      value: '8/20/2019',
-                      tdClasses: 'text-right'
+                      value: '8/20/2019'
                     },
                     {
                       type: 'text',
-                      value: '16738.54',
-                      tdClasses: 'text-right'
+                      value: '16738.54'
+                    },
+                    {
+                      type: 'text',
+                      value: '801520',
+                    },
+                    {
+                      type: 'text',
+                      value: '0',
+                    },
+                    {
+                      type: 'text',
+                      value: '8.2%',
+                    },
+                    {
+                      type: 'text',
+                      value: '1268.54',
+                    },
+                    {
+                      type: 'text',
+                      value: '15470.00',
                     }
                   ],
                   [
@@ -205,8 +242,7 @@ export class PoDetailsComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'Morse Cutting Tools 82062',
-                      tdClasses: 'text-left'
+                      value: 'Morse Cutting Tools 82062'
                     },
                     {
                       type: 'text',
@@ -218,18 +254,35 @@ export class PoDetailsComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '89.99',
-                      tdClasses: 'text-right'
+                      value: '89.99'
                     },
                     {
                       type: 'text',
-                      value: '8/20/2019',
-                      tdClasses: 'text-right'
+                      value: '8/20/2019'
                     },
                     {
                       type: 'text',
-                      value: '19473.84',
-                      tdClasses: 'text-right'
+                      value: '19473.84'
+                    },
+                    {
+                      type: 'text',
+                      value: '850520',
+                    },
+                    {
+                      type: 'text',
+                      value: '0',
+                    },
+                    {
+                      type: 'text',
+                      value: '8.2%',
+                    },
+                    {
+                      type: 'text',
+                      value: '1475.84',
+                    },
+                    {
+                      type: 'text',
+                      value: '17998.00',
                     }
                   ],
                   [
@@ -243,8 +296,7 @@ export class PoDetailsComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'Dewalt DW4701- Saw Blade',
-                      tdClasses: 'text-left'
+                      value: 'Dewalt DW4701- Saw Blade'
                     },
                     {
                       type: 'text',
@@ -256,18 +308,35 @@ export class PoDetailsComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '72.00',
-                      tdClasses: 'text-right'
+                      value: '72.00'
                     },
                     {
                       type: 'text',
-                      value: '8/20/2019',
-                      tdClasses: 'text-right'
+                      value: '8/20/2019'
                     },
                     {
                       type: 'text',
-                      value: '6232.32',
-                      tdClasses: 'text-right'
+                      value: '6232.32'
+                    },
+                    {
+                      type: 'text',
+                      value: '800720',
+                    },
+                    {
+                      type: 'text',
+                      value: '0',
+                    },
+                    {
+                      type: 'text',
+                      value: '8.2%',
+                    },
+                    {
+                      type: 'text',
+                      value: '472.32',
+                    },
+                    {
+                      type: 'text',
+                      value: '5760.00',
                     }
                   ]
                 ]

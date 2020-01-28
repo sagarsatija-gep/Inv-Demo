@@ -90,7 +90,7 @@ export class PurchaseDetailsComponent implements OnInit {
                   {
                     type: 'text',
                     name: 'Supplier Item Number',
-                    colSize: '100px',
+                    colSize: '150px',
                     // styles: {'background-color': 'rebeccapurple'},
                     // classes: 'text-left',
 
@@ -98,28 +98,28 @@ export class PurchaseDetailsComponent implements OnInit {
                   {
                     type: 'text',
                     name: 'UOM',
-                    colSize: '100px',
+                    colSize: '50px',
                     // styles: {'width': '8%'},
                   },
                   {
                     type: 'text',
                     name: 'Order Quantity',
                     colSize: '100px',
-                    classes: 'text-right',
+                    // classes: 'text-right',
                     // styles: {'width': '8%'},
                   },
                   {
                     type: 'text',
                     name: 'Open Quantity',
                     colSize: '100px',
-                    classes: 'text-right',
+                    // classes: 'text-right',
                     // styles: {'width': '8%'},
                   },
                   {
                     type: 'text',
                     name: 'Shipped Quantity',
                     colSize: '100px',
-                    classes: 'text-right',
+                    // classes: 'text-right',
                     // styles: {'width': '8%'},
                   },
                   {
@@ -172,17 +172,17 @@ export class PurchaseDetailsComponent implements OnInit {
                     {
                       type: 'text',
                       value: '77',
-                      tdClasses: 'text-right'
+                      // tdClasses: 'text-right'
                     },
                     {
                       type: 'text',
                       value: '20',
-                      tdClasses: 'text-right'
+                      // tdClasses: 'text-right'
                     },
                     {
                       type: 'text',
                       value: '25',
-                      tdClasses: 'text-right'
+                      // tdClasses: 'text-right'
                       // classes: 'input-small rounded-sm border-secondary text-right'
                     },
                     {
@@ -228,17 +228,15 @@ export class PurchaseDetailsComponent implements OnInit {
                     {
                       type: 'text',
                       value: '130',
-                      tdClasses: 'text-right'
+                    },
+                    {
+                      type: 'text',
+                      value: '50'
                     },
                     {
                       type: 'text',
                       value: '50',
-                      tdClasses: 'text-right'
-                    },
-                    {
-                      type: 'text',
-                      value: '50',
-                      tdClasses: 'text-right'
+                      // tdClasses: ''
                       // classes: 'input-small rounded-sm border-secondary text-right'
                     },
                     {
@@ -284,17 +282,17 @@ export class PurchaseDetailsComponent implements OnInit {
                     {
                       type: 'text',
                       value: '200',
-                      tdClasses: 'text-right'
+                      // tdClasses: 'text-right'
                     },
                     {
                       type: 'text',
                       value: '100',
-                      tdClasses: 'text-right'
+                      // tdClasses: 'text-right'
                     },
                     {
                       type: 'text',
                       value: '100',
-                      tdClasses: 'text-right'
+                      // tdClasses: 'text-right'
                       // classes: 'input-small rounded-sm border-secondary text-right'
                     },
                     {
@@ -340,17 +338,17 @@ export class PurchaseDetailsComponent implements OnInit {
                     {
                       type: 'text',
                       value: '80',
-                      tdClasses: 'text-right'
+                      // tdClasses: 'text-right'
                     },
                     {
                       type: 'text',
                       value: '80',
-                      tdClasses: 'text-right'
+                      // tdClasses: 'text-right'
                     },
                     {
                       type: 'text',
                       value: '80',
-                      tdClasses: 'text-right'
+                      // tdClasses: 'text-right'
                       // classes: 'input-small rounded-sm border-secondary text-right'
                     },
                     {
