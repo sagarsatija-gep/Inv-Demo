@@ -50,6 +50,7 @@ import { AsnGrComponent } from './asn-gr/asn-gr.component';
 import { PoGoodsReceiptComponent } from './po-goods-receipt/po-goods-receipt.component';
 import { PopupComponent } from './popup/popup.component';
 import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.component';
+import { CreatePackageComponent } from './create-package/create-package.component';
 
 @NgModule({
   declarations: [
@@ -85,7 +86,8 @@ import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.compon
     PoGoodsReceiptComponent,
     PopupComponent,
     AsnGrComponent,
-    OcrGrCreationComponent
+    OcrGrCreationComponent,
+    CreatePackageComponent
   ],
   imports: [
     BrowserModule,
