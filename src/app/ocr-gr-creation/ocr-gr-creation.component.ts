@@ -115,7 +115,7 @@ export class OcrGrCreationComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '2063777'
+                      value: '3420112'
                     },
                     {
                       type: 'text',
@@ -155,7 +155,7 @@ export class OcrGrCreationComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '2030539'
+                      value: '5462411'
                     },
                     {
                       type: 'text',

@@ -2,17 +2,21 @@
   <div class="row" style="padding: 4px; margin: unset;">
     <div style="padding: 16px;" class="col-sm-2" *ngFor="let item of data.data" [ngClass]="item.classes">
       <div style="color: #a3a3a3; font-size: 12px;">{{ item.name }}</div>
-      <div *ngIf="item.type=='text'">{{ item.values }}</div> 
+      <div *ngIf="item.type=='text'">{{ item.values }}</div>
       <div class="input-box" *ngIf="item.type=='textbox'">
         <input class="input" placeholder="Favorite food" [value]="item.values">
       </div>
       <div *ngIf="item.type == 'dropdown'">
-          <mat-form-field>
-            <mat-select name="countryString" [(value)]="item.selectedValue" placeholder="">
-              <mat-option [value]="item" *ngFor="let item of item.value">{{item}}</mat-option>
-            </mat-select>
-          </mat-form-field>
-        </div>
+        <mat-form-field>
+          <mat-select name="countryString" [(value)]="item.selectedValue" placeholder="">
+            <mat-option [value]="item" *ngFor="let item of item.value">{{item}}</mat-option>
+          </mat-select>
+        </mat-form-field>
+      </div>
+      <div class="customBarcode" *ngIf=" item.type == 'barcode' ">
+        <ngx-barcode [bc-format]=" CODE128" [bc-height]="30" [bc-value]="4217467185" [bc-display-value]="false">
+        </ngx-barcode>
+      </div>
     </div>
   </div>
   <div class="" style="width: 100%; ">

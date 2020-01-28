@@ -87,8 +87,13 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
                 'Between Plant Transfer'
             ],
               selectedValue:'Within Plant Transfer',
+            },
+            {
+              type: 'barcode',
+              name: 'BarCode',
+              value: '1232',
+              editable: true,
             }
-            
           ]
         }
       }
