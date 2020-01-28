@@ -18,8 +18,8 @@ import { PoGoodsReceiptComponent } from './po-goods-receipt/po-goods-receipt.com
 import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.component';
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
   { path: 'packingslipcamera', component: PackingSlipCameraComponent },
   { path: 'manageReservations', component: ManageReservationsComponent },
   { path: 'purchaseDetails', component: PurchaseDetailsComponent },
