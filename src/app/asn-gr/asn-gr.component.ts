@@ -14,6 +14,29 @@ export class AsnGrComponent implements OnInit {
     const modalRef = this.modalService.open(PopupComponent);
     modalRef.componentInstance.name = 'World';
   }
+  printContents: any
+  originalContents: any
+
+  printDiv(divName) {
+    this.printContents = document.getElementById(divName).innerHTML;
+    this.originalContents = document.body.innerHTML;
+    document.body.innerHTML = this.printContents;
+    window.print();
+    window.close();
+    document.body.innerHTML = this.originalContents;
+  }
+
+  CallPrint() {
+    var prtContent = document.getElementById('printableArea');
+    var WinPrint = window.open('', '', 'width=800,height=650,scrollbars=1,menuBar=1');
+    var str = prtContent.innerHTML;
+    WinPrint.document.write(str);
+    WinPrint.window.print();
+    WinPrint.document.close();
+    WinPrint.focus();
+    window.close()
+    // WinPrint.window.close();
+  }
 
   ngOnInit() {
   }
