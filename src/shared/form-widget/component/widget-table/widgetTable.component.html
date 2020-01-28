@@ -28,6 +28,10 @@
           <button type="button" class="btn btn-primary .btn-xs" [ngStyle]="column.styles"
             *ngIf="column.type == 'button'">{{column.value}}</button>
 
+          <button type="button" class="btn btn-primary .btn-xs" [ngStyle]="column.styles"
+            *ngIf="column.type == 'delete'"><i class="fa fa-trash" aria-hidden="true"></i></button>
+
+
           <div *ngIf="column.type == 'attachments'">
             <i class="fa fa-upload" aria-hidden="true" style="color: #3D5AFE; font-size: 20px; margin: 5px;"></i>
             <i class="fa fa-paperclip" aria-hidden="true" style="color: #3D5AFE; font-size: 20px; margin: 5px;"></i>

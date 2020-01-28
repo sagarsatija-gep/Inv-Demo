@@ -55,7 +55,9 @@ export class WidgetAttachemant implements OnInit, OnDestroy {
     this.component = this.loadComponent.createComponent(componentFactory);
     if(this.data.page == 'internalStockTaransfer' ) {
       this.component.instance.data = this.popUp.internalTableData;
-    } else {
+    } else if(this.data.page == 'externalStockTaransfer') {
+      this.component.instance.data = this.popUp.externalTableData;
+    } else if(this.data.page == 'asn') {
       this.component.instance.data = this.popUp.asnTableData;
     }
 

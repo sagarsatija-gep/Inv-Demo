@@ -1,3 +1,4 @@
+import { ExternalStockTransfer } from './external-stock-transfer/externalStockTransfer.component';
 import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
 import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
 import { NgModule } from '@angular/core';
@@ -39,7 +40,8 @@ const routes: Routes = [
   { path: 'asnGoodsReceipt', component: AsnGrComponent },
   { path: 'poGoodsReceipt', component: PoGoodsReceiptComponent },
   { path: 'ocr-gr-creation', component: OcrGrCreationComponent },
-  { path: 'createPackage', component: CreatePackageComponent }
+  { path: 'createPackage', component: CreatePackageComponent },
+  { path: 'externalStockTransfer', component: ExternalStockTransfer}
 ];
 
 @NgModule({
