@@ -6,8 +6,30 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./asn-gr.component.css']
 })
 export class AsnGrComponent implements OnInit {
-
+  printContents:any
+  originalContents:any
   constructor() { }
+
+  printDiv(divName) {
+    this.printContents = document.getElementById(divName).innerHTML;
+    this.originalContents = document.body.innerHTML;
+    document.body.innerHTML = this.printContents;
+    window.print();
+    window.close();
+    document.body.innerHTML = this.originalContents;
+}
+
+CallPrint() {
+  var prtContent = document.getElementById('printableArea');
+  var WinPrint = window.open('', '', 'width=800,height=650,scrollbars=1,menuBar=1');
+  var str =  prtContent.innerHTML;
+  WinPrint.document.write(str);
+  WinPrint.window.print();
+  WinPrint.document.close();
+  WinPrint.focus();
+  window.close()
+  // WinPrint.window.close();
+}
 
   ngOnInit() {
   }
