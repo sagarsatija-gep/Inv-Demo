@@ -382,7 +382,8 @@ export class PopUpService {
                     value: '',
                 }
             ],
-            [{
+            [
+                {
                     type: 'text',
                     value: '2063777',
                     tdClasses: 'text-left'
@@ -568,10 +569,10 @@ export class PopUpService {
                 {
                     type: 'delete',
                     value: '',
-                },
-    
+                },    
             ],
-            [{
+            [
+                {
                     type: 'text',
                     value: '2044808',
                     tdClasses: 'text-left'
