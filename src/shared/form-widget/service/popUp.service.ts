@@ -569,7 +569,8 @@ export class PopUpService {
                 {
                     type: 'delete',
                     value: '',
-                },    
+                },
+    
             ],
             [
                 {
