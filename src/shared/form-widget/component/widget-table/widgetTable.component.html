@@ -12,7 +12,7 @@
       </tr>
     </thead>
     <tbody>
-      <tr *ngFor="let rows of data.values" [ngClass]="data.tablerowClass">
+      <tr *ngFor="let rows of data.values; let i = index" [ngClass]="data.tablerowClass">
         <td *ngFor="let column of rows" class="text-left" [ngClass]="column.tdClasses">
 
           <label *ngIf="column.type == 'checkbox'" class="checkbox-container">
@@ -43,6 +43,9 @@
 
           <input [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'textbox'" type="text"
             [(ngModel)]="column.value" style="margin: 14px 0px;    width: 110px;">
+
+          <input [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'textboxchange'" type="text"
+            [(ngModel)]="column.value" (change)="applyData($event, i)" style="margin: 14px 0px;">
 
           <div class="form-group" *ngIf="column.type == 'dropdown'">
             <select class="form-control" id="formControlSelect" [(value)]="column.selectedValue" placeholder="">
