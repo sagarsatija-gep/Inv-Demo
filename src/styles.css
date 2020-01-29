@@ -9,6 +9,7 @@
 
 body {
   font-family: 'Roboto', sans-serif !important;
+  overflow-y: hidden;
 }
 
 .mat-drawer-content {
@@ -29,4 +30,13 @@ input[type="text"]:focus {
   outline: none;
   border: none;
   border-bottom: 1.5px solid #0177d6;
+  transition: 0.3s ease-in-out;
+}
+
+.successpopup .modal{
+  top: 20% !important;
+}
+
+a, a:not([href]){
+  cursor: pointer;
 }
