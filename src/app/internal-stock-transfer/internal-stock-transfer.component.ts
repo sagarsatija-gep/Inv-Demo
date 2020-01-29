@@ -177,7 +177,10 @@ export class NgbdModalContent2 implements OnInit {
   }
 
   showTable() {
+    debugger
     this.activeModal.close();
+    this.popUpServices.convertBarcodeScanetoArray(this.popupData[2].values);
+    this.popUpServices.filteredExternalTableData();
     this.popUpServices.showTable();
   }
 
