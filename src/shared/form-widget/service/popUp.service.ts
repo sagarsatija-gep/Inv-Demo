@@ -664,10 +664,290 @@ export class PopUpService {
                 {
                     type: 'delete',
                     value: '',
-                },
-    
-    
-            ]
+                },    
+            ],
+            [{
+                type: 'text',
+                value: '2063777',
+                tdClasses: 'text-left'
+            },
+            {
+                type: 'text',
+                value: 'Lead Piping',
+            },
+            {
+                type: 'text',
+                value: '25',
+                tdClasses: 'text-left'
+            },
+            {
+                type: 'text',
+                value: 'EA',
+            },
+            {
+                type: 'text',
+                value: 'PMF-6002',
+            },
+            {
+                type: 'text',
+                value: 'C02-08-2-2',
+            },
+            {
+                type: 'text',
+                value: 'PMF-6002',
+            },
+            {
+                type: 'dropdown',
+                value: [
+                    'N02-06-3-2',
+                    'N02-06-6-4'
+                ],
+                selectedValue: 'N02-06-3-2',
+            },
+            {
+                type: 'text',
+                value: '200000000000000000000132'
+            },
+            {
+                type: 'delete',
+                value: '',
+            }
+        ],
+        [{
+            type: 'text',
+            value: '2063777',
+            tdClasses: 'text-left'
+        },
+        {
+            type: 'text',
+            value: 'Lead Piping',
+        },
+        {
+            type: 'text',
+            value: '25',
+            tdClasses: 'text-left'
+        },
+        {
+            type: 'text',
+            value: 'EA',
+        },
+        {
+            type: 'text',
+            value: 'PMF-6002',
+        },
+        {
+            type: 'text',
+            value: 'C02-08-2-2',
+        },
+        {
+            type: 'text',
+            value: 'PMF-6002',
+        },
+        {
+            type: 'dropdown',
+            value: [
+                'N02-06-3-2',
+                'N02-06-6-4'
+            ],
+            selectedValue: 'N02-06-3-2',
+        },
+        {
+            type: 'text',
+            value: '200000000000000000000115'
+        },
+        {
+            type: 'delete',
+            value: '',
+        }
+    ],
+    [{
+        type: 'text',
+        value: '2063777',
+        tdClasses: 'text-left'
+    },
+    {
+        type: 'text',
+        value: 'Lead Piping',
+    },
+    {
+        type: 'text',
+        value: '25',
+        tdClasses: 'text-left'
+    },
+    {
+        type: 'text',
+        value: 'EA',
+    },
+    {
+        type: 'text',
+        value: 'PMF-6002',
+    },
+    {
+        type: 'text',
+        value: 'C02-08-2-2',
+    },
+    {
+        type: 'text',
+        value: 'PMF-6002',
+    },
+    {
+        type: 'dropdown',
+        value: [
+            'N02-06-3-2',
+            'N02-06-6-4'
+        ],
+        selectedValue: 'N02-06-3-2',
+    },
+    {
+        type: 'text',
+        value: '300833B2DDD9014000000000'
+    },
+    {
+        type: 'delete',
+        value: '',
+    }
+]
+, [{
+    type: 'text',
+    value: '2063777',
+    tdClasses: 'text-left'
+},
+{
+    type: 'text',
+    value: 'Lead Piping',
+},
+{
+    type: 'text',
+    value: '25',
+    tdClasses: 'text-left'
+},
+{
+    type: 'text',
+    value: 'EA',
+},
+{
+    type: 'text',
+    value: 'PMF-6002',
+},
+{
+    type: 'text',
+    value: 'C02-08-2-2',
+},
+{
+    type: 'text',
+    value: 'PMF-6002',
+},
+{
+    type: 'dropdown',
+    value: [
+        'N02-06-3-2',
+        'N02-06-6-4'
+    ],
+    selectedValue: 'N02-06-3-2',
+},
+{
+    type: 'text',
+    value: '200000000000000000000114'
+},
+{
+    type: 'delete',
+    value: '',
+}
+],
+[{
+    type: 'text',
+    value: '2063777',
+    tdClasses: 'text-left'
+},
+{
+    type: 'text',
+    value: 'Lead Piping',
+},
+{
+    type: 'text',
+    value: '25',
+    tdClasses: 'text-left'
+},
+{
+    type: 'text',
+    value: 'EA',
+},
+{
+    type: 'text',
+    value: 'PMF-6002',
+},
+{
+    type: 'text',
+    value: 'C02-08-2-2',
+},
+{
+    type: 'text',
+    value: 'PMF-6002',
+},
+{
+    type: 'dropdown',
+    value: [
+        'N02-06-3-2',
+        'N02-06-6-4'
+    ],
+    selectedValue: 'N02-06-3-2',
+},
+{
+    type: 'text',
+    value: '200000000000000000000117'
+},
+{
+    type: 'delete',
+    value: '',
+}
+],
+[{
+    type: 'text',
+    value: '2063777',
+    tdClasses: 'text-left'
+},
+{
+    type: 'text',
+    value: 'Lead Piping',
+},
+{
+    type: 'text',
+    value: '25',
+    tdClasses: 'text-left'
+},
+{
+    type: 'text',
+    value: 'EA',
+},
+{
+    type: 'text',
+    value: 'PMF-6002',
+},
+{
+    type: 'text',
+    value: 'C02-08-2-2',
+},
+{
+    type: 'text',
+    value: 'PMF-6002',
+},
+{
+    type: 'dropdown',
+    value: [
+        'N02-06-3-2',
+        'N02-06-6-4'
+    ],
+    selectedValue: 'N02-06-3-2',
+},
+{
+    type: 'text',
+    value: '200000000000000000000116'
+},
+{
+    type: 'delete',
+    value: '',
+}
+]
         ]
     }
     
