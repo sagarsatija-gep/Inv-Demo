@@ -7,7 +7,7 @@
               <div class="col-sm-9">
                   <div class="input-box">
                   <label for={{x.name}}>{{x.name}}</label>
-                  <input type={{x.type}} class="form-control input" id={{x.name}} value="{{x.values}}">
+                  <input type={{x.type}} class="form-control input" id={{x.name}} [(ngModel)]="x.values">
                   </div>
               </div>
               <div class="col-sm-3 text-right">
