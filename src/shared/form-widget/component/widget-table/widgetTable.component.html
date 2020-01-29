@@ -2,8 +2,7 @@
   <table class="table widgetTable table-striped">
     <thead>
       <tr>
-        <th class="text-left" [ngStyle]="col.styles" [ngClass]="col.classes"
-          *ngFor="let col of data.colConfig">
+        <th class="text-left" [ngStyle]="col.styles" [ngClass]="col.classes" *ngFor="let col of data.colConfig">
           <label *ngIf="col.type == 'checkbox'" class="checkbox-container">
             <input type="checkbox" />
             <span class="checkmark"></span>
@@ -28,8 +27,7 @@
           <button type="button" class="btn btn-primary .btn-xs" [ngStyle]="column.styles"
             *ngIf="column.type == 'button'">{{column.value}}</button>
 
-          <button type="button" class="btn .btn-xs" [ngStyle]="column.styles"
-            *ngIf="column.type == 'delete'">
+          <button type="button" class="btn .btn-xs" [ngStyle]="column.styles" *ngIf="column.type == 'delete'">
             <!-- <i class="fa fa-trash" aria-hidden="true"></i> -->
             <img src="../../../../assets/images/icon_delete.png" alt="">
           </button>
@@ -44,14 +42,14 @@
           </span>
 
           <input [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'textbox'" type="text"
-            [(ngModel)]="column.value">
+            [(ngModel)]="column.value" style="margin: 14px 0px;">
 
           <div class="form-group" *ngIf="column.type == 'dropdown'">
             <select class="form-control" id="formControlSelect" [(value)]="column.selectedValue" placeholder="">
               <option [value]="item" *ngFor="let item of column.value">{{item}}</option>
             </select>
           </div>
-          
+
 
           <label *ngIf="column.type == 'toggle'" class="switch">
             <!-- <input type="checkbox" [checked]='column.value'>

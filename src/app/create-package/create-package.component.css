@@ -1,0 +1,48 @@
+.input {
+    border: 0px;
+}
+
+.input-box {
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.input:focus {
+    outline: none !important;
+    border-bottom: 1.5px solid blue !important;
+    width: 100%;
+}
+
+.input-box:focus {
+    border-bottom: 1.5px solid blue !important;
+    width: 100%;
+    outline: none;
+}
+
+.internalstockPopup .form-control:focus {
+    background-color: #fff;
+    border-color: none;
+    outline: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border-radius: 0;
+}
+
+.internalstockPopup .form-control {
+    border-radius: 0;
+}
+
+.popupbutton {
+    color: #0177d6;
+    font-weight: 500;
+}
+
+.poFooter {
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    padding: 15px 10px;
+}
+
+.poFooter button {
+    font-weight: 500;
+}

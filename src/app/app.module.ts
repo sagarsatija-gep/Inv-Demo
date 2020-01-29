@@ -53,6 +53,7 @@ import { AsnGrComponent } from './asn-gr/asn-gr.component';
 import { PoGoodsReceiptComponent } from './po-goods-receipt/po-goods-receipt.component';
 import { PopupComponent } from './popup/popup.component';
 import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.component';
+import { CreatePackageComponent, NgbdModalContentCreatePackage } from './create-package/create-package.component';
 
 @NgModule({
   declarations: [
@@ -89,6 +90,9 @@ import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.compon
     PopupComponent,
     AsnGrComponent,
     OcrGrCreationComponent,
+    CreatePackageComponent,
+    ExternalStockTransfer,
+    NgbdModalContentCreatePackage,
     ExternalStockTransfer,
     SuccessPopUp
   ],
@@ -116,8 +120,8 @@ import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.compon
       libraries: ['places']
     }),
   ],
-  providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService,NgbActiveModal],
+  providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService, NgbActiveModal],
   bootstrap: [AppComponent],
-  entryComponents: [NgbdModalContent, NgbdModalContent1,NgbdModalContent2, SuccessPopUp]
+  entryComponents: [NgbdModalContent, NgbdModalContent1, NgbdModalContent2, NgbdModalContentCreatePackage, SuccessPopUp]
 })
 export class AppModule { }

@@ -1,0 +1,33 @@
+<div class="purcesDetais">
+  <div>
+    <ul class="breadcrumb">
+      <li><a href="#">Enter Package</a></li>
+      <li><a href="#">Container Details</a></li>
+    </ul>
+  </div>
+  <Form-widget [config]='widgetData'></Form-widget>
+</div>
+<footer class="poFooter bg-white">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <button style="color: white;" class="btn btn-primary btn-white text-uppercase shadow rounded-0">
+          Print Document
+        </button>
+      </div>
+      <div class="col-sm-5 text-right">
+        <button style="color: white;" class="btn btn-primary btn-white text-uppercase shadow rounded-0">
+          Print RFID Tags
+        </button>
+        <button style="color: white;" class="btn btn-primary btn-white text-uppercase shadow rounded-0">
+          Print Barcode
+        </button>
+        <a routerLink='/home'>  <button style="color: white;"
+           class="btn btn-primary btn-white text-uppercase shadow rounded-0">
+          FINALIZE
+          </button>
+        </a>
+      </div>
+    </div>
+  </div>
+</footer>
