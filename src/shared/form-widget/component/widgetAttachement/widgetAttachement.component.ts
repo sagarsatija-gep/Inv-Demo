@@ -1,3 +1,4 @@
+import { RfidPopUpComponent } from './../../../popUpComponent/RFIDPopUp/rfidPopUp.component';
 import { PopUpService } from './../../service/popUp.service';
 import {
   WidgetTable
@@ -45,6 +46,11 @@ export class WidgetAttachemant implements OnInit, OnDestroy {
 
   popUpOpen(){
     this.popUp.internalStockPopupOpen();
+  }
+
+  rfidpopup() {
+    // this.popUp.apiCallForBarCodeNumber();
+    this.popUp.rfidPopUpOpen();
   }
 
   upload() {

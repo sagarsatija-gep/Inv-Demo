@@ -40,6 +40,13 @@ a, a:not([href]) {
   cursor: pointer;
 }
 
+.quicklinksImg{
+  width: 70px;
+}
+
+.border-barcode{
+  border: 1.3px solid #244889;
+}
 ::-webkit-scrollbar {
   width: 8px;
   border-radius: 5px;

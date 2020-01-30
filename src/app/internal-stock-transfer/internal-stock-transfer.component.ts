@@ -22,7 +22,7 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
 
   successPopUp() {
     const modalRef = this.modalService.open(SuccessPopUp, { size: 'lg' });
-    modalRef.componentInstance.name = 'World';
+    modalRef.componentInstance.name = 'Stock Transfer Initiated successfully.';
     
   }
 

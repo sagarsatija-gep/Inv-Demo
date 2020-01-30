@@ -1002,7 +1002,7 @@ export class PoGoodsReceiptComponent implements OnInit {
 
   successPopUp() {
     const modalRef = this.modalService.open(SuccessPopUp, { size: 'lg' });
-    modalRef.componentInstance.name = 'World';
+    modalRef.componentInstance.name = 'Receipt is Finalized';
     
   }
 
