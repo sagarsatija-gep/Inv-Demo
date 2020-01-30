@@ -54,7 +54,7 @@ export class PoGoodsReceiptComponent implements OnInit {
         isOpen: true,
         data: {
           componentName: 'tabComponent',
-          route:"poGoodsReceipt",
+          route: "poGoodsReceipt",
           haveButton: false,
           data: [
             {
@@ -113,18 +113,6 @@ export class PoGoodsReceiptComponent implements OnInit {
                   },
                   {
                     type: 'text',
-                    name: 'Goods Receipent',
-                    colSize: '100px',
-                    classes: 'text-left'
-                  },
-                  {
-                    type: 'text',
-                    name: 'Unloading Point',
-                    colSize: '100px',
-                    classes: 'text-left'
-                  },
-                  {
-                    type: 'text',
                     name: 'Serial Flag',
                     colSize: '100px',
                     classes: 'text-left'
@@ -144,6 +132,18 @@ export class PoGoodsReceiptComponent implements OnInit {
                   {
                     type: 'text',
                     name: 'Storage Conditions',
+                    colSize: '100px',
+                    classes: 'text-left'
+                  },
+                  {
+                    type: 'text',
+                    name: 'Goods Receipent',
+                    colSize: '100px',
+                    classes: 'text-left'
+                  },
+                  {
+                    type: 'text',
+                    name: 'Unloading Point',
                     colSize: '100px',
                     classes: 'text-left'
                   },
@@ -199,14 +199,6 @@ export class PoGoodsReceiptComponent implements OnInit {
                       selectedValue: 'C02 - 08- 2- 2',
                     },
                     {
-                      type: 'textbox',
-                      value: '',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                    },
-                    {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
@@ -238,9 +230,17 @@ export class PoGoodsReceiptComponent implements OnInit {
                       value: '',
                     },
                     {
+                      type: 'textbox',
+                      value: '',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                    },
+                    {
                       type: 'button',
                       value: 'UPLOAD',
-                      show:false,
+                      show: false,
                       styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ],
@@ -288,39 +288,39 @@ export class PoGoodsReceiptComponent implements OnInit {
                       selectedValue: 'C03 - 06- 2- 2',
                     },
                     {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
                       type: 'textbox',
                       value: '',
                     },
                     {
                       type: 'textbox',
                       value: '',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
                     },
                     {
                       type: 'textbox',
@@ -329,7 +329,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     {
                       type: 'button',
                       value: 'UPLOAD',
-                      show:false,
+                      show: false,
                       styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ],
@@ -377,14 +377,6 @@ export class PoGoodsReceiptComponent implements OnInit {
                       selectedValue: 'S02 - 03- 2- 4',
                     },
                     {
-                      type: 'textbox',
-                      value: '',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                    },
-                    {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
@@ -416,9 +408,17 @@ export class PoGoodsReceiptComponent implements OnInit {
                       value: '',
                     },
                     {
+                      type: 'textbox',
+                      value: '',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                    },
+                    {
                       type: 'button',
                       value: 'UPLOAD',
-                      show:false,
+                      show: false,
                       styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ],
@@ -466,39 +466,39 @@ export class PoGoodsReceiptComponent implements OnInit {
                       selectedValue: 'S02 - 03- 2- 4',
                     },
                     {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
                       type: 'textbox',
                       value: '',
                     },
                     {
                       type: 'textbox',
                       value: '',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
                     },
                     {
                       type: 'textbox',
@@ -507,7 +507,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     {
                       type: 'button',
                       value: 'UPLOAD',
-                      show:false,
+                      show: false,
                       styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ]
@@ -1008,7 +1008,7 @@ export class PoGoodsReceiptComponent implements OnInit {
   successPopUp() {
     const modalRef = this.modalService.open(SuccessPopUp, { size: 'lg' });
     modalRef.componentInstance.name = 'Receipt is Finalized';
-    
+
   }
 
 
