@@ -257,82 +257,88 @@ export class PopUpService {
         ]
       }
 
-    externalTableData =  {
+      externalTableData = {
 
         tablerowClass: 'bg-white',
         colConfig: [
-        //     {
-        //     type: 'checkbox',
-        //     name: 'Reservation #',
-        //     classes: 'text-left',
-        //     // styles: {'width': '%'},
-        //   },
-          {
-            type: 'text',
-            name: 'Item No',
-            // colSize: '100px',
-            classes: 'text-left',
-            // styles: {'width': '8%'},
-          },
-          {
-            type: 'text',
-            name: 'Item Name',
-            // colSize: '100px',
-            classes: ' ',
-            // styles: {'width': '8%'},
-          },
-          {
-            type: 'text',
-            name: 'Transfer Quantity',
-            colSize: '100px',
-            // styles: {'background-color': 'rebeccapurple'},
-            classes: 'text-left',
-            // styles: {'width': '8%'},
-          },
-          {
-            type: 'text',
-            name: 'UOM',
-            // colSize: '100px',
-            // styles: {'background-color': 'rebeccapurple'},
-            // classes: 'text-left',
-  
-          },
-          {
-            type: 'text',
-            name: 'From Location',
-            colSize: '100px',
-            // styles: {'width': '8%'},
-          },
-          {
-            type: 'text',
-            name: 'From BIN',
-            colSize: '100px',
-            // styles: {'width': '8%'},
-          },
-          {
-            type: 'text',
-            name: 'To Location',
-            colSize: '100px',
-            // styles: {'width': '8%'},
-          },
-          {
-            type: 'text',
-            name: 'To BIN',
-            colSize: '100px',
-            // styles: {'width': '8%'},
-          },
-          {
-            type: 'text',
-            name: '',
-            colSize: '100px',
-            // styles: {'width': '8%'},
-          }
+            //     {
+            //     type: 'checkbox',
+            //     name: 'Reservation #',
+            //     classes: 'text-left',
+            //     // styles: {'width': '%'},
+            //   },
+            {
+                type: 'text',
+                name: 'Item No',
+                // colSize: '100px',
+                classes: 'text-left',
+                // styles: {'width': '8%'},
+            },
+            {
+                type: 'text',
+                name: 'Item Name',
+                // colSize: '100px',
+                classes: ' ',
+                // styles: {'width': '8%'},
+            },
+            {
+                type: 'text',
+                name: 'Transfer Quantity',
+                colSize: '100px',
+                // styles: {'background-color': 'rebeccapurple'},
+                classes: 'text-left',
+                // styles: {'width': '8%'},
+            },
+            {
+                type: 'text',
+                name: 'UOM',
+                // colSize: '100px',
+                // styles: {'background-color': 'rebeccapurple'},
+                // classes: 'text-left',
+    
+            },
+            {
+                type: 'text',
+                name: 'From Location',
+                colSize: '100px',
+                // styles: {'width': '8%'},
+            },
+            {
+                type: 'text',
+                name: 'From BIN',
+                colSize: '100px',
+                // styles: {'width': '8%'},
+            },
+            {
+                type: 'text',
+                name: 'To Location',
+                colSize: '100px',
+                // styles: {'width': '8%'},
+            },
+            {
+                type: 'text',
+                name: 'To BIN',
+                colSize: '100px',
+                // styles: {'width': '8%'},
+            },
+            {
+                type: 'text',
+                name: 'RFID Tag',
+                colSize: '100px'
+            },
+            {
+                type: 'text',
+                name: '',
+                colSize: '100px',
+                // styles: {'width': '8%'},
+            }
         ],
         values: [
             [{
                     type: 'text',
                     value: '1025180',
-                    tdClasses: 'text-left'
+                    tdClasses: 'text-left',
+    
                 },
                 {
                     type: 'text',
@@ -368,11 +374,16 @@ export class PopUpService {
                     selectedValue: 'N02-06-3-2',
                 },
                 {
+                    type: 'text',
+                    value: 'E69FA0FA2C6FA0FA2C6F80CB'
+                },
+                {
                     type: 'delete',
                     value: '',
-                },
+                }
             ],
-            [{
+            [
+                {
                     type: 'text',
                     value: '2063777',
                     tdClasses: 'text-left'
@@ -411,9 +422,13 @@ export class PopUpService {
                     selectedValue: 'N02-06-3-2',
                 },
                 {
+                    type: 'text',
+                    value: '3833333132393337'
+                },
+                {
                     type: 'delete',
                     value: '',
-                },
+                }
             ],
             [{
                     type: 'text',
@@ -454,9 +469,13 @@ export class PopUpService {
                     selectedValue: 'N02-06-3-2',
                 },
                 {
+                    type: 'text',
+                    value: 'E2801160600002052A5B5541'
+                },
+                {
                     type: 'delete',
                     value: '',
-                },
+                }
             ],
             [{
                     type: 'text',
@@ -497,9 +516,13 @@ export class PopUpService {
                     selectedValue: 'N02-06-3-2',
                 },
                 {
+                    type: 'text',
+                    value: '3239343738313139'
+                },
+                {
                     type: 'delete',
                     value: '',
-                },
+                }
             ],
             [{
                     type: 'text',
@@ -540,13 +563,397 @@ export class PopUpService {
                     selectedValue: 'N02-06-3-2',
                 },
                 {
+                    type: 'text',
+                    value: '3531313832393339'
+                },
+                {
                     type: 'delete',
                     value: '',
                 },
-            ]
-        
+    
+            ],
+            [
+                {
+                    type: 'text',
+                    value: '2044808',
+                    tdClasses: 'text-left'
+                },
+                {
+                    type: 'text',
+                    value: 'Dewalt – Saw Blade',
+                },
+                {
+                    type: 'text',
+                    value: '20',
+                    tdClasses: 'text-left'
+                },
+                {
+                    type: 'text',
+                    value: 'EA',
+                },
+                {
+                    type: 'text',
+                    value: 'PMF-6002',
+                },
+                {
+                    type: 'text',
+                    value: 'C02-08-2-2',
+                },
+                {
+                    type: 'text',
+                    value: 'PMF-6002',
+                },
+                {
+                    type: 'dropdown',
+                    value: [
+                        'N02-06-3-2',
+                        'N02-06-6-4'
+                    ],
+                    selectedValue: 'N02-06-3-2',
+                },
+                {
+                    type: 'text',
+                    value: '00000000000000000A101058'
+                },
+                {
+                    type: 'delete',
+                    value: '',
+                },
+    
+            ],
+            [{
+                    type: 'text',
+                    value: '2044808',
+                    tdClasses: 'text-left'
+                },
+                {
+                    type: 'text',
+                    value: 'Dewalt – Saw Blade',
+                },
+                {
+                    type: 'text',
+                    value: '20',
+                    tdClasses: 'text-left'
+                },
+                {
+                    type: 'text',
+                    value: 'EA',
+                },
+                {
+                    type: 'text',
+                    value: 'PMF-6002',
+                },
+                {
+                    type: 'text',
+                    value: 'C02-08-2-2',
+                },
+                {
+                    type: 'text',
+                    value: 'PMF-6002',
+                },
+                {
+                    type: 'dropdown',
+                    value: [
+                        'N02-06-3-2',
+                        'N02-06-6-4'
+                    ],
+                    selectedValue: 'N02-06-3-2',
+                },
+                {
+                    type: 'text',
+                    value: '00000000000000000A101057'
+                },
+                {
+                    type: 'delete',
+                    value: '',
+                },    
+            ],
+            [{
+                type: 'text',
+                value: '2063777',
+                tdClasses: 'text-left'
+            },
+            {
+                type: 'text',
+                value: 'Lead Piping',
+            },
+            {
+                type: 'text',
+                value: '25',
+                tdClasses: 'text-left'
+            },
+            {
+                type: 'text',
+                value: 'EA',
+            },
+            {
+                type: 'text',
+                value: 'PMF-6002',
+            },
+            {
+                type: 'text',
+                value: 'C02-08-2-2',
+            },
+            {
+                type: 'text',
+                value: 'PMF-6002',
+            },
+            {
+                type: 'dropdown',
+                value: [
+                    'N02-06-3-2',
+                    'N02-06-6-4'
+                ],
+                selectedValue: 'N02-06-3-2',
+            },
+            {
+                type: 'text',
+                value: '200000000000000000000132'
+            },
+            {
+                type: 'delete',
+                value: '',
+            }
+        ],
+        [{
+            type: 'text',
+            value: '2063777',
+            tdClasses: 'text-left'
+        },
+        {
+            type: 'text',
+            value: 'Lead Piping',
+        },
+        {
+            type: 'text',
+            value: '25',
+            tdClasses: 'text-left'
+        },
+        {
+            type: 'text',
+            value: 'EA',
+        },
+        {
+            type: 'text',
+            value: 'PMF-6002',
+        },
+        {
+            type: 'text',
+            value: 'C02-08-2-2',
+        },
+        {
+            type: 'text',
+            value: 'PMF-6002',
+        },
+        {
+            type: 'dropdown',
+            value: [
+                'N02-06-3-2',
+                'N02-06-6-4'
+            ],
+            selectedValue: 'N02-06-3-2',
+        },
+        {
+            type: 'text',
+            value: '200000000000000000000115'
+        },
+        {
+            type: 'delete',
+            value: '',
+        }
+    ],
+    [{
+        type: 'text',
+        value: '2063777',
+        tdClasses: 'text-left'
+    },
+    {
+        type: 'text',
+        value: 'Lead Piping',
+    },
+    {
+        type: 'text',
+        value: '25',
+        tdClasses: 'text-left'
+    },
+    {
+        type: 'text',
+        value: 'EA',
+    },
+    {
+        type: 'text',
+        value: 'PMF-6002',
+    },
+    {
+        type: 'text',
+        value: 'C02-08-2-2',
+    },
+    {
+        type: 'text',
+        value: 'PMF-6002',
+    },
+    {
+        type: 'dropdown',
+        value: [
+            'N02-06-3-2',
+            'N02-06-6-4'
+        ],
+        selectedValue: 'N02-06-3-2',
+    },
+    {
+        type: 'text',
+        value: '300833B2DDD9014000000000'
+    },
+    {
+        type: 'delete',
+        value: '',
+    }
+]
+, [{
+    type: 'text',
+    value: '2063777',
+    tdClasses: 'text-left'
+},
+{
+    type: 'text',
+    value: 'Lead Piping',
+},
+{
+    type: 'text',
+    value: '25',
+    tdClasses: 'text-left'
+},
+{
+    type: 'text',
+    value: 'EA',
+},
+{
+    type: 'text',
+    value: 'PMF-6002',
+},
+{
+    type: 'text',
+    value: 'C02-08-2-2',
+},
+{
+    type: 'text',
+    value: 'PMF-6002',
+},
+{
+    type: 'dropdown',
+    value: [
+        'N02-06-3-2',
+        'N02-06-6-4'
+    ],
+    selectedValue: 'N02-06-3-2',
+},
+{
+    type: 'text',
+    value: '200000000000000000000114'
+},
+{
+    type: 'delete',
+    value: '',
+}
+],
+[{
+    type: 'text',
+    value: '2063777',
+    tdClasses: 'text-left'
+},
+{
+    type: 'text',
+    value: 'Lead Piping',
+},
+{
+    type: 'text',
+    value: '25',
+    tdClasses: 'text-left'
+},
+{
+    type: 'text',
+    value: 'EA',
+},
+{
+    type: 'text',
+    value: 'PMF-6002',
+},
+{
+    type: 'text',
+    value: 'C02-08-2-2',
+},
+{
+    type: 'text',
+    value: 'PMF-6002',
+},
+{
+    type: 'dropdown',
+    value: [
+        'N02-06-3-2',
+        'N02-06-6-4'
+    ],
+    selectedValue: 'N02-06-3-2',
+},
+{
+    type: 'text',
+    value: '200000000000000000000117'
+},
+{
+    type: 'delete',
+    value: '',
+}
+],
+[{
+    type: 'text',
+    value: '2063777',
+    tdClasses: 'text-left'
+},
+{
+    type: 'text',
+    value: 'Lead Piping',
+},
+{
+    type: 'text',
+    value: '25',
+    tdClasses: 'text-left'
+},
+{
+    type: 'text',
+    value: 'EA',
+},
+{
+    type: 'text',
+    value: 'PMF-6002',
+},
+{
+    type: 'text',
+    value: 'C02-08-2-2',
+},
+{
+    type: 'text',
+    value: 'PMF-6002',
+},
+{
+    type: 'dropdown',
+    value: [
+        'N02-06-3-2',
+        'N02-06-6-4'
+    ],
+    selectedValue: 'N02-06-3-2',
+},
+{
+    type: 'text',
+    value: '200000000000000000000116'
+},
+{
+    type: 'delete',
+    value: '',
+}
+]
         ]
-      }
+    }
+    
+    barCodes = [];
 
     internalStockPopupOpen() {
         this.internalStockPopUp.next(true);
@@ -554,6 +961,22 @@ export class PopUpService {
 
     showTable() {
         this.attachmentTable.next(true);
+    }
+
+    convertBarcodeScanetoArray(barcodes)  {
+        this.barCodes = barcodes.split("*").filter(data=> data != "");
+    }
+
+    filteredExternalTableData() {
+        const RFC_COLUMN = this.externalTableData.colConfig.length;
+        return { ...this.externalTableData,
+            values: this.externalTableData.values.filter(data => {
+                const keyValue = data[RFC_COLUMN - 2].value;
+                console.log(keyValue);
+                return this.barCodes.includes(keyValue);
+            })
+        }            
+            
     }
 
 }

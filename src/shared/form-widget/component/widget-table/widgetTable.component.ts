@@ -14,4 +14,127 @@ export class WidgetTable implements OnInit {
         console.log(this.data);
     }
 
+    applyData(event, index) {
+        this.values[index][1].value = event.target.value
+        this.data.values[index] = this.values[index]
+    }
+
+    values = [
+        [
+            {
+                type: 'text',
+                value: '1'
+            },
+            {
+                type: 'textboxchange',
+                value: '',
+            },
+            {
+                type: 'textbox',
+                value: 'E-MONT_KS-PANZERROHR_DN20'
+            },
+            {
+                type: 'textbox',
+                value: '',
+                classes: 'rounded-sm border-secondary input-small text-right'
+            },
+            {
+                type: 'text',
+                value: '00000000000000000A101058',
+            }
+        ],
+        [
+            {
+                type: 'text',
+                value: '2'
+            },
+            {
+                type: 'textboxchange',
+                value: '',
+            },
+            {
+                type: 'textbox',
+                value: 'KIT,ANALYSIS,HEATER TUBE & FILTER,MFR UN'
+            },
+            {
+                type: 'textbox',
+                value: '',
+                classes: 'rounded-sm border-secondary input-small text-right'
+            },
+            {
+                type: 'text',
+                value: 'E2801160600002052A5B5541',
+            }
+        ],
+        [
+            {
+                type: 'text',
+                value: '3'
+            },
+            {
+                type: 'textboxchange',
+                value: '',
+            },
+            {
+                type: 'textbox',
+                value: 'MILLIPORE AAWP04700'
+            },
+            {
+                type: 'textbox',
+                value: '',
+                classes: 'rounded-sm border-secondary input-small text-right'
+            },
+            {
+                type: 'text',
+                value: 'E2801160600002052A5B5541',
+            }
+        ],
+        [
+            {
+                type: 'text',
+                value: '4'
+            },
+            {
+                type: 'textboxchange',
+                value: '',
+            },
+            {
+                type: 'textbox',
+                value: 'MILLIPORE AAWP04700'
+            },
+            {
+                type: 'textbox',
+                value: '',
+                classes: 'rounded-sm border-secondary input-small text-right'
+            },
+            {
+                type: 'text',
+                value: 'E2801160600002052A5B5541'
+            }
+        ],
+        [
+            {
+                type: 'text',
+                value: '5'
+            },
+            {
+                type: 'textboxchange',
+                value: ''
+            },
+            {
+                type: 'textbox',
+                value: 'MILLIPORE AAWP04700'
+            },
+            {
+                type: 'textbox',
+                value: '',
+                classes: 'rounded-sm border-secondary input-small text-right'
+            },
+            {
+                type: 'text',
+                value: 'E2801160600002052A5B5541',
+            }
+        ]
+    ]
+
 }
