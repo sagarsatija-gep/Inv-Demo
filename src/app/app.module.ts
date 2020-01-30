@@ -56,6 +56,7 @@ import { PopupComponent } from './popup/popup.component';
 import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.component';
 import { CreatePackageComponent, NgbdModalContentCreatePackage } from './create-package/create-package.component';
 import { NgbdModalContent3 } from '../shared/form-widget/component/widget-table/widgetTable.component';
+import { barcodePopup } from '../shared/popUpComponent/barcodePopup/barcodePopup.component';
 
 @NgModule({
   declarations: [
@@ -98,7 +99,8 @@ import { NgbdModalContent3 } from '../shared/form-widget/component/widget-table/
     NgbdModalContentCreatePackage,
     ExternalStockTransfer,
     SuccessPopUp,
-    RfidPopUpComponent
+    RfidPopUpComponent,
+    barcodePopup
   ],
   imports: [
     CommonModule,
@@ -126,6 +128,6 @@ import { NgbdModalContent3 } from '../shared/form-widget/component/widget-table/
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService, NgbActiveModal],
   bootstrap: [AppComponent],
-  entryComponents: [NgbdModalContent, NgbdModalContent1, NgbdModalContent2, NgbdModalContentCreatePackage, SuccessPopUp, NgbdModalContent3, RfidPopUpComponent]
+  entryComponents: [NgbdModalContent, NgbdModalContent1, NgbdModalContent2, NgbdModalContentCreatePackage, SuccessPopUp, NgbdModalContent3, RfidPopUpComponent, barcodePopup]
 })
 export class AppModule { }

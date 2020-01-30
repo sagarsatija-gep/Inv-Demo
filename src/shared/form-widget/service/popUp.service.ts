@@ -12,8 +12,9 @@ export class PopUpService {
     isInternalStockErrorPopUp = false;
 
     rfidGlob = new Subject<any>();
-    internalTableData = {
+    showBarCodeIcon = new Subject<boolean>();
 
+    internalTableData = {
         tablerowClass: 'bg-white',
         colConfig: [
             //     {
@@ -1205,6 +1206,14 @@ export class PopUpService {
         this.rfidPopUp.next(true);
     }
 
+    showBarcode() {
+        this.showBarCodeIcon.next(true);
+    }
+
+    hideBarCode() {
+        this.showBarCodeIcon.next(false);
+    }
+
     internalStockPopupOpen() {
         this.internalStockPopUp.next(true);
     }
@@ -1254,7 +1263,5 @@ export class PopUpService {
         });
         // this.rfidGlob = this.http.get<any>('https://scmqapocrgdiag.blob.core.windows.net/testrfid/dataRFID.json', requestOptions );        
     }
-
-
 
 }

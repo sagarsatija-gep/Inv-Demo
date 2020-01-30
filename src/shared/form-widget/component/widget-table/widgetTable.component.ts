@@ -10,6 +10,7 @@ import { BarecodeScannerLivestreamComponent } from "ngx-barcode-scanner";
     encapsulation: ViewEncapsulation.None
 })
 export class WidgetTable implements OnInit {
+    // show:boolean=false;
     @Input() data;
     barcodeValue
 
@@ -23,6 +24,14 @@ export class WidgetTable implements OnInit {
     openBarcodeScanner() {
         const modalRef = this.modalService.open(NgbdModalContent3);
         modalRef.componentInstance.name = 'World';
+    }
+
+    display(e) {
+        debugger;
+        console.log(this.data);
+        this.data.values[e][14].show = true;
+        // this.data = this.data;
+        // this.show=true;
     }
 
     applyData(event, index) {

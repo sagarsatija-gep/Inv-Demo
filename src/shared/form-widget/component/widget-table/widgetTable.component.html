@@ -28,11 +28,15 @@
 
           <span [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'hiperlink'">
             <a href="">{{column.value}}</a>
-          </span>
-
-          <button type="button" class="btn btn-primary .btn-xs" [ngStyle]="column.styles"
-            *ngIf="column.type == 'button'">{{column.value}}</button>
-
+          </span> 
+          
+          <label class="btn btn-primary .btn-xs" [ngStyle]="column.styles" 
+            *ngIf="column.type == 'button'" for="file-input" >{{column.value}}
+            <input hidden id="file-input" type="file" (change)="display(i)"  /></label>
+            
+            <span *ngIf="column.show && column.type == 'button'">
+              <i class="fa fa-upload" aria-hidden="true" style="color: #3D5AFE; font-size: 20px; margin: 5px;"></i>
+            </span>
           <button type="button" class="btn .btn-xs" [ngStyle]="column.styles" *ngIf="column.type == 'delete'">
             <!-- <i class="fa fa-trash" aria-hidden="true"></i> -->
             <img

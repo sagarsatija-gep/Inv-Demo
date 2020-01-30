@@ -69,6 +69,7 @@ export class AsnGrComponent implements OnInit {
     'HeaderData': {
       name: 'Basic Details',
       isOpen: true,
+      
       collapsible: true,
       data: {
         componentName: 'details',
@@ -114,8 +115,10 @@ export class AsnGrComponent implements OnInit {
       isOpen: true,
       data: {
         componentName: 'tabComponent',
+        route:"asnGoodsReceipt",
         haveButton: false,
-        data: [{
+        data: [
+          {
           tabName: 'LINES',
           tabcomponent: 'widgetTable',
           tabData: {
@@ -623,10 +626,11 @@ export class AsnGrComponent implements OnInit {
               ]
             ]
           }
-        },
+        }, 
         {
           tabName: 'ASSET MANAGEMENT',
           tabcomponent: 'widgetTable',
+          barcodeButton: true,
           tabData: {
             colConfig: [{
               type: 'checkbox',
