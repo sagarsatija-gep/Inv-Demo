@@ -9,6 +9,11 @@
             <span class="checkmark"></span>
           </label>
           <span *ngIf="col.type == 'text'">{{col.name}} </span>
+          <button type="button" class="btn .btn-xs" *ngIf="col.type == 'delete'">
+            <img
+              src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/icon_delete.png"
+              alt="">
+          </button>
         </th>
       </tr>
     </thead>

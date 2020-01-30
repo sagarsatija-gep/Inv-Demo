@@ -31,7 +31,7 @@ export class WidgetTable implements OnInit {
         modalRef.componentInstance.name = 'World';
     }
 
-    display(e){
+    display(e) {
         debugger;
         console.log(this.data);
         this.data.values[e][14].show = true;
