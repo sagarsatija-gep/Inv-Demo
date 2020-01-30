@@ -6,7 +6,6 @@
 @import "../node_modules/@syncfusion/ej2/material.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import 'app/goods-issue//goods-issue.component.css';
-
 body {
   font-family: 'Roboto', sans-serif !important;
   overflow-y: hidden;
@@ -33,10 +32,28 @@ input[type="text"]:focus {
   transition: 0.3s ease-in-out;
 }
 
-.successpopup .modal{
+.successpopup .modal {
   top: 20% !important;
 }
 
-a, a:not([href]){
+a, a:not([href]) {
   cursor: pointer;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  background: #c2c9d2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
