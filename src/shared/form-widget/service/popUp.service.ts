@@ -147,7 +147,6 @@ export class PopUpService {
                 {
                     type: 'text',
                     value: '920.5 LB',
-                    
                 },
                 {
                     type: 'delete',
@@ -313,12 +312,12 @@ export class PopUpService {
             },
             {
                 type: 'text',
-                name: 'From Location',
+                name: 'From Plant',
                 colSize: '100px'
             },
             {
                 type: 'text',
-                name: 'From Plant',
+                name: 'From Location',
                 colSize: '100px'
             },
             {
@@ -328,12 +327,12 @@ export class PopUpService {
             },
             {
                 type: 'text',
-                name: 'To Location',
+                name: 'To Plant',
                 colSize: '100px'
             },
             {
                 type: 'text',
-                name: 'To Plant',
+                name: 'To Location',
                 colSize: '100px'
             },
             {
@@ -394,12 +393,20 @@ export class PopUpService {
                     value: 'C02-08-2-2'
                 },
                 {
-                    type: 'text',
-                    value: '6044'
+                    type: 'dropdown',
+                    value: [
+                        'Shore Base – SB05',
+                        'Shore Base – SB04'
+                    ],
+                    selectedValue: 'Shore Base – SB05'
                 },
                 {
-                    type: 'text',
-                    value: 'Shore Base – SB05'
+                    type: 'dropdown',
+                    value: [
+                        '6044',
+                        '6002'
+                    ],
+                    selectedValue: '6044'
                 },
                 {
                     type: 'dropdown',
@@ -460,12 +467,20 @@ export class PopUpService {
                     value: 'C02-08-2-2'
                 },
                 {
-                    type: 'text',
-                    value: '6044'
+                    type: 'dropdown',
+                    value: [
+                        'Shore Base – SB05',
+                        'Shore Base – SB04'
+                    ],
+                    selectedValue: 'Shore Base – SB05'
                 },
                 {
-                    type: 'text',
-                    value: 'Shore Base – SB05'
+                    type: 'dropdown',
+                    value: [
+                        '6044',
+                        '6002'
+                    ],
+                    selectedValue: '6044'
                 },
                 {
                     type: 'dropdown',
@@ -525,12 +540,20 @@ export class PopUpService {
                     value: 'C02-08-2-2'
                 },
                 {
-                    type: 'text',
-                    value: '6044'
+                    type: 'dropdown',
+                    value: [
+                        'Shore Base – SB05',
+                        'Shore Base – SB04'
+                    ],
+                    selectedValue: 'Shore Base – SB05'
                 },
                 {
-                    type: 'text',
-                    value: 'Shore Base – SB05'
+                    type: 'dropdown',
+                    value: [
+                        '6044',
+                        '6002'
+                    ],
+                    selectedValue: '6044'
                 },
                 {
                     type: 'dropdown',
@@ -590,12 +613,20 @@ export class PopUpService {
                     value: 'C02-08-2-2'
                 },
                 {
-                    type: 'text',
-                    value: '6044'
+                    type: 'dropdown',
+                    value: [
+                        'Shore Base – SB05',
+                        'Shore Base – SB04'
+                    ],
+                    selectedValue: 'Shore Base – SB05'
                 },
                 {
-                    type: 'text',
-                    value: 'Shore Base – SB05'
+                    type: 'dropdown',
+                    value: [
+                        '6044',
+                        '6002'
+                    ],
+                    selectedValue: '6044'
                 },
                 {
                     type: 'dropdown',
@@ -656,12 +687,20 @@ export class PopUpService {
                     value: 'C02-08-2-2'
                 },
                 {
-                    type: 'text',
-                    value: '6044'
+                    type: 'dropdown',
+                    value: [
+                        'Shore Base – SB05',
+                        'Shore Base – SB04'
+                    ],
+                    selectedValue: 'Shore Base – SB05'
                 },
                 {
-                    type: 'text',
-                    value: 'Shore Base – SB05'
+                    type: 'dropdown',
+                    value: [
+                        '6044',
+                        '6002'
+                    ],
+                    selectedValue: '6044'
                 },
                 {
                     type: 'dropdown',
@@ -722,12 +761,20 @@ export class PopUpService {
                     value: 'C02-08-2-2'
                 },
                 {
-                    type: 'text',
-                    value: '6044'
+                    type: 'dropdown',
+                    value: [
+                        'Shore Base – SB05',
+                        'Shore Base – SB04'
+                    ],
+                    selectedValue: 'Shore Base – SB05'
                 },
                 {
-                    type: 'text',
-                    value: 'Shore Base – SB05'
+                    type: 'dropdown',
+                    value: [
+                        '6044',
+                        '6002'
+                    ],
+                    selectedValue: '6044'
                 },
                 {
                     type: 'dropdown',
@@ -787,12 +834,20 @@ export class PopUpService {
                     value: 'C02-08-2-2'
                 },
                 {
-                    type: 'text',
-                    value: '6044'
+                    type: 'dropdown',
+                    value: [
+                        'Shore Base – SB05',
+                        'Shore Base – SB04'
+                    ],
+                    selectedValue: 'Shore Base – SB05'
                 },
                 {
-                    type: 'text',
-                    value: 'Shore Base – SB05'
+                    type: 'dropdown',
+                    value: [
+                        '6044',
+                        '6002'
+                    ],
+                    selectedValue: '6044'
                 },
                 {
                     type: 'dropdown',
@@ -853,12 +908,20 @@ export class PopUpService {
                     value: 'C02-08-2-2'
                 },
                 {
-                    type: 'text',
-                    value: '6044'
+                    type: 'dropdown',
+                    value: [
+                        'Shore Base – SB05',
+                        'Shore Base – SB04'
+                    ],
+                    selectedValue: 'Shore Base – SB05'
                 },
                 {
-                    type: 'text',
-                    value: 'Shore Base – SB05'
+                    type: 'dropdown',
+                    value: [
+                        '6044',
+                        '6002'
+                    ],
+                    selectedValue: '6044'
                 },
                 {
                     type: 'dropdown',
@@ -919,12 +982,20 @@ export class PopUpService {
                     value: 'C02-08-2-2'
                 },
                 {
-                    type: 'text',
-                    value: '6044'
+                    type: 'dropdown',
+                    value: [
+                        'Shore Base – SB05',
+                        'Shore Base – SB04'
+                    ],
+                    selectedValue: 'Shore Base – SB05'
                 },
                 {
-                    type: 'text',
-                    value: 'Shore Base – SB05'
+                    type: 'dropdown',
+                    value: [
+                        '6044',
+                        '6002'
+                    ],
+                    selectedValue: '6044'
                 },
                 {
                     type: 'dropdown',
@@ -985,12 +1056,20 @@ export class PopUpService {
                     value: 'C02-08-2-2'
                 },
                 {
-                    type: 'text',
-                    value: '6044'
+                    type: 'dropdown',
+                    value: [
+                        'Shore Base – SB05',
+                        'Shore Base – SB04'
+                    ],
+                    selectedValue: 'Shore Base – SB05'
                 },
                 {
-                    type: 'text',
-                    value: 'Shore Base – SB05'
+                    type: 'dropdown',
+                    value: [
+                        '6044',
+                        '6002'
+                    ],
+                    selectedValue: '6044'
                 },
                 {
                     type: 'dropdown',
@@ -1051,12 +1130,20 @@ export class PopUpService {
                     value: 'C02-08-2-2'
                 },
                 {
-                    type: 'text',
-                    value: '6044'
+                    type: 'dropdown',
+                    value: [
+                        'Shore Base – SB05',
+                        'Shore Base – SB04'
+                    ],
+                    selectedValue: 'Shore Base – SB05'
                 },
                 {
-                    type: 'text',
-                    value: 'Shore Base – SB05'
+                    type: 'dropdown',
+                    value: [
+                        '6044',
+                        '6002'
+                    ],
+                    selectedValue: '6044'
                 },
                 {
                     type: 'dropdown',
@@ -1117,12 +1204,20 @@ export class PopUpService {
                     value: 'C02-08-2-2'
                 },
                 {
-                    type: 'text',
-                    value: '6044'
+                    type: 'dropdown',
+                    value: [
+                        'Shore Base – SB05',
+                        'Shore Base – SB04'
+                    ],
+                    selectedValue: 'Shore Base – SB05'
                 },
                 {
-                    type: 'text',
-                    value: 'Shore Base – SB05'
+                    type: 'dropdown',
+                    value: [
+                        '6044',
+                        '6002'
+                    ],
+                    selectedValue: '6044'
                 },
                 {
                     type: 'dropdown',
@@ -1183,12 +1278,20 @@ export class PopUpService {
                     value: 'C02-08-2-2'
                 },
                 {
-                    type: 'text',
-                    value: '6044'
+                    type: 'dropdown',
+                    value: [
+                        'Shore Base – SB05',
+                        'Shore Base – SB04'
+                    ],
+                    selectedValue: 'Shore Base – SB05'
                 },
                 {
-                    type: 'text',
-                    value: 'Shore Base – SB05'
+                    type: 'dropdown',
+                    value: [
+                        '6044',
+                        '6002'
+                    ],
+                    selectedValue: '6044'
                 },
                 {
                     type: 'dropdown',
