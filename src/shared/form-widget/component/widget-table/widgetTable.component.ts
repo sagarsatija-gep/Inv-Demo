@@ -1,4 +1,5 @@
 import { Component, Input, OnInit, ViewEncapsulation } from "@angular/core";
+import { PopUpService } from "../../service/popUp.service";
 
 @Component({
     selector: 'widget-table',
@@ -10,17 +11,29 @@ export class WidgetTable implements OnInit {
     // show:boolean=false;
     @Input() data;
     
-    
+    constructor(private popUpService: PopUpService) {}
 
     ngOnInit(): void {
-        // debugger;
+        debugger;
         console.log(this.data);
+        this.popUpService.barCodePopUpDataForAsset.subscribe(indexp=>{
+            debugger
+            this.data.values.map((data,index)=>{
+                this.data.values[index][5].value = this.data.values[index][5].value1;
+            })
+        })
+    }
+
+    setValue(e) {
+        debugger
+        this.popUpService.setSelectedInputBoxValue(e);
     }
 
     display(e){
         debugger;
         console.log(this.data);
         this.data.values[e][14].show = true;
+        this.data.values[e][15].show = true;
         // this.data = this.data;
         // this.show=true;
     }

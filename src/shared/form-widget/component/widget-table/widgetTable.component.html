@@ -46,7 +46,7 @@
           </span>
 
           <input [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'textbox'" type="text"
-            [(ngModel)]="column.value" style="margin: 14px 0px;    width: 110px;">
+            [(ngModel)]="column.value" style="margin: 14px 0px;  width: 110px;" (click)="setValue(i)" >
 
           <input [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'textboxchange'" type="text"
             [(ngModel)]="column.value" (change)="applyData($event, i)" style="margin: 14px 0px;">

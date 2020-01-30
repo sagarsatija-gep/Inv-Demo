@@ -7,7 +7,10 @@ export class PopUpService {
     attachmentTable = new Subject<boolean>();
     isInternalStockErrorPopUp = false;
 
-    showBarCodeIcon = new Subject<boolean>();
+    showBarCodeIcon = new Subject<boolean>();// barcode header
+    selectedInputForAsset = 1; //for barCode Asset
+
+    barCodePopUpDataForAsset = new Subject<any>();
 
     internalTableData =  {
 
@@ -957,6 +960,10 @@ export class PopUpService {
     
     barCodes = [];
 
+    setSelectedInputBoxValue(n) {
+        this.selectedInputForAsset = n;
+    }
+
     showBarcode() {
         this.showBarCodeIcon.next(true);
     }
@@ -987,6 +994,10 @@ export class PopUpService {
             })
         }            
             
+    }
+
+    barCodePopUpDataForAssetDataChange(value) {
+        this.barCodePopUpDataForAsset.next(this.selectedInputForAsset);
     }
 
 }

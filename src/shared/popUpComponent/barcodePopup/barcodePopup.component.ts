@@ -1,6 +1,7 @@
 import { Router } from '@angular/router';
 import { NgbActiveModal } from '@ng-bootstrap/ng-bootstrap';
 import { Component, OnInit, Input } from "@angular/core";
+import { PopUpService } from '../../form-widget/service/popUp.service';
 
 @Component({
     selector: 'barcode-popUp',
@@ -10,12 +11,14 @@ import { Component, OnInit, Input } from "@angular/core";
 export class barcodePopup implements OnInit {
 @Input() name;
 
-    constructor(public activeModal: NgbActiveModal, private route: Router){}
+    constructor(public activeModal: NgbActiveModal, private route: Router, private porUpService: PopUpService){}
     ngOnInit() {}
 
     successOk() {
         this.activeModal.dismiss('Cross click');
         // this.route.navigate(['/home']);
+
+        this.porUpService.barCodePopUpDataForAssetDataChange(name);
     }
 
 }
