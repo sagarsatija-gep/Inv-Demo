@@ -60,6 +60,7 @@ input:checked+.slider:before {
 }
 
 /* Rounded sliders */
+
 .slider.round {
   border-radius: 34px;
 }
@@ -132,8 +133,7 @@ input:checked+.slider:before {
   overflow: hidden;
 }
 
-.switch-left-right .switch-label:before,
-.switch-left-right .switch-label:after {
+.switch-left-right .switch-label:before, .switch-left-right .switch-label:after {
   width: 20px;
   height: 20px;
   top: 4px;
@@ -213,8 +213,7 @@ input:checked+.slider:before {
   box-sizing: content-box;
 }
 
-.switch-label:before,
-.switch-label:after {
+.switch-label:before, .switch-label:after {
   position: absolute;
   top: 50%;
   margin-top: -.5em;
@@ -292,8 +291,8 @@ input:checked+.slider:before {
 
 /* Transition
 ========================== */
-.switch-label,
-.switch-handle {
+
+.switch-label, .switch-handle {
   transition: All 0.3s ease;
   -webkit-transition: All 0.3s ease;
   -moz-transition: All 0.3s ease;
@@ -305,22 +304,4 @@ input:checked+.slider:before {
 .table-container {
   overflow-x: scroll !important;
   scrollbar-width: thin;
-}
-
-::-webkit-scrollbar {
-  width: 8px;
-  border-radius: 5px;
-}
-
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 8px;
-  background: #c2c9d2;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
 }

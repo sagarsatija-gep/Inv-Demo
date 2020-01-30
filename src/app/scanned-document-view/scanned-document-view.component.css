@@ -29,21 +29,3 @@
     margin: auto;
     width: 65%;
 }
-
-#img-container::-webkit-scrollbar {
-    width: 8px;
-    border-radius: 5px;
-}
-
-#img-container::-webkit-scrollbar-track {
-    background: #f1f1f1;
-}
-
-#img-container::-webkit-scrollbar-thumb {
-    border-radius: 8px;
-    background: #c2c9d2;
-}
-
-#img-container::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}

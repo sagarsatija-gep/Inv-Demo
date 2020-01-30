@@ -14,25 +14,5 @@
         </span>
       </div>
     </div>
-  </div>
-  <div class="row justify-content-center" *ngFor="let x of barcodeBlock">
-    <div class="col-4 mb-4 d-flex justify-content-center">
-      <div class="row border-barcode px-3" style="border-radius: 35px;">
-        <div class="col-sm-6 text-left pt-3" style="font-weight: 500;">
-          Item Number: {{x.itemnumber}}
-        </div>
-        <div class="col-sm-6 text-right pt-3" style="color: #31435b; font-weight: 700;">
-          # of Lines: {{x.noofLines}}
-        </div>
-        <div class="col-sm-12 text-center pt-2" style="font-weight: 500;">
-          <figure>
-            <img class="mb-2" style="width: 100%;" src={{x.barcodeImage}} alt="Barcode">
-            <figcaption>
-              {{x.barcodeName}}
-            </figcaption>
-          </figure>
-        </div>
-      </div>
-    </div>
-  </div>
+  </div> 
 </div>

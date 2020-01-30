@@ -136,15 +136,174 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
         }
       }
     },
+    // {
+    //   'HeaderData': {
+    //     name: 'Line Details',
+    //     isOpen: true,
+    //     collapsible: true,
+    //     data: {
+    //       componentName: 'Attachement',
+    //       numberOfInput: 'one',
+    //       // page: 'internalStockTaransfer'
+    //     }
+    //   }
+    // }
     {
       'HeaderData': {
         name: 'Line Details',
-        isOpen: true,
         collapsible: true,
+        isOpen: true,
         data: {
-          componentName: 'Attachement',
-          numberOfInput: 'one',
-          page: 'internalStockTaransfer'
+          componentName: 'tabComponent',
+          haveButton: false,
+          data: [
+            {
+              tabName: 'LINES',
+              tabcomponent: 'widgetTable',
+              tabData: {
+                tablerowClass: 'bg-white',
+                colConfig: [
+                  {
+                    type: 'text',
+                    name: 'Line Number',
+                  },
+                  {
+                    type: 'text',
+                    name: 'Item Number',
+                  },
+                  {
+                    type: 'text',
+                    name: 'Item Name',
+                  },
+                  {
+                    type: 'text',
+                    name: 'Quantity',
+                  },
+                  {
+                    type: 'text',
+                    name: 'RFID Flag',
+                  }
+                ],
+                values: [
+                  [
+                    {
+                      type: 'text',
+                      value: '1'
+                    },
+                    {
+                      type: 'textboxchange',
+                      value: '',
+                    },
+                    {
+                      type: 'textbox',
+                      value: ''
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'text',
+                      value: '',
+                    }
+                  ],
+                  [
+                    {
+                      type: 'text',
+                      value: '2'
+                    },
+                    {
+                      type: 'textboxchange',
+                      value: '',
+                    },
+                    {
+                      type: 'textbox',
+                      value: ''
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'text',
+                      value: '',
+                    }
+                  ],
+                  [
+                    {
+                      type: 'text',
+                      value: '3'
+                    },
+                    {
+                      type: 'textboxchange',
+                      value: '',
+                    },
+                    {
+                      type: 'textbox',
+                      value: ''
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'text',
+                      value: '',
+                    }
+                  ],
+                  [
+                    {
+                      type: 'text',
+                      value: '4'
+                    },
+                    {
+                      type: 'textboxchange',
+                      value: '',
+                    },
+                    {
+                      type: 'textbox',
+                      value: ''
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'text',
+                      value: ''
+                    }
+                  ],
+                  [
+                    {
+                      type: 'text',
+                      value: '5'
+                    },
+                    {
+                      type: 'textboxchange',
+                      value: ''
+                    },
+                    {
+                      type: 'textbox',
+                      value: ''
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'text',
+                      value: '',
+                    }
+                  ]
+                ]
+              }
+            }
+          ]
         }
       }
     }
