@@ -9,8 +9,10 @@
     <div class="col-sm-3 mb-3" *ngFor="let x of quickLinks;">
       <div class="border border-secondary rounded-sm p-4 hoverEffect d-flex" routerLink={{x.url}}>
         <img class="quicklinksImg" src={{x.img}}>
-        <span><h6 class="pl-3" style="margin-top: 22px;">{{ x.txt }}</h6></span>
+        <span>
+          <h6 class="pl-3" style="margin-top: 22px;">{{ x.txt }}</h6>
+        </span>
       </div>
     </div>
-  </div>
+  </div> 
 </div>

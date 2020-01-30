@@ -1,4 +1,8 @@
-import { Component, Input, OnInit, ViewEncapsulation, OnDestroy } from "@angular/core";
+import { Component, Input, OnInit, ViewEncapsulation, ViewChild ,OnDestroy } from "@angular/core";
+import { NgbActiveModal, NgbModal } from "@ng-bootstrap/ng-bootstrap";
+import { BarcodeValueService } from "../../../../app/barcode-value.service";
+import { BarecodeScannerLivestreamComponent } from "ngx-barcode-scanner";
+import { enterView } from "@angular/core/src/render3/instructions";
 import { PopUpService } from "../../service/popUp.service";
 import { ActivatedRoute, Router } from "@angular/router";
 import { Subscription } from "rxjs";
@@ -14,11 +18,13 @@ export class WidgetTable implements OnInit, OnDestroy {
     @Input() data;
 
     popUpSubCription: Subscription;
-    
-    constructor(private popUpService: PopUpService, private route: Router) {}
+    barcodeValue;
+    barcodeIndexTracker;
 
     ngOnInit(): void {
-        debugger;
+        this.barcodeService.tableBarCode.subscribe(msg => {
+            this.data.values[this.barcodeIndexTracker][1].value = msg;
+        })
         console.log(this.data);
         this.popUpSubCription = this.popUpService.barCodePopUpDataForAsset.subscribe(indexp=>{
             debugger
@@ -40,8 +46,16 @@ export class WidgetTable implements OnInit, OnDestroy {
         debugger
         this.popUpService.setSelectedInputBoxValue(e);
     }
+    constructor(private modalService: NgbModal, public barcodeService: BarcodeValueService, private popUpService: PopUpService) { }
 
-    display(e){
+    openBarcodeScanner(e) {
+        console.log(e);
+        this.barcodeIndexTracker = e;
+        const modalRef = this.modalService.open(NgbdModalContent3);
+        modalRef.componentInstance.name = 'World';
+    }
+
+    display(e) {
         debugger;
         console.log(this.data);
         this.data.values[e][14].show = true;
@@ -51,8 +65,11 @@ export class WidgetTable implements OnInit, OnDestroy {
     }
 
     applyData(event, index) {
-        this.values[index][1].value = event.target.value
-        this.data.values[index] = this.values[index]
+        if (event.keyCode == 13) {
+            console.log("++++++++")
+            this.values[index][1].value = event.target.value;
+            this.data.values[index] = this.values[index];
+        }
     }
 
     values = [
@@ -67,7 +84,8 @@ export class WidgetTable implements OnInit, OnDestroy {
             },
             {
                 type: 'textbox',
-                value: 'E-MONT_KS-PANZERROHR_DN20'
+                value: 'E-MONT_KS-PANZERROHR_DN20',
+                styles: { 'width': '240px' }
             },
             {
                 type: 'textbox',
@@ -75,8 +93,9 @@ export class WidgetTable implements OnInit, OnDestroy {
                 classes: 'rounded-sm border-secondary input-small text-right'
             },
             {
-                type: 'text',
+                type: 'textbox',
                 value: '00000000000000000A101058',
+                styles: { 'width': '210px' }
             }
         ],
         [
@@ -90,7 +109,8 @@ export class WidgetTable implements OnInit, OnDestroy {
             },
             {
                 type: 'textbox',
-                value: 'KIT,ANALYSIS,HEATER TUBE & FILTER,MFR UN'
+                value: 'KIT,ANALYSIS,HEATER TUBE & FILTER,MFR UN',
+                styles: { 'width': '240px' }
             },
             {
                 type: 'textbox',
@@ -98,8 +118,9 @@ export class WidgetTable implements OnInit, OnDestroy {
                 classes: 'rounded-sm border-secondary input-small text-right'
             },
             {
-                type: 'text',
+                type: 'textbox',
                 value: 'E2801160600002052A5B5541',
+                styles: { 'width': '210px' }
             }
         ],
         [
@@ -113,7 +134,8 @@ export class WidgetTable implements OnInit, OnDestroy {
             },
             {
                 type: 'textbox',
-                value: 'MILLIPORE AAWP04700'
+                value: 'MILLIPORE AAWP04700',
+                styles: { 'width': '240px' }
             },
             {
                 type: 'textbox',
@@ -121,8 +143,9 @@ export class WidgetTable implements OnInit, OnDestroy {
                 classes: 'rounded-sm border-secondary input-small text-right'
             },
             {
-                type: 'text',
+                type: 'textbox',
                 value: 'E2801160600002052A5B5541',
+                styles: { 'width': '210px' }
             }
         ],
         [
@@ -136,7 +159,8 @@ export class WidgetTable implements OnInit, OnDestroy {
             },
             {
                 type: 'textbox',
-                value: 'MILLIPORE AAWP04700'
+                value: 'Bracket Assembly',
+                styles: { 'width': '240px' }
             },
             {
                 type: 'textbox',
@@ -144,8 +168,9 @@ export class WidgetTable implements OnInit, OnDestroy {
                 classes: 'rounded-sm border-secondary input-small text-right'
             },
             {
-                type: 'text',
-                value: 'E2801160600002052A5B5541'
+                type: 'textbox',
+                value: 'E2801160600002023A5B6641',
+                styles: { 'width': '210px' }
             }
         ],
         [
@@ -159,7 +184,8 @@ export class WidgetTable implements OnInit, OnDestroy {
             },
             {
                 type: 'textbox',
-                value: 'MILLIPORE AAWP04700'
+                value: '',
+                styles: { 'width': '240px' }
             },
             {
                 type: 'textbox',
@@ -167,10 +193,61 @@ export class WidgetTable implements OnInit, OnDestroy {
                 classes: 'rounded-sm border-secondary input-small text-right'
             },
             {
-                type: 'text',
-                value: 'E2801160600002052A5B5541',
+                type: 'textbox',
+                value: '',
+                styles: { 'width': '210px' }
             }
         ]
     ]
 
+}
+
+@Component({
+    selector: 'ngbd-modal-content',
+    template: `
+      <div class="modal-header">
+        <h4 class="modal-title">Scan Your Barcode</h4>
+         <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+          <span aria-hidden="true">&times;</span>
+     </button>
+      </div>
+      <div class="modal-body">
+      <barcode-scanner-livestream type="code_128" (valueChanges)="onValueChanges($event)"></barcode-scanner-livestream>
+          <div [hidden]="!barcodeValue">
+              {{barcodeValue}}
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+      </div>
+    `
+})
+export class NgbdModalContent3 implements OnInit {
+    @Input() name;
+
+    constructor(public activeModal: NgbActiveModal, public barcode: BarcodeValueService) { }
+    @ViewChild(BarecodeScannerLivestreamComponent)
+    barecodeScanner: BarecodeScannerLivestreamComponent;
+
+    barcodeValue;
+    ngOnInit() {
+        this.startQuagga();
+        this.barcode.tablemessage.subscribe(message => this.barcodeValue = message)
+    }
+    ngAfterViewInit() {
+        this.barecodeScanner.stop();
+    }
+    startQuagga() {
+        this.barecodeScanner.start()
+    }
+    stopQuagga() {
+        this.barecodeScanner.stop()
+    }
+    onValueChanges(result) {
+        this.barcodeValue = result.codeResult.code;
+        console.log(result.codeResult.code)
+        this.barecodeScanner.stop()
+        this.barcode.changetable(result.codeResult.code)
+        this.activeModal.close('Close click')
+    }
 }

@@ -18,11 +18,8 @@
 }
 
 .goodsIssuInputs .blocks {
-  border: 1px solid #d6d6d6;
-}
-
-.goodsIssuInputs .bg-gray {
-  background-color: #F8F9FA;
+  background-color: #fff;
+  border: 0px solid #d6d6d6;
 }
 
 .goodsIssuInputs .mat-form-field-infix {
@@ -43,4 +40,4 @@
   margin-top: -6px;
   height: 25px;
 }
-/*# sourceMappingURL=goodsIssueDetails.component.css.map */
+/*# sourceMappingURL=manageGoodsIssue.component.css.map */

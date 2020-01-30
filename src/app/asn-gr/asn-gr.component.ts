@@ -214,18 +214,6 @@ export class AsnGrComponent implements OnInit {
             },
             {
               type: 'text',
-              name: 'Goods Receipent',
-              colSize: '100px',
-              classes: 'text-left'
-            },
-            {
-              type: 'text',
-              name: 'Unloading Point',
-              colSize: '100px',
-              classes: 'text-left'
-            },
-            {
-              type: 'text',
               name: 'Serial Flag',
               colSize: '100px',
               classes: 'text-left'
@@ -257,6 +245,18 @@ export class AsnGrComponent implements OnInit {
             {
               type: 'text',
               name: 'Attachments',
+              colSize: '100px',
+              classes: 'text-left'
+            },
+            {
+              type: 'text',
+              name: 'Goods Recipient',
+              colSize: '100px',
+              classes: 'text-left'
+            },
+            {
+              type: 'text',
+              name: 'Unloading Point',
               colSize: '100px',
               classes: 'text-left'
             }
@@ -303,14 +303,6 @@ export class AsnGrComponent implements OnInit {
                   'C02 - 08- 2- 4'
                 ],
                 selectedValue: 'C02 - 08- 2- 2',
-              },
-              {
-                type: 'textbox',
-                value: '',
-              },
-              {
-                type: 'textbox',
-                value: '',
               },
               {
                 type: 'dropdown',
@@ -362,6 +354,14 @@ export class AsnGrComponent implements OnInit {
                   'padding': '0px',
                   'margin': '-3px'
                 }
+              },
+              {
+                type: 'textbox',
+                value: '',
+              },
+              {
+                type: 'textbox',
+                value: '',
               }
               ],
               [{
@@ -374,7 +374,7 @@ export class AsnGrComponent implements OnInit {
               },
               {
                 type: 'text',
-                value: 'Milwaukee Electric Tool 48-20-5030',
+                value: 'Electric Tool 48-20-5030',
                 tdClasses: 'text-left'
               },
               {
@@ -405,14 +405,6 @@ export class AsnGrComponent implements OnInit {
                   'C02 - 08- 2- 4'
                 ],
                 selectedValue: 'C03 - 06- 2- 2',
-              },
-              {
-                type: 'textbox',
-                value: '',
-              },
-              {
-                type: 'textbox',
-                value: '',
               },
               {
                 type: 'dropdown',
@@ -464,6 +456,14 @@ export class AsnGrComponent implements OnInit {
                   'padding': '0px',
                   'margin': '-3px'
                 }
+              },
+              {
+                type: 'textbox',
+                value: '',
+              },
+              {
+                type: 'textbox',
+                value: '',
               }
               ],
               [{
@@ -506,14 +506,6 @@ export class AsnGrComponent implements OnInit {
                   'C02 - 08- 2- 4'
                 ],
                 selectedValue: 'S02 - 03- 2- 4',
-              },
-              {
-                type: 'textbox',
-                value: '',
-              },
-              {
-                type: 'textbox',
-                value: '',
               },
               {
                 type: 'dropdown',
@@ -565,6 +557,14 @@ export class AsnGrComponent implements OnInit {
                   'padding': '0px',
                   'margin': '-3px'
                 }
+              },
+              {
+                type: 'textbox',
+                value: '',
+              },
+              {
+                type: 'textbox',
+                value: '',
               }
               ],
               [{
@@ -608,14 +608,6 @@ export class AsnGrComponent implements OnInit {
                   'C02 - 08- 2- 4'
                 ],
                 selectedValue: 'S02 - 03- 2- 4',
-              },
-              {
-                type: 'textbox',
-                value: '',
-              },
-              {
-                type: 'textbox',
-                value: '',
               },
               {
                 type: 'dropdown',
@@ -667,6 +659,14 @@ export class AsnGrComponent implements OnInit {
                   'padding': '0px',
                   'margin': '-3px'
                 }
+              },
+              {
+                type: 'textbox',
+                value: '',
+              },
+              {
+                type: 'textbox',
+                value: '',
               }
               ]
             ]

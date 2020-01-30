@@ -1,3 +1,4 @@
+import { RfidPopUpComponent } from './../shared/popUpComponent/RFIDPopUp/rfidPopUp.component';
 import { SuccessPopUp } from './../shared/popUpComponent/successPopUp/successPopUP.component';
 import { ExternalStockTransfer } from './external-stock-transfer/externalStockTransfer.component';
 import { FormWidget } from './../shared/form-widget/form-widget.module';
@@ -54,6 +55,7 @@ import { PoGoodsReceiptComponent } from './po-goods-receipt/po-goods-receipt.com
 import { PopupComponent } from './popup/popup.component';
 import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.component';
 import { CreatePackageComponent, NgbdModalContentCreatePackage } from './create-package/create-package.component';
+import { NgbdModalContent3 } from '../shared/form-widget/component/widget-table/widgetTable.component';
 import { barcodePopup } from '../shared/popUpComponent/barcodePopup/barcodePopup.component';
 
 @NgModule({
@@ -72,6 +74,7 @@ import { barcodePopup } from '../shared/popUpComponent/barcodePopup/barcodePopup
     NgbdModalContent,
     NgbdModalContent1,
     NgbdModalContent2,
+    NgbdModalContent3,
     ManagePackingListComponent,
     UnprocessedPackingSlipsComponent,
     PackingSlipsTabComponent,
@@ -96,6 +99,7 @@ import { barcodePopup } from '../shared/popUpComponent/barcodePopup/barcodePopup
     NgbdModalContentCreatePackage,
     ExternalStockTransfer,
     SuccessPopUp,
+    RfidPopUpComponent,
     barcodePopup
   ],
   imports: [
@@ -124,6 +128,6 @@ import { barcodePopup } from '../shared/popUpComponent/barcodePopup/barcodePopup
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService, NgbActiveModal],
   bootstrap: [AppComponent],
-  entryComponents: [NgbdModalContent, NgbdModalContent1, NgbdModalContent2, NgbdModalContentCreatePackage, SuccessPopUp, barcodePopup]
+  entryComponents: [NgbdModalContent, NgbdModalContent1, NgbdModalContent2, NgbdModalContentCreatePackage, SuccessPopUp, NgbdModalContent3, RfidPopUpComponent,barcodePopup]
 })
 export class AppModule { }

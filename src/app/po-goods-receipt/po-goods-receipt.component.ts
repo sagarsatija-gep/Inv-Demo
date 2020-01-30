@@ -257,7 +257,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'Milwaukee Electric Tool 48-20-5030',
+                      value: 'Electric Tool 48-20-5030',
                       tdClasses: 'text-left'
                     },
                     {
@@ -1010,7 +1010,7 @@ export class PoGoodsReceiptComponent implements OnInit {
 
   successPopUp() {
     const modalRef = this.modalService.open(SuccessPopUp, { size: 'lg' });
-    modalRef.componentInstance.name = 'World';
+    modalRef.componentInstance.name = 'Receipt is Finalized';
     
   }
 

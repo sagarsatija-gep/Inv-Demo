@@ -22,7 +22,7 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
 
   successPopUp() {
     const modalRef = this.modalService.open(SuccessPopUp, { size: 'lg' });
-    modalRef.componentInstance.name = 'World';
+    modalRef.componentInstance.name = 'Stock Transfer Initiated successfully.';
     
   }
 
@@ -132,7 +132,7 @@ export class NgbdModalContent2 implements OnInit {
 
   isErroPopUp: boolean;
   popupData = [
-    {
+    {  
       type:'text',
       name: 'From Storage Location',
       values: 'PMF-6002​',

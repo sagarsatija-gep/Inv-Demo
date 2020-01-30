@@ -20,6 +20,47 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
     modalRef.componentInstance.name = 'World';
   }
 
+  printRfid() {
+
+    let printContents, popupWin;
+    printContents = document.getElementById('print-section-rfid').innerHTML;
+    popupWin = window.open('', '_blank', 'top=0,left=0,height=1920px,width=1080px');
+    popupWin.document.open();
+    popupWin.document.write(`
+<html>
+  <head>
+    <style>
+    body{  width: 99%;}
+      label { font-weight: 400;
+              font-size: 13px;
+              padding: 2px;
+              margin-bottom: 5px;
+            }
+      table, td, th {
+             border: 1px solid silver;
+              }
+              table td {
+             font-size: 13px;
+              }
+
+               table th {
+             font-size: 13px;
+              }
+        table {
+              border-collapse: collapse;
+              width: 98%;
+              }
+          th {
+              height: 26px;
+              }
+    </style>
+  </head>
+<body onload="window.print();window.close()">${printContents}</body>
+</html>`);
+    popupWin.document.close();
+
+  }
+
   ngOnInit() {
     this.popUpSubscription = this.popup.internalStockPopUp.subscribe(isPopUP => {
       if (isPopUP) {
@@ -196,7 +237,8 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textbox',
-                      value: ''
+                      value: '',
+                      styles: { 'width': '240px' }
                     },
                     {
                       type: 'textbox',
@@ -204,8 +246,9 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
+                      styles: { 'width': '210px' }
                     }
                   ],
                   [
@@ -219,7 +262,8 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textbox',
-                      value: ''
+                      value: '',
+                      styles: { 'width': '240px' }
                     },
                     {
                       type: 'textbox',
@@ -227,8 +271,9 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
+                      styles: { 'width': '210px' }
                     }
                   ],
                   [
@@ -242,7 +287,8 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textbox',
-                      value: ''
+                      value: '',
+                      styles: { 'width': '240px' }
                     },
                     {
                       type: 'textbox',
@@ -250,8 +296,9 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
+                      styles: { 'width': '210px' }
                     }
                   ],
                   [
@@ -265,7 +312,8 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textbox',
-                      value: ''
+                      value: '',
+                      styles: { 'width': '240px' }
                     },
                     {
                       type: 'textbox',
@@ -273,8 +321,9 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
-                      type: 'text',
-                      value: ''
+                      type: 'textbox',
+                      value: '',
+                      styles: { 'width': '210px' }
                     }
                   ],
                   [
@@ -288,7 +337,8 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textbox',
-                      value: ''
+                      value: '',
+                      styles: { 'width': '240px' }
                     },
                     {
                       type: 'textbox',
@@ -296,8 +346,9 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
+                      styles: { 'width': '210px' }
                     }
                   ]
                 ]

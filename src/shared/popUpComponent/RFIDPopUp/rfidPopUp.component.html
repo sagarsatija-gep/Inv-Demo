@@ -1,0 +1,32 @@
+<div class="mx-auto d-block">
+    <div class="modal-header">
+    <div class="col-sm-12 text-right">
+        <h4 class="my-1" (click)="successOk()" style="cursor: pointer;" title="Close">
+            <i class="fas fa-times"></i>
+        </h4>
+    </div>
+    </div>
+    <div class="modal-body text-center pt-3">
+    <div class="table-responsive-sm">
+        <table class="table table-striped">
+        <thead>
+            <tr>
+            <th>RFID</th>
+            <th>Column 2</th>
+            <th>Column 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr  *ngFor="let x of name">
+            <td>{{x.id}}</td>
+            <td>12t3y2</td>
+            <td>w2222223</td>
+            </tr>
+        </tbody>
+        </table>
+    </div>
+    </div>
+    <div class="modal-footer">
+    <button class="btn btn-white text-uppercase rounded-0 popupbutton" (click)="successOk()" title="OK">OK</button>
+    </div>
+</div>
