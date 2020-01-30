@@ -15,6 +15,8 @@ export class WidgetTable implements OnInit {
 
     ngOnInit(): void {
         this.barcodeService.currentmessage.subscribe(msg => this.barcodeValue = msg)
+        // debugger;
+        console.log(this.data);
     }
     constructor(private modalService: NgbModal, public barcodeService: BarcodeValueService) { }
 
