@@ -1220,7 +1220,7 @@ export class PopUpService {
 
     barCodes = [];
 
-    rfidBarCodes ;
+    rfidBarCodes;
 
     constructor(private http: HttpClient) { }
 
