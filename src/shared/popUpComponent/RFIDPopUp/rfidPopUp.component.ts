@@ -14,17 +14,17 @@ export class RfidPopUpComponent implements OnInit{
     ngOnInit() {
         debugger;
         console.log(name);
-        this.name = [
-            {
-                id: ['rhaiukdsklfj']
-            },
-            {
-                id: ['rhaiukdsklfj']
-            },
-            {
-                id: ['rhaiukdsklfj']
-            }
-        ]
+        // this.name = [
+        //     {
+        //         id: ['rhaiukdsklfj']
+        //     },
+        //     {
+        //         id: ['rhaiukdsklfj']
+        //     },
+        //     {
+        //         id: ['rhaiukdsklfj']
+        //     }
+        // ]
     }
 
     successOk() {
