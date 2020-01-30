@@ -329,7 +329,7 @@ export class AsnGrComponent implements OnInit {
               },
               {
                 type: 'text',
-                value: 'Milwaukee Electric Tool 48-20-5030',
+                value: 'Electric Tool 48-20-5030',
                 tdClasses: 'text-left'
               },
               {
