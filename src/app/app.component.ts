@@ -21,7 +21,7 @@ export class AppComponent implements OnInit, OnDestroy {
   ngOnInit() {
     this.popUpSerVice.apiCallForBarCodeNumber();
     this.rfidSubscription = this.popUpSerVice.rfidGlob.subscribe( data => {
-      this.rfidData = data;
+      this.rfidData = data.data;
       if(this.rfidData.length != this.prevData.length && this.rfidData.length > 0 ) {
         this.showToast = true;
         this.prevData = this.rfidData;
