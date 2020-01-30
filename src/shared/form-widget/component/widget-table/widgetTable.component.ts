@@ -3,6 +3,7 @@ import { NgbActiveModal, NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import { BarcodeValueService } from "../../../../app/barcode-value.service";
 import { BarecodeScannerLivestreamComponent } from "ngx-barcode-scanner";
 import { enterView } from "@angular/core/src/render3/instructions";
+import { PopUpService } from "../../service/popUp.service";
 
 @Component({
     selector: 'widget-table',
@@ -21,8 +22,19 @@ export class WidgetTable implements OnInit {
             this.data.values[this.barcodeIndexTracker][1].value = msg;
         })
         console.log(this.data);
+        this.popUpService.barCodePopUpDataForAsset.subscribe(indexp=>{
+            debugger
+            this.data.values.map((data,index)=>{
+                this.data.values[index][5].value = this.data.values[index][5].value1;
+            })
+        })
     }
-    constructor(private modalService: NgbModal, public barcodeService: BarcodeValueService) { }
+
+    setValue(e) {
+        debugger
+        this.popUpService.setSelectedInputBoxValue(e);
+    }
+    constructor(private modalService: NgbModal, public barcodeService: BarcodeValueService, private popUpService: PopUpService) { }
 
     openBarcodeScanner(e) {
         console.log(e);
@@ -35,6 +47,7 @@ export class WidgetTable implements OnInit {
         debugger;
         console.log(this.data);
         this.data.values[e][14].show = true;
+        this.data.values[e][15].show = true;
         // this.data = this.data;
         // this.show=true;
     }

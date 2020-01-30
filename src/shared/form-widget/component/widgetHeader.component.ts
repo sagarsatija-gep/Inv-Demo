@@ -39,9 +39,20 @@ export class WidgetHeaderComponent implements OnInit {
     ngOnInit(): void {
         this.togal = this.headerData.isOpen;
         this.createComponent();
+        //Using for barCode Reader in Asset
         this.poupservice.showBarCodeIcon.subscribe(data => {
             this.showBarCode = data;
         })
+
+        //Using for read value from barCodePopUp
+
+        // this.poupservice.barCodePopUpDataForAsset.subscribe(data=> {
+        //     debugger
+        //     console.log(data);
+            
+        // })
+
+
     }
 
     openPopup() {

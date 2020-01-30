@@ -306,6 +306,7 @@ export class AsnGrComponent implements OnInit {
               {
                 type: 'button',
                 value: 'UPLOAD',
+                show:false,
                 styles: {
                   'width': '85px',
                   'height': '30px',
@@ -407,6 +408,7 @@ export class AsnGrComponent implements OnInit {
               {
                 type: 'button',
                 value: 'UPLOAD',
+                show:false,
                 styles: {
                   'width': '85px',
                   'height': '30px',
@@ -507,6 +509,7 @@ export class AsnGrComponent implements OnInit {
               {
                 type: 'button',
                 value: 'UPLOAD',
+                show:false,
                 styles: {
                   'width': '85px',
                   'height': '30px',
@@ -608,6 +611,7 @@ export class AsnGrComponent implements OnInit {
               {
                 type: 'button',
                 value: 'UPLOAD',
+                show:false,
                 styles: {
                   'width': '85px',
                   'height': '30px',
@@ -704,6 +708,7 @@ export class AsnGrComponent implements OnInit {
               {
                 type: 'textbox',
                 value: '',
+                value1:'628736',
                 classes: 'rounded-sm border-secondary input-small text-right'
               },
               {
@@ -741,6 +746,7 @@ export class AsnGrComponent implements OnInit {
               {
                 type: 'textbox',
                 value: '',
+                value1:'428736',
                 classes: 'rounded-sm border-secondary input-small text-right'
               },
               {
@@ -778,6 +784,8 @@ export class AsnGrComponent implements OnInit {
               {
                 type: 'textbox',
                 value: '',
+                
+                value1:'686736',
                 classes: 'rounded-sm border-secondary input-small text-right'
               },
               {
@@ -815,6 +823,8 @@ export class AsnGrComponent implements OnInit {
               {
                 type: 'textbox',
                 value: '',
+                
+                value1:'628776',
                 classes: 'rounded-sm border-secondary input-small text-right'
               },
               {
@@ -852,6 +862,8 @@ export class AsnGrComponent implements OnInit {
               {
                 type: 'textbox',
                 value: '',
+                
+                value1:'746736',
                 classes: 'rounded-sm border-secondary input-small text-right'
               },
               {
@@ -889,6 +901,8 @@ export class AsnGrComponent implements OnInit {
               {
                 type: 'textbox',
                 value: '',
+                
+                value1:'628746',
                 classes: 'rounded-sm border-secondary input-small text-right'
               },
               {
@@ -926,6 +940,8 @@ export class AsnGrComponent implements OnInit {
               {
                 type: 'textbox',
                 value: '',
+                
+                value1:'628744',
                 classes: 'rounded-sm border-secondary input-small text-right'
               },
               {
@@ -963,6 +979,8 @@ export class AsnGrComponent implements OnInit {
               {
                 type: 'textbox',
                 value: '',
+                
+                value1:'628722',
                 classes: 'rounded-sm border-secondary input-small text-right'
               },
               {
@@ -1000,6 +1018,8 @@ export class AsnGrComponent implements OnInit {
               {
                 type: 'textbox',
                 value: '',
+                
+                value1:'625536',
                 classes: 'rounded-sm border-secondary input-small text-right'
               },
               {
@@ -1036,7 +1056,8 @@ export class AsnGrComponent implements OnInit {
 
               {
                 type: 'textbox',
-                value: '',
+                value: '',  
+                value1:'945278',
                 classes: 'rounded-sm border-secondary input-small text-right'
               },
               {

@@ -54,7 +54,7 @@
           </span>
 
           <input [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'textbox'" type="text"
-            [(ngModel)]="column.value" style="margin: 14px 0px;    width: 110px;">
+            [(ngModel)]="column.value" style="margin: 14px 0px;  width: 110px;" (click)="setValue(i)" >
 
           <div *ngIf="column.type == 'textboxchange'">
             <input [ngStyle]="column.styles" [ngClass]="column.classes" type="text" [(ngModel)]="column.value"
