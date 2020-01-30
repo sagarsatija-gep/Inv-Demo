@@ -21,6 +21,7 @@ export class AppComponent implements OnInit {
       this.rfidData = data;
       if(this.rfidData.length != this.prevData.length) {
         this.showToast = true;
+        this.prevData = this.rfidData;
         setTimeout(() => {
           this.showToast = false;          
         }, 3000);
