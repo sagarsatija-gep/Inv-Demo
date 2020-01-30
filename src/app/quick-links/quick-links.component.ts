@@ -54,25 +54,25 @@ export class QuickLinksComponent implements OnInit {
       {
         itemnumber: 5444032,
         noofLines: 25,
-        barcodeImage: '../../assets/images/barcode1.png',
+        barcodeImage: 'https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/barcode1.png',
         barcodeName: 'Bracket Assembly'
       },
       {
         itemnumber: 7454512,
         noofLines: 22,
-        barcodeImage: '../../assets/images/barcode2.png',
+        barcodeImage: 'https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/barcode2.png',
         barcodeName: 'E-MONT_KS-PANZERROHR_DN20'
       },
       {
         itemnumber: 8732674,
         noofLines: 28,
-        barcodeImage: '../../assets/images/barcode3.png',
+        barcodeImage: 'https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/barcode3.png',
         barcodeName: 'KIT,ANALYSIS,HEATER TUBE & FILTER,MFR UN'
       },
       {
         itemnumber: 1592349,
         noofLines: 23,
-        barcodeImage: '../../assets/images/barcode4.png',
+        barcodeImage: 'https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/barcode4.png',
         barcodeName: 'MILLIPORE AAWP04700'
       }
     ]

@@ -1,9 +1,11 @@
-import { Component, Input, OnInit, ViewEncapsulation, ViewChild } from "@angular/core";
+import { Component, Input, OnInit, ViewEncapsulation, ViewChild ,OnDestroy } from "@angular/core";
 import { NgbActiveModal, NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import { BarcodeValueService } from "../../../../app/barcode-value.service";
 import { BarecodeScannerLivestreamComponent } from "ngx-barcode-scanner";
 import { enterView } from "@angular/core/src/render3/instructions";
 import { PopUpService } from "../../service/popUp.service";
+import { ActivatedRoute, Router } from "@angular/router";
+import { Subscription } from "rxjs";
 
 @Component({
     selector: 'widget-table',
@@ -11,9 +13,11 @@ import { PopUpService } from "../../service/popUp.service";
     styleUrls: ['./widgetTable.component.scss'],
     encapsulation: ViewEncapsulation.None
 })
-export class WidgetTable implements OnInit {
+export class WidgetTable implements OnInit, OnDestroy {
     // show:boolean=false;
     @Input() data;
+
+    popUpSubCription: Subscription;
     barcodeValue;
     barcodeIndexTracker;
 
@@ -22,12 +26,20 @@ export class WidgetTable implements OnInit {
             this.data.values[this.barcodeIndexTracker][1].value = msg;
         })
         console.log(this.data);
-        this.popUpService.barCodePopUpDataForAsset.subscribe(indexp=>{
+        this.popUpSubCription = this.popUpService.barCodePopUpDataForAsset.subscribe(indexp=>{
             debugger
-            this.data.values.map((data,index)=>{
-                this.data.values[index][5].value = this.data.values[index][5].value1;
-            })
+            console.log(this.data);
+            if(this.data.route != 'poGoodsReceipt'){
+                
+                this.data.values.map((data,index)=>{
+                    this.data.values[index][5].value = this.data.values[index][5].value1;
+                })
+            }
         })
+    }
+
+    ngOnDestroy() {
+        this.popUpSubCription.unsubscribe();
     }
 
     setValue(e) {

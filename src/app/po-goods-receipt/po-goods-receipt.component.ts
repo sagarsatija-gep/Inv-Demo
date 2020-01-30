@@ -51,16 +51,19 @@ export class PoGoodsReceiptComponent implements OnInit {
       'HeaderData': {
         name: 'Line Details',
         collapsible: true,
+        route:"poGoodsReceipt",
         isOpen: true,
         data: {
           componentName: 'tabComponent',
-          route:"poGoodsReceipt",
+          route: "poGoodsReceipt",
           haveButton: false,
           data: [
             {
               tabName: 'LINES',
               tabcomponent: 'widgetTable',
+              route:'PoGoodsReceiptComponent',
               tabData: {
+                route:"poGoodsReceipt",
                 tablerowClass: 'bg-white',
                 colConfig: [
                   {
@@ -113,18 +116,6 @@ export class PoGoodsReceiptComponent implements OnInit {
                   },
                   {
                     type: 'text',
-                    name: 'Goods Receipent',
-                    colSize: '100px',
-                    classes: 'text-left'
-                  },
-                  {
-                    type: 'text',
-                    name: 'Unloading Point',
-                    colSize: '100px',
-                    classes: 'text-left'
-                  },
-                  {
-                    type: 'text',
                     name: 'Serial Flag',
                     colSize: '100px',
                     classes: 'text-left'
@@ -144,6 +135,18 @@ export class PoGoodsReceiptComponent implements OnInit {
                   {
                     type: 'text',
                     name: 'Storage Conditions',
+                    colSize: '100px',
+                    classes: 'text-left'
+                  },
+                  {
+                    type: 'text',
+                    name: 'Goods Receipent',
+                    colSize: '100px',
+                    classes: 'text-left'
+                  },
+                  {
+                    type: 'text',
+                    name: 'Unloading Point',
                     colSize: '100px',
                     classes: 'text-left'
                   },
@@ -199,14 +202,6 @@ export class PoGoodsReceiptComponent implements OnInit {
                       selectedValue: 'C02 - 08- 2- 2',
                     },
                     {
-                      type: 'textbox',
-                      value: '',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                    },
-                    {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
@@ -238,9 +233,17 @@ export class PoGoodsReceiptComponent implements OnInit {
                       value: '',
                     },
                     {
+                      type: 'textbox',
+                      value: '',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                    },
+                    {
                       type: 'button',
                       value: 'UPLOAD',
-                      show:false,
+                      show: false,
                       styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ],
@@ -288,39 +291,39 @@ export class PoGoodsReceiptComponent implements OnInit {
                       selectedValue: 'C03 - 06- 2- 2',
                     },
                     {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
                       type: 'textbox',
                       value: '',
                     },
                     {
                       type: 'textbox',
                       value: '',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
                     },
                     {
                       type: 'textbox',
@@ -329,7 +332,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     {
                       type: 'button',
                       value: 'UPLOAD',
-                      show:false,
+                      show: false,
                       styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ],
@@ -377,14 +380,6 @@ export class PoGoodsReceiptComponent implements OnInit {
                       selectedValue: 'S02 - 03- 2- 4',
                     },
                     {
-                      type: 'textbox',
-                      value: '',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                    },
-                    {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
@@ -416,9 +411,17 @@ export class PoGoodsReceiptComponent implements OnInit {
                       value: '',
                     },
                     {
+                      type: 'textbox',
+                      value: '',
+                    },
+                    {
+                      type: 'textbox',
+                      value: '',
+                    },
+                    {
                       type: 'button',
                       value: 'UPLOAD',
-                      show:false,
+                      show: false,
                       styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ],
@@ -466,39 +469,39 @@ export class PoGoodsReceiptComponent implements OnInit {
                       selectedValue: 'S02 - 03- 2- 4',
                     },
                     {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
                       type: 'textbox',
                       value: '',
                     },
                     {
                       type: 'textbox',
                       value: '',
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
                     },
                     {
                       type: 'textbox',
@@ -507,7 +510,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     {
                       type: 'button',
                       value: 'UPLOAD',
-                      show:false,
+                      show: false,
                       styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ]
@@ -517,472 +520,446 @@ export class PoGoodsReceiptComponent implements OnInit {
             {
               tabName: 'ASSET MANAGEMENT',
               tabcomponent: 'widgetTable',
+              barcodeButton: true,
               tabData: {
-                colConfig: [
-                  {
-                    type: 'checkbox',
-                    name: 'Line Select',
-                    styles: { 'width': '2%' },
+                colConfig: [{
+                  type: 'checkbox',
+                  name: 'Line Select',
+                  styles: {
+                    'width': '2%'
                   },
-                  {
-                    type: 'text',
-                    name: 'Line Number',
-                    colSize: '100px',
-                    classes: ' ',
-                  },
-                  {
-                    type: 'text',
-                    name: 'Item Number',
-                    colSize: '100px',
-                    classes: ' ',
-                  },
-                  {
-                    type: 'text',
-                    name: 'Description',
-                    colSize: '100px',
-                    classes: ' ',
-                  },
-                  {
-                    type: 'text',
-                    name: 'UOM',
-                    colSize: '100px',
-                    classes: '',
-                  },
-                  {
-                    type: 'text',
-                    name: 'Received Quantity',
-                    colSize: '100px',
-                  },
-                  {
-                    type: 'text',
-                    name: 'Serial Number',
-                    colSize: '100px',
-                  },
-                  {
-                    type: 'text',
-                    name: 'Manufacturer Name',
-                    colSize: '100px',
-                  },
-                  {
-                    type: 'text',
-                    name: 'Manufacturer Part Number',
-                    colSize: '100px',
-                  }
+                },
+                {
+                  type: 'text',
+                  name: 'Line Number',
+                  colSize: '100px',
+                  classes: ' ',
+                },
+                {
+                  type: 'text',
+                  name: 'Item Number',
+                  colSize: '100px',
+                  classes: ' ',
+                },
+                {
+                  type: 'text',
+                  name: 'Description',
+                  colSize: '100px',
+                  classes: ' ',
+                },
+                {
+                  type: 'text',
+                  name: 'UOM',
+                  colSize: '100px',
+                  classes: '',
+                },
+                {
+                  type: 'text',
+                  name: 'Serial Number',
+                  colSize: '100px',
+                },
+                {
+                  type: 'text',
+                  name: 'Manufacturer Name',
+                  colSize: '100px',
+                },
+                {
+                  type: 'text',
+                  name: 'Manufacturer Part Number',
+                  colSize: '100px',
+                }
                 ],
                 values: [
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: '1',
-                    },
-                    {
-                      type: 'text',
-                      value: '2063777',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Bracket Assembly',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Each',
-                    },
-                    {
-                      type: 'text',
-                      value: '10',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
+                  [{
+                    type: 'checkbox',
+                    value: 'false',
+                  },
+                  {
+                    type: 'text',
+                    value: '1',
+                  },
+                  {
+                    type: 'text',
+                    value: '2063777',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Bracket Assembly',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Each',
+                  },
+    
+                  {
+                    type: 'textbox',
+                    value: '',
+                    value1:'628736',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  }
                   ],
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: '2',
-                    },
-                    {
-                      type: 'text',
-                      value: '2063777',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Bracket Assembly',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Each',
-                    },
-                    {
-                      type: 'text',
-                      value: '10',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
+                  [{
+                    type: 'checkbox',
+                    value: 'false',
+                  },
+                  {
+                    type: 'text',
+                    value: '2',
+                  },
+                  {
+                    type: 'text',
+                    value: '2063777',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Bracket Assembly',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Each',
+                  },
+    
+                  {
+                    type: 'textbox',
+                    value: '',
+                    value1:'428736',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  }
                   ],
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: '3',
-                    },
-                    {
-                      type: 'text',
-                      value: '2063777',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Bracket Assembly',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Each',
-                    },
-                    {
-                      type: 'text',
-                      value: '10',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
+                  [{
+                    type: 'checkbox',
+                    value: 'false',
+                  },
+                  {
+                    type: 'text',
+                    value: '3',
+                  },
+                  {
+                    type: 'text',
+                    value: '2063777',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Bracket Assembly',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Each',
+                  },
+    
+                  {
+                    type: 'textbox',
+                    value: '',
+                    
+                    value1:'686736',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  }
                   ],
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: '4',
-                    },
-                    {
-                      type: 'text',
-                      value: '2063777',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Bracket Assembly',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Each',
-                    },
-                    {
-                      type: 'text',
-                      value: '10',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
+                  [{
+                    type: 'checkbox',
+                    value: 'false',
+                  },
+                  {
+                    type: 'text',
+                    value: '4',
+                  },
+                  {
+                    type: 'text',
+                    value: '2063777',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Bracket Assembly',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Each',
+                  },
+    
+                  {
+                    type: 'textbox',
+                    value: '',
+                    
+                    value1:'628776',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  }
                   ],
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: '5',
-                    },
-                    {
-                      type: 'text',
-                      value: '2063777',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Bracket Assembly',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Each',
-                    },
-                    {
-                      type: 'text',
-                      value: '10',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
+                  [{
+                    type: 'checkbox',
+                    value: 'false',
+                  },
+                  {
+                    type: 'text',
+                    value: '5',
+                  },
+                  {
+                    type: 'text',
+                    value: '2063777',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Bracket Assembly',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Each',
+                  },
+    
+                  {
+                    type: 'textbox',
+                    value: '',
+                    
+                    value1:'746736',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  }
                   ],
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: '6',
-                    },
-                    {
-                      type: 'text',
-                      value: '2063777',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Bracket Assembly',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Each',
-                    },
-                    {
-                      type: 'text',
-                      value: '10',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
+                  [{
+                    type: 'checkbox',
+                    value: 'false',
+                  },
+                  {
+                    type: 'text',
+                    value: '6',
+                  },
+                  {
+                    type: 'text',
+                    value: '2063777',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Bracket Assembly',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Each',
+                  },
+    
+                  {
+                    type: 'textbox',
+                    value: '',
+                    
+                    value1:'628746',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  }
                   ],
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: '7',
-                    },
-                    {
-                      type: 'text',
-                      value: '2063777',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Bracket Assembly',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Each',
-                    },
-                    {
-                      type: 'text',
-                      value: '10',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
+                  [{
+                    type: 'checkbox',
+                    value: 'false',
+                  },
+                  {
+                    type: 'text',
+                    value: '7',
+                  },
+                  {
+                    type: 'text',
+                    value: '2063777',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Bracket Assembly',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Each',
+                  },
+    
+                  {
+                    type: 'textbox',
+                    value: '',
+                    
+                    value1:'628744',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  }
                   ],
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: '8',
-                    },
-                    {
-                      type: 'text',
-                      value: '2063777',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Bracket Assembly',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Each',
-                    },
-                    {
-                      type: 'text',
-                      value: '10',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
+                  [{
+                    type: 'checkbox',
+                    value: 'false',
+                  },
+                  {
+                    type: 'text',
+                    value: '8',
+                  },
+                  {
+                    type: 'text',
+                    value: '2063777',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Bracket Assembly',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Each',
+                  },
+    
+                  {
+                    type: 'textbox',
+                    value: '',
+                    
+                    value1:'628722',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  }
                   ],
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: '9',
-                    },
-                    {
-                      type: 'text',
-                      value: '2063777',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Bracket Assembly',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Each',
-                    },
-                    {
-                      type: 'text',
-                      value: '10',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
+                  [{
+                    type: 'checkbox',
+                    value: 'false',
+                  },
+                  {
+                    type: 'text',
+                    value: '9',
+                  },
+                  {
+                    type: 'text',
+                    value: '2063777',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Bracket Assembly',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Each',
+                  },
+    
+                  {
+                    type: 'textbox',
+                    value: '',
+                    
+                    value1:'625536',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  }
                   ],
-                  [
-                    {
-                      type: 'checkbox',
-                      value: 'false',
-                    },
-                    {
-                      type: 'text',
-                      value: '10',
-                    },
-                    {
-                      type: 'text',
-                      value: '2063777',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Bracket Assembly',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Each',
-                    },
-                    {
-                      type: 'text',
-                      value: '10',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    }
+                  [{
+                    type: 'checkbox',
+                    value: 'false',
+                  },
+                  {
+                    type: 'text',
+                    value: '10',
+                  },
+                  {
+                    type: 'text',
+                    value: '2063777',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Bracket Assembly',
+                  },
+                  {
+                    type: 'text',
+                    value: 'Each',
+                  },
+    
+                  {
+                    type: 'textbox',
+                    value: '',  
+                    value1:'945278',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  }
                   ],
                 ]
               }
-
+    
             }
           ]
         }
@@ -1008,7 +985,7 @@ export class PoGoodsReceiptComponent implements OnInit {
   successPopUp() {
     const modalRef = this.modalService.open(SuccessPopUp, { size: 'lg' });
     modalRef.componentInstance.name = 'Receipt is Finalized';
-    
+
   }
 
 

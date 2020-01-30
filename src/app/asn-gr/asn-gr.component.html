@@ -24,8 +24,8 @@
         <button (click)="print()"  class="btn btn-primary text-white text-uppercase shadow rounded-0">
           Print Barcode
         </button>
-        <button class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;">
-          Print RFID
+        <button (click)="printRfid()"  class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;">
+          Print RFID Tags
         </button>
         <button class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;"
           (click)="onFinalizeClick()">
@@ -40,4 +40,94 @@
   <img style="display: block;margin: 24px 40%;" src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/1010151.jpg">
   <img style="display: block;margin: 24px 40%;" src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/2030539.jpg">
   <img style="display: block;margin: 24px 40%;" src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/2044808.jpg">
+</div>
+
+
+
+<!-- Barcode-Rfid -->
+<div id="print-section-rfid" style="display: none;" >
+  <div  class="row justify-content-center" >
+    <div class="col-4 mb-4 d-flex justify-content-center">
+      <div class="row border-barcode px-3" style="border-radius: 35px;">
+        <div class="col-sm-6 text-left pt-3" style="font-weight: 500;">
+          Item Number:&nbsp;5444032
+        </div>
+        <div class="col-sm-6 text-right pt-3" style="color: #31435b; font-weight: 700;">
+          # of Lines:&nbsp;25
+        </div>
+        <div class="col-sm-12 text-center pt-2" style="font-weight: 500;">
+          <figure>
+            <img class="mb-2" style="width: 100%;" src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/barcode1.png" alt="Bracket Assembly">
+            <figcaption>
+              Bracket Assembly
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-4 mb-4 d-flex justify-content-center">
+      <div class="row border-barcode px-3" style="border-radius: 35px;">
+        <div class="col-sm-6 text-left pt-3" style="font-weight: 500;">
+          Item Number:&nbsp;7454512
+        </div>
+        <div class="col-sm-6 text-right pt-3" style="color: #31435b; font-weight: 700;">
+          # of Lines:&nbsp;23
+        </div>
+        <div class="col-sm-12 text-center pt-2" style="font-weight: 500;">
+          <figure>
+            <img class="mb-2" style="width: 100%;" src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/barcode2.png"
+              alt="E-MONT_KS-PANZERROHR_DN20">
+            <figcaption>
+              E-MONT_KS-PANZERROHR_DN20
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-4 mb-4 d-flex justify-content-center">
+      <div class="row border-barcode px-3" style="border-radius: 35px;">
+        <div class="col-sm-6 text-left pt-3" style="font-weight: 500;">
+          Item Number:&nbsp;8732674
+        </div>
+        <div class="col-sm-6 text-right pt-3" style="color: #31435b; font-weight: 700;">
+          # of Lines:&nbsp;27
+        </div>
+        <div class="col-sm-12 text-center pt-2" style="font-weight: 500;">
+          <figure>
+            <img class="mb-2" style="width: 100%;" src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/barcode3.png"
+              alt="KIT,ANALYSIS,HEATER TUBE & FILTER,MFR UN">
+            <figcaption>
+              KIT,ANALYSIS,HEATER TUBE & FILTER,MFR UN
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center">
+    <div class="col-4 mb-4 d-flex justify-content-center">
+      <div class="row border-barcode px-3" style="border-radius: 35px;">
+        <div class="col-sm-6 text-left pt-3" style="font-weight: 500;">
+          Item Number:&nbsp;1592349
+        </div>
+        <div class="col-sm-6 text-right pt-3" style="color: #31435b; font-weight: 700;">
+          # of Lines:&nbsp;26
+        </div>
+        <div class="col-sm-12 text-center pt-2" style="font-weight: 500;">
+          <figure>
+            <img class="mb-2" style="width: 100%;" src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/barcode4.png"
+              alt="MILLIPORE AAWP04700">
+            <figcaption>
+              MILLIPORE AAWP04700
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </div>
+  </div>
+  
 </div>
