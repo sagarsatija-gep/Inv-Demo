@@ -80,7 +80,7 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
             {
               type:'text',
               name: 'Company Code',
-              values: 'Chevron Refining',
+              values: 'Chevron Refinery',
             },
             {
               type: 'textbox',
@@ -142,7 +142,7 @@ export class NgbdModalContent2 implements OnInit {
     {
       type:'dropdown',
       name: 'From BIN',
-      values: ['',''],
+      values: ['C02-08-2-2','N02-06-3-2'],
       selectedValue: '',
       showBarcode: true
     },
@@ -168,7 +168,7 @@ export class NgbdModalContent2 implements OnInit {
     {
       type:'dropdown',
       name: 'To BIN',
-      values: ['',''],
+      values: ['N02-06-3-2','N02-06-6-4'],
       selectedValue: '',
       showBarcode: true
     },
