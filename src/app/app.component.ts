@@ -23,6 +23,7 @@ export class AppComponent implements OnInit {
         this.showToast = true;
         this.prevData = this.rfidData;
         setTimeout(() => {
+          debugger;
           this.showToast = false;          
         }, 3000);
       }
