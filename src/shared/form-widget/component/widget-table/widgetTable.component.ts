@@ -1,4 +1,7 @@
-import { Component, Input, OnInit, ViewEncapsulation } from "@angular/core";
+import { Component, Input, OnInit, ViewEncapsulation, ViewChild } from "@angular/core";
+import { NgbActiveModal, NgbModal } from "@ng-bootstrap/ng-bootstrap";
+import { BarcodeValueService } from "../../../../app/barcode-value.service";
+import { BarecodeScannerLivestreamComponent } from "ngx-barcode-scanner";
 
 @Component({
     selector: 'widget-table',
@@ -8,10 +11,16 @@ import { Component, Input, OnInit, ViewEncapsulation } from "@angular/core";
 })
 export class WidgetTable implements OnInit {
     @Input() data;
+    barcodeValue
 
     ngOnInit(): void {
-        debugger;
-        console.log(this.data);
+        this.barcodeService.currentmessage.subscribe(msg => this.barcodeValue = msg)
+    }
+    constructor(private modalService: NgbModal, public barcodeService: BarcodeValueService) { }
+
+    openBarcodeScanner() {
+        const modalRef = this.modalService.open(NgbdModalContent3);
+        modalRef.componentInstance.name = 'World';
     }
 
     applyData(event, index) {
@@ -31,7 +40,8 @@ export class WidgetTable implements OnInit {
             },
             {
                 type: 'textbox',
-                value: 'E-MONT_KS-PANZERROHR_DN20'
+                value: 'E-MONT_KS-PANZERROHR_DN20',
+                styles: { 'width': '240px' }
             },
             {
                 type: 'textbox',
@@ -39,8 +49,9 @@ export class WidgetTable implements OnInit {
                 classes: 'rounded-sm border-secondary input-small text-right'
             },
             {
-                type: 'text',
+                type: 'textbox',
                 value: '00000000000000000A101058',
+                styles: { 'width': '210px' }
             }
         ],
         [
@@ -54,7 +65,8 @@ export class WidgetTable implements OnInit {
             },
             {
                 type: 'textbox',
-                value: 'KIT,ANALYSIS,HEATER TUBE & FILTER,MFR UN'
+                value: 'KIT,ANALYSIS,HEATER TUBE & FILTER,MFR UN',
+                styles: { 'width': '240px' }
             },
             {
                 type: 'textbox',
@@ -62,8 +74,9 @@ export class WidgetTable implements OnInit {
                 classes: 'rounded-sm border-secondary input-small text-right'
             },
             {
-                type: 'text',
+                type: 'textbox',
                 value: 'E2801160600002052A5B5541',
+                styles: { 'width': '210px' }
             }
         ],
         [
@@ -77,7 +90,8 @@ export class WidgetTable implements OnInit {
             },
             {
                 type: 'textbox',
-                value: 'MILLIPORE AAWP04700'
+                value: 'MILLIPORE AAWP04700',
+                styles: { 'width': '240px' }
             },
             {
                 type: 'textbox',
@@ -85,8 +99,9 @@ export class WidgetTable implements OnInit {
                 classes: 'rounded-sm border-secondary input-small text-right'
             },
             {
-                type: 'text',
+                type: 'textbox',
                 value: 'E2801160600002052A5B5541',
+                styles: { 'width': '210px' }
             }
         ],
         [
@@ -100,7 +115,8 @@ export class WidgetTable implements OnInit {
             },
             {
                 type: 'textbox',
-                value: 'MILLIPORE AAWP04700'
+                value: 'Bracket Assembly',
+                styles: { 'width': '240px' }
             },
             {
                 type: 'textbox',
@@ -108,8 +124,9 @@ export class WidgetTable implements OnInit {
                 classes: 'rounded-sm border-secondary input-small text-right'
             },
             {
-                type: 'text',
-                value: 'E2801160600002052A5B5541'
+                type: 'textbox',
+                value: 'E2801160600002023A5B6641',
+                styles: { 'width': '210px' }
             }
         ],
         [
@@ -123,7 +140,8 @@ export class WidgetTable implements OnInit {
             },
             {
                 type: 'textbox',
-                value: 'MILLIPORE AAWP04700'
+                value: '',
+                styles: { 'width': '240px' }
             },
             {
                 type: 'textbox',
@@ -131,10 +149,61 @@ export class WidgetTable implements OnInit {
                 classes: 'rounded-sm border-secondary input-small text-right'
             },
             {
-                type: 'text',
-                value: 'E2801160600002052A5B5541',
+                type: 'textbox',
+                value: '',
+                styles: { 'width': '210px' }
             }
         ]
     ]
 
+}
+
+@Component({
+    selector: 'ngbd-modal-content',
+    template: `
+      <div class="modal-header">
+        <h4 class="modal-title">Scan Your Barcode</h4>
+         <button type="button" class="close" aria-label="Close" (click)="activeModal.dismiss('Cross click')">
+          <span aria-hidden="true">&times;</span>
+     </button>
+      </div>
+      <div class="modal-body">
+      <barcode-scanner-livestream type="code_128" (valueChanges)="onValueChanges($event)"></barcode-scanner-livestream>
+          <div [hidden]="!barcodeValue">
+              {{barcodeValue}}
+          </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="activeModal.close('Close click')">Close</button>
+      </div>
+    `
+})
+export class NgbdModalContent3 implements OnInit {
+    @Input() name;
+
+    constructor(public activeModal: NgbActiveModal, public barcode: BarcodeValueService) { }
+    @ViewChild(BarecodeScannerLivestreamComponent)
+    barecodeScanner: BarecodeScannerLivestreamComponent;
+
+    barcodeValue;
+    ngOnInit() {
+        this.startQuagga();
+        this.barcode.currentmessage.subscribe(message => this.barcodeValue = message)
+    }
+    ngAfterViewInit() {
+        this.barecodeScanner.stop();
+    }
+    startQuagga() {
+        this.barecodeScanner.start()
+    }
+    stopQuagga() {
+        this.barecodeScanner.stop()
+    }
+    onValueChanges(result) {
+        this.barcodeValue = result.codeResult.code;
+        console.log(result.codeResult.code)
+        this.barecodeScanner.stop()
+        this.barcode.changeMessage(result.codeResult.code)
+        this.activeModal.close('Close click')
+    }
 }
