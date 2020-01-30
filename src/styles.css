@@ -40,3 +40,11 @@ input[type="text"]:focus {
 a, a:not([href]){
   cursor: pointer;
 }
+
+.quicklinksImg{
+  width: 70px;
+}
+
+.border-barcode{
+  border: 1.3px solid #244889;
+}
