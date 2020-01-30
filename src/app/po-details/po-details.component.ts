@@ -1,4 +1,8 @@
 import { Component, OnInit ,ViewEncapsulation} from '@angular/core';
+import { PopUpService } from './../../shared/form-widget/service/popUp.service';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { SuccessPopUp } from './../../shared/popUpComponent/successPopUp/successPopUP.component';
+
 
 @Component({
   selector: 'app-po-details',
@@ -8,9 +12,15 @@ import { Component, OnInit ,ViewEncapsulation} from '@angular/core';
 })
 export class PoDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(public modalService: NgbModal, private popup: PopUpService,) { }
+
 
   ngOnInit() {
+  }
+
+  successPopUp() {
+    const modalRef = this.modalService.open(SuccessPopUp, { size: 'lg' });
+    modalRef.componentInstance.name = 'Receipt is Finalized';
   }
   widgetData = [
     {
