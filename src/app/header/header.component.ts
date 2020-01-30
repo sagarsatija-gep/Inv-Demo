@@ -50,7 +50,7 @@ export class HeaderComponent implements OnInit {
   poNumber=/^8/;
   asnNumber=/^6/;
   onSearchClick() {
-    debugger;
+
     
     console.log(this.barcodeValue);
     setTimeout(() => {

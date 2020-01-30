@@ -10,7 +10,7 @@ export class WidgetTable implements OnInit {
     @Input() data;
 
     ngOnInit(): void {
-        debugger;
+        // debugger;
         console.log(this.data);
     }
 
