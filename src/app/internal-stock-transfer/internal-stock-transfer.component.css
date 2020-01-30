@@ -18,7 +18,7 @@
   outline: none;
 }
 
-.internalstockPopup .form-control:focus {
+.internalstockPopup .form-control input[type="text"]:focus {
   background-color: #fff;
   border-color: none;
   outline: 0;
@@ -27,7 +27,7 @@
   border-radius: 0;
 }
 
-.internalstockPopup .form-control{
+.internalstockPopup .form-control input[type="text"]{
   border-radius: 0;
 }
 
