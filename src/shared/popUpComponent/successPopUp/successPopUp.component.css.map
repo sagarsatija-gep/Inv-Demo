@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "successPopUp.component.scss"
+    ],
+    "names": [],
+    "file": "successPopUp.component.css"
+}
