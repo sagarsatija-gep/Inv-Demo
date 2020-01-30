@@ -1,5 +1,7 @@
-import { Component, Input, OnInit, ViewEncapsulation } from "@angular/core";
+import { Component, Input, OnInit, ViewEncapsulation, OnDestroy } from "@angular/core";
 import { PopUpService } from "../../service/popUp.service";
+import { ActivatedRoute, Router } from "@angular/router";
+import { Subscription } from "rxjs";
 
 @Component({
     selector: 'widget-table',
@@ -7,21 +9,31 @@ import { PopUpService } from "../../service/popUp.service";
     styleUrls: ['./widgetTable.component.scss'],
     encapsulation: ViewEncapsulation.None
 })
-export class WidgetTable implements OnInit {
+export class WidgetTable implements OnInit, OnDestroy {
     // show:boolean=false;
     @Input() data;
+
+    popUpSubCription: Subscription;
     
-    constructor(private popUpService: PopUpService) {}
+    constructor(private popUpService: PopUpService, private route: Router) {}
 
     ngOnInit(): void {
         debugger;
         console.log(this.data);
-        this.popUpService.barCodePopUpDataForAsset.subscribe(indexp=>{
+        this.popUpSubCription = this.popUpService.barCodePopUpDataForAsset.subscribe(indexp=>{
             debugger
-            this.data.values.map((data,index)=>{
-                this.data.values[index][5].value = this.data.values[index][5].value1;
-            })
+            console.log(this.data);
+            if(this.data.route != 'poGoodsReceipt'){
+                
+                this.data.values.map((data,index)=>{
+                    this.data.values[index][5].value = this.data.values[index][5].value1;
+                })
+            }
         })
+    }
+
+    ngOnDestroy() {
+        this.popUpSubCription.unsubscribe();
     }
 
     setValue(e) {

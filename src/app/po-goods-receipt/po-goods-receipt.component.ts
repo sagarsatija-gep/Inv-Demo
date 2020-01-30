@@ -51,6 +51,7 @@ export class PoGoodsReceiptComponent implements OnInit {
       'HeaderData': {
         name: 'Line Details',
         collapsible: true,
+        route:"poGoodsReceipt",
         isOpen: true,
         data: {
           componentName: 'tabComponent',
@@ -61,6 +62,7 @@ export class PoGoodsReceiptComponent implements OnInit {
               tabName: 'LINES',
               tabcomponent: 'widgetTable',
               tabData: {
+                route:"poGoodsReceipt",
                 tablerowClass: 'bg-white',
                 colConfig: [
                   {
@@ -518,6 +520,7 @@ export class PoGoodsReceiptComponent implements OnInit {
               tabName: 'ASSET MANAGEMENT',
               tabcomponent: 'widgetTable',
               tabData: {
+                route:"poGoodsReceipt",
                 colConfig: [
                   {
                     type: 'checkbox',
