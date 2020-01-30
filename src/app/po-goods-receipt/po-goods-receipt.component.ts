@@ -54,6 +54,7 @@ export class PoGoodsReceiptComponent implements OnInit {
         isOpen: true,
         data: {
           componentName: 'tabComponent',
+          route:"poGoodsReceipt",
           haveButton: false,
           data: [
             {
@@ -239,6 +240,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     {
                       type: 'button',
                       value: 'UPLOAD',
+                      show:false,
                       styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ],
@@ -327,6 +329,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     {
                       type: 'button',
                       value: 'UPLOAD',
+                      show:false,
                       styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ],
@@ -415,6 +418,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     {
                       type: 'button',
                       value: 'UPLOAD',
+                      show:false,
                       styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ],
@@ -503,6 +507,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     {
                       type: 'button',
                       value: 'UPLOAD',
+                      show:false,
                       styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ]
