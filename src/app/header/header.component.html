@@ -12,7 +12,8 @@
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" routerLink="/home">
-                <img class="logo" src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/1.jpg">
+                <img class="logo"
+                  src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/1.jpg">
               </a>
             </li>
           </ul>
@@ -23,7 +24,8 @@
         <nav class="navbar navbar-expand-sm justify-content-center">
           <form class="form-inline">
             <div class="input-group">
-              <input type="text" class="form-control search" name="search" placeholder="Search" [(ngModel)]="barcodeValue">
+              <input type="text" class="form-control search" name="search" placeholder="Search"
+                [(ngModel)]="barcodeValue">
               <div class="input-group-prepend">
 
                 <!-- Microphone -->
@@ -33,31 +35,39 @@
 
                 <!-- Search -->
                 <a class="" (click)="onSearchClick()">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53" height="48" viewBox="0 0 53 48">
+                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53"
+                    height="48" viewBox="0 0 53 48">
                     <defs>
                       <filter id="Blue_Button" x="0" y="0" width="53" height="48" filterUnits="userSpaceOnUse">
-                        <feOffset dy="1" input="SourceAlpha"/>
-                        <feGaussianBlur stdDeviation="0.5" result="blur"/>
-                        <feFlood flood-color="#161d25" flood-opacity="0.102"/>
-                        <feComposite operator="in" in2="blur"/>
-                        <feComposite in="SourceGraphic"/>
+                        <feOffset dy="1" input="SourceAlpha" />
+                        <feGaussianBlur stdDeviation="0.5" result="blur" />
+                        <feFlood flood-color="#161d25" flood-opacity="0.102" />
+                        <feComposite operator="in" in2="blur" />
+                        <feComposite in="SourceGraphic" />
                       </filter>
                       <clipPath id="clip-path">
-                        <rect width="20.268" height="20.264" fill="none"/>
+                        <rect width="20.268" height="20.264" fill="none" />
                       </clipPath>
                       <clipPath id="clip-path-2">
-                        <path id="icon_color" data-name="icon color" d="M19.211,20.264h0L13.518,14.6a8.25,8.25,0,1,1,1.087-1.087l5.663,5.692-1.057,1.057ZM8.269,1.514a6.75,6.75,0,1,0,6.75,6.75A6.758,6.758,0,0,0,8.269,1.514Z" fill="#fff"/>
+                        <path id="icon_color" data-name="icon color"
+                          d="M19.211,20.264h0L13.518,14.6a8.25,8.25,0,1,1,1.087-1.087l5.663,5.692-1.057,1.057ZM8.269,1.514a6.75,6.75,0,1,0,6.75,6.75A6.758,6.758,0,0,0,8.269,1.514Z"
+                          fill="#fff" />
                       </clipPath>
                     </defs>
                     <g id="Button" transform="translate(1.5 0.5)">
                       <g transform="matrix(1, 0, 0, 1, -1.5, -0.5)" filter="url(#Blue_Button)">
-                        <path id="Blue_Button-2" data-name="Blue Button" d="M0,0H48a2,2,0,0,1,2,2V43a2,2,0,0,1-2,2H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z" transform="translate(1.5 0.5)" fill="#0a3af8"/>
+                        <path id="Blue_Button-2" data-name="Blue Button"
+                          d="M0,0H48a2,2,0,0,1,2,2V43a2,2,0,0,1-2,2H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z"
+                          transform="translate(1.5 0.5)" fill="#0a3af8" />
                       </g>
-                      <g id="icon_image_search_24" data-name="icon/image/search/24" transform="translate(14.078 12.478)" clip-path="url(#clip-path)">
-                        <path id="icon_color-2" data-name="icon color" d="M19.211,20.264h0L13.518,14.6a8.25,8.25,0,1,1,1.087-1.087l5.663,5.692-1.057,1.057ZM8.269,1.514a6.75,6.75,0,1,0,6.75,6.75A6.758,6.758,0,0,0,8.269,1.514Z" transform="translate(0 0)" fill="#fff"/>
+                      <g id="icon_image_search_24" data-name="icon/image/search/24" transform="translate(14.078 12.478)"
+                        clip-path="url(#clip-path)">
+                        <path id="icon_color-2" data-name="icon color"
+                          d="M19.211,20.264h0L13.518,14.6a8.25,8.25,0,1,1,1.087-1.087l5.663,5.692-1.057,1.057ZM8.269,1.514a6.75,6.75,0,1,0,6.75,6.75A6.758,6.758,0,0,0,8.269,1.514Z"
+                          transform="translate(0 0)" fill="#fff" />
                       </g>
                     </g>
-                  </svg>                  
+                  </svg>
                 </a>
 
                 <!-- Camera -->
@@ -67,76 +77,94 @@
 
                 <!-- Barcode -->
                 <a class="barcodeIcon" (click)="open()">
-                  <svg id="barcode" xmlns="http://www.w3.org/2000/svg" width="18.513" height="14.81" viewBox="0 0 18.513 14.81">
+                  <svg id="barcode" xmlns="http://www.w3.org/2000/svg" width="18.513" height="14.81"
+                    viewBox="0 0 18.513 14.81">
                     <g id="Group_3168" data-name="Group 3168">
                       <g id="Group_3167" data-name="Group 3167">
-                        <path id="Path_208" data-name="Path 208" d="M3.085,48H.617A.617.617,0,0,0,0,48.617v2.468a.617.617,0,0,0,1.234,0V49.234H3.085a.617.617,0,0,0,0-1.234Z" transform="translate(0 -48)" fill="#6f7d8e"/>
+                        <path id="Path_208" data-name="Path 208"
+                          d="M3.085,48H.617A.617.617,0,0,0,0,48.617v2.468a.617.617,0,0,0,1.234,0V49.234H3.085a.617.617,0,0,0,0-1.234Z"
+                          transform="translate(0 -48)" fill="#6f7d8e" />
                       </g>
                     </g>
                     <g id="Group_3170" data-name="Group 3170" transform="translate(14.81 11.108)">
                       <g id="Group_3169" data-name="Group 3169">
-                        <path id="Path_209" data-name="Path 209" d="M387.085,336a.617.617,0,0,0-.617.617v1.851h-1.851a.617.617,0,1,0,0,1.234h2.468a.617.617,0,0,0,.617-.617v-2.468A.617.617,0,0,0,387.085,336Z" transform="translate(-384 -336)" fill="#6f7d8e"/>
+                        <path id="Path_209" data-name="Path 209"
+                          d="M387.085,336a.617.617,0,0,0-.617.617v1.851h-1.851a.617.617,0,1,0,0,1.234h2.468a.617.617,0,0,0,.617-.617v-2.468A.617.617,0,0,0,387.085,336Z"
+                          transform="translate(-384 -336)" fill="#6f7d8e" />
                       </g>
                     </g>
                     <g id="Group_3172" data-name="Group 3172" transform="translate(14.81)">
                       <g id="Group_3171" data-name="Group 3171">
-                        <path id="Path_210" data-name="Path 210" d="M387.085,48h-2.468a.617.617,0,1,0,0,1.234h1.851v1.851a.617.617,0,0,0,1.234,0V48.617A.617.617,0,0,0,387.085,48Z" transform="translate(-384 -48)" fill="#6f7d8e"/>
+                        <path id="Path_210" data-name="Path 210"
+                          d="M387.085,48h-2.468a.617.617,0,1,0,0,1.234h1.851v1.851a.617.617,0,0,0,1.234,0V48.617A.617.617,0,0,0,387.085,48Z"
+                          transform="translate(-384 -48)" fill="#6f7d8e" />
                       </g>
                     </g>
                     <g id="Group_3174" data-name="Group 3174" transform="translate(0 11.108)">
                       <g id="Group_3173" data-name="Group 3173">
-                        <path id="Path_211" data-name="Path 211" d="M3.085,338.468H1.234v-1.851a.617.617,0,0,0-1.234,0v2.468a.617.617,0,0,0,.617.617H3.085a.617.617,0,0,0,0-1.234Z" transform="translate(0 -336)" fill="#6f7d8e"/>
+                        <path id="Path_211" data-name="Path 211"
+                          d="M3.085,338.468H1.234v-1.851a.617.617,0,0,0-1.234,0v2.468a.617.617,0,0,0,.617.617H3.085a.617.617,0,0,0,0-1.234Z"
+                          transform="translate(0 -336)" fill="#6f7d8e" />
                       </g>
                     </g>
                     <g id="Group_3176" data-name="Group 3176" transform="translate(2.468 2.468)">
                       <g id="Group_3175" data-name="Group 3175">
-                        <rect id="Rectangle_112" data-name="Rectangle 112" width="1.234" height="9.873" fill="#6f7d8e"/>
+                        <rect id="Rectangle_112" data-name="Rectangle 112" width="1.234" height="9.873"
+                          fill="#6f7d8e" />
                       </g>
                     </g>
                     <g id="Group_3178" data-name="Group 3178" transform="translate(4.937 2.468)">
                       <g id="Group_3177" data-name="Group 3177">
-                        <rect id="Rectangle_113" data-name="Rectangle 113" width="1.234" height="7.405" fill="#6f7d8e"/>
+                        <rect id="Rectangle_113" data-name="Rectangle 113" width="1.234" height="7.405"
+                          fill="#6f7d8e" />
                       </g>
                     </g>
                     <g id="Group_3180" data-name="Group 3180" transform="translate(7.405 2.468)">
                       <g id="Group_3179" data-name="Group 3179">
-                        <rect id="Rectangle_114" data-name="Rectangle 114" width="1.234" height="7.405" fill="#6f7d8e"/>
+                        <rect id="Rectangle_114" data-name="Rectangle 114" width="1.234" height="7.405"
+                          fill="#6f7d8e" />
                       </g>
                     </g>
                     <g id="Group_3182" data-name="Group 3182" transform="translate(9.873 2.468)">
                       <g id="Group_3181" data-name="Group 3181">
-                        <rect id="Rectangle_115" data-name="Rectangle 115" width="1.234" height="9.873" fill="#6f7d8e"/>
+                        <rect id="Rectangle_115" data-name="Rectangle 115" width="1.234" height="9.873"
+                          fill="#6f7d8e" />
                       </g>
                     </g>
                     <g id="Group_3184" data-name="Group 3184" transform="translate(12.342 2.468)">
                       <g id="Group_3183" data-name="Group 3183">
-                        <rect id="Rectangle_116" data-name="Rectangle 116" width="1.234" height="7.405" fill="#6f7d8e"/>
+                        <rect id="Rectangle_116" data-name="Rectangle 116" width="1.234" height="7.405"
+                          fill="#6f7d8e" />
                       </g>
                     </g>
                     <g id="Group_3186" data-name="Group 3186" transform="translate(14.81 2.468)">
                       <g id="Group_3185" data-name="Group 3185">
-                        <rect id="Rectangle_117" data-name="Rectangle 117" width="1.234" height="9.873" fill="#6f7d8e"/>
+                        <rect id="Rectangle_117" data-name="Rectangle 117" width="1.234" height="9.873"
+                          fill="#6f7d8e" />
                       </g>
                     </g>
                     <g id="Group_3188" data-name="Group 3188" transform="translate(4.937 11.108)">
                       <g id="Group_3187" data-name="Group 3187">
-                        <rect id="Rectangle_118" data-name="Rectangle 118" width="1.234" height="1.234" fill="#6f7d8e"/>
+                        <rect id="Rectangle_118" data-name="Rectangle 118" width="1.234" height="1.234"
+                          fill="#6f7d8e" />
                       </g>
                     </g>
                     <g id="Group_3190" data-name="Group 3190" transform="translate(7.405 11.108)">
                       <g id="Group_3189" data-name="Group 3189">
-                        <rect id="Rectangle_119" data-name="Rectangle 119" width="1.234" height="1.234" fill="#6f7d8e"/>
+                        <rect id="Rectangle_119" data-name="Rectangle 119" width="1.234" height="1.234"
+                          fill="#6f7d8e" />
                       </g>
                     </g>
                     <g id="Group_3192" data-name="Group 3192" transform="translate(12.342 11.108)">
                       <g id="Group_3191" data-name="Group 3191">
-                        <rect id="Rectangle_120" data-name="Rectangle 120" width="1.234" height="1.234" fill="#6f7d8e"/>
+                        <rect id="Rectangle_120" data-name="Rectangle 120" width="1.234" height="1.234"
+                          fill="#6f7d8e" />
                       </g>
                     </g>
-                  </svg>                  
+                  </svg>
                 </a>
               </div>
-            </div>    
+            </div>
           </form>
         </nav>
       </div>
@@ -154,7 +182,7 @@
                 <img class="app" src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/app.png" alt="App" />
               </a>
             </li>
-            
+
             <li class="nav-item">
               <a class="nav-link" class="userprofile">
                 <img src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/userprofile.png" alt="User Profile" />
