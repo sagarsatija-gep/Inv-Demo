@@ -12,6 +12,8 @@ export class PopUpService {
     isInternalStockErrorPopUp = false;
 
     rfidGlob = new Subject<any>();
+    showBarCodeIcon = new Subject<boolean>();
+
     internalTableData =  {
 
         tablerowClass: 'bg-white',
@@ -582,7 +584,8 @@ export class PopUpService {
                 {
                     type: 'delete',
                     value: '',
-                },    
+                },
+    
             ],
             [
                 {
@@ -973,6 +976,13 @@ export class PopUpService {
 
     rfidPopUpOpen() {
         this.rfidPopUp.next(true);
+    }
+    showBarcode() {
+        this.showBarCodeIcon.next(true);
+    }
+
+    hideBarCode() {
+        this.showBarCodeIcon.next(false);
     }
 
     internalStockPopupOpen() {

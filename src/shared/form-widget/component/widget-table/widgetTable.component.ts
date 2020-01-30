@@ -7,11 +7,22 @@ import { Component, Input, OnInit, ViewEncapsulation } from "@angular/core";
     encapsulation: ViewEncapsulation.None
 })
 export class WidgetTable implements OnInit {
+    // show:boolean=false;
     @Input() data;
+    
+    
 
     ngOnInit(): void {
+        // debugger;
+        console.log(this.data);
+    }
+
+    display(e){
         debugger;
         console.log(this.data);
+        this.data.values[e][14].show = true;
+        // this.data = this.data;
+        // this.show=true;
     }
 
     applyData(event, index) {

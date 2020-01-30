@@ -8,6 +8,9 @@ import { Component, OnInit, Input, ViewChild, ViewContainerRef, ComponentFactory
 import { GoodsIssueDetails } from './goods-issue-details/goodsIssueDetails.component';
 import { ManageGoodsIssue } from './manage-goods-issue/manageGoodsIssue.component';
 import { PopUpService } from '../service/popUp.service';
+import { Router } from '@angular/router';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { barcodePopup } from "../../popUpComponent/barcodePopup/barcodePopup.component";
 
 
 const  components = {
@@ -30,11 +33,15 @@ export class WidgetHeaderComponent implements OnInit {
 
     togal:boolean;
     component;
-    constructor(private cfr: ComponentFactoryResolver, private poupservice: PopUpService){}
-    
+    showBarCode;
+    constructor(private cfr: ComponentFactoryResolver, private poupservice: PopUpService , private route: Router, public modalService: NgbModal){}
+
     ngOnInit(): void {
         this.togal = this.headerData.isOpen;
         this.createComponent();
+        this.poupservice.showBarCodeIcon.subscribe(data => {
+            this.showBarCode = data;
+        })
     }
 
     openPopup() {
@@ -57,6 +64,12 @@ export class WidgetHeaderComponent implements OnInit {
             }
         }
     }
+    barcodePopUp() {
+        const modalRef = this.modalService.open(barcodePopup, { size: 'lg' });
+        modalRef.componentInstance.name = 'World';
+        
+      }
+
 
     headerClick() {
         if(this.togal) {
