@@ -1,3 +1,4 @@
+import { RfidPopUpComponent } from './../shared/popUpComponent/RFIDPopUp/rfidPopUp.component';
 import { SuccessPopUp } from './../shared/popUpComponent/successPopUp/successPopUP.component';
 import { ExternalStockTransfer } from './external-stock-transfer/externalStockTransfer.component';
 import { FormWidget } from './../shared/form-widget/form-widget.module';
@@ -90,7 +91,8 @@ import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.compon
     AsnGrComponent,
     OcrGrCreationComponent,
     ExternalStockTransfer,
-    SuccessPopUp
+    SuccessPopUp,
+    RfidPopUpComponent
   ],
   imports: [
     CommonModule,
@@ -118,6 +120,6 @@ import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.compon
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService,NgbActiveModal],
   bootstrap: [AppComponent],
-  entryComponents: [NgbdModalContent, NgbdModalContent1,NgbdModalContent2, SuccessPopUp]
+  entryComponents: [NgbdModalContent, NgbdModalContent1,NgbdModalContent2, SuccessPopUp, RfidPopUpComponent]
 })
 export class AppModule { }
