@@ -1,3 +1,4 @@
+import { RfidPopUpComponent } from './../../shared/popUpComponent/RFIDPopUp/rfidPopUp.component';
 import { SuccessPopUp } from './../../shared/popUpComponent/successPopUp/successPopUP.component';
 import { NgbdModalContent2 } from './../internal-stock-transfer/internal-stock-transfer.component';
 import { Router } from '@angular/router';
@@ -26,6 +27,11 @@ export class ExternalStockTransfer implements OnInit {
         if(isPopUP) {
           this.open();
         }
+      });
+      this.popup.rfidPopUp.subscribe(isPopUp => {
+          if(isPopUp) {
+              this.rfidPopUp();
+          }
       })
     }
   
@@ -38,6 +44,15 @@ export class ExternalStockTransfer implements OnInit {
         modalRef.componentInstance.name = 'Stock Transfer Initiated successfully.';
         
       }
+
+    rfidPopUp() {
+        // this.popup.apiCallForBarCodeNumber();
+        // this.popup.rfidGlob.subscribe(rfid => {
+        //     const modalRef = this.modalService.open(RfidPopUpComponent, { size: 'lg' });
+        //     modalRef.componentInstance.name = rfid.data;
+        // })
+        // this.popup.rfidGlob.subscribe()
+    }
   
     ngOnDestroy() {
       this.popUpSubscription.unsubscribe();

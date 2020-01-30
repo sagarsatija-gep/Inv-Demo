@@ -1,12 +1,17 @@
-import { Subject } from 'rxjs';
+import { Subject, Observable } from 'rxjs';
+import 'rxjs/add/observable/interval';
 import { Injectable } from "@angular/core";
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { catchError, tap } from "rxjs/operators";
 
 @Injectable()
 export class PopUpService {
     internalStockPopUp = new Subject<boolean>();
+    rfidPopUp = new Subject<boolean>();
     attachmentTable = new Subject<boolean>();
     isInternalStockErrorPopUp = false;
 
+    rfidGlob = new Subject<any>();
     internalTableData =  {
 
         tablerowClass: 'bg-white',
@@ -954,6 +959,14 @@ export class PopUpService {
     
     barCodes = [];
 
+    rfidBarCodes ;
+
+    constructor(private http: HttpClient) {}
+
+    rfidPopUpOpen() {
+        this.rfidPopUp.next(true);
+    }
+
     internalStockPopupOpen() {
         this.internalStockPopUp.next(true);
     }
@@ -967,6 +980,7 @@ export class PopUpService {
     }
 
     filteredExternalTableData() {
+        this.apiCallForBarCodeNumber();
         const RFC_COLUMN = this.externalTableData.colConfig.length;
         return { ...this.externalTableData,
             values: this.externalTableData.values.filter(data => {
@@ -977,5 +991,31 @@ export class PopUpService {
         }            
             
     }
+
+    apiCallForBarCodeNumber() {
+        const headerDict = {
+              'Content-Type': 'application/json',
+            //   'Accept': 'application/js',
+            //   'Access-Control-Allow-Headers': 'Content-Type',
+            'Access-Control-Allow-Origin':'*',
+            "Cache-Control": "no-cache"
+            }
+            const requestOptions = {                                                                                                                                                                                 
+              headers: new HttpHeaders(headerDict)
+            };
+        Observable.interval(5000)
+            .subscribe((val) => {
+                 console.log('called'); 
+                this.http.get<any>('https://scmqapocrgdiag.blob.core.windows.net/testrfid/dataRFID.json', requestOptions ).subscribe(data =>{
+                    this.rfidGlob.next(data);
+                });
+            });
+            this.http.get<any>('https://scmqapocrgdiag.blob.core.windows.net/testrfid/dataRFID.json', requestOptions ).subscribe(data =>{
+                this.rfidGlob.next(data);
+            });
+                // this.rfidGlob = this.http.get<any>('https://scmqapocrgdiag.blob.core.windows.net/testrfid/dataRFID.json', requestOptions );        
+        }    
+    
+    
 
 }
