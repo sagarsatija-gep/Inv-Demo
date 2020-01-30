@@ -16,7 +16,7 @@ export class AppComponent implements OnInit {
   constructor(private popUpSerVice: PopUpService,public modalService: NgbModal){}
 
   ngOnInit() {
-    this.popUpSerVice.apiCallForBarCodeNumber();
+    // this.popUpSerVice.apiCallForBarCodeNumber();
     this.popUpSerVice.rfidGlob.subscribe( data => {
       this.rfidData = data;
       if(this.rfidData.length != this.prevData.length) {

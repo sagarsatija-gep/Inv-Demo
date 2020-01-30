@@ -12,7 +12,11 @@ export class PopUpService {
     isInternalStockErrorPopUp = false;
 
     rfidGlob = new Subject<any>();
-    showBarCodeIcon = new Subject<boolean>();
+    // showBarCodeIcon = new Subject<boolean>();
+    showBarCodeIcon = new Subject<boolean>();// barcode header
+    selectedInputForAsset = 1; //for barCode Asset
+
+    barCodePopUpDataForAsset = new Subject<any>();
 
     internalTableData = {
         tablerowClass: 'bg-white',
@@ -1205,6 +1209,10 @@ export class PopUpService {
     rfidPopUpOpen() {
         this.rfidPopUp.next(true);
     }
+    setSelectedInputBoxValue(n) {
+        this.selectedInputForAsset = n;
+    }
+
     showBarcode() {
         this.showBarCodeIcon.next(true);
     }
@@ -1261,6 +1269,10 @@ export class PopUpService {
             this.rfidGlob.next(data);
         });
         // this.rfidGlob = this.http.get<any>('https://scmqapocrgdiag.blob.core.windows.net/testrfid/dataRFID.json', requestOptions );        
+    }
+
+    barCodePopUpDataForAssetDataChange(value) {
+        this.barCodePopUpDataForAsset.next(this.selectedInputForAsset);
     }
 
 }

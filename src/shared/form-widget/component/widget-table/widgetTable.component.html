@@ -54,18 +54,19 @@
           </span>
 
           <input [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'textbox'" type="text"
-            [(ngModel)]="column.value" style="margin: 14px 0px;    width: 110px;">
+            [(ngModel)]="column.value" style="margin: 14px 0px;  width: 110px;" (click)="setValue(i)" >
 
           <div *ngIf="column.type == 'textboxchange'">
             <input [ngStyle]="column.styles" [ngClass]="column.classes" type="text" [(ngModel)]="column.value"
-              (change)="applyData($event, i)" style="margin: 14px 5px 14px 0px; width: 110px;">
-            <a class="barcodeIcon" (click)="openBarcodeScanner()">
+              (keydown)="applyData($event, i)" style="margin: 14px 5px 14px 0px; width: 110px;">
+            <a class="barcodeIcon" (click)="openBarcodeScanner(i)">
               <svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="18" viewBox="0 0 22.5 18">
                 <defs>
                   <style>
                     .a {
                       fill: #0177d6;
                     }
+
                   </style>
                 </defs>
                 <path class="a" d="M3.75,48h-3a.75.75,0,0,0-.75.75v3a.75.75,0,0,0,1.5,0V49.5H3.75a.75.75,0,0,0,0-1.5Z"
