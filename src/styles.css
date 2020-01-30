@@ -23,6 +23,7 @@ input[type="text"] {
   outline: none;
   border: none;
   border-bottom: 1px solid #676767de;
+  border-radius: 0;
 }
 
 input[type="text"]:focus {
@@ -63,4 +64,9 @@ a, a:not([href]) {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.form-control:focus{
+  box-shadow: none;
+  -webkit-box-shadow : none;
 }
