@@ -303,12 +303,22 @@ export class PopUpService {
             },
             {
                 type: 'text',
+                name: 'From Plant',
+                colSize: '100px'
+            },
+            {
+                type: 'text',
                 name: 'From BIN',
                 colSize: '100px'
             },
             {
                 type: 'text',
                 name: 'To Location',
+                colSize: '100px'
+            },
+            {
+                type: 'text',
+                name: 'To Plant',
                 colSize: '100px'
             },
             {
@@ -362,11 +372,19 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
+                    value: 'PMF-6002'
+                },
+                {
+                    type: 'text',
                     value: 'C02-08-2-2'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: '6044'
+                },
+                {
+                    type: 'text',
+                    value: 'Shore Base – SB05'
                 },
                 {
                     type: 'dropdown',
@@ -420,11 +438,19 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
+                    value: 'PMF-6002'
+                },
+                {
+                    type: 'text',
                     value: 'C02-08-2-2'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: '6044'
+                },
+                {
+                    type: 'text',
+                    value: 'Shore Base – SB05'
                 },
                 {
                     type: 'dropdown',
@@ -477,11 +503,19 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
+                    value: 'PMF-6002'
+                },
+                {
+                    type: 'text',
                     value: 'C02-08-2-2'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: '6044'
+                },
+                {
+                    type: 'text',
+                    value: 'Shore Base – SB05'
                 },
                 {
                     type: 'dropdown',
@@ -534,11 +568,19 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
+                    value: 'PMF-6002'
+                },
+                {
+                    type: 'text',
                     value: 'C02-08-2-2'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: '6044'
+                },
+                {
+                    type: 'text',
+                    value: 'Shore Base – SB05'
                 },
                 {
                     type: 'dropdown',
@@ -592,11 +634,19 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
+                    value: 'PMF-6002'
+                },
+                {
+                    type: 'text',
                     value: 'C02-08-2-2'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: '6044'
+                },
+                {
+                    type: 'text',
+                    value: 'Shore Base – SB05'
                 },
                 {
                     type: 'dropdown',
@@ -650,11 +700,19 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
+                    value: 'PMF-6002'
+                },
+                {
+                    type: 'text',
                     value: 'C02-08-2-2'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: '6044'
+                },
+                {
+                    type: 'text',
+                    value: 'Shore Base – SB05'
                 },
                 {
                     type: 'dropdown',
@@ -707,11 +765,19 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
+                    value: 'PMF-6002'
+                },
+                {
+                    type: 'text',
                     value: 'C02-08-2-2'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: '6044'
+                },
+                {
+                    type: 'text',
+                    value: 'Shore Base – SB05'
                 },
                 {
                     type: 'dropdown',
@@ -761,15 +827,23 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002',
+                    value: 'PMF-6002'
                 },
                 {
                     type: 'text',
-                    value: 'C02-08-2-2',
+                    value: 'PMF-6002'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002',
+                    value: 'C02-08-2-2'
+                },
+                {
+                    type: 'text',
+                    value: '6044'
+                },
+                {
+                    type: 'text',
+                    value: 'Shore Base – SB05'
                 },
                 {
                     type: 'dropdown',
@@ -819,15 +893,23 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002',
+                    value: 'PMF-6002'
                 },
                 {
                     type: 'text',
-                    value: 'C02-08-2-2',
+                    value: 'PMF-6002'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002',
+                    value: 'C02-08-2-2'
+                },
+                {
+                    type: 'text',
+                    value: '6044'
+                },
+                {
+                    type: 'text',
+                    value: 'Shore Base – SB05'
                 },
                 {
                     type: 'dropdown',
@@ -877,15 +959,23 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002',
+                    value: 'PMF-6002'
                 },
                 {
                     type: 'text',
-                    value: 'C02-08-2-2',
+                    value: 'PMF-6002'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002',
+                    value: 'C02-08-2-2'
+                },
+                {
+                    type: 'text',
+                    value: '6044'
+                },
+                {
+                    type: 'text',
+                    value: 'Shore Base – SB05'
                 },
                 {
                     type: 'dropdown',
@@ -935,15 +1025,23 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002',
+                    value: 'PMF-6002'
                 },
                 {
                     type: 'text',
-                    value: 'C02-08-2-2',
+                    value: 'PMF-6002'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002',
+                    value: 'C02-08-2-2'
+                },
+                {
+                    type: 'text',
+                    value: '6044'
+                },
+                {
+                    type: 'text',
+                    value: 'Shore Base – SB05'
                 },
                 {
                     type: 'dropdown',
@@ -993,15 +1091,23 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002',
+                    value: 'PMF-6002'
                 },
                 {
                     type: 'text',
-                    value: 'C02-08-2-2',
+                    value: 'PMF-6002'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002',
+                    value: 'C02-08-2-2'
+                },
+                {
+                    type: 'text',
+                    value: '6044'
+                },
+                {
+                    type: 'text',
+                    value: 'Shore Base – SB05'
                 },
                 {
                     type: 'dropdown',
@@ -1051,15 +1157,23 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002',
+                    value: 'PMF-6002'
                 },
                 {
                     type: 'text',
-                    value: 'C02-08-2-2',
+                    value: 'PMF-6002'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002',
+                    value: 'C02-08-2-2'
+                },
+                {
+                    type: 'text',
+                    value: '6044'
+                },
+                {
+                    type: 'text',
+                    value: 'Shore Base – SB05'
                 },
                 {
                     type: 'dropdown',
