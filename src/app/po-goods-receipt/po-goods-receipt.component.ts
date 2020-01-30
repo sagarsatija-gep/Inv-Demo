@@ -54,6 +54,7 @@ export class PoGoodsReceiptComponent implements OnInit {
         isOpen: true,
         data: {
           componentName: 'tabComponent',
+          route:"poGoodsReceipt",
           haveButton: false,
           data: [
             {
@@ -186,10 +187,6 @@ export class PoGoodsReceiptComponent implements OnInit {
                       type: 'text',
                       value: 'PMF - 6002',
                     },
-                    // {
-                    //   type: 'text',
-                    //   value: 'C02 - 08- 2- 2',
-                    // },
                     {
                       type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
@@ -209,31 +206,23 @@ export class PoGoodsReceiptComponent implements OnInit {
                       type: 'textbox',
                       value: '',
                     },
-                    // {
-                    //   type: 'dropdown',
-                    //   classes: 'rounded-sm border-secondary input-large',
-                    //   value: [
-                    //     'YES',
-                    //     'NO'
-                    //   ],
-                    //   selectedValue: 'YES'
-                    // },
-                    // {
-                    //   type: 'dropdown',
-                    //   classes: 'rounded-sm border-secondary input-large',
-                    //   value: [
-                    //     'YES',
-                    //     'NO'
-                    //   ],
-                    //   selectedValue: 'NO'
-                    // },
                     {
-                      type: 'text',
-                      value: 'YES',
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'YES'
                     },
                     {
-                      type: 'text',
-                      value: 'NO',
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
                     },
                     {
                       type: 'dropdown',
@@ -251,6 +240,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     {
                       type: 'button',
                       value: 'UPLOAD',
+                      show:false,
                       styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ],
@@ -312,7 +302,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                         'YES',
                         'NO'
                       ],
-                      selectedValue: 'YES'
+                      selectedValue: 'NO'
                     },
                     {
                       type: 'dropdown',
@@ -339,6 +329,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     {
                       type: 'button',
                       value: 'UPLOAD',
+                      show:false,
                       styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ],
@@ -400,25 +391,25 @@ export class PoGoodsReceiptComponent implements OnInit {
                         'YES',
                         'NO'
                       ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
+                      selectedValue: 'NO'
+                    },
+                    {
+                      type: 'dropdown',
+                      classes: 'rounded-sm border-secondary input-large',
+                      value: [
+                        'YES',
+                        'NO'
+                      ],
                       selectedValue: 'YES'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
-                    },
-                    {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'YES',
-                        'NO'
-                      ],
-                      selectedValue: 'NO'
                     },
                     {
                       type: 'textbox',
@@ -427,6 +418,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     {
                       type: 'button',
                       value: 'UPLOAD',
+                      show:false,
                       styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ],
@@ -488,7 +480,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                         'YES',
                         'NO'
                       ],
-                      selectedValue: 'YES'
+                      selectedValue: 'NO'
                     },
                     {
                       type: 'dropdown',
@@ -515,6 +507,7 @@ export class PoGoodsReceiptComponent implements OnInit {
                     {
                       type: 'button',
                       value: 'UPLOAD',
+                      show:false,
                       styles: { 'width': '85px', 'height': '30px', 'padding': '0px', 'margin': '-3px' }
                     }
                   ]

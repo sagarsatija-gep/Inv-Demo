@@ -16,6 +16,7 @@ import { PoDetailsComponent } from './po-details/po-details.component';
 import { AsnGrComponent } from './asn-gr/asn-gr.component';
 import { PoGoodsReceiptComponent } from './po-goods-receipt/po-goods-receipt.component';
 import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.component';
+import { CreatePackageComponent } from './create-package/create-package.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -39,6 +40,7 @@ const routes: Routes = [
   { path: 'asnGoodsReceipt', component: AsnGrComponent },
   { path: 'poGoodsReceipt', component: PoGoodsReceiptComponent },
   { path: 'ocr-gr-creation', component: OcrGrCreationComponent },
+  { path: 'createPackage', component: CreatePackageComponent },
   { path: 'externalStockTransfer', component: ExternalStockTransfer}
 ];
 

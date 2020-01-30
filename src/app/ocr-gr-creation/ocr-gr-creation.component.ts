@@ -25,22 +25,22 @@ export class OcrGrCreationComponent implements OnInit {
             {
               type: 'textbox',
               name: 'Receipt Name',
-              values: '',
+              values: 'Receipt 3'
             },
             {
               type: 'text',
               name: 'Receipt Number',
-              values: 'REC0000160',
+              values: 'REC0000160'
             },
             {
               type: 'text',
               name: 'PO Number',
-              values: '0060105362',
+              values: '0060105362'
             },
             {
               type: 'text',
               name: 'Supplier Name',
-              values: 'Motion Industries Inc',
+              values: 'Motion Industries Inc'
             }
           ]
         }
@@ -128,7 +128,7 @@ export class OcrGrCreationComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '20',
+                      value: '20'
                     },
                     {
                       type: 'dropdown',
@@ -145,7 +145,7 @@ export class OcrGrCreationComponent implements OnInit {
                     },
                     {
                       type: 'attachments',
-                      value: '',
+                      value: ''
                     }
                   ],
                   [
@@ -168,7 +168,7 @@ export class OcrGrCreationComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '50',
+                      value: '50'
                     },
                     {
                       type: 'dropdown',
@@ -185,7 +185,7 @@ export class OcrGrCreationComponent implements OnInit {
                     },
                     {
                       type: 'attachments',
-                      value: '',
+                      value: ''
                     }
                   ],
                 ]
@@ -199,51 +199,51 @@ export class OcrGrCreationComponent implements OnInit {
                   {
                     type: 'checkbox',
                     name: 'Line Select',
-                    styles: { 'width': '2%' },
+                    styles: { 'width': '2%' }
                   },
                   {
                     type: 'text',
                     name: 'Line Number',
                     colSize: '100px',
-                    classes: ' ',
+                    classes: ' '
                   },
                   {
                     type: 'text',
                     name: 'Item Number',
                     colSize: '100px',
-                    classes: ' ',
+                    classes: ' '
                   },
                   {
                     type: 'text',
                     name: 'Description',
                     colSize: '100px',
-                    classes: ' ',
+                    classes: ' '
                   },
                   {
                     type: 'text',
                     name: 'UOM',
                     colSize: '100px',
-                    classes: '',
+                    classes: ''
                   },
                   {
                     type: 'text',
                     name: 'Received Quantity',
-                    colSize: '100px',
+                    colSize: '100px'
                   },
                   {
                     type: 'text',
                     name: 'Serial Number',
-                    colSize: '100px',
+                    colSize: '100px'
                   },
                   {
                     type: 'text',
                     name: 'Manufacturer Name',
-                    colSize: '100px',
+                    colSize: '100px'
                   },
                   {
                     type: 'text',
                     name: 'Manufacturer Part Number',
-                    colSize: '100px',
+                    colSize: '100px'
                   }
                 ],
                 values: [
@@ -413,9 +413,86 @@ export class OcrGrCreationComponent implements OnInit {
                   ]
                 ]
               }
-
             }
           ]
+        }
+      }
+    },
+    {
+      'HeaderData': {
+        name: 'Notes & Attachements',
+        isOpen: false,
+        collapsible: true,
+        data: {
+          componentName: 'widgetTable',
+          haveButton: false,
+          data:
+          {
+            tablerowClass: 'bg-white',
+            colConfig: [
+              {
+                type: 'checkbox',
+                name: 'Reservation #',
+                classes: 'text-left',
+              },
+              {
+                type: 'text',
+                name: 'Name',
+                classes: 'text-left',
+              },
+              {
+                type: 'text',
+                name: 'Type',
+                classes: ' ',
+              },
+              {
+                type: 'text',
+                name: 'Classification',
+                colSize: '100px',
+                classes: 'text-left',
+              },
+              {
+                type: 'text',
+                name: 'Added By',
+              },
+              {
+                type: 'text',
+                name: 'File Size',
+                colSize: '100px',
+              }
+            ],
+            values: [
+              [
+                {
+                  type: 'checkbox',
+                  value: 'false',
+                  tdClasses: 'text-left'
+                },
+                {
+                  type: 'hiperlink',
+                  value: 'packingslip.pdf',
+                  tdClasses: 'text-left'
+                },
+                {
+                  type: 'text',
+                  value: 'File',
+                },
+                {
+                  type: 'text',
+                  value: 'Shipping Documents',
+                  tdClasses: 'text-left'
+                },
+                {
+                  type: 'text',
+                  value: 'Kim Powell',
+                },
+                {
+                  type: 'text',
+                  value: '20kb',
+                }
+              ]
+            ]
+          }
         }
       }
     }

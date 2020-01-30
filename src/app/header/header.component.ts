@@ -47,15 +47,17 @@ export class HeaderComponent implements OnInit {
     this.toggleThePage = !this.toggleThePage;
     this.toggleService.toggleThePannel.next(this.toggleThePage);
   }
-
+  poNumber=/^8/;
+  asnNumber=/^6/;
   onSearchClick() {
-    debugger;
+
+    
     console.log(this.barcodeValue);
     setTimeout(() => {
-      if(this.barcodeValue == 'asn') {
+      if(this.barcodeValue == 'asn' || this.barcodeValue.match(this.asnNumber)) {
         this.route.navigate(['/purchaseDetails']);
       } else 
-      if(this.barcodeValue == 'po' || this.barcodeValue == /^8/) {
+      if(this.barcodeValue == 'po' || this.barcodeValue.match(this.poNumber) ) {
         this.route.navigate(['/poDetails']);
       }
       this.barcodeValue = '';

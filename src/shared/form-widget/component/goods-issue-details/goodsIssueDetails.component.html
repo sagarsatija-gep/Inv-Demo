@@ -19,16 +19,14 @@
                 <mat-datepicker #picker></mat-datepicker>
               </mat-form-field>
             </div>
-            <div *ngIf="field.type == 'dropdown'">
-              <mat-form-field>
-                <mat-select name="countryString" [(value)]="field.selectedValue" placeholder="">
-                  <mat-option [value]="item" *ngFor="let item of field.value">{{item}}</mat-option>
-                </mat-select>
-              </mat-form-field>
+            <div class="form-group" *ngIf="field.type == 'dropdown'" style="margin: 0;">
+              <select class="form-control" id="formControlSelect" name="string" [(value)]="field.selectedValue"
+                placeholder="" style="border: none; height: 26px; padding: 0; font-weight: inherit;">
+                <option [value]="item" *ngFor="let item of field.value">{{item}}</option>
+              </select>
             </div>
             <div class="customBarcode" *ngIf=" field.type == 'barcode' ">
-                <ngx-barcode [bc-format]=" CODE128" [bc-height]="30" [bc-value]="4217467185"
-              [bc-display-value]="false">
+              <ngx-barcode [bc-format]=" CODE128" [bc-height]="30" [bc-value]="4217467185" [bc-display-value]="false">
               </ngx-barcode>
             </div>
           </div>
