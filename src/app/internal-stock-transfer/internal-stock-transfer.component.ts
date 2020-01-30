@@ -132,7 +132,7 @@ export class NgbdModalContent2 implements OnInit {
 
   isErroPopUp: boolean;
   popupData = [
-    {
+    {  
       type:'text',
       name: 'From Storage Location',
       values: 'PMF-6002​',

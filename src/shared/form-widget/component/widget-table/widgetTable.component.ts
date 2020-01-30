@@ -2,6 +2,7 @@ import { Component, Input, OnInit, ViewEncapsulation, ViewChild } from "@angular
 import { NgbActiveModal, NgbModal } from "@ng-bootstrap/ng-bootstrap";
 import { BarcodeValueService } from "../../../../app/barcode-value.service";
 import { BarecodeScannerLivestreamComponent } from "ngx-barcode-scanner";
+import { enterView } from "@angular/core/src/render3/instructions";
 
 @Component({
     selector: 'widget-table',
@@ -11,23 +12,30 @@ import { BarecodeScannerLivestreamComponent } from "ngx-barcode-scanner";
 })
 export class WidgetTable implements OnInit {
     @Input() data;
-    barcodeValue
+    barcodeValue;
+    barcodeIndexTracker;
 
     ngOnInit(): void {
-        this.barcodeService.currentmessage.subscribe(msg => this.barcodeValue = msg)
-        // debugger;
+        this.barcodeService.tableBarCode.subscribe(msg => {
+            this.data.values[this.barcodeIndexTracker][1].value = msg;
+        })
         console.log(this.data);
     }
     constructor(private modalService: NgbModal, public barcodeService: BarcodeValueService) { }
 
-    openBarcodeScanner() {
+    openBarcodeScanner(e) {
+        console.log(e);
+        this.barcodeIndexTracker = e;
         const modalRef = this.modalService.open(NgbdModalContent3);
         modalRef.componentInstance.name = 'World';
     }
 
     applyData(event, index) {
-        this.values[index][1].value = event.target.value
-        this.data.values[index] = this.values[index]
+        if (event.keyCode == 13) {
+            console.log("++++++++")
+            this.values[index][1].value = event.target.value;
+            this.data.values[index] = this.values[index];
+        }
     }
 
     values = [
@@ -190,7 +198,7 @@ export class NgbdModalContent3 implements OnInit {
     barcodeValue;
     ngOnInit() {
         this.startQuagga();
-        this.barcode.currentmessage.subscribe(message => this.barcodeValue = message)
+        this.barcode.tablemessage.subscribe(message => this.barcodeValue = message)
     }
     ngAfterViewInit() {
         this.barecodeScanner.stop();
@@ -205,7 +213,7 @@ export class NgbdModalContent3 implements OnInit {
         this.barcodeValue = result.codeResult.code;
         console.log(result.codeResult.code)
         this.barecodeScanner.stop()
-        this.barcode.changeMessage(result.codeResult.code)
+        this.barcode.changetable(result.codeResult.code)
         this.activeModal.close('Close click')
     }
 }
