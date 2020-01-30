@@ -196,7 +196,8 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textbox',
-                      value: ''
+                      value: '',
+                      styles: { 'width': '240px' }
                     },
                     {
                       type: 'textbox',
@@ -204,8 +205,9 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
+                      styles: { 'width': '210px' }
                     }
                   ],
                   [
@@ -219,7 +221,8 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textbox',
-                      value: ''
+                      value: '',
+                      styles: { 'width': '240px' }
                     },
                     {
                       type: 'textbox',
@@ -227,8 +230,9 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
+                      styles: { 'width': '210px' }
                     }
                   ],
                   [
@@ -242,7 +246,8 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textbox',
-                      value: ''
+                      value: '',
+                      styles: { 'width': '240px' }
                     },
                     {
                       type: 'textbox',
@@ -250,8 +255,9 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
+                      styles: { 'width': '210px' }
                     }
                   ],
                   [
@@ -265,7 +271,8 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textbox',
-                      value: ''
+                      value: '',
+                      styles: { 'width': '240px' }
                     },
                     {
                       type: 'textbox',
@@ -273,8 +280,9 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
-                      type: 'text',
-                      value: ''
+                      type: 'textbox',
+                      value: '',
+                      styles: { 'width': '210px' }
                     }
                   ],
                   [
@@ -288,7 +296,8 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textbox',
-                      value: ''
+                      value: '',
+                      styles: { 'width': '240px' }
                     },
                     {
                       type: 'textbox',
@@ -296,8 +305,9 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
-                      type: 'text',
+                      type: 'textbox',
                       value: '',
+                      styles: { 'width': '210px' }
                     }
                   ]
                 ]

@@ -126,6 +126,6 @@ import { barcodePopup } from '../shared/popUpComponent/barcodePopup/barcodePopup
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService, NgbActiveModal],
   bootstrap: [AppComponent],
-  entryComponents: [NgbdModalContent, NgbdModalContent1, NgbdModalContent2, NgbdModalContentCreatePackage, SuccessPopUp, barcodePopup]
+  entryComponents: [NgbdModalContent, NgbdModalContent1, NgbdModalContent2, NgbdModalContentCreatePackage, SuccessPopUp, barcodePopup, RfidPopUpComponent]
 })
 export class AppModule { }

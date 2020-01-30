@@ -43,7 +43,8 @@ export class ExternalStockTransfer implements OnInit {
     //this
     successPopUp() {
         const modalRef = this.modalService.open(SuccessPopUp, { size: 'lg' });
-        modalRef.componentInstance.name = 'World';      
+        modalRef.componentInstance.name = 'Stock Transfer Initiated successfully.';
+        
       }
 
     rfidPopUp() {

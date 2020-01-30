@@ -2,12 +2,18 @@
   <table class="table widgetTable table-striped">
     <thead>
       <tr>
-        <th style="min-width: 150px;" class="text-left" [ngStyle]="col.styles" [ngClass]="col.classes" *ngFor="let col of data.colConfig">
+        <th style="min-width: 150px;" class="text-left" [ngStyle]="col.styles" [ngClass]="col.classes"
+          *ngFor="let col of data.colConfig">
           <label *ngIf="col.type == 'checkbox'" class="checkbox-container">
             <input type="checkbox" />
             <span class="checkmark"></span>
           </label>
           <span *ngIf="col.type == 'text'">{{col.name}} </span>
+          <button type="button" class="btn .btn-xs" *ngIf="col.type == 'delete'">
+            <img
+              src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/icon_delete.png"
+              alt="">
+          </button>
         </th>
       </tr>
     </thead>
@@ -33,7 +39,9 @@
             </span>
           <button type="button" class="btn .btn-xs" [ngStyle]="column.styles" *ngIf="column.type == 'delete'">
             <!-- <i class="fa fa-trash" aria-hidden="true"></i> -->
-            <img src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/icon_delete.png" alt="">
+            <img
+              src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/icon_delete.png"
+              alt="">
           </button>
 
 
@@ -46,10 +54,67 @@
           </span>
 
           <input [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'textbox'" type="text"
-            [(ngModel)]="column.value" style="margin: 14px 0px;    width: 110px;">
+            [(ngModel)]="column.value" style="margin: 14px 0px;  width: 110px;" (click)="setValue(i)" >
 
-          <input [ngStyle]="column.styles" [ngClass]="column.classes" *ngIf="column.type == 'textboxchange'" type="text"
-            [(ngModel)]="column.value" (change)="applyData($event, i)" style="margin: 14px 0px;">
+          <div *ngIf="column.type == 'textboxchange'">
+            <input [ngStyle]="column.styles" [ngClass]="column.classes" type="text" [(ngModel)]="column.value"
+              (keydown)="applyData($event, i)" style="margin: 14px 5px 14px 0px; width: 110px;">
+            <a class="barcodeIcon" (click)="openBarcodeScanner(i)">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="18" viewBox="0 0 22.5 18">
+                <defs>
+                  <style>
+                    .a {
+                      fill: #0177d6;
+                    }
+
+                  </style>
+                </defs>
+                <path class="a" d="M3.75,48h-3a.75.75,0,0,0-.75.75v3a.75.75,0,0,0,1.5,0V49.5H3.75a.75.75,0,0,0,0-1.5Z"
+                  transform="translate(0 -48)" />
+                <g transform="translate(18 13.5)">
+                  <path class="a"
+                    d="M387.75,336a.75.75,0,0,0-.75.75V339h-2.25a.75.75,0,1,0,0,1.5h3a.75.75,0,0,0,.75-.75v-3A.75.75,0,0,0,387.75,336Z"
+                    transform="translate(-384 -336)" />
+                </g>
+                <g transform="translate(18)">
+                  <path class="a"
+                    d="M387.75,48h-3a.75.75,0,1,0,0,1.5H387v2.25a.75.75,0,0,0,1.5,0v-3A.75.75,0,0,0,387.75,48Z"
+                    transform="translate(-384 -48)" />
+                </g>
+                <g transform="translate(0 13.5)">
+                  <path class="a" d="M3.75,339H1.5v-2.25a.75.75,0,0,0-1.5,0v3a.75.75,0,0,0,.75.75h3a.75.75,0,0,0,0-1.5Z"
+                    transform="translate(0 -336)" />
+                </g>
+                <g transform="translate(3 3)">
+                  <rect class="a" width="1.5" height="12" />
+                </g>
+                <g transform="translate(6 3)">
+                  <rect class="a" width="1.5" height="9" />
+                </g>
+                <g transform="translate(9 3)">
+                  <rect class="a" width="1.5" height="9" />
+                </g>
+                <g transform="translate(12 3)">
+                  <rect class="a" width="1.5" height="12" />
+                </g>
+                <g transform="translate(15 3)">
+                  <rect class="a" width="1.5" height="9" />
+                </g>
+                <g transform="translate(18 3)">
+                  <rect class="a" width="1.5" height="12" />
+                </g>
+                <g transform="translate(6 13.5)">
+                  <rect class="a" width="1.5" height="1.5" />
+                </g>
+                <g transform="translate(9 13.5)">
+                  <rect class="a" width="1.5" height="1.5" />
+                </g>
+                <g transform="translate(15 13.5)">
+                  <rect class="a" width="1.5" height="1.5" />
+                </g>
+              </svg>
+            </a>
+          </div>
 
           <div class="form-group" *ngIf="column.type == 'dropdown'">
             <select class="form-control" id="formControlSelect" [(value)]="column.selectedValue" placeholder="">

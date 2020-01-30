@@ -1,6 +1,6 @@
 {
     "version": 3,
-    "mappings": "AAAA,AAAA,OAAO,CAAA;EACH,SAAS,EAAE,eAAe;CAC7B",
+    "mappings": "AAAA,AAAA,OAAO,CAAA;EACH,SAAS,EAAE,eAAe;CAC7B;;AACD,AAAA,cAAc,CAAC;EACX,KAAK,EAAE,OAAO;CACjB",
     "sources": [
         "widgetHeader.component.scss"
     ],

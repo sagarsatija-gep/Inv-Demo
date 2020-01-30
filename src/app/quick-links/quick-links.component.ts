@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class QuickLinksComponent implements OnInit {
 
   quickLinks: Object[];
+  barcodeBlock: Object[];
 
   constructor() {
     this.quickLinks = [
@@ -48,7 +49,35 @@ export class QuickLinksComponent implements OnInit {
         txt: "Manage Pick List"
       }
     ];
+
+    this.barcodeBlock = [
+      {
+        itemnumber: 5444032,
+        noofLines: 25,
+        barcodeImage: '../../assets/images/barcode1.png',
+        barcodeName: 'Bracket Assembly'
+      },
+      {
+        itemnumber: 7454512,
+        noofLines: 22,
+        barcodeImage: '../../assets/images/barcode2.png',
+        barcodeName: 'E-MONT_KS-PANZERROHR_DN20'
+      },
+      {
+        itemnumber: 8732674,
+        noofLines: 28,
+        barcodeImage: '../../assets/images/barcode3.png',
+        barcodeName: 'KIT,ANALYSIS,HEATER TUBE & FILTER,MFR UN'
+      },
+      {
+        itemnumber: 1592349,
+        noofLines: 23,
+        barcodeImage: '../../assets/images/barcode4.png',
+        barcodeName: 'MILLIPORE AAWP04700'
+      }
+    ]
   }
+
 
   ngOnInit() {
   }
