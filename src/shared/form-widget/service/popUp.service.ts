@@ -83,6 +83,11 @@ export class PopUpService {
             },
             {
                 type: 'text',
+                name: 'Total Weight',
+                colSize: '100px'
+            },
+            {
+                type: 'text',
                 name: '',
                 // styles: {'width': '8%'},
             }
@@ -138,6 +143,11 @@ export class PopUpService {
                     selectedValue: 'N02-06-3-2',
                     //   tdClasses: 'text-right'
                     // classes: 'input-small rounded-sm border-secondary text-right'
+                },
+                {
+                    type: 'text',
+                    value: '920.5 LB',
+                    
                 },
                 {
                     type: 'delete',
