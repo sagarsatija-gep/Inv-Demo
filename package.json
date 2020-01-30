@@ -31,6 +31,7 @@
     "@syncfusion/ej2-angular-buttons": "^17.4.43",
     "@syncfusion/ej2-angular-grids": "^17.4.43",
     "@syncfusion/ej2-angular-popups": "^17.4.43",
+    "@types/jquery": "^3.3.31",
     "ag-grid": "^18.1.2",
     "ag-grid-angular": "^22.1.1",
     "ag-grid-community": "^22.1.1",

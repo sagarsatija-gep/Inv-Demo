@@ -54,6 +54,7 @@ import { PoGoodsReceiptComponent } from './po-goods-receipt/po-goods-receipt.com
 import { PopupComponent } from './popup/popup.component';
 import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.component';
 import { CreatePackageComponent, NgbdModalContentCreatePackage } from './create-package/create-package.component';
+import { barcodePopup } from '../shared/popUpComponent/barcodePopup/barcodePopup.component';
 
 @NgModule({
   declarations: [
@@ -94,7 +95,8 @@ import { CreatePackageComponent, NgbdModalContentCreatePackage } from './create-
     ExternalStockTransfer,
     NgbdModalContentCreatePackage,
     ExternalStockTransfer,
-    SuccessPopUp
+    SuccessPopUp,
+    barcodePopup
   ],
   imports: [
     CommonModule,
@@ -122,6 +124,6 @@ import { CreatePackageComponent, NgbdModalContentCreatePackage } from './create-
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService, NgbActiveModal],
   bootstrap: [AppComponent],
-  entryComponents: [NgbdModalContent, NgbdModalContent1, NgbdModalContent2, NgbdModalContentCreatePackage, SuccessPopUp]
+  entryComponents: [NgbdModalContent, NgbdModalContent1, NgbdModalContent2, NgbdModalContentCreatePackage, SuccessPopUp, barcodePopup]
 })
 export class AppModule { }

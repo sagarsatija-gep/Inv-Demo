@@ -7,6 +7,8 @@ export class PopUpService {
     attachmentTable = new Subject<boolean>();
     isInternalStockErrorPopUp = false;
 
+    showBarCodeIcon = new Subject<boolean>();
+
     internalTableData =  {
 
         tablerowClass: 'bg-white',
@@ -954,6 +956,14 @@ export class PopUpService {
     }
     
     barCodes = [];
+
+    showBarcode() {
+        this.showBarCodeIcon.next(true);
+    }
+
+    hideBarCode() {
+        this.showBarCodeIcon.next(false);
+    }
 
     internalStockPopupOpen() {
         this.internalStockPopUp.next(true);

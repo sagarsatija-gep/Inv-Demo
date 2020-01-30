@@ -14,7 +14,7 @@ import { Subscription } from 'rxjs';
 export class ExternalStockTransfer implements OnInit {
 
     popUpSubscription: Subscription;
-
+//this
     constructor(public modalService: NgbModal, private popup: PopUpService, private route: Router) { }
     open() {
       const modalRef = this.modalService.open(NgbdModalContent2, { size: 'lg' });
@@ -33,6 +33,8 @@ export class ExternalStockTransfer implements OnInit {
         // this.route.navigate(['/home']);
         this.successPopUp();
     }
+
+    //this
     successPopUp() {
         const modalRef = this.modalService.open(SuccessPopUp, { size: 'lg' });
         modalRef.componentInstance.name = 'World';
