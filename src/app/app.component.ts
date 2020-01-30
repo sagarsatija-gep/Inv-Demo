@@ -28,7 +28,7 @@ export class AppComponent implements OnInit, OnDestroy {
         setTimeout(() => {
           debugger;
           this.showToast = false;          
-        }, 3000);
+        }, 10000);
       }
       
     })
