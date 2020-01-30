@@ -12,7 +12,7 @@ export class PopUpService {
     isInternalStockErrorPopUp = false;
 
     rfidGlob = new Subject<any>();
-    // showBarCodeIcon = new Subject<boolean>();
+    // showBarCodeIcon = new Subject<boolean>()
     showBarCodeIcon = new Subject<boolean>();// barcode header
     selectedInputForAsset = 1; //for barCode Asset
 

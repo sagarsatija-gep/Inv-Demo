@@ -55,8 +55,8 @@ import { PoGoodsReceiptComponent } from './po-goods-receipt/po-goods-receipt.com
 import { PopupComponent } from './popup/popup.component';
 import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.component';
 import { CreatePackageComponent, NgbdModalContentCreatePackage } from './create-package/create-package.component';
-import { NgbdModalContent3 } from '../shared/form-widget/component/widget-table/widgetTable.component';
 import { barcodePopup } from '../shared/popUpComponent/barcodePopup/barcodePopup.component';
+import { NgbdModalContent3 } from '../shared/form-widget/component/widget-table/widgetTable.component';
 
 @NgModule({
   declarations: [
@@ -74,7 +74,6 @@ import { barcodePopup } from '../shared/popUpComponent/barcodePopup/barcodePopup
     NgbdModalContent,
     NgbdModalContent1,
     NgbdModalContent2,
-    NgbdModalContent3,
     ManagePackingListComponent,
     UnprocessedPackingSlipsComponent,
     PackingSlipsTabComponent,
@@ -99,8 +98,9 @@ import { barcodePopup } from '../shared/popUpComponent/barcodePopup/barcodePopup
     NgbdModalContentCreatePackage,
     ExternalStockTransfer,
     SuccessPopUp,
+    barcodePopup,
     RfidPopUpComponent,
-    barcodePopup
+    NgbdModalContent3
   ],
   imports: [
     CommonModule,
