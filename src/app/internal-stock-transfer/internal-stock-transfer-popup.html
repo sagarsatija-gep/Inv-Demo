@@ -1,44 +1,111 @@
-
 <ng-container *ngIf="!isErroPopUp">
-  <div  class="modal-body internalstockPopup">
-      <div class="form-group" *ngFor="let x of popupData;">
-          <div class="container">
-              <div class="row">
-              <div class="col-sm-9">
-                  <div class="input-box">
-                  <label for={{x.name}}>{{x.name}}</label>
-                  <input type={{x.type}} class="form-control input" id={{x.name}} [(ngModel)]="x.values">
-                  </div>
-              </div>
-              <div class="col-sm-3 text-right">
-                  <div class=" pr-4" *ngIf="x.showBarcode">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="18" viewBox="0 0 22.5 18"><defs><style>.a{fill:#0177d6;}</style></defs><path class="a" d="M3.75,48h-3a.75.75,0,0,0-.75.75v3a.75.75,0,0,0,1.5,0V49.5H3.75a.75.75,0,0,0,0-1.5Z" transform="translate(0 -48)"/><g transform="translate(18 13.5)"><path class="a" d="M387.75,336a.75.75,0,0,0-.75.75V339h-2.25a.75.75,0,1,0,0,1.5h3a.75.75,0,0,0,.75-.75v-3A.75.75,0,0,0,387.75,336Z" transform="translate(-384 -336)"/></g><g transform="translate(18)"><path class="a" d="M387.75,48h-3a.75.75,0,1,0,0,1.5H387v2.25a.75.75,0,0,0,1.5,0v-3A.75.75,0,0,0,387.75,48Z" transform="translate(-384 -48)"/></g><g transform="translate(0 13.5)"><path class="a" d="M3.75,339H1.5v-2.25a.75.75,0,0,0-1.5,0v3a.75.75,0,0,0,.75.75h3a.75.75,0,0,0,0-1.5Z" transform="translate(0 -336)"/></g><g transform="translate(3 3)"><rect class="a" width="1.5" height="12"/></g><g transform="translate(6 3)"><rect class="a" width="1.5" height="9"/></g><g transform="translate(9 3)"><rect class="a" width="1.5" height="9"/></g><g transform="translate(12 3)"><rect class="a" width="1.5" height="12"/></g><g transform="translate(15 3)"><rect class="a" width="1.5" height="9"/></g><g transform="translate(18 3)"><rect class="a" width="1.5" height="12"/></g><g transform="translate(6 13.5)"><rect class="a" width="1.5" height="1.5"/></g><g transform="translate(9 13.5)"><rect class="a" width="1.5" height="1.5"/></g><g transform="translate(15 13.5)"><rect class="a" width="1.5" height="1.5"/></g></svg>
-              </div>  
-              </div>
-              </div>
+  <div class="modal-body internalstockPopup">
+    <div class="form-group" *ngFor="let x of popupData;">
+      <div class="container">
+        <div class="row">
+
+          <div *ngIf="x.type=='text'" class="col-sm-9">
+            <div class="input-box">
+              <label for={{x.name}}>{{x.name}}</label>
+              <input type={{x.type}} class="form-control input" id={{x.name}} [(ngModel)]="x.values">
+            </div>
           </div>
+
+          <div *ngIf="x.type == 'dropdown'" class="col-sm-9">
+            <div class="form-group">
+                <label for={{x.name}}>{{x.name}}</label>
+                <select name="dropdown" class="form-control" [(value)]="x.selectedValue">
+                <option *ngFor="let y of x.values">{{y}}</option>
+                </select>
+            </div>
+          </div>
+
+          <div class="col-sm-3 text-right">
+            <div class=" pr-4" *ngIf="x.showBarcode">
+              <svg xmlns="http://www.w3.org/2000/svg" width="22.5" height="18" viewBox="0 0 22.5 18">
+                <defs>
+                  <style>
+                    .a {
+                      fill: #0177d6;
+                    }
+
+                  </style>
+                </defs>
+                <path class="a" d="M3.75,48h-3a.75.75,0,0,0-.75.75v3a.75.75,0,0,0,1.5,0V49.5H3.75a.75.75,0,0,0,0-1.5Z"
+                  transform="translate(0 -48)" />
+                <g transform="translate(18 13.5)">
+                  <path class="a"
+                    d="M387.75,336a.75.75,0,0,0-.75.75V339h-2.25a.75.75,0,1,0,0,1.5h3a.75.75,0,0,0,.75-.75v-3A.75.75,0,0,0,387.75,336Z"
+                    transform="translate(-384 -336)" />
+                </g>
+                <g transform="translate(18)">
+                  <path class="a"
+                    d="M387.75,48h-3a.75.75,0,1,0,0,1.5H387v2.25a.75.75,0,0,0,1.5,0v-3A.75.75,0,0,0,387.75,48Z"
+                    transform="translate(-384 -48)" />
+                </g>
+                <g transform="translate(0 13.5)">
+                  <path class="a" d="M3.75,339H1.5v-2.25a.75.75,0,0,0-1.5,0v3a.75.75,0,0,0,.75.75h3a.75.75,0,0,0,0-1.5Z"
+                    transform="translate(0 -336)" />
+                </g>
+                <g transform="translate(3 3)">
+                  <rect class="a" width="1.5" height="12" />
+                </g>
+                <g transform="translate(6 3)">
+                  <rect class="a" width="1.5" height="9" />
+                </g>
+                <g transform="translate(9 3)">
+                  <rect class="a" width="1.5" height="9" />
+                </g>
+                <g transform="translate(12 3)">
+                  <rect class="a" width="1.5" height="12" />
+                </g>
+                <g transform="translate(15 3)">
+                  <rect class="a" width="1.5" height="9" />
+                </g>
+                <g transform="translate(18 3)">
+                  <rect class="a" width="1.5" height="12" />
+                </g>
+                <g transform="translate(6 13.5)">
+                  <rect class="a" width="1.5" height="1.5" />
+                </g>
+                <g transform="translate(9 13.5)">
+                  <rect class="a" width="1.5" height="1.5" />
+                </g>
+                <g transform="translate(15 13.5)">
+                  <rect class="a" width="1.5" height="1.5" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
+
+
   </div>
-  <div  class="modal-footer">
-      <button class="btn btn-white text-uppercase rounded-0 popupbutton" (click)="closePopup()">Cancel</button>
-      <button class="btn btn-white text-uppercase rounded-0 popupbutton" (click)="showTable()">Add</button>
+  <div class="modal-footer">
+    <button class="btn btn-white text-uppercase rounded-0 popupbutton" (click)="closePopup()">Cancel</button>
+    <button class="btn btn-white text-uppercase rounded-0 popupbutton" (click)="showTable()">Add</button>
   </div>
 </ng-container>
 
 
-<ng-container  *ngIf="isErroPopUp">
-    <div class="modal-header bg-danger">
-        <div class="col-sm-12 mx-auto d-block py-1 text-white text-center">
-            <img class="mx-auto d-block" style="width: 60px;" src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/caution.png" alt="Error !">
-            <h4 class="mt-3">Excess Weight Error</h4>
-        </div>
+<ng-container *ngIf="isErroPopUp">
+  <div class="modal-header bg-danger">
+    <div class="col-sm-12 mx-auto d-block py-1 text-white text-center">
+      <img class="mx-auto d-block" style="width: 60px;"
+        src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/caution.png"
+        alt="Error !">
+      <h4 class="mt-3">Excess Weight Error</h4>
     </div>
-    <div class="modal-body text-center">
-        <p style="margin-top: 30px;font-size: 1.3vw;">
-                Cannot transfer 25 Lead Piping to Storage BIN “N02-06-3-2”.<br>Change Storage BIN to continue.
-        ​</p>
-    </div>
-    <div class="modal-footer">
-        <button class="btn btn-white text-uppercase rounded-0 popupbutton" (click)="activeModal.dismiss('Cross click')">OK</button>
-    </div>
+  </div>
+  <div class="modal-body text-center">
+    <p style="margin-top: 30px;font-size: 1.3vw;">
+      Cannot transfer 25 Lead Piping to Storage BIN “N02-06-3-2”.<br>Change Storage BIN to continue.
+      ​</p>
+  </div>
+  <div class="modal-footer">
+    <button class="btn btn-white text-uppercase rounded-0 popupbutton"
+      (click)="activeModal.dismiss('Cross click')">OK</button>
+  </div>
 </ng-container>

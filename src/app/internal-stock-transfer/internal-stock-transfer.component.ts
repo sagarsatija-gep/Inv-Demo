@@ -133,15 +133,17 @@ export class NgbdModalContent2 implements OnInit {
   isErroPopUp: boolean;
   popupData = [
     {
-      type:'text',
+      type:'dropdown',
       name: 'From Storage Location',
-      values: 'PMF-6002​',
+      values: ['PMF-6002​'],
+      selectedValue: 'PMF-6002​',
       showBarcode: true
     },
     {
-      type:'text',
+      type:'dropdown',
       name: 'From BIN',
-      values: '',
+      values: ['',''],
+      selectedValue: '',
       showBarcode: true
     },
     {
@@ -157,17 +159,34 @@ export class NgbdModalContent2 implements OnInit {
       showBarcode: false
     },
     {
-      type:'text',
+      type:'dropdown',
       name: 'To Storage Location',
-      values: 'PMF-6002​​',
+      values: ['PMF-6002​'],
+      selectedValue: 'PMF-6002​',
       showBarcode: false
     },
     {
-      type:'text',
-      name: 'To Bin',
-      values: '​​',
+      type:'dropdown',
+      name: 'To BIN',
+      values: ['',''],
+      selectedValue: '',
       showBarcode: true
-    }
+    },
+  ];
+
+  selectedCountry: any;
+
+  cities = {};
+
+  countries = [{
+    id: 1, name: 'France', cities: ['Paris', 'Marseille', 'Nice']
+  },
+  {
+    id: 2, name: 'Germany', cities: ['Hamburg', 'Berlin', 'Munich']
+  },
+  {
+    id: 3, name: 'Italy', cities: ['Roma', 'Milan', 'Napoli']
+  },
   ];
 
   constructor(public activeModal: NgbActiveModal, private popUpServices: PopUpService ) {}
