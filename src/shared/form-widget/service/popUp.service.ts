@@ -1205,7 +1205,6 @@ export class PopUpService {
     rfidPopUpOpen() {
         this.rfidPopUp.next(true);
     }
-
     showBarcode() {
         this.showBarCodeIcon.next(true);
     }
