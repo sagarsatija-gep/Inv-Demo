@@ -2,11 +2,11 @@
     border-color: #d6d6d6!important;
 }
 
-.e-filtermenudiv .e-icons .e-icon-filter{
+.e-filtermenudiv .e-icons .e-icon-filter {
     font-display: none !important;
 }
 
-.e-grouped{
+.e-grouped {
     display: none;
 }
 
@@ -15,7 +15,7 @@
     width: 55px;
 }
 
-.cancel{
+.cancel {
     margin: 1rem;
     border: 1px solid gainsboro;
     color: blue;
@@ -26,18 +26,7 @@
     font-weight: 500;
 }
 
-.submit{
-    margin: 1rem;
-    border: 1px solid gainsboro;
-    color: white;
-    padding: 0px 1rem;
-    font-size: 16px;
-    border-radius: .5rem;
-    background: gray;
-    font-weight: 500;
-}
-
-button:focus{
+button:focus {
     outline: none;
 }
 
@@ -45,6 +34,6 @@ button:focus{
     background: blue !important;
 }
 
-.e-check{
+.e-check {
     background: blue !important;
 }
