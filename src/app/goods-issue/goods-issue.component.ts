@@ -210,8 +210,8 @@ export class GoodsIssueComponent implements OnInit {
                   value: [
                     'Issue For Cost Center',
                     'Issue For Cost Center1'
-                ],
-                  selectedValue:'Issue For Cost Center',
+                  ],
+                  selectedValue: 'Issue For Cost Center',
                   editable: true,
                 }
               ]
@@ -228,16 +228,16 @@ export class GoodsIssueComponent implements OnInit {
         data: {
           componentName: 'tabComponent',
           haveButton: true,
-          data:[
+          data: [
             {
               tabName: 'Line',
               tabcomponent: 'widgetTable',
-              tabData:  {
+              tabData: {
                 colConfig: [
                   {
                     type: 'checkbox',
                     name: 'Reservation #',
-                    styles: {'width': '2%'},
+                    styles: { 'width': '2%' },
                   },
                   {
                     type: 'text',
@@ -259,7 +259,7 @@ export class GoodsIssueComponent implements OnInit {
                     colSize: '100px',
                     // styles: {'background-color': 'rebeccapurple'},
                     classes: '',
-                    styles: {'width': '8%'},
+                    styles: { 'width': '8%' },
                   },
                   {
                     type: 'text',
@@ -283,19 +283,19 @@ export class GoodsIssueComponent implements OnInit {
                     type: 'text',
                     name: 'Issue Qty',
                     colSize: '100px',
-                    styles: {'width': '8%'},
+                    styles: { 'width': '8%' },
                   },
                   {
                     type: 'text',
                     name: 'UOM',
                     colSize: '100px',
-                    styles: {'width': '8%'},
+                    styles: { 'width': '8%' },
                   },
                   {
                     type: 'text',
                     name: 'Is Final',
                     colSize: '100px',
-                    styles: {'width': '8%'},
+                    styles: { 'width': '8%' },
                   },
                   {
                     type: 'text',
@@ -312,7 +312,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                      value: 'R4544322', classes: 'text-primary',
                     },
                     {
                       type: 'text',
@@ -359,7 +359,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                      value: 'R4544322', classes: 'text-primary',
                     },
                     {
                       type: 'text',
@@ -406,7 +406,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                      value: 'R4544322', classes: 'text-primary',
                     },
                     {
                       type: 'text',
@@ -453,7 +453,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                      value: 'R4544322', classes: 'text-primary',
                     },
                     {
                       type: 'text',
@@ -500,12 +500,12 @@ export class GoodsIssueComponent implements OnInit {
             {
               tabName: 'Where',
               tabcomponent: 'widgetTable',
-              tabData:  {
+              tabData: {
                 colConfig: [
                   {
                     type: 'checkbox',
                     name: 'Reservation #',
-                    styles: {'width': '2%'},
+                    styles: { 'width': '2%' },
                   },
                   {
                     type: 'text',
@@ -546,7 +546,7 @@ export class GoodsIssueComponent implements OnInit {
                     name: 'Line Comments',
                     colSize: '100px',
                     // styles: {'width': '30%'},
-                    classes:  'text-left'
+                    classes: 'text-left'
                   }
                 ],
                 values: [
@@ -557,7 +557,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                      value: 'R4544322', classes: 'text-primary',
                     },
                     {
                       type: 'text',
@@ -590,7 +590,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                      value: 'R4544322', classes: 'text-primary',
                     },
                     {
                       type: 'text',
@@ -623,7 +623,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                      value: 'R4544322', classes: 'text-primary',
                     },
                     {
                       type: 'text',
@@ -656,7 +656,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                      value: 'R4544322', classes: 'text-primary',
                     },
                     {
                       type: 'text',
@@ -689,12 +689,12 @@ export class GoodsIssueComponent implements OnInit {
             {
               tabName: 'Accounting',
               tabcomponent: 'widgetTable',
-              tabData:  {
+              tabData: {
                 colConfig: [
                   {
                     type: 'checkbox',
                     name: 'Reservation #',
-                    styles: {'width': '2%'},
+                    styles: { 'width': '2%' },
                   },
                   {
                     type: 'text',
@@ -751,7 +751,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                      value: 'R4544322', classes: 'text-primary',
                     },
                     {
                       type: 'text',
@@ -766,8 +766,8 @@ export class GoodsIssueComponent implements OnInit {
                       value: [
                         'Issue For Cost Center',
                         'Issue For Cost Center1'
-                    ],
-                      selectedValue:'Issue For Cost Center',
+                      ],
+                      selectedValue: 'Issue For Cost Center',
                     },
                     {
                       type: 'dropdown',
@@ -775,8 +775,8 @@ export class GoodsIssueComponent implements OnInit {
                       value: [
                         'CC001',
                         'CC0012'
-                    ],
-                      selectedValue:'CC001',
+                      ],
+                      selectedValue: 'CC001',
                     },
                     {
                       type: 'textbox',
@@ -796,7 +796,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                      value: 'R4544322', classes: 'text-primary',
                     },
                     {
                       type: 'text',
@@ -811,8 +811,8 @@ export class GoodsIssueComponent implements OnInit {
                       value: [
                         'Issue For Cost Center',
                         'Issue For Cost Center1'
-                    ],
-                      selectedValue:'Issue For Cost Center',
+                      ],
+                      selectedValue: 'Issue For Cost Center',
                     },
                     {
                       type: 'dropdown',
@@ -820,8 +820,8 @@ export class GoodsIssueComponent implements OnInit {
                       value: [
                         'CC001',
                         'CC0011'
-                    ],
-                      selectedValue:'CC001',
+                      ],
+                      selectedValue: 'CC001',
                     },
                     {
                       type: 'textbox',
@@ -841,7 +841,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                      value: 'R4544322', classes: 'text-primary',
                     },
                     {
                       type: 'text',
@@ -856,8 +856,8 @@ export class GoodsIssueComponent implements OnInit {
                       value: [
                         'Issue For Cost Center',
                         'Issue For Cost Center1'
-                    ],
-                      selectedValue:'Issue For Cost Center',
+                      ],
+                      selectedValue: 'Issue For Cost Center',
                     },
                     {
                       type: 'dropdown',
@@ -865,8 +865,8 @@ export class GoodsIssueComponent implements OnInit {
                       value: [
                         'CC001',
                         'CC0011'
-                    ],
-                      selectedValue:'CC001',
+                      ],
+                      selectedValue: 'CC001',
                     },
                     {
                       type: 'textbox',
@@ -886,7 +886,7 @@ export class GoodsIssueComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: 'R4544322', classes: 'text-primary' ,
+                      value: 'R4544322', classes: 'text-primary',
                     },
                     {
                       type: 'text',
@@ -901,8 +901,8 @@ export class GoodsIssueComponent implements OnInit {
                       value: [
                         'Issue For Cost Center',
                         'Issue For Cost Center1'
-                    ],
-                      selectedValue:'Issue For Cost Center',
+                      ],
+                      selectedValue: 'Issue For Cost Center',
                     },
                     {
                       type: 'dropdown',
@@ -910,8 +910,8 @@ export class GoodsIssueComponent implements OnInit {
                       value: [
                         'CC001',
                         'CC0011'
-                    ],
-                      selectedValue:'CC001',
+                      ],
+                      selectedValue: 'CC001',
                     },
                     {
                       type: 'textbox',
@@ -932,7 +932,7 @@ export class GoodsIssueComponent implements OnInit {
         }
       }
     }
-]
+  ]
   constructor() { }
 
   ngOnInit() {
