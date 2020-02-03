@@ -79,7 +79,7 @@ export class ManageGoodsIssuePicklistComponent implements OnInit {
               data: [{
                 type: 'text',
                 name: 'User Name',
-                value: 'JoHn Smith',
+                value: 'John Smith',
                 editable: true,
               }]
             },
