@@ -1,3 +1,4 @@
+import { ManageCycleCountRequestComponent } from './manage-cycle-count-request/manage-cycle-count-request.component';
 import { ExternalStockTransfer } from './external-stock-transfer/externalStockTransfer.component';
 import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
 import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
@@ -41,7 +42,8 @@ const routes: Routes = [
   { path: 'poGoodsReceipt', component: PoGoodsReceiptComponent },
   { path: 'ocr-gr-creation', component: OcrGrCreationComponent },
   { path: 'createPackage', component: CreatePackageComponent },
-  { path: 'externalStockTransfer', component: ExternalStockTransfer}
+  { path: 'externalStockTransfer', component: ExternalStockTransfer},
+  { path: 'manageCycleCountRequest', component: ManageCycleCountRequestComponent }
 ];
 
 @NgModule({

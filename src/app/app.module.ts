@@ -57,6 +57,7 @@ import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.compon
 import { CreatePackageComponent, NgbdModalContentCreatePackage } from './create-package/create-package.component';
 import { barcodePopup } from '../shared/popUpComponent/barcodePopup/barcodePopup.component';
 import { NgbdModalContent3 } from '../shared/form-widget/component/widget-table/widgetTable.component';
+import { ManageCycleCountRequestComponent } from './manage-cycle-count-request/manage-cycle-count-request.component';
 
 @NgModule({
   declarations: [
@@ -100,7 +101,8 @@ import { NgbdModalContent3 } from '../shared/form-widget/component/widget-table/
     SuccessPopUp,
     barcodePopup,
     RfidPopUpComponent,
-    NgbdModalContent3
+    NgbdModalContent3,
+    ManageCycleCountRequestComponent
   ],
   imports: [
     CommonModule,
