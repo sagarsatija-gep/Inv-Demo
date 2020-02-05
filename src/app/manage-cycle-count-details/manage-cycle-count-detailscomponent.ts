@@ -16,205 +16,49 @@ export class ManageCycleCountDetailsComponent implements OnInit {
       'HeaderData': {
         name: 'Header Details',
         isOpen: true,
-        collapsible: false,
-        status: 'In Progress',
-        classes: 'text-progress',
+        collapsible: true,
         data: {
-          componentName: 'goodsIssueDetails',
-          isSubDetails: false,//for subDetails components
+          componentName: 'details',
+          isSubDetails: false,
           data: [
             {
-              editable: true,
-              classes: 'bg-gray',
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Goods Issue Number',
-                  value: '1232',
-                  editable: true,
-                },
-                {
-                  type: 'barcode',
-                  name: 'BarCode',
-                  value: '1232',
-                  editable: true,
-                }
-              ]
+              type:'text',
+              name: 'Cycle Count Number',
+              values: 'CC-002978',
             },
             {
-              editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Goods Issue Name',
-                  value: '1232',
-                  editable: true,
-                }
-              ]
+              type:'text',
+              name: 'Type',
+              values: 'Unplanned',
+            },{
+              type:'text',
+              name: 'Company Code',
+              values: 'AM33',
             },
             {
-              editable: true,
-              classes: 'bg-gray',
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Division',
-                  value: '1232',
-                  editable: true,
-                }
-              ]
+              type:'text',
+              name: 'Plant',
+              values: 'El-Segundo Refinery',
             },
             {
-              editable: true,
-              classes: 'bg-gray',
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Company',
-                  value: 'Chevron PS',
-                  editable: true,
-                }
-              ]
+              type:'text',
+              name: 'Name',
+              values: 'Count Tuthill Pump FR700V',
             },
             {
-              editable: true,
-              classes: 'bg-gray',
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Plant',
-                  value: 'DRPS',
-                  editable: true,
-                }
-              ]
+              type: 'text',
+              name:'Warehouse',
+              values:'ISOMAX'
             },
             {
-              editable: true,
-              classes: 'bg-gray',
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'User Name',
-                  value: 'Jhon Smith',
-                  editable: true,
-                }
-              ]
+              type: 'text',
+              name: 'Scheduled Date',
+              values: '08/09/2019',
             },
             {
-              editable: true,
-              classes: 'bg-gray',
-              data: [
-                {
-                  type: 'barcode',
-                  name: 'Pick List Barcode',
-                  value: '1232',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              classes: 'bg-gray',
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Pick List Number',
-                  value: '44540023',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Comments',
-                  value: '',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Material Slip',
-                  value: '1232',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Bill of Landing',
-                  value: '1232',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Gr/gl slip No.',
-                  value: '1232',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Delivery Note',
-                  value: '1232',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              data: [
-                {
-                  type: 'choosedate',
-                  name: 'Document Date',
-                  value: '',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              data: [
-                {
-                  type: 'choosedate',
-                  name: 'Posted Date',
-                  value: '',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              data: [
-                {
-                  type: 'dropdown',
-                  name: 'Movement Type',
-                  value: [
-                    'Issue For Cost Center',
-                    'Issue For Cost Center1'
-                ],
-                  selectedValue:'Issue For Cost Center',
-                  editable: true,
-                }
-              ]
+              type: 'text',
+              name: 'Assignee',
+              values: 'Emily Ross',
             }
           ]
         }
