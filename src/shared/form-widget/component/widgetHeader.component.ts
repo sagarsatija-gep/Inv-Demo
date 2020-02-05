@@ -11,6 +11,7 @@ import { PopUpService } from '../service/popUp.service';
 import { Router } from '@angular/router';
 import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { barcodePopup } from "../../popUpComponent/barcodePopup/barcodePopup.component";
+import { ModifyWidgetTable } from './modify-widget-table/modifyWidgetTable';
 
 
 const  components = {
@@ -19,7 +20,8 @@ const  components = {
     'Attachement': WidgetAttachemant,
     'goodsIssueDetails': GoodsIssueDetails,
     'widgetTable': WidgetTable,
-    'manageGoodsIssue': ManageGoodsIssue
+    'manageGoodsIssue': ManageGoodsIssue,
+    'modifyWidgetTable': ModifyWidgetTable
 };
 
 @Component({
@@ -70,7 +72,7 @@ export class WidgetHeaderComponent implements OnInit {
             if( this.headerData.data != null && this.headerData.data.componentName != 'widgetTable') {
                 this.component.instance.data = this.headerData.data;
             } 
-            if(this.headerData.data.componentName == 'widgetTable') {
+            if(this.headerData.data.componentName == 'widgetTable' || this.headerData.data.componentName == 'modifyWidgetTable') {
                 this.component.instance.data = this.headerData.data.data;
             }
         }

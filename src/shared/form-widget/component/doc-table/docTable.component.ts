@@ -3,6 +3,7 @@ import { DevTable } from './dev-table/dev-table.component';
 import { Component, Input, OnInit, ViewChild, ViewContainerRef, ComponentFactoryResolver, ViewEncapsulation} from "@angular/core";
 import { RouterModule, Routes, Router } from '@angular/router';
 import { PopUpService } from '../../service/popUp.service';
+import { ModifyWidgetTable } from '../modify-widget-table/modifyWidgetTable';
 
 interface Document {
     id?: number;
@@ -13,7 +14,8 @@ interface Document {
 
 const components = {
     'table': DevTable,
-    'widgetTable': WidgetTable
+    'widgetTable': WidgetTable,
+    'modifyWidgetTable': ModifyWidgetTable
 }
 
 @Component({
