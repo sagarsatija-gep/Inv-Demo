@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { DatePipe } from '@angular/common';
 
 @Component({
-  selector: 'app-manage-cycle-count-request',
-  templateUrl: './manage-cycle-count-request.component.html',
-  styleUrls: ['./manage-cycle-count-request.component.css']
+  selector: 'app-manage-cycle-count-details',
+  templateUrl: './manage-cycle-count-details.component.html',
+  styleUrls: ['./manage-cycle-count-details.component.css']
 })
-export class ManageCycleCountRequestComponent implements OnInit {
+export class ManageCycleCountDetailsComponent implements OnInit {
 
   constructor() { }
 

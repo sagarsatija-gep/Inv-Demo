@@ -1,4 +1,3 @@
-import { ManageCycleCountRequestComponent } from './manage-cycle-count-request/manage-cycle-count-request.component';
 import { ExternalStockTransfer } from './external-stock-transfer/externalStockTransfer.component';
 import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
 import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
@@ -18,6 +17,7 @@ import { AsnGrComponent } from './asn-gr/asn-gr.component';
 import { PoGoodsReceiptComponent } from './po-goods-receipt/po-goods-receipt.component';
 import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.component';
 import { CreatePackageComponent } from './create-package/create-package.component';
+import { ManageCycleCountDetailsComponent } from './manage-cycle-count-details/manage-cycle-count-detailscomponent';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -43,7 +43,7 @@ const routes: Routes = [
   { path: 'ocr-gr-creation', component: OcrGrCreationComponent },
   { path: 'createPackage', component: CreatePackageComponent },
   { path: 'externalStockTransfer', component: ExternalStockTransfer},
-  { path: 'manageCycleCountRequest', component: ManageCycleCountRequestComponent }
+  { path: 'ManageCycleCountDetails', component: ManageCycleCountDetailsComponent }
 ];
 
 @NgModule({
