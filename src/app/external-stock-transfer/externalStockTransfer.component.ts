@@ -92,7 +92,7 @@ export class ExternalStockTransfer implements OnInit {
               {
                 type:'text',
                 name: 'Company Code',
-                values: 'Chevron Refining',
+                values: 'Chevron Refinery',
               },
               {
                 type: 'textbox',

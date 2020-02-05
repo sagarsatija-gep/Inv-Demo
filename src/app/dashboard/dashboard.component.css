@@ -1,6 +1,4 @@
-
-
-.cancel{
+.cancel {
     margin: 1rem;
     border: 1px solid gainsboro;
     color: blue;
@@ -11,7 +9,7 @@
     font-weight: 500;
 }
 
-.submit{
+.submit {
     margin: 1rem;
     border: 1px solid gainsboro;
     color: white;
@@ -22,7 +20,7 @@
     font-weight: 500;
 }
 
-button:focus{
+button:focus {
     outline: none;
 }
 
@@ -30,8 +28,24 @@ button:focus{
     background: blue !important;
 }
 
-.e-check{
+.e-check {
     background: blue !important;
 }
 
+.mat-tab-label {
+    padding: 0 20px !important;
+    min-width: 30px !important;
+    width: auto !important;
+}
 
+.mat-tab-group.mat-primary .mat-ink-bar {
+    background-color: #3D5AFE;
+}
+
+.border-secondary {
+    border-color: #d6d6d6 !important;
+}
+
+.marginBtm40 {
+    margin-bottom: 40px;
+}

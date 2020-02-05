@@ -53,11 +53,11 @@ export class SideNavComponent implements OnInit {
       },
       {
         name:"Manage Packing Slip",
-        value:"managePackingSlip/7894563 "
+        value:"managePackingList"
       },
       {
         name:"Manage Pick List",
-        value:"managePackingList"
+        value:"managePicklist"
       },
       {
         name:"Manage Goods Issue/Reversal",
