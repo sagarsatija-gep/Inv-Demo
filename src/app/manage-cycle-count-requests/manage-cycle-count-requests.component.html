@@ -1,0 +1,22 @@
+<div style="min-width: 100%; margin-top: 10px;" class="container">
+  <div style="min-width: 100%; padding: 0px 20px;" class="container">
+    <div class="row">
+      <div class="col-9">
+        <div>
+          <span class="text-primary">Manage Transactions</span>
+        </div>
+        <h2>Manage Cycle Count Requests</h2>
+      </div>
+      <div class="col-3" style="margin: auto;">
+        <button type="button" class="btn btn-primary" (click)="isCollapsed = !isCollapsed"
+          [attr.aria-expanded]="!isCollapsed" aria-controls="collapseExample" style="float: right; min-width: 100px;">
+          <i class="fa fa-filter" aria-hidden="true" style="padding-right: 7px;"></i><span>Filter</span>
+        </button>
+      </div>
+    </div>
+    <div id="collapseExample" [ngbCollapse]="isCollapsed">
+      <app-filter></app-filter>
+    </div>
+    <app-cycle-count-list-view></app-cycle-count-list-view>
+  </div>
+</div>

@@ -15,7 +15,7 @@ export class QuickLinksComponent implements OnInit {
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink1.png",
         txt: "Manage Cycle Count",
-        url: "/managecyclecount"
+        url: "/manageCycleCountRequests"
       },
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink2.png",
