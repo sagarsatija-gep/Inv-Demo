@@ -1,0 +1,22 @@
+.border-secondary {
+    border-color: #d6d6d6 !important;
+}
+
+.table thead th {
+    font-weight: 100;
+}
+
+.table td, .table th {
+    font-weight: 500;
+}
+
+.request-status {
+    font: status-bar;
+    width: max-content;
+    border-radius: 15px;
+    padding: 3px 7px;
+}
+
+.request-main-col:hover {
+    text-shadow: 1px 1px 0 #d6d6d6;
+}

@@ -1,0 +1,43 @@
+<div class="container-fluid border border-secondary rounded-sm mt-3 bg-white">
+  <div class="row">
+    <div class="col-sm-12 pt-3">
+      <h6>Line View</h6>
+      <hr>
+    </div>
+  </div>
+  <div style="margin-top: -17px;">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Item Details</th>
+          <th scope="col">Cycle Count Number</th>
+          <th scope="col">Scheduled Date</th>
+          <th scope="col">Type</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let request of cycleCountRequests">
+          <td style="color:#3D5AFE; cursor: pointer;"><span class="request-main-col"><a
+                [routerLink]="['/managePackingSlip/7894563']"
+                style="text-decoration: none;">{{ request.itemDetails }}</a></span>
+          </td>
+          <td>{{ request.cycleCountNumber }}</td>
+          <td>{{ request.scheduledDate }}</td>
+          <td>{{ request.type }}</td>
+          <td>
+            <div class="request-status" *ngIf="request.status == 'SCHEDULED'"
+              style="border: 1px solid orange; color: orange;">
+              {{ request.status }}</div>
+            <div class="request-status" *ngIf="request.status == 'IN PROGRESS'"
+              style="border: 1px solid blue; color: blue;">
+              {{ request.status }}</div>
+            <div class="request-status" *ngIf="request.status == 'COMPLETED'"
+              style="border: 1px solid green; color: green;">
+              {{ request.status }}</div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
