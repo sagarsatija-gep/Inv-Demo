@@ -14,7 +14,7 @@ export class ManageCycleCountDetailsComponent implements OnInit {
   widgetData = [
     {
       'HeaderData': {
-        name: 'Header Details',
+        name: 'Basic Details',
         isOpen: true,
         collapsible: true,
         data: {
