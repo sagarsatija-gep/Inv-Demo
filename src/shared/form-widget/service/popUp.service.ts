@@ -1347,7 +1347,7 @@ export class PopUpService {
     }
 
     filteredExternalTableData() {
-        this.apiCallForBarCodeNumber();
+        // this.apiCallForBarCodeNumber();
         const RFC_COLUMN = this.externalTableData.colConfig.length;
         return {
             ...this.externalTableData,

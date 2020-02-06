@@ -22,6 +22,7 @@ import {MatDatepickerModule} from '@angular/material/datepicker';
 import {MatNativeDateModule} from '@angular/material/core';
 import {MatInputModule} from '@angular/material';
 import { ManageGoodsIssue } from './component/manage-goods-issue/manageGoodsIssue.component';
+import { ModifyWidgetTable } from './component/modify-widget-table/modifyWidgetTable'
 
 
 @NgModule({
@@ -35,7 +36,7 @@ import { ManageGoodsIssue } from './component/manage-goods-issue/manageGoodsIssu
         MatFormFieldModule,
         MatNativeDateModule,
         MatInputModule,
-        NgxBarcodeModule  
+        NgxBarcodeModule
      ],
     declarations: [
         WidgetFormComponent,
@@ -48,7 +49,8 @@ import { ManageGoodsIssue } from './component/manage-goods-issue/manageGoodsIssu
          WidgetAttachemant,
          GoodsIssueDetails,
          WidgetTable,
-         ManageGoodsIssue
+         ManageGoodsIssue,
+         ModifyWidgetTable
         ],
     exports:[WidgetFormComponent, MatDatepickerModule, MatFormFieldModule],
     entryComponents: [
@@ -62,7 +64,8 @@ import { ManageGoodsIssue } from './component/manage-goods-issue/manageGoodsIssu
         WidgetAttachemant,
         GoodsIssueDetails,
         WidgetTable,
-        ManageGoodsIssue
+        ManageGoodsIssue,
+        ModifyWidgetTable
     ],
     providers: [PopUpService]
 })
