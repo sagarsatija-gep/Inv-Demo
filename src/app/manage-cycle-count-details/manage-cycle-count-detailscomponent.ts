@@ -19,7 +19,7 @@ export class ManageCycleCountDetailsComponent implements OnInit {
       'HeaderData': {
         name: 'Basic Details',
         isOpen: true,
-        collapsible: true,
+        collapsible: false,
         data: {
           componentName: 'details',
           isSubDetails: false,
