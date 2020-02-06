@@ -1,5 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit ,ViewChild, ViewEncapsulation} from '@angular/core';
+import { pickListData } from '../../../data';
 import { DatePipe } from '@angular/common';
+import { GroupService, SortService, GridComponent } from '@syncfusion/ej2-angular-grids';
+import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 
 @Component({
   selector: 'app-manage-cycle-count-details',
@@ -63,626 +66,82 @@ export class ManageCycleCountDetailsComponent implements OnInit {
           ]
         }
       }
-    },
-    {
-      'HeaderData': {
-        name: '',
-        collapsible: false,
-        isOpen: true,
-        data: {
-          componentName: 'tabComponent',
-          haveButton: true,
-          data:[
-            {
-              tabName: 'Line',
-              tabcomponent: 'modifyWidgetTable',
-              tabData:  {
-                colConfig: [
-                  {
-                    type: 'checkbox',
-                    valueType: 'checkbox',
-                    name: 'Reservation #',
-                    colStyles: {'width': '2%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'text',
-                    name: 'Reservation #',
-                    colSize: '100px',
-                    classes: 'text-primary'
-                    // styles: {'width': '8%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'text',
-                    name: 'Reservation Line #',
-                    colSize: '100px',
-                    classes: ' ',
-                    // styles: {'width': '8%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'text',
-                    name: 'Item #',
-                    colSize: '100px',
-                    // styles: {'background-color': 'rebeccapurple'},
-                    classes: '',
-                    colStyles: {'width': '8%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'text',
-                    name: 'Reservation Qty',
-                    colSize: '100px',
-                    // styles: {'width': '8%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'text',
-                    name: 'Remaining Qty',
-                    colSize: '100px',
-                    // styles: {'width': '8%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'text',
-                    name: 'On-Hand Qty',
-                    colSize: '100px',
-                    // styles: {'width': '8%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'textbox',
-                    name: 'Issue Qty',
-                    colSize: '100px',
-                    colStyles: {'width': '8%'},
-                    classes: 'input-small rounded-sm border-secondary text-right'
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'text',
-                    name: 'UOM',
-                    colSize: '100px',
-                    colStyles: {'width': '8%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'toggle',
-                    name: 'Is Final',
-                    colSize: '100px',
-                    colStyles: {'width': '8%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'text',
-                    name: 'Requested Date',
-                    colSize: '100px',
-                    // styles: {'width': '8%'},
-                  }
-                ],
-                values: [
-                  [
-                    {
-                      value: 'false',
-                    },
-                    {
-                      value: 'R4544322' ,
-                    },
-                    {
-                      value: '1',
-                    },
-                    {
-                      value: '43335779',
-                    },
-                    {
-                      value: '55',
-                    },
-                    {
-                      value: '55',
-                    },
-                    {
-                      value: '70',
-                    },
-                    {
-                      value: '55',
-                    },
-                    {
-                      value: 'EA',
-                    },
-                    {
-                      value: true,
-                    },
-                    {
-                      value: '10/28/2019',
-                    }
-                  ],
-                  [
-                    {
-                      value: 'false',
-                    },
-                    {
-                      value: 'R4544322',
-                    },
-                    {
-                      value: '2',
-                    },
-                    {
-                      value: '55430224',
-                    },
-                    {
-                      value: '55',
-                    },
-                    {
-                      value: '55',
-                    },
-                    {
-                      value: '70',
-                    },
-                    {
-                      value: '55',
-                    },
-                    {
-                      value: 'EA',
-                    },
-                    {
-                      value: false,
-                    },
-                    {
-                      value: '10/28/2019',
-                    }
-                  ],
-                  [
-                    {
-                      value: false,
-                    },
-                    {
-                      value: 'R4544322', 
-                    },
-                    {
-                      value: '3',
-                    },
-                    {
-                      value: '55436655',
-                    },
-                    {
-                      value: '55',
-                    },
-                    {
-                      value: '55',
-                    },
-                    {
-                      value: '70',
-                    },
-                    {
-                      value: '55',
-                    },
-                    {
-                      value: 'EA',
-                    },
-                    {
-                      value: false,
-                    },
-                    {
-                      value: '10/28/2019',
-                    }
-                  ],
-                  [
-                    {
-                      value: 'false',
-                    },
-                    {
-                      value: 'R4544322',
-                    },
-                    {
-                      value: '4',
-                    },
-                    {
-                      value: '55437754',
-                    },
-                    {
-                      value: '55',
-                    },
-                    {
-                      value: '55',
-                    },
-                    {
-                      value: '70',
-                    },
-                    {
-                      value: '55',
-                    },
-                    {
-                      value: 'EA',
-                    },
-                    {
-                      value: false,
-                    },
-                    {
-                      value: '10/28/2019',
-                    }
-                  ]
-                ]
-              }
-
-            },
-            {
-              tabName: 'Where',
-              tabcomponent: 'modifyWidgetTable',
-              tabData:  {
-                colConfig: [
-                  {
-                    type: 'checkbox',
-                    valueType: 'checkbox',
-                    name: 'Reservation #',
-                    colStyles: {'width': '2%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'text',
-                    name: 'Reservation #',
-                    colSize: '100px',
-                    classes: 'text-primary' ,
-                    // styles: {'width': '30%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'text',
-                    name: 'Reservation Line #',
-                    colSize: '100px',
-                    classes: ' ',
-                    // styles: {'width': '30%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'text',
-                    name: 'Item #',
-                    colSize: '100px',
-                    // styles: {'background-color': 'rebeccapurple'},
-                    classes: '',
-                    // styles: {'width': '30%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'textbox',
-                    name: 'Goods Recipient',
-                    colSize: '100px',
-                    classes: 'input-medium rounded-sm border-secondary'
-
-                    // styles: {'width': '30%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'textbox',
-                    name: 'Unloading Point',
-                    colSize: '100px',
-                    classes: 'input-medium rounded-sm border-secondary'
-
-                    // styles: {'width': '30%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'textbox',
-                    name: 'Line Comments',
-                    colSize: '100px',
-                    // styles: {'width': '30%'},
-                    colClasses:  'text-left',
-                    classes: 'input-large rounded-sm border-secondary'
-
-                  }
-                ],
-                values: [
-                  [
-                    {
-                      value: 'false',
-                    },
-                    {
-                      value: 'R4544322', 
-                    },
-                    {
-                      value: '1',
-                    },
-                    {
-                      value: '43335779'
-                    },
-                    {
-                      value: '',
-                    },
-                    {
-                      value: '',
-                    },
-                    {
-                      value: '',
-                    }
-                  ],
-                  [
-                    {
-                      value: 'false',
-                    },
-                    {
-                      value: 'R4544322',
-                    },
-                    {
-                      value: '2',
-                    },
-                    {
-                      value: '55430224',
-                    },
-                    {
-                      value: '',
-                    },
-                    {
-                      value: '',
-                    },
-                    {
-                      value: '',
-                    }
-                  ],
-                  [
-                    {
-                      value: 'false',
-                    },
-                    {
-                      value: 'R4544322',
-                    },
-                    {
-                      value: '3',
-                    },
-                    {
-                      value: '55436655',
-                    },
-                    {
-                      value: '',
-                    },
-                    {
-                      value: '',
-                    },
-                    {
-                      value: '',
-                    }
-                  ],
-                  [
-                    {
-                      value: 'false',
-                    },
-                    {
-                      value: 'R4544322',
-                    },
-                    {
-                      value: '4',
-                    },
-                    {
-                      value: '55437754',
-                    },
-                    {
-                      value: '',
-                    },
-                    {
-                      value: '',
-                    },
-                    {
-                      value: '',
-                    }
-                  ]
-                ]
-              }
-
-            },
-            {
-              tabName: 'Accounting',
-              tabcomponent: 'modifyWidgetTable',
-              tabData:  {
-                colConfig: [
-                  {
-                    type: 'checkbox',
-                    valueType: 'checkbox',
-                    name: 'Reservation #',
-                    colStyles: {'width': '2%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'text',
-                    name: 'Reservation #',
-                    colSize: '100px',
-                    classes: 'text-primary' ,
-                    // styles: {'width': '30%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'text',
-                    name: 'Reservation Line #',
-                    colSize: '100px',
-                    classes: ' ',
-                    // styles: {'width': '30%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'text',
-                    name: 'Item #',
-                    colSize: '100px',
-                    // styles: {'background-color': 'rebeccapurple'},
-                    classes: '',
-                    // styles: {'width': '30%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'dropdown',
-                    name: 'Movement Type',
-                    colSize: '100px',
-                    // styles: {'width': '30%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'dropdown',
-                    name: 'Cost Center',
-                    colSize: '100px',
-                    classes: 'rounded-sm border-secondary input-large',
-                    // styles: {'width': '30%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'textbox',
-                    name: 'WBS Element',
-                    colSize: '100px',
-                    classes: 'rounded-sm border-secondary input-small text-right'
-                    // styles: {'width': '30%'},
-                  },
-                  {
-                    type: 'text',
-                    valueType: 'textbox',
-                    name: 'WO/IO#',
-                    colSize: '100px',
-                    classes: 'rounded-sm border-secondary input-small text-right'
-                    // styles: {'width': '30%'},
-                  }
-                ],
-                values: [
-                  [
-                    {
-                      value: 'false',
-                    },
-                    {
-                      value: 'R4544322',
-                    },
-                    {
-                      value: '1',
-                    },
-                    {
-                      value: '43335779',
-                    },
-                    {
-                      value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
-                    ],
-                      selectedValue:'Issue For Cost Center',
-                    },
-                    {                     
-                      value: [
-                        'CC001',
-                        'CC0012'
-                    ],
-                      selectedValue:'CC001',
-                    },
-                    {
-                      value: '70',
-                    },
-                    {
-                      value: '55',
-                    }
-                  ],
-                  [
-                    {
-                      value: 'false',
-                    },
-                    {
-                      value: 'R4544322', 
-                    },
-                    {
-                      value: '2',
-                    },
-                    {
-                      value: '55430224',
-                    },
-                    {
-                      value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
-                    ],
-                      selectedValue:'Issue For Cost Center',
-                    },
-                    {
-                      value: [
-                        'CC001',
-                        'CC0011'
-                    ],
-                      selectedValue:'CC001',
-                    },
-                    {
-                      value: '70',
-                    },
-                    {
-                      value: '55',
-                    }
-                  ],
-                  [
-                    {
-                      value: 'false',
-                    },
-                    {
-                      value: 'R4544322',
-                    },
-                    {
-                      value: '3',
-                    },
-                    {
-                      value: '55436655',
-                    },
-                    {
-                      value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
-                    ],
-                      selectedValue:'Issue For Cost Center',
-                    },
-                    {
-                      classes: 'rounded-sm border-secondary input-large',
-                      value: [
-                        'CC001',
-                        'CC0011'
-                    ],
-                      selectedValue:'CC001',
-                    },
-                    {
-                      value: '70',
-                    },
-                    {
-                      value: '55',
-                    }
-                  ],
-                  [
-                    {
-                      value: 'false',
-                    },
-                    {
-                      value: 'R4544322', 
-                    },
-                    {
-                      value: '4',
-                    },
-                    {
-                      value: '55437754',
-                    },
-                    {
-                      value: [
-                        'Issue For Cost Center',
-                        'Issue For Cost Center1'
-                    ],
-                      selectedValue:'Issue For Cost Center',
-                    },
-                    {
-                      value: [
-                        'CC001',
-                        'CC0011'
-                    ],
-                      selectedValue:'CC001',
-                    },
-                    {
-                      value: '70',
-                    },
-                    {
-                      value: '55',
-                    }
-                  ]
-                ]
-              }
-
-            }
-          ]
-        }
-      }
     }
 ]
-  ngOnInit() {
+
+  opened:boolean=true;
+  public data: Object[];
+  public groupOptions: Object;
+  public pageSettings: Object;
+  public refresh: Boolean;
+  @ViewChild('grid')
+  public grid: GridComponent;
+  @ViewChild('alertDialog')
+  public alertDialog: DialogComponent;
+  public alertHeader: string = 'Grouping';
+  public hidden: Boolean = false;
+  public target: string = '.control-section';
+  public alertWidth: string = '300px';
+  public alertContent: string = 'Grouping is disabled for this column';
+  public showCloseIcon: Boolean = false;
+  public animationSettings: Object = { effect: 'None' };
+  public alertDlgBtnClick = () => {
+      this.alertDialog.hide();
   }
+  public alertDlgButtons: Object[] = [{ click: this.alertDlgBtnClick.bind(this), buttonModel: { content: 'OK', isPrimary: true } }];
+  ngOnInit(): void {
+      this.data = pickListData;
+      
+      this.groupOptions = { showGroupedColumn: false, columns: ['Reservation'] };
+      this.pageSettings = { pageCount: 5 };
+  }
+  dataBound() {
+      if(this.refresh){
+          this.grid.groupColumn('Reservation');
+          this.refresh =false;
+      }
+  }
+  load() {
+      this.refresh = (<any>this.grid).refreshing;
+  }
+  created() {
+      this.grid.on("columnDragStart", this.columnDragStart, this);
+  }
+  public columnDragStart(args: any) {
+      if(args.column.field === "Mainfieldsofinvention"){
+          this.alertDialog.show();
+     }
+  }
+
+  
+  // public data: Object[];
+  // public filterSettings: Object;
+  // ngOnInit() {
+    // this.filterSettings = { type: 'Menu' };
+    // this.data = [
+    //   { OrderID: 10248, CustomerID: 'VINET', Freight: 32.38, ShipCountry: 'France' },
+    //   { OrderID: 10249, CustomerID: 'TOMSP', Freight: 11.61, ShipCountry: ' Germany' },
+    //   { OrderID: 10250, CustomerID: 'HANAR', Freight: 65.83, ShipCountry: 'Brazil' },
+    //   { OrderID: 10251, CustomerID: 'VICTE', Freight: 41.34, ShipCountry: 'France' },
+    //   { OrderID: 10252, CustomerID: 'SUPRD', Freight: 51.3, ShipCountry: 'Belgium' },
+    //   { OrderID: 10253, CustomerID: 'HANAR', Freight: 58.17, ShipCountry: 'Brazil' },
+    //   { OrderID: 10254, CustomerID: 'CHOPS', Freight: 22.98, ShipCountry: 'Switzerland' },
+    //   { OrderID: 10255, CustomerID: 'RICSU', Freight: 148.33, ShipCountry: 'Switzerland' },
+    //   { OrderID: 10256, CustomerID: 'SUPRD', Freight: 13.97, ShipCountry: 'Brazil' },
+    //   { OrderID: 10257, CustomerID: 'WELLI', Freight: 14.23, ShipCountry: 'Venezuela' },
+    //   { OrderID: 10258, CustomerID: 'VICTE', Freight: 18.33, ShipCountry: 'France' },
+    //   { OrderID: 10259, CustomerID: 'WELLI', Freight: 28.13, ShipCountry: 'Brazil' },
+    //   { OrderID: 10260, CustomerID: 'CHOPS', Freight: 48.34, ShipCountry: 'Switzerland'  },
+    //   { OrderID: 10261, CustomerID: 'SUPRD', Freight: 32.73, ShipCountry: ' Germany' },
+    //   { OrderID: 10262, CustomerID: 'TOMSP', Freight: 12.31, ShipCountry: 'Switzerland' },
+    //   { OrderID: 10263, CustomerID: 'VICTE', Freight: 23.77, ShipCountry: 'Brazil' },
+    //   { OrderID: 10264, CustomerID: 'SUPRD', Freight: 43.47, ShipCountry: 'Venezuela' },
+    //   { OrderID: 10265, CustomerID: 'CHOPS', Freight: 53.37, ShipCountry: 'Belgium' },
+    // ];
+  // }
+
+
+
+
 
 }
