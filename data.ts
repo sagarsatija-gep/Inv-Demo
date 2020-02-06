@@ -236,3 +236,21 @@ export const pickListData: Object[] = [
     },
     
 ];
+
+export const cycleCountData: Object[] = [
+    {
+        "ItemNumber":"55436655",
+        "Description":"",
+        "Category":"",
+        "Type":"",
+        "AisleNumber":"D",
+        "RackNumber":"1",
+        "BinNumber":"7",
+        "WBSElement":"",
+        "UOM":"",
+        "OnHandQty":"0",
+        "CostCenter":""
+    },
+    
+    
+];
