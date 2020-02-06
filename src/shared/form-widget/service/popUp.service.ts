@@ -355,12 +355,12 @@ export class PopUpService {
             [
                 {
                     type: 'checkbox',
-                    value: 'false'
+                    value: 'false' 
                 },
                 {
                     type: 'text',
                     value: 'Contaier-54432',
-                    tdClasses: 'text-left'
+                    tdClasses: 'text-left' 
                 },
                 {
                     type: 'text',
@@ -372,7 +372,7 @@ export class PopUpService {
                     value: 'Tube, Bourdon'
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '20',
                     tdClasses: 'text-left'
                 },
@@ -446,7 +446,7 @@ export class PopUpService {
                     value: 'Lead Piping'
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '25',
                     tdClasses: 'text-left'
                 },
@@ -519,7 +519,7 @@ export class PopUpService {
                     value: 'Milwaukee Tool'
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '30',
                     tdClasses: 'text-left'
                 },
@@ -592,7 +592,7 @@ export class PopUpService {
                     value: 'Morse Cutting Tool'
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '20',
                     tdClasses: 'text-left'
                 },
@@ -666,7 +666,7 @@ export class PopUpService {
                     value: 'Dewalt – Saw Blade'
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '20',
                     tdClasses: 'text-left'
                 },
@@ -737,10 +737,10 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Dewalt – Saw Blade'
+                    value: 'FILTER ELEMENT,OIL'
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '20',
                     tdClasses: 'text-left'
                 },
@@ -810,10 +810,10 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Dewalt – Saw Blade'
+                    value: 'VALVE, GLOBE 3/4 BLACK HANDLE'
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '20',
                     tdClasses: 'text-left'
                 },
@@ -884,10 +884,10 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Lead Piping',
+                    value: 'CHAIN,SAFETY,WROUGHT BRASS,NO. 0 .023 GA ',
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '25',
                     tdClasses: 'text-left'
                 },
@@ -958,10 +958,10 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Lead Piping',
+                    value: 'CHAIN,SAFETY,WROUGHT WEDGE',
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '25',
                     tdClasses: 'text-left'
                 },
@@ -1032,10 +1032,10 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Lead Piping',
+                    value: 'DOUGLAS FIR,1 CMMN,1',
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '25',
                     tdClasses: 'text-left'
                 },
@@ -1106,10 +1106,10 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Lead Piping',
+                    value: 'WIRE ROPE 1/2" (6X19) 304 SS',
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '25',
                     tdClasses: 'text-left'
                 },
@@ -1180,10 +1180,10 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Lead Piping',
+                    value: 'CLAY,SOLID,BAG,30/60',
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '25',
                     tdClasses: 'text-left'
                 },
@@ -1254,10 +1254,10 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Lead Piping',
+                    value: 'WIRE,ANNEALED,304 SS,.063IN',
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '25',
                     tdClasses: 'text-left'
                 },
