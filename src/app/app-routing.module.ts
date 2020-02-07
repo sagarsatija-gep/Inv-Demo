@@ -19,6 +19,7 @@ import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.compon
 import { CreatePackageComponent } from './create-package/create-package.component';
 import { ManageCycleCountRequestsComponent } from './manage-cycle-count-requests/manage-cycle-count-requests.component';
 import { ManageCycleCountDetailsComponent } from './manage-cycle-count-details/manage-cycle-count-detailscomponent';
+import { ManageCycleCountDetails2Component } from './manage-cycle-count-details2/manage-cycle-count-details2.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -46,7 +47,8 @@ const routes: Routes = [
   { path: 'externalStockTransfer', component: ExternalStockTransfer },
   { path: 'manageCycleCountRequests', component: ManageCycleCountRequestsComponent },
   { path: 'externalStockTransfer', component: ExternalStockTransfer},
-  { path: 'ManageCycleCountDetails', component: ManageCycleCountDetailsComponent }
+  { path: 'ManageCycleCountDetails', component: ManageCycleCountDetailsComponent },
+  {path: 'manageCycleCountDetails2',component: ManageCycleCountDetails2Component}
 ];
 
 @NgModule({

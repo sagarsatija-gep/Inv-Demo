@@ -241,7 +241,7 @@ export const cycleCountData: Object[] = [
     {
         "ItemNumber":"55436655",
         "Description":"Tuthill Pump FR700V",
-        "StorageBin":"D-1-7",
+        "StorageBin":"Aisle D - Rack 01 - BIN 7",
         "WBSElement":"",
         "UOM":"EACH",
         "OnHandQty":" ",

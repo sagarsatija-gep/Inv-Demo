@@ -7,6 +7,7 @@ interface CycleCountRequest {
   scheduledDate: string;
   type: string;
   status: string;
+  url?: string;
 }
 
 const CYCLECOUNTREQUESTS: CycleCountRequest[] = [
@@ -15,14 +16,17 @@ const CYCLECOUNTREQUESTS: CycleCountRequest[] = [
     cycleCountNumber: "CC-002978",
     scheduledDate: "11/02/2020",
     type: "Unplanned",
-    status: "SCHEDULED"
+    status: "SCHEDULED",
+    url:'ManageCycleCountDetails'
   },
   {
     itemDetails: "System Generated - Class A Items Count",
     cycleCountNumber: "CC-002730",
     scheduledDate: "12/02/2020",
     type: "Planned",
-    status: "SCHEDULED"
+    status: "SCHEDULED",
+    url:'manageCycleCountDetails2'
+
   },
   {
     itemDetails: "System Generated - Class C Items Count",

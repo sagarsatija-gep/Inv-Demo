@@ -60,6 +60,7 @@ import { NgbdModalContent3 } from '../shared/form-widget/component/widget-table/
 import { ManageCycleCountRequestsComponent } from './manage-cycle-count-requests/manage-cycle-count-requests.component';
 import { CycleCountListViewComponent } from './cycle-count-list-view/cycle-count-list-view.component';
 import { ManageCycleCountDetailsComponent } from './manage-cycle-count-details/manage-cycle-count-detailscomponent';
+import { ManageCycleCountDetails2Component } from './manage-cycle-count-details2/manage-cycle-count-details2.component';
 
 @NgModule({
   declarations: [
@@ -106,7 +107,8 @@ import { ManageCycleCountDetailsComponent } from './manage-cycle-count-details/m
     NgbdModalContent3,
     ManageCycleCountRequestsComponent,
     CycleCountListViewComponent,
-    ManageCycleCountDetailsComponent
+    ManageCycleCountDetailsComponent,
+    ManageCycleCountDetails2Component
   ],
   imports: [
     CommonModule,
