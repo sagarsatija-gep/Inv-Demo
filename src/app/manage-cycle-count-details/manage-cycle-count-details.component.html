@@ -58,3 +58,29 @@
     </div>
   </div>
 </div>
+<footer class="poFooter bg-white">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <button class="btn btn-white text-uppercase rounded-0">
+          <!-- Print Preview -->
+        </button>
+      </div>
+      <div class="col-sm-5 text-right">
+        <button class="btn btn-white text-uppercase rounded-0">
+          Cancel
+        </button>
+        <!-- <button (click)="print()"  class="btn btn-primary text-white text-uppercase shadow rounded-0">
+          Print Barcode
+        </button>
+        <button (click)="printRfid()"  class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;">
+          Print RFID Tags
+        </button> -->
+        <button [routerLink]="['/manageCycleCountRequests']"   class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;"
+          >
+          Finalize
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>

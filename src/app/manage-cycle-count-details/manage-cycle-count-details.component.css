@@ -81,4 +81,15 @@ button:focus{
 .e-check{
     background: blue !important;
 }
+
+.poFooter{
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  padding: 15px 10px;
+}
+.poFooter button{
+  color: #0177d6;
+  font-weight: 500;
+}
   
