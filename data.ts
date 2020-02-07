@@ -244,7 +244,7 @@ export const cycleCountData: Object[] = [
         "StorageBin":"D-1-7",
         "WBSElement":"",
         "UOM":"EACH",
-        "OnHandQty":"0",
+        "OnHandQty":" ",
         "CostCenter":""
     },
     
