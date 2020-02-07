@@ -1,5 +1,5 @@
 import { Component, OnInit ,ViewChild, ViewEncapsulation} from '@angular/core';
-import { pickListData } from '../../../data';
+import { cycleCountData } from '../../../data';
 import { DatePipe } from '@angular/common';
 import { GroupService, SortService, GridComponent } from '@syncfusion/ej2-angular-grids';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
@@ -7,19 +7,20 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 @Component({
   selector: 'app-manage-cycle-count-details',
   templateUrl: './manage-cycle-count-details.component.html',
-  styleUrls: ['./manage-cycle-count-details.component.css']
+  styleUrls: ['./manage-cycle-count-details.component.css'],
+  encapsulation:ViewEncapsulation.None
 })
 export class ManageCycleCountDetailsComponent implements OnInit {
 
   constructor() { }
-
+  public editSettings: Object;
   pipe = new DatePipe('en-US');
   widgetData = [
     {
       'HeaderData': {
         name: 'Basic Details',
         isOpen: true,
-        collapsible: true,
+        collapsible: false,
         data: {
           componentName: 'details',
           isSubDetails: false,
@@ -90,8 +91,8 @@ export class ManageCycleCountDetailsComponent implements OnInit {
   }
   public alertDlgButtons: Object[] = [{ click: this.alertDlgBtnClick.bind(this), buttonModel: { content: 'OK', isPrimary: true } }];
   ngOnInit(): void {
-      this.data = pickListData;
-      
+      this.data = cycleCountData;
+      this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' };
       this.groupOptions = { showGroupedColumn: false, columns: ['Reservation'] };
       this.pageSettings = { pageCount: 5 };
   }

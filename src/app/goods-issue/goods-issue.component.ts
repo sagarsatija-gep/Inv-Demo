@@ -232,20 +232,20 @@ export class GoodsIssueComponent implements OnInit {
             {
               tabName: 'Line',
               tabcomponent: 'modifyWidgetTable',
-              tabData:  {
+              tabData: {
                 colConfig: [
                   {
                     type: 'checkbox',
                     valueType: 'checkbox',
                     name: 'Reservation #',
-                    colStyles: {'width': '2%'},
+                    colStyles: { 'width': '2%' },
                   },
                   {
                     type: 'text',
                     valueType: 'text',
                     name: 'Reservation #',
                     colSize: '100px',
-                    classes: 'text-primary'
+                    classes: 'text-primary'
                     // styles: {'width': '8%'},
                   },
                   {
@@ -263,7 +263,7 @@ export class GoodsIssueComponent implements OnInit {
                     colSize: '100px',
                     // styles: {'background-color': 'rebeccapurple'},
                     classes: '',
-                    colStyles: {'width': '8%'},
+                    colStyles: { 'width': '8%' },
                   },
                   {
                     type: 'text',
@@ -291,7 +291,7 @@ export class GoodsIssueComponent implements OnInit {
                     valueType: 'textbox',
                     name: 'Issue Qty',
                     colSize: '100px',
-                    colStyles: {'width': '8%'},
+                    colStyles: { 'width': '8%' },
                     classes: 'input-small rounded-sm border-secondary text-right'
                   },
                   {
@@ -299,14 +299,14 @@ export class GoodsIssueComponent implements OnInit {
                     valueType: 'text',
                     name: 'UOM',
                     colSize: '100px',
-                    colStyles: {'width': '8%'},
+                    colStyles: { 'width': '8%' },
                   },
                   {
                     type: 'text',
                     valueType: 'toggle',
                     name: 'Is Final',
                     colSize: '100px',
-                    colStyles: {'width': '8%'},
+                    colStyles: { 'width': '8%' },
                   },
                   {
                     type: 'text',
@@ -322,7 +322,7 @@ export class GoodsIssueComponent implements OnInit {
                       value: 'false',
                     },
                     {
-                      value: 'R4544322' ,
+                      value: 'R4544322',
                     },
                     {
                       value: '1',
@@ -392,7 +392,7 @@ export class GoodsIssueComponent implements OnInit {
                       value: false,
                     },
                     {
-                      value: 'R4544322', 
+                      value: 'R4544322',
                     },
                     {
                       value: '3',
@@ -464,20 +464,20 @@ export class GoodsIssueComponent implements OnInit {
             {
               tabName: 'Where',
               tabcomponent: 'modifyWidgetTable',
-              tabData:  {
+              tabData: {
                 colConfig: [
                   {
                     type: 'checkbox',
                     valueType: 'checkbox',
                     name: 'Reservation #',
-                    colStyles: {'width': '2%'},
+                    colStyles: { 'width': '2%' },
                   },
                   {
                     type: 'text',
                     valueType: 'text',
                     name: 'Reservation #',
                     colSize: '100px',
-                    classes: 'text-primary' ,
+                    classes: 'text-primary',
                     // styles: {'width': '30%'},
                   },
                   {
@@ -521,7 +521,7 @@ export class GoodsIssueComponent implements OnInit {
                     name: 'Line Comments',
                     colSize: '100px',
                     // styles: {'width': '30%'},
-                    colClasses:  'text-left',
+                    colClasses: 'text-left',
                     classes: 'input-large rounded-sm border-secondary'
 
                   }
@@ -532,7 +532,7 @@ export class GoodsIssueComponent implements OnInit {
                       value: 'false',
                     },
                     {
-                      value: 'R4544322', 
+                      value: 'R4544322',
                     },
                     {
                       value: '1',
@@ -626,20 +626,20 @@ export class GoodsIssueComponent implements OnInit {
             {
               tabName: 'Accounting',
               tabcomponent: 'modifyWidgetTable',
-              tabData:  {
+              tabData: {
                 colConfig: [
                   {
                     type: 'checkbox',
                     valueType: 'checkbox',
                     name: 'Reservation #',
-                    colStyles: {'width': '2%'},
+                    colStyles: { 'width': '2%' },
                   },
                   {
                     type: 'text',
                     valueType: 'text',
                     name: 'Reservation #',
                     colSize: '100px',
-                    classes: 'text-primary' ,
+                    classes: 'text-primary',
                     // styles: {'width': '30%'},
                   },
                   {
@@ -712,7 +712,7 @@ export class GoodsIssueComponent implements OnInit {
                       ],
                       selectedValue: 'Issue For Cost Center',
                     },
-                    {                     
+                    {
                       value: [
                         'CC001',
                         'CC0012'
@@ -731,7 +731,7 @@ export class GoodsIssueComponent implements OnInit {
                       value: 'false',
                     },
                     {
-                      value: 'R4544322', 
+                      value: 'R4544322',
                     },
                     {
                       value: '2',
@@ -800,7 +800,7 @@ export class GoodsIssueComponent implements OnInit {
                       value: 'false',
                     },
                     {
-                      value: 'R4544322', 
+                      value: 'R4544322',
                     },
                     {
                       value: '4',
