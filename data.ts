@@ -250,3 +250,43 @@ export const cycleCountData: Object[] = [
     
     
 ];
+export const cycleCount2Data: Object[] = [
+    {
+        "ItemNumber":"55437754",
+        "Description":"Cogged V-Belt",
+        "StorageBin":"D - 2 - A",
+        "WBSElement":"",
+        "UOM":"EACH",
+        "OnHandQty":" ",
+        "CostCenter":""
+    },
+    {
+        "ItemNumber":"55430224",
+        "Description":"Ratchet Repair Kit",
+        "StorageBin":"H - 11 - C",
+        "WBSElement":"",
+        "UOM":"EACH",
+        "OnHandQty":" ",
+        "CostCenter":""
+    },
+    {
+        "ItemNumber":"55433224",
+        "Description":"Sanders and Polishers",
+        "StorageBin":"K - 15 - A",
+        "WBSElement":"",
+        "UOM":"EACH",
+        "OnHandQty":" ",
+        "CostCenter":""
+    },
+    {
+        "ItemNumber":"55665224",
+        "Description":"Motor and Throttle Kit",
+        "StorageBin":"M - 20 - D",
+        "WBSElement":"",
+        "UOM":"EACH",
+        "OnHandQty":" ",
+        "CostCenter":""
+    },
+    
+    
+];
