@@ -562,108 +562,109 @@ export class AsnGrComponent implements OnInit {
                   }
                 }
                 ],
-                [{
-                  type: 'text',
-                  value: '4',
-                },
-                {
-                  type: 'text',
-                  value: '2044808',
-                },
-                {
-                  type: 'text',
-                  value: 'Dewalt DW4701- Saw Blade',
-                  tdClasses: 'text-left'
-                },
-                {
-                  type: 'text',
-                  value: 'Piece',
-                },
-                {
-                  type: 'textbox',
-                  value: '80',
-                  classes: 'rounded-sm border-secondary input-small text-right'
-                },
-                {
-                  type: 'textbox',
-                  value: '80',
-                  classes: 'rounded-sm border-secondary input-small text-right'
-                },
-                {
-                  type: 'text',
-                  value: 'PMF - 6002',
-                },
-                {
-                  type: 'dropdown',
-                  classes: 'rounded-sm border-secondary input-large',
-                  value: [
-                    'C02 - 08- 2- 2',
-                    'C03 - 06- 2- 2',
-                    'S02 - 03- 2- 4',
-                    'C02 - 08- 2- 4'
-                  ],
-                  selectedValue: 'S02 - 03- 2- 4',
-                },
-                {
-                  type: 'dropdown',
-                  classes: 'rounded-sm border-secondary input-large',
-                  value: [
-                    'YES',
-                    'NO',
-                  ],
-                  selectedValue: 'NO',
-                },
-                {
-                  type: 'dropdown',
-                  classes: 'rounded-sm border-secondary input-large',
-                  value: [
-                    'YES',
-                    'NO',
-                  ],
-                  selectedValue: 'NO',
-                },
-                {
-                  type: 'dropdown',
-                  classes: 'rounded-sm border-secondary input-large',
-                  value: [
-                    'YES',
-                    'NO',
-                  ],
-                  selectedValue: 'NO',
-                },
-                {
-                  type: 'textbox',
-                  value: '',
-                },
-                {
-                  type: 'dropdown',
-                  classes: 'rounded-sm border-secondary input-large',
-                  value: [
-                    'Pass',
-                    'Fail'
-                  ],
-                  selectedValue: 'Pass',
-                },
-                {
-                  type: 'textbox',
-                  value: '',
-                },
-                {
-                  type: 'textbox',
-                  value: '',
-                },
-                {
-                  type: 'button',
-                  value: 'UPLOAD',
-                  styles: {
-                    'width': '85px',
-                    'height': '30px',
-                    'padding': '0px',
-                    'margin': '-3px'
-                  }
-                }
-                ]
-              ]
+              //   [
+              //     {
+              //     type: 'text',
+              //     value: '4',
+              //   },
+              //   {
+              //     type: 'text',
+              //     value: '2044808',
+              //   },
+              //   {
+              //     type: 'text',
+              //     value: 'Dewalt DW4701- Saw Blade',
+              //     tdClasses: 'text-left'
+              //   },
+              //   {
+              //     type: 'text',
+              //     value: 'Piece',
+              //   },
+              //   {
+              //     type: 'textbox',
+              //     value: '80',
+              //     classes: 'rounded-sm border-secondary input-small text-right'
+              //   },
+              //   {
+              //     type: 'textbox',
+              //     value: '80',
+              //     classes: 'rounded-sm border-secondary input-small text-right'
+              //   },
+              //   {
+              //     type: 'text',
+              //     value: 'PMF - 6002',
+              //   },
+              //   {
+              //     type: 'dropdown',
+              //     classes: 'rounded-sm border-secondary input-large',
+              //     value: [
+              //       'C02 - 08- 2- 2',
+              //       'C03 - 06- 2- 2',
+              //       'S02 - 03- 2- 4',
+              //       'C02 - 08- 2- 4'
+              //     ],
+              //     selectedValue: 'S02 - 03- 2- 4',
+              //   },
+              //   {
+              //     type: 'dropdown',
+              //     classes: 'rounded-sm border-secondary input-large',
+              //     value: [
+              //       'YES',
+              //       'NO',
+              //     ],
+              //     selectedValue: 'NO',
+              //   },
+              //   {
+              //     type: 'dropdown',
+              //     classes: 'rounded-sm border-secondary input-large',
+              //     value: [
+              //       'YES',
+              //       'NO',
+              //     ],
+              //     selectedValue: 'NO',
+              //   },
+              //   {
+              //     type: 'dropdown',
+              //     classes: 'rounded-sm border-secondary input-large',
+              //     value: [
+              //       'YES',
+              //       'NO',
+              //     ],
+              //     selectedValue: 'NO',
+              //   },
+              //   {
+              //     type: 'textbox',
+              //     value: '',
+              //   },
+              //   {
+              //     type: 'dropdown',
+              //     classes: 'rounded-sm border-secondary input-large',
+              //     value: [
+              //       'Pass',
+              //       'Fail'
+              //     ],
+              //     selectedValue: 'Pass',
+              //   },
+              //   {
+              //     type: 'textbox',
+              //     value: '',
+              //   },
+              //   {
+              //     type: 'textbox',
+              //     value: '',
+              //   },
+              //   {
+              //     type: 'button',
+              //     value: 'UPLOAD',
+              //     styles: {
+              //       'width': '85px',
+              //       'height': '30px',
+              //       'padding': '0px',
+              //       'margin': '-3px'
+              //     }
+              //   }
+              //   ]
+               ]
             }
           },
           {

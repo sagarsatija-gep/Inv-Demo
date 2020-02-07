@@ -15,6 +15,17 @@ export class RfidPopUpComponent implements OnInit{
 
     dataForRfid=[];
 
+    rfIdName = [
+        "container 1",
+        "E-MONT_KS-PANZERROHR_DN20", 
+        "KIT,ANALYSIS,HEATER TUBE & FILTER,MFR UN ",
+        "MILLIPORE AAWP04700", 
+        "Container 2",
+        "BRACKET ASSEMBLY", 
+        "Electric Tool 48-20-5030", 
+        "Morse Cutting Tools 82062"
+    ];
+
     constructor(public activeModal: NgbActiveModal, private route: Router, private popUpService: PopUpService){}
     ngOnInit() {
         debugger;
@@ -23,35 +34,21 @@ export class RfidPopUpComponent implements OnInit{
             this.dataRfid.push(data.id);
         })
         const RFC_COLUMN = this.popUpService.externalTableData.colConfig.length;
-        this.popUpService.externalTableData.values.map(data=>{
-            const keyValue = data[RFC_COLUMN - 2].value;
-            console.log(keyValue);
-            if( this.dataRfid.includes(keyValue) ) {
-                this.dataForRfid.push({
-                    'id': keyValue,
-                    // 'number': data[2].value,
-                    'des': data[3].value
-                } )
-            }
-
-        })
-
-        // this.name = [
-        //     {
-        //         id: ['rhaiukdsklfj']
-        //     },
-        //     {
-        //         id: ['rhaiukdsklfj']
-        //     },
-        //     {
-        //         id: ['rhaiukdsklfj']
+        // this.popUpService.externalTableData.values.map(data=>{
+        //     const keyValue = data[RFC_COLUMN - 2].value;
+        //     console.log(keyValue);
+        //     if( this.dataRfid.includes(keyValue) ) {
+        //         this.dataForRfid.push({
+        //             'id': keyValue,
+        //             'des': data[3].value
+        //         } )
         //     }
-        // ]
+
+        // })
+
     }
 
     successOk() {
-        // this.activeModal.dismiss('Cross click');
             this.activeModal.close();
-        // this.route.navigate(['/home']);
     }
 }

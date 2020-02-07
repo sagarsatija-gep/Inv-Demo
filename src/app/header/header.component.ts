@@ -54,7 +54,7 @@ export class HeaderComponent implements OnInit {
     
     console.log(this.barcodeValue);
     setTimeout(() => {
-      if(this.barcodeValue == 'asn' || this.barcodeValue.match(this.asnNumber)) {
+      if(this.barcodeValue == 'asn' || this.barcodeValue.match(this.asnNumber) || this.barcodeValue.length >10) {
         this.route.navigate(['/purchaseDetails']);
       } else 
       if(this.barcodeValue == 'po' || this.barcodeValue.match(this.poNumber) ) {

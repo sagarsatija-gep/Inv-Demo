@@ -98,7 +98,7 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                 {
                   type: 'textBox',
                   name: 'Package Name',
-                  value: 'Container 1',
+                  value: 'Package 1',
                   editable: true,
                 }
               ]
