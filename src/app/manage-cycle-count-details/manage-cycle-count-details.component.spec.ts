@@ -1,6 +1,6 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { ManageCycleCountDetailsComponent } from './manage-cycle-count-details.component';
+import { ManageCycleCountDetailsComponent } from './manage-cycle-count-detailscomponent';
 
 describe('ManageCycleCountDetailsComponent', () => {
   let component: ManageCycleCountDetailsComponent;
