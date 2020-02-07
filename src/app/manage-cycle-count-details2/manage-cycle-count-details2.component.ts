@@ -1,8 +1,13 @@
-import { Component, OnInit ,ViewChild, ViewEncapsulation} from '@angular/core';
-import { cycleCountData } from '../../../data';
+import { Component, OnInit ,ViewChild, ViewEncapsulation, OnDestroy} from '@angular/core';
+import { cycleCount2Data } from '../../../data';
 import { DatePipe } from '@angular/common';
 import { GroupService, SortService, GridComponent } from '@syncfusion/ej2-angular-grids';
 import { DialogComponent } from '@syncfusion/ej2-angular-popups';
+import { PopUpService } from '../../shared/form-widget/service/popUp.service';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { barcodePopup } from '../../shared/popUpComponent/barcodePopup/barcodePopup.component';
+import { Subscription } from 'rxjs';
+
 
 @Component({
   selector: 'app-manage-cycle-count-details2',
@@ -10,9 +15,9 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
   styleUrls: ['./manage-cycle-count-details2.component.css'],
   encapsulation:ViewEncapsulation.None
 })
-export class ManageCycleCountDetails2Component implements OnInit {
+export class ManageCycleCountDetails2Component implements OnInit,OnDestroy {
 
-  constructor() { }
+  constructor( private popUpService:PopUpService, public modalService: NgbModal) { }
   public editSettings: Object;
   pipe = new DatePipe('en-US');
   widgetData = [
@@ -91,6 +96,8 @@ export class ManageCycleCountDetails2Component implements OnInit {
   public alertContent: string = 'Grouping is disabled for this column';
   public showCloseIcon: Boolean = false;
   public animationSettings: Object = { effect: 'None' };
+
+  barCodeSubscriber: Subscription;
   public alertDlgBtnClick = () => {
       this.alertDialog.hide();
   }
@@ -100,6 +107,13 @@ export class ManageCycleCountDetails2Component implements OnInit {
       this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' };
       this.groupOptions = { showGroupedColumn: false, columns: ['Reservation'] };
       this.pageSettings = { pageCount: 5 };
+      this.barCodeSubscriber = this.popUpService.barCodePopUpDataForAsset.subscribe(()=>{
+        this.data = cycleCount2Data;
+      })
+
+  }
+  ngOnDestroy(){
+    this.barCodeSubscriber.unsubscribe()
   }
   dataBound() {
       if(this.refresh){
@@ -117,6 +131,12 @@ export class ManageCycleCountDetails2Component implements OnInit {
       if(args.column.field === "Mainfieldsofinvention"){
           this.alertDialog.show();
      }
+  }
+
+  barCodePopUp(){
+    const modalRef = this.modalService.open(barcodePopup, { size: 'lg' });
+        modalRef.componentInstance.name = 'World';
+       
   }
 
 
