@@ -13,7 +13,7 @@ overflow: hidden;">
         <span class="float-right" style="font-weight: 500;"  [ngClass]="headerData.classes" *ngIf="!headerData.collapsible && headerData.status != ''">
             {{headerData.status}}
         </span>
-        <span style="float: right;    margin: 0 16px;" (click)="barcodePopUp()" *ngIf="headerData.name=='Line Details' && showBarCode ">
+        <span style="float: right;    margin: 0 16px;" (click)="barcodePopUp($event)" *ngIf="headerData.name=='Line Details' && showBarCode || headerData.name=='Line Details' && headerData.barcode ">
       
             <a class="barcodeIcon"  >
                 <svg id="barcode" xmlns="http://www.w3.org/2000/svg" width="18.513" height="14.81" viewBox="0 0 18.513 14.81">

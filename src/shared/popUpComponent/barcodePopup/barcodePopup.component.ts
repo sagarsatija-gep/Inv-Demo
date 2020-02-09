@@ -14,11 +14,13 @@ export class barcodePopup implements OnInit {
     constructor(public activeModal: NgbActiveModal, private route: Router, private porUpService: PopUpService){}
     ngOnInit() {}
 
-    successOk() {
+    successOk(e) {
+        console.log(this.name)
         this.activeModal.dismiss('Cross click');
         // this.route.navigate(['/home']);
 
         this.porUpService.barCodePopUpDataForAssetDataChange(name);
+        this.porUpService.barCodePopUpDataForLinesDataChange(name);
     }
 
 }

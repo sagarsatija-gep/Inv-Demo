@@ -36,6 +36,11 @@
                   <input type="text" placeholder="On-Hand Qty" value="{{data.OnHandQty}}">
                 </ng-template>
               </e-column>
+              <e-column headerText='    ' width='20'>
+                <ng-template #template let-data>
+                  <i style="cursor: pointer;" class="fa fa-trash" aria-hidden="true"></i>
+                </ng-template>
+              </e-column>
            
             
             <!-- <e-column field='SBin' headerText='S. Bin' width='80'></e-column> -->

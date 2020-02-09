@@ -1388,4 +1388,9 @@ export class PopUpService {
         this.barCodePopUpDataForAsset.next(this.selectedInputForAsset);
     }
 
+    barCodePopUpDataForLinesDataChange(value) {
+        this.barCodePopUpDataForAsset.next(this.selectedInputForAsset);
+    }
+
+
 }
