@@ -31,7 +31,7 @@
             (created)='created()' (load)='load()'>
             <e-columns>
               <e-column type='checkbox' [allowFiltering]='false' [allowSorting]='false' width='40'></e-column>
-              <e-column headerText='Item Numbar' textAlign='center' width='100'>
+              <e-column headerText='Item Number' textAlign='center' width='100'>
                 <ng-template #template let-data>
                   <div class="image">
                     <ngx-barcode [bc-format]="CODE128" [bc-height]="30" [bc-width]="2" [bc-value]="data.ItemNumber"

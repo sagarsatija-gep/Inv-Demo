@@ -38,7 +38,7 @@ export class ManageCycleCountDetails2Component implements OnInit,OnDestroy {
             {
               type:'text',
               name: 'Type',
-              values: 'Planned',
+              values: 'Unplanned',
             },{
               type:'text',
               name: 'Company Code',
@@ -52,7 +52,7 @@ export class ManageCycleCountDetails2Component implements OnInit,OnDestroy {
             {
               type:'text',
               name: 'Name',
-              values: 'System Generated – Class A Items Count',
+              values: 'System Generated – Count for Bin - D-02-A',
             },
             {
               type: 'text',

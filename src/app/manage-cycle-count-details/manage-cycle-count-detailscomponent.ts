@@ -34,7 +34,7 @@ export class ManageCycleCountDetailsComponent implements OnInit {
             {
               type:'text',
               name: 'Type',
-              values: 'Unplanned',
+              values: 'Planned',
             },{
               type:'text',
               name: 'Company Code',

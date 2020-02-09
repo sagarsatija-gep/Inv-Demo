@@ -15,7 +15,7 @@
            [pageSettings]='pageSettings' height="320" (dataBound)='dataBound()'
           (created)='created()' (load)='load()'>
           <e-columns>
-            <!-- <e-column type='checkbox' [allowFiltering]='false' [allowSorting]='false' width='40'></e-column> -->
+            <e-column type='checkbox' [allowFiltering]='false' [allowSorting]='false' width='40'></e-column>
             <e-column headerText='Item Number' field='ItemNumber' textAlign='center' width='100'>
               <!-- <ng-template #template let-data>
                 <div class="image">
@@ -31,24 +31,12 @@
             <e-column field='BinNumber' headerText='Bin Number' width='100'></e-column> -->
             <e-column field='StorageBin' headerText='Storage Bin' width='100'></e-column>
             <e-column field='UOM' headerText='UOM' width='80'></e-column>
-              <e-column field='OnHandQty' headerText='On-Hand Qty' width='100'>
+              <e-column field='OnHandQty' headerText='Physical Quantity' width='100'>
                 <ng-template #template let-data>
                   <input type="text" placeholder="On-Hand Qty" value="{{data.OnHandQty}}">
                 </ng-template>
               </e-column>
-            <e-column headerText='Cost Center' width='100'>
-              <ng-template #template let-data >
-                <div>
-                  <input type="text"  value="{{data.CostCenter}}">
-                </div>
-              </ng-template>
-            </e-column>
-            
-            <e-column  headerText='WBS Element' width='100'>
-              <ng-template #template let-data>
-                <input type="text" value="{{data.WBSElement}}">
-              </ng-template>
-            </e-column>
+           
             
             <!-- <e-column field='SBin' headerText='S. Bin' width='80'></e-column> -->
           </e-columns>
@@ -78,7 +66,7 @@
         </button> -->
         <button [routerLink]="['/manageCycleCountRequests']"   class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;"
           >
-          Finalize
+          Counted
         </button>
       </div>
     </div>
