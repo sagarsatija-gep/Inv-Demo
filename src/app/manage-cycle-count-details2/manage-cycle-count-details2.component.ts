@@ -96,7 +96,7 @@ export class ManageCycleCountDetails2Component implements OnInit,OnDestroy {
   public alertContent: string = 'Grouping is disabled for this column';
   public showCloseIcon: Boolean = false;
   public animationSettings: Object = { effect: 'None' };
-
+  selectionSettings : object
   barCodeSubscriber: Subscription;
   public alertDlgBtnClick = () => {
       this.alertDialog.hide();
@@ -110,7 +110,7 @@ export class ManageCycleCountDetails2Component implements OnInit,OnDestroy {
       this.barCodeSubscriber = this.popUpService.barCodePopUpDataForAsset.subscribe(()=>{
         this.data = cycleCount2Data;
       })
-
+      this.selectionSettings = {persistSelection: true, type: "Multiple", checkboxOnly: true };
   }
   ngOnDestroy(){
     this.barCodeSubscriber.unsubscribe()

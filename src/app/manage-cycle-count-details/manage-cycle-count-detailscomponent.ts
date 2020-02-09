@@ -87,6 +87,7 @@ export class ManageCycleCountDetailsComponent implements OnInit {
   public alertContent: string = 'Grouping is disabled for this column';
   public showCloseIcon: Boolean = false;
   public animationSettings: Object = { effect: 'None' };
+  public selectionSettings:object
   public alertDlgBtnClick = () => {
       this.alertDialog.hide();
   }
@@ -96,6 +97,7 @@ export class ManageCycleCountDetailsComponent implements OnInit {
       this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' };
       this.groupOptions = { showGroupedColumn: false, columns: ['Reservation'] };
       this.pageSettings = { pageCount: 5 };
+      this.selectionSettings = {persistSelection: true, type: "Multiple", checkboxOnly: true };
   }
   dataBound() {
       if(this.refresh){
