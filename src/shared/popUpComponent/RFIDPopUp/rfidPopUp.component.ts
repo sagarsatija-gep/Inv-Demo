@@ -16,7 +16,7 @@ export class RfidPopUpComponent implements OnInit{
     dataForRfid=[];
 
     rfIdName = [
-        "container 1",
+        "Container 1",
         "E-MONT_KS-PANZERROHR_DN20", 
         "KIT,ANALYSIS,HEATER TUBE & FILTER,MFR UN ",
         "MILLIPORE AAWP04700", 
