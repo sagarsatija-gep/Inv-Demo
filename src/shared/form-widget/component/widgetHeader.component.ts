@@ -79,7 +79,7 @@ export class WidgetHeaderComponent implements OnInit {
     }
     barcodePopUp(e) {
         const modalRef = this.modalService.open(barcodePopup, { size: 'lg' });
-        modalRef.componentInstance.name = 'World';
+        modalRef.componentInstance.name = 'Scan Materials';
         
       }
 

@@ -135,7 +135,7 @@ export class ManageCycleCountDetails2Component implements OnInit,OnDestroy {
 
   barCodePopUp(){
     const modalRef = this.modalService.open(barcodePopup, { size: 'lg' });
-        modalRef.componentInstance.name = 'World';
+        modalRef.componentInstance.name = 'Scan Storage BIN';
        
   }
 
