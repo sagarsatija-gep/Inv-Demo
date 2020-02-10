@@ -12,7 +12,10 @@ export class barcodePopup implements OnInit {
 @Input() name;
 
     constructor(public activeModal: NgbActiveModal, private route: Router, private porUpService: PopUpService){}
-    ngOnInit() {}
+    ngOnInit() {
+        console.log(this.name);
+        
+    }
 
     successOk(e) {
         console.log(this.name)
