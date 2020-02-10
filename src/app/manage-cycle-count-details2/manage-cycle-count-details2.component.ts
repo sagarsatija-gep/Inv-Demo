@@ -69,11 +69,7 @@ export class ManageCycleCountDetails2Component implements OnInit,OnDestroy {
               name: 'Assignee',
               values: 'Emily Ross',
             },
-            {
-              type:'text',
-              name:'Storage Location',
-              values:'Aisle D - Rack 02 - BIN A'
-            }
+            
           ]
         }
       }
