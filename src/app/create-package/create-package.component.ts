@@ -250,7 +250,7 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textbox',
-                      value: '',
+                      value: '5',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
@@ -275,7 +275,7 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textbox',
-                      value: '',
+                      value: '5',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
@@ -287,7 +287,7 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                   [
                     {
                       type: 'text',
-                      value: '3'
+                      value: '5'
                     },
                     {
                       type: 'textboxchange',
@@ -300,7 +300,7 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textbox',
-                      value: '',
+                      value: '5',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
@@ -325,7 +325,7 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textbox',
-                      value: '',
+                      value: '5',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
@@ -350,7 +350,7 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textbox',
-                      value: '',
+                      value: '5',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
@@ -375,7 +375,7 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textbox',
-                      value: '',
+                      value: '9',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
