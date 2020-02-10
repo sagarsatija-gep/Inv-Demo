@@ -364,12 +364,12 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: '1025180',
+                    value: '59867631',
                     tdClasses: 'text-left'
                 },
                 {
                     type: 'text',
-                    value: 'Tube, Bourdon'
+                    value: 'KIT,ANALYSIS,HEATER TUBE & FILTER,MFR UN '
                 },
                 {
                     type: 'textbox',
@@ -434,16 +434,16 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left'
-
+      
                 },
                 {
                     type: 'text',
-                    value: '2063777',
+                    value: '53987943',
                     tdClasses: 'text-left'
                 },
                 {
                     type: 'text',
-                    value: 'Lead Piping'
+                    value: 'MILLIPORE AAWP04700'
                 },
                 {
                     type: 'textbox',
@@ -511,12 +511,12 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: '1010151',
+                    value: '55689678',
                     tdClasses: 'text-left'
                 },
                 {
                     type: 'text',
-                    value: 'Milwaukee Tool'
+                    value: 'BRACKET ASSEMBLY'
                 },
                 {
                     type: 'textbox',
@@ -584,12 +584,12 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: '2030539',
+                    value: '54688622',
                     tdClasses: 'text-left'
                 },
                 {
                     type: 'text',
-                    value: 'Morse Cutting Tool'
+                    value: 'Electric Tool 48-20-5030'
                 },
                 {
                     type: 'textbox',
@@ -654,16 +654,16 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left'
-
+      
                 },
                 {
                     type: 'text',
-                    value: '2044808',
+                    value: '53257890',
                     tdClasses: 'text-left'
                 },
                 {
                     type: 'text',
-                    value: 'Dewalt – Saw Blade'
+                    value: 'Morse Cutting Tools 82062'
                 },
                 {
                     type: 'textbox',
@@ -728,16 +728,16 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left'
-
+      
                 },
                 {
                     type: 'text',
-                    value: '2044808',
+                    value: '53219023',
                     tdClasses: 'text-left'
                 },
                 {
                     type: 'text',
-                    value: 'FILTER ELEMENT,OIL'
+                    value: 'E-MONT_KS-PANZERROHR_DN20'
                 },
                 {
                     type: 'textbox',
@@ -875,7 +875,7 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left',
-
+      
                 },
                 {
                     type: 'text',
@@ -949,7 +949,7 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left',
-
+      
                 },
                 {
                     type: 'text',
@@ -1023,7 +1023,7 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left',
-
+      
                 },
                 {
                     type: 'text',
@@ -1097,7 +1097,7 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left',
-
+      
                 },
                 {
                     type: 'text',
@@ -1171,7 +1171,7 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left',
-
+      
                 },
                 {
                     type: 'text',
@@ -1245,7 +1245,7 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left',
-
+      
                 },
                 {
                     type: 'text',
@@ -1311,7 +1311,7 @@ export class PopUpService {
                 }
             ]
         ]
-    }
+      }
 
     barCodes = [];
 
@@ -1343,6 +1343,7 @@ export class PopUpService {
     }
 
     convertBarcodeScanetoArray(barcodes) {
+        barcodes = "*00000000000000000A101058**E69FA0FA2C6FA0FA2C6F80CB**3833333132393337**E2801160600002052A5B5541**3239343738313139**3531313832393339*";
         this.barCodes = barcodes.split("*").filter(data => data != "");
     }
 
