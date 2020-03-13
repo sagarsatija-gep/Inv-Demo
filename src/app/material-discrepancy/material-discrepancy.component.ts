@@ -65,6 +65,8 @@ export class MaterialDiscrepancyComponent implements OnInit {
   pageSize = 7;
   collectionSize = discrepancyDocuments.length;
 
+  juee = '';
+
   get discrepancyDocs(): discrepancyDocs[] {
     return discrepancyDocuments
       .map((packingSlip, i) => ({ id: i + 1, ...packingSlip }))
@@ -74,6 +76,10 @@ export class MaterialDiscrepancyComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+  }
+
+  myData(data){
+    console.log(data);
   }
 
 }
