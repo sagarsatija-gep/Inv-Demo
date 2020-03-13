@@ -18,6 +18,8 @@ import { PoGoodsReceiptComponent } from './po-goods-receipt/po-goods-receipt.com
 import { OcrGrCreationComponent } from './ocr-gr-creation/ocr-gr-creation.component';
 import { CreatePackageComponent } from './create-package/create-package.component';
 import { ManageCycleCountRequestsComponent } from './manage-cycle-count-requests/manage-cycle-count-requests.component';
+import { MaterialDiscrepancyComponent } from './material-discrepancy/material-discrepancy.component';
+import { DiscrepancyDocumentComponent } from './discrepancy-document/discrepancy-document.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -43,7 +45,9 @@ const routes: Routes = [
   { path: 'ocr-gr-creation', component: OcrGrCreationComponent },
   { path: 'createPackage', component: CreatePackageComponent },
   { path: 'externalStockTransfer', component: ExternalStockTransfer },
-  { path: 'manageCycleCountRequests', component: ManageCycleCountRequestsComponent }
+  { path: 'manageCycleCountRequests', component: ManageCycleCountRequestsComponent },
+  { path: 'manage-discrepancy', component: MaterialDiscrepancyComponent },
+  { path: 'discrepancy-document', component: DiscrepancyDocumentComponent }
 ];
 
 @NgModule({

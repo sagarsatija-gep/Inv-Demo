@@ -59,6 +59,8 @@ import { barcodePopup } from '../shared/popUpComponent/barcodePopup/barcodePopup
 import { NgbdModalContent3 } from '../shared/form-widget/component/widget-table/widgetTable.component';
 import { ManageCycleCountRequestsComponent } from './manage-cycle-count-requests/manage-cycle-count-requests.component';
 import { CycleCountListViewComponent } from './cycle-count-list-view/cycle-count-list-view.component';
+import { MaterialDiscrepancyComponent } from './material-discrepancy/material-discrepancy.component';
+import { DiscrepancyDocumentComponent } from './discrepancy-document/discrepancy-document.component';
 
 @NgModule({
   declarations: [
@@ -104,7 +106,9 @@ import { CycleCountListViewComponent } from './cycle-count-list-view/cycle-count
     RfidPopUpComponent,
     NgbdModalContent3,
     ManageCycleCountRequestsComponent,
-    CycleCountListViewComponent
+    CycleCountListViewComponent,
+    MaterialDiscrepancyComponent,
+    DiscrepancyDocumentComponent
   ],
   imports: [
     CommonModule,
