@@ -26,8 +26,16 @@
               </select>
             </div>
             <div class="customBarcode" *ngIf=" field.type == 'barcode' ">
-              <ngx-barcode [bc-format]=" CODE128" [bc-height]="30" [bc-value]="4217467185" [bc-display-value]="false">
+              <ngx-barcode [bc-format]="CODE128" [bc-height]="30" [bc-value]="4217467185" [bc-display-value]="false">
               </ngx-barcode>
+            </div>
+            <div *ngIf="field.type == 'attachfiles'" style="border: 0 !important;">
+              <div class="image-upload">
+                <label for="file-input1">
+                  <span class="action-block-cont-lbl" style="color: #007bff;">Attach Files(s)</span>
+                </label>
+                <input id="file-input1" type="file" (change)="upload()" style="display: none;"/>
+              </div>             
             </div>
           </div>
         </div>
@@ -35,3 +43,10 @@
     </div>
   </div>
 </div>
+
+<script>
+  var ele = document.getElementById('file-input');
+  if (ele) {
+    upload()
+  }   
+</script>

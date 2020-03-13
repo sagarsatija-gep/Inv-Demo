@@ -44,3 +44,17 @@
   height: 25px;
 }
 /*# sourceMappingURL=goodsIssueDetails.component.css.map */
+
+.image-upload input {
+  display: none;
+} 
+  
+
+.image-upload  img {
+    width: 40px;
+    cursor: pointer;
+  }
+
+  #ile-input{
+    display: none;
+  }

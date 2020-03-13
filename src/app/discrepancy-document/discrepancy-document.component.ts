@@ -170,6 +170,14 @@ export class DiscrepancyDocumentComponent implements OnInit {
                   editable: true,
                 }
               ]
+            },
+            {
+              editable: false,
+              data: [
+                {
+                  type: 'attachfiles'
+                }
+              ]
             }
           ]
         }
