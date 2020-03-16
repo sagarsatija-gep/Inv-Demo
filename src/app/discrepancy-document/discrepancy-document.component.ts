@@ -43,145 +43,208 @@ export class DiscrepancyDocumentComponent implements OnInit {
   ngOnInit() {
   }
 
-  widgetData = [
+  DiscData = [
     {
-      'HeaderData': {
-        name: 'Basic Details',
-        isOpen: true,
-        collapsible: false,
-        status: 'Draft',
-        classes: 'text-secondary',
-        data: {
-          componentName: 'goodsIssueDetails',
-          isSubDetails: false,//for subDetails components
-          data: [
-            {
-              editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Discrepancy Number',
-                  value: 'MD000003',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              classes: 'bg-gray',
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Discrepancy Name',
-                  value: 'Document Description',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              classes: 'bg-gray',
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Create By',
-                  value: 'Jeff',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              classes: 'bg-gray',
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Create Date',
-                  value: '5-3-20',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              classes: 'bg-gray',
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Posting Date',
-                  value: '',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              classes: 'bg-gray',
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Seller Name',
-                  value: ' ',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              classes: 'bg-gray',
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'PO Number',
-                  value: 'PO000001',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'GR Number',
-                  value: 'GR001',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Approver',
-                  value: 'Jack',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: true,
-              data: [
-                {
-                  type: 'textBox',
-                  name: 'Comments',
-                  value: 'Draft',
-                  editable: true,
-                }
-              ]
-            },
-            {
-              editable: false,
-              data: [
-                {
-                  type: 'attachfiles'
-                }
-              ]
-            }
-          ]
-        }
-      }
+      type: 'text',
+      name: 'Discrepancy Number',
+      value: 'MD000003',
+      editable: true,
+    },
+    {
+      type: 'text',
+      name: 'Discrepancy Name',
+      value: 'Document Description',
+      editable: true,
+    },
+    {
+      type: 'text',
+      name: 'Create By',
+      value: 'Jeff',
+      editable: true,
+    },
+    {
+      type: 'text',
+      name: 'Create Date',
+      value: '5-3-20',
+      editable: true,
+    },
+    {
+      type: 'text',
+      name: 'Posting Date',
+      value: 'nbnbn',
+      editable: true,
+    },
+    {
+      type: 'text',
+      name: 'Seller Name',
+      value: 'vhghjvjh',
+      editable: true,
+    },
+    {
+      type: 'text',
+      name: 'PO Number',
+      value: 'PO000001',
+      editable: true,
+    },
+    {
+      type: 'text',
+      name: 'GR Number',
+      value: 'GR001',
+      editable: true,
+    },
+    {
+      type: 'text',
+      name: 'Approver',
+      value: 'Jack',
+      editable: true,
+    },
+    {
+      type: 'text',
+      name: 'Comments',
+      value: 'Draft',
+      editable: true,
     }
   ]
+
+  // widgetData = [
+  //   {
+  //     'HeaderData': {
+  //       name: 'Basic Details',
+  //       isOpen: true,
+  //       collapsible: false,
+  //       status: 'Draft',
+  //       classes: 'text-secondary',
+  //       data: {
+  //         componentName: 'goodsIssueDetails',
+  //         isSubDetails: false,//for subDetails components
+  //         data: [
+  //           {
+  //             editable: true,
+  //             data: [
+  //               {
+  //                 type: 'textBox',
+  //                 name: 'Discrepancy Number',
+  //                 value: 'MD000003',
+  //                 editable: true,
+  //               }
+  //             ]
+  //           },
+  //           {
+  //             editable: true,
+  //             classes: 'bg-gray',
+  //             data: [
+  //               {
+  //                 type: 'textBox',
+  //                 name: 'Discrepancy Name',
+  //                 value: 'Document Description',
+  //                 editable: true,
+  //               }
+  //             ]
+  //           },
+  //           {
+  //             editable: true,
+  //             classes: 'bg-gray',
+  //             data: [
+  //               {
+  //                 type: 'textBox',
+  //                 name: 'Create By',
+  //                 value: 'Jeff',
+  //                 editable: true,
+  //               }
+  //             ]
+  //           },
+  //           {
+  //             editable: true,
+  //             classes: 'bg-gray',
+  //             data: [
+  //               {
+  //                 type: 'textBox',
+  //                 name: 'Create Date',
+  //                 value: '5-3-20',
+  //                 editable: true,
+  //               }
+  //             ]
+  //           },
+  //           {
+  //             editable: true,
+  //             classes: 'bg-gray',
+  //             data: [
+  //               {
+  //                 type: 'textBox',
+  //                 name: 'Posting Date',
+  //                 value: '',
+  //                 editable: true,
+  //               }
+  //             ]
+  //           },
+  //           {
+  //             editable: true,
+  //             classes: 'bg-gray',
+  //             data: [
+  //               {
+  //                 type: 'textBox',
+  //                 name: 'Seller Name',
+  //                 value: ' ',
+  //                 editable: true,
+  //               }
+  //             ]
+  //           },
+  //           {
+  //             editable: true,
+  //             classes: 'bg-gray',
+  //             data: [
+  //               {
+  //                 type: 'textBox',
+  //                 name: 'PO Number',
+  //                 value: 'PO000001',
+  //                 editable: true,
+  //               }
+  //             ]
+  //           },
+  //           {
+  //             editable: true,
+  //             data: [
+  //               {
+  //                 type: 'textBox',
+  //                 name: 'GR Number',
+  //                 value: 'GR001',
+  //                 editable: true,
+  //               }
+  //             ]
+  //           },
+  //           {
+  //             editable: true,
+  //             data: [
+  //               {
+  //                 type: 'textBox',
+  //                 name: 'Approver',
+  //                 value: 'Jack',
+  //                 editable: true,
+  //               }
+  //             ]
+  //           },
+  //           {
+  //             editable: true,
+  //             data: [
+  //               {
+  //                 type: 'textBox',
+  //                 name: 'Comments',
+  //                 value: 'Draft',
+  //                 editable: true,
+  //               }
+  //             ]
+  //           },
+  //           {
+  //             editable: false,
+  //             data: [
+  //               {
+  //                 type: 'attachfiles'
+  //               }
+  //             ]
+  //           }
+  //         ]
+  //       }
+  //     }
+  //   }
+  // ]
 }

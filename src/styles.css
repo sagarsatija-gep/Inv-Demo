@@ -10,6 +10,9 @@ body {
   font-family: 'Roboto', sans-serif !important;
   overflow-y: hidden;
 }
+.bg-white{
+  background-color: #ffffff;
+}
 
 .mat-drawer-content {
   background-color: #F3F3F3;

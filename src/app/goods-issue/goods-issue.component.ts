@@ -11,7 +11,7 @@ import { DatePipe } from '@angular/common';
 export class GoodsIssueComponent implements OnInit {
 
   pipe = new DatePipe('en-US');
-  widgetData = [
+widgetData = [
     {
       'HeaderData': {
         name: 'Header Details',
