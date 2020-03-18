@@ -1,0 +1,61 @@
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-sm-12">
+      <ul class="breadcrumb">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Manage Transactions</a></li>
+        <li>Manage Discrepancy Documents</li>
+      </ul>
+      <h2>Manage Discrepancy Documents</h2>
+    </div>
+  </div>
+</div>
+<div class="container-fluid ">
+  <div class="col-sm-12 border border-secondary rounded-sm mt-3 bg-white px-0 border-top-0" style="height: 60vh;">
+    <table class="table">
+      <thead>
+        <tr>
+          <th scope="col">Document #</th>
+          <th scope="col">Document Description</th>
+          <th scope="col">Creation Date</th>
+          <th scope="col">PO #</th>
+          <th scope="col">GR #</th>
+          <th scope="col">Created By</th>
+          <th scope="col">Approver</th>
+          <th scope="col">Document Status</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let x of discrepancyDocs">
+          <td style="color:#3D5AFE; cursor: pointer;">
+            <span class="slip-main-col">
+              <a [routerLink]="['/discrepancy-document']" class="links">
+                {{ x.documentId }}
+              </a>
+            </span>
+          </td>
+          <td>{{ x.documentDesc }}</td>
+          <td>{{ x.creationDate }}</td>
+          <td>{{ x.poNumber }}</td>
+          <td>{{ x.GRNumber }}</td>
+          <td>{{ x.createdBy }}</td>
+          <td>{{ x.approver }}</td>
+          <td class="text-capitalize" *ngIf="x.documentStatus == 'draft'">
+            <span class="text-warning status border border-warning">{{ x.documentStatus }}</span>
+          </td>
+          <td class="text-capitalize" *ngIf="x.documentStatus == 'sent for approval'">
+            <span class="text-primary status border border-primary">{{ x.documentStatus }}</span>
+          </td>
+          <td class="text-capitalize" *ngIf="x.documentStatus == 'approved'">
+            <span class="text-success status border border-success">{{ x.documentStatus }}</span>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<div class="d-flex justify-content-center p-2">
+  <ngb-pagination [collectionSize]="collectionSize" [(page)]="page" [pageSize]="pageSize">
+  </ngb-pagination>
+</div>

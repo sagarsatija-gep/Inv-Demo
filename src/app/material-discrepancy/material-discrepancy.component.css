@@ -1,0 +1,13 @@
+.border-secondary{
+    border-color: #d6d6d6!important;
+}
+.links {
+    font-weight: 500;
+    color: #3D5AFE;
+    text-decoration: none;
+}
+.status{
+    font-weight: 500;
+    border-radius: 15px;
+    padding: 3px 7px;
+}

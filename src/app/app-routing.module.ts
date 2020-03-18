@@ -20,6 +20,8 @@ import { CreatePackageComponent } from './create-package/create-package.componen
 import { ManageCycleCountRequestsComponent } from './manage-cycle-count-requests/manage-cycle-count-requests.component';
 import { ManageCycleCountDetailsComponent } from './manage-cycle-count-details/manage-cycle-count-detailscomponent';
 import { ManageCycleCountDetails2Component } from './manage-cycle-count-details2/manage-cycle-count-details2.component';
+import { MaterialDiscrepancyComponent } from './material-discrepancy/material-discrepancy.component';
+import { DiscrepancyDocumentComponent } from './discrepancy-document/discrepancy-document.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -48,7 +50,9 @@ const routes: Routes = [
   { path: 'manageCycleCountRequests', component: ManageCycleCountRequestsComponent },
   { path: 'externalStockTransfer', component: ExternalStockTransfer},
   { path: 'ManageCycleCountDetails', component: ManageCycleCountDetailsComponent },
-  {path: 'manageCycleCountDetails2',component: ManageCycleCountDetails2Component}
+  {path: 'manageCycleCountDetails2',component: ManageCycleCountDetails2Component},
+  { path: 'manage-discrepancy', component: MaterialDiscrepancyComponent },
+  { path: 'discrepancy-document', component: DiscrepancyDocumentComponent }
 ];
 
 @NgModule({

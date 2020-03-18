@@ -62,6 +62,10 @@ export class SideNavComponent implements OnInit {
       {
         name:"Manage Goods Issue/Reversal",
         value:"goods"
+      },
+      {
+        name:"Material Discrepancy",
+        value:"manage-discrepancy"
       }
      
     ]

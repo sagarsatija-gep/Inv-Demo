@@ -61,6 +61,8 @@ import { ManageCycleCountRequestsComponent } from './manage-cycle-count-requests
 import { CycleCountListViewComponent } from './cycle-count-list-view/cycle-count-list-view.component';
 import { ManageCycleCountDetailsComponent } from './manage-cycle-count-details/manage-cycle-count-detailscomponent';
 import { ManageCycleCountDetails2Component } from './manage-cycle-count-details2/manage-cycle-count-details2.component';
+import { MaterialDiscrepancyComponent } from './material-discrepancy/material-discrepancy.component';
+import { DiscrepancyDocumentComponent } from './discrepancy-document/discrepancy-document.component';
 
 @NgModule({
   declarations: [
@@ -108,7 +110,9 @@ import { ManageCycleCountDetails2Component } from './manage-cycle-count-details2
     ManageCycleCountRequestsComponent,
     CycleCountListViewComponent,
     ManageCycleCountDetailsComponent,
-    ManageCycleCountDetails2Component
+    ManageCycleCountDetails2Component,
+    MaterialDiscrepancyComponent,
+    DiscrepancyDocumentComponent
   ],
   imports: [
     CommonModule,
