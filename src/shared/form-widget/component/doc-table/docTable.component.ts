@@ -28,8 +28,11 @@ export class DocumentTable implements OnInit {
     isDisabled = false;
     btnFinalize = {'btn-secondary': true, 'action-buttons': true, 'btn': true, 'btn-primary': false};
     gotoManageGoodsIssue(){
-        console.log('hjcdbchjb');
         this.router.navigate(['/','manageGoodsIssue']);
+    }
+
+    gotoHome(){
+        this.router.navigate(['/','home']);
     }
 
     @Input() data: any = {};

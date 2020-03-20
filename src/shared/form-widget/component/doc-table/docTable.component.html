@@ -17,6 +17,15 @@
       </div>
     </div>
 
+    <!-- Footer Buttons For Create Material Request Form -->
+    <div class="row" *ngIf="data.createMaterialRequestFormButton">
+      <div class="col-sm-12 text-right" style="margin: 25px 0px 25px -10px;">
+        <button type="button" class="action-buttons btn bg-white text-primary border-secondary">Save</button>
+        <button type="button" [ngClass]="btnFinalize" [disabled]="isDisabled"
+          (click)="gotoHome()">Finalize</button>
+      </div>
+    </div>
+
     <!-- Footer Buttons For Manage Goods Issue Pickist -->
     <div class="row" *ngIf="data.closeBtn">
       <div class="col-sm-12 text-right" style="margin: 25px 0px 25px -10px;">

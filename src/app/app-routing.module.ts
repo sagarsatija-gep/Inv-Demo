@@ -22,6 +22,9 @@ import { ManageCycleCountDetailsComponent } from './manage-cycle-count-details/m
 import { ManageCycleCountDetails2Component } from './manage-cycle-count-details2/manage-cycle-count-details2.component';
 import { MaterialDiscrepancyComponent } from './material-discrepancy/material-discrepancy.component';
 import { DiscrepancyDocumentComponent } from './discrepancy-document/discrepancy-document.component';
+import { CreateMaterialRequestFormComponent } from './create-material-request-form/create-material-request-form.component';
+import { ManageMaterialRequestsComponent } from './manage-material-requests/manage-material-requests.component';
+import { CreateMaterialRequestComponent } from './create-material-request/create-material-request.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -48,11 +51,14 @@ const routes: Routes = [
   { path: 'createPackage', component: CreatePackageComponent },
   { path: 'externalStockTransfer', component: ExternalStockTransfer },
   { path: 'manageCycleCountRequests', component: ManageCycleCountRequestsComponent },
-  { path: 'externalStockTransfer', component: ExternalStockTransfer},
+  { path: 'externalStockTransfer', component: ExternalStockTransfer },
   { path: 'ManageCycleCountDetails', component: ManageCycleCountDetailsComponent },
-  {path: 'manageCycleCountDetails2',component: ManageCycleCountDetails2Component},
+  { path: 'manageCycleCountDetails2', component: ManageCycleCountDetails2Component },
   { path: 'manage-discrepancy', component: MaterialDiscrepancyComponent },
-  { path: 'discrepancy-document', component: DiscrepancyDocumentComponent }
+  { path: 'discrepancy-document', component: DiscrepancyDocumentComponent },
+  { path: 'createMaterialRequestForm', component: CreateMaterialRequestFormComponent },
+  { path: 'manageMaterialRequests', component: ManageMaterialRequestsComponent },
+  { path: 'createMaterialRequest', component: CreateMaterialRequestComponent },
 ];
 
 @NgModule({
