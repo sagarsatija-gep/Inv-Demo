@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DatePipe } from '@angular/common';
-
+  
 @Component({
   selector: 'app-goods-issue',
   templateUrl: './goods-issue.component.html',
@@ -231,23 +231,26 @@ widgetData = [
           data: [
             {
               tabName: 'Line',
-              tabcomponent: 'widgetTable',
+              tabcomponent: 'modifyWidgetTable',
               tabData: {
                 colConfig: [
                   {
                     type: 'checkbox',
+                    valueType: 'checkbox',
                     name: 'Reservation #',
-                    styles: { 'width': '2%' },
+                    colStyles: { 'width': '2%' },
                   },
                   {
                     type: 'text',
+                    valueType: 'text',
                     name: 'Reservation #',
                     colSize: '100px',
-                    classes: ' ',
+                    classes: 'text-primary'
                     // styles: {'width': '8%'},
                   },
                   {
                     type: 'text',
+                    valueType: 'text',
                     name: 'Reservation Line #',
                     colSize: '100px',
                     classes: ' ',
@@ -255,50 +258,59 @@ widgetData = [
                   },
                   {
                     type: 'text',
+                    valueType: 'text',
                     name: 'Item #',
                     colSize: '100px',
                     // styles: {'background-color': 'rebeccapurple'},
                     classes: '',
-                    styles: { 'width': '8%' },
+                    colStyles: { 'width': '8%' },
                   },
                   {
                     type: 'text',
+                    valueType: 'text',
                     name: 'Reservation Qty',
                     colSize: '100px',
                     // styles: {'width': '8%'},
                   },
                   {
                     type: 'text',
+                    valueType: 'text',
                     name: 'Remaining Qty',
                     colSize: '100px',
                     // styles: {'width': '8%'},
                   },
                   {
                     type: 'text',
+                    valueType: 'text',
                     name: 'On-Hand Qty',
                     colSize: '100px',
                     // styles: {'width': '8%'},
                   },
                   {
                     type: 'text',
+                    valueType: 'textbox',
                     name: 'Issue Qty',
                     colSize: '100px',
-                    styles: { 'width': '8%' },
+                    colStyles: { 'width': '8%' },
+                    classes: 'input-small rounded-sm border-secondary text-right'
                   },
                   {
                     type: 'text',
+                    valueType: 'text',
                     name: 'UOM',
                     colSize: '100px',
-                    styles: { 'width': '8%' },
+                    colStyles: { 'width': '8%' },
                   },
                   {
                     type: 'text',
+                    valueType: 'toggle',
                     name: 'Is Final',
                     colSize: '100px',
-                    styles: { 'width': '8%' },
+                    colStyles: { 'width': '8%' },
                   },
                   {
                     type: 'text',
+                    valueType: 'text',
                     name: 'Requested Date',
                     colSize: '100px',
                     // styles: {'width': '8%'},
@@ -307,189 +319,141 @@ widgetData = [
                 values: [
                   [
                     {
-                      type: 'checkbox',
                       value: 'false',
                     },
                     {
-                      type: 'text',
-                      value: 'R4544322', classes: 'text-primary',
+                      value: 'R4544322',
                     },
                     {
-                      type: 'text',
                       value: '1',
                     },
                     {
-                      type: 'text',
                       value: '43335779',
                     },
                     {
-                      type: 'text',
                       value: '55',
                     },
                     {
-                      type: 'text',
                       value: '55',
                     },
                     {
-                      type: 'text',
                       value: '70',
                     },
                     {
-                      type: 'textbox',
                       value: '55',
-                      classes: 'input-small rounded-sm border-secondary text-right'
                     },
                     {
-                      type: 'text',
                       value: 'EA',
                     },
                     {
-                      type: 'toggle',
                       value: true,
                     },
                     {
-                      type: 'text',
                       value: '10/28/2019',
                     }
                   ],
                   [
                     {
-                      type: 'checkbox',
                       value: 'false',
                     },
                     {
-                      type: 'text',
-                      value: 'R4544322', classes: 'text-primary',
+                      value: 'R4544322',
                     },
                     {
-                      type: 'text',
                       value: '2',
                     },
                     {
-                      type: 'text',
                       value: '55430224',
                     },
                     {
-                      type: 'text',
                       value: '55',
                     },
                     {
-                      type: 'text',
                       value: '55',
                     },
                     {
-                      type: 'text',
                       value: '70',
                     },
                     {
-                      type: 'textbox',
                       value: '55',
-                      classes: 'input-small rounded-sm border-secondary text-right'
                     },
                     {
-                      type: 'text',
                       value: 'EA',
                     },
                     {
-                      type: 'toggle',
                       value: false,
                     },
                     {
-                      type: 'text',
                       value: '10/28/2019',
                     }
                   ],
                   [
                     {
-                      type: 'checkbox',
                       value: false,
                     },
                     {
-                      type: 'text',
-                      value: 'R4544322', classes: 'text-primary',
+                      value: 'R4544322',
                     },
                     {
-                      type: 'text',
                       value: '3',
                     },
                     {
-                      type: 'text',
                       value: '55436655',
                     },
                     {
-                      type: 'text',
                       value: '55',
                     },
                     {
-                      type: 'text',
                       value: '55',
                     },
                     {
-                      type: 'text',
                       value: '70',
                     },
                     {
-                      type: 'textbox',
                       value: '55',
-                      classes: 'input-small rounded-sm border-secondary text-right'
                     },
                     {
-                      type: 'text',
                       value: 'EA',
                     },
                     {
-                      type: 'toggle',
                       value: false,
                     },
                     {
-                      type: 'text',
                       value: '10/28/2019',
                     }
                   ],
                   [
                     {
-                      type: 'checkbox',
                       value: 'false',
                     },
                     {
-                      type: 'text',
-                      value: 'R4544322', classes: 'text-primary',
+                      value: 'R4544322',
                     },
                     {
-                      type: 'text',
                       value: '4',
                     },
                     {
-                      type: 'text',
                       value: '55437754',
                     },
                     {
-                      type: 'text',
                       value: '55',
                     },
                     {
-                      type: 'text',
                       value: '55',
                     },
                     {
-                      type: 'text',
                       value: '70',
                     },
                     {
-                      type: 'textbox',
                       value: '55',
-                      classes: 'input-small rounded-sm border-secondary text-right'
                     },
                     {
-                      type: 'text',
                       value: 'EA',
                     },
                     {
-                      type: 'toggle',
                       value: false,
                     },
                     {
-                      type: 'text',
                       value: '10/28/2019',
                     }
                   ]
@@ -499,23 +463,26 @@ widgetData = [
             },
             {
               tabName: 'Where',
-              tabcomponent: 'widgetTable',
+              tabcomponent: 'modifyWidgetTable',
               tabData: {
                 colConfig: [
                   {
                     type: 'checkbox',
+                    valueType: 'checkbox',
                     name: 'Reservation #',
-                    styles: { 'width': '2%' },
+                    colStyles: { 'width': '2%' },
                   },
                   {
                     type: 'text',
+                    valueType: 'text',
                     name: 'Reservation #',
                     colSize: '100px',
-                    classes: ' ',
+                    classes: 'text-primary',
                     // styles: {'width': '30%'},
                   },
                   {
                     type: 'text',
+                    valueType: 'text',
                     name: 'Reservation Line #',
                     colSize: '100px',
                     classes: ' ',
@@ -523,6 +490,7 @@ widgetData = [
                   },
                   {
                     type: 'text',
+                    valueType: 'text',
                     name: 'Item #',
                     colSize: '100px',
                     // styles: {'background-color': 'rebeccapurple'},
@@ -531,155 +499,124 @@ widgetData = [
                   },
                   {
                     type: 'text',
+                    valueType: 'textbox',
                     name: 'Goods Recipient',
                     colSize: '100px',
+                    classes: 'input-medium rounded-sm border-secondary'
+
                     // styles: {'width': '30%'},
                   },
                   {
                     type: 'text',
+                    valueType: 'textbox',
                     name: 'Unloading Point',
                     colSize: '100px',
+                    classes: 'input-medium rounded-sm border-secondary'
+
                     // styles: {'width': '30%'},
                   },
                   {
                     type: 'text',
+                    valueType: 'textbox',
                     name: 'Line Comments',
                     colSize: '100px',
                     // styles: {'width': '30%'},
-                    classes: 'text-left'
+                    colClasses: 'text-left',
+                    classes: 'input-large rounded-sm border-secondary'
+
                   }
                 ],
                 values: [
                   [
                     {
-                      type: 'checkbox',
                       value: 'false',
                     },
                     {
-                      type: 'text',
-                      value: 'R4544322', classes: 'text-primary',
+                      value: 'R4544322',
                     },
                     {
-                      type: 'text',
                       value: '1',
                     },
                     {
-                      type: 'text',
                       value: '43335779'
                     },
                     {
-                      type: 'textbox',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
                     },
                     {
-                      type: 'textbox',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
                     },
                     {
-                      type: 'textbox',
                       value: '',
-                      classes: 'input-large rounded-sm border-secondary'
                     }
                   ],
                   [
                     {
-                      type: 'checkbox',
                       value: 'false',
                     },
                     {
-                      type: 'text',
-                      value: 'R4544322', classes: 'text-primary',
+                      value: 'R4544322',
                     },
                     {
-                      type: 'text',
                       value: '2',
                     },
                     {
-                      type: 'text',
                       value: '55430224',
                     },
                     {
-                      type: 'textbox',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
                     },
                     {
-                      type: 'textbox',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
                     },
                     {
-                      type: 'textbox',
                       value: '',
-                      classes: 'input-large rounded-sm border-secondary'
                     }
                   ],
                   [
                     {
-                      type: 'checkbox',
                       value: 'false',
                     },
                     {
-                      type: 'text',
-                      value: 'R4544322', classes: 'text-primary',
+                      value: 'R4544322',
                     },
                     {
-                      type: 'text',
                       value: '3',
                     },
                     {
-                      type: 'text',
                       value: '55436655',
                     },
                     {
-                      type: 'textbox',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
                     },
                     {
-                      type: 'textbox',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
                     },
                     {
-                      type: 'textbox',
                       value: '',
-                      classes: 'input-large rounded-sm border-secondary'
                     }
                   ],
                   [
                     {
-                      type: 'checkbox',
                       value: 'false',
                     },
                     {
-                      type: 'text',
-                      value: 'R4544322', classes: 'text-primary',
+                      value: 'R4544322',
                     },
                     {
-                      type: 'text',
                       value: '4',
                     },
                     {
-                      type: 'text',
                       value: '55437754',
                     },
                     {
-                      type: 'textbox',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
                     },
                     {
-                      type: 'textbox',
                       value: '',
-                      classes: 'input-medium rounded-sm border-secondary'
                     },
                     {
-                      type: 'textbox',
                       value: '',
-                      classes: 'input-large rounded-sm border-secondary'
                     }
                   ]
                 ]
@@ -688,23 +625,26 @@ widgetData = [
             },
             {
               tabName: 'Accounting',
-              tabcomponent: 'widgetTable',
+              tabcomponent: 'modifyWidgetTable',
               tabData: {
                 colConfig: [
                   {
                     type: 'checkbox',
+                    valueType: 'checkbox',
                     name: 'Reservation #',
-                    styles: { 'width': '2%' },
+                    colStyles: { 'width': '2%' },
                   },
                   {
                     type: 'text',
+                    valueType: 'text',
                     name: 'Reservation #',
                     colSize: '100px',
-                    classes: ' ',
+                    classes: 'text-primary',
                     // styles: {'width': '30%'},
                   },
                   {
                     type: 'text',
+                    valueType: 'text',
                     name: 'Reservation Line #',
                     colSize: '100px',
                     classes: ' ',
@@ -712,6 +652,7 @@ widgetData = [
                   },
                   {
                     type: 'text',
+                    valueType: 'text',
                     name: 'Item #',
                     colSize: '100px',
                     // styles: {'background-color': 'rebeccapurple'},
@@ -720,49 +661,51 @@ widgetData = [
                   },
                   {
                     type: 'text',
+                    valueType: 'dropdown',
                     name: 'Movement Type',
                     colSize: '100px',
                     // styles: {'width': '30%'},
                   },
                   {
                     type: 'text',
+                    valueType: 'dropdown',
                     name: 'Cost Center',
                     colSize: '100px',
+                    classes: 'rounded-sm border-secondary input-large',
                     // styles: {'width': '30%'},
                   },
                   {
                     type: 'text',
+                    valueType: 'textbox',
                     name: 'WBS Element',
                     colSize: '100px',
+                    classes: 'rounded-sm border-secondary input-small text-right'
                     // styles: {'width': '30%'},
                   },
                   {
                     type: 'text',
+                    valueType: 'textbox',
                     name: 'WO/IO#',
                     colSize: '100px',
+                    classes: 'rounded-sm border-secondary input-small text-right'
                     // styles: {'width': '30%'},
                   }
                 ],
                 values: [
                   [
                     {
-                      type: 'checkbox',
                       value: 'false',
                     },
                     {
-                      type: 'text',
-                      value: 'R4544322', classes: 'text-primary',
+                      value: 'R4544322',
                     },
                     {
-                      type: 'text',
                       value: '1',
                     },
                     {
-                      type: 'text',
                       value: '43335779',
                     },
                     {
-                      type: 'dropdown',
                       value: [
                         'Issue For Cost Center',
                         'Issue For Cost Center1'
@@ -770,8 +713,6 @@ widgetData = [
                       selectedValue: 'Issue For Cost Center',
                     },
                     {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
                       value: [
                         'CC001',
                         'CC0012'
@@ -779,35 +720,26 @@ widgetData = [
                       selectedValue: 'CC001',
                     },
                     {
-                      type: 'textbox',
                       value: '70',
-                      classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
-                      type: 'textbox',
                       value: '55',
-                      classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
                   [
                     {
-                      type: 'checkbox',
                       value: 'false',
                     },
                     {
-                      type: 'text',
-                      value: 'R4544322', classes: 'text-primary',
+                      value: 'R4544322',
                     },
                     {
-                      type: 'text',
                       value: '2',
                     },
                     {
-                      type: 'text',
                       value: '55430224',
                     },
                     {
-                      type: 'dropdown',
                       value: [
                         'Issue For Cost Center',
                         'Issue For Cost Center1'
@@ -815,8 +747,6 @@ widgetData = [
                       selectedValue: 'Issue For Cost Center',
                     },
                     {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
                       value: [
                         'CC001',
                         'CC0011'
@@ -824,35 +754,26 @@ widgetData = [
                       selectedValue: 'CC001',
                     },
                     {
-                      type: 'textbox',
                       value: '70',
-                      classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
-                      type: 'textbox',
                       value: '55',
-                      classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
                   [
                     {
-                      type: 'checkbox',
                       value: 'false',
                     },
                     {
-                      type: 'text',
-                      value: 'R4544322', classes: 'text-primary',
+                      value: 'R4544322',
                     },
                     {
-                      type: 'text',
                       value: '3',
                     },
                     {
-                      type: 'text',
                       value: '55436655',
                     },
                     {
-                      type: 'dropdown',
                       value: [
                         'Issue For Cost Center',
                         'Issue For Cost Center1'
@@ -860,7 +781,6 @@ widgetData = [
                       selectedValue: 'Issue For Cost Center',
                     },
                     {
-                      type: 'dropdown',
                       classes: 'rounded-sm border-secondary input-large',
                       value: [
                         'CC001',
@@ -869,35 +789,26 @@ widgetData = [
                       selectedValue: 'CC001',
                     },
                     {
-                      type: 'textbox',
                       value: '70',
-                      classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
-                      type: 'textbox',
                       value: '55',
-                      classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ],
                   [
                     {
-                      type: 'checkbox',
                       value: 'false',
                     },
                     {
-                      type: 'text',
-                      value: 'R4544322', classes: 'text-primary',
+                      value: 'R4544322',
                     },
                     {
-                      type: 'text',
                       value: '4',
                     },
                     {
-                      type: 'text',
                       value: '55437754',
                     },
                     {
-                      type: 'dropdown',
                       value: [
                         'Issue For Cost Center',
                         'Issue For Cost Center1'
@@ -905,8 +816,6 @@ widgetData = [
                       selectedValue: 'Issue For Cost Center',
                     },
                     {
-                      type: 'dropdown',
-                      classes: 'rounded-sm border-secondary input-large',
                       value: [
                         'CC001',
                         'CC0011'
@@ -914,14 +823,10 @@ widgetData = [
                       selectedValue: 'CC001',
                     },
                     {
-                      type: 'textbox',
                       value: '70',
-                      classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
-                      type: 'textbox',
                       value: '55',
-                      classes: 'rounded-sm border-secondary input-small text-right'
                     }
                   ]
                 ]

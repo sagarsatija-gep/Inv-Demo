@@ -3,6 +3,7 @@ import { DevTable } from './dev-table/dev-table.component';
 import { Component, Input, OnInit, ViewChild, ViewContainerRef, ComponentFactoryResolver, ViewEncapsulation} from "@angular/core";
 import { RouterModule, Routes, Router } from '@angular/router';
 import { PopUpService } from '../../service/popUp.service';
+import { ModifyWidgetTable } from '../modify-widget-table/modifyWidgetTable';
 
 interface Document {
     id?: number;
@@ -13,7 +14,8 @@ interface Document {
 
 const components = {
     'table': DevTable,
-    'widgetTable': WidgetTable
+    'widgetTable': WidgetTable,
+    'modifyWidgetTable': ModifyWidgetTable
 }
 
 @Component({
@@ -26,8 +28,11 @@ export class DocumentTable implements OnInit {
     isDisabled = false;
     btnFinalize = {'btn-secondary': true, 'action-buttons': true, 'btn': true, 'btn-primary': false};
     gotoManageGoodsIssue(){
-        console.log('hjcdbchjb');
         this.router.navigate(['/','manageGoodsIssue']);
+    }
+
+    gotoHome(){
+        this.router.navigate(['/','home']);
     }
 
     @Input() data: any = {};

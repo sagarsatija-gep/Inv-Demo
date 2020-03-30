@@ -77,3 +77,7 @@ a, a:not([href]) {
   box-shadow: none;
   -webkit-box-shadow : none;
 }
+
+.mat-tab-group.mat-primary .mat-ink-bar {
+  background-color: #3D5AFE;
+}

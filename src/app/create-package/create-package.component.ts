@@ -98,7 +98,7 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                 {
                   type: 'textBox',
                   name: 'Package Name',
-                  value: 'Container 1',
+                  value: 'Package 1',
                   editable: true,
                 }
               ]
@@ -194,9 +194,11 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
         name: 'Line Details',
         collapsible: true,
         isOpen: true,
+        barcode:true,
         data: {
           componentName: 'tabComponent',
           haveButton: false,
+          route: "createPackage",
           data: [
             {
               tabName: 'LINES',
@@ -225,7 +227,13 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     name: 'RFID Flag',
                   }
                 ],
-                values: [
+                route: "poGoodsReceipt",
+                values:[{
+
+                }
+
+                ],
+                values1: [
                   [
                     {
                       type: 'text',
@@ -233,21 +241,21 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textboxchange',
-                      value: '',
+                      value: '53219023',
                     },
                     {
                       type: 'textbox',
-                      value: '',
+                      value: 'E-MONT_KS-PANZERROHR_DN20',
                       styles: { 'width': '240px' }
                     },
                     {
                       type: 'textbox',
-                      value: '',
+                      value: '5',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
-                      value: '',
+                      value: '00000000000000000A101058',
                       styles: { 'width': '210px' }
                     }
                   ],
@@ -258,71 +266,21 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textboxchange',
-                      value: '',
+                      value: '59867631',
                     },
                     {
                       type: 'textbox',
-                      value: '',
+                      value: 'KIT,ANALYSIS,HEATER TUBE & FILTER,MFR UN ',
                       styles: { 'width': '240px' }
                     },
                     {
                       type: 'textbox',
-                      value: '',
+                      value: '5',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
-                      value: '',
-                      styles: { 'width': '210px' }
-                    }
-                  ],
-                  [
-                    {
-                      type: 'text',
-                      value: '3'
-                    },
-                    {
-                      type: 'textboxchange',
-                      value: '',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      styles: { 'width': '240px' }
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      styles: { 'width': '210px' }
-                    }
-                  ],
-                  [
-                    {
-                      type: 'text',
-                      value: '4'
-                    },
-                    {
-                      type: 'textboxchange',
-                      value: '',
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      styles: { 'width': '240px' }
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
-                      classes: 'rounded-sm border-secondary input-small text-right'
-                    },
-                    {
-                      type: 'textbox',
-                      value: '',
+                      value: 'E69FA0FA2C6FA0FA2C6F80CB',
                       styles: { 'width': '210px' }
                     }
                   ],
@@ -333,21 +291,96 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                     },
                     {
                       type: 'textboxchange',
-                      value: ''
+                      value: '53987943',
                     },
                     {
                       type: 'textbox',
-                      value: '',
+                      value: 'MILLIPORE AAWP04700',
                       styles: { 'width': '240px' }
                     },
                     {
                       type: 'textbox',
-                      value: '',
+                      value: '5',
                       classes: 'rounded-sm border-secondary input-small text-right'
                     },
                     {
                       type: 'textbox',
-                      value: '',
+                      value: '3833333132393337',
+                      styles: { 'width': '210px' }
+                    }
+                  ],
+                  [
+                    {
+                      type: 'text',
+                      value: '4'
+                    },
+                    {
+                      type: 'textboxchange',
+                      value: '55689678',
+                    },
+                    {
+                      type: 'textbox',
+                      value: 'BRACKET ASSEMBLY',
+                      styles: { 'width': '240px' }
+                    },
+                    {
+                      type: 'textbox',
+                      value: '5',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: 'E2801160600002052A5B5541',
+                      styles: { 'width': '210px' }
+                    }
+                  ],
+                  [
+                    {
+                      type: 'text',
+                      value: '5'
+                    },
+                    {
+                      type: 'textboxchange',
+                      value: '54688622'
+                    },
+                    {
+                      type: 'textbox',
+                      value: 'Electric Tool 48-20-5030',
+                      styles: { 'width': '240px' }
+                    },
+                    {
+                      type: 'textbox',
+                      value: '5',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '3239343738313139',
+                      styles: { 'width': '210px' }
+                    }
+                  ],
+                  [
+                    {
+                      type: 'text',
+                      value: '6'
+                    },
+                    {
+                      type: 'textboxchange',
+                      value: '53257890'
+                    },
+                    {
+                      type: 'textbox',
+                      value: 'Morse Cutting Tools 82062',
+                      styles: { 'width': '240px' }
+                    },
+                    {
+                      type: 'textbox',
+                      value: '9',
+                      classes: 'rounded-sm border-secondary input-small text-right'
+                    },
+                    {
+                      type: 'textbox',
+                      value: '3531313832393339',
                       styles: { 'width': '210px' }
                     }
                   ]

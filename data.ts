@@ -236,3 +236,75 @@ export const pickListData: Object[] = [
     },
     
 ];
+
+export const cycleCountData: Object[] = [
+    {
+        "ItemNumber":"55436655",
+        "Description":"Tuthill Pump FR700V",
+        "StorageBin":" D - 01 -7",
+        "WBSElement":"",
+        "UOM":"EACH",
+        "OnHandQty":" 0 ",
+        "CostCenter":""
+    },
+    {
+        "ItemNumber":"55430224",
+        "Description":"Ratchet Repair Kit",
+        "StorageBin":" B - 02 -5",
+        "WBSElement":"",
+        "UOM":"EACH",
+        "OnHandQty":" 0 ",
+        "CostCenter":""
+    },
+    {
+        "ItemNumber":"53452623",
+        "Description":"Motor and Throttle Kit",
+        "StorageBin":" F - 04 -9",
+        "WBSElement":"",
+        "UOM":"EACH",
+        "OnHandQty":" 0 ",
+        "CostCenter":""
+    }
+    
+    
+];
+export const cycleCount2Data: Object[] = [
+    {
+        "ItemNumber":"55437754",
+        "Description":"Cogged V-Belt",
+        "StorageBin":"D - 02 - A",
+        "WBSElement":"",
+        "UOM":"EACH",
+        "OnHandQty":" 0",
+        "CostCenter":""
+    },
+    {
+        "ItemNumber":"55430224",
+        "Description":"Ratchet Repair Kit",
+        "StorageBin":"D - 02 - A",
+        "WBSElement":"",
+        "UOM":"EACH",
+        "OnHandQty":" 0",
+        "CostCenter":""
+    },
+    {
+        "ItemNumber":"55433224",
+        "Description":"Sanders and Polishers",
+        "StorageBin":"D - 02 - A",
+        "WBSElement":"",
+        "UOM":"EACH",
+        "OnHandQty":" 0",
+        "CostCenter":""
+    },
+    {
+        "ItemNumber":"55665224",
+        "Description":"Motor and Throttle Kit",
+        "StorageBin":"D - 02 - A",
+        "WBSElement":"",
+        "UOM":"EACH",
+        "OnHandQty":" 0",
+        "CostCenter":""
+    },
+    
+    
+];

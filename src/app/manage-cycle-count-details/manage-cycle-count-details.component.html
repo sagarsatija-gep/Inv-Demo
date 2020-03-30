@@ -1,0 +1,79 @@
+<div class="purcesDetais">
+  <!-- <div>
+      <ul class="breadcrumb">
+          <li><a href="#">Manage Transaction</a></li>
+          <li><a href="#">Manage Reservation</a></li>
+        </ul>
+  </div> -->
+  <Form-widget [config]='widgetData'></Form-widget>
+  <div class="container-fluid border border-secondary rounded-sm mt-4 bg-white" style="margin-bottom: 40px;">
+    <div class="row">
+      <div class="col-sm-12 pt-3">
+       
+
+        <ejs-grid #grid [dataSource]='data' [selectionSettings]='selectionSettings' [enableHover]='false' [editSettings]='editSettings'  allowSorting="true" 
+           [pageSettings]='pageSettings' height="320" (dataBound)='dataBound()'
+          (created)='created()' (load)='load()'>
+          <e-columns>
+            <e-column type='checkbox' [allowFiltering]='false' [allowSorting]='false' width='40'></e-column>
+            <e-column headerText='Item Number' field='ItemNumber' textAlign='center' width='100'>
+              <!-- <ng-template #template let-data>
+                <div class="image">
+                  <ngx-barcode [bc-format]="CODE128" [bc-height]="30" [bc-width]="2" [bc-value]="data.ItemNumber"
+                    [bc-display-value]="false"></ngx-barcode>
+                </div>
+
+              </ng-template> -->
+            </e-column>
+            <e-column field='Description' headerText='Description' width='100'></e-column>
+            <!-- <e-column field='AisleNumber' headerText='Aisle Number' width='100'></e-column>
+            <e-column field='RackNumber' headerText='Rack Number' width='100'></e-column>
+            <e-column field='BinNumber' headerText='Bin Number' width='100'></e-column> -->
+            <e-column field='StorageBin' headerText='Storage Bin' width='100'></e-column>
+            <e-column field='UOM' headerText='UOM' width='80'></e-column>
+              <e-column field='OnHandQty' headerText='Physical Quantity' width='100'>
+                <ng-template #template let-data>
+                  <input type="text" placeholder="On-Hand Qty" value="{{data.OnHandQty}}">
+                </ng-template>
+              </e-column>
+              <e-column headerText='    ' width='20'>
+                <ng-template #template let-data>
+                  <i style="cursor: pointer;" class="fa fa-trash" aria-hidden="true"></i>
+                </ng-template>
+              </e-column>
+           
+            
+            <!-- <e-column field='SBin' headerText='S. Bin' width='80'></e-column> -->
+          </e-columns>
+        </ejs-grid>
+     
+      </div>
+    </div>
+  </div>
+</div>
+<footer class="poFooter bg-white">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-6">
+        <button class="btn btn-white text-uppercase rounded-0">
+          <!-- Print Preview -->
+        </button>
+      </div>
+      <div class="col-sm-5 text-right">
+        <button class="btn btn-white text-uppercase rounded-0">
+          Cancel
+        </button>
+        <!-- <button (click)="print()"  class="btn btn-primary text-white text-uppercase shadow rounded-0">
+          Print Barcode
+        </button>
+        <button (click)="printRfid()"  class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;">
+          Print RFID Tags
+        </button> -->
+        <button [routerLink]="['/manageCycleCountRequests']"   class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;"
+          >
+          Counted
+        </button>
+      </div>
+    </div>
+  </div>
+</footer>

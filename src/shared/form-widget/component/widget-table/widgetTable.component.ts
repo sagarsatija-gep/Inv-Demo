@@ -33,6 +33,12 @@ export class WidgetTable implements OnInit, OnDestroy {
                 
                 this.data.values.map((data,index)=>{
                     this.data.values[index][5].value = this.data.values[index][5].value1;
+                    this.data.values = this.data.values1;
+                })
+            }
+            else{
+                this.data.values.map((data,index)=>{
+                    this.data.values = this.data.values1;
                 })
             }
         })

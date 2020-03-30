@@ -59,8 +59,13 @@ import { barcodePopup } from '../shared/popUpComponent/barcodePopup/barcodePopup
 import { NgbdModalContent3 } from '../shared/form-widget/component/widget-table/widgetTable.component';
 import { ManageCycleCountRequestsComponent } from './manage-cycle-count-requests/manage-cycle-count-requests.component';
 import { CycleCountListViewComponent } from './cycle-count-list-view/cycle-count-list-view.component';
+import { ManageCycleCountDetailsComponent } from './manage-cycle-count-details/manage-cycle-count-detailscomponent';
+import { ManageCycleCountDetails2Component } from './manage-cycle-count-details2/manage-cycle-count-details2.component';
 import { MaterialDiscrepancyComponent } from './material-discrepancy/material-discrepancy.component';
 import { DiscrepancyDocumentComponent } from './discrepancy-document/discrepancy-document.component';
+import { CreateMaterialRequestFormComponent } from './create-material-request-form/create-material-request-form.component';
+import { ManageMaterialRequestsComponent } from './manage-material-requests/manage-material-requests.component';
+import { CreateMaterialRequestComponent } from './create-material-request/create-material-request.component';
 
 @NgModule({
   declarations: [
@@ -107,8 +112,13 @@ import { DiscrepancyDocumentComponent } from './discrepancy-document/discrepancy
     NgbdModalContent3,
     ManageCycleCountRequestsComponent,
     CycleCountListViewComponent,
+    ManageCycleCountDetailsComponent,
+    ManageCycleCountDetails2Component,
     MaterialDiscrepancyComponent,
-    DiscrepancyDocumentComponent
+    DiscrepancyDocumentComponent,
+    CreateMaterialRequestFormComponent,
+    ManageMaterialRequestsComponent,
+    CreateMaterialRequestComponent
   ],
   imports: [
     CommonModule,

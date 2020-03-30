@@ -11,118 +11,125 @@ export class SideNavComponent implements OnInit {
   opened: boolean = true;
   open: boolean = true;
   @ViewChild('sidenav') graph;
-  clicked(e){
-    if(e){
-      this.open=!this.open;
+  clicked(e) {
+    if (e) {
+      this.open = !this.open;
     }
-    
+
   }
 
   sideNav = [{
     icon: "#icon_DashboardRe",
     name: "Home",
-    link:"home",
-    dropdown:false,
-    
-  },{
+    link: "home",
+    dropdown: false,
+
+  }, {
     icon: "#icon_DashboardRe",
     name: "Dashboard",
     link: "dashboard",
-    dropdown:true,
-    sideMenu:[
+    dropdown: true,
+    sideMenu: [
       {
-        name:"Inventory Visibility",
-        value:"dashboard"
+        name: "Inventory Visibility",
+        value: "dashboard"
       },
       {
-        name:"Inventory Planning",
-        value:"dashboard"
+        name: "Inventory Planning",
+        value: "dashboard"
       }
-       ]
- 
+    ]
+
   },
   {
-    icon: "#icon_Analyze", 
+    icon: "#icon_Analyze",
     name: "Manage Transactions",
-    link:"manageReservations",
-    dropdown:true,
-    sideMenu:[
+    link: "manageReservations",
+    dropdown: true,
+    sideMenu: [
       {
-        name:"Manage Reservations",
-        value:"manageReservations"
+        name: "Manage Reservations",
+        value: "manageReservations"
       },
       {
-        name:"Manage Packing Slip",
-        value:"managePackingList"
+        name: "Manage Packing Slip",
+        value: "managePackingList"
       },
       {
-        name:"Manage Pick List",
-        value:"managePicklist"
+        name: "Manage Pick List",
+        value: "managePicklist"
       },
       {
-        name:"Manage Goods Issue/Reversal",
-        value:"goods"
+        name: "Manage Goods Issue/Reversal",
+        value: "goods"
       },
       {
-        name:"Material Discrepancy",
-        value:"manage-discrepancy"
+        name: "Material Discrepancy",
+        value: "manage-discrepancy"
+      },
+      {
+        name: "Manage Material Requests",
+        value: "manageMaterialRequests"
       }
-     
     ]
-    
+
   },
   {
     icon: "#icon_Notificatio",
     name: "Create Transactions",
-    link:"createtransactions",
-    dropdown:true,
-    sideMenu:[
+    link: "createtransactions",
+    dropdown: true,
+    sideMenu: [
       {
-        name:"Goods Receipt",
-        value:"poGoodsReceipt"
+        name: "Goods Receipt",
+        value: "poGoodsReceipt"
       },
       {
-        name:"Goods Issue",
-        value:"goods"
+        name: "Goods Issue",
+        value: "goods"
       },
       {
-        name:"Request for Goods Issue",
-        value:"manageGoodsIssue"
+        name: "Request for Goods Issue",
+        value: "manageGoodsIssue"
       },
       {
-        name:"Cycle Count",
-        value:""
+        name: "Create Material Request Form",
+        value: "createMaterialRequestForm"
       },
       {
-        name:"Stock Transfer",
-        value:"internalstocktransfer"
+        name: "Cycle Count",
+        value: ""
       },
       {
-        name:"Issue Log",
-        value:""
+        name: "Stock Transfer",
+        value: "internalstocktransfer"
       },
       {
-        name:"Stock Movement",
-        value:""
+        name: "Issue Log",
+        value: ""
+      },
+      {
+        name: "Stock Movement",
+        value: ""
       }
     ]
   },
   {
     icon: "#icon_Supplier",
     name: "Current Stock Balance",
-    link:"currentstockbalance",
-    dropdown:false
+    link: "currentstockbalance",
+    dropdown: false
   }, {
     icon: "#icon_Settings",
     name: "Reports",
-    link:"purchaseDetails",
-    dropdown:false
+    link: "purchaseDetails",
+    dropdown: false
   },
   {
     icon: "#icon_Settings",
     name: "Inventory Setup",
-    link:"inventorysetup",
-    dropdown:false
+    link: "inventorysetup",
+    dropdown: false
   }
   ];
 

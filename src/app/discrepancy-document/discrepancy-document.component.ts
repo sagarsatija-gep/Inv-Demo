@@ -65,19 +65,19 @@ export class DiscrepancyDocumentComponent implements OnInit {
     {
       type: 'text',
       name: 'Create Date',
-      value: '5-3-20',
+      value: '03-05-2020',
       editable: true,
     },
     {
       type: 'text',
       name: 'Posting Date',
-      value: 'nbnbn',
+      value: '03-08-2020',
       editable: true,
     },
     {
       type: 'text',
       name: 'Seller Name',
-      value: 'vhghjvjh',
+      value: 'Emily',
       editable: true,
     },
     {

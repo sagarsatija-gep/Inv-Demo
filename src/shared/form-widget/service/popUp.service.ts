@@ -355,24 +355,24 @@ export class PopUpService {
             [
                 {
                     type: 'checkbox',
-                    value: 'false'
+                    value: 'false' 
                 },
                 {
                     type: 'text',
                     value: 'Contaier-54432',
+                    tdClasses: 'text-left' 
+                },
+                {
+                    type: 'text',
+                    value: '59867631',
                     tdClasses: 'text-left'
                 },
                 {
                     type: 'text',
-                    value: '1025180',
-                    tdClasses: 'text-left'
+                    value: 'KIT,ANALYSIS,HEATER TUBE & FILTER,MFR UN '
                 },
                 {
-                    type: 'text',
-                    value: 'Tube, Bourdon'
-                },
-                {
-                    type: 'text',
+                    type: 'textbox',
                     value: '20',
                     tdClasses: 'text-left'
                 },
@@ -434,19 +434,19 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left'
-
+      
                 },
                 {
                     type: 'text',
-                    value: '2063777',
+                    value: '53987943',
                     tdClasses: 'text-left'
                 },
                 {
                     type: 'text',
-                    value: 'Lead Piping'
+                    value: 'MILLIPORE AAWP04700'
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '25',
                     tdClasses: 'text-left'
                 },
@@ -511,15 +511,15 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: '1010151',
+                    value: '55689678',
                     tdClasses: 'text-left'
                 },
                 {
                     type: 'text',
-                    value: 'Milwaukee Tool'
+                    value: 'BRACKET ASSEMBLY'
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '30',
                     tdClasses: 'text-left'
                 },
@@ -584,15 +584,15 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: '2030539',
+                    value: '54688622',
                     tdClasses: 'text-left'
                 },
                 {
                     type: 'text',
-                    value: 'Morse Cutting Tool'
+                    value: 'Electric Tool 48-20-5030'
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '20',
                     tdClasses: 'text-left'
                 },
@@ -654,19 +654,19 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left'
-
+      
                 },
                 {
                     type: 'text',
-                    value: '2044808',
+                    value: '53257890',
                     tdClasses: 'text-left'
                 },
                 {
                     type: 'text',
-                    value: 'Dewalt – Saw Blade'
+                    value: 'Morse Cutting Tools 82062'
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '20',
                     tdClasses: 'text-left'
                 },
@@ -728,19 +728,19 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left'
-
+      
                 },
                 {
                     type: 'text',
-                    value: '2044808',
+                    value: '53219023',
                     tdClasses: 'text-left'
                 },
                 {
                     type: 'text',
-                    value: 'Dewalt – Saw Blade'
+                    value: 'E-MONT_KS-PANZERROHR_DN20'
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '20',
                     tdClasses: 'text-left'
                 },
@@ -810,10 +810,10 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Dewalt – Saw Blade'
+                    value: 'VALVE, GLOBE 3/4 BLACK HANDLE'
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '20',
                     tdClasses: 'text-left'
                 },
@@ -875,7 +875,7 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left',
-
+      
                 },
                 {
                     type: 'text',
@@ -884,10 +884,10 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Lead Piping',
+                    value: 'CHAIN,SAFETY,WROUGHT BRASS,NO. 0 .023 GA ',
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '25',
                     tdClasses: 'text-left'
                 },
@@ -949,7 +949,7 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left',
-
+      
                 },
                 {
                     type: 'text',
@@ -958,10 +958,10 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Lead Piping',
+                    value: 'CHAIN,SAFETY,WROUGHT WEDGE',
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '25',
                     tdClasses: 'text-left'
                 },
@@ -1023,7 +1023,7 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left',
-
+      
                 },
                 {
                     type: 'text',
@@ -1032,10 +1032,10 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Lead Piping',
+                    value: 'DOUGLAS FIR,1 CMMN,1',
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '25',
                     tdClasses: 'text-left'
                 },
@@ -1097,7 +1097,7 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left',
-
+      
                 },
                 {
                     type: 'text',
@@ -1106,10 +1106,10 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Lead Piping',
+                    value: 'WIRE ROPE 1/2" (6X19) 304 SS',
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '25',
                     tdClasses: 'text-left'
                 },
@@ -1171,7 +1171,7 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left',
-
+      
                 },
                 {
                     type: 'text',
@@ -1180,10 +1180,10 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Lead Piping',
+                    value: 'CLAY,SOLID,BAG,30/60',
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '25',
                     tdClasses: 'text-left'
                 },
@@ -1245,7 +1245,7 @@ export class PopUpService {
                     type: 'text',
                     value: 'Contaier-54432',
                     tdClasses: 'text-left',
-
+      
                 },
                 {
                     type: 'text',
@@ -1254,10 +1254,10 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Lead Piping',
+                    value: 'WIRE,ANNEALED,304 SS,.063IN',
                 },
                 {
-                    type: 'text',
+                    type: 'textbox',
                     value: '25',
                     tdClasses: 'text-left'
                 },
@@ -1311,7 +1311,7 @@ export class PopUpService {
                 }
             ]
         ]
-    }
+      }
 
     barCodes = [];
 
@@ -1343,11 +1343,12 @@ export class PopUpService {
     }
 
     convertBarcodeScanetoArray(barcodes) {
+        barcodes = "*00000000000000000A101058**E69FA0FA2C6FA0FA2C6F80CB**3833333132393337**E2801160600002052A5B5541**3239343738313139**3531313832393339*";
         this.barCodes = barcodes.split("*").filter(data => data != "");
     }
 
     filteredExternalTableData() {
-        this.apiCallForBarCodeNumber();
+        // this.apiCallForBarCodeNumber();
         const RFC_COLUMN = this.externalTableData.colConfig.length;
         return {
             ...this.externalTableData,
@@ -1387,5 +1388,10 @@ export class PopUpService {
     barCodePopUpDataForAssetDataChange(value) {
         this.barCodePopUpDataForAsset.next(this.selectedInputForAsset);
     }
+
+    barCodePopUpDataForLinesDataChange(value) {
+        this.barCodePopUpDataForAsset.next(this.selectedInputForAsset);
+    }
+
 
 }

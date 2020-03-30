@@ -28,7 +28,7 @@ export class AppComponent implements OnInit, OnDestroy {
         setTimeout(() => {
           debugger;
           this.showToast = false;          
-        }, 3000);
+        }, 10000);
       }
       
     })
@@ -48,7 +48,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   rfidPopUp() {
-        const modalRef = this.modalService.open(RfidPopUpComponent, { size: 'sm' });
+        const modalRef = this.modalService.open(RfidPopUpComponent, { size: 'lg' });
         modalRef.componentInstance.name = this.rfidData;
   }
   

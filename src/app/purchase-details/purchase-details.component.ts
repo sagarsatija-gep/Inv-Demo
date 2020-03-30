@@ -187,7 +187,7 @@ export class PurchaseDetailsComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '01/31/2020',
+                      value: '02/10/2020',
                       tdClasses: 'text-left'
                     },
                     // {
@@ -241,7 +241,7 @@ export class PurchaseDetailsComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '01/31/2020',
+                      value: '02/10/2020',
                       tdClasses: 'text-left'
                     },
                     // {
@@ -297,7 +297,7 @@ export class PurchaseDetailsComponent implements OnInit {
                     },
                     {
                       type: 'text',
-                      value: '01/31/2020',
+                      value: '02/10/2020',
                       tdClasses: 'text-left'
                     },
                     // {
@@ -314,49 +314,49 @@ export class PurchaseDetailsComponent implements OnInit {
                     //   type: 'checkbox',
                     //   value: 'false',
                     // },
-                    {
-                      type: 'text',
-                      value: '4',
-                    },
-                    {
-                      type: 'text',
-                      value: '2044808',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Dewalt DW4701- Saw Blade',
-                      tdClasses: 'text-left'
-                    },
-                    {
-                      type: 'text',
-                      value: '800720',
-                    },
-                    {
-                      type: 'text',
-                      value: 'Piece',
-                    },
-                    {
-                      type: 'text',
-                      value: '80',
-                      // tdClasses: 'text-right'
-                    },
-                    {
-                      type: 'text',
-                      value: '80',
-                      // tdClasses: 'text-right'
-                    },
-                    {
-                      type: 'text',
-                      value: '80',
-                      // tdClasses: 'text-right'
-                      // classes: 'input-small rounded-sm border-secondary text-right'
-                    },
-                    {
-                      type: 'text',
-                      value: '01/31/2020',
-                      tdClasses: 'text-left'
-                    },
                     // {
+                    //   type: 'text',
+                    //   value: '4',
+                    // },
+                    // {
+                    //   type: 'text',
+                    //   value: '2044808',
+                    // },
+                    // {
+                    //   type: 'text',
+                    //   value: 'Dewalt DW4701- Saw Blade',
+                    //   tdClasses: 'text-left'
+                    // },
+                    // {
+                    //   type: 'text',
+                    //   value: '800720',
+                    // },
+                    // {
+                    //   type: 'text',
+                    //   value: 'Piece',
+                    // },
+                    // {
+                    //   type: 'text',
+                    //   value: '80',
+                    //   // tdClasses: 'text-right'
+                    // },
+                    // {
+                    //   type: 'text',
+                    //   value: '80',
+                    //   // tdClasses: 'text-right'
+                    // },
+                    // {
+                    //   type: 'text',
+                    //   value: '80',
+                    //   // tdClasses: 'text-right'
+                    //   // classes: 'input-small rounded-sm border-secondary text-right'
+                    // },
+                    // {
+                    //   type: 'text',
+                    //   value: '02/10/2020',
+                    //   tdClasses: 'text-left'
+                    // },
+                    // // {
                     //   type: 'toggle',
                     //   value: false,
                     // },
@@ -385,7 +385,7 @@ export class PurchaseDetailsComponent implements OnInit {
             {
               type: 'text',
               name: 'Expected Delivery Date',
-              values: '01/31/2020',
+              values: '02/10/2020',
             },
             {
               type: 'text',
@@ -554,7 +554,7 @@ export class PurchaseDetailsComponent implements OnInit {
                 // },
                 // {
                 //   type: 'text',
-                //   value: '01/31/2020',
+                //   value: '02/10/2020',
                 //   tdClasses: 'text-left'
                 // },
                 // {
