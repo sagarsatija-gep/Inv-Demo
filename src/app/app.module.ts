@@ -67,6 +67,7 @@ import { DiscrepancyDocumentComponent } from './discrepancy-document/discrepancy
 import { CreateMaterialRequestFormComponent } from './create-material-request-form/create-material-request-form.component';
 import { ManageMaterialRequestsComponent } from './manage-material-requests/manage-material-requests.component';
 import { CreateMaterialRequestComponent } from './create-material-request/create-material-request.component';
+import { DashboardOverviewComponent } from './dashboard-overview/dashboard-overview.component';
 
 @NgModule({
   declarations: [
@@ -119,7 +120,8 @@ import { CreateMaterialRequestComponent } from './create-material-request/create
     DiscrepancyDocumentComponent,
     CreateMaterialRequestFormComponent,
     ManageMaterialRequestsComponent,
-    CreateMaterialRequestComponent
+    CreateMaterialRequestComponent,
+    DashboardOverviewComponent
   ],
   imports: [
     CommonModule,

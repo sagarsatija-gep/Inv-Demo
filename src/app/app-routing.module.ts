@@ -1,3 +1,4 @@
+import { DashboardOverviewComponent } from './dashboard-overview/dashboard-overview.component';
 import { ExternalStockTransfer } from './external-stock-transfer/externalStockTransfer.component';
 import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
 import { PurchaseDetailsComponent } from './purchase-details/purchase-details.component';
@@ -59,6 +60,7 @@ const routes: Routes = [
   { path: 'createMaterialRequestForm', component: CreateMaterialRequestFormComponent },
   { path: 'manageMaterialRequests', component: ManageMaterialRequestsComponent },
   { path: 'createMaterialRequest', component: CreateMaterialRequestComponent },
+  { path: 'materialOverview', component: DashboardOverviewComponent }
 ];
 
 @NgModule({
