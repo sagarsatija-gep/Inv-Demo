@@ -61,13 +61,69 @@ export class GoogleMapsComponent {
 
   filters = [
     {
-      filterName: 'Organization'
+      filterName: 'Organization',
+      options: [
+        {
+          name: 'Global',
+          selected: true,
+          values: [
+            {
+              name: 'NA',
+              selected: true
+            },
+            {
+              name: 'LA',
+              selected: true
+            },
+            {
+              name: 'AP',
+              selected: true
+            }
+          ]
+        }
+      ]
     },
     {
-      filterName: 'Category'
+      filterName: 'Category',
+      options: [
+        {
+          name: 'MRO',
+          selected: true
+        },
+        {
+          name: 'Civil, Infrastructure',
+          selected: false
+        },
+        {
+          name: 'Chemical',
+          selected: false
+        },
+        {
+          name: 'Others',
+          selected: false
+        }
+      ]
     },
     {
-      filterName: 'Location'
+      filterName: 'Location',
+      options: [
+        {
+          name: 'Refineries',
+          selected: true
+        },
+        {
+          name: 'Distribution Centers',
+          selected: true
+        },
+        {
+          name: 'Retail Outlets',
+          selected: true
+        },
+        {
+          name: 'Customer Locations',
+          selected: true
+        }
+      ]
     }
   ]
 
