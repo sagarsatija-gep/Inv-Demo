@@ -1,0 +1,23 @@
+<div>
+    <div>
+        {{config.heading}}
+    </div>
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <td *ngFor="let colValue of config.columns">
+                        {{colValue.name}}
+                    </td>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let rowData of config.rowData">
+                    <td *ngFor="let rowValue of rowData">
+                        {{rowValue}}
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -10,7 +10,7 @@ import { Subscription } from 'rxjs';
 @Component({
     selector: 'external-stock-transfer',
     templateUrl: './externalStockTransfer.component.html',
-    styleUrls: ['./externalStockTransfer.component.scss']
+    styleUrls: ['./externalStockTransfer.component.css']
 })
 export class ExternalStockTransfer implements OnInit {
 
