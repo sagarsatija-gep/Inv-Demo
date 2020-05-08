@@ -5,7 +5,7 @@ import { MouseEvent } from '@agm/core';
   templateUrl: './google-maps.component.html',
   styleUrls: ['./google-maps.component.css']
 })
-export class GoogleMapsComponent   {
+export class GoogleMapsComponent {
   // google maps zoom level
   zoom: number = 8;
 
@@ -13,115 +13,129 @@ export class GoogleMapsComponent   {
   // initial center position for the map
   lat: number = 51.673858;
   lng: number = 7.815982;
-  locations=[
+  locations = [
     {
-      name:"Refineries",
-      value:"8",
-      color:"green"
+      name: "Refineries",
+      value: "8",
+      color: "green"
     },
     {
-      name:"Distribution Centers",
-      value:"2",
-      color:"blue"
+      name: "Distribution Centers",
+      value: "2",
+      color: "blue"
     },
     {
-      name:"Retail Outlets",
-      value:"5",
-      color:"purple"
+      name: "Retail Outlets",
+      value: "5",
+      color: "purple"
     },
     {
-      name:"Customer Locations",
-      value:"2",
-      color:"red"
+      name: "Customer Locations",
+      value: "2",
+      color: "red"
     }
   ]
 
-  items=[
+  items = [
     {
-      name:"Low Inventory",
-      value:"8",
-      color:"purple"
+      name: "Low Inventory",
+      value: "8",
+      color: "purple"
     },
     {
-      name:"Overstocked",
-      value:"987",
-      color:"blue"
+      name: "Overstocked",
+      value: "987",
+      color: "blue"
     },
     {
-      name:"Products Line",
-      value:"1843",
-      color:"green"
+      name: "Products Line",
+      value: "1843",
+      color: "green"
     },
     {
-      name:"Categories",
-      value:"886",
-      color:"red"
+      name: "Categories",
+      value: "886",
+      color: "red"
     }
   ]
+
+  filters = [
+    {
+      filterName: 'Organization'
+    },
+    {
+      filterName: 'Category'
+    },
+    {
+      filterName: 'Location'
+    }
+  ]
+
+  filterValues = ['Refineries', 'Retail outlets', 'Distribution centers', 'MRO', 'Global'];
 
   clickedMarker(label: string, index: number) {
     console.log(`clicked the marker: ${label || index}`)
   }
-  
+
   mapClicked($event: MouseEvent) {
     this.markers.push({
       lat: $event.coords.lat,
       lng: $event.coords.lng,
       draggable: true,
-      iconUrl:""
+      iconUrl: ""
     });
   }
-  
+
   markerDragEnd(m: marker, $event: MouseEvent) {
     console.log('dragEnd', m, $event);
   }
-  
+
   markers: marker[] = [
-	  {
-		  lat: 51.673858,
-		  lng: 7.815982,
-		  label: 'A',
+    {
+      lat: 51.673858,
+      lng: 7.815982,
+      label: 'A',
       draggable: true,
-      iconUrl:"http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
-	  },
-	  {
-		  lat: 51.373858,
-		  lng: 7.215982,
-		  label: 'B',
+      iconUrl: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
+    },
+    {
+      lat: 51.373858,
+      lng: 7.215982,
+      label: 'B',
       draggable: false,
-      iconUrl:"http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
-	  },
-	  {
-		  lat: 51.723858,
-		  lng: 7.895982,
-		  label: 'C',
-      draggable: true,
-      iconUrl:"http://maps.google.com/mapfiles/ms/icons/green-dot.png"
+      iconUrl: "http://maps.google.com/mapfiles/ms/icons/blue-dot.png"
     },
     {
-		  lat: 51.723858,
-		  lng: 6.895982,
-		  label: 'D',
+      lat: 51.723858,
+      lng: 7.895982,
+      label: 'C',
       draggable: true,
-      iconUrl:"http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
+      iconUrl: "http://maps.google.com/mapfiles/ms/icons/green-dot.png"
     },
     {
-		  lat: 50.723858,
-		  lng: 7.895982,
-		  label: 'E',
+      lat: 51.723858,
+      lng: 6.895982,
+      label: 'D',
       draggable: true,
-      iconUrl:"http://maps.google.com/mapfiles/ms/icons/red-dot.png"
+      iconUrl: "http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
     },
-    
-    
+    {
+      lat: 50.723858,
+      lng: 7.895982,
+      label: 'E',
+      draggable: true,
+      iconUrl: "http://maps.google.com/mapfiles/ms/icons/red-dot.png"
+    },
+
+
   ]
 }
 
 // just an interface for type safety.
 interface marker {
-	lat: number;
-	lng: number;
-	label?: string;
+  lat: number;
+  lng: number;
+  label?: string;
   draggable: boolean;
-  iconUrl:string
+  iconUrl: string
 }

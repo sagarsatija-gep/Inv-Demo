@@ -1,0 +1,23 @@
+<div class="dropdown scd-dropdown">
+  <button class="btn" type="button" id="mainDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    {{ config.filterName }}
+    <img src="../../assets/images/dropdownBlack.png" alt="">
+  </button>
+  <div class="dropdown-menu" aria-labelledby="mainDropdown">
+    <input type="text" name="search" placeholder="Search">
+    <div class="dropdown-item">
+      <label (click)="stopClosing($event)">Option
+        <input type="checkbox" checked="checked">
+        <span class="checkmark"></span>
+      </label>
+      <i class="fa fa-caret-right" type="button" aria-hidden="true" data-toggle="collapse"
+        data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></i>
+      <div class="collapse show" id="collapseExample">
+        <label (click)="stopClosing($event)">Option
+          <input type="checkbox" checked="checked">
+          <span class="checkmark"></span>
+        </label>
+      </div>
+    </div>
+  </div>
+</div>

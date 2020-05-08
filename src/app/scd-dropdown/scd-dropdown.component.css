@@ -1,0 +1,103 @@
+.scd-dropdown button {
+    border: 1px solid #E3E5EA;
+    width: 100%;
+    text-align: left;
+}
+
+.scd-dropdown img {
+    float: right;
+    padding: 7px 5px;
+}
+
+.scd-dropdown .dropdown-menu {
+    width: 100%;
+}
+
+.scd-dropdown input[type="text"] {
+    width: 96%;
+    margin: 0 2%;
+    box-sizing: border-box;
+    border: 1px solid #EEF0F4;
+    border-radius: 4px;
+    font-size: 16px;
+    background-image: url('../../assets/images/whiteSearch.png');
+    background-color: white;
+    background-size: 25px;
+    background-position: 98% 5px;
+    background-repeat: no-repeat;
+    padding: 6px 40px 6px 10px;
+}
+
+
+.scd-dropdown .dropdown-item {
+    padding: 0 .5rem;
+    position: relative;
+}
+
+.scd-dropdown .dropdown-item i {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    color: #9DA4AA;
+}
+
+.scd-dropdown .dropdown-item label {
+    display: block;
+    position: relative;
+    padding: 10px 45px;
+    margin-bottom: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+.scd-dropdown .dropdown-item label input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 10px;
+    left: 9px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+}
+
+.scd-dropdown .dropdown-item label:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.scd-dropdown .dropdown-item label input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.scd-dropdown .dropdown-item label input:checked~.checkmark:after {
+    display: block;
+}
+
+.scd-dropdown .dropdown-item label .checkmark:after {
+    left: 8px;
+    top: 4px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.scd-dropdown .collapse {
+    padding-left: 30px;
+    position: relative;
+}
