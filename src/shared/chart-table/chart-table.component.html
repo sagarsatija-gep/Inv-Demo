@@ -6,13 +6,13 @@
         <table>
             <thead>
                 <tr>
-                    <td *ngFor="let colValue of config.columns">
+                    <td *ngFor="let colValue of config.colValue">
                         {{colValue.name}}
                     </td>
                 </tr>
             </thead>
             <tbody>
-                <tr *ngFor="let rowData of config.rowData">
+                <tr *ngFor="let rowData of config.rowValue">
                     <td *ngFor="let rowValue of rowData">
                         {{rowValue}}
                     </td>

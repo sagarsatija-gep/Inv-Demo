@@ -14,6 +14,9 @@ import { ChartTableComponent } from './chart-table/chart-table.component';
         BrowserModule,
         FormWidget
     ],
-    providers:[]
+    providers:[],
+    exports: [
+        ChartTableComponent
+    ]
 }) 
 export class Shared {}

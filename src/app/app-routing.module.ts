@@ -27,7 +27,7 @@ import { ManageMaterialRequestsComponent } from './manage-material-requests/mana
 import { CreateMaterialRequestComponent } from './create-material-request/create-material-request.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '1', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'packingslipcamera', component: PackingSlipCameraComponent },
   { path: 'manageReservations', component: ManageReservationsComponent },

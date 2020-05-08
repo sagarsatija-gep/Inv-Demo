@@ -6,11 +6,11 @@ import { Component, OnInit } from "@angular/core";
     styleUrls: ['./chart-table.component.scss']
 })
 export class ChartTableComponent implements OnInit {
-config;
+    config;
     ngOnInit() {
         console.log("hu");        
         this.config = {
-            "heading": '',
+            "heading": 'Material',
             "colValue": [
                 {
                     name: 'Item'
@@ -24,7 +24,7 @@ config;
                 {
                     name: 'Current Stock'
                 }
-            ] ,
+            ],
             "rowValue": [
                 [ "a", "b", "c", "d"],
                 [ "a", "b", "c", "d"],
