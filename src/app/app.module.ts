@@ -67,6 +67,7 @@ import { CreateMaterialRequestFormComponent } from './create-material-request-fo
 import { ManageMaterialRequestsComponent } from './manage-material-requests/manage-material-requests.component';
 import { CreateMaterialRequestComponent } from './create-material-request/create-material-request.component';
 import { ScdDropdownComponent } from './scd-dropdown/scd-dropdown.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -145,6 +146,7 @@ import { ScdDropdownComponent } from './scd-dropdown/scd-dropdown.component';
       apiKey: 'AIzaSyDRSpfba5rdNqT0RAcD4cvdUaLOk2-Bzic',
       libraries: ['places']
     }),
+    Ng2SearchPipeModule
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService, NgbActiveModal],
   bootstrap: [AppComponent],

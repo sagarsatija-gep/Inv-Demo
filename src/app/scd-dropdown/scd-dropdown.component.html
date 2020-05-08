@@ -5,8 +5,8 @@
   </button>
   <ng-container *ngIf="config.options">
     <div class="dropdown-menu" aria-labelledby="mainDropdown">
-      <input type="text" name="search" placeholder="Search">
-      <div class="dropdown-item" *ngFor="let option of config.options">
+      <input type="text" name="search" placeholder="Search" [(ngModel)]="searchTerm">
+      <div class="dropdown-item" *ngFor="let option of config.options | filter:searchTerm">
         <label (click)="stopClosing($event)">{{ option.name }}
           <input type="checkbox" [checked]="option.selected" (change)="option.selected = !option.selected">
           <span class="checkmark"></span>
@@ -14,7 +14,7 @@
         <i class="fa fa-caret-right" *ngIf="option.values" type="button" aria-hidden="true" data-toggle="collapse"
           data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample"></i>
         <div class="collapse show" id="collapseExample">
-          <label (click)="stopClosing($event)" *ngFor="let value of option.values">{{ value.name }}
+          <label (click)="stopClosing($event)" *ngFor="let value of option.values | filter:searchTerm">{{ value.name }}
             <input type="checkbox" [checked]="value.selected" (change)="value.selected = !value.selected" />
             <span class="checkmark"></span>
           </label>
