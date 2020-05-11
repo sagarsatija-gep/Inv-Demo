@@ -28,7 +28,7 @@ export class DashboardComponent implements OnInit {
     },
     options: [
       {
-        name: 'Others'
+        name: 'Action'
       }
     ]
   }
