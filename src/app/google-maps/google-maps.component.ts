@@ -7,12 +7,12 @@ import { MouseEvent } from '@agm/core';
 })
 export class GoogleMapsComponent   {
   // google maps zoom level
-  zoom: number = 8;
+  zoom: number = 5;
 
 
   // initial center position for the map
-  lat: number = 51.673858;
-  lng: number = 7.815982;
+  lat: number = 34.5199;
+  lng: number = -105.8701;
   locations=[
     {
       name:"Refineries",
@@ -106,12 +106,33 @@ export class GoogleMapsComponent   {
       iconUrl:"http://maps.google.com/mapfiles/ms/icons/purple-dot.png"
     },
     {
-		  lat: 50.723858,
-		  lng: 7.895982,
-		  label: 'E',
+		  lat: 32.2226,
+		  lng: -110.9747,
+		  label: '',
       draggable: true,
       iconUrl:"http://maps.google.com/mapfiles/ms/icons/red-dot.png"
     },
+    {
+		  lat: 33.4484,
+		  lng: -112.0740,
+		  label: '',
+      draggable: true,
+      iconUrl:"http://maps.google.com/mapfiles/ms/icons/red-dot.png"
+    },
+    {
+		  lat: 34.0522,
+		  lng: -118.2437,
+		  label: '',
+      draggable: true,
+      iconUrl:"http://maps.google.com/mapfiles/ms/icons/red-dot.png"
+    },
+    {
+		  lat: 32.7157,
+		  lng: -117.1611,
+		  label: '',
+      draggable: true,
+      iconUrl:"http://maps.google.com/mapfiles/ms/icons/red-dot.png"
+    }
     
     
   ]
