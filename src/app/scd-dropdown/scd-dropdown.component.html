@@ -27,7 +27,7 @@
     </ng-container>
   </ng-container>
   <ng-container *ngIf="config.type == 'toggle-button'">
-    <input type="checkbox" [checked]="config.selected" (change)="value.selected = !value.selected" data-toggle="toggle"
+    <input type="checkbox" [checked]="config.selected" (change)="config.selected = !config.selected" data-toggle="toggle"
       data-height="38" [attr.data-width]="config.dataWidth" [attr.data-on]="config.filterName"
       [attr.data-off]="config.filterName" data-size="sm" data-onstyle="outline-primary" [disabled]="config.disabled">
   </ng-container>
