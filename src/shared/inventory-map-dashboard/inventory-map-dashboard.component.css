@@ -1,8 +1,14 @@
-.locations{
-  width: 301px;
+.locations {
+  width: 315px;
   /* position: absolute; */
-  transform: translate(260px,37px);
+  transform: translate(260px, 37px);
   /* z-index: 9; */
+}
+
+.locations li p{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .btn-outline-primary {
@@ -22,18 +28,18 @@
   color: #ffffff !important;
 }
 
-.box{
+.box {
   border-radius: 5px;
   border: 1px solid #e6e6e6;
   padding: 0px 7px;
   height: 50px;
 }
 
-.text-medium{
+.text-medium {
   font-family: 'Roboto Medium';
 }
 
-.text-regular{
+.text-regular {
   font-family: 'Roboto Regular';
 }
 
@@ -47,53 +53,42 @@
   content: "\f0d7";
 } */
 
-.rotateRight{
+.rotateRight {
   transform: rotate(-90deg);
 }
 
-.rotateDown{
+.rotateDown {
   transform: rotate(0deg);
 }
 
-.dropdown-toggle::after{
+.dropdown-toggle::after {
   float: right;
   margin-top: 8px;
 }
 
-.text-gray{
+.text-gray {
   color: #b9bbbf;
 }
 
-.text-dark-gray{
+.text-dark-gray {
   color: #909090;
 }
 
-.border-right{
-  border-right: 1px solid #e6e6e6;;
+.border-right {
+  border-right: 1px solid #e6e6e6;
+  ;
 }
 
 .mat-input-underline.mat-form-field-underline {
   display: none;
 }
 
-.text-12{
+.text-12 {
   font-size: 12px;
 }
 
-.text-18{
+.text-18 {
   font-size: 18px;
-}
-
-.checkboxContainer{
-  font-size: 14px;
-  font-family: 'Roboto Regular';
-  padding-left: 23px;
-  margin-bottom: 10px;
-}
-
-.checkmark {
-  height: 18px;
-  width: 18px;
 }
 
 .checkboxContainer .checkmark:after {
@@ -102,18 +97,92 @@
   height: 8px;
 }
 
-.pointer{
+/* Checkbox */
+/* The container */
+.checkboxContainer {
+  display: block;
+  position: relative;
+  padding-left: 23px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-family: 'Roboto Regular';
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.checkboxContainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 18px;
+  width: 18px;
+  background-color: #ffffff;
+  border: 2px solid gray;
+  border-radius: 2px;
+}
+
+/* On mouse-over, add a grey background color */
+.checkboxContainer:hover input~.checkmark {
+  background-color: #ffffff;
+}
+
+/* When the checkbox is checked, add a blue background */
+.checkboxContainer input:checked~.checkmark {
+  background-color: #0A6FB5;
+  border: 2px solid #0A6FB5;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxContainer input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.checkboxContainer .checkmark:after {
+  top: 2px;
+  left: 5px;
+  width: 4px;
+  height: 8px;
+  border: solid white;
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+.pointer {
   cursor: pointer;
 }
 
-.chartdata .heading-big{
+.chartdata .heading-big {
   font-size: 2.1vw;
   font-family: 'Roboto Medium';
   margin-bottom: 0;
   letter-spacing: 0px;
 }
 
-.chartdata .heading-small{
+.chartdata .heading-small {
   font-size: 1vw;
   color: #8e8e8e;
   font-family: 'Roboto Regular';
@@ -121,14 +190,14 @@
   letter-spacing: 0px;
 }
 
-.chart-data-value-heading{
+.chart-data-value-heading {
   color: #8e8e8e;
   font-family: 'Roboto Medium';
   font-size: 12px;
   letter-spacing: 0px;
 }
 
-.chart-data-value-subheading{
+.chart-data-value-subheading {
   font-size: 16px;
   font-family: 'Roboto Medium';
   letter-spacing: 0px;
@@ -138,21 +207,21 @@
   display: block;
 }
 
-.locationDrop:hover>.arrow{
+.locationDrop:hover>.arrow {
   transform: rotate(-180deg);
 }
 
 .locationDrop>.dropdown-toggle:active {
-    pointer-events: none;
+  pointer-events: none;
 }
 
-.locationDrop .dropdown-toggle::after{
+.locationDrop .dropdown-toggle::after {
   float: none;
   transition-duration: 0.2s;
   transition-timing-function: ease-in-out;
 }
 
-.locationDrop:hover>.dropdown-toggle::after{
+.locationDrop:hover>.dropdown-toggle::after {
   transform: rotate(-180deg);
 }
 
@@ -162,3 +231,11 @@
   background-color: #ffffff;
 }
 
+
+.mat-form-field-infix input {
+  width: 100%;
+}
+
+.form-control {
+  border: 1px solid #ced4da;
+}

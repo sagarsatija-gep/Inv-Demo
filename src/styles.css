@@ -6,6 +6,36 @@
 @import "../node_modules/@syncfusion/ej2/material.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import 'app/goods-issue//goods-issue.component.css';
+
+@font-face {
+  font-family: 'Roboto Regular';
+  src: url('./assets/fonts/Roboto/Roboto-Regular.woff');
+}
+
+@font-face {
+  font-family: 'Roboto Medium';
+  src: url('./assets/fonts/Roboto/Roboto-Medium.woff');
+}
+
+@font-face {
+  font-family: 'Roboto Bold';
+  src: url('./assets/fonts/Roboto/Roboto-Bold.woff');
+}
+
+@font-face {
+  font-family: 'Arial Black';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Arial Black'), url('./assets/fonts/Aerial/ARIBLK.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Poppins Regular';
+  src: url('./assets/fonts/Poppins/poppins-v9-latin-regular.woff');
+}
+
+
+
 body {
   font-family: 'Roboto', sans-serif !important;
   overflow-y: hidden;
@@ -80,4 +110,123 @@ a, a:not([href]) {
 
 .mat-tab-group.mat-primary .mat-ink-bar {
   background-color: #3D5AFE;
+}
+
+
+/* Breadcrumbs */
+.breadcrumb {
+  padding: .75rem 0rem 0rem !important;
+  margin-bottom: 0rem !important;
+  background-color: transparent !important;
+}
+
+nav.breadcrumb ol.breadcrumb .breadcrumb-item a {
+  color: #0A6FB5 !important;
+}
+
+nav.breadcrumb ol.breadcrumb .breadcrumb-item.active {
+  color: #6B6C70 !important;
+}
+
+ol.breadcrumb {
+  font-size: 12px !important;
+  font-family: 'Roboto Regular';
+}
+
+/* Individual Page Headings */
+.pageHeadings {
+  font-size: 26px;
+  font-family: 'Roboto Regular';
+  color: #3E3F42;
+}
+
+/* Cards */
+.card {
+  box-shadow: 0px 1px 0px #EAEDF3;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid rgba(0, 0, 0, .125) !important;
+  border-radius: 0rem !important;
+}
+
+.cardsTitle {
+  font-size: 20px;
+  font-family: 'Roboto Medium';
+}
+
+/* Inputs Placeholders */
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #AAAAAA !important;
+  font-size: 15px;
+  font-family: 'Roboto Regular';
+  opacity: 1;
+  /* Firefox */
+}
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #AAAAAA !important;
+  font-size: 15px;
+  font-family: 'Roboto Regular';
+}
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #AAAAAA !important;
+  font-size: 15px;
+  font-family: 'Roboto Regular';
+}
+
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.checkboxContainer input:checked~.checkmark:after {
+  display: block;
+}
+
+.btn-primary {
+  /* background: #0A6FB5 0% 0% no-repeat padding-box !important; */
+  box-shadow: 0px 1px 1px #161D250D !important;
+  border-radius: 4px !important;
+  /* width: 111px !important; */
+  height: 38px !important;
+  text-align: center !important;
+  letter-spacing: 0px !important;
+  color: #FFFFFF !important;
+  font-family: 'Roboto Medium' !important;
+  font-size: 14px !important;
+  padding: 0px !important;
+  border-width: 0px !important;
+  border-style: none !important;
+  border-color: unset !important;
+  border-image: unset !important;
+  padding: 0px 10px !important;
+  cursor: pointer !important;
+}
+
+.btn-white {
+  height: 38px;
+  background: transparent linear-gradient(0deg, #F6F7F9 0%, #FFFFFF 99%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+  box-shadow: 0px 1px 1px #161D250D;
+  border-radius: 4px;
+  opacity: 1;
+  font-size: 14px !important;
+  font-family: 'Roboto Regular';
+  cursor: pointer !important;
+}
+
+.btn-blue {
+  background-color: #0A6FB5 !important;
+  font-size: 14px;
+  font-family: 'Roboto Regular';
+  color: #ffffff !important;
+  letter-spacing: 0px;
+  height: 38px;
+  cursor: pointer !important;
 }

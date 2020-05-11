@@ -7,6 +7,7 @@ import { ChartTableComponent } from './chart-table/chart-table.component';
 import { InventoryMapDashboardComponent } from './inventory-map-dashboard/inventory-map-dashboard.component';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MatFormFieldModule, MatInputModule } from '@angular/material';
 
 @NgModule({
     declarations:[
@@ -19,7 +20,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
         BrowserModule,
         ReactiveFormsModule,
         FormWidget,
-        NgxChartsModule
+        NgxChartsModule,
+        MatFormFieldModule,
+        MatInputModule
     ],
     providers:[],
     exports: [

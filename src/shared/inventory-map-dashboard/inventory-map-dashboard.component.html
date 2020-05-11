@@ -9,6 +9,17 @@
         </ol>
       </nav>
 
+      <div class="dropdown">
+        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+          Dropdown button
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Link 1</a>
+          <a class="dropdown-item" href="#">Link 2</a>
+          <a class="dropdown-item" href="#">Link 3</a>
+        </div>
+      </div>
+
       <span class="dropdown locationDrop">
         <p class="pageHeadings dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inventory Overview of 
           <span class="display-locations">
@@ -17,7 +28,7 @@
         </p>
 
         <!-- Different Locations -->
-        <ul class="list-unstyled p-3 border locations dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <ul class="list-unstyled py-3 border locations dropdown-menu" aria-labelledby="dropdownMenuButton">
           <li class="dropdown-item my-2 text-medium text-gray">Switch Location to :</li>
           <li *ngFor="let loc of locations" class="dropdown-item mb-4">
             <p class="mb-0 text-blue text-medium">{{loc.text1}}</p>
@@ -46,7 +57,7 @@
         <!-- header -->
         <div class="col-sm-12 text-medium py-2 d-flex align-items-center" style="border-bottom: 1px solid #e6e6e6;">
           <div class="col-sm-6 d-flex align-items-center">
-            <img src="../../../../../assets/images/drag-gray.png" style="height: 18px;">
+            <img src="../../assets/images/drag-gray.png" style="height: 18px;">
             <p class="mb-0 ml-3 text-18">Inventory Summary</p>
           </div>
           <div class="col-sm-6 d-flex justify-content-end">
@@ -91,7 +102,7 @@
                 <input type="text" class="form-control border-right-0" placeholder="Search">
                 <div class="input-group-append">
                   <span class="input-group-text bg-white">
-                    <img src="../../../../../assets/images/icon-search.png" alt="">
+                    <img src="../../assets/images/icon-search.png" alt="">
                   </span>
                 </div>
               </div>
