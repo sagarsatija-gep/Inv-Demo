@@ -105,9 +105,9 @@
               </label>
               
               <div *ngFor="let list of selections; let i = index;">
-                <p data-toggle="collapse" [attr.data-target]="'#options'+i" class="text-medium mb-0" (click)="collapse()">
+                <p data-toggle="collapse" [attr.data-target]="'#options'+i" class="text-medium mb-0" (click)="collapse(i)">
                   <span class="pointer">
-                    <i class="fa fa-caret-down" aria-hidden="true" [ngClass]="{'activeWidget': isToggle}"></i>
+                    <i class="fa fa-caret-right" aria-hidden="true" [ngClass]="{'activeWidget': list.arrow}"></i>
                     {{list.name}}
                   </span>
                 </p>

@@ -67,6 +67,7 @@ export class InventoryMapDashboardComponent implements OnInit{
     {
       name: 'Plants (4/4)',
       isShow: true,
+      arrow: true,
       options: [
         {
           name: 'UUGE - Genesis',
@@ -89,6 +90,7 @@ export class InventoryMapDashboardComponent implements OnInit{
     {
       name: 'Categories (2)',
       isShow: false,
+      arrow: false,
       options: [
         {
           name: 'Equipments',
@@ -103,6 +105,7 @@ export class InventoryMapDashboardComponent implements OnInit{
     {
       name: 'Location Type (2)',
       isShow: false,
+      arrow: false,
       options: [
         {
           name: 'Equipments',
@@ -117,6 +120,7 @@ export class InventoryMapDashboardComponent implements OnInit{
     {
       name: 'Location Type (2)',
       isShow: false,
+      arrow: false,
       options: [
         {
           name: 'Equipments',
@@ -263,8 +267,9 @@ export class InventoryMapDashboardComponent implements OnInit{
     }
   ];
 
-  collapse(){
-    this.isToggle = !this.isToggle;
+  collapse(i){
+    this.selections[i].arrow = !this.selections[i].arrow;
+    // this.isToggle = !this.isToggle;
   }
 
   constructor() { }
