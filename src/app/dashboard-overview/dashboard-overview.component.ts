@@ -7,10 +7,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardOverviewComponent implements OnInit {
 
-  config = {
+  configs = [
+    {
     "heading": 'Material',
     "minMaxButton": true,
     "toggleButton": true,
+    "isTable": true,
+    "chartType": 'chart1',
     "toggleButtonConfig": {
         "btn1": {
             "name": 'Short Fall',
@@ -48,7 +51,23 @@ export class DashboardOverviewComponent implements OnInit {
         [ "119302", "b", "c", "d"],
         [ "119302", "a", "c", "d"]
     ]
-};
+},
+{
+  "heading": 'Material',
+  "minMaxButton": true,
+  "toggleButton": false,
+  "isTable": false,
+  "chartType": 'chart1',
+},
+{
+  "heading": 'Material',
+  "minMaxButton": true,
+  "toggleButton": false,
+  "isTable": false,
+  "chartType": 'chart2',
+},
+];
+
 
   constructor() { }
 

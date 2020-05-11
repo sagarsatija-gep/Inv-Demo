@@ -12,11 +12,18 @@ export class ChartTableComponent implements OnInit {
     @ViewChild('btn1') btn1: ElementRef;
     @ViewChild('btn2') btn2: ElementRef;
 
+    istable;
+    chartType;
+
     ngOnInit() {
         console.log("hu");        
 
         if(this.config.toggleButton) {
             this.toggleButton = this.config.toggleButtonConfig;
+        }
+        this.istable = this.config.isTable;
+        if(!this.config.isTable) {
+            this.chartType = this.config.chartType;
         }
     }
 
@@ -31,7 +38,7 @@ export class ChartTableComponent implements OnInit {
             this.toggleButton.btn1.active = false;
             this.toggleButton.btn2.active = true;
             this.btn1.nativeElement.classList.remove('active');
-            this.btn2.nativeElement.classList.add('active');            
+            this.btn2.nativeElement.classList.add('active');           
         }
     }
 }

@@ -15,7 +15,7 @@
             </span>
         </div>
     </div>
-    <div class="tableDiv">
+    <div class="tableDiv" *ngIf="istable else chart" >
         <table class="table">
             <thead class="tableHead">
                 <tr class="tableTr">
@@ -40,4 +40,21 @@
             </tbody>
         </table>
     </div>
+
+    <ng-template #chart>
+        <div [ngSwitch]="chartType">
+            <ng-template [ngSwitchCase]="'chart1'">
+                <p>
+                    hi It's chart One
+                </p>
+            </ng-template>
+            <ng-template [ngSwitchCase]="'chart2'">
+                <p>
+                    hi It's chart One
+                </p>
+            </ng-template>   
+        </div>
+    </ng-template>
+    
+    
 </div>
