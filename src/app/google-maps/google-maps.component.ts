@@ -9,53 +9,20 @@ export class GoogleMapsComponent {
   // google maps zoom level
   zoom: number = 8;
 
-
   // initial center position for the map
   lat: number = 51.673858;
   lng: number = 7.815982;
+
   locations = [
     {
+      name: "Warehouse",
+      value: "1",
+      color: "#3BAD4B"
+    },
+    {
       name: "Refineries",
-      value: "8",
-      color: "green"
-    },
-    {
-      name: "Distribution Centers",
-      value: "2",
-      color: "blue"
-    },
-    {
-      name: "Retail Outlets",
       value: "5",
-      color: "purple"
-    },
-    {
-      name: "Customer Locations",
-      value: "2",
-      color: "red"
-    }
-  ]
-
-  items = [
-    {
-      name: "Low Inventory",
-      value: "8",
-      color: "purple"
-    },
-    {
-      name: "Overstocked",
-      value: "987",
-      color: "blue"
-    },
-    {
-      name: "Products Line",
-      value: "1843",
-      color: "green"
-    },
-    {
-      name: "Categories",
-      value: "886",
-      color: "red"
+      color: "#3D5AFE"
     }
   ]
 
