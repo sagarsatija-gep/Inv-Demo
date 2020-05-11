@@ -7,14 +7,12 @@ import { FormControl } from '@angular/forms';
   templateUrl: './inventory-map-dashboard.component.html',
   styleUrls: ['./inventory-map-dashboard.component.css']
 })
-export class InventoryMapDashboardComponent implements OnInit {
+export class InventoryMapDashboardComponent implements OnInit{
 
-  showMe;
+  showLocations : boolean = false;
   selectedItems: any = null;
+  isToggle;
   date = new FormControl(new Date());
-
-  toggle : boolean = false;
-
   showList : boolean = false;
 
   locations = [
@@ -68,7 +66,8 @@ export class InventoryMapDashboardComponent implements OnInit {
   selections = [
     {
       name: 'Plants (4/4)',
-      class: 'show',
+      isShow: true,
+      arrow: true,
       options: [
         {
           name: 'UUGE - Genesis',
@@ -90,6 +89,8 @@ export class InventoryMapDashboardComponent implements OnInit {
     },
     {
       name: 'Categories (2)',
+      isShow: false,
+      arrow: false,
       options: [
         {
           name: 'Equipments',
@@ -103,6 +104,8 @@ export class InventoryMapDashboardComponent implements OnInit {
     },
     {
       name: 'Location Type (2)',
+      isShow: false,
+      arrow: false,
       options: [
         {
           name: 'Equipments',
@@ -116,6 +119,8 @@ export class InventoryMapDashboardComponent implements OnInit {
     },
     {
       name: 'Location Type (2)',
+      isShow: false,
+      arrow: false,
       options: [
         {
           name: 'Equipments',
@@ -262,9 +267,13 @@ export class InventoryMapDashboardComponent implements OnInit {
     }
   ];
 
+  collapse(i){
+    this.selections[i].arrow = !this.selections[i].arrow;
+    // this.isToggle = !this.isToggle;
+  }
+
   constructor() { }
 
   ngOnInit() {
-    this.showMe = false;
   }
 }

@@ -80,7 +80,7 @@
 }
 
 .mat-input-underline.mat-form-field-underline {
-  display: none;
+  display: none !important;
 }
 
 .text-12 {
@@ -238,4 +238,13 @@
 
 .form-control {
   border: 1px solid #ced4da;
+}
+
+.activeWidget {
+  -webkit-transition: -webkit-transform 300ms;
+  transition: -webkit-transform 300ms;
+  transition: transform 300ms;
+  transition: transform 300ms, -webkit-transform 300ms;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
