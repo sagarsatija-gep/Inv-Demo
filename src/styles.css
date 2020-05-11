@@ -6,14 +6,17 @@
 @import "../node_modules/@syncfusion/ej2/material.css";
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import 'app/goods-issue//goods-issue.component.css';
+
 body {
   font-family: 'Roboto', sans-serif !important;
   overflow-y: hidden;
 }
-.bg-white{
+
+.bg-white {
   background-color: #ffffff;
 }
-.labels{
+
+.labels {
   color: #a3a3a3;
   font-size: 14px;
 }
@@ -44,38 +47,26 @@ input[type="text"]:focus {
   top: 20% !important;
 }
 
-a, a:not([href]) {
+a,
+a:not([href]) {
   cursor: pointer;
 }
 
-.quicklinksImg{
+.quicklinksImg {
   width: 70px;
 }
 
-.border-barcode{
+.border-barcode {
   border: 1.3px solid #244889;
 }
+
 ::-webkit-scrollbar {
-  width: 8px;
-  border-radius: 5px;
+  display: none;
 }
 
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-::-webkit-scrollbar-thumb {
-  border-radius: 8px;
-  background: #c2c9d2;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-.form-control:focus{
+.form-control:focus {
   box-shadow: none;
-  -webkit-box-shadow : none;
+  -webkit-box-shadow: none;
 }
 
 .mat-tab-group.mat-primary .mat-ink-bar {
