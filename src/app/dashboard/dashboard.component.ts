@@ -12,9 +12,30 @@ export class DashboardComponent implements OnInit {
   public pageSettings: Object;
   constructor() { }
 
+  filter = {
+    filterName: 'More Action',
+    type: 'multi-select',
+    disabled: true,
+    styles: {
+      "flex": "0 0 10.5%",
+      "max-width": "10.5%",
+      "padding": "0 3px",
+      "position": "absolute",
+      "right": "15px",
+      "top": "15px",
+      "z-index": "10"
+    },
+    options: [
+      {
+        name: 'Others',
+        selected: false
+      }
+    ]
+  }
+
   ngOnInit(): void {
     this.data = inventoryData;
     this.groupOptions = { showGroupedColumn: false, columns: ['Reservation'] };
     this.pageSettings = { pageCount: 5 };
-}
+  }
 }
