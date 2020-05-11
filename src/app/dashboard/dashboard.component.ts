@@ -14,7 +14,8 @@ export class DashboardComponent implements OnInit {
 
   filter = {
     filterName: 'More Action',
-    type: 'multi-select',
+    type: 'single-select',
+    search: false,
     disabled: true,
     styles: {
       "flex": "0 0 10.5%",
@@ -27,8 +28,7 @@ export class DashboardComponent implements OnInit {
     },
     options: [
       {
-        name: 'Others',
-        selected: false
+        name: 'Others'
       }
     ]
   }

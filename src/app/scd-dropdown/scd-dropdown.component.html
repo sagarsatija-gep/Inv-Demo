@@ -7,7 +7,7 @@
     </button>
     <ng-container *ngIf="config.options">
       <div class="dropdown-menu" aria-labelledby="mainDropdown">
-        <input type="text" name="search" placeholder="Search" [(ngModel)]="searchTerm">
+        <input *ngIf="config.search" type="text" name="search" placeholder="Search" [(ngModel)]="searchTerm">
         <div class="dropdown-item" *ngFor="let option of config.options | filter:searchTerm">
           <label (click)="stopClosing($event)">{{ option.name }}
             <input type="checkbox" [checked]="option.selected" (change)="option.selected = !option.selected">
@@ -30,5 +30,16 @@
     <input type="checkbox" [checked]="config.selected" (change)="value.selected = !value.selected" data-toggle="toggle"
       data-height="38" [attr.data-width]="config.dataWidth" [attr.data-on]="config.filterName"
       [attr.data-off]="config.filterName" data-size="sm" data-onstyle="outline-primary" [disabled]="config.disabled">
+  </ng-container>
+  <ng-container *ngIf="config.type == 'single-select'">
+    <button class="btn" type="button" [disabled]="config.disabled" id="singleSelectButton"
+      data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+      {{ config.filterName }}
+      <img src="../../assets/images/dropdownBlack.png" alt="">
+    </button>
+    <div class="dropdown-menu" aria-labelledby="singleSelectButton">
+      <input *ngIf="config.search" type="text" name="search" placeholder="Search" [(ngModel)]="searchTerm">
+      <a class="dropdown-item" *ngFor="let option of config.options | filter:searchTerm">{{ option.name }}</a>
+    </div>
   </ng-container>
 </div>

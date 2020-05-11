@@ -30,6 +30,7 @@ export class GoogleMapsComponent {
     {
       filterName: 'Department',
       type: 'multi-select',
+      search: true,
       styles: { "flex": "0 0 11.5%", "max-width": "11.5%", "padding": "0 3px" },
       options: [
         {
@@ -87,6 +88,7 @@ export class GoogleMapsComponent {
     {
       filterName: 'Category',
       type: 'multi-select',
+      search: true,
       styles: { "flex": "0 0 10.5%", "max-width": "10.5%", "padding": "0 3px" },
       options: [
         {
@@ -122,6 +124,7 @@ export class GoogleMapsComponent {
     {
       filterName: 'Brands',
       type: 'multi-select',
+      search: true,
       styles: { "flex": "0 0 9.5%", "max-width": "9.5%", "padding": "0 3px" },
       options: [
         {
@@ -165,6 +168,7 @@ export class GoogleMapsComponent {
     {
       filterName: 'State',
       type: 'multi-select',
+      search: true,
       styles: { "flex": "0 0 8.5%", "max-width": "8.5%", "padding": "0 3px" },
       options: [
         {
@@ -256,6 +260,7 @@ export class GoogleMapsComponent {
     {
       filterName: 'City',
       type: 'multi-select',
+      search: true,
       styles: { "flex": "0 0 9.5%", "max-width": "8.5%", "padding": "0 3px" },
       options: [
         {
@@ -291,6 +296,7 @@ export class GoogleMapsComponent {
     {
       filterName: 'Location',
       type: 'multi-select',
+      search: true,
       styles: { "flex": "0 0 10.5%", "max-width": "9.5%", "padding": "0 3px" },
       options: [
         {
