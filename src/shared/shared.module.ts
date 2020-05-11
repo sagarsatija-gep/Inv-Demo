@@ -1,4 +1,3 @@
-import { MatFormFieldModule, MatInputModule } from '@angular/material';
 import { FormWidget } from './form-widget/form-widget.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
