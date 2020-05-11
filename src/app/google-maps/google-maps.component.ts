@@ -345,7 +345,7 @@ export class GoogleMapsComponent {
       type: 'toggle-button',
       styles: { "flex": "0 0 13.5%", "max-width": "13.5%", "padding": "0 3px" },
       dataWidth: "150",
-      selected: true
+      selected: false
     },
     {
       filterName: 'Limited Time Specials',
@@ -359,7 +359,7 @@ export class GoogleMapsComponent {
       type: 'toggle-button',
       styles: { "flex": "0 0 11.5%", "max-width": "11.5%", "padding": "0 3px" },
       dataWidth: "120",
-      selected: true
+      selected: false
     }
   ]
 
