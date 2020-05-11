@@ -4,19 +4,27 @@ import { CommonModule } from '@angular/common';
 import { NgModule } from "@angular/core";
 
 import { ChartTableComponent } from './chart-table/chart-table.component';
+import { InventoryMapDashboardComponent } from './inventory-map-dashboard/inventory-map-dashboard.component';
+import { NgxChartsModule } from '@swimlane/ngx-charts';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
     declarations:[
-        ChartTableComponent
+        ChartTableComponent,
+        InventoryMapDashboardComponent
     ],
     imports: [
         CommonModule,
+        FormsModule,
         BrowserModule,
-        FormWidget
+        ReactiveFormsModule,
+        FormWidget,
+        NgxChartsModule
     ],
     providers:[],
     exports: [
-        ChartTableComponent
+        ChartTableComponent,
+        InventoryMapDashboardComponent
     ]
 }) 
 export class Shared {}

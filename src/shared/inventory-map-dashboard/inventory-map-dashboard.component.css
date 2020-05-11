@@ -1,0 +1,164 @@
+.locations{
+  width: 301px;
+  /* position: absolute; */
+  transform: translate(260px,37px);
+  /* z-index: 9; */
+}
+
+.btn-outline-primary {
+  color: #0A6FB5 !important;
+  border-color: #0A6FB5 !important;
+  font-size: 14px;
+  font-family: 'Roboto Medium';
+  width: 87px;
+  height: 36px;
+  padding: 0px;
+  letter-spacing: 0px;
+}
+
+.btn-outline-primary:hover {
+  background-color: #0A6FB5 !important;
+  border-color: #0A6FB5 !important;
+  color: #ffffff !important;
+}
+
+.box{
+  border-radius: 5px;
+  border: 1px solid #e6e6e6;
+  padding: 0px 7px;
+  height: 50px;
+}
+
+.text-medium{
+  font-family: 'Roboto Medium';
+}
+
+.text-regular{
+  font-family: 'Roboto Regular';
+}
+
+
+
+/* [data-toggle="collapse"] .fa:before {  
+  content: "\f0da";
+}
+
+[data-toggle="collapse"].show .fa:before, [data-toggle="collapse"].collapsed .fa:before {
+  content: "\f0d7";
+} */
+
+.rotateRight{
+  transform: rotate(-90deg);
+}
+
+.rotateDown{
+  transform: rotate(0deg);
+}
+
+.dropdown-toggle::after{
+  float: right;
+  margin-top: 8px;
+}
+
+.text-gray{
+  color: #b9bbbf;
+}
+
+.text-dark-gray{
+  color: #909090;
+}
+
+.border-right{
+  border-right: 1px solid #e6e6e6;;
+}
+
+.mat-input-underline.mat-form-field-underline {
+  display: none;
+}
+
+.text-12{
+  font-size: 12px;
+}
+
+.text-18{
+  font-size: 18px;
+}
+
+.checkboxContainer{
+  font-size: 14px;
+  font-family: 'Roboto Regular';
+  padding-left: 23px;
+  margin-bottom: 10px;
+}
+
+.checkmark {
+  height: 18px;
+  width: 18px;
+}
+
+.checkboxContainer .checkmark:after {
+  left: 5px;
+  width: 4px;
+  height: 8px;
+}
+
+.pointer{
+  cursor: pointer;
+}
+
+.chartdata .heading-big{
+  font-size: 2.1vw;
+  font-family: 'Roboto Medium';
+  margin-bottom: 0;
+  letter-spacing: 0px;
+}
+
+.chartdata .heading-small{
+  font-size: 1vw;
+  color: #8e8e8e;
+  font-family: 'Roboto Regular';
+  margin-bottom: 0;
+  letter-spacing: 0px;
+}
+
+.chart-data-value-heading{
+  color: #8e8e8e;
+  font-family: 'Roboto Medium';
+  font-size: 12px;
+  letter-spacing: 0px;
+}
+
+.chart-data-value-subheading{
+  font-size: 16px;
+  font-family: 'Roboto Medium';
+  letter-spacing: 0px;
+}
+
+.locationDrop:hover>.dropdown-menu {
+  display: block;
+}
+
+.locationDrop:hover>.arrow{
+  transform: rotate(-180deg);
+}
+
+.locationDrop>.dropdown-toggle:active {
+    pointer-events: none;
+}
+
+.locationDrop .dropdown-toggle::after{
+  float: none;
+  transition-duration: 0.2s;
+  transition-timing-function: ease-in-out;
+}
+
+.locationDrop:hover>.dropdown-toggle::after{
+  transform: rotate(-180deg);
+}
+
+.locationDrop .dropdown-item:active {
+  color: unset;
+  text-decoration: none;
+  background-color: #ffffff;
+}
+
