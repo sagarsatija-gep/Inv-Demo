@@ -7,7 +7,7 @@
         </div>
         <div class="col-9">
           <div class="row" *ngIf="filters">
-            <div class="col-4" *ngFor="let filter of filters">
+            <div *ngFor="let filter of filters" [ngStyle]="filter.styles">
               <app-scd-dropdown [config]="filter"></app-scd-dropdown>
             </div>
             <div class="col-12" style="padding: 10px 20px">

@@ -1,9 +1,10 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-scd-dropdown',
   templateUrl: './scd-dropdown.component.html',
-  styleUrls: ['./scd-dropdown.component.css']
+  styleUrls: ['./scd-dropdown.component.css'],
+  encapsulation: ViewEncapsulation.None
 })
 export class ScdDropdownComponent implements OnInit {
   @Input() config;

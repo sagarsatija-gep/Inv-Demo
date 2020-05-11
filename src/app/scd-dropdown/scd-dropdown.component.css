@@ -10,7 +10,8 @@
 }
 
 .scd-dropdown .dropdown-menu {
-    width: 100%;
+    max-height: 485px;
+    overflow-y: hidden;
 }
 
 .scd-dropdown input[type="text"] {
@@ -100,4 +101,8 @@
 .scd-dropdown .collapse {
     padding-left: 30px;
     position: relative;
+}
+
+.scd-dropdown label.btn {
+    padding-top: 1px;
 }

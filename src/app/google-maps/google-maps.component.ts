@@ -61,22 +61,56 @@ export class GoogleMapsComponent {
 
   filters = [
     {
-      filterName: 'Organization',
+      filterName: 'Department',
+      type: 'multi-select',
+      styles: { "flex": "0 0 11.5%", "max-width": "11.5%", "padding": "0 3px" },
       options: [
         {
-          name: 'Global',
+          name: 'Women',
+          selected: true
+        },
+        {
+          name: 'Beauty',
+          selected: true
+        },
+        {
+          name: 'Men',
+          selected: true
+        },
+        {
+          name: 'Kids & Baby',
+          selected: true
+        },
+        {
+          name: 'Shoes',
+          selected: true
+        },
+        {
+          name: 'Home',
+          selected: true
+        },
+        {
+          name: 'Bed & Bath',
+          selected: true
+        },
+        {
+          name: 'Furniture',
+          selected: true
+        },
+        {
+          name: 'Handbags & Accessories',
+          selected: true
+        },
+        {
+          name: 'Jewelry',
+          selected: true
+        },
+        {
+          name: 'Watches',
           selected: true,
           values: [
             {
-              name: 'NA',
-              selected: true
-            },
-            {
-              name: 'LA',
-              selected: true
-            },
-            {
-              name: 'AP',
+              name: 'Smart Watches',
               selected: true
             }
           ]
@@ -85,17 +119,31 @@ export class GoogleMapsComponent {
     },
     {
       filterName: 'Category',
+      type: 'multi-select',
+      styles: { "flex": "0 0 10.5%", "max-width": "10.5%", "padding": "0 3px" },
       options: [
         {
-          name: 'MRO',
+          name: "Women's Clothing",
           selected: true
         },
         {
-          name: 'Civil, Infrastructure',
+          name: "Women's Shoes",
           selected: false
         },
         {
-          name: 'Chemical',
+          name: 'Handbags & Accessories',
+          selected: false
+        },
+        {
+          name: 'Jewelry & Watches',
+          selected: false
+        },
+        {
+          name: 'Makeup',
+          selected: false
+        },
+        {
+          name: 'Perfume',
           selected: false
         },
         {
@@ -105,25 +153,213 @@ export class GoogleMapsComponent {
       ]
     },
     {
-      filterName: 'Location',
+      filterName: 'Brands',
+      type: 'multi-select',
+      styles: { "flex": "0 0 9.5%", "max-width": "9.5%", "padding": "0 3px" },
       options: [
         {
-          name: 'Refineries',
+          name: 'Alfani',
           selected: true
         },
         {
-          name: 'Distribution Centers',
+          name: 'Calvin Klein',
           selected: true
         },
         {
-          name: 'Retail Outlets',
+          name: 'DKNY',
           selected: true
         },
         {
-          name: 'Customer Locations',
+          name: 'Lauren Ralph Lauren',
+          selected: true
+        },
+        {
+          name: "Levi's",
+          selected: true
+        },
+        {
+          name: 'Nike',
+          selected: true
+        },
+        {
+          name: 'Tommy Hilfinger',
+          selected: true
+        },
+        {
+          name: 'Vince Camuto',
+          selected: true
+        },
+        {
+          name: 'Style & Co',
           selected: true
         }
       ]
+    },
+    {
+      filterName: 'State',
+      type: 'multi-select',
+      styles: { "flex": "0 0 8.5%", "max-width": "8.5%", "padding": "0 3px" },
+      options: [
+        {
+          name: 'Alabama',
+          selected: true
+        },
+        {
+          name: 'Arizone',
+          selected: true
+        },
+        {
+          name: 'California',
+          selected: true
+        },
+        {
+          name: 'Colorado',
+          selected: true
+        },
+        {
+          name: 'Connecticut',
+          selected: true
+        },
+        {
+          name: 'Delaware',
+          selected: true
+        },
+        {
+          name: 'Florida',
+          selected: true
+        },
+        {
+          name: 'Georgia',
+          selected: true
+        },
+        {
+          name: 'Guam',
+          selected: true
+        },
+        {
+          name: 'Hawaii',
+          selected: true
+        },
+        {
+          name: 'Idaho',
+          selected: true
+        },
+        {
+          name: 'Illinois',
+          selected: true
+        },
+        {
+          name: 'Indiana',
+          selected: true
+        },
+        {
+          name: 'Kansas',
+          selected: true
+        },
+        {
+          name: 'Massachusetts',
+          selected: true
+        },
+        {
+          name: 'Missouri',
+          selected: true
+        },
+        {
+          name: 'Nevada',
+          selected: true
+        },
+        {
+          name: 'New Jersey',
+          selected: true
+        },
+        {
+          name: 'New Mexico',
+          selected: true
+        },
+        {
+          name: 'New York',
+          selected: true
+        },
+        {
+          name: 'Washington',
+          selected: true
+        }
+      ]
+    },
+    {
+      filterName: 'City',
+      type: 'multi-select',
+      styles: { "flex": "0 0 9.5%", "max-width": "8.5%", "padding": "0 3px" },
+      options: [
+        {
+          name: 'Hoover',
+          selected: true
+        },
+        {
+          name: 'Arcadia',
+          selected: true
+        },
+        {
+          name: 'Burbank',
+          selected: true
+        },
+        {
+          name: 'Aventura',
+          selected: true
+        },
+        {
+          name: 'Boca Raton',
+          selected: true
+        },
+        {
+          name: 'Brandon',
+          selected: true
+        },
+        {
+          name: 'Clear Water',
+          selected: true
+        }
+      ]
+    },
+    {
+      filterName: 'Location',
+      type: 'multi-select',
+      styles: { "flex": "0 0 10.5%", "max-width": "9.5%", "padding": "0 3px" },
+      options: [
+        {
+          name: 'Stores',
+          selected: true
+        },
+        {
+          name: 'Warehouse',
+          selected: true
+        },
+        {
+          name: 'Distribution Center',
+          selected: true
+        }
+      ]
+    },
+    {
+      filterName: 'Sale and clearance',
+      type: 'toggle-button',
+      styles: { "flex": "0 0 13.5%", "max-width": "13.5%", "padding": "0 3px" },
+      dataWidth: "150",
+      selected: true
+    },
+    {
+      filterName: 'Limited Time Specials',
+      type: 'toggle-button',
+      styles: { "flex": "0 0 16%", "max-width": "16%", "padding": "0 3px" },
+      dataWidth: "180",
+      selected: false
+    },
+    {
+      filterName: 'Promotions',
+      type: 'toggle-button',
+      styles: { "flex": "0 0 11.5%", "max-width": "11.5%", "padding": "0 3px" },
+      dataWidth: "120",
+      selected: true
     }
   ]
 
