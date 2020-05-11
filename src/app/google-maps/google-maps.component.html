@@ -1,95 +1,79 @@
-<div class="container-fluid border border-secondary rounded-sm mt-4 bg-white" style="margin-bottom: 40px;">
-  <div class="row" style="padding: 20px 0;">
-    <div class="col-sm-12 pt-3">
-      <h6>Organization Based View</h6>
-      <hr>
+<div class="container-fluid border border-secondary rounded-sm bg-white">
+  <div class="row">
+    <div class="col-sm-12 p-0">
+      <div class="row" style="padding: 20px 20px 0px 20px">
+        <div class="col-3">
+          <h5 style="padding: 0 30px; margin: 15px;">Organization Based View</h5>
+        </div>
+        <div class="col-9">
+          <div class="row" *ngIf="filters">
+            <div *ngFor="let filter of filters" [ngStyle]="filter.styles">
+              <app-scd-dropdown [config]="filter"></app-scd-dropdown>
+            </div>
+            <div class="col-12" style="padding: 10px 20px">
+              <span *ngFor="let value of filterValues"
+                style="float: right; padding: 3px 12px; margin: 5px 10px; font-size: 12px; background: #E9F9F9; color: #3AAEBC; border-radius: 15px;">
+                {{ value }} &#10006;
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
       <div class="control-section">
         <div style="display: flex;width: 100%;">
-          <div style="width: 65%;padding: 10px;border-right: 1px gainsboro solid;">
-            <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="false"
-              >
-
+          <div
+            style="width: 75%; border: 5px solid #EBF5FD; border-top: 5px solid #858585; border-left: 5px solid #858585;">
+            <agm-map [latitude]="lat" [longitude]="lng" [zoom]="zoom" [disableDefaultUI]="false" [zoomControl]="false">
               <agm-marker *ngFor="let m of markers; let i = index" (markerClick)="clickedMarker(m.label, i)"
-                [latitude]="m.lat" [longitude]="m.lng" [iconUrl]="m.iconUrl" [label]="m.label" [markerDraggable]="m.draggable"
-                (dragEnd)="markerDragEnd(m, $event)">
-
+                [latitude]="m.lat" [longitude]="m.lng" [iconUrl]="m.iconUrl" [label]="m.label"
+                [markerDraggable]="m.draggable" (dragEnd)="markerDragEnd(m, $event)">
                 <agm-info-window>
                   <strong>InfoWindow content</strong>
                 </agm-info-window>
-
               </agm-marker>
-
               <agm-circle [latitude]="lat + 0.3" [longitude]="lng" [radius]="5000" [fillColor]="'red'"
                 [circleDraggable]="true" [editable]="true">
               </agm-circle>
-
             </agm-map>
           </div>
-          <div style="width: 34%;">
-            <div style="height:50%;display: flex;border-bottom: 1px gainsboro solid;border-top: 1px gainsboro solid;">
-              <div style="height: 10em;width: 40%;
-              display: flex;
-              align-items: center;
-              justify-content: center">
-                <span style="display: block;">
-                  LOCATIONS
-                </span>
+          <div style="width: 25%;">
+            <div style="height:50%;display: flex; border-bottom: 1px gainsboro solid;border-top: 1px gainsboro solid;">
+              <div style="height: 10em;width: 40%; display: flex; align-items: center; justify-content: center">
+                <span style="display: block;"> LOCATIONS </span>
                 <br>
-                <h2 style="position: absolute;
-                margin-top: 24px;font-size: 38px;font-weight: 500;">
-                  19
-                </h2>
+                <h2 style="position: absolute; margin-top: 24px;font-size: 38px;font-weight: 500;"> 19 </h2>
               </div>
               <div style="width: 60%;padding-top: 4rem;">
-                <div style="display: flex;
-                display: flex;
-                justify-content: left" *ngFor="let locations of locations">
-                  <div [ngStyle]="{'background-color': locations.color}" style="margin: .2rem 1rem .2rem 0 ;height: 1rem;width: 1rem;border-radius: .3rem;"></div>
-                  <span>
-                    {{locations.name}} : &nbsp;
-                  </span>
+                <div style="display: flex; display: flex; justify-content: left" *ngFor="let locations of locations">
+                  <div [ngStyle]="{'background-color': locations.color}"
+                    style="margin: .2rem 1rem .2rem 0 ;height: 1rem;width: 1rem;border-radius: .3rem;"></div>
+                  <span> {{ locations.name }} : &nbsp; </span>
                   <span [ngStyle]="{'color': locations.color}" style="font-size: 16px;">
-                    {{locations.value}}
+                    {{ locations.value }}
                   </span>
-                  
                 </div>
               </div>
             </div>
-            <div style="height:50%;display: flex;border-bottom: 1px gainsboro solid;border-top: 1px gainsboro solid;">
-              <div style="height: 10em;width: 40%;
-              display: flex;
-              align-items: center;
-              justify-content: center">
-                <span style="display: block;">
-                  ITEMS
-                </span>
+            <div style="height:50%;display: flex; border-top: 1px gainsboro solid;">
+              <div style="height: 10em;width: 40%; display: flex; align-items: center; justify-content: center">
+                <span style="display: block;"> ITEMS </span>
                 <br>
-                <span style="position: absolute;
-                margin-top: 24px;font-size: 38px;font-weight: 500;">
+                <span style="position: absolute; margin-top: 24px; font-size: 38px; font-weight: 500;">
                   3840
-              </span>
+                </span>
               </div>
               <div style="width: 60%;padding-top: 4rem;">
-                <div style="display: flex;
-                display: flex;
-                justify-content: left" *ngFor="let items of items">
-                  
-                  <span>
-                    {{items.name}} : &nbsp;
-                  </span>
+                <div style="display: flex; display: flex; justify-content: left" *ngFor="let items of items">
+                  <span>{{ items.name }} : &nbsp; </span>
                   <span [ngStyle]="{'color': items.color}" style="font-size: 16px;">
-                    {{items.value}}
+                    {{ items.value }}
                   </span>
-                  
                 </div>
               </div>
             </div>
           </div>
-
         </div>
       </div>
     </div>
-
   </div>
-
 </div>
