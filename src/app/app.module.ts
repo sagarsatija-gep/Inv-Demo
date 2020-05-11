@@ -68,6 +68,8 @@ import { CreateMaterialRequestFormComponent } from './create-material-request-fo
 import { ManageMaterialRequestsComponent } from './manage-material-requests/manage-material-requests.component';
 import { CreateMaterialRequestComponent } from './create-material-request/create-material-request.component';
 import { DashboardOverviewComponent } from './dashboard-overview/dashboard-overview.component';
+import { ScdDropdownComponent } from './scd-dropdown/scd-dropdown.component';
+import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
 @NgModule({
   declarations: [
@@ -121,7 +123,8 @@ import { DashboardOverviewComponent } from './dashboard-overview/dashboard-overv
     CreateMaterialRequestFormComponent,
     ManageMaterialRequestsComponent,
     CreateMaterialRequestComponent,
-    DashboardOverviewComponent
+    DashboardOverviewComponent,
+    ScdDropdownComponent
   ],
   imports: [
     CommonModule,
@@ -146,7 +149,8 @@ import { DashboardOverviewComponent } from './dashboard-overview/dashboard-overv
       apiKey: 'AIzaSyDRSpfba5rdNqT0RAcD4cvdUaLOk2-Bzic',
       libraries: ['places']
     }),
-    Shared
+    Shared,
+    Ng2SearchPipeModule
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService, NgbActiveModal],
   bootstrap: [AppComponent],

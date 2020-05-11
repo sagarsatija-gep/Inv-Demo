@@ -17,10 +17,10 @@
         </p>
 
         <!-- Different Locations -->
-        <ul class="list-unstyled p-3 border locations dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <ul class="list-unstyled py-3 border locations dropdown-menu" aria-labelledby="dropdownMenuButton">
           <li class="dropdown-item my-2 text-medium text-gray">Switch Location to :</li>
           <li *ngFor="let loc of locations" class="dropdown-item mb-4">
-            <p class="mb-0 text-blue text-medium">{{loc.text1}}</p>
+            <p class="mb-0 text-primary text-medium">{{loc.text1}}</p>
             <p class="mb-0 text-dark-gray text-medium">{{loc.text2}}</p>
           </li>
         </ul>
@@ -46,7 +46,7 @@
         <!-- header -->
         <div class="col-sm-12 text-medium py-2 d-flex align-items-center" style="border-bottom: 1px solid #e6e6e6;">
           <div class="col-sm-6 d-flex align-items-center">
-            <img src="../../../../../assets/images/drag-gray.png" style="height: 18px;">
+            <img src="../../assets/images/drag-gray.png" style="height: 18px;">
             <p class="mb-0 ml-3 text-18">Inventory Summary</p>
           </div>
           <div class="col-sm-6 d-flex justify-content-end">
@@ -82,7 +82,7 @@
               <p class="mb-0">Filter</p>
             </div>
             <div class="col-sm-6 py-2 text-medium d-flex align-items-center justify-content-end">
-              <p class="text-blue mb-0 text-right pointer" data-toggle="collapse" data-target='#options0'>Hide Selections(4)</p>
+              <p class="text-primary mb-0 text-right pointer" data-toggle="collapse" data-target='#options0'>Hide Selections(4)</p>
             </div>
           </div>
           <div class="row">
@@ -91,7 +91,7 @@
                 <input type="text" class="form-control border-right-0" placeholder="Search">
                 <div class="input-group-append">
                   <span class="input-group-text bg-white">
-                    <img src="../../../../../assets/images/icon-search.png" alt="">
+                    <img src="../../assets/images/icon-search.png" alt="">
                   </span>
                 </div>
               </div>
@@ -129,10 +129,10 @@
             <div class="col-sm-12 py-3 text-medium border align-items-center">
               <div class="row">
                 <div class="col-sm-3 align-items-center">
-                  <p class="text-blue mb-0">Clear All</p>
+                  <p class="text-primary mb-0">Clear All</p>
                 </div>
                 <div class="col-sm-9 d-flex justify-content-end align-items-center">
-                  <p class="text-blue mb-0">Open in new window</p>
+                  <p class="text-primary mb-0">Open in new window</p>
                   <button type="button" class="btn btn-outline-primary mx-3">Apply</button>
                 </div>
               </div>
