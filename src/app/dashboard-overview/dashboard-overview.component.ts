@@ -9,51 +9,40 @@ export class DashboardOverviewComponent implements OnInit {
 
   configs = [
     {
-      "heading": 'Material',
+      "heading": 'Inventory Ownership',
       "minMaxButton": true,
-      "toggleButton": true,
-      "isTable": true,
-      "chartType": 'chart1',
-      "toggleButtonConfig": {
-        "btn1": {
-          "name": 'Short Fall',
-          "active": true
+      "toggleButton": false,
+      "isTable": false,
+      "chartType": 'bar-horizontal',
+      "view": [650, 300],
+      "chartScheme": { domain: ['#000'] },
+      "legendTitle": 'Rahul',
+      "barPadding": '30',
+      "isGradient": true,
+      "isLegend": false,
+      "xAxisShow": true,
+      "yAxisShow": true,
+      "xLabel": 'Yahu',
+      "yLabel": 'Aantal Leden',
+      "showXLabel": true,
+      "showYLabel": true,
+      "data": [
+        {
+          "name": "Germany",
+          "value": 8940000
         },
-        "btn2": {
-          "name": 'Excess',
-          "active": false
+        {
+          "name": "USA",
+          "value": 5000000
+        },
+        {
+          "name": "France",
+          "value": 7200000
         }
-      },
-      "colValue": [
-        {
-          type: 'clickable',
-          name: 'Item#',
-          width: '10%'
-        },
-        {
-          type: 'text',
-          name: 'Description'
-        },
-        {
-          type: 'text',
-          name: 'Shortfall At'
-        },
-        {
-          type: 'text',
-          name: 'Current Stock',
-          width: '22%'
-        }
-      ],
-      "rowValue": [
-        ["119302", "b", "c", "d"],
-        ["119302", "b", "c", "d"],
-        ["119302", "b", "c", "d"],
-        ["119302", "b", "c", "d"],
-        ["119302", "a", "c", "d"]
       ]
     },
     {
-      "heading": 'Material',
+      "heading": 'Inventory Aging',
       "minMaxButton": true,
       "toggleButton": false,
       "isTable": false,
@@ -98,40 +87,7 @@ export class DashboardOverviewComponent implements OnInit {
     ]
     },
     {
-      "heading": 'Material',
-      "minMaxButton": true,
-      "toggleButton": false,
-      "isTable": false,
-      "chartType": 'bar-horizontal',
-      "view": [650, 300],
-      "chartScheme": { domain: ['#000'] },
-      "legendTitle": 'Rahul',
-      "barPadding": '80',
-      "isGradient": true,
-      "isLegend": false,
-      "xAxisShow": true,
-      "yAxisShow": true,
-      "xLabel": 'Yahu',
-      "yLabel": 'Aantal Leden',
-      "showXLabel": true,
-      "showYLabel": true,
-      "data": [
-        {
-          "name": "Germany",
-          "value": 8940000
-        },
-        {
-          "name": "USA",
-          "value": 5000000
-        },
-        {
-          "name": "France",
-          "value": 7200000
-        }
-      ]
-    },
-    {
-      "heading": 'Material',
+      "heading": 'Cycle Count - Planned Vs Actuals',
       "minMaxButton": true,
       "toggleButton": false,
       "isTable": false,
@@ -139,9 +95,9 @@ export class DashboardOverviewComponent implements OnInit {
       "view": [650, 300],
       "chartScheme": { domain: ['#000'] },
       "legendTitle": 'Rahul',
-      "barPadding": '80',
+      "barPadding": '20',
       "isGradient": true,
-      "isLegend": false,
+      "isLegend": true,
       "xAxisShow": true,
       "yAxisShow": true,
       "xLabel": 'Yahu',
@@ -191,6 +147,51 @@ export class DashboardOverviewComponent implements OnInit {
           ]
         }
       ]
+    },
+    {
+      "heading": 'Cycle Count - Aging',
+      "minMaxButton": true,
+      "toggleButton": false,
+      "isTable": false,
+      "chartType": 'bar-vertical',
+      "view": [650, 300],
+      "chartScheme": { domain: ['#000'] },
+      "legendTitle": 'Rahul',
+      "barPadding": '80',
+      "isGradient": true,
+      "isLegend": false,
+      "xAxisShow": true,
+      "yAxisShow": true,
+      "xLabel": 'Yahu',
+      "yLabel": 'Aantal Leden',
+      "showXLabel": true,
+      "showYLabel": true,
+      "data": [
+        {
+            'name': '2014',
+            'value': 5
+        },
+        {
+            'name': '2015',
+            'value': 10
+        },
+        {
+            'name': '2016',
+            'value': 8
+        },
+        {
+            'name': '2017',
+            'value': 15
+        },
+        {
+            'name': '2018',
+            'value': 8
+        },
+        {
+            'name': '2019',
+            'value': 15
+        }
+    ]
     },
   ];
 

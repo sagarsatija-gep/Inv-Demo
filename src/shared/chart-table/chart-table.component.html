@@ -56,7 +56,7 @@
         </ngx-charts-bar-vertical>
       </ng-template>
       <ng-template [ngSwitchCase]="'bar-horizontal'">
-        <ngx-charts-bar-horizontal [view]="view" [scheme]="chartScheme" [results]="chartData" [gradient]="isGradient"
+        <ngx-charts-bar-horizontal [view]="view" [scheme]="chartScheme" [results]="chartData"  [barPadding]="barPadding" [gradient]="isGradient"
           [xAxis]="xAxisShow" [yAxis]="yAxisShow" [legend]="isLegend" [legendTitle]="legendTitle" [xAxisLabel]="xLabel"
           [yAxisLabel]="yLabel" [showXAxisLabel]="showXLabel" [showYAxisLabel]="showYLabel" (select)="onSelect($event)"
           (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
@@ -64,9 +64,9 @@
       </ng-template>
       <ng-template [ngSwitchCase]="'grouped-vertical-bar'">
         <ngx-charts-bar-vertical-2d
-        [view]="view" [scheme]="chartScheme" [results]="chartData" [gradient]="isGradient"
+        [view]="view" [scheme]="chartScheme" [results]="chartData" [gradient]="isGradient"  [barPadding]="barPadding"
           [xAxis]="xAxisShow" [yAxis]="yAxisShow" [legend]="isLegend" [legendTitle]="legendTitle" [xAxisLabel]="xLabel"
-          [yAxisLabel]="yLabel" [showXAxisLabel]="showXLabel" [showYAxisLabel]="showYLabel" (select)="onSelect($event)"
+          [yAxisLabel]="yLabel" [showXAxisLabel]="showXLabel" [showYAxisLabel]="showYLabel" [legendPosition]="'below'" (select)="onSelect($event)"
           (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
       </ngx-charts-bar-vertical-2d>
       </ng-template>
