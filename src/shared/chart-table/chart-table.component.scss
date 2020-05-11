@@ -1,5 +1,6 @@
 .chartTable {
     width: 100%;
+    min-height: 349px;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 1px 6px #0000000A;
     border: 1px solid #EAEDF3;
@@ -14,7 +15,7 @@
         .btnContainer {
                 border: 2px solid #2290FF;
                 height: 20px;
-                
+
             .btn {
                 padding: 0px 5px;
                 border: 0px;

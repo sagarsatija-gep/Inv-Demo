@@ -9,64 +9,82 @@ export class DashboardOverviewComponent implements OnInit {
 
   configs = [
     {
-    "heading": 'Material',
-    "minMaxButton": true,
-    "toggleButton": true,
-    "isTable": true,
-    "chartType": 'chart1',
-    "toggleButtonConfig": {
+      "heading": 'Material',
+      "minMaxButton": true,
+      "toggleButton": true,
+      "isTable": true,
+      "chartType": 'chart1',
+      "toggleButtonConfig": {
         "btn1": {
-            "name": 'Short Fall',
-            "active": true
+          "name": 'Short Fall',
+          "active": true
         },
         "btn2": {
-            "name": 'Excess',
-            "active": false
+          "name": 'Excess',
+          "active": false
         }
+      },
+      "colValue": [
+        {
+          type: 'clickable',
+          name: 'Item#',
+          width: '10%'
+        },
+        {
+          type: 'text',
+          name: 'Description'
+        },
+        {
+          type: 'text',
+          name: 'Shortfall At'
+        },
+        {
+          type: 'text',
+          name: 'Current Stock',
+          width: '22%'
+        }
+      ],
+      "rowValue": [
+        ["119302", "b", "c", "d"],
+        ["119302", "b", "c", "d"],
+        ["119302", "b", "c", "d"],
+        ["119302", "b", "c", "d"],
+        ["119302", "a", "c", "d"]
+      ]
     },
-    "colValue": [
-        {
-            type: 'clickable',
-            name: 'Item#',
-            width: '10%'
-        },
-        {
-            type: 'text',
-            name: 'Description'
-        },
-        {
-            type: 'text',
-            name: 'Shortfall At'
-        },
-        {
-            type: 'text',
-            name: 'Current Stock',
-            width: '22%'
-        }
-    ],
-    "rowValue": [
-        [ "119302", "b", "c", "d"],
-        [ "119302", "b", "c", "d"],
-        [ "119302", "b", "c", "d"],
-        [ "119302", "b", "c", "d"],
-        [ "119302", "a", "c", "d"]
-    ]
-},
-{
-  "heading": 'Material',
-  "minMaxButton": true,
-  "toggleButton": false,
-  "isTable": false,
-  "chartType": 'chart1',
-},
-{
-  "heading": 'Material',
-  "minMaxButton": true,
-  "toggleButton": false,
-  "isTable": false,
-  "chartType": 'chart2',
-},
-];
+    {
+      "heading": 'Material',
+      "minMaxButton": true,
+      "toggleButton": false,
+      "isTable": false,
+      "chartType": 'chart1',
+      "chartScheme": { domain: ['#000'] },
+      "legendTitle": 'Rahul',
+      "barPadding": '80',
+      "isGradient": true,
+      "isLegend": false,
+      "xAxisShow": true,
+      "yAxisShow": true,
+      "xLabel": 'Yahu',
+      "yLabel": 'Aantal Leden',
+      "showXLabel": true,
+      "showYLabel": true,
+    },
+    {
+      "heading": 'Material',
+      "minMaxButton": true,
+      "toggleButton": false,
+      "isTable": false,
+      "chartType": 'chart2',
+    },
+    {
+      "heading": 'Material',
+      "minMaxButton": true,
+      "toggleButton": false,
+      "isTable": false,
+      "chartType": 'chart2',
+    },
+  ];
 
 
   constructor() { }

@@ -1,4 +1,4 @@
-<div class='chartTable' style="width: 100%;">
+<div class='chartTable'>
     <div class="cardHeader">
         <span>
             {{config.heading}}
@@ -44,9 +44,21 @@
     <ng-template #chart>
         <div [ngSwitch]="chartType">
             <ng-template [ngSwitchCase]="'chart1'">
-                <p>
-                    hi It's chart One
-                </p>
+                <ngx-charts-bar-vertical
+        [results]="chartData"
+        [view]=[650,300]
+        [scheme]="chartScheme"
+        [barPadding]="barPadding"
+        [gradient]="isGradient"
+        [xAxis]="xAxisShow"
+        [yAxis]="yAxisShow"
+        [legend]="isLegend"
+        [legendTitle]="legendTitle"
+        [xAxisLabel]="xLabel"
+        [yAxisLabel]="yLabel"
+        [showXAxisLabel]="showXLabel"
+        [showYAxisLabel]="showYLabel">
+      </ngx-charts-bar-vertical>
             </ng-template>
             <ng-template [ngSwitchCase]="'chart2'">
                 <p>
