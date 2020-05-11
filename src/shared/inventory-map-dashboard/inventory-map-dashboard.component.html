@@ -9,17 +9,6 @@
         </ol>
       </nav>
 
-      <div class="dropdown">
-        <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
-          Dropdown button
-        </button>
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">Link 1</a>
-          <a class="dropdown-item" href="#">Link 2</a>
-          <a class="dropdown-item" href="#">Link 3</a>
-        </div>
-      </div>
-
       <span class="dropdown locationDrop">
         <p class="pageHeadings dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inventory Overview of 
           <span class="display-locations">
@@ -31,7 +20,7 @@
         <ul class="list-unstyled py-3 border locations dropdown-menu" aria-labelledby="dropdownMenuButton">
           <li class="dropdown-item my-2 text-medium text-gray">Switch Location to :</li>
           <li *ngFor="let loc of locations" class="dropdown-item mb-4">
-            <p class="mb-0 text-blue text-medium">{{loc.text1}}</p>
+            <p class="mb-0 text-primary text-medium">{{loc.text1}}</p>
             <p class="mb-0 text-dark-gray text-medium">{{loc.text2}}</p>
           </li>
         </ul>
@@ -93,7 +82,7 @@
               <p class="mb-0">Filter</p>
             </div>
             <div class="col-sm-6 py-2 text-medium d-flex align-items-center justify-content-end">
-              <p class="text-blue mb-0 text-right pointer" data-toggle="collapse" data-target='#options0'>Hide Selections(4)</p>
+              <p class="text-primary mb-0 text-right pointer" data-toggle="collapse" data-target='#options0'>Hide Selections(4)</p>
             </div>
           </div>
           <div class="row">
@@ -140,10 +129,10 @@
             <div class="col-sm-12 py-3 text-medium border align-items-center">
               <div class="row">
                 <div class="col-sm-3 align-items-center">
-                  <p class="text-blue mb-0">Clear All</p>
+                  <p class="text-primary mb-0">Clear All</p>
                 </div>
                 <div class="col-sm-9 d-flex justify-content-end align-items-center">
-                  <p class="text-blue mb-0">Open in new window</p>
+                  <p class="text-primary mb-0">Open in new window</p>
                   <button type="button" class="btn btn-outline-primary mx-3">Apply</button>
                 </div>
               </div>
