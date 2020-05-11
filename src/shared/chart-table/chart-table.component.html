@@ -1,0 +1,60 @@
+<div class='chartTable' style="width: 100%;">
+    <div class="cardHeader">
+        <span>
+            {{config.heading}}
+        </span>
+        <div>
+            <span *ngIf="config.toggleButton">
+                <div class="btn-group btnContainer">
+                    <button #btn1 type="button" class="btn btn1" [ngClass]="{'active': toggleButton.btn1.active}" (click)="toggleClick('btn1')">Short Fall</button>
+                    <button #btn2 type="button" class="btn btn2 active" [ngClass]="{'active': toggleButton.btn2.active}" (click)="toggleClick('btn2')">Excess</button>
+                  </div>
+            </span>
+            <span *ngIf="config.minMaxButton">
+                ful
+            </span>
+        </div>
+    </div>
+    <div class="tableDiv" *ngIf="istable else chart" >
+        <table class="table">
+            <thead class="tableHead">
+                <tr class="tableTr">
+                    <td class="tableTd" [ngStyle]="{'width': colValue.width}" style="width: 25% !important;" *ngFor="let colValue of config.colValue">
+                        {{colValue.name | uppercase}}
+                    </td>
+                </tr>
+            </thead>
+            <tbody class="tableBody">
+                <tr class="tableTr" *ngFor="let rowData of config.rowValue">
+                    <td class="tableTd" *ngFor="let rowValue of rowData; let i = index;">
+                        <ng-container *ngIf="config.colValue[i].type == 'text'">
+                            {{rowValue}}
+                        </ng-container>
+                        <ng-container *ngIf="config.colValue[i].type == 'clickable'" >
+                            <span class="clickable" >
+                                {{rowValue}}
+                            </span>
+                        </ng-container>                        
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <ng-template #chart>
+        <div [ngSwitch]="chartType">
+            <ng-template [ngSwitchCase]="'chart1'">
+                <p>
+                    hi It's chart One
+                </p>
+            </ng-template>
+            <ng-template [ngSwitchCase]="'chart2'">
+                <p>
+                    hi It's chart One
+                </p>
+            </ng-template>   
+        </div>
+    </ng-template>
+    
+    
+</div>

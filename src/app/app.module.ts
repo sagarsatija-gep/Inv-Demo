@@ -1,3 +1,4 @@
+import { Shared } from './../shared/shared.module';
 import { RfidPopUpComponent } from './../shared/popUpComponent/RFIDPopUp/rfidPopUp.component';
 import { SuccessPopUp } from './../shared/popUpComponent/successPopUp/successPopUP.component';
 import { ExternalStockTransfer } from './external-stock-transfer/externalStockTransfer.component';
@@ -66,6 +67,7 @@ import { DiscrepancyDocumentComponent } from './discrepancy-document/discrepancy
 import { CreateMaterialRequestFormComponent } from './create-material-request-form/create-material-request-form.component';
 import { ManageMaterialRequestsComponent } from './manage-material-requests/manage-material-requests.component';
 import { CreateMaterialRequestComponent } from './create-material-request/create-material-request.component';
+import { DashboardOverviewComponent } from './dashboard-overview/dashboard-overview.component';
 
 @NgModule({
   declarations: [
@@ -118,7 +120,8 @@ import { CreateMaterialRequestComponent } from './create-material-request/create
     DiscrepancyDocumentComponent,
     CreateMaterialRequestFormComponent,
     ManageMaterialRequestsComponent,
-    CreateMaterialRequestComponent
+    CreateMaterialRequestComponent,
+    DashboardOverviewComponent
   ],
   imports: [
     CommonModule,
@@ -143,6 +146,7 @@ import { CreateMaterialRequestComponent } from './create-material-request/create
       apiKey: 'AIzaSyDRSpfba5rdNqT0RAcD4cvdUaLOk2-Bzic',
       libraries: ['places']
     }),
+    Shared
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService, NgbActiveModal],
   bootstrap: [AppComponent],

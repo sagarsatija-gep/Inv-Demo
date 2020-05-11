@@ -1,0 +1,79 @@
+.chartTable {
+    width: 100%;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 1px 6px #0000000A;
+    border: 1px solid #EAEDF3;
+    padding-bottom: 35px;
+
+    .cardHeader {
+        height: 40px;;
+        padding: 5px 10px;
+        display: flex;
+        justify-content: space-between;
+
+        .btnContainer {
+                border: 2px solid #2290FF;
+                height: 20px;
+                
+            .btn {
+                padding: 0px 5px;
+                border: 0px;
+                border-radius: 0px;
+                color: #2290FF;
+            }
+
+            .btn1 {
+                font-size: 10px;
+            } 
+
+            .btn2 {
+                font-size: 10px;
+            }
+
+            .active {
+                background-color: #2290FF;
+                color: white;
+            }
+        }
+    }
+
+    .tableDiv {
+        width: 100%;
+
+        .table {
+            width: 100%;
+            table-layout: fixed;
+            margin: 0px;
+
+            .tableHead {
+
+                .tableTr {
+
+                    .tableTd {
+                        font-size: 12px;
+                        padding-left: 10px;
+                    }
+
+
+                }
+            }
+
+            .tableBody {
+
+                .tableTr {
+                    border-bottom: 1px solid #dcdee0;
+
+                    .tableTd {
+                        padding-left: 10px;
+                        font-size: 14px;
+
+                        .clickable {
+                            color: blue;
+                        } 
+                    }
+
+                }
+            }
+        }
+    }
+}
