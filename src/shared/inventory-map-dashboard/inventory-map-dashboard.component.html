@@ -105,14 +105,13 @@
               </label>
               
               <div *ngFor="let list of selections; let i = index;">
-                <p data-toggle="collapse" [attr.data-target]="'#options'+i" class="text-medium mb-0">
+                <p data-toggle="collapse" [attr.data-target]="'#options'+i" class="text-medium mb-0" (click)="collapse()">
                   <span class="pointer">
-                    <!-- <i class="fa mr-2" aria-hidden="true"></i> -->
-                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    <i class="fa fa-caret-down" aria-hidden="true" [ngClass]="{'activeWidget': isToggle}"></i>
                     {{list.name}}
                   </span>
                 </p>
-                <ul [id]="'options'+i" class="list-unstyled collapse ml-4 mt-2" [ngClass]="list.class">
+                <ul [id]="'options'+i" class="list-unstyled collapse cat ml-4 mt-2" [ngClass]="{'show' : list.isShow}">
                   <li *ngFor="let option of list.options">
                     <label class="checkboxContainer">
                       <input type="checkbox" [name]="option.name" [checked]="option.isChecked">
