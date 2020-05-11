@@ -40,6 +40,7 @@ export class ChartTableComponent implements OnInit {
             'value': 15
         }
     ];
+    view = [300, 650];
     chartScheme = { domain: ['#000'] };
     legendTitle = 'Rahul';
     barPadding = '80';
@@ -60,6 +61,7 @@ export class ChartTableComponent implements OnInit {
         }
         this.istable = this.config.isTable;
         if (!this.config.isTable) {
+            this.view = this.config.view;
             this.chartType = this.config.chartType;
             this.chartScheme = { domain: ['#000'] };
             this.legendTitle = this.config.legendTitle;
@@ -72,6 +74,7 @@ export class ChartTableComponent implements OnInit {
             this.yLabel = this.config.yLabel;
             this.showXLabel = this.config.showXLabel;
             this.showYLabel = this.config.showYLabel;
+            this.chartData = this.config.data;
         }
     }
 

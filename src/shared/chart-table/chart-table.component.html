@@ -1,72 +1,77 @@
 <div class='chartTable'>
-    <div class="cardHeader">
-        <span>
-            {{config.heading}}
-        </span>
-        <div>
-            <span *ngIf="config.toggleButton">
-                <div class="btn-group btnContainer">
-                    <button #btn1 type="button" class="btn btn1" [ngClass]="{'active': toggleButton.btn1.active}" (click)="toggleClick('btn1')">Short Fall</button>
-                    <button #btn2 type="button" class="btn btn2 active" [ngClass]="{'active': toggleButton.btn2.active}" (click)="toggleClick('btn2')">Excess</button>
-                  </div>
-            </span>
-            <span *ngIf="config.minMaxButton">
-                ful
-            </span>
+  <div class="cardHeader">
+    <span>
+      <img src="../../assets/images/drag-gray.png" style="height: 18px; margin-right: 10px;" alt="">
+      {{config.heading}}
+    </span>
+    <div>
+      <span *ngIf="config.toggleButton">
+        <div class="btn-group btnContainer">
+          <button #btn1 type="button" class="btn btn1" [ngClass]="{'active': toggleButton.btn1.active}"
+            (click)="toggleClick('btn1')">Short Fall</button>
+          <button #btn2 type="button" class="btn btn2 active" [ngClass]="{'active': toggleButton.btn2.active}"
+            (click)="toggleClick('btn2')">Excess</button>
         </div>
+      </span>
+      <span *ngIf="config.minMaxButton">
+        <img src="../../assets/images/icon-Expand.png" style="height: 18px; margin-left: 10px;" alt="">
+      </span>
     </div>
-    <div class="tableDiv" *ngIf="istable else chart" >
-        <table class="table">
-            <thead class="tableHead">
-                <tr class="tableTr">
-                    <td class="tableTd" [ngStyle]="{'width': colValue.width}" style="width: 25% !important;" *ngFor="let colValue of config.colValue">
-                        {{colValue.name | uppercase}}
-                    </td>
-                </tr>
-            </thead>
-            <tbody class="tableBody">
-                <tr class="tableTr" *ngFor="let rowData of config.rowValue">
-                    <td class="tableTd" *ngFor="let rowValue of rowData; let i = index;">
-                        <ng-container *ngIf="config.colValue[i].type == 'text'">
-                            {{rowValue}}
-                        </ng-container>
-                        <ng-container *ngIf="config.colValue[i].type == 'clickable'" >
-                            <span class="clickable" >
-                                {{rowValue}}
-                            </span>
-                        </ng-container>                        
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
+  </div>
+  <div class="tableDiv" *ngIf="istable else chart">
+    <table class="table">
+      <thead class="tableHead">
+        <tr class="tableTr">
+          <td class="tableTd" [ngStyle]="{'width': colValue.width}" style="width: 25% !important;"
+            *ngFor="let colValue of config.colValue">
+            {{colValue.name | uppercase}}
+          </td>
+        </tr>
+      </thead>
+      <tbody class="tableBody">
+        <tr class="tableTr" *ngFor="let rowData of config.rowValue">
+          <td class="tableTd" *ngFor="let rowValue of rowData; let i = index;">
+            <ng-container *ngIf="config.colValue[i].type == 'text'">
+              {{rowValue}}
+            </ng-container>
+            <ng-container *ngIf="config.colValue[i].type == 'clickable'">
+              <span class="clickable">
+                {{rowValue}}
+              </span>
+            </ng-container>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-    <ng-template #chart>
-        <div [ngSwitch]="chartType">
-            <ng-template [ngSwitchCase]="'chart1'">
-                <ngx-charts-bar-vertical
-        [results]="chartData"
-        [view]=[650,300]
-        [scheme]="chartScheme"
-        [barPadding]="barPadding"
-        [gradient]="isGradient"
-        [xAxis]="xAxisShow"
-        [yAxis]="yAxisShow"
-        [legend]="isLegend"
-        [legendTitle]="legendTitle"
-        [xAxisLabel]="xLabel"
-        [yAxisLabel]="yLabel"
-        [showXAxisLabel]="showXLabel"
-        [showYAxisLabel]="showYLabel">
-      </ngx-charts-bar-vertical>
-            </ng-template>
-            <ng-template [ngSwitchCase]="'chart2'">
-                <p>
-                    hi It's chart One
-                </p>
-            </ng-template>   
-        </div>
-    </ng-template>
-    
-    
+  <ng-template #chart>
+    <div [ngSwitch]="chartType">
+      <ng-template [ngSwitchCase]="'bar-vertical'">
+        <ngx-charts-bar-vertical [results]="chartData" [view]="view" [scheme]="chartScheme" [barPadding]="barPadding"
+          [gradient]="isGradient" [xAxis]="xAxisShow" [yAxis]="yAxisShow" [legend]="isLegend"
+          [legendTitle]="legendTitle" [xAxisLabel]="xLabel" [yAxisLabel]="yLabel" [showXAxisLabel]="showXLabel"
+          [showYAxisLabel]="showYLabel" (select)="onSelect($event)" (activate)="onActivate($event)"
+          (deactivate)="onDeactivate($event)">
+        </ngx-charts-bar-vertical>
+      </ng-template>
+      <ng-template [ngSwitchCase]="'bar-horizontal'">
+        <ngx-charts-bar-horizontal [view]="view" [scheme]="chartScheme" [results]="chartData" [gradient]="isGradient"
+          [xAxis]="xAxisShow" [yAxis]="yAxisShow" [legend]="isLegend" [legendTitle]="legendTitle" [xAxisLabel]="xLabel"
+          [yAxisLabel]="yLabel" [showXAxisLabel]="showXLabel" [showYAxisLabel]="showYLabel" (select)="onSelect($event)"
+          (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+        </ngx-charts-bar-horizontal>
+      </ng-template>
+      <ng-template [ngSwitchCase]="'grouped-vertical-bar'">
+        <ngx-charts-bar-vertical-2d
+        [view]="view" [scheme]="chartScheme" [results]="chartData" [gradient]="isGradient"
+          [xAxis]="xAxisShow" [yAxis]="yAxisShow" [legend]="isLegend" [legendTitle]="legendTitle" [xAxisLabel]="xLabel"
+          [yAxisLabel]="yLabel" [showXAxisLabel]="showXLabel" [showYAxisLabel]="showYLabel" (select)="onSelect($event)"
+          (activate)="onActivate($event)" (deactivate)="onDeactivate($event)">
+      </ngx-charts-bar-vertical-2d>
+      </ng-template>
+    </div>
+  </ng-template>
+
+
 </div>
