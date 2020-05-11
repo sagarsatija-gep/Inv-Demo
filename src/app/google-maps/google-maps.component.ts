@@ -67,7 +67,13 @@ export class GoogleMapsComponent {
       options: [
         {
           name: 'Women',
-          selected: true
+          selected: true,
+          values: [
+            {
+              name: 'Tops',
+              selected: true
+            }
+          ]
         },
         {
           name: 'Beauty',
@@ -107,13 +113,7 @@ export class GoogleMapsComponent {
         },
         {
           name: 'Watches',
-          selected: true,
-          values: [
-            {
-              name: 'Smart Watches',
-              selected: true
-            }
-          ]
+          selected: true
         }
       ]
     },
