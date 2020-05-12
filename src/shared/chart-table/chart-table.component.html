@@ -46,8 +46,8 @@
   </div>
 
   <ng-template #chart>
-    <div [ngSwitch]="chartType">
-      <ng-template [ngSwitchCase]="'bar-vertical'">
+    <div class="chartType" [ngSwitch]="chartType">
+      <ng-template class="bar-vertical" [ngSwitchCase]="'bar-vertical'">
         <ngx-charts-bar-vertical [results]="chartData" [view]="view" [scheme]="chartScheme" [barPadding]="barPadding"
           [gradient]="isGradient" [xAxis]="xAxisShow" [yAxis]="yAxisShow" [legend]="isLegend"
           [legendTitle]="legendTitle" [xAxisLabel]="xLabel" [yAxisLabel]="yLabel" [showXAxisLabel]="showXLabel"
@@ -55,7 +55,7 @@
           (deactivate)="onDeactivate($event)">
         </ngx-charts-bar-vertical>
       </ng-template>
-      <ng-template [ngSwitchCase]="'bar-horizontal'">
+      <ng-template class="bar-horizontal"  [ngSwitchCase]="'bar-horizontal'">
         <ngx-charts-bar-horizontal [view]="view" [scheme]="chartScheme" [results]="chartData"  [barPadding]="barPadding" [gradient]="isGradient"
           [xAxis]="xAxisShow" [yAxis]="yAxisShow" [legend]="isLegend" [legendTitle]="legendTitle" [xAxisLabel]="xLabel"
           [yAxisLabel]="yLabel" [showXAxisLabel]="showXLabel" [showYAxisLabel]="showYLabel" (select)="onSelect($event)"
@@ -63,7 +63,7 @@
         </ngx-charts-bar-horizontal>
       </ng-template>
       <ng-template [ngSwitchCase]="'grouped-vertical-bar'">
-        <ngx-charts-bar-vertical-2d
+        <ngx-charts-bar-vertical-2d  class="grouped-vertical-bar"
         [view]="view" [scheme]="chartScheme" [results]="chartData" [gradient]="isGradient"  [barPadding]="barPadding"
           [xAxis]="xAxisShow" [yAxis]="yAxisShow" [legend]="isLegend" [legendTitle]="legendTitle" [xAxisLabel]="xLabel"
           [yAxisLabel]="yLabel" [showXAxisLabel]="showXLabel" [showYAxisLabel]="showYLabel" [legendPosition]="'below'" (select)="onSelect($event)"

@@ -77,4 +77,43 @@
             }
         }
     }
+
+    .chartType {
+
+        .bar-vertical {
+
+        }
+
+        .bar-horizontal {
+
+        }
+
+        .grouped-vertical-bar {
+            
+            .ng-tns-c16-15 {
+
+                    .ngx-charts-outer {
+
+                        .chart-legend {
+
+                            div {
+                                
+                                .legend-title {
+                                    display: flex !important;
+                                    justify-content: center !important; 
+                                }
+
+                                .legend-wrap {
+
+                                    ul {
+                                        display: flex !important;
+                                        justify-content: center !important; 
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+        }
+    }
 }

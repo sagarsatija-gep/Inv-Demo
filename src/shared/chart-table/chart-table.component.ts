@@ -1,9 +1,10 @@
-import { Component, OnInit, ElementRef, ViewChild, Input } from "@angular/core";
+import { Component, OnInit, ElementRef, ViewChild, Input, ViewEncapsulation } from "@angular/core";
 
 @Component({
     selector: 'chart-table',
     templateUrl: './chart-table.component.html',
-    styleUrls: ['./chart-table.component.scss']
+    styleUrls: ['./chart-table.component.scss'],
+    encapsulation: ViewEncapsulation.None
 })
 export class ChartTableComponent implements OnInit {
     @Input() config;
