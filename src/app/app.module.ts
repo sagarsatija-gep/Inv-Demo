@@ -1,3 +1,4 @@
+import { Shared } from './../shared/shared.module';
 import { RfidPopUpComponent } from './../shared/popUpComponent/RFIDPopUp/rfidPopUp.component';
 import { SuccessPopUp } from './../shared/popUpComponent/successPopUp/successPopUP.component';
 import { ExternalStockTransfer } from './external-stock-transfer/externalStockTransfer.component';
@@ -66,6 +67,7 @@ import { DiscrepancyDocumentComponent } from './discrepancy-document/discrepancy
 import { CreateMaterialRequestFormComponent } from './create-material-request-form/create-material-request-form.component';
 import { ManageMaterialRequestsComponent } from './manage-material-requests/manage-material-requests.component';
 import { CreateMaterialRequestComponent } from './create-material-request/create-material-request.component';
+import { DashboardOverviewComponent } from './dashboard-overview/dashboard-overview.component';
 import { ScdDropdownComponent } from './scd-dropdown/scd-dropdown.component';
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 
@@ -121,6 +123,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     CreateMaterialRequestFormComponent,
     ManageMaterialRequestsComponent,
     CreateMaterialRequestComponent,
+    DashboardOverviewComponent,
     ScdDropdownComponent
   ],
   imports: [
@@ -146,6 +149,7 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
       apiKey: 'AIzaSyDRSpfba5rdNqT0RAcD4cvdUaLOk2-Bzic',
       libraries: ['places']
     }),
+    Shared,
     Ng2SearchPipeModule
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService, NgbActiveModal],
