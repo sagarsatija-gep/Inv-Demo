@@ -9,7 +9,10 @@
       </div>
     </div>
     <app-google-maps></app-google-maps>
-    <div class="container-fluid border border-secondary rounded-sm bg-white marginBtm40">
+    <div class="container-fluid border border-secondary rounded-sm bg-white marginBtm40" style="position: relative;">
+      <div [ngStyle]="filter.styles">
+        <app-scd-dropdown [config]="filter"></app-scd-dropdown>
+      </div>
       <mat-tab-group style="margin: 15px 0px;">
         <mat-tab label="Detailed View">
           <div class="control-section">

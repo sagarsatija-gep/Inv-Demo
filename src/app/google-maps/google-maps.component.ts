@@ -9,53 +9,19 @@ export class GoogleMapsComponent {
   // google maps zoom level
   zoom: number = 5;
 
-
   // initial center position for the map
   lat: number = 34.5199;
   lng: number = -105.8701;
   locations=[
     {
+      name: "Warehouse",
+      value: "1",
+      color: "#3BAD4B"
+    },
+    {
       name: "Refineries",
-      value: "8",
-      color: "green"
-    },
-    {
-      name: "Distribution Centers",
-      value: "2",
-      color: "blue"
-    },
-    {
-      name: "Retail Outlets",
       value: "5",
-      color: "purple"
-    },
-    {
-      name: "Customer Locations",
-      value: "2",
-      color: "red"
-    }
-  ]
-
-  items = [
-    {
-      name: "Low Inventory",
-      value: "8",
-      color: "purple"
-    },
-    {
-      name: "Overstocked",
-      value: "987",
-      color: "blue"
-    },
-    {
-      name: "Products Line",
-      value: "1843",
-      color: "green"
-    },
-    {
-      name: "Categories",
-      value: "886",
-      color: "red"
+      color: "#3D5AFE"
     }
   ]
 
@@ -345,7 +311,7 @@ export class GoogleMapsComponent {
       type: 'toggle-button',
       styles: { "flex": "0 0 13.5%", "max-width": "13.5%", "padding": "0 3px" },
       dataWidth: "150",
-      selected: true
+      selected: false
     },
     {
       filterName: 'Limited Time Specials',
@@ -359,7 +325,7 @@ export class GoogleMapsComponent {
       type: 'toggle-button',
       styles: { "flex": "0 0 11.5%", "max-width": "11.5%", "padding": "0 3px" },
       dataWidth: "120",
-      selected: true
+      selected: false
     }
   ]
 

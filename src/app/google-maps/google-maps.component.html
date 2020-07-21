@@ -37,39 +37,30 @@
             </agm-map>
           </div>
           <div style="width: 25%;">
-            <div style="height:50%;display: flex; border-bottom: 1px gainsboro solid;border-top: 1px gainsboro solid;">
-              <div style="height: 10em;width: 40%; display: flex; align-items: center; justify-content: center">
-                <span style="display: block;"> LOCATIONS </span>
-                <br>
-                <h2 style="position: absolute; margin-top: 24px;font-size: 38px;font-weight: 500;"> 19 </h2>
+            <div class="google-maps-card google-maps-flex-card">
+              <div class="location">
+                <p> LOCATIONS </p>
+                <h3>19</h3>
               </div>
-              <div style="width: 60%;padding-top: 4rem;">
-                <div style="display: flex; display: flex; justify-content: left" *ngFor="let locations of locations">
-                  <div [ngStyle]="{'background-color': locations.color}"
-                    style="margin: .2rem 1rem .2rem 0 ;height: 1rem;width: 1rem;border-radius: .3rem;"></div>
-                  <span> {{ locations.name }} : &nbsp; </span>
-                  <span [ngStyle]="{'color': locations.color}" style="font-size: 16px;">
-                    {{ locations.value }}
-                  </span>
+              <div style="flex-wrap: wrap;">
+                <div class="location-details" *ngFor="let locations of locations">
+                  <div class="location-details-status" [ngStyle]="{'background-color': locations.color}"></div>
+                  <p>
+                    <span>{{ locations.name }}: &nbsp;</span>
+                    <span [ngStyle]="{'color': locations.color}">
+                      {{ locations.value }}
+                    </span>
+                  </p>
                 </div>
               </div>
             </div>
-            <div style="height:50%;display: flex; border-top: 1px gainsboro solid;">
-              <div style="height: 10em;width: 40%; display: flex; align-items: center; justify-content: center">
-                <span style="display: block;"> ITEMS </span>
-                <br>
-                <span style="position: absolute; margin-top: 24px; font-size: 38px; font-weight: 500;">
-                  3840
-                </span>
-              </div>
-              <div style="width: 60%;padding-top: 4rem;">
-                <div style="display: flex; display: flex; justify-content: left" *ngFor="let items of items">
-                  <span>{{ items.name }} : &nbsp; </span>
-                  <span [ngStyle]="{'color': items.color}" style="font-size: 16px;">
-                    {{ items.value }}
-                  </span>
-                </div>
-              </div>
+            <div class="google-maps-card">
+              <h3>USD 2.3M</h3>
+              <p>Inventory Valuation</p>
+            </div>
+            <div class="google-maps-card">
+              <h3>3200 Units</h3>
+              <p>Number of Line Items</p>
             </div>
           </div>
         </div>
