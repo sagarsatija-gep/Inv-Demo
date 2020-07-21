@@ -7,10 +7,11 @@
   </div>
   <div class="row">
     <div class="col-sm-3 mb-3" *ngFor="let x of quickLinks;">
-      <div class="border border-secondary rounded-sm p-4 hoverEffect d-flex" routerLink={{x.url}}>
+      <div class="rounded-sm p-4 hoverEffect d-flex" routerLink={{x.url}}>
         <img class="quicklinksImg" src={{x.img}}>
-        <span>
-          <h6 class="pl-3" style="margin-top: 22px;">{{ x.txt }}</h6>
+        <span style="display: flex;
+        align-items: center;"> 
+          <h6 class="pl-3 " style="font-size: 18px !important;">{{ x.txt }}</h6>
         </span>
       </div>
     </div>

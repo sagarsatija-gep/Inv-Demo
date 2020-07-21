@@ -13,40 +13,40 @@ export class QuickLinksComponent implements OnInit {
   constructor() {
     this.quickLinks = [
       {
-        img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink1.png",
-        txt: "Manage Cycle Count",
+        img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/quickLinks/seller/manage2yearPlan.png",
+        txt: "Manage Long Term Plan",
         url: "/manageCycleCountRequests"
       },
       {
-        img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink2.png",
-        txt: "External Stock Transfer",
+        img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/quickLinks/seller/replenishment.png",
+        txt: "Manage Replenishment Forecast",
         url: "/externalStockTransfer"
       },
       {
-        img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink3.png",
-        txt: "Internal Stock Transfer",
+        img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/quickLinks/seller/manageOrder.png",
+        txt: "Manage Order",
         url: "/internalstocktransfer"
       },
       {
-        img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink4.png",
-        txt: "Create Package",
+        img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/quickLinks/seller/manageTank.png",
+        txt: "Manage ASN",
         url: "/createPackage"
       },
       {
-        img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink5.png",
-        txt: "Manage Reservations"
+        img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/quickLinks/seller/manageShipment.png",
+        txt: "Manage Shipment"
       },
       {
-        img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink7.png",
-        txt: "Manage Goods Issue"
+        img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/quickLinks/seller/manageCapacity.png",
+        txt: "Manage Capacity"
       },
       {
-        img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink6.png",
-        txt: "Manage Stock Movement"
+        img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/quickLinks/seller/manageactiveIngradient.png",
+        txt: "Manage Invoice"
       },
       {
-        img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/quicklink8.png",
-        txt: "Manage Pick List"
+        img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/quickLinks/seller/manageleadTime.png",
+        txt: "Manage Lead Time"
       }
     ];
 

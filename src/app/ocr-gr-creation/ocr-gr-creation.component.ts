@@ -86,6 +86,11 @@ export class OcrGrCreationComponent implements OnInit {
                   },
                   {
                     type: 'text',
+                    name: 'PO Quantity',
+                    colSize: '100px'
+                  },
+                  {
+                    type: 'text',
                     name: 'Received Quantity',
                     colSize: '100px'
                   },
@@ -128,6 +133,10 @@ export class OcrGrCreationComponent implements OnInit {
                     },
                     {
                       type: 'text',
+                      value: '77'
+                    },
+                    {
+                      type: 'textbox',
                       value: '20'
                     },
                     {
@@ -168,6 +177,10 @@ export class OcrGrCreationComponent implements OnInit {
                     },
                     {
                       type: 'text',
+                      value: '200'
+                    },
+                    {
+                      type: 'textbox',
                       value: '50'
                     },
                     {
