@@ -1,0 +1,9 @@
+<div class="container-fluid">
+  <app-inventory-map-dashboard></app-inventory-map-dashboard>
+
+  <div class="row">
+    <div class="col-sm-6" *ngFor="let config of configs">
+      <chart-table [config]='config'></chart-table>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,189 @@
+<div class="container-fluid" style="margin-top: 10px;">
+  <!-- Header -->
+  <div class="row">
+    <div class="col-sm-7">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a href="#">Dashboard</a></li>
+          <!-- <li class="breadcrumb-item active" aria-current="page">Manage</li> -->
+        </ol>
+      </nav>
+
+      <span class="dropdown locationDrop">
+        <p class="pageHeadings dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Inventory Overview of 
+          <span class="display-locations">
+            Gulf of Mexico (GOM)
+          </span>
+        </p>
+
+        <!-- Different Locations -->
+        <ul class="list-unstyled py-3 border locations dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <li class="dropdown-item my-2 text-medium text-gray">Switch Location to :</li>
+          <li *ngFor="let loc of locations" class="dropdown-item mb-4">
+            <p class="mb-0 text-primary text-medium">{{loc.text1}}</p>
+            <p class="mb-0 text-dark-gray text-medium">{{loc.text2}}</p>
+          </li>
+        </ul>
+      </span>
+
+    </div>
+    <div class="col-sm-5 float-right d-flex justify-content-end align-items-center">
+      <div class="dropdown my-3" *ngFor="let d  of headerDropdowns">
+        <button type="button" class="btn dropdown-toggle text-left shadow-sm" data-toggle="dropdown" [ngClass]="d.class" [style.width.px]="d.width">
+          {{d.label}}
+        </button>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" *ngFor="let opt of d.options">{{opt}}</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Card Content -->
+  <div class="row">
+    <div class="col-sm-12 card">
+      <div class="row">
+        <!-- header -->
+        <div class="col-sm-12 text-medium py-2 d-flex align-items-center" style="border-bottom: 1px solid #e6e6e6;">
+          <div class="col-sm-6 d-flex align-items-center">
+            <img src="../../assets/images/drag-gray.png" style="height: 18px;">
+            <p class="mb-0 ml-3 text-18">Inventory Summary</p>
+          </div>
+          <div class="col-sm-6 d-flex justify-content-end">
+            <div class="box mr-2" style="width: 140px;">
+              <p class="mb-0 text-gray text-uppercase text-12">Frquency</p>
+              <p class="mb-0">Daily</p>
+            </div>
+
+            <div class="box mr-2">
+              <mat-form-field style="width: 140px;">
+                <mat-label class="text-gray text-uppercase text-12">From</mat-label>
+                <input matInput [matDatepicker]="picker1" [formControl]="date">
+                <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+                <mat-datepicker #picker1></mat-datepicker>
+              </mat-form-field>
+            </div>
+
+            <div class="box mr-2">
+              <mat-form-field style="width: 140px;">
+                <mat-label class="text-gray text-uppercase text-12">From</mat-label>
+                <input matInput [matDatepicker]="picker2" [formControl]="date">
+                <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+                <mat-datepicker #picker2></mat-datepicker>
+              </mat-form-field>
+            </div>
+          </div>
+        </div>
+
+        <!-- Filter -->
+        <div class="col-sm-4" style="border-right: 1px solid #e6e6e6;">
+          <div class="row">
+            <div class="col-sm-6 py-2 text-medium d-flex align-items-center">
+              <p class="mb-0">Filter</p>
+            </div>
+            <div class="col-sm-6 py-2 text-medium d-flex align-items-center justify-content-end">
+              <p class="text-primary mb-0 text-right pointer" data-toggle="collapse" data-target='#options0'>Hide Selections(4)</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="input-group mb-3">
+                <input type="text" class="form-control border-right-0" placeholder="Search">
+                <div class="input-group-append">
+                  <span class="input-group-text bg-white">
+                    <img src="../../assets/images/icon-search.png" alt="">
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            <!-- lists of locations-->
+            <div class="col-sm-12" style="height: 270px; overflow-y: scroll;">
+              <label class="checkboxContainer">
+                <input type="checkbox">Select All
+                <span class="checkmark"></span>
+              </label>
+              
+              <div *ngFor="let list of selections; let i = index;">
+                <p data-toggle="collapse" [attr.data-target]="'#options'+i" class="text-medium mb-0">
+                  <span class="pointer">
+                    <!-- <i class="fa mr-2" aria-hidden="true"></i> -->
+                    <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    {{list.name}}
+                  </span>
+                </p>
+                <ul [id]="'options'+i" class="list-unstyled collapse ml-4 mt-2" [ngClass]="list.class">
+                  <li *ngFor="let option of list.options">
+                    <label class="checkboxContainer">
+                      <input type="checkbox" [name]="option.name" [checked]="option.isChecked">
+                      {{option.name}}
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                </ul>
+                
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="col-sm-12 py-3 text-medium border align-items-center">
+              <div class="row">
+                <div class="col-sm-3 align-items-center">
+                  <p class="text-primary mb-0">Clear All</p>
+                </div>
+                <div class="col-sm-9 d-flex justify-content-end align-items-center">
+                  <p class="text-primary mb-0">Open in new window</p>
+                  <button type="button" class="btn btn-outline-primary mx-3">Apply</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Chart -->
+        <div class="col-sm-4 mx-auto align-items-center d-flex justify-content-center">
+          <div *ngFor="let item of chartsConfig">    
+
+            <ngx-charts-pie-chart 
+              [view]= "item.view"
+              [scheme]="item.colorScheme"
+              [results]="item.data"
+              [gradient]="item.options.gradient"
+              [legend]="item.options.showLegend"
+              [labels]="item.options.showLabels"
+              [doughnut]="item.options.isDoughnut"
+              [arcWidth]="item.options.arcWidth"
+              >
+            </ngx-charts-pie-chart>
+
+          </div>    
+        </div>
+
+        <!-- Chart Data -->
+        <div class="col-sm-4 chartdata">
+          <div class="row" *ngFor="let data of entirechartData">
+            <div class="col-sm-12 d-flex mb-3" style="border-bottom: 1px solid #e6e6e6;">
+              <div class="my-3" *ngFor="let heading of data.chartHeadings" [ngClass]="heading.class">
+                <p class="heading-big">{{heading.text1}}</p>
+                 <p class="heading-small">{{heading.text2}}</p>
+              </div>
+            </div>
+
+            <div class="col-sm-12">
+              <div class="mb-4 pl-2" *ngFor="let details of data.chartData" [ngStyle]="details.styles">
+                <p class="chart-data-value-heading text-uppercase mb-0">{{details.text1}}</p>
+                <div class="d-flex chart-data-value-subheading">
+                  <span class="text-uppercase pr-2 border-right">{{details.text2}}</span>
+                  <span class="text-capitalize pl-2">{{details.text3}}</span>
+              </div>
+            </div>
+            </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</div>
+
+
