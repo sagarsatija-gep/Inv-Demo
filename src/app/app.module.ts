@@ -1,8 +1,5 @@
-<<<<<<< HEAD
 import { ToastPopupComponent } from './toast-popup/toast-popup.component';
-=======
 import { Shared } from './../shared/shared.module';
->>>>>>> 94f2847b41522c946b2cb31ace32f9be18a3183f
 import { RfidPopUpComponent } from './../shared/popUpComponent/RFIDPopUp/rfidPopUp.component';
 import { SuccessPopUp } from './../shared/popUpComponent/successPopUp/successPopUP.component';
 import { ExternalStockTransfer } from './external-stock-transfer/externalStockTransfer.component';
