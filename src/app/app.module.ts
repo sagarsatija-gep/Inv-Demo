@@ -1,3 +1,4 @@
+import { ToastPopupComponent } from './toast-popup/toast-popup.component';
 import { RfidPopUpComponent } from './../shared/popUpComponent/RFIDPopUp/rfidPopUp.component';
 import { SuccessPopUp } from './../shared/popUpComponent/successPopUp/successPopUP.component';
 import { ExternalStockTransfer } from './external-stock-transfer/externalStockTransfer.component';
@@ -118,7 +119,8 @@ import { CreateMaterialRequestComponent } from './create-material-request/create
     DiscrepancyDocumentComponent,
     CreateMaterialRequestFormComponent,
     ManageMaterialRequestsComponent,
-    CreateMaterialRequestComponent
+    CreateMaterialRequestComponent,
+    ToastPopupComponent
   ],
   imports: [
     CommonModule,

@@ -8,6 +8,13 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class OcrGrCreationComponent implements OnInit {
 
+  toastPopupData = {
+    image: true,
+    img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/success.png",
+    value: "You Submitted "
+};
+showPopUp;
+
   constructor() { }
 
   ngOnInit() {
@@ -510,5 +517,7 @@ export class OcrGrCreationComponent implements OnInit {
       }
     }
   ]
+
+  
 
 }
