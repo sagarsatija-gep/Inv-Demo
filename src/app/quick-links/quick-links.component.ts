@@ -14,39 +14,39 @@ export class QuickLinksComponent implements OnInit {
     this.quickLinks = [
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/quickLinks/seller/manage2yearPlan.png",
-        txt: "Manage Long Term Plan",
+        txt: "Manage Cycle Count",
         url: "/manageCycleCountRequests"
       },
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/quickLinks/seller/replenishment.png",
-        txt: "Manage Replenishment Forecast",
+        txt: "External Stock Transfer",
         url: "/externalStockTransfer"
       },
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/quickLinks/seller/manageOrder.png",
-        txt: "Manage Order",
+        txt: "Internal Stock Transfer",
         url: "/internalstocktransfer"
       },
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/quickLinks/seller/manageTank.png",
-        txt: "Manage ASN",
+        txt: "Create Package",
         url: "/createPackage"
       },
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/quickLinks/seller/manageShipment.png",
-        txt: "Manage Shipment"
+        txt: "Manage Reservations"
       },
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/quickLinks/seller/manageCapacity.png",
-        txt: "Manage Capacity"
+        txt: "Manage Goods Issue"
       },
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/quickLinks/seller/manageactiveIngradient.png",
-        txt: "Manage Invoice"
+        txt: "Manage Stock Movement"
       },
       {
         img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/quickLinks/seller/manageleadTime.png",
-        txt: "Manage Lead Time"
+        txt: "Manage Pick List"
       }
     ];
 

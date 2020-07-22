@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
@@ -11,11 +12,12 @@ export class OcrGrCreationComponent implements OnInit {
   toastPopupData = {
     image: true,
     img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/success.png",
-    value: "You Submitted "
+    value: "Cannot receive Line item 2 as total received quantity is above PO tolerance."
 };
-showPopUp;
+  showPopUp;
+  isFinalize = false;
 
-  constructor() { }
+  constructor(private route: Router) { }
 
   ngOnInit() {
   }
@@ -516,8 +518,25 @@ showPopUp;
         }
       }
     }
-  ]
+  ];
 
-  
+  finalizeClick() {
+    if(this.isFinalize) {
+      this.showPopUp = true;
+      this.toastPopupData.value = 'Goods receipts successfully'
+    } else {
+      this.showPopUp = true;
+    }
+
+      setTimeout(() => {
+        if(this.isFinalize) {
+          this.route.navigate(['/home']);
+        }
+        this.isFinalize = ! this.isFinalize;
+        this.showPopUp = false;
+    }, 2000)
+  }
+
+
 
 }
