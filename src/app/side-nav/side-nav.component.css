@@ -14,7 +14,7 @@
 }
 
 .example-sidenav {
-  width: 103px;
+  width: 120px;
   background: darkgray;
   overflow: hidden;
 }
@@ -47,8 +47,8 @@
 }
 
 .example-sidenav svg {
-  height: 32px;
-  width: 32px;
+  height: 23px;
+  width: 20px;
 }
 
 .myMenu {

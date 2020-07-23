@@ -1,3 +1,5 @@
+import { ErrorPopup } from './../shared/popUpComponent/error-popup/error-popup.component';
+import { ToastPopupComponent } from './toast-popup/toast-popup.component';
 import { Shared } from './../shared/shared.module';
 import { RfidPopUpComponent } from './../shared/popUpComponent/RFIDPopUp/rfidPopUp.component';
 import { SuccessPopUp } from './../shared/popUpComponent/successPopUp/successPopUP.component';
@@ -123,8 +125,10 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     CreateMaterialRequestFormComponent,
     ManageMaterialRequestsComponent,
     CreateMaterialRequestComponent,
+    ToastPopupComponent,
     DashboardOverviewComponent,
-    ScdDropdownComponent
+    ScdDropdownComponent,
+    ErrorPopup
   ],
   imports: [
     CommonModule,
@@ -154,6 +158,6 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
   ],
   providers: [ToggleService, PageService, SortService, FilterService, GroupService, BarcodeValueService, NgbActiveModal],
   bootstrap: [AppComponent],
-  entryComponents: [NgbdModalContent, NgbdModalContent1, NgbdModalContent2, NgbdModalContentCreatePackage, SuccessPopUp, NgbdModalContent3, RfidPopUpComponent, barcodePopup]
+  entryComponents: [NgbdModalContent, NgbdModalContent1, NgbdModalContent2, NgbdModalContentCreatePackage, SuccessPopUp, NgbdModalContent3, RfidPopUpComponent, barcodePopup, ErrorPopup]
 })
 export class AppModule { }

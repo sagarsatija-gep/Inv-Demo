@@ -1,3 +1,7 @@
+import { ErrorPopup } from './../../shared/popUpComponent/error-popup/error-popup.component';
+import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
+import { PopUpService } from './../../shared/form-widget/service/popUp.service';
+import { Router } from '@angular/router';
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
@@ -8,7 +12,16 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 })
 export class OcrGrCreationComponent implements OnInit {
 
-  constructor() { }
+  toastPopupData = {
+    image: true,
+    img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/success.png",
+    value: "Cannot receive Line item 2 as total received quantity is above PO tolerance."
+};
+isErroPopUp;
+  showPopUp;
+  isFinalize = false;
+
+  constructor(private route: Router, public modalService: NgbModal, private popup: PopUpService ) { }
 
   ngOnInit() {
   }
@@ -509,6 +522,28 @@ export class OcrGrCreationComponent implements OnInit {
         }
       }
     }
-  ]
+  ];
+
+  finalizeClick() {
+    if(this.isFinalize) {
+      this.showPopUp = true;
+      this.toastPopupData.value = 'Goods receipts successfully'
+    } else {
+      // this.showPopUp = true;
+      debugger
+      const modalRef = this.modalService.open(ErrorPopup, { size: 'lg' });
+      modalRef.componentInstance.name = 'Receipt is Finalized';
+    }
+
+      setTimeout(() => {
+        if(this.isFinalize) {
+          this.route.navigate(['/home']);
+          this.showPopUp = false;
+        }
+        this.isFinalize = ! this.isFinalize;
+    }, 2000)
+  }
+
+
 
 }

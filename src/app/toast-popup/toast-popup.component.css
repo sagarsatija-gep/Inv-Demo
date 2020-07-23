@@ -1,0 +1,26 @@
+.toastContainer{
+    width: 100%;
+    height: 150px;
+    top: 40%;
+    z-index: 10;
+    position: fixed;
+    left: 0px;
+    background-color: rgba(15, 15, 15, 0.7);
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.toastMessage{
+    top: 42%;
+    position: relative;
+    
+}
+
+.toastMessage img{
+    height: 30px;
+    width: 30px;
+    border-radius: 30px;
+    margin-right: 16px;
+}
