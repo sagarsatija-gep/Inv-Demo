@@ -532,7 +532,7 @@ isErroPopUp;
       // this.showPopUp = true;
       debugger
       const modalRef = this.modalService.open(ErrorPopup, { size: 'lg' });
-      modalRef.componentInstance.name = 'Receipt is Finalized';
+      modalRef.componentInstance.name = 'Cannot receive Line item 2 as total received quantity is above PO tolerance.';
     }
 
       setTimeout(() => {
