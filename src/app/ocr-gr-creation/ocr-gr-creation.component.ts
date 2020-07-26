@@ -78,7 +78,7 @@ isErroPopUp;
                     type: 'text',
                     name: 'Line Number',
                     colSize: '100px',
-                    classes: ''
+                    classes: 'winWidth100px'
                   },
                   {
                     type: 'text',
@@ -95,7 +95,8 @@ isErroPopUp;
                   {
                     type: 'text',
                     name: 'UOM',
-                    colSize: '100px'
+                    colSize: '100px',
+                    classes: 'winWidth100px'
                   },
                   {
                     type: 'text',
@@ -114,15 +115,20 @@ isErroPopUp;
                   },
                   {
                     type: 'text',
+                    name: 'Total received quantity',
+                    colSize: '100px'
+                  },
+                  {
+                    type: 'text',
                     name: 'QC Result',
                     colSize: '100px',
-                    classes: ''
+                    classes: 'winWidth100px'
                   },
                   {
                     type: 'text',
                     name: 'Quality Data',
                     colSize: '100px',
-                    classes: ''
+                    classes: 'winWidth100px'
                   }
                 ],
                 values: [
@@ -163,7 +169,16 @@ isErroPopUp;
                     },
                     {
                       type: 'text',
-                      value: 'Pass'
+                      value: '55'
+                    },
+                    {
+                      type: 'dropdown',
+                      tdClasses: 'dropdown100px',
+                      value: [
+                        'Pass',
+                        'Fail'
+                      ],
+                      selectedValue: 'Pass'
                     },
                     {
                       type: 'attachments',
@@ -207,7 +222,16 @@ isErroPopUp;
                     },
                     {
                       type: 'text',
-                      value: 'Pass'
+                      value: '190'
+                    },
+                    {
+                      type: 'dropdown',
+                      tdClasses: 'dropdown100px',
+                      value: [
+                        'Pass',
+                        'Fail'
+                      ],
+                      selectedValue: 'Pass'
                     },
                     {
                       type: 'attachments',
