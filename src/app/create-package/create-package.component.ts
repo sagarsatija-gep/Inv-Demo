@@ -14,6 +14,12 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
 
   popUpSubscription: Subscription;
 
+  toastPopupData = {
+    image: true,
+    img: "https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/success.png",
+    value: "Shipment Package C-4403314 created successfully."
+};
+showPopUp;
   constructor(public modalService: NgbModal, private popup: PopUpService, private route: Router) { }
   open() {
     const modalRef = this.modalService.open(NgbdModalContentCreatePackage, { size: 'lg' });
@@ -98,7 +104,7 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                 {
                   type: 'textBox',
                   name: 'Package Name',
-                  value: 'Package 1',
+                  value: 'Shipment package – 5504',
                   editable: true,
                 }
               ]
@@ -144,7 +150,7 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                 {
                   type: 'textBox',
                   name: 'Plant Code',
-                  value: 'PMF - 6002',
+                  value: 'Canol, CA',
                   editable: true,
                 }
               ]
@@ -156,7 +162,7 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                 {
                   type: 'textBox',
                   name: 'Storage Location',
-                  value: '6002',
+                  value: 'CA-55043',
                   editable: true,
                 }
               ]
@@ -228,9 +234,32 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
                   }
                 ],
                 route: "poGoodsReceipt",
-                values:[{
-
-                }
+                values:[
+                  [
+                  {
+                    type: 'text',
+                    value: '1'
+                  },
+                  {
+                    type: 'textboxchange',
+                    value: '53257890'
+                  },
+                  {
+                    type: 'textbox',
+                    value: 'Morse Cutting Tools 82062',
+                    styles: { 'width': '240px' }
+                  },
+                  {
+                    type: 'textbox',
+                    value: '9',
+                    classes: 'rounded-sm border-secondary input-small text-right'
+                  },
+                  {
+                    type: 'textbox',
+                    value: '3531313832393339',
+                    styles: { 'width': '210px' }
+                  }
+                ]
 
                 ],
                 values1: [
@@ -391,7 +420,16 @@ export class CreatePackageComponent implements OnInit, OnDestroy {
         }
       }
     }
-  ]
+  ];
+
+  onFinlizedClick() {
+
+    this.showPopUp = true;
+    setTimeout(() => {
+        this.route.navigate(['/home']);
+  }, 2000)
+
+  }
 }
 @Component({
   selector: 'ngbd-modal-content',

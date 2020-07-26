@@ -1,5 +1,5 @@
 <div class="purcesDetais" style="margin-bottom: 40px;">
-  <div>
+  <div style="margin-bottom: 30px;">
     <ul class="breadcrumb">
       <li><a href="#">Enter Package</a></li>
       <li><a href="#">Container Details</a></li>
@@ -11,22 +11,22 @@
   <div class="container-fluid">
     <div class="row">
       <div class="col-sm-6">
-        <button style="color: white;" class="btn btn-primary btn-white text-uppercase shadow rounded-0">
+        <button style="color: white; background: #007bff;" class="btn btn-primary btn-white text-uppercase shadow rounded-0">
           Print Document
         </button>
       </div>
       <div class="col-sm-5 text-right">
-        <button (click)="printRfid()" style="color: white;" class="btn btn-primary btn-white text-uppercase shadow rounded-0">
+        <button (click)="printRfid()" style="color: white; background: #007bff;" class="btn btn-primary btn-white text-uppercase shadow rounded-0">
           Print RFID Tags
         </button>
-        <button style="color: white;" class="btn btn-primary btn-white text-uppercase shadow rounded-0">
+        <button style="color: white; background: #007bff;" class="btn btn-primary btn-white text-uppercase shadow rounded-0">
           Print Barcode
         </button>
-        <a routerLink='/home'>  <button style="color: white;"
+         <button  (click)="onFinlizedClick()" style="color: white; background: #007bff;"
            class="btn btn-primary btn-white text-uppercase shadow rounded-0">
           FINALIZE
           </button>
-        </a>
+        
       </div>
     </div>
   </div>
@@ -55,4 +55,8 @@
     </div>
   </div>
   
+</div>
+
+<div *ngIf="showPopUp">
+  <app-toast-popup [toast]="toastPopupData"></app-toast-popup>
 </div>
