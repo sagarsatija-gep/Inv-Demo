@@ -10,38 +10,38 @@ interface Document {
 const DOCUMENTS: Document[] = [
   {
     docName: "Receipt# 001005463468",
-    createdDate: "11/06/2019",
-    lastAccessed: "11/06/2019 7:03 PM"
+    createdDate: "07/25/2020",
+    lastAccessed: "07/26/2020 7:03 PM"
   },
   {
     docName: "Goods Issue# 001005463567",
-    createdDate: "11/05/2019",
-    lastAccessed: "11/06/2019 7:02 PM"
+    createdDate: "07/26/2020",
+    lastAccessed: "07/28/2020 7:02 PM"
   },
   {
     docName: "Stock Transfer# 001005463234",
-    createdDate: "11/04/2019",
-    lastAccessed: "11/06/2019 7:02 PM"
+    createdDate: "07/25/2020",
+    lastAccessed: "07/25/2020 7:02 PM"
   },
   {
     docName: "Receipt# 001005461232",
-    createdDate: "11/03/2019",
-    lastAccessed: "11/06/2019 7:02 PM"
+    createdDate: "07/28/2020",
+    lastAccessed: "07/28/2020 7:02 PM"
   },
   {
     docName: "Goods Issue# 001005463675",
-    createdDate: "11/02/2019",
-    lastAccessed: "11/06/2019 7:01 PM"
+    createdDate: "07/27/2020",
+    lastAccessed: "07/29/2020 7:01 PM"
   },
   {
     docName: "Goods Issue# 001005463897",
-    createdDate: "11/01/2019",
-    lastAccessed: "11/06/2019 7:01 PM"
+    createdDate: "07/25/2020",
+    lastAccessed: "07/29/2020 7:01 PM"
   },
   {
     docName: "Stock Transfer# 001005465668",
-    createdDate: "11/12/2018",
-    lastAccessed: "11/06/2019 7:01 PM"
+    createdDate: "07/26/2020",
+    lastAccessed: "07/27/2020 7:01 PM"
   },
   {
     docName: "Receipt# 001005463468",
