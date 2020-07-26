@@ -17,3 +17,7 @@
   width: 100%;
   outline: none;
 }
+
+.mat-form-field-infix {
+  border-top: 0px !important;
+}
