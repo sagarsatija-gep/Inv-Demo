@@ -175,7 +175,15 @@ export class NgbdModalContent2 implements OnInit {
     {
       type:'dropdown',
       name: 'To Plant',
-      values: ['Genesis​'],
+      values: [
+        'Calagary',
+        'Canol',
+        'Montney',
+        'Muskwa',
+        'Duvernay',
+        'Beaufort Sea',
+        'Surmont'
+      ],
       selectedValue: ' ​',
       showBarcode: false
     }

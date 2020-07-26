@@ -399,3 +399,14 @@ input:checked+.slider:before {
   background: #555;
 }
 
+.widgetTable {
+  .winWidth100px {
+    min-width: 100px !important;
+  }
+.dropdown100px {
+  select#formControlSelect {
+    width: 100px !important;
+}
+
+}
+}

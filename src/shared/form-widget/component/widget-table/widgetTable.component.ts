@@ -27,7 +27,6 @@ export class WidgetTable implements OnInit, OnDestroy {
         })
         console.log(this.data);
         this.popUpSubCription = this.popUpService.barCodePopUpDataForAsset.subscribe(indexp=>{
-            debugger
             console.log(this.data);
             if(this.data.route != 'poGoodsReceipt'){
                 
@@ -49,7 +48,6 @@ export class WidgetTable implements OnInit, OnDestroy {
     }
 
     setValue(e) {
-        debugger
         this.popUpService.setSelectedInputBoxValue(e);
     }
     constructor(private modalService: NgbModal, public barcodeService: BarcodeValueService, private popUpService: PopUpService) { }
@@ -62,7 +60,6 @@ export class WidgetTable implements OnInit, OnDestroy {
     }
 
     display(e) {
-        debugger;
         console.log(this.data);
         this.data.values[e][14].show = true;
         this.data.values[e][15].show = true;

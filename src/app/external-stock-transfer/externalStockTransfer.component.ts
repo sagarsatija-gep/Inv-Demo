@@ -92,21 +92,31 @@ export class ExternalStockTransfer implements OnInit {
               {
                 type:'text',
                 name: 'Company Code',
-                values: 'Chevron Refinery',
+                values: 'ConocoPhillips',
               },
               {
-                type: 'textbox',
+                type: 'dropdown',
                 name:'Plant',
-                values:'PMF 6002'
+                value:[
+                  'Calagary',
+                  'Canol',
+                  'Montney',
+                  'Muskwa',
+                  'Duvernay',
+                  'Beaufort Sea',
+                  'Surmont'
+                ],
+                selectedValue: 'Calagary'
               },
               {
                 type: 'dropdown',
                 name: 'Transfer Type',
                 value: [
-                  'Within Plant Transfer',
-                  'Between Plant Transfer'
+                  'Within Plant',
+                  'Plant to Plant',
+                  'Project to Project',
               ],
-                selectedValue:'Between Plant Transfer',
+                selectedValue:'Within Plant',
               }
               
             ]
