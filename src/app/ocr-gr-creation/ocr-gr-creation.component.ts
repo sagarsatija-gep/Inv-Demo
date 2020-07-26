@@ -554,9 +554,8 @@ isErroPopUp;
       this.toastPopupData.value = 'Goods receipts successfully'
     } else {
       // this.showPopUp = true;
-      debugger
       const modalRef = this.modalService.open(ErrorPopup, { size: 'lg' });
-      modalRef.componentInstance.name = 'Cannot receive Line item 2 as total received quantity is above PO tolerance.';
+      modalRef.componentInstance.name = 'Total received quantity for line item ‘5462411’ is greater than PO tolerance.';
     }
 
       setTimeout(() => {
