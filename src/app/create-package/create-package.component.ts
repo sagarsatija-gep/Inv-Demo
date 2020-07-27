@@ -134,7 +134,13 @@ showPopUp;
                   name: 'Document Number',
                   value: 'C-4403314',
                   editable: true,
-                },
+                }
+              ]
+            },
+            {
+              editable: true,
+              classes: 'bg-gray',
+              data: [
                 {
                   type: 'barcode',
                   name: 'BarCode',
