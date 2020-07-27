@@ -127,7 +127,7 @@ showPopUp;
             },
             {
               editable: true,
-              classes: 'bg-gray',
+              // classes: 'bg-gray',
               data: [
                 {
                   type: 'textBox',
@@ -139,7 +139,7 @@ showPopUp;
             },
             {
               editable: true,
-              classes: 'bg-gray',
+              // classes: 'bg-gray',
               data: [
                 {
                   type: 'barcode',
@@ -151,7 +151,7 @@ showPopUp;
             },
             {
               editable: true,
-              classes: 'bg-gray',
+              // classes: 'bg-gray',
               data: [
                 {
                   type: 'textBox',
@@ -163,7 +163,7 @@ showPopUp;
             },
             {
               editable: true,
-              classes: 'bg-gray',
+              // classes: 'bg-gray',
               data: [
                 {
                   type: 'textBox',
@@ -175,7 +175,7 @@ showPopUp;
             },
             {
               editable: true,
-              classes: 'bg-gray',
+              // classes: 'bg-gray',
               data: [
                 {
                   type: 'textBox',
