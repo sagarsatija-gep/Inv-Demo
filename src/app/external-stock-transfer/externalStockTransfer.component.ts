@@ -79,7 +79,8 @@ export class ExternalStockTransfer implements OnInit {
                 type:'text',
                 name: 'Document Number',
                 values: 'STK-545502',
-              },{
+              },
+              {
                 type:'text',
                 name: 'Created By',
                 values: 'Emily ross',

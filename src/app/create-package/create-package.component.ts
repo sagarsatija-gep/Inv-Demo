@@ -127,14 +127,20 @@ showPopUp;
             },
             {
               editable: true,
-              classes: 'bg-gray',
+              // classes: 'bg-gray',
               data: [
                 {
                   type: 'textBox',
                   name: 'Document Number',
                   value: 'C-4403314',
                   editable: true,
-                },
+                }
+              ]
+            },
+            {
+              editable: true,
+              // classes: 'bg-gray',
+              data: [
                 {
                   type: 'barcode',
                   name: 'BarCode',
@@ -145,7 +151,7 @@ showPopUp;
             },
             {
               editable: true,
-              classes: 'bg-gray',
+              // classes: 'bg-gray',
               data: [
                 {
                   type: 'textBox',
@@ -157,7 +163,7 @@ showPopUp;
             },
             {
               editable: true,
-              classes: 'bg-gray',
+              // classes: 'bg-gray',
               data: [
                 {
                   type: 'textBox',
@@ -169,7 +175,7 @@ showPopUp;
             },
             {
               editable: true,
-              classes: 'bg-gray',
+              // classes: 'bg-gray',
               data: [
                 {
                   type: 'textBox',
