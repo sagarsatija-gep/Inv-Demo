@@ -359,7 +359,7 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Contaier-54432',
+                    value: 'Container-54432',
                     tdClasses: 'text-left' 
                 },
                 {
@@ -382,11 +382,11 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'Canol, CA'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'CAN-65603'
                 },
                 {
                     type: 'text',
@@ -395,18 +395,20 @@ export class PopUpService {
                 {
                     type: 'dropdown',
                     value: [
+                        'Surmont, CA',
                         'Shore Base – SB05',
                         'Shore Base – SB04'
                     ],
-                    selectedValue: 'Shore Base – SB05'
+                    selectedValue: 'Surmont, CA'
                 },
                 {
                     type: 'dropdown',
                     value: [
+                        'SUR-600503',
                         '6044',
                         '6002'
                     ],
-                    selectedValue: '6044'
+                    selectedValue: 'SUR-600503'
                 },
                 {
                     type: 'dropdown',
@@ -432,7 +434,7 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Contaier-54432',
+                    value: 'Container-54432',
                     tdClasses: 'text-left'
       
                 },
@@ -456,11 +458,11 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'Canol, CA'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'CAN-65603'
                 },
                 {
                     type: 'text',
@@ -469,18 +471,20 @@ export class PopUpService {
                 {
                     type: 'dropdown',
                     value: [
+                        'Surmont, CA',
                         'Shore Base – SB05',
                         'Shore Base – SB04'
                     ],
-                    selectedValue: 'Shore Base – SB05'
+                    selectedValue: 'Surmont, CA'
                 },
                 {
                     type: 'dropdown',
                     value: [
+                        'SUR-600503',
                         '6044',
                         '6002'
                     ],
-                    selectedValue: '6044'
+                    selectedValue: 'SUR-600503'
                 },
                 {
                     type: 'dropdown',
@@ -506,7 +510,7 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Contaier-54432',
+                    value: 'Container-54432',
                     tdClasses: 'text-left'
                 },
                 {
@@ -529,11 +533,11 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'Canol, CA'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'CAN-65603'
                 },
                 {
                     type: 'text',
@@ -542,20 +546,21 @@ export class PopUpService {
                 {
                     type: 'dropdown',
                     value: [
+                        'Surmont, CA',
                         'Shore Base – SB05',
                         'Shore Base – SB04'
                     ],
-                    selectedValue: 'Shore Base – SB05'
+                    selectedValue: 'Surmont, CA'
                 },
                 {
                     type: 'dropdown',
                     value: [
+                        'SUR-600503',
                         '6044',
                         '6002'
                     ],
-                    selectedValue: '6044'
-                },
-                {
+                    selectedValue: 'SUR-600503'
+                },                {
                     type: 'dropdown',
                     value: [
                         'N02-06-3-2',
@@ -579,7 +584,7 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Contaier-54432',
+                    value: 'Container-54432',
                     tdClasses: 'text-left'
                 },
                 {
@@ -602,11 +607,11 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'Canol, CA'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'CAN-65603'
                 },
                 {
                     type: 'text',
@@ -615,18 +620,20 @@ export class PopUpService {
                 {
                     type: 'dropdown',
                     value: [
+                        'Surmont, CA',
                         'Shore Base – SB05',
                         'Shore Base – SB04'
                     ],
-                    selectedValue: 'Shore Base – SB05'
+                    selectedValue: 'Surmont, CA'
                 },
                 {
                     type: 'dropdown',
                     value: [
+                        'SUR-600503',
                         '6044',
                         '6002'
                     ],
-                    selectedValue: '6044'
+                    selectedValue: 'SUR-600503'
                 },
                 {
                     type: 'dropdown',
@@ -652,7 +659,7 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Contaier-54432',
+                    value: 'Container-54432',
                     tdClasses: 'text-left'
       
                 },
@@ -676,11 +683,11 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'Canol, CA'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'CAN-65603'
                 },
                 {
                     type: 'text',
@@ -689,20 +696,22 @@ export class PopUpService {
                 {
                     type: 'dropdown',
                     value: [
+                        'Surmont, CA',
                         'Shore Base – SB05',
                         'Shore Base – SB04'
                     ],
-                    selectedValue: 'Shore Base – SB05'
+                    selectedValue: 'Surmont, CA'
                 },
                 {
                     type: 'dropdown',
                     value: [
+                        'SUR-600503',
                         '6044',
                         '6002'
                     ],
-                    selectedValue: '6044'
+                    selectedValue: 'SUR-600503'
                 },
-                {
+                 {
                     type: 'dropdown',
                     value: [
                         'N02-06-3-2',
@@ -726,7 +735,7 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Contaier-54432',
+                    value: 'Container-54432',
                     tdClasses: 'text-left'
       
                 },
@@ -750,11 +759,11 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'Canol, CA'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'CAN-65603'
                 },
                 {
                     type: 'text',
@@ -763,20 +772,21 @@ export class PopUpService {
                 {
                     type: 'dropdown',
                     value: [
+                        'Surmont, CA',
                         'Shore Base – SB05',
                         'Shore Base – SB04'
                     ],
-                    selectedValue: 'Shore Base – SB05'
+                    selectedValue: 'Surmont, CA'
                 },
                 {
                     type: 'dropdown',
                     value: [
+                        'SUR-600503',
                         '6044',
                         '6002'
                     ],
-                    selectedValue: '6044'
-                },
-                {
+                    selectedValue: 'SUR-600503'
+                },                {
                     type: 'dropdown',
                     value: [
                         'N02-06-3-2',
@@ -800,7 +810,7 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Contaier-54432',
+                    value: 'Container-54432',
                     tdClasses: 'text-left'
                 },
                 {
@@ -823,11 +833,11 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'Canol, CA'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'CAN-65603'
                 },
                 {
                     type: 'text',
@@ -836,18 +846,20 @@ export class PopUpService {
                 {
                     type: 'dropdown',
                     value: [
+                        'Surmont, CA',
                         'Shore Base – SB05',
                         'Shore Base – SB04'
                     ],
-                    selectedValue: 'Shore Base – SB05'
+                    selectedValue: 'Surmont, CA'
                 },
                 {
                     type: 'dropdown',
                     value: [
+                        'SUR-600503',
                         '6044',
                         '6002'
                     ],
-                    selectedValue: '6044'
+                    selectedValue: 'SUR-600503'
                 },
                 {
                     type: 'dropdown',
@@ -873,7 +885,7 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Contaier-54432',
+                    value: 'Container-54432',
                     tdClasses: 'text-left',
       
                 },
@@ -897,11 +909,11 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'Canol, CA'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'CAN-65603'
                 },
                 {
                     type: 'text',
@@ -910,18 +922,20 @@ export class PopUpService {
                 {
                     type: 'dropdown',
                     value: [
+                        'Surmont, CA',
                         'Shore Base – SB05',
                         'Shore Base – SB04'
                     ],
-                    selectedValue: 'Shore Base – SB05'
+                    selectedValue: 'Surmont, CA'
                 },
                 {
                     type: 'dropdown',
                     value: [
+                        'SUR-600503',
                         '6044',
                         '6002'
                     ],
-                    selectedValue: '6044'
+                    selectedValue: 'SUR-600503'
                 },
                 {
                     type: 'dropdown',
@@ -947,7 +961,7 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Contaier-54432',
+                    value: 'Container-54432',
                     tdClasses: 'text-left',
       
                 },
@@ -971,11 +985,11 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'Canol, CA'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'CAN-65603'
                 },
                 {
                     type: 'text',
@@ -984,18 +998,20 @@ export class PopUpService {
                 {
                     type: 'dropdown',
                     value: [
+                        'Surmont, CA',
                         'Shore Base – SB05',
                         'Shore Base – SB04'
                     ],
-                    selectedValue: 'Shore Base – SB05'
+                    selectedValue: 'Surmont, CA'
                 },
                 {
                     type: 'dropdown',
                     value: [
+                        'SUR-600503',
                         '6044',
                         '6002'
                     ],
-                    selectedValue: '6044'
+                    selectedValue: 'SUR-600503'
                 },
                 {
                     type: 'dropdown',
@@ -1021,7 +1037,7 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Contaier-54432',
+                    value: 'Container-54432',
                     tdClasses: 'text-left',
       
                 },
@@ -1045,11 +1061,11 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'Canol, CA'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'CAN-65603'
                 },
                 {
                     type: 'text',
@@ -1058,18 +1074,20 @@ export class PopUpService {
                 {
                     type: 'dropdown',
                     value: [
+                        'Surmont, CA',
                         'Shore Base – SB05',
                         'Shore Base – SB04'
                     ],
-                    selectedValue: 'Shore Base – SB05'
+                    selectedValue: 'Surmont, CA'
                 },
                 {
                     type: 'dropdown',
                     value: [
+                        'SUR-600503',
                         '6044',
                         '6002'
                     ],
-                    selectedValue: '6044'
+                    selectedValue: 'SUR-600503'
                 },
                 {
                     type: 'dropdown',
@@ -1095,7 +1113,7 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Contaier-54432',
+                    value: 'Container-54432',
                     tdClasses: 'text-left',
       
                 },
@@ -1119,11 +1137,11 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'Canol, CA'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'CAN-65603'
                 },
                 {
                     type: 'text',
@@ -1132,18 +1150,20 @@ export class PopUpService {
                 {
                     type: 'dropdown',
                     value: [
+                        'Surmont, CA',
                         'Shore Base – SB05',
                         'Shore Base – SB04'
                     ],
-                    selectedValue: 'Shore Base – SB05'
+                    selectedValue: 'Surmont, CA'
                 },
                 {
                     type: 'dropdown',
                     value: [
+                        'SUR-600503',
                         '6044',
                         '6002'
                     ],
-                    selectedValue: '6044'
+                    selectedValue: 'SUR-600503'
                 },
                 {
                     type: 'dropdown',
@@ -1169,7 +1189,7 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Contaier-54432',
+                    value: 'Container-54432',
                     tdClasses: 'text-left',
       
                 },
@@ -1193,11 +1213,11 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'Canol, CA'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'CAN-65603'
                 },
                 {
                     type: 'text',
@@ -1206,18 +1226,20 @@ export class PopUpService {
                 {
                     type: 'dropdown',
                     value: [
+                        'Surmont, CA',
                         'Shore Base – SB05',
                         'Shore Base – SB04'
                     ],
-                    selectedValue: 'Shore Base – SB05'
+                    selectedValue: 'Surmont, CA'
                 },
                 {
                     type: 'dropdown',
                     value: [
+                        'SUR-600503',
                         '6044',
                         '6002'
                     ],
-                    selectedValue: '6044'
+                    selectedValue: 'SUR-600503'
                 },
                 {
                     type: 'dropdown',
@@ -1243,7 +1265,7 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'Contaier-54432',
+                    value: 'Container-54432',
                     tdClasses: 'text-left',
       
                 },
@@ -1267,11 +1289,11 @@ export class PopUpService {
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'Canol, CA'
                 },
                 {
                     type: 'text',
-                    value: 'PMF-6002'
+                    value: 'CAN-65603'
                 },
                 {
                     type: 'text',
@@ -1280,18 +1302,20 @@ export class PopUpService {
                 {
                     type: 'dropdown',
                     value: [
+                        'Surmont, CA',
                         'Shore Base – SB05',
                         'Shore Base – SB04'
                     ],
-                    selectedValue: 'Shore Base – SB05'
+                    selectedValue: 'Surmont, CA'
                 },
                 {
                     type: 'dropdown',
                     value: [
+                        'SUR-600503',
                         '6044',
                         '6002'
                     ],
-                    selectedValue: '6044'
+                    selectedValue: 'SUR-600503'
                 },
                 {
                     type: 'dropdown',
