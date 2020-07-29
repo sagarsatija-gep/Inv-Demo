@@ -256,6 +256,18 @@ export class AsnGrComponent implements OnInit {
               },
               {
                 type: 'text',
+                name: 'latitude',
+                colSize: '100px',
+                classes: ''
+              },
+              {
+                type: 'text',
+                name: 'Longitude',
+                colSize: '100px',
+                classes: ''
+              },
+              {
+                type: 'text',
                 name: 'Attachments',
                 colSize: '100px',
                 classes: 'text-left'
@@ -351,7 +363,16 @@ export class AsnGrComponent implements OnInit {
                 {
                   type: 'textbox',
                   value: '',
-                }, {
+                }, 
+                {
+                  type: 'text',
+                  value: '-114.2351',
+                },
+                {
+                  type: 'text',
+                  value: '-123.1451',
+                },
+                {
                   type: 'button',
                   value: 'UPLOAD',
                   styles: {
@@ -451,7 +472,16 @@ export class AsnGrComponent implements OnInit {
                 {
                   type: 'textbox',
                   value: '',
-                }, {
+                },
+                {
+                  type: 'text',
+                  value: '-104.2351',
+                },
+                {
+                  type: 'text',
+                  value: '-213.1451',
+                },
+                {
                   type: 'button',
                   value: 'UPLOAD',
                   styles: {
@@ -492,7 +522,8 @@ export class AsnGrComponent implements OnInit {
                 {
                   type: 'text',
                   value: 'PMF - 6002',
-                }, {
+                }, 
+                {
                   type: 'dropdown',
                   classes: 'rounded-sm border-secondary input-large',
                   value: [
@@ -552,6 +583,14 @@ export class AsnGrComponent implements OnInit {
                   value: '',
                 },
                 {
+                  type: 'text',
+                  value: '-201.2311',
+                },
+                {
+                  type: 'text',
+                  value: '-121.1431',
+                },
+                {
                   type: 'button',
                   value: 'UPLOAD',
                   styles: {
@@ -562,109 +601,109 @@ export class AsnGrComponent implements OnInit {
                   }
                 }
                 ],
-              //   [
-              //     {
-              //     type: 'text',
-              //     value: '4',
-              //   },
-              //   {
-              //     type: 'text',
-              //     value: '2044808',
-              //   },
-              //   {
-              //     type: 'text',
-              //     value: 'Dewalt DW4701- Saw Blade',
-              //     tdClasses: 'text-left'
-              //   },
-              //   {
-              //     type: 'text',
-              //     value: 'Piece',
-              //   },
-              //   {
-              //     type: 'textbox',
-              //     value: '80',
-              //     classes: 'rounded-sm border-secondary input-small text-right'
-              //   },
-              //   {
-              //     type: 'textbox',
-              //     value: '80',
-              //     classes: 'rounded-sm border-secondary input-small text-right'
-              //   },
-              //   {
-              //     type: 'text',
-              //     value: 'PMF - 6002',
-              //   },
-              //   {
-              //     type: 'dropdown',
-              //     classes: 'rounded-sm border-secondary input-large',
-              //     value: [
-              //       'C02 - 08- 2- 2',
-              //       'C03 - 06- 2- 2',
-              //       'S02 - 03- 2- 4',
-              //       'C02 - 08- 2- 4'
-              //     ],
-              //     selectedValue: 'S02 - 03- 2- 4',
-              //   },
-              //   {
-              //     type: 'dropdown',
-              //     classes: 'rounded-sm border-secondary input-large',
-              //     value: [
-              //       'YES',
-              //       'NO',
-              //     ],
-              //     selectedValue: 'NO',
-              //   },
-              //   {
-              //     type: 'dropdown',
-              //     classes: 'rounded-sm border-secondary input-large',
-              //     value: [
-              //       'YES',
-              //       'NO',
-              //     ],
-              //     selectedValue: 'NO',
-              //   },
-              //   {
-              //     type: 'dropdown',
-              //     classes: 'rounded-sm border-secondary input-large',
-              //     value: [
-              //       'YES',
-              //       'NO',
-              //     ],
-              //     selectedValue: 'NO',
-              //   },
-              //   {
-              //     type: 'textbox',
-              //     value: '',
-              //   },
-              //   {
-              //     type: 'dropdown',
-              //     classes: 'rounded-sm border-secondary input-large',
-              //     value: [
-              //       'Pass',
-              //       'Fail'
-              //     ],
-              //     selectedValue: 'Pass',
-              //   },
-              //   {
-              //     type: 'textbox',
-              //     value: '',
-              //   },
-              //   {
-              //     type: 'textbox',
-              //     value: '',
-              //   },
-              //   {
-              //     type: 'button',
-              //     value: 'UPLOAD',
-              //     styles: {
-              //       'width': '85px',
-              //       'height': '30px',
-              //       'padding': '0px',
-              //       'margin': '-3px'
-              //     }
-              //   }
-              //   ]
-               ]
+                //   [
+                //     {
+                //     type: 'text',
+                //     value: '4',
+                //   },
+                //   {
+                //     type: 'text',
+                //     value: '2044808',
+                //   },
+                //   {
+                //     type: 'text',
+                //     value: 'Dewalt DW4701- Saw Blade',
+                //     tdClasses: 'text-left'
+                //   },
+                //   {
+                //     type: 'text',
+                //     value: 'Piece',
+                //   },
+                //   {
+                //     type: 'textbox',
+                //     value: '80',
+                //     classes: 'rounded-sm border-secondary input-small text-right'
+                //   },
+                //   {
+                //     type: 'textbox',
+                //     value: '80',
+                //     classes: 'rounded-sm border-secondary input-small text-right'
+                //   },
+                //   {
+                //     type: 'text',
+                //     value: 'PMF - 6002',
+                //   },
+                //   {
+                //     type: 'dropdown',
+                //     classes: 'rounded-sm border-secondary input-large',
+                //     value: [
+                //       'C02 - 08- 2- 2',
+                //       'C03 - 06- 2- 2',
+                //       'S02 - 03- 2- 4',
+                //       'C02 - 08- 2- 4'
+                //     ],
+                //     selectedValue: 'S02 - 03- 2- 4',
+                //   },
+                //   {
+                //     type: 'dropdown',
+                //     classes: 'rounded-sm border-secondary input-large',
+                //     value: [
+                //       'YES',
+                //       'NO',
+                //     ],
+                //     selectedValue: 'NO',
+                //   },
+                //   {
+                //     type: 'dropdown',
+                //     classes: 'rounded-sm border-secondary input-large',
+                //     value: [
+                //       'YES',
+                //       'NO',
+                //     ],
+                //     selectedValue: 'NO',
+                //   },
+                //   {
+                //     type: 'dropdown',
+                //     classes: 'rounded-sm border-secondary input-large',
+                //     value: [
+                //       'YES',
+                //       'NO',
+                //     ],
+                //     selectedValue: 'NO',
+                //   },
+                //   {
+                //     type: 'textbox',
+                //     value: '',
+                //   },
+                //   {
+                //     type: 'dropdown',
+                //     classes: 'rounded-sm border-secondary input-large',
+                //     value: [
+                //       'Pass',
+                //       'Fail'
+                //     ],
+                //     selectedValue: 'Pass',
+                //   },
+                //   {
+                //     type: 'textbox',
+                //     value: '',
+                //   },
+                //   {
+                //     type: 'textbox',
+                //     value: '',
+                //   },
+                //   {
+                //     type: 'button',
+                //     value: 'UPLOAD',
+                //     styles: {
+                //       'width': '85px',
+                //       'height': '30px',
+                //       'padding': '0px',
+                //       'margin': '-3px'
+                //     }
+                //   }
+                //   ]
+              ]
             }
           },
           {
@@ -740,11 +779,11 @@ export class AsnGrComponent implements OnInit {
                   type: 'text',
                   value: 'Each',
                 },
-  
+
                 {
                   type: 'textbox',
                   value: '',
-                  value1:'628736',
+                  value1: '628736',
                   classes: 'rounded-sm border-secondary input-small text-right'
                 },
                 {
@@ -778,11 +817,11 @@ export class AsnGrComponent implements OnInit {
                   type: 'text',
                   value: 'Each',
                 },
-  
+
                 {
                   type: 'textbox',
                   value: '',
-                  value1:'428736',
+                  value1: '428736',
                   classes: 'rounded-sm border-secondary input-small text-right'
                 },
                 {
@@ -816,12 +855,12 @@ export class AsnGrComponent implements OnInit {
                   type: 'text',
                   value: 'Each',
                 },
-  
+
                 {
                   type: 'textbox',
                   value: '',
-                  
-                  value1:'686736',
+
+                  value1: '686736',
                   classes: 'rounded-sm border-secondary input-small text-right'
                 },
                 {
@@ -855,12 +894,12 @@ export class AsnGrComponent implements OnInit {
                   type: 'text',
                   value: 'Each',
                 },
-  
+
                 {
                   type: 'textbox',
                   value: '',
-                  
-                  value1:'628776',
+
+                  value1: '628776',
                   classes: 'rounded-sm border-secondary input-small text-right'
                 },
                 {
@@ -894,12 +933,12 @@ export class AsnGrComponent implements OnInit {
                   type: 'text',
                   value: 'Each',
                 },
-  
+
                 {
                   type: 'textbox',
                   value: '',
-                  
-                  value1:'746736',
+
+                  value1: '746736',
                   classes: 'rounded-sm border-secondary input-small text-right'
                 },
                 {
@@ -933,12 +972,12 @@ export class AsnGrComponent implements OnInit {
                   type: 'text',
                   value: 'Each',
                 },
-  
+
                 {
                   type: 'textbox',
                   value: '',
-                  
-                  value1:'628746',
+
+                  value1: '628746',
                   classes: 'rounded-sm border-secondary input-small text-right'
                 },
                 {
@@ -972,12 +1011,12 @@ export class AsnGrComponent implements OnInit {
                   type: 'text',
                   value: 'Each',
                 },
-  
+
                 {
                   type: 'textbox',
                   value: '',
-                  
-                  value1:'628744',
+
+                  value1: '628744',
                   classes: 'rounded-sm border-secondary input-small text-right'
                 },
                 {
@@ -1011,12 +1050,12 @@ export class AsnGrComponent implements OnInit {
                   type: 'text',
                   value: 'Each',
                 },
-  
+
                 {
                   type: 'textbox',
                   value: '',
-                  
-                  value1:'628722',
+
+                  value1: '628722',
                   classes: 'rounded-sm border-secondary input-small text-right'
                 },
                 {
@@ -1050,12 +1089,12 @@ export class AsnGrComponent implements OnInit {
                   type: 'text',
                   value: 'Each',
                 },
-  
+
                 {
                   type: 'textbox',
                   value: '',
-                  
-                  value1:'625536',
+
+                  value1: '625536',
                   classes: 'rounded-sm border-secondary input-small text-right'
                 },
                 {
@@ -1089,11 +1128,11 @@ export class AsnGrComponent implements OnInit {
                   type: 'text',
                   value: 'Each',
                 },
-  
+
                 {
                   type: 'textbox',
-                  value: '',  
-                  value1:'945278',
+                  value: '',
+                  value1: '945278',
                   classes: 'rounded-sm border-secondary input-small text-right'
                 },
                 {
@@ -1109,7 +1148,7 @@ export class AsnGrComponent implements OnInit {
                 ],
               ]
             }
-  
+
           }
         ]
       }
