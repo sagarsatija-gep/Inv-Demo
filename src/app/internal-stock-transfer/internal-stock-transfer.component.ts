@@ -80,12 +80,12 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
             {
               type:'text',
               name: 'Company Code',
-              values: 'Chevron Refinery',
+              values: 'CononcoPhilips',
             },
             {
               type: 'textbox',
               name:'Plant',
-              values:'PMF 6002'
+              values:'Montney, CA'
             },
             {
               type: 'dropdown',

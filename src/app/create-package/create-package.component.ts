@@ -244,25 +244,25 @@ showPopUp;
                   [
                   {
                     type: 'text',
-                    value: '1'
+                    value: '1 '
                   },
                   {
                     type: 'textboxchange',
-                    value: '53257890'
+                    value: ' '
                   },
                   {
                     type: 'textbox',
-                    value: 'Morse Cutting Tools 82062',
+                    value: ' ',
                     styles: { 'width': '240px' }
                   },
                   {
                     type: 'textbox',
-                    value: '9',
+                    value: ' ',
                     classes: 'rounded-sm border-secondary input-small text-right'
                   },
                   {
                     type: 'textbox',
-                    value: '3531313832393339',
+                    value: ' ',
                     styles: { 'width': '210px' }
                   }
                 ]

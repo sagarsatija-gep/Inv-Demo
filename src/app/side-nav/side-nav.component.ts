@@ -43,7 +43,7 @@ export class SideNavComponent implements OnInit {
   },
   {
     icon: "#icon_Analyze",
-    name: "Manage Transactions",
+    name: "Manage",
     link: "manageReservations",
     dropdown: true,
     sideMenu: [
@@ -76,7 +76,7 @@ export class SideNavComponent implements OnInit {
   },
   {
     icon: "#icon_Notificatio",
-    name: "Create Transactions",
+    name: "Create",
     link: "createtransactions",
     dropdown: true,
     sideMenu: [
@@ -114,20 +114,20 @@ export class SideNavComponent implements OnInit {
       }
     ]
   },
+  // {
+  //   icon: "#icon_Supplier",
+  //   name: "Current Stock Balance",
+  //   link: "currentstockbalance",
+  //   dropdown: false
+  // }, {
+  //   icon: "#icon_Settings",
+  //   name: "Reports",
+  //   link: "purchaseDetails",
+  //   dropdown: false
+  // },
   {
-    icon: "#icon_Supplier",
-    name: "Current Stock Balance",
-    link: "currentstockbalance",
-    dropdown: false
-  }, {
     icon: "#icon_Settings",
-    name: "Reports",
-    link: "purchaseDetails",
-    dropdown: false
-  },
-  {
-    icon: "#icon_Settings",
-    name: "Inventory Setup",
+    name: "Settings",
     link: "inventorysetup",
     dropdown: false
   }
