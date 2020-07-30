@@ -43,7 +43,7 @@ export class ManageCycleCountDetailsComponent implements OnInit {
             {
               type:'text',
               name: 'Plant',
-              values: 'El-Segundo Refinery',
+              values: 'Calagary, CA',
             },
             {
               type:'text',
@@ -58,7 +58,7 @@ export class ManageCycleCountDetailsComponent implements OnInit {
             {
               type: 'text',
               name: 'Scheduled Date',
-              values: '02/10/2020',
+              values: '08/05/2020',
             },
             {
               type: 'text',

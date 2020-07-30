@@ -12,7 +12,7 @@
        
 
         <ejs-grid #grid [dataSource]='data' [selectionSettings]='selectionSettings' [enableHover]='false' [editSettings]='editSettings'  allowSorting="true" 
-           [pageSettings]='pageSettings' height="320" (dataBound)='dataBound()'
+           [pageSettings]='pageSettings' (dataBound)='dataBound()'
           (created)='created()' (load)='load()'>
           <e-columns>
             <e-column type='checkbox' [allowFiltering]='false' [allowSorting]='false' width='40'></e-column>
