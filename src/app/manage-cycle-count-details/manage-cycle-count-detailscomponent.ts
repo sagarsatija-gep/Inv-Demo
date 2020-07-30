@@ -43,7 +43,7 @@ export class ManageCycleCountDetailsComponent implements OnInit {
             {
               type:'text',
               name: 'Plant',
-              values: 'Calagary, CA',
+              values: 'Calgary, CA',
             },
             {
               type:'text',

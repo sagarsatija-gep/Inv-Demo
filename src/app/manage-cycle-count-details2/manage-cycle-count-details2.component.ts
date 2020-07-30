@@ -47,7 +47,7 @@ export class ManageCycleCountDetails2Component implements OnInit,OnDestroy {
             {
               type:'text',
               name: 'Plant',
-              values: 'Calagary, CA',
+              values: 'Calgary, CA',
             },
             {
               type:'text',
