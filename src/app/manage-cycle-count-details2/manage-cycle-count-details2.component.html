@@ -94,7 +94,7 @@
     <div class="row">
       <div class="col-sm-12 pt-3">
         <ejs-grid #grid [dataSource]='data' [selectionSettings]='selectionSettings' [enableHover]='false' [editSettings]='editSettings' allowSorting="true"
-          [pageSettings]='pageSettings' height="320" (dataBound)='dataBound()' (created)='created()' (load)='load()'>
+          [pageSettings]='pageSettings' (dataBound)='dataBound()' (created)='created()' (load)='load()'>
           <e-columns>
             <e-column type='checkbox' [allowFiltering]='false' [allowSorting]='false' width='40'></e-column>
             <e-column headerText='Item Number' field='ItemNumber' textAlign='center' width='100'>
