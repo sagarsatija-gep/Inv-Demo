@@ -231,6 +231,10 @@ showPopUp;
                     name: 'Item Name',
                   },
                   {
+                    type:'text',
+                    name:'Material Conditions',                    
+                  },
+                  {
                     type: 'text',
                     name: 'Quantity',
                   },
@@ -284,6 +288,10 @@ showPopUp;
                       styles: { 'width': '240px' }
                     },
                     {
+                      type:'textbox',
+                      value: 'Hazardious Item',
+                    },
+                    {
                       type: 'textbox',
                       value: '5',
                       classes: 'rounded-sm border-secondary input-small text-right'
@@ -307,6 +315,10 @@ showPopUp;
                       type: 'textbox',
                       value: 'KIT,ANALYSIS,HEATER TUBE & FILTER,MFR UN ',
                       styles: { 'width': '240px' }
+                    },
+                    {
+                      type:'textbox',
+                      value: 'Hazardious Item',
                     },
                     {
                       type: 'textbox',
@@ -334,6 +346,10 @@ showPopUp;
                       styles: { 'width': '240px' }
                     },
                     {
+                      type:'textbox',
+                      value: 'Climate Controlled',
+                    },
+                    {
                       type: 'textbox',
                       value: '5',
                       classes: 'rounded-sm border-secondary input-small text-right'
@@ -357,6 +373,10 @@ showPopUp;
                       type: 'textbox',
                       value: 'BRACKET ASSEMBLY',
                       styles: { 'width': '240px' }
+                    },
+                    {
+                      type:'textbox',
+                      value: 'Climate Controlled',
                     },
                     {
                       type: 'textbox',
@@ -384,6 +404,10 @@ showPopUp;
                       styles: { 'width': '240px' }
                     },
                     {
+                      type:'textbox',
+                      value: 'Climate Controlled',
+                    },
+                    {
                       type: 'textbox',
                       value: '5',
                       classes: 'rounded-sm border-secondary input-small text-right'
@@ -407,6 +431,10 @@ showPopUp;
                       type: 'textbox',
                       value: 'Morse Cutting Tools 82062',
                       styles: { 'width': '240px' }
+                    },
+                    {
+                      type:'textbox',
+                      value: 'Climate Controlled',
                     },
                     {
                       type: 'textbox',
