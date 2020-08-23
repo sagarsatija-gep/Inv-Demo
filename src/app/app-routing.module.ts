@@ -62,7 +62,10 @@ const routes: Routes = [
   { path: 'manageMaterialRequests', component: ManageMaterialRequestsComponent },
   { path: 'createMaterialRequest', component: CreateMaterialRequestComponent },
   { path: 'materialOverview', component: DashboardOverviewComponent },
-  { path: 'cycle-count-overview', component: CycleCountComponent }
+  { path: 'cycle-count-overview', component: CycleCountComponent },
+  { path: 'cycleCountDetails', component: ManageCycleCountDetailsComponent },
+  { path: 'CycleCountRequests', component: ManageCycleCountRequestsComponent },
+
 ];
 
 @NgModule({

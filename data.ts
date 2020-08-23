@@ -308,3 +308,41 @@ export const cycleCount2Data: Object[] = [
     
     
 ];
+
+export const cycleCountDataManage: Object[] = [
+    {
+        "ItemNumber":"55436655",
+        "Description":"Tuthill Pump FR700V",
+        "StorageBin":" D - 01 -7",
+        "WBSElement":"",
+        "UOM":"EACH",
+        "OnHandQty":"44",
+        "CostCenter":"",
+        'disValue': '-',
+        'disQty': '-'
+    },
+    {
+        "ItemNumber":"55430224",
+        "Description":"Ratchet Repair Kit",
+        "StorageBin":" B - 02 -5",
+        "WBSElement":"",
+        "UOM":"EACH",
+        "OnHandQty":"35",
+        "CostCenter":"",
+        'disValue': '15',
+        'disQty': '1500'
+    },
+    {
+        "ItemNumber":"53452623",
+        "Description":"Motor and Throttle Kit",
+        "StorageBin":" F - 04 -9",
+        "WBSElement":"",
+        "UOM":"EACH",
+        "OnHandQty":"22",
+        "CostCenter":"",
+        'disValue': '20',
+        'disQty': '2000'
+    }
+    
+    
+];

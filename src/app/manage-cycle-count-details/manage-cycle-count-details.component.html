@@ -8,11 +8,14 @@
   <Form-widget [config]='widgetData'></Form-widget>
   <div class="container-fluid border border-secondary rounded-sm mt-4 bg-white" style="margin-bottom: 40px;">
     <div class="row">
-      <div class="col-sm-12 pt-3">
-       
-
-        <ejs-grid #grid [dataSource]='data' [selectionSettings]='selectionSettings' [enableHover]='false' [editSettings]='editSettings'  allowSorting="true" 
-           [pageSettings]='pageSettings' (dataBound)='dataBound()'
+      <div class="col-sm-12" style="padding: 15px; padding-bottom: 0px;">
+        <span style="font-weight: 500;">
+          Line Details
+        </span>
+      </div>
+      <div class="col-sm-12 pt-3" style="padding: 0px;">
+        <ejs-grid #grid [dataSource]='data' [selectionSettings]='selectionSettings' [enableHover]='false'
+          [editSettings]='editSettings' allowSorting="true" [pageSettings]='pageSettings' (dataBound)='dataBound()'
           (created)='created()' (load)='load()'>
           <e-columns>
             <e-column type='checkbox' [allowFiltering]='false' [allowSorting]='false' width='40'></e-column>
@@ -31,22 +34,28 @@
             <e-column field='BinNumber' headerText='Bin Number' width='100'></e-column> -->
             <e-column field='StorageBin' headerText='Storage Bin' width='100'></e-column>
             <e-column field='UOM' headerText='UOM' width='80'></e-column>
-              <e-column field='OnHandQty' headerText='Physical Quantity' width='100'>
-                <ng-template #template let-data>
-                  <input type="text" placeholder="On-Hand Qty" value="{{data.OnHandQty}}">
-                </ng-template>
-              </e-column>
-              <e-column headerText='    ' width='20'>
-                <ng-template #template let-data>
-                  <i style="cursor: pointer;" class="fa fa-trash" aria-hidden="true"></i>
-                </ng-template>
-              </e-column>
-           
+            <e-column *ngIf="url == 'cycleCountDetails'" field='disQty' headerText='DISCREPANCY QTY' width='120'></e-column>
+            <e-column *ngIf="url == 'cycleCountDetails'" field='disValue' headerText='DISCREPANCY VALUE' width='120'></e-column>
             
+            <e-column field='OnHandQty' headerText='Physical Quantity' width='100'>
+              <ng-template #template let-data>
+                <input type="text" placeholder="On-Hand Qty" value="{{data.OnHandQty}}">
+              </ng-template>
+            </e-column>
+            <e-column headerText='    ' width='40'>
+              <ng-template #template let-data>
+                <span>
+                  <i style="cursor: pointer;" class="fa fa-trash" aria-hidden="true"></i>
+
+                </span>
+              </ng-template>
+            </e-column>
+
+
             <!-- <e-column field='SBin' headerText='S. Bin' width='80'></e-column> -->
           </e-columns>
         </ejs-grid>
-     
+
       </div>
     </div>
   </div>
@@ -69,8 +78,8 @@
         <button (click)="printRfid()"  class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;">
           Print RFID Tags
         </button> -->
-        <button [routerLink]="['/manageCycleCountRequests']"   class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;"
-          >
+        <button (click)="onCountedClick()"
+           class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;">
           Counted
         </button>
       </div>

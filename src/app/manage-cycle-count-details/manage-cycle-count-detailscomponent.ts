@@ -1,3 +1,5 @@
+import { cycleCountDataManage } from './../../../data';
+import { Router } from '@angular/router';
 import { Component, OnInit ,ViewChild, ViewEncapsulation} from '@angular/core';
 import { cycleCountData } from '../../../data';
 import { DatePipe } from '@angular/common';
@@ -13,7 +15,7 @@ import { DialogComponent } from '@syncfusion/ej2-angular-popups';
 })
 export class ManageCycleCountDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private route: Router) { }
   public editSettings: Object;
   pipe = new DatePipe('en-US');
   widgetData = [
@@ -92,12 +94,23 @@ export class ManageCycleCountDetailsComponent implements OnInit {
       this.alertDialog.hide();
   }
   public alertDlgButtons: Object[] = [{ click: this.alertDlgBtnClick.bind(this), buttonModel: { content: 'OK', isPrimary: true } }];
+  url;
   ngOnInit(): void {
+
+    this.url = this.route.url;
+        this.url = this.url.split('/')[1];
+        // this.userUrl = this.url;
+
       this.data = cycleCountData;
       this.editSettings = { allowEditing: true, allowAdding: true, allowDeleting: true, mode: 'Batch' };
       this.groupOptions = { showGroupedColumn: false, columns: ['Reservation'] };
       this.pageSettings = { pageCount: 5 };
       this.selectionSettings = {persistSelection: true, type: "Multiple", checkboxOnly: true };
+
+      if(this.url == 'cycleCountDetails') {
+        this.data = cycleCountDataManage;
+      }
+
   }
   dataBound() {
       if(this.refresh){
@@ -115,6 +128,14 @@ export class ManageCycleCountDetailsComponent implements OnInit {
       if(args.column.field === "Mainfieldsofinvention"){
           this.alertDialog.show();
      }
+  }
+
+  onCountedClick() {
+    if(this.url == 'cycleCountDetails') {
+      this.route.navigate(['/CycleCountRequests'])
+    } else {
+      this.route.navigate(['/manageCycleCountRequests'])
+    }
   }
 
   
