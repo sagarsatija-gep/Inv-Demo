@@ -10,6 +10,8 @@
         <tr>
           <th scope="col">Item Details</th>
           <th scope="col">Cycle Count Number</th>
+          <th scope="col">Assigned To</th>
+          <th scope="col">Reviewer</th>
           <th scope="col">Scheduled Date</th>
           <th scope="col">Type</th>
           <th scope="col">Status</th>
@@ -22,6 +24,8 @@
                 style="text-decoration: none;">{{ request.itemDetails }}</a></span>
           </td>
           <td>{{ request.cycleCountNumber }}</td>
+          <td>{{ request.assigned }}</td>
+          <td>{{ request.reviewer }}</td>
           <td>{{ request.scheduledDate }}</td>
           <td>{{ request.type }}</td>
           <td>
@@ -31,6 +35,9 @@
             <div class="request-status" *ngIf="request.status == 'IN PROGRESS'"
               style="border: 1px solid blue; color: blue;">
               {{ request.status }}</div>
+              <div class="request-status" *ngIf="request.status == 'SENT FOR REVIEW'"
+                style="border: 1px solid blue; color: blue;">
+                {{ request.status }}</div>
             <div class="request-status" *ngIf="request.status == 'COMPLETED'"
               style="border: 1px solid green; color: green;">
               {{ request.status }}</div>
