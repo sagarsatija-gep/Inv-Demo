@@ -1,0 +1,235 @@
+.cycle-count-overview {
+    margin: 0px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  
+    .overview-dorpdow {
+      height: 27px;
+      padding: 0px;
+      background: #0A3AF8;
+      font-size: 12px;
+      color: white;
+      width: 100px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0px 5px 0px 5px;
+      border-radius: 3px;
+      border: none;
+    }
+  
+    .margin-30px {
+      margin: 0px 15px 0px 0px;
+    }
+  
+    .width-12_5 {
+      width: 12.5%;
+    }
+  
+    .width-6 {
+      width: 6%;
+    }
+  
+    .width-19 {
+      width: 19%;
+    }
+  
+  
+  
+  
+    .checkboxContainer {
+      display: inline-block;
+      margin-left: 5px;
+  
+      .checkmark {
+        width: 18px;
+        height: 18px;
+      }
+    }
+  
+    .checkboxContainer .checkmark:after {
+      top: 0px;
+      left: 4px;
+    }
+  
+    .cycle-count-top-header {
+      border-bottom: 1px solid #EAEDF3;
+      padding: 10px;
+  
+      .right-top-header {
+        display: flex;
+        justify-content: flex-end;
+  
+        .header-text {
+          font-size: 12px;
+          line-height: 30px;
+        }
+      }
+    }
+  
+    .cycle-count-body {
+      padding: 0px;
+      margin: 0px;
+  
+      .cycle-count-header {
+        padding: 0px;
+        margin: 0px;
+        height: 36px;
+  
+        .cycle-count-table-header {
+          line-height: 36px;
+          font-size: 12px;
+          font-weight: 600;
+          color: #5d5d5d;
+  
+        }
+      }
+  
+      .cycle-count-table-body {
+        padding: 0px;
+        margin: 0px;
+  
+        .table-tab-row {
+          background-color: #e8eaf6;
+          padding: 0px;
+          margin: 0px;
+          justify-content: space-between;
+          height: 40px;
+          border: 1px solid #d9dcde;
+  
+          .table-tab-row-left {
+            display: flex;
+            align-items: center;
+          }
+  
+          .table-tab-row-right {
+            padding-right: 20px;
+          }
+        }
+  
+  
+        .table-row-border {
+          border-bottom: 1px solid #EAEDF3;
+          padding: 0px;
+          margin: 0px;
+  
+          .table-checkbox {
+            margin-top: 9px;
+            display: flex;
+          }
+  
+          .table-text-feild {
+            color: rgba(0, 0, 0, 0.87);
+            font-size: 14px;
+            font-weight: 600;
+            line-height: 20px;
+          }
+        }
+      }
+    }
+  }
+  
+  .select-arrow[_ngcontent-vuc-c15] {
+    width: 10px;
+    position: relative;
+    height: 15px;
+    border-left: unset;
+    border-right: unset;
+    border-top: unset;
+    margin: unset;
+    float: right;
+    right: 14px;
+    top: 32px;
+    color: #fff;
+  }
+  
+  .select-arrow:before {
+    content: '\25B2';
+    height: 4px;
+    font-size: 9px;
+    top: 0;
+    position: absolute;
+  }
+  
+  .select-arrow:after {
+    content: '\25BC';
+    font-size: 9px;
+    height: 5px;
+    position: absolute;
+    top: 10px;
+  }
+  
+  
+  .dev-pagination {
+    display: flex;
+    height: 56px;
+    justify-content: space-between;
+    box-shadow: inset 0 0 3px #dcdcdc;
+  
+    .pagination-left-part {
+      display: flex;
+      align-items: center;
+      font-weight: 400;
+      font-family: roboto;
+  
+      .pagination-select {
+        border: 1px solid #f2f2f2;
+        border-radius: 2px;
+        padding: 5px;
+      }
+    }
+  
+    .pagination-center-part {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  
+      .pagination-center-container {
+        width: 190px;
+        height: 36px;
+        border: 1px solid #cfd8dc;
+        border-radius: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+  
+        .pagination-letf-arrow-conatainer {
+          height: 25px;
+          width: 25px;
+          border-right: 1px solid #cfd8dc;
+          padding-left: 9px;
+  
+          .left-pagination-arrow {
+            transform: rotate(90deg);
+            opacity: .4;
+          }
+  
+        }
+  
+        .pagination-center-input-container {
+  
+          .pagination-input {
+            width: 25px;
+            height: 25px;
+            border: 1px solid #cfd8dc;
+            border-radius: 4px;
+            text-align: center;
+            font-size: 13px;
+            color: #3e3f42;
+          }
+        }
+  
+        .pagination-right-arrow-container {
+          height: 25px;
+          width: 25px;
+          border-left: 1px solid #cfd8dc;
+          padding-left: 9px;
+        }
+      }
+    }
+  }
+  
+  
+  .right-pagination-arrow {
+    transform: rotate(-90deg);
+  }
+  

@@ -1,0 +1,116 @@
+/* Slider Button Start */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+    margin: 5px 0px;
+  }
+  
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 16px;
+    width: 16px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked+.slider {
+    background-color: #2196F3;
+  }
+  
+  input:focus+.slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked+.slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+  
+  /* Rounded sliders */
+  
+  .slider.round {
+    border-radius: 34px;
+  }
+  
+  .slider.round:before {
+    border-radius: 50%;
+  }
+  
+  /* Slider Button End */
+
+  .select-arrow[_ngcontent-vuc-c15] {
+    width: 10px;
+    position: relative;
+    height: 15px;
+    border-left: unset;
+    border-right: unset;
+    border-top: unset;
+    margin: unset;
+    float: right;
+    right: 14px;
+    top: 32px;
+    color: #fff;
+}
+
+.select-arrow:before {
+    content: '\25B2';
+    height: 4px;
+    font-size: 9px;
+    top: 0;
+    position: absolute;
+}
+
+.select-arrow:after {
+    content: '\25BC';
+    font-size: 9px;
+    height: 5px;
+    position: absolute;
+    top: 10px;
+}
+
+::ng-deep .cycle-count-filter {
+
+    .widget-header {
+        box-shadow: none !important;
+        margin: 0px !important;
+
+        .col-sm-6 {
+            max-width: 100% !important;
+            flex-basis: 100% !important;
+        }
+    }
+
+}
+
+.cycle-filter {
+    
+    .btn-outline-primary:hover {
+        color: #007bff;
+    }
+}

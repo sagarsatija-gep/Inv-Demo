@@ -1,0 +1,60 @@
+<div class="row" style="padding-left: 20px;">
+    <div class="col-sm-6">
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb">
+          <li class="breadcrumb-item"><a class="text-blue" routerLink="/forecast/landingpage">Home</a></li>
+          <li class="breadcrumb-item"><a class="text-blue" routerLink="/forecast/landingpage">Cycle Count Overview</a>
+          </li>
+          <!-- <li class="breadcrumb-item active" aria-current="page">Details</li> -->
+        </ol>
+      </nav>
+      <span class="pageHeadings">Cycle Count Overview</span>
+  
+      <!-- <span class="pageHeadings">{{titleName}}</span> -->
+    </div>
+    <div class="col-sm-6 cycle-filter" style="display: flex;
+    align-items: center;
+    justify-content: flex-end;">
+      <button (click)="openFilter()" type="button" class="btn btn-white px-4 mr-4 btn-outline-primary">
+        <span>
+          <img class="mr-1" style="width: 13px;"
+            src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/filterIcon.png"
+            alt="">
+        </span>Filter
+      </button>
+    </div>
+  </div>
+
+  <div class="cycle-count-filter row" style="margin: 18px;" *ngIf="showFilter" >
+
+  <div style="box-shadow: 0px 1px 0px #EAEDF3; width: 100%;">
+    <div style=" background: #FFFFFF 0% 0% no-repeat padding-box; height: 40px; padding-left: 20px;">
+      <span style="font-size: 18px; font-weight: 500; line-height: 40px;">
+        Filter
+      </span>
+    </div>
+    <Form-widget [config]="filterWidget"></Form-widget>
+      <div style=" background: #FFFFFF 0% 0% no-repeat padding-box; height: 40px; padding-left: 20px;">
+        <label class="switch">
+          <input type="checkbox" id="mode" [(ngModel)]="slide" (ngModelChange)="filterEventTrigger()"
+          checked>
+          <span class="slider round"></span>
+        </label>
+        <span style="font-family: 'Roboto Regular'; font-size: '14px'; letter-spacing: 0px; color: #3E3F42;">Show only NOT - counted materials</span>
+      </div>
+    <div style="background: #FFFFFF 0% 0% no-repeat padding-box; padding: 10px; display: flex;
+    justify-content: space-between;">
+      <button (click)="openFilter()" type="button" class="btn btn-outline-primary btn-secondry margin: 0px; height: 30px; padding: 0px 15px !important;">
+        Clear All
+      </button>
+      <button (click)="openFilter()" type="button" class="btn btn-primary margin: 0px; height: 30px; padding: 0px 15px !important;">
+        Result
+      </button>
+    </div>
+  </div>
+  
+</div>
+
+  <div  class= 'row' style="margin: 18px">
+    <Form-widget [config]='widgetData'></Form-widget>
+  </div>
