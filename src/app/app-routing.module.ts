@@ -1,3 +1,4 @@
+import { CycleCountComponent } from './cycle-count-overview/cycle-count-overview.component';
 import { DashboardOverviewComponent } from './dashboard-overview/dashboard-overview.component';
 import { ExternalStockTransfer } from './external-stock-transfer/externalStockTransfer.component';
 import { GoodsIssueComponent } from './goods-issue/goods-issue.component';
@@ -60,7 +61,8 @@ const routes: Routes = [
   { path: 'createMaterialRequestForm', component: CreateMaterialRequestFormComponent },
   { path: 'manageMaterialRequests', component: ManageMaterialRequestsComponent },
   { path: 'createMaterialRequest', component: CreateMaterialRequestComponent },
-  { path: 'materialOverview', component: DashboardOverviewComponent }
+  { path: 'materialOverview', component: DashboardOverviewComponent },
+  { path: 'cycle-count-overview', component: CycleCountComponent }
 ];
 
 @NgModule({

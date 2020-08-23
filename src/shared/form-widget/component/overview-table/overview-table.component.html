@@ -1,0 +1,227 @@
+<div class="row cycle-count-overview">
+    <div class="col-12 cycle-count-top-header">
+        <div class="right-top-header">
+            <span class="header-text">
+                Group By:
+            </span>
+            <div class="dropdown margin-30px" style="padding-left: 5px;">
+                <button type="button " class="btn overview-dorpdow btn-outline-secondary" data-toggle="dropdown">
+                    <span>
+                        Storage Bin
+                    </span>
+                    <!-- <img src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/mary-kay/dist/assets/images/dropdownBlack.png"
+                        alt=""> -->
+                    <span class="select-arrow" style="margin-right: 8px;"></span>
+                </button>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">
+                        <!-- <i class="fa fa-cloud-upload" aria-hidden="true"></i> -->
+                        Storage Bin
+                    </a>
+                    <a (click)="onCreatePrClick()" class="dropdown-item">
+                        <!-- <i class="fa fa-download" aria-hidden="true"></i> -->
+                        Storage Location
+                    </a>
+                </div>
+            </div>
+
+            <div class="dropdown margin-30px">
+                <button type="button " class="btn overview-dorpdow btn-outline-secondary" data-toggle="dropdown">
+                    <span>
+                        More Action
+
+                    </span>
+                    <!-- <img src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/mary-kay/dist/assets/images/dropdownBlack.png"
+                        alt=""> -->
+
+                    <span class="select-arrow" style="margin-right: 8px;"></span>
+                </button>
+
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">
+                        <!-- <i class="fa fa-cloud-upload" aria-hidden="true"></i> -->
+                        Create Cycle Count
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="col-12 row cycle-count-body">
+        <div class="col-12 row cycle-count-header">
+            <div class="width-8th cycle-count-table-header" [ngClass]="item.width" *ngFor="let item of tableHeader">
+                {{item.value}}
+            </div>
+        </div>
+        <div class="col-12 row" style="    padding: 0px; margin: 0px; height: 300px; overflow-y: auto;">
+
+            <div class="col-12 cycle-count-table-body" *ngFor="let table of tableData; let i= index" s>
+                <div class="col-12 row table-tab-row">
+                    <span class="table-tab-row-left">
+                        <label class="checkboxContainer" style="margin-top: 7px;">
+                            <input type="checkbox" [(ngModel)]="table.ischeck" (change)="selectAll(i)">
+                            <span class="checkmark"></span>
+                        </label>
+                        <span style="font-size: 14px; color:black; font-weight: 400; margin-left: 10px;">
+
+                            {{table.headerName}}
+                        </span>
+                    </span>
+                    <span class="table-tab-row-right" (click)="headerClick(i)">
+                        <svg [ngClass]="{'activeWidget': isToggle}" xmlns="http://www.w3.org/2000/svg"
+                            xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="8" viewBox="0 0 14 8">
+                            <defs>
+                                <style>
+                                    .a,
+                                    .b {
+                                        fill: none;
+                                    }
+
+                                    .a {
+                                        clip-rule: evenodd;
+                                    }
+
+                                    .c {
+                                        clip-path: url(#a);
+                                    }
+
+                                    .d {
+                                        clip-path: url(#b);
+                                    }
+                                </style>
+                                <clipPath id="a">
+                                    <path class="a" d="M23-20l-7,8L9-20Z" />
+                                </clipPath>
+                                <clipPath id="b">
+                                    <path class="b" d="M0,0H32V-32H0Z" />
+                                </clipPath>
+                            </defs>
+                            <g class="c" transform="translate(-9 20)">
+                                <g class="d">
+                                    <path d="M4-25H28V-7H4Z" />
+                                </g>
+                            </g>
+                        </svg>
+                    </span>
+                </div>
+                <ng-container *ngIf="table.isOpen">
+                    <div class="col-12 row table-row-border" *ngFor="let row of table.row; ">
+                        <div [ngClass]="tableHeader[i].width" *ngFor="let item of row; let i = index;">
+                            <span class="table-checkbox" *ngIf="item.ischeckbox">
+                                <label class="checkboxContainer">
+                                    <input type="checkbox" [(ngModel)]="item.value" (change)="selectAll()">
+                                    <span class="checkmark"></span>
+                                </label>
+                            </span>
+                            <span class="table-text-feild" *ngIf="!item.ischeckbox">
+                                {{item}}
+                            </span>
+                        </div>
+                    </div>
+                </ng-container>
+
+            </div>
+        </div>
+    </div>
+
+
+    <div class="col-12 dev-pagination">
+
+        <div class="col-4 pagination-left-part">
+            <span>Rows per page: </span>
+            <select class="pagination-select">
+                <!---->
+                <option class="">10</option>
+            </select>
+            <span class="marginLeft10">1 - 10 of 2075 rows</span>
+        </div>
+        <div class="col-4 pagination-center-part">
+
+            <div class="pagination-center-container">
+
+                <span class="pagination-letf-arrow-conatainer" style=" ">
+                    <svg class="left-pagination-arrow" xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="8" viewBox="0 0 14 8">
+                        <defs>
+                            <style>
+                                .a,
+                                .b {
+                                    fill: none;
+                                }
+
+                                .a {
+                                    clip-rule: evenodd;
+                                }
+
+                                .c {
+                                    clip-path: url(#a);
+                                }
+
+                                .d {
+                                    clip-path: url(#b);
+                                }
+                            </style>
+                            <clipPath id="a">
+                                <path class="a" d="M23-20l-7,8L9-20Z" />
+                            </clipPath>
+                            <clipPath id="b">
+                                <path class="b" d="M0,0H32V-32H0Z" />
+                            </clipPath>
+                        </defs>
+                        <g class="c" transform="translate(-9 20)">
+                            <g class="d">
+                                <path d="M4-25H28V-7H4Z" />
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+
+                <span class="pagination-center-input-container">
+                    <input class="pagination-input" type="text" value="1"> of 208 Pages
+                </span>
+
+                <span class="pagination-right-arrow-container">
+                    <svg class='right-pagination-arrow' xmlns="http://www.w3.org/2000/svg"
+                        xmlns:xlink="http://www.w3.org/1999/xlink" width="10" height="8" viewBox="0 0 14 8">
+                        <defs>
+                            <style>
+                                .a,
+                                .b {
+                                    fill: none;
+                                }
+
+                                .a {
+                                    clip-rule: evenodd;
+                                }
+
+                                .c {
+                                    clip-path: url(#a);
+                                }
+
+                                .d {
+                                    clip-path: url(#b);
+                                }
+                            </style>
+                            <clipPath id="a">
+                                <path class="a" d="M23-20l-7,8L9-20Z" />
+                            </clipPath>
+                            <clipPath id="b">
+                                <path class="b" d="M0,0H32V-32H0Z" />
+                            </clipPath>
+                        </defs>
+                        <g class="c" transform="translate(-9 20)">
+                            <g class="d">
+                                <path d="M4-25H28V-7H4Z" />
+                            </g>
+                        </g>
+                    </svg>
+                </span>
+            </div>
+
+        </div>
+        <div class="col-4"></div>
+    </div>
+</div>

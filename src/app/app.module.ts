@@ -1,3 +1,4 @@
+import { CycleCountComponent } from './cycle-count-overview/cycle-count-overview.component';
 import { ErrorPopup } from './../shared/popUpComponent/error-popup/error-popup.component';
 import { ToastPopupComponent } from './toast-popup/toast-popup.component';
 import { Shared } from './../shared/shared.module';
@@ -128,7 +129,8 @@ import { Ng2SearchPipeModule } from 'ng2-search-filter';
     ToastPopupComponent,
     DashboardOverviewComponent,
     ScdDropdownComponent,
-    ErrorPopup
+    ErrorPopup,
+    CycleCountComponent
   ],
   imports: [
     CommonModule,

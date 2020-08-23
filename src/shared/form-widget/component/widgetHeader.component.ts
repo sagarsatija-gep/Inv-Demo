@@ -1,3 +1,4 @@
+import { OverViewTableComponent } from './overview-table/overview-table.component';
 import { WidgetTable } from './widget-table/widgetTable.component';
 import { WidgetAttachemant } from './widgetAttachement/widgetAttachement.component';
 import { DocumentTable } from './doc-table/docTable.component';
@@ -21,7 +22,8 @@ const  components = {
     'goodsIssueDetails': GoodsIssueDetails,
     'widgetTable': WidgetTable,
     'manageGoodsIssue': ManageGoodsIssue,
-    'modifyWidgetTable': ModifyWidgetTable
+    'modifyWidgetTable': ModifyWidgetTable,
+    'overviewTable': OverViewTableComponent
 };
 
 @Component({

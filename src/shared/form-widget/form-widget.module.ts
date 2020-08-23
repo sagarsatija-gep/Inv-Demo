@@ -1,3 +1,4 @@
+import { OverViewTableComponent } from './component/overview-table/overview-table.component';
 import { PopUpService } from './service/popUp.service';
 import { NgxBarcodeModule } from 'ngx-barcode';
 import { WidgetTable } from './component/widget-table/widgetTable.component';
@@ -50,7 +51,8 @@ import { ModifyWidgetTable } from './component/modify-widget-table/modifyWidgetT
          GoodsIssueDetails,
          WidgetTable,
          ManageGoodsIssue,
-         ModifyWidgetTable
+         ModifyWidgetTable,
+         OverViewTableComponent
         ],
     exports:[WidgetFormComponent, MatDatepickerModule, MatFormFieldModule],
     entryComponents: [
@@ -65,7 +67,8 @@ import { ModifyWidgetTable } from './component/modify-widget-table/modifyWidgetT
         GoodsIssueDetails,
         WidgetTable,
         ManageGoodsIssue,
-        ModifyWidgetTable
+        ModifyWidgetTable,
+        OverViewTableComponent
     ],
     providers: [PopUpService]
 })
