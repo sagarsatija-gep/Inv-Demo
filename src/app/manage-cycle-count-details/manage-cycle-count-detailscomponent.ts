@@ -68,9 +68,9 @@ export class ManageCycleCountDetailsComponent implements OnInit {
               values: 'Emily Ross',
             },
             {
-              type:'',
+              type:'text',
               name:'Reviewer Name',
-              values:'Amanda'
+              values:'Andy Roberts'
             }
           ]
         }

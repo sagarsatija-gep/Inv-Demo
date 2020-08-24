@@ -11,6 +11,8 @@ interface CycleCountRequest {
   type: string;
   status: string;
   url?: string;
+  cc_type?:string;
+
 }
 
 const CYCLECOUNTREQUESTS: CycleCountRequest[] = [
@@ -22,7 +24,8 @@ const CYCLECOUNTREQUESTS: CycleCountRequest[] = [
     status: "SCHEDULED",
     url: 'ManageCycleCountDetails',
     assigned: 'John',
-    reviewer: 'Andy'
+    reviewer: 'Andy',
+    cc_type: 'NEW COUNT'
   },
   {
     itemDetails: "System Generated - Count for Bin- D-02-A",
@@ -32,7 +35,8 @@ const CYCLECOUNTREQUESTS: CycleCountRequest[] = [
     status: "SCHEDULED",
     url: 'manageCycleCountDetails2',
     assigned: 'Adward',
-    reviewer: 'John'
+    reviewer: 'John',
+    cc_type: 'NEW COUNT'
 
   },
   {
@@ -40,10 +44,11 @@ const CYCLECOUNTREQUESTS: CycleCountRequest[] = [
     cycleCountNumber: "CC-002731",
     scheduledDate: "09/12/2020",
     type: "Planned",
-    status: "SCHEDULED",
+    status: "REVIEW IN PROGRESS",
     url: 'cycleCountDetails',
     assigned: 'Adward',
-    reviewer: 'Andy'
+    reviewer: 'Andy',
+    cc_type: 'NEW COUNT'
   },
   {
     itemDetails: "Count 4AM-FRV-13C Air Motor",
@@ -52,7 +57,8 @@ const CYCLECOUNTREQUESTS: CycleCountRequest[] = [
     type: "Unplanned",
     status: "IN PROGRESS",
     assigned: 'Mk Chi',
-    reviewer: 'Andy'
+    reviewer: 'Andy',
+    cc_type: 'RECOUNT'
   },
   {
     itemDetails: "Pneumatic Quick Exhaust Valve R10672398",
@@ -61,7 +67,8 @@ const CYCLECOUNTREQUESTS: CycleCountRequest[] = [
     type: "Unplanned",
     status: "COMPLETED",
     assigned: 'John',
-    reviewer: 'Elisa'
+    reviewer: 'Elisa',
+    cc_type: 'CORRECTION'
   },
   {
     itemDetails: "System Generated – Pneumatic Category Items",
@@ -70,7 +77,8 @@ const CYCLECOUNTREQUESTS: CycleCountRequest[] = [
     type: "Planned",
     status: "SCHEDULED",
     assigned: 'Mk',
-    reviewer: 'Andy'
+    reviewer: 'Andy',
+    cc_type: 'NEW COUNT'
   }
 ];
 const RECYCLECOUNTREQUESTS: CycleCountRequest[] = [

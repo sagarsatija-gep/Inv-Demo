@@ -34,8 +34,8 @@
             <e-column field='BinNumber' headerText='Bin Number' width='100'></e-column> -->
             <e-column field='StorageBin' headerText='Storage Bin' width='100'></e-column>
             <e-column field='UOM' headerText='UOM' width='80'></e-column>
-            <e-column *ngIf="url == 'cycleCountDetails'" field='disQty' headerText='DISCREPANCY QTY' width='120'></e-column>
-            <e-column *ngIf="url == 'cycleCountDetails'" field='disValue' headerText='DISCREPANCY VALUE' width='120'></e-column>
+            <e-column *ngIf="url == 'cycleCountDetails'" field='disQty' headerText='DISCREPANCY VALUE' width='120'></e-column>
+            <e-column *ngIf="url == 'cycleCountDetails'" field='disValue' headerText='DISCREPANCY QTY' width='120'></e-column>
             
             <e-column field='OnHandQty' headerText='Physical Quantity' width='100'>
               <ng-template #template let-data>
@@ -82,10 +82,19 @@
            class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;">
           Counted
         </button>
+        <button (click)="onCountedClick()" *ngIf="url== 'cycleCountDetails'"
+           class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;">
+        Accept 
+        </button>
+        <button (click)="onCountedClick()" *ngIf="url== 'cycleCountDetails'"
+           class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;">
+          Reject
+        </button>
         <button [routerLink]="['/manageCycleCountRequests']"   class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;"
         >
         Send to Review
       </button>
+
       </div>
     </div>
   </div>
