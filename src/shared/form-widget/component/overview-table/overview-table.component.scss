@@ -77,7 +77,7 @@
   
         .cycle-count-table-header {
           line-height: 36px;
-          font-size: 12px;
+          font-size: 13px;
           font-weight: 600;
           color: #5d5d5d;
   
@@ -125,6 +125,11 @@
           }
         }
       }
+
+      ::-webkit-scrollbar {
+        display: none !important;
+    }
+
     }
   }
   
