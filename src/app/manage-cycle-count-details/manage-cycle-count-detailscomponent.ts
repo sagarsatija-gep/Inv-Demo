@@ -45,7 +45,7 @@ export class ManageCycleCountDetailsComponent implements OnInit {
             {
               type:'text',
               name: 'Plant',
-              values: 'Calagary, CA',
+              values: 'Calgary, CA',
             },
             {
               type:'text',
@@ -66,6 +66,11 @@ export class ManageCycleCountDetailsComponent implements OnInit {
               type: 'text',
               name: 'Assignee',
               values: 'Emily Ross',
+            },
+            {
+              type:'',
+              name:'Reviewer Name',
+              values:'Amanda'
             }
           ]
         }

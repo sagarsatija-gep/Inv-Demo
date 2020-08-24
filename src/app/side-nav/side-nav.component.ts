@@ -70,6 +70,10 @@ export class SideNavComponent implements OnInit {
       {
         name: "Manage Material Requests",
         value: "manageMaterialRequests"
+      },
+      {
+        name:"Cycle Count Overview",
+        value:"cycle-count-overview"
       }
     ]
 
