@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from "@angular/core";
 
 @Component({
@@ -42,7 +43,7 @@ export class OverViewTableComponent implements OnInit {
         }
         ];
     tableData: any;
-    constructor() { }
+    constructor( private route: Router) { }
     ngOnInit() {
         this.tableData = [
             {
@@ -198,5 +199,9 @@ export class OverViewTableComponent implements OnInit {
             console.log(data, index );
                 this.tableData[i].row[index][0].value = this.tableData[i].ischeck;
         })
+    }
+
+    onCycleCountClick() {
+        this.route.navigate(['/cycleOverviewDetails'])
     }
 }
