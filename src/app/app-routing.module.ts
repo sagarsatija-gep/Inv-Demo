@@ -65,7 +65,7 @@ const routes: Routes = [
   { path: 'cycle-count-overview', component: CycleCountComponent },
   { path: 'cycleCountDetails', component: ManageCycleCountDetailsComponent },
   { path: 'CycleCountRequests', component: ManageCycleCountRequestsComponent },
-
+  { path: 'cycleOverviewDetails', component: ManageCycleCountDetailsComponent },
 ];
 
 @NgModule({

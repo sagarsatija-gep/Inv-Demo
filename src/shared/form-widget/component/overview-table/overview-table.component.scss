@@ -40,13 +40,13 @@
       display: inline-block;
       margin-left: 5px;
   
-      .checkmark {
+      .checkmark-overview {
         width: 18px;
         height: 18px;
       }
     }
   
-    .checkboxContainer .checkmark:after {
+    .checkboxContainer .checkmark-overview:after {
       top: 0px;
       left: 4px;
     }

@@ -1,4 +1,4 @@
-import { cycleCountDataManage } from './../../../data';
+import { cycleCountDataManage, overviewDataManage } from './../../../data';
 import { Router } from '@angular/router';
 import { Component, OnInit ,ViewChild, ViewEncapsulation} from '@angular/core';
 import { cycleCountData } from '../../../data';
@@ -114,6 +114,9 @@ export class ManageCycleCountDetailsComponent implements OnInit {
 
       if(this.url == 'cycleCountDetails') {
         this.data = cycleCountDataManage;
+      }
+      if( this.url == 'cycleOverviewDetails') {
+        this.data = overviewDataManage  ;
       }
 
   }

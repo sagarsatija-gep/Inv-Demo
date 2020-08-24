@@ -63,7 +63,7 @@
                     <span class="table-tab-row-left">
                         <label class="checkboxContainer" style="margin-top: 7px;">
                             <input type="checkbox" [(ngModel)]="table.ischeck" (change)="selectAll(i)">
-                            <span class="checkmark"></span>
+                            <span class="checkmark-overview"></span>
                         </label>
                         <span style="font-size: 14px; color:black; font-weight: 400; margin-left: 10px;">
 
@@ -113,7 +113,7 @@
                             <span class="table-checkbox" *ngIf="item.ischeckbox">
                                 <label class="checkboxContainer">
                                     <input type="checkbox" [(ngModel)]="item.value" (change)="selectAll()">
-                                    <span class="checkmark"></span>
+                                    <span class="checkmark-overview"></span>
                                 </label>
                             </span>
                             <span class="table-text-feild" *ngIf="!item.ischeckbox">
