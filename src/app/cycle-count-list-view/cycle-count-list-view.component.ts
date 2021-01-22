@@ -90,7 +90,8 @@ const RECYCLECOUNTREQUESTS: CycleCountRequest[] = [
     status: "SCHEDULED",
     url: 'ManageCycleCountDetails',
     assigned: 'John',
-    reviewer: 'Andy'
+    reviewer: 'Andy',
+    cc_type: 'NEW COUNT'
   },
   {
     itemDetails: "System Generated - Count for Bin- D-02-A",
@@ -100,7 +101,8 @@ const RECYCLECOUNTREQUESTS: CycleCountRequest[] = [
     status: "SCHEDULED",
     url: 'manageCycleCountDetails2',
     assigned: 'Adward',
-    reviewer: 'John'
+    reviewer: 'John',
+    cc_type: 'NEW COUNT'
 
   },
   {
@@ -111,7 +113,8 @@ const RECYCLECOUNTREQUESTS: CycleCountRequest[] = [
     status: "SENT FOR REVIEW",
     url: 'cycleCountDetails',
     assigned: 'Adward',
-    reviewer: 'Andy'
+    reviewer: 'Andy',
+    cc_type: 'NEW COUNT'
   },
   {
     itemDetails: "Count 4AM-FRV-13C Air Motor",
@@ -120,7 +123,8 @@ const RECYCLECOUNTREQUESTS: CycleCountRequest[] = [
     type: "Unplanned",
     status: "IN PROGRESS",
     assigned: 'Mk Chi',
-    reviewer: 'Andy'
+    reviewer: 'Andy',
+    cc_type: 'RECOUNT'
   },
   {
     itemDetails: "Pneumatic Quick Exhaust Valve R10672398",
@@ -129,7 +133,8 @@ const RECYCLECOUNTREQUESTS: CycleCountRequest[] = [
     type: "Unplanned",
     status: "COMPLETED",
     assigned: 'John',
-    reviewer: 'Elisa'
+    reviewer: 'Elisa',
+    cc_type: 'CORRECTION'
   },
   {
     itemDetails: "System Generated – Pneumatic Category Items",
@@ -138,7 +143,8 @@ const RECYCLECOUNTREQUESTS: CycleCountRequest[] = [
     type: "Planned",
     status: "SCHEDULED",
     assigned: 'Mk',
-    reviewer: 'Andy'
+    reviewer: 'Andy',
+    cc_type: 'NEW COUNT'
   }
 ];
 

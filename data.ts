@@ -354,7 +354,7 @@ export const overviewDataManage: Object[] = [
         "StorageBin":"01-A-01-0",
         "WBSElement":"",
         "UOM":"EACH",
-        "OnHandQty":"44",
+        "OnHandQty":"  ",
         "CostCenter":"",
         'disValue': '-',
         'disQty': '-'
@@ -365,7 +365,7 @@ export const overviewDataManage: Object[] = [
         "StorageBin":"01-A-01-0",
         "WBSElement":"",
         "UOM":"EACH",
-        "OnHandQty":"35",
+        "OnHandQty":"  ",
         "CostCenter":"",
         'disValue': '15',
         'disQty': '1500'
@@ -376,7 +376,7 @@ export const overviewDataManage: Object[] = [
         "StorageBin":"01-A-01-0",
         "WBSElement":"",
         "UOM":"EACH",
-        "OnHandQty":"22",
+        "OnHandQty":"  ",
         "CostCenter":"",
         'disValue': '20',
         'disQty': '2000'

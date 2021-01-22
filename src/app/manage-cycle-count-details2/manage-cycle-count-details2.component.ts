@@ -62,7 +62,7 @@ export class ManageCycleCountDetails2Component implements OnInit,OnDestroy {
             {
               type: 'text',
               name: 'Scheduled Date',
-              values: '08/05/2020',
+              values: '08/25/2020',
             },
             {
               type: 'text',

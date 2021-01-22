@@ -78,7 +78,7 @@
         <button (click)="printRfid()"  class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;">
           Print RFID Tags
         </button> -->
-        <button (click)="onCountedClick()"
+        <button (click)="onCountedClick()" *ngIf="url!= 'cycleCountDetails'"
            class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;">
           Counted
         </button>
@@ -90,7 +90,7 @@
            class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;">
           Reject
         </button>
-        <button [routerLink]="['/manageCycleCountRequests']"   class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;"
+        <button [routerLink]="['/manageCycleCountRequests']" *ngIf="url!= 'cycleCountDetails'"  class="btn btn-primary text-white text-uppercase shadow rounded-0" style="color: white;"
         >
         Send to Review
       </button>
