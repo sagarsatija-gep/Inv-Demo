@@ -3,7 +3,7 @@
 }
 
 .example-container {
-  height: calc(100vh - 71px)
+  height: calc(100vh - 63px);
 }
 
 .example-sidenav-content {
@@ -12,11 +12,11 @@
   overflow-y: scroll;
   justify-content: center;
 }
-
 .example-sidenav {
-  width: 120px;
-  background: darkgray;
+  width: 80px;
+  background:#234471;
   overflow: hidden;
+  z-index: 1 !important;
 }
 
 .profile-pic {
@@ -24,16 +24,18 @@
   border-radius: 30px;
   width: 60px;
   border: 1px solid;
-  margin: 20px
+  margin: 20px;
 }
 
 .tab {
-  padding: 15px 0px;
-  text-align: center
+  padding-top: 22px;
+  text-align: center;
+  height: 70px;
+  text-align: center;
 }
 
 .tab:hover {
-  background-color: #213246;
+  background-color: #00375E;
 }
 
 .tab:focus {
@@ -41,7 +43,7 @@
 }
 
 .tab .icons {
-  max-width: 102px;
+  /* max-width: 102px; */
   line-height: 1;
   cursor: pointer;
 }
@@ -51,8 +53,31 @@
   width: 20px;
 }
 
+.menuItem {
+  color: #ABCCFF;
+  font-family: 'Roboto Regular';
+  font-size: 12px;
+}
+
 .myMenu {
-  left: 104px !important;
+  left: 81px !important;
   position: absolute;
+  top: 0px;
   min-width: 0px !important;
+  z-index: 100;
+  background: white;
+  width: 245px !important;
+}
+
+.myMenu .mat-menu-content {
+  padding: 0 !important;
+}
+
+.myMenu button:focus {
+  outline: 0px dotted;
+  outline: none !important;
+}
+
+.mat-drawer .mat-drawer-side {
+  z-index: 1 !important;
 }

@@ -1,12 +1,36 @@
-<mat-sidenav-container class="example-container">
-  <mat-sidenav #sidenav class="example-sidenav" mode="side" style="background: #004F86;" [(opened)]="opened">
-    <div class="tab" *ngFor="let sideNav of sideNav" (click)="clicked(sideNav.dropdown)" 
-      [matMenuTriggerFor]="navs" routerLinkActive="router-link-active" >
+<mat-sidenav-container class="example-container"
+  style="margin-top: 4px; overflow: visible; background-color: RGB(243, 243, 243)">
+  <mat-sidenav #sidenav class="example-sidenav" style="margin-top: -4px;" mode="side" [(opened)]="opened">
+    <span style="display: flex; width: 100%; justify-content: flex-end; padding: 10px 16px; background: #1C365A;">
+      <!-- <svg xmlns="http://www.w3.org/2000/svg" width="11.749" height="9.961" viewBox="0 0 11.749 9.961" style="width: 12px; height: 10px; fill: white;">
+        <path class=""
+          d="M.2,4.527,5.333.127a.6.6,0,0,1,.9.753l-2.39,4.1,2.391,4.1a.6.6,0,0,1-.9.753L.2,5.433a.6.6,0,0,1,0-.9Z"
+          transform="translate(0 0)" />
+        <path class=""
+          d="M.2,4.527,5.334.127a.6.6,0,0,1,.9.753l-2.39,4.1,2.391,4.1a.6.6,0,0,1-.9.753L.2,5.432a.6.6,0,0,1,0-.9Z"
+          transform="translate(5.444 0)" />
+      </svg> -->
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12px" height="10px" viewBox="0 0 16 18" style="width: 15px; height: 18px;">
+        <defs>
+          <clipPath id="clip-Artboard_6">
+            <rect width="16" height="18"/>
+          </clipPath>
+        </defs>
+        <g id="Artboard_6" data-name="Artboard – 6" clip-path="url(#clip-Artboard_6)">
+          <g id="icon_arrowLeft2" transform="translate(2 3)">
+            <path id="ic_arrow_down" d="M1.5,5.9a.187.187,0,0,0,0,.3L7,11.4l-.7.6L.6,6.6a.912.912,0,0,1,0-1.2L6.3,0,7,.7Z" fill="#fff" style="fill:white;"/>
+            <path id="ic_arrow_down_1_" d="M5.5,5.9a.187.187,0,0,0,0,.3L11,11.4l-.7.6L4.6,6.6a.913.913,0,0,1,0-1.2L10.3,0l.7.7Z" fill="#fff" style="fill:white;"/>
+          </g>
+        </g>
+      </svg>
+    </span>
+    <div class="tab" *ngFor="let sideNav of sideNav" (click)="clicked(sideNav.dropdown)" [matMenuTriggerFor]="navs"
+      routerLinkActive="router-link-active" (click)="close($event)">
       <div class="icons">
-        <div style="height: 32px;">
+        <div style="height: 28px;">
           <!-- Home -->
-          <svg *ngIf="sideNav.name=='Home'"  routerLink="/home" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="16" height="16"
-            viewBox="0 0 172 172" style=" fill:#000000;">
+          <svg *ngIf="sideNav.name=='Home'" routerLink="/home" xmlns="http://www.w3.org/2000/svg"
+            x="0px" y="0px" width="16" height="16" viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
               font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
@@ -34,8 +58,8 @@
           </svg>
 
           <!-- Manage Transactions -->
-          <svg *ngIf="sideNav.name=='Manage'" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26"
-            height="26" viewBox="0 0 172 172" style=" fill:#000000;">
+          <svg *ngIf="sideNav.name=='Manage'" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="26" height="26"
+            viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
               font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
@@ -49,8 +73,8 @@
           </svg>
           <!--  -->
           <!-- Create Transactions -->
-          <svg *ngIf="sideNav.name=='Create'" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64"
-            height="64" viewBox="0 0 172 172" style=" fill:#000000;">
+          <svg *ngIf="sideNav.name=='Create'" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
+            viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
               font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
@@ -63,8 +87,9 @@
             </g>
           </svg>
           <!-- Current Stock Balance -->
-          <svg *ngIf="sideNav.name=='Current Stock Balance'" [routerLink]="['/currentstockbalance']" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
-            width="24" height="24" viewBox="0 0 172 172" style=" fill:#000000;">
+          <svg *ngIf="sideNav.name=='Current Stock Balance'" [routerLink]="['/currentstockbalance']"
+            xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="24" height="24" viewBox="0 0 172 172"
+            style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
               font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal">
@@ -77,7 +102,7 @@
             </g>
           </svg>
           <!-- Reports -->
-          <svg *ngIf="sideNav.name=='Reports'"  xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
+          <svg *ngIf="sideNav.name=='Reports'" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="64" height="64"
             viewBox="0 0 172 172" style=" fill:#000000;">
             <g fill="none" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
               stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
@@ -105,19 +130,22 @@
             </g>
           </svg>
         </div>
-        <span style="font-size: 14px;cursor: pointer;color: white;">
+        <span class="menuItem">
           {{sideNav.name}}
         </span>
       </div>
-      <mat-menu #navs="matMenu" class="myMenu" id="side-menu"   >
-        
-        <button *ngFor="let items of sideNav.sideMenu" routerLink="/{{items.value}}" routerLinkActive="router-link-active"  mat-menu-item >
+      <mat-menu #navs="matMenu" class="myMenu" id="side-menu">
+        <button (click)="show($event)" style="background: white;" *ngFor="let items of sideNav.sideMenu"
+          routerLink="/{{items.value}}" routerLinkActive="router-link-active" mat-menu-item>
           {{items.name}}</button>
       </mat-menu>
 
     </div>
+    <span style="width: 100%; height: 80px; display: inline-block;" (click)="openOutlook()">
+
+    </span>
   </mat-sidenav>
-  <mat-sidenav-content class="example-sidenav-content">
+  <mat-sidenav-content #menu class="example-sidenav-content" style="background: #EEF0F8;">
     <router-outlet></router-outlet>
   </mat-sidenav-content>
 </mat-sidenav-container>

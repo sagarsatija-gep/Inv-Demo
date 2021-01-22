@@ -28,6 +28,24 @@ export class HeaderComponent implements OnInit {
   popup: boolean = true;
   opened: boolean = true;
   barcodeValue;
+  projectList = [
+    {
+      name: 'Control Tower',
+      active: false
+    },
+    {
+      name: 'Item MDM',
+      active: false
+    },
+    {
+      name: 'Collaboration',
+      active: true
+    },
+    {
+      name: 'Sourcing',
+      active: false
+    }
+  ];
   
   click() {
     this.opened = !this.opened;
@@ -91,8 +109,13 @@ export class NgbdModalContent1 implements OnInit {
   @ViewChild(BarecodeScannerLivestreamComponent)
   barecodeScanner: BarecodeScannerLivestreamComponent;
 
+  logoPath = '';
+  userProfile = '';
+
   barcodeValue;
   ngOnInit() {
+    this.logoPath = 'https://nexxeux.blob.core.windows.net/nexxeux/cop/cf-cop/dist/assets/images/GEPLogoblue.png';
+      this.userProfile = 'https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/header/sellerProfile.png';
     this.startQuagga();
     this.barcode.currentmessage.subscribe(message => this.barcodeValue = message)
   }

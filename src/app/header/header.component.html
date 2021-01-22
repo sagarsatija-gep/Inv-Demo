@@ -1,191 +1,146 @@
-<header>
+<header style="box-shadow: 0px 3px 6px #00000029 !important;  position: relative;">
   <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-2">
-        <nav class="navbar navbar-expand-sm">
-          <!-- Toggle Menu -->
-          <a class="navbar-brand">
-            <img (click)="toggle()" class="menu" src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/menu.png" alt="Open Menu">
-          </a>
-
-          <!-- GEP Logo -->
+    <div class="row" style="margin: 0px; height: 60px;">
+      <div class="col-sm-7 header_left_container">
+        <nav class="navbar navbar-expand-sm" style="padding: 0px;">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/home">
-                <img class="logo"
-                  src="../../assets/images/GEPLogoblue.png">
+            <li class="nav-item" style="display: flex; align-items: center;">
+              <a class="nav-link py-0" routerLink="/home">
+                <img class="logo-roche"
+                  src="https://nexxeux.blob.core.windows.net/nexxeux/cop/cf-cop/dist/assets/images/GEPLogoblue.png">
               </a>
+            </li>
+            <li class="left_container_list" [ngClass]="{'projectListActive': list.active}" (click)="onProjectClick(i)"
+              *ngFor="let list of projectList; let i = index;">
+              {{list.name}}
+            </li>
+            <!-- <li style="border: 1px solid #e6e6e6;">
+            </li> -->
+            <li class="left_container_list more-List">
+              more
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                  id="Capa_1" x="0px" y="0px" viewBox="0 0 490.688 490.688" style="height: 8px; width: 12px;"
+                  xml:space="preserve">
+                  <path style="fill:#FFC107;"
+                    d="M472.328,120.529L245.213,347.665L18.098,120.529c-4.237-4.093-10.99-3.975-15.083,0.262  c-3.992,4.134-3.992,10.687,0,14.82l234.667,234.667c4.165,4.164,10.917,4.164,15.083,0l234.667-234.667  c4.237-4.093,4.354-10.845,0.262-15.083c-4.093-4.237-10.845-4.354-15.083-0.262c-0.089,0.086-0.176,0.173-0.262,0.262  L472.328,120.529z" />
+                  <path
+                    d="M245.213,373.415c-2.831,0.005-5.548-1.115-7.552-3.115L2.994,135.633c-4.093-4.237-3.975-10.99,0.262-15.083  c4.134-3.992,10.687-3.992,14.82,0l227.136,227.115l227.115-227.136c4.093-4.237,10.845-4.354,15.083-0.262  c4.237,4.093,4.354,10.845,0.262,15.083c-0.086,0.089-0.173,0.176-0.262,0.262L252.744,370.279  C250.748,372.281,248.039,373.408,245.213,373.415z" />
+                </svg>
+              </span>
             </li>
           </ul>
         </nav>
       </div>
 
-      <div class="col-sm-8">
-        <nav class="navbar navbar-expand-sm justify-content-center">
-          <form class="form-inline">
-            <div class="input-group">
-              <input type="text" class="form-control search" name="search" placeholder="Search"
-                [(ngModel)]="barcodeValue">
-              <div class="input-group-prepend">
-
-                <!-- Microphone -->
-                <a class="microphone">
-                    <img src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/microphone.png" alt="Mic">
-                </a>
-
-                <!-- Search -->
-                <a class="" (click)="onSearchClick()">
-                  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53"
-                    height="48" viewBox="0 0 53 48">
-                    <defs>
-                      <filter id="Blue_Button" x="0" y="0" width="53" height="48" filterUnits="userSpaceOnUse">
-                        <feOffset dy="1" input="SourceAlpha" />
-                        <feGaussianBlur stdDeviation="0.5" result="blur" />
-                        <feFlood flood-color="#161d25" flood-opacity="0.102" />
-                        <feComposite operator="in" in2="blur" />
-                        <feComposite in="SourceGraphic" />
-                      </filter>
-                      <clipPath id="clip-path">
-                        <rect width="20.268" height="20.264" fill="none" />
-                      </clipPath>
-                      <clipPath id="clip-path-2">
-                        <path id="icon_color" data-name="icon color"
-                          d="M19.211,20.264h0L13.518,14.6a8.25,8.25,0,1,1,1.087-1.087l5.663,5.692-1.057,1.057ZM8.269,1.514a6.75,6.75,0,1,0,6.75,6.75A6.758,6.758,0,0,0,8.269,1.514Z"
-                          fill="#fff" />
-                      </clipPath>
-                    </defs>
-                    <g id="Button" transform="translate(1.5 0.5)">
-                      <g transform="matrix(1, 0, 0, 1, -1.5, -0.5)" filter="url(#Blue_Button)">
-                        <path id="Blue_Button-2" data-name="Blue Button"
-                          d="M0,0H48a2,2,0,0,1,2,2V43a2,2,0,0,1-2,2H0a0,0,0,0,1,0,0V0A0,0,0,0,1,0,0Z"
-                          transform="translate(1.5 0.5)" fill="#0a3af8" />
-                      </g>
-                      <g id="icon_image_search_24" data-name="icon/image/search/24" transform="translate(14.078 12.478)"
-                        clip-path="url(#clip-path)">
-                        <path id="icon_color-2" data-name="icon color"
-                          d="M19.211,20.264h0L13.518,14.6a8.25,8.25,0,1,1,1.087-1.087l5.663,5.692-1.057,1.057ZM8.269,1.514a6.75,6.75,0,1,0,6.75,6.75A6.758,6.758,0,0,0,8.269,1.514Z"
-                          transform="translate(0 0)" fill="#fff" />
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-
-                <!-- Camera -->
-                <a class="camera" routerLink='/packingslipcamera'>
-                  <img src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/camera.png" alt="Open Camra" />
-                </a>
-
-                <!-- Barcode -->
-                <a class="barcodeIcon" (click)="open()">
-                  <svg id="barcode" xmlns="http://www.w3.org/2000/svg" width="18.513" height="14.81"
-                    viewBox="0 0 18.513 14.81">
-                    <g id="Group_3168" data-name="Group 3168">
-                      <g id="Group_3167" data-name="Group 3167">
-                        <path id="Path_208" data-name="Path 208"
-                          d="M3.085,48H.617A.617.617,0,0,0,0,48.617v2.468a.617.617,0,0,0,1.234,0V49.234H3.085a.617.617,0,0,0,0-1.234Z"
-                          transform="translate(0 -48)" fill="#6f7d8e" />
-                      </g>
-                    </g>
-                    <g id="Group_3170" data-name="Group 3170" transform="translate(14.81 11.108)">
-                      <g id="Group_3169" data-name="Group 3169">
-                        <path id="Path_209" data-name="Path 209"
-                          d="M387.085,336a.617.617,0,0,0-.617.617v1.851h-1.851a.617.617,0,1,0,0,1.234h2.468a.617.617,0,0,0,.617-.617v-2.468A.617.617,0,0,0,387.085,336Z"
-                          transform="translate(-384 -336)" fill="#6f7d8e" />
-                      </g>
-                    </g>
-                    <g id="Group_3172" data-name="Group 3172" transform="translate(14.81)">
-                      <g id="Group_3171" data-name="Group 3171">
-                        <path id="Path_210" data-name="Path 210"
-                          d="M387.085,48h-2.468a.617.617,0,1,0,0,1.234h1.851v1.851a.617.617,0,0,0,1.234,0V48.617A.617.617,0,0,0,387.085,48Z"
-                          transform="translate(-384 -48)" fill="#6f7d8e" />
-                      </g>
-                    </g>
-                    <g id="Group_3174" data-name="Group 3174" transform="translate(0 11.108)">
-                      <g id="Group_3173" data-name="Group 3173">
-                        <path id="Path_211" data-name="Path 211"
-                          d="M3.085,338.468H1.234v-1.851a.617.617,0,0,0-1.234,0v2.468a.617.617,0,0,0,.617.617H3.085a.617.617,0,0,0,0-1.234Z"
-                          transform="translate(0 -336)" fill="#6f7d8e" />
-                      </g>
-                    </g>
-                    <g id="Group_3176" data-name="Group 3176" transform="translate(2.468 2.468)">
-                      <g id="Group_3175" data-name="Group 3175">
-                        <rect id="Rectangle_112" data-name="Rectangle 112" width="1.234" height="9.873"
-                          fill="#6f7d8e" />
-                      </g>
-                    </g>
-                    <g id="Group_3178" data-name="Group 3178" transform="translate(4.937 2.468)">
-                      <g id="Group_3177" data-name="Group 3177">
-                        <rect id="Rectangle_113" data-name="Rectangle 113" width="1.234" height="7.405"
-                          fill="#6f7d8e" />
-                      </g>
-                    </g>
-                    <g id="Group_3180" data-name="Group 3180" transform="translate(7.405 2.468)">
-                      <g id="Group_3179" data-name="Group 3179">
-                        <rect id="Rectangle_114" data-name="Rectangle 114" width="1.234" height="7.405"
-                          fill="#6f7d8e" />
-                      </g>
-                    </g>
-                    <g id="Group_3182" data-name="Group 3182" transform="translate(9.873 2.468)">
-                      <g id="Group_3181" data-name="Group 3181">
-                        <rect id="Rectangle_115" data-name="Rectangle 115" width="1.234" height="9.873"
-                          fill="#6f7d8e" />
-                      </g>
-                    </g>
-                    <g id="Group_3184" data-name="Group 3184" transform="translate(12.342 2.468)">
-                      <g id="Group_3183" data-name="Group 3183">
-                        <rect id="Rectangle_116" data-name="Rectangle 116" width="1.234" height="7.405"
-                          fill="#6f7d8e" />
-                      </g>
-                    </g>
-                    <g id="Group_3186" data-name="Group 3186" transform="translate(14.81 2.468)">
-                      <g id="Group_3185" data-name="Group 3185">
-                        <rect id="Rectangle_117" data-name="Rectangle 117" width="1.234" height="9.873"
-                          fill="#6f7d8e" />
-                      </g>
-                    </g>
-                    <g id="Group_3188" data-name="Group 3188" transform="translate(4.937 11.108)">
-                      <g id="Group_3187" data-name="Group 3187">
-                        <rect id="Rectangle_118" data-name="Rectangle 118" width="1.234" height="1.234"
-                          fill="#6f7d8e" />
-                      </g>
-                    </g>
-                    <g id="Group_3190" data-name="Group 3190" transform="translate(7.405 11.108)">
-                      <g id="Group_3189" data-name="Group 3189">
-                        <rect id="Rectangle_119" data-name="Rectangle 119" width="1.234" height="1.234"
-                          fill="#6f7d8e" />
-                      </g>
-                    </g>
-                    <g id="Group_3192" data-name="Group 3192" transform="translate(12.342 11.108)">
-                      <g id="Group_3191" data-name="Group 3191">
-                        <rect id="Rectangle_120" data-name="Rectangle 120" width="1.234" height="1.234"
-                          fill="#6f7d8e" />
-                      </g>
-                    </g>
-                  </svg>
-                </a>
-              </div>
-            </div>
-          </form>
-        </nav>
-      </div>
-
-      <div class="col-sm-2">
-        <nav class="navbar navbar-expand-sm justify-content-end">
+      <div class="col-sm-5">
+        <nav class="navbar navbar-expand-sm justify-content-end" style="padding: 10px 0px;">
           <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link">
-                <img class="notification" src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/notofication.png" alt="Notification"/>
+            <li class="nav-item" (clickOutside)="chatsOutside($event)">
+              <form class="form-inline">
+                <div class="input-group" style="border: 2px solid #e6e6e6; border-radius: 4px;">
+                  <span style="display: flex; align-items: center; padding: 0px 10px;" (click)="onSearchClick()">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                      id="Capa_1" x="0px" y="0px" viewBox="0 0 512.005 512.005"
+                      style="fill: #65737E; width: 17px; height: 17px" xml:space="preserve">
+                      <g>
+                        <g>
+                          <path
+                            d="M505.749,475.587l-145.6-145.6c28.203-34.837,45.184-79.104,45.184-127.317c0-111.744-90.923-202.667-202.667-202.667    S0,90.925,0,202.669s90.923,202.667,202.667,202.667c48.213,0,92.48-16.981,127.317-45.184l145.6,145.6    c4.16,4.16,9.621,6.251,15.083,6.251s10.923-2.091,15.083-6.251C514.091,497.411,514.091,483.928,505.749,475.587z     M202.667,362.669c-88.235,0-160-71.765-160-160s71.765-160,160-160s160,71.765,160,160S290.901,362.669,202.667,362.669z" />
+                        </g>
+                      </g>
+                    </svg>
+                  </span>
+                  <input type="text" style="padding: 0px; border: none;" class="form-control search" name="search"
+                    placeholder="Search" (click)="demo()" [(ngModel)]="barcodeValue">
+                  <span style="display: flex; align-items: center; padding: 0px 10px;">
+                    <a routerLink='/packingslipcamera'>
+                      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                        id="Capa_1" x="0px" y="0px" viewBox="0 0 368 368"
+                        style="fill: #65737E; width: 17px; height: 17px" xml:space="preserve">
+                        <g>
+                          <g>
+                            <path
+                              d="M184,0c-39.696,0-72,33.584-72,74.856V184c0,41.28,32.304,74.856,72,74.856S256,225.28,256,184V74.856    C256,33.584,223.696,0,184,0z M184,242.856c-28.288,0-51.688-22.184-55.424-50.856h110.84    C235.688,220.68,212.288,242.856,184,242.856z M240,176H128V74.856C128,42.4,153.12,16,184,16s56,26.4,56,58.856V176z" />
+                          </g>
+                        </g>
+                        <g>
+                          <g>
+                            <path
+                              d="M296,144c-4.416,0-8,3.584-8,8v32c0,57.344-46.656,104-104,104S80,241.344,80,184v-32c0-4.416-3.584-8-8-8s-8,3.584-8,8    v32c0,63.464,49.56,115.448,112,119.592V352h-40c-4.416,0-8,3.584-8,8c0,4.416,3.584,8,8,8h96c4.416,0,8-3.584,8-8    c0-4.416-3.584-8-8-8h-40v-48.408c62.44-4.144,112-56.128,112-119.592v-32C304,147.584,300.416,144,296,144z" />
+                          </g>
+                        </g>
+                      </svg>
+                    </a>
+                  </span>
+                </div>
+              </form>
+            </li>
+            <li class="nav-item" (clickOutside)="chatsOutside($event)">
+              <a class="nav-link" (click)="open()">
+                <!-- <svg xmlns="http://www.w3.org/2000/svg" height="404pt" viewBox="-58 0 404 404.54235" width="404pt"
+                  style="width: 13px; height: 18px; fill: #65737E;">
+                  <path
+                    d="m277.527344 0h-267.257813c-5.519531 0-10 4.476562-10 10v374.527344c-.007812 7.503906 4.183594 14.378906 10.855469 17.808594 6.675781 3.425781 14.707031 2.828124 20.796875-1.550782l111.976563-80.269531 111.980468 80.265625c6.09375 4.371094 14.117188 4.964844 20.789063 1.539062 6.667969-3.425781 10.863281-10.296874 10.863281-17.792968v-374.527344c0-5.523438-4.480469-10-10.003906-10zm-10 384.523438-117.796875-84.441407c-3.484375-2.496093-8.171875-2.496093-11.652344 0l-117.800781 84.445313v-364.527344h247.25zm0 0" />
+                </svg> -->
+                <img class="chat" style="width: 16px; height: 22px;"
+                  src="https://nexxeux.blob.core.windows.net/nexxeux/SC/dist/assets/images/header/Artboard – 5.png"
+                  alt="Notification" />
               </a>
             </li>
+            <li class="nav-item" (clickOutside)="chatsOutside($event)">
+              <a class="nav-link">
+                <img (click)="chats()" class="chat" style="width: 22px; height: 25px;"
+                  src="https://nexxeux.blob.core.windows.net/nexxeux/SC/dist/assets/images/header/Artboard – 6.png"
+                  alt="Notification" />
+              </a>
+              <div class="notification-box" *ngIf="chatsOpen">
+                <!-- <app-chats></app-chats> -->
+              </div>
+            </li>
+            <!-- [ngClass]="{'nav-notification': open}" -->
+            <li class="nav-item" style="position: relative;" (clickOutside)="notificationsOutside($event)">
+              <a class="nav-link">
+                <img (click)="notifications()" class="notification"
+                  src="https://nexxeux.blob.core.windows.net/nexxeux/SC/dist/assets/images/header/Artboard – 7.png"
+                  alt="Notification" />
+              </a>
+              <div class="notification-box" *ngIf="open">
+                <!-- <app-notifications [notifications]="notification" [allNotifications]="allNotifications">
+                  </app-notifications> -->
+              </div>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link">
+                <img class="app"
+                  src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/app.png"
+                  alt="App" />
+              </a>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link">
-                <img class="app" src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/app.png" alt="App" />
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1"
+                  id="Capa_1" x="0px" y="0px" viewBox="0 0 512 512" style="fill: #65737E; width: 18px; height: 18px;"
+                  xml:space="preserve">
+                  <g>
+                    <g>
+                      <g>
+                        <circle cx="256" cy="378.5" r="25" />
+                        <path
+                          d="M256,0C114.516,0,0,114.497,0,256c0,141.484,114.497,256,256,256c141.484,0,256-114.497,256-256     C512,114.516,397.503,0,256,0z M256,472c-119.377,0-216-96.607-216-216c0-119.377,96.607-216,216-216     c119.377,0,216,96.607,216,216C472,375.377,375.393,472,256,472z" />
+                        <path
+                          d="M256,128.5c-44.112,0-80,35.888-80,80c0,11.046,8.954,20,20,20s20-8.954,20-20c0-22.056,17.944-40,40-40     c22.056,0,40,17.944,40,40c0,22.056-17.944,40-40,40c-11.046,0-20,8.954-20,20v50c0,11.046,8.954,20,20,20     c11.046,0,20-8.954,20-20v-32.531c34.466-8.903,60-40.26,60-77.469C336,164.388,300.112,128.5,256,128.5z" />
+                      </g>
+                    </g>
+                  </g>
+                </svg>
               </a>
             </li>
-
             <li class="nav-item">
               <a class="nav-link" class="userprofile">
-                <img src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/inv-demo-blob/dist/assets/images/userprofile.png" alt="User Profile" />
+                <img style="height: 47px;"
+                  src="https://gepmtstorage.blob.core.windows.net/smart2ux/Demo/demo-forecast/dist/assets/images/header/sellerProfile.png"
+                  alt="User Profile" />
               </a>
             </li>
           </ul>
@@ -194,3 +149,12 @@
     </div>
   </div>
 </header>
+
+
+<div class="quaggaContainer">
+  <div class="quaggaBox">
+    <barcode-scanner-livestream type="code_128" (valueChanges)="onValueChanges($event)">
+    </barcode-scanner-livestream>
+    <button class="quaggaClose" (click)="stopQuagga()">x</button>
+  </div>
+</div>
