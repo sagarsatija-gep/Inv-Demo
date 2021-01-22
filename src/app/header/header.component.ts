@@ -38,7 +38,7 @@ export class HeaderComponent implements OnInit {
       active: false
     },
     {
-      name: 'Collaboration',
+      name: 'Inventory',
       active: true
     },
     {
