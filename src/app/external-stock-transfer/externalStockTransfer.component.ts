@@ -93,7 +93,7 @@ export class ExternalStockTransfer implements OnInit {
               {
                 type:'text',
                 name: 'Company Code',
-                values: 'ConocoPhillips',
+                values: 'UP Company',
               },
               {
                 type: 'dropdown',

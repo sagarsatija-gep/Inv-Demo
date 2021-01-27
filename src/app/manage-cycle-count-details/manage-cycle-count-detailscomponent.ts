@@ -60,7 +60,7 @@ export class ManageCycleCountDetailsComponent implements OnInit {
             {
               type: 'text',
               name: 'Scheduled Date',
-              values: '08/05/2020',
+              values: '02/04/2021',
             },
             {
               type: 'text',

@@ -17,7 +17,7 @@ const CYCLECOUNTREQUESTS: CycleCountRequest[] = [
   {
     itemDetails: "Count Tuthill Pump FR700V",
     cycleCountNumber: "CC-002978",
-    scheduledDate: "09/11/2020",
+    scheduledDate: "02/11/2021",
     type: "Planned",
     status: "SCHEDULED",
     url: 'ManageCycleCountDetails',
@@ -27,7 +27,7 @@ const CYCLECOUNTREQUESTS: CycleCountRequest[] = [
   {
     itemDetails: "System Generated - Count for Bin- D-02-A",
     cycleCountNumber: "CC-002730",
-    scheduledDate: "09/13/2020",
+    scheduledDate: "02/13/2021",
     type: "Unplanned",
     status: "SCHEDULED",
     url: 'manageCycleCountDetails2',
@@ -38,7 +38,7 @@ const CYCLECOUNTREQUESTS: CycleCountRequest[] = [
   {
     itemDetails: "System Generated - Class C Items Count",
     cycleCountNumber: "CC-002731",
-    scheduledDate: "09/12/2020",
+    scheduledDate: "02/12/2021",
     type: "Planned",
     status: "SCHEDULED",
     url: 'cycleCountDetails',
@@ -48,7 +48,7 @@ const CYCLECOUNTREQUESTS: CycleCountRequest[] = [
   {
     itemDetails: "Count 4AM-FRV-13C Air Motor",
     cycleCountNumber: "CC-003692",
-    scheduledDate: "09/10/2020",
+    scheduledDate: "02/10/2021",
     type: "Unplanned",
     status: "IN PROGRESS",
     assigned: 'Mk Chi',
@@ -57,7 +57,7 @@ const CYCLECOUNTREQUESTS: CycleCountRequest[] = [
   {
     itemDetails: "Pneumatic Quick Exhaust Valve R10672398",
     cycleCountNumber: "CC-002534",
-    scheduledDate: "09/10/2020",
+    scheduledDate: "02/10/2021",
     type: "Unplanned",
     status: "COMPLETED",
     assigned: 'John',
@@ -66,7 +66,7 @@ const CYCLECOUNTREQUESTS: CycleCountRequest[] = [
   {
     itemDetails: "System Generated – Pneumatic Category Items",
     cycleCountNumber: "CC-002612",
-    scheduledDate: "09/13/2020",
+    scheduledDate: "02/13/2021",
     type: "Planned",
     status: "SCHEDULED",
     assigned: 'Mk',

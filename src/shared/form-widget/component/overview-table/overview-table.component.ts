@@ -58,11 +58,11 @@ export class OverViewTableComponent implements OnInit {
                     [{
                         ischeckbox: true,
                         value: false
-                    }, '1073426', 'SHAFT,PINION', 'DRSL', '0001', '01-A-01-0', '01/15/2020', '218'],
+                    }, '1073426', 'SHAFT,PINION', 'DRSL', '0001', '01-A-01-0', '04/15/2020 ', '218'],
                     [{
                         ischeckbox: true,
                         value: false
-                    }, '1073427', 'SHAFT', 'DRSL', '0001', '01-A-01-0', '01/15/2020', '218']
+                    }, '1073427', 'SHAFT', 'DRSL', '0001', '01-A-01-0', '04/15/2020 ', '218']
                 ],
                 isOpen: true,
                 ischeck: false
@@ -73,28 +73,28 @@ export class OverViewTableComponent implements OnInit {
                     [{
                         ischeckbox: true,
                         value: false
-                    }, '1332101', 'BEARING ISOLATOR(INPRO) THRUST', 'DRSL', '0001', '01-A-01-A', '01/15/2020', '218'],
+                    }, '1332101', 'BEARING ISOLATOR(INPRO) THRUST', 'DRSL', '0001', '01-A-01-A', '04/15/2020 ', '218'],
                     [{
                         ischeckbox: true,
                         value: false
-                    }, '1332101', 'SEAL,INPRO,BEARING ISOLATOR', 'DRSL', '0001', '01-A-01-A', '01/15/2020', '218'],
+                    }, '1332101', 'SEAL,INPRO,BEARING ISOLATOR', 'DRSL', '0001', '01-A-01-A', '04/15/2020 ', '218'],
                     [
                         {
                             ischeckbox: true,
                             value: false  
-                        }, '1332100', 'BEARING ISOLATOR (INPRO) RADIAL', 'DRSL', '0001', '01-A-02-A', '01/15/2020', '219'
+                        }, '1332100', 'BEARING ISOLATOR (INPRO) RADIAL', 'DRSL', '0001', '01-A-02-A', '04/15/2020 ', '219'
                     ],
                     [
                         {
                             ischeckbox: true,
                             value: false  
-                        }, '1333454', 'INPRO SEAL ASSEMBLY (RADIAL)', 'DRSL', '0001', '01-A-02-A', '01/15/2020', '219'
+                        }, '1333454', 'INPRO SEAL ASSEMBLY (RADIAL)', 'DRSL', '0001', '01-A-02-A', '04/15/2020 ', '219'
                     ],
                     [
                         {
                             ischeckbox: true,
                             value: false  
-                        }, '1333455', 'INPRO SEAL ASSEMBLY (RADIAL)', 'DRSL', '0001', '01-A-02-A', '01/15/2020', '219'
+                        }, '1333455', 'INPRO SEAL ASSEMBLY (RADIAL)', 'DRSL', '0001', '01-A-02-A', '04/15/2020 ', '219'
                     ]
                 ],
                 isOpen: true,
@@ -112,11 +112,11 @@ export class OverViewTableComponent implements OnInit {
                     [{
                         ischeckbox: true,
                         value: false
-                    }, '1073426', 'SHAFT,PINION', 'DRSL', '0001', '01-A-02-B', '01/15/2020', '218'],
+                    }, '1073426', 'SHAFT,PINION', 'DRSL', '0001', '01-A-02-B', '04/15/2020 ', '218'],
                     [{
                         ischeckbox: true,
                         value: false
-                    }, '1073427', 'SHAFT', 'DRSL', '0001', '01-A-02-B', '01/15/2020', '218']
+                    }, '1073427', 'SHAFT', 'DRSL', '0001', '01-A-02-B', '04/15/2020 ', '218']
                 ],
                 isOpen: true,
                 ischeck: false
@@ -133,11 +133,11 @@ export class OverViewTableComponent implements OnInit {
                     [{
                         ischeckbox: true,
                         value: false
-                    }, '1073426', 'SHAFT,PINION', 'DRSL', '0001', '01-A-02-C', '01/15/2020', '218'],
+                    }, '1073426', 'SHAFT,PINION', 'DRSL', '0001', '01-A-02-C', '04/15/2020 ', '218'],
                     [{
                         ischeckbox: true,
                         value: false
-                    }, '1073427', 'SHAFT', 'DRSL', '0001', '01-A-02-C', '01/15/2020', '218']
+                    }, '1073427', 'SHAFT', 'DRSL', '0001', '01-A-02-C', '04/15/2020 ', '218']
                 ],
                 isOpen: true,
                 ischeck: false
@@ -154,11 +154,11 @@ export class OverViewTableComponent implements OnInit {
                     [{
                         ischeckbox: true,
                         value: false
-                    }, '1073426', 'SHAFT,PINION', 'DRSL', '0001', '01-A-02-D', '01/15/2020', '218'],
+                    }, '1073426', 'SHAFT,PINION', 'DRSL', '0001', '01-A-02-D', '04/15/2020 ', '218'],
                     [{
                         ischeckbox: true,
                         value: false
-                    }, '1073427', 'SHAFT', 'DRSL', '0001', '01-A-02-D', '01/15/2020', '218']
+                    }, '1073427', 'SHAFT', 'DRSL', '0001', '01-A-02-D', '04/15/2020 ', '218']
                 ],
                 isOpen: true,
                 ischeck: false
@@ -175,11 +175,11 @@ export class OverViewTableComponent implements OnInit {
                     [{
                         ischeckbox: true,
                         value: false
-                    }, '1073426', 'SHAFT,PINION', 'DRSL', '0001', '01-A-02-E', '01/15/2020', '218'],
+                    }, '1073426', 'SHAFT,PINION', 'DRSL', '0001', '01-A-02-E', '04/15/2020 ', '218'],
                     [{
                         ischeckbox: true,
                         value: false
-                    }, '1073427', 'SHAFT', 'DRSL', '0001', '01-A-02-E', '01/15/2020', '218']
+                    }, '1073427', 'SHAFT', 'DRSL', '0001', '01-A-02-E', '04/15/2020 ', '218']
                 ],
                 isOpen: true,
                 ischeck: false

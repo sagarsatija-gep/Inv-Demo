@@ -71,7 +71,7 @@ widgetData = [
                 {
                   type: 'textBox',
                   name: 'Company',
-                  value: 'Chevron PS',
+                  value: 'UPR Company',
                   editable: true,
                 }
               ]
@@ -349,7 +349,7 @@ widgetData = [
                       value: true,
                     },
                     {
-                      value: '10/28/2019',
+                      value: '02/24/2021',
                     }
                   ],
                   [
@@ -384,7 +384,7 @@ widgetData = [
                       value: false,
                     },
                     {
-                      value: '10/28/2019',
+                      value: '02/24/2021',
                     }
                   ],
                   [
@@ -419,7 +419,7 @@ widgetData = [
                       value: false,
                     },
                     {
-                      value: '10/28/2019',
+                      value: '02/24/2021',
                     }
                   ],
                   [
@@ -454,7 +454,7 @@ widgetData = [
                       value: false,
                     },
                     {
-                      value: '10/28/2019',
+                      value: '02/24/2021',
                     }
                   ]
                 ]

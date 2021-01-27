@@ -80,7 +80,7 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
             {
               type:'text',
               name: 'Company Code',
-              values: 'CononcoPhilips',
+              values: 'UP Company',
             },
             {
               type: 'textbox',
@@ -171,22 +171,23 @@ export class NgbdModalContent2 implements OnInit {
       values: ['N02-06-3-2','N02-06-6-4'],
       selectedValue: '',
       showBarcode: true
-    },
-    {
-      type:'dropdown',
-      name: 'To Plant',
-      values: [
-        'Calagary',
-        'Canol',
-        'Montney',
-        'Muskwa',
-        'Duvernay',
-        'Beaufort Sea',
-        'Surmont'
-      ],
-      selectedValue: ' ​',
-      showBarcode: false
     }
+    // ,
+    // {
+    //   type:'dropdown',
+    //   name: 'To Plant',
+    //   values: [
+    //     'Calagary',
+    //     'Canol',
+    //     'Montney',
+    //     'Muskwa',
+    //     'Duvernay',
+    //     'Beaufort Sea',
+    //     'Surmont'
+    //   ],
+    //   selectedValue: ' ​',
+    //   showBarcode: false
+    // }
   ];
 
   selectedCountry: any;
