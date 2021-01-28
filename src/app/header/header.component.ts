@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
   barcodeValue;
   projectList = [
     {
-      name: 'Control Tower',
+      name: 'Home',
       active: false
     },
     {
@@ -56,6 +56,13 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.barcode.currentmessage.subscribe(msg => this.barcodeValue = msg)
   }
+
+  onProjectClick(i) {
+    if(this.projectList[i].name == 'Home') {
+      this.route.navigate(['/home']);
+    }
+  }
+
   open() {
     const modalRef = this.modalService.open(NgbdModalContent1);
     modalRef.componentInstance.name = 'World';

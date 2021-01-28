@@ -18,13 +18,15 @@ export class SideNavComponent implements OnInit {
 
   }
 
-  sideNav = [{
-    icon: "#icon_DashboardRe",
-    name: "Home",
-    link: "home",
-    dropdown: false,
+  sideNav = [
+  //   {
+  //   icon: "#icon_DashboardRe",
+  //   name: "Home",
+  //   link: "home",
+  //   dropdown: false,
 
-  }, {
+  // },
+   {
     icon: "#icon_DashboardRe",
     name: "Dashboard",
     link: "dashboard",
