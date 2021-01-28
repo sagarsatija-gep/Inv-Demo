@@ -1,7 +1,7 @@
 import { SuccessPopUp } from './../../shared/popUpComponent/successPopUp/successPopUP.component';
 import { Router } from '@angular/router';
 import { PopUpService } from './../../shared/form-widget/service/popUp.service';
-import { Component, OnInit ,ViewEncapsulation,Input, OnDestroy} from '@angular/core';
+import { Component, OnInit, ViewEncapsulation, Input, OnDestroy } from '@angular/core';
 import { NgbActiveModal, NgbModal } from '@ng-bootstrap/ng-bootstrap';
 import { Subscription } from 'rxjs';
 @Component({
@@ -23,19 +23,19 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
   successPopUp() {
     const modalRef = this.modalService.open(SuccessPopUp, { size: 'lg' });
     modalRef.componentInstance.name = 'Stock Transfer Initiated successfully.';
-    
+
   }
 
   ngOnInit() {
-    this.popUpSubscription = this.popup.internalStockPopUp.subscribe(isPopUP=>{
-      if(isPopUP) {
+    this.popUpSubscription = this.popup.internalStockPopUp.subscribe(isPopUP => {
+      if (isPopUP) {
         this.open();
       }
     })
   }
 
   isFinalizeClick() {
-    if( !this.popup.isInternalStockErrorPopUp ) {
+    if (!this.popup.isInternalStockErrorPopUp) {
       this.popup.isInternalStockErrorPopUp = true;
       this.open();
     } else {
@@ -59,33 +59,33 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
           isSubDetails: false,
           data: [
             {
-              type:'text',
+              type: 'text',
               name: 'Document Name',
               values: 'Stock Transfer Document',
             },
             {
-              type:'text',
+              type: 'text',
               name: 'Document Number',
               values: 'STK-545502',
-            },{
-              type:'text',
+            }, {
+              type: 'text',
               name: 'Created By',
               values: 'Emily ross',
             },
             {
-              type:'text',
+              type: 'text',
               name: 'Document Status',
               values: 'Draft',
             },
             {
-              type:'text',
+              type: 'text',
               name: 'Company Code',
-              values: 'CononcoPhilips',
+              values: 'UP Company',
             },
             {
               type: 'textbox',
-              name:'Plant',
-              values:'Montney, CA'
+              name: 'Plant',
+              values: 'Montney, CA'
             },
             {
               type: 'dropdown',
@@ -93,8 +93,8 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
               value: [
                 'Within Plant Transfer',
                 'Between Plant Transfer'
-            ],
-              selectedValue:'Within Plant Transfer',
+              ],
+              selectedValue: 'Within Plant Transfer',
             },
             {
               type: 'barcode',
@@ -119,7 +119,7 @@ export class InternalStockTransferComponent implements OnInit, OnDestroy {
         }
       }
     }
-]
+  ]
 
 }
 @Component({
@@ -133,60 +133,61 @@ export class NgbdModalContent2 implements OnInit {
   isErroPopUp: boolean;
   popupData = [
     {
-      type:'dropdown',
+      type: 'dropdown',
       name: 'From Storage Location',
       values: ['PMF-6002​'],
       selectedValue: 'PMF-6002​',
       showBarcode: true
     },
     {
-      type:'dropdown',
+      type: 'dropdown',
       name: 'From BIN',
-      values: ['C02-08-2-2','N02-06-3-2'],
+      values: ['C02-08-2-2', 'N02-06-3-2'],
       selectedValue: '',
       showBarcode: true
     },
     {
-      type:'text',
+      type: 'text',
       name: 'Select Line Items',
       values: '',
       showBarcode: true
     },
     {
-      type:'text',
+      type: 'text',
       name: 'Quantity',
       values: '',
       showBarcode: false
     },
     {
-      type:'dropdown',
+      type: 'dropdown',
       name: 'To Storage Location',
       values: ['PMF-6002​'],
       selectedValue: 'PMF-6002​',
       showBarcode: false
     },
     {
-      type:'dropdown',
+      type: 'dropdown',
       name: 'To BIN',
-      values: ['N02-06-3-2','N02-06-6-4'],
+      values: ['N02-06-3-2', 'N02-06-6-4'],
       selectedValue: '',
       showBarcode: true
-    },
-    {
-      type:'dropdown',
-      name: 'To Plant',
-      values: [
-        'Calagary',
-        'Canol',
-        'Montney',
-        'Muskwa',
-        'Duvernay',
-        'Beaufort Sea',
-        'Surmont'
-      ],
-      selectedValue: ' ​',
-      showBarcode: false
     }
+    // ,
+    // {
+    //   type:'dropdown',
+    //   name: 'To Plant',
+    //   values: [
+    //     'Calagary',
+    //     'Canol',
+    //     'Montney',
+    //     'Muskwa',
+    //     'Duvernay',
+    //     'Beaufort Sea',
+    //     'Surmont'
+    //   ],
+    //   selectedValue: ' ​',
+    //   showBarcode: false
+    // }
   ];
 
   selectedCountry: any;
@@ -204,10 +205,70 @@ export class NgbdModalContent2 implements OnInit {
   },
   ];
 
-  constructor(public activeModal: NgbActiveModal, private popUpServices: PopUpService ) {}
+  constructor(public activeModal: NgbActiveModal, private popUpServices: PopUpService, private route: Router) { }
 
   ngOnInit(): void {
-    this.isErroPopUp = this.popUpServices.isInternalStockErrorPopUp;
+    if(this.route.url.split('/')[1] == 'externalStockTransfer') {
+      this.popupData = [
+        {
+          type: 'dropdown',
+          name: 'From Storage Location',
+          values: ['PMF-6002​'],
+          selectedValue: 'PMF-6002​',
+          showBarcode: true
+        },
+        {
+          type: 'dropdown',
+          name: 'From BIN',
+          values: ['C02-08-2-2', 'N02-06-3-2'],
+          selectedValue: '',
+          showBarcode: true
+        },
+        {
+          type: 'text',
+          name: 'Select Line Items',
+          values: '',
+          showBarcode: true
+        },
+        {
+          type: 'text',
+          name: 'Quantity',
+          values: '',
+          showBarcode: false
+        },
+        {
+          type: 'dropdown',
+          name: 'To Storage Location',
+          values: ['PMF-6002​'],
+          selectedValue: 'PMF-6002​',
+          showBarcode: false
+        },
+        {
+          type: 'dropdown',
+          name: 'To BIN',
+          values: ['N02-06-3-2', 'N02-06-6-4'],
+          selectedValue: '',
+          showBarcode: true
+        },
+        {
+          type:'dropdown',
+          name: 'To Plant',
+          values: [
+            'Calagary',
+            'Canol',
+            'Montney',
+            'Muskwa',
+            'Duvernay',
+            'Beaufort Sea',
+            'Surmont'
+          ],
+          selectedValue: ' ​',
+          showBarcode: false
+        }
+      ];
+    } else {
+      this.isErroPopUp = this.popUpServices.isInternalStockErrorPopUp;
+    }
   }
 
   showTable() {
@@ -218,7 +279,7 @@ export class NgbdModalContent2 implements OnInit {
     this.popUpServices.showTable();
   }
 
-  closePopup(){
+  closePopup() {
     this.activeModal.close();
   }
 
